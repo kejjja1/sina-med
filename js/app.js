@@ -124,47 +124,48 @@
     });
   }
 
-  /* ---------- left menu: subjects, then chapters, then lectures ---------- */
+  /* ---------- left menu: subjects slide open to chapters, chapters slide open to lectures ---------- */
   var drawer = document.getElementById("drawer"), backdrop = document.getElementById("backdrop"), menuBtn = document.getElementById("menu-btn");
-  var menuPath = []; // [] = subjects, [subjectId] = chapters, [subjectId, chapterIndex] = lectures
+  var accN = 0;
+  function accHTML(label, meta, inner, cls) {
+    var id = "acc" + (++accN);
+    return '<div class="acc ' + cls + '"><button class="accbtn" type="button" aria-expanded="false" aria-controls="' + id + '"><span class="lbl">' + esc(label) + "</span>" + (meta ? '<span class="pn">' + esc(meta) + "</span>" : "") + '<span class="chev" aria-hidden="true">\u203a</span></button>' +
+      '<div class="accpanel" id="' + id + '"><div class="accinner">' + inner + "</div></div></div>";
+  }
   function renderDrawer() {
-    var h = '<div class="dhead"><span class="wordmark">Sina<span>.</span></span><button class="btn dclose" type="button">Close</button></div>';
-    if (menuPath.length === 0) {
-      h += '<a class="dlink" href="#/">Home</a><a class="dlink" href="#/papers">Past papers</a>';
-      ["S3", "S4"].forEach(function (sem) {
-        h += '<p class="dsem">Semester ' + sem.charAt(1) + "</p>";
-        S.subjects.filter(function (x) { return x.semester === sem; }).forEach(function (sub) {
-          if (sub.groups) h += '<button class="dnav" type="button" data-go="' + sub.id + '"><span>' + esc(sub.name) + '</span><span class="chev" aria-hidden="true">\u203a</span></button>';
-          else h += '<div class="dsoon"><span>' + esc(sub.name) + "</span><em>" + (sub.status === "next" ? "Up next" : "Planned") + "</em></div>";
-        });
+    accN = 0;
+    var h = '<div class="dhead"><span class="wordmark">Sina<span>.</span></span><button class="btn dclose" type="button">Close</button></div>' +
+      '<a class="dlink" href="#/">Home</a><a class="dlink" href="#/papers">Past papers</a>';
+    ["S3", "S4"].forEach(function (sem) {
+      h += '<p class="dsem">Semester ' + sem.charAt(1) + "</p>";
+      S.subjects.filter(function (x) { return x.semester === sem; }).forEach(function (sub) {
+        if (!sub.groups) { h += '<div class="dsoon"><span>' + esc(sub.name) + "</span><em>" + (sub.status === "next" ? "Up next" : "Planned") + "</em></div>"; return; }
+        var chapters = sub.groups.map(function (g) {
+          var n = g.items.filter(function (it) { return S.lectures[it.id]; }).length;
+          var lectures = '<ul class="dlist">' + g.items.map(function (it) {
+            return S.lectures[it.id] ? '<li><a href="#/lecture/' + it.id + '">' + esc(it.title) + "</a></li>" : '<li><span class="dsoon-item"><span>' + esc(it.title) + "</span><em>Coming</em></span></li>";
+          }).join("") + "</ul>";
+          return accHTML(g.name, n + " of " + g.items.length + " ready", lectures, "chapter");
+        }).join("") + '<a class="dlink sub" href="#/papers/' + sub.id + '">Past papers</a>';
+        h += accHTML(sub.name, "", chapters, "subject");
       });
-    } else if (menuPath.length === 1) {
-      var sub = subjectById(menuPath[0]);
-      h += '<button class="dback" type="button" data-back>\u2039 All subjects</button><h2 class="dtitle">' + esc(sub.name) + "</h2>";
-      sub.groups.forEach(function (g, i) {
-        var n = g.items.filter(function (it) { return S.lectures[it.id]; }).length;
-        h += '<button class="dnav" type="button" data-go="' + i + '"><span>' + esc(g.name) + '</span><span class="pn">' + n + " of " + g.items.length + ' ready</span><span class="chev" aria-hidden="true">\u203a</span></button>';
-      });
-      h += '<a class="dlink sub" href="#/papers/' + sub.id + '">Past papers</a>';
-    } else {
-      var sb = subjectById(menuPath[0]), gr = sb.groups[menuPath[1]];
-      h += '<button class="dback" type="button" data-back>\u2039 ' + esc(sb.name) + '</button><h2 class="dtitle">' + esc(gr.name) + '</h2><ul class="dlist">' +
-        gr.items.map(function (it) {
-          return S.lectures[it.id] ? '<li><a href="#/lecture/' + it.id + '">' + esc(it.title) + "</a></li>" : '<li><span class="dsoon-item"><span>' + esc(it.title) + "</span><em>Coming</em></span></li>";
-        }).join("") + "</ul>";
-    }
+    });
     drawer.innerHTML = h;
     drawer.scrollTop = 0;
     drawer.querySelector(".dclose").addEventListener("click", closeDrawer);
     drawer.querySelectorAll("a").forEach(function (a) { a.addEventListener("click", closeDrawer); });
-    drawer.querySelectorAll("[data-go]").forEach(function (b) {
-      b.addEventListener("click", function () { menuPath.push(menuPath.length === 0 ? b.dataset.go : Number(b.dataset.go)); renderDrawer(); var f = drawer.querySelector(".dback"); if (f) f.focus(); });
+    drawer.querySelectorAll(".accbtn").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var acc = btn.parentNode, open = !acc.classList.contains("open");
+        if (open) Array.prototype.forEach.call(acc.parentNode.children, function (sib) {
+          if (sib !== acc && sib.classList && sib.classList.contains("acc")) { sib.classList.remove("open"); sib.querySelector(".accbtn").setAttribute("aria-expanded", "false"); }
+        });
+        acc.classList.toggle("open", open);
+        btn.setAttribute("aria-expanded", String(open));
+      });
     });
-    var back = drawer.querySelector("[data-back]");
-    if (back) back.addEventListener("click", function () { menuPath.pop(); renderDrawer(); var f = drawer.querySelector(".dnav, .dback"); if (f) f.focus(); });
   }
   function openDrawer() {
-    menuPath = [];
     renderDrawer();
     drawer.hidden = false; backdrop.hidden = false;
     document.body.classList.add("noscroll");
@@ -294,28 +295,49 @@
   }
 
   function questionsPanel(p, lec) {
-    var qs = lec.mcqs, i = 0, score = 0, key = "sina:best:" + lec.id, LET = "ABCD";
+    var qs = lec.mcqs, i = 0, score = 0, key = "sina:best:" + lec.id, LET = "abcdefgh";
+    function keyText(q) {
+      var ans = q.answers || [q.answer];
+      return ans.map(function (n) { return LET[n] + ". " + q.options[n]; }).join(" and ");
+    }
+    function feedback(q, ok) {
+      var head = ok ? "Correct." : "Not quite.";
+      var body = q.why ? " " + esc(q.why) : "";
+      return '<div class="why"><strong>' + head + "</strong> Correct answer: " + esc(keyText(q)) + "." + body + '</div><button class="btn primary" id="nx">' + (i + 1 < qs.length ? "Next question" : "See score") + "</button>";
+    }
     function render() {
       if (i >= qs.length) {
         var best = store.get(key, 0); if (score > best) { best = score; store.set(key, best); }
-
         p.innerHTML = '<div class="score">' + score + " / " + qs.length + "</div><p>Best score on this device: " + best + " / " + qs.length + '.</p><div class="row"><button class="btn primary" id="again">Try again</button></div>';
         p.querySelector("#again").onclick = function () { i = 0; score = 0; render(); };
         return;
       }
-      var q = qs[i];
-      p.innerHTML = '<p class="qhead">Question ' + (i + 1) + " of " + qs.length + '</p><div class="bar-track"><div class="bar-fill" style="width:' + (i / qs.length * 100) + '%"></div></div><p class="qtext">' + esc(q.q) + "</p>" +
-        q.options.map(function (o, n) { return '<button class="opt" data-n="' + n + '"><span class="letter">' + LET[n] + "</span><span>" + esc(o) + "</span></button>"; }).join("") + '<div id="fb"></div>';
-      p.querySelectorAll(".opt").forEach(function (b) {
-        b.addEventListener("click", function () {
-          var n = +b.dataset.n, ok = n === q.answer; if (ok) score++;
-          p.querySelectorAll(".opt").forEach(function (x) { x.disabled = true; if (+x.dataset.n === q.answer) x.classList.add("correct"); });
-          if (!ok) b.classList.add("wrong");
-          document.getElementById("fb").innerHTML = '<div class="why"><strong>' + (ok ? "Correct." : "Not quite. The answer is " + LET[q.answer] + ".") + "</strong> " + esc(q.why) + '</div><button class="btn primary" id="nx">' + (i + 1 < qs.length ? "Next question" : "See score") + "</button>";
-          document.getElementById("nx").onclick = function () { i++; render(); };
-          document.getElementById("nx").focus();
+      var q = qs[i], multi = !!(q.answers && q.answers.length > 1);
+      p.innerHTML = '<p class="qhead">Question ' + (i + 1) + " of " + qs.length + (multi ? ", choose all correct answers" : "") + '</p><div class="bar-track"><div class="bar-fill" style="width:' + (i / qs.length * 100) + '%"></div></div><p class="qtext">' + esc(q.q) + "</p>" +
+        q.options.map(function (o, n) { return '<button class="opt" data-n="' + n + '" aria-pressed="false"><span class="letter">' + LET[n].toUpperCase() + "</span><span>" + esc(o) + "</span></button>"; }).join("") + (multi ? '<button class="btn primary" id="chk" type="button">Check my answer</button>' : "") + '<div id="fb"></div>';
+      var opts = p.querySelectorAll(".opt");
+      function finish(chosen) {
+        var ans = q.answers || [q.answer];
+        var ok = chosen.length === ans.length && chosen.every(function (n) { return ans.indexOf(n) > -1; });
+        if (ok) score++;
+        opts.forEach(function (x) {
+          var n = +x.dataset.n; x.disabled = true;
+          if (ans.indexOf(n) > -1) x.classList.add("correct"); else if (chosen.indexOf(n) > -1) x.classList.add("wrong");
         });
-      });
+        var c = p.querySelector("#chk"); if (c) c.remove();
+        document.getElementById("fb").innerHTML = feedback(q, ok);
+        document.getElementById("nx").onclick = function () { i++; render(); };
+        document.getElementById("nx").focus();
+      }
+      if (multi) {
+        opts.forEach(function (b) { b.addEventListener("click", function () { var on = b.getAttribute("aria-pressed") !== "true"; b.setAttribute("aria-pressed", String(on)); b.classList.toggle("picked", on); }); });
+        p.querySelector("#chk").addEventListener("click", function () {
+          var chosen = []; opts.forEach(function (b) { if (b.getAttribute("aria-pressed") === "true") chosen.push(+b.dataset.n); });
+          finish(chosen);
+        });
+      } else {
+        opts.forEach(function (b) { b.addEventListener("click", function () { finish([+b.dataset.n]); }); });
+      }
     }
     render();
   }
@@ -384,11 +406,12 @@
       if (!list.length) return;
       any = true;
       html += "<h2>" + esc(sb.name) + '</h2><ul class="lec-list">' + list.map(function (x) {
-        var tags = [x.questions ? "Questions" : "", x.pdf ? "PDF" : ""].filter(Boolean).join(" and ");
+        var tags = [x.questions ? "Quiz" : "", (x.pdf || x.links) ? "PDF" : ""].filter(Boolean).join(" and ");
         return '<li><a href="#/paper/' + esc(x.id) + '"><span>' + esc(x.title) + (x.year ? " (" + esc(x.year) + ")" : "") + '</span><span class="pill">' + esc(tags || "Open") + "</span></a></li>";
       }).join("") + "</ul>";
     });
     if (!any) html += "<p>Past papers will be added here soon.</p>";
+    else if (S.papersFolder && !subjectId) html += '<p class="src" style="margin-top:1.6rem">All the past papers are also in <a href="' + esc(S.papersFolder) + '" target="_blank" rel="noopener">this Google Drive folder</a>.</p>';
     setView(html + "</div>", "Past papers");
   }
   function paperView(id) {
@@ -396,7 +419,9 @@
     if (!x) return notFound();
     var sb = subjectById(x.subject);
     var html = '<div class="wrap"><p class="crumbs"><a href="#/">Home</a> / <a href="#/papers/' + x.subject + '">Past papers</a></p><h1>' + esc(x.title) + '</h1><p class="meta">' + esc(sb ? sb.name : "") + (x.year ? ", " + esc(x.year) : "") + (x.session ? ", " + esc(x.session) : "") + "</p>";
-    if (x.pdf) html += '<p><a class="btn primary" href="' + esc(x.pdf) + '" target="_blank" rel="noopener">Open the paper (PDF)</a>' + (x.answersPdf ? ' <a class="btn" href="' + esc(x.answersPdf) + '" target="_blank" rel="noopener">Open the answers (PDF)</a>' : "") + "</p>";
+    var links = x.links || (x.pdf ? [{ label: "Open the paper (PDF)", url: x.pdf }] : []);
+    if (links.length) html += '<div class="row" style="margin:0 0 1.4rem">' + links.map(function (l, n) { return '<a class="btn' + (n === 0 ? " primary" : "") + '" href="' + esc(l.url) + '" target="_blank" rel="noopener">' + esc(l.label) + "</a>"; }).join("") + "</div>";
+    if (x.note) html += '<p class="src">' + esc(x.note) + "</p>";
     html += '<div id="paperq"></div></div>';
     setView(html, x.title);
     if (x.questions && x.questions.length) questionsPanel(document.getElementById("paperq"), { id: x.id, mcqs: x.questions });

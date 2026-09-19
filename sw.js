@@ -1,4 +1,4 @@
-const CACHE = "sina-v4";
+const CACHE = "sina-v6";
 const CORE = ["./", "index.html", "css/style.css", "js/app.js", "js/data/index.js", "js/data/papers.js", "js/data/anat3-orbit.js", "js/data/anat3-face-osteology.js", "manifest.webmanifest", "icons/favicon.svg", "icons/icon-192.png", "icons/icon-512.png", "icons/apple-touch-icon.png"];
 self.addEventListener("install", (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(CORE)).then(() => self.skipWaiting()));

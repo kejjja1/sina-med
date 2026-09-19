@@ -5,7 +5,7 @@ SINA.lectures["anat3-orbit"] = {
  "group": "Face and orbit",
  "title": "The orbit: osteology and myology",
  "sourceFile": "1. Osteology of the orbit.pptx (Facio-Maxillary Module, CM1, 2025-26)",
- "buildNote": "<strong>Prototype note.</strong> Sina could read this lecture's slide text (titles and lists) but not its pictures. This page follows the lecture's outline: orbital margins, walls, foramina and fissures, optic canal, and muscle attachments. Every fact was cross-checked against at least two references, listed at the bottom. The diagrams are schematics drawn for this site. If your slides say something different, trust your slides.",
+ "buildNote": "<strong>Built from the lecture slides.</strong> This page follows the lecture: orbital margins, walls, foramina and fissures, optic canal, and the muscle attachments. The wording of the slides was compared with the pictures on them, and every fact was cross-checked against at least two references, listed at the bottom. The diagrams are schematics drawn for this site. If your professor says something different, trust your professor.",
  "summary": [
   {
    "id": "big",
@@ -35,7 +35,7 @@ SINA.lectures["anat3-orbit"] = {
   {
    "id": "walls",
    "title": "Orbital walls",
-   "html": "<div class='table-wrap'><table class=''><thead><tr><th scope='col'>Wall</th><th scope='col'>Bones</th><th scope='col'>Key relations and landmarks</th></tr></thead><tbody><tr><th scope='row'>Roof</th><td>Orbital plate of frontal + lesser wing of sphenoid</td><td>Anterior cranial fossa above. Fossa for the lacrimal gland (anterolateral). Trochlear fossa (superomedial, about 4 mm behind the margin).</td></tr><tr><th scope='row'>Floor</th><td>Maxilla (orbital surface) + zygomatic + palatine (orbital process)</td><td>Roof of the maxillary sinus. Infraorbital groove runs along it. Origin of the inferior oblique.</td></tr><tr><th scope='row'>Medial wall</th><td>Frontal process of maxilla + lacrimal + orbital plate of ethmoid + sphenoid</td><td>Ethmoid part is the largest and paper-thin (lamina papyracea). Ethmoid sinus behind. Lacrimal fossa in front, leading to the nasolacrimal canal.</td></tr><tr><th scope='row'>Lateral wall</th><td>Zygomatic + greater wing of sphenoid</td><td>The strongest wall.</td></tr></tbody></table></div>"
+   "html": "<div class='table-wrap'><table class=''><thead><tr><th scope='col'>Wall</th><th scope='col'>Bones</th><th scope='col'>Key relations and landmarks</th></tr></thead><tbody><tr><th scope='row'>Roof</th><td>Orbital plate of frontal + lesser wing of sphenoid</td><td>Anterior cranial fossa above. Fossa for the lacrimal gland (anterolateral). Trochlear fossa (superomedial, about 4 mm behind the margin).</td></tr><tr><th scope='row'>Floor</th><td>Maxilla (orbital surface) + zygomatic + palatine (orbital process)</td><td>Roof of the maxillary sinus. Infraorbital groove runs along it. Origin of the inferior oblique.</td></tr><tr><th scope='row'>Medial wall</th><td>Frontal process of maxilla + lacrimal + orbital plate of ethmoid + body of sphenoid</td><td>Ethmoid part is the largest and paper-thin (lamina papyracea). Ethmoid sinus behind. Lacrimal fossa in front, leading to the nasolacrimal canal.</td></tr><tr><th scope='row'>Lateral wall</th><td>Zygomatic + greater wing of sphenoid</td><td>The strongest wall.</td></tr></tbody></table></div>"
   },
   {
    "id": "openings",
@@ -92,7 +92,7 @@ SINA.lectures["anat3-orbit"] = {
    "medial": {
     "layer": "walls",
     "title": "Medial wall",
-    "body": "<p><strong>Bones:</strong> frontal process of the maxilla, lacrimal bone, orbital plate of the ethmoid (lamina papyracea) and the sphenoid.</p><p>The ethmoid part is the largest and paper-thin, separating the orbit from the ethmoid sinus. The two medial walls are roughly parallel. The lacrimal fossa sits at the front.</p>"
+    "body": "<p><strong>Bones:</strong> frontal process of the maxilla, lacrimal bone, orbital plate of the ethmoid (lamina papyracea) and the body of the sphenoid.</p><p>The ethmoid part is the largest and paper-thin, separating the orbit from the ethmoid sinus. The two medial walls are roughly parallel. The lacrimal fossa sits at the front.</p>"
    },
    "m-sup": {
     "layer": "margins",
@@ -359,7 +359,7 @@ SINA.lectures["anat3-orbit"] = {
    "id": "t6",
    "type": "text",
    "front": "Which bones form the medial wall? Which part is paper-thin?",
-   "back": "Frontal process of the maxilla, lacrimal bone, orbital plate of the ethmoid, and the sphenoid. The ethmoid part (lamina papyracea) is the largest and paper-thin."
+   "back": "Frontal process of the maxilla, lacrimal bone, orbital plate of the ethmoid, and the body of the sphenoid. The ethmoid part (lamina papyracea) is the largest and paper-thin."
   },
   {
    "id": "t7",
@@ -476,7 +476,7 @@ SINA.lectures["anat3-orbit"] = {
    "type": "image",
    "target": "medial",
    "front": "Which bones form the highlighted wall?",
-   "back": "The medial wall: frontal process of the maxilla + lacrimal bone + orbital plate of the ethmoid (lamina papyracea) + sphenoid. The thinnest wall."
+   "back": "The medial wall: frontal process of the maxilla + lacrimal bone + orbital plate of the ethmoid (lamina papyracea) + body of the sphenoid. The thinnest wall."
   }
  ],
  "deeper": [
