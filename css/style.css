@@ -248,3 +248,69 @@ figure.fig figcaption { font-size: 0.86rem; color: var(--muted); margin-top: 0.5
 :root[data-theme="dark"] a.btn { color: var(--ink); }
 :root[data-theme="dark"] a.btn.primary { color: var(--accent-ink); }
 :root[data-theme="dark"] .wordmark { color: var(--ink); }
+
+/* left menu */
+[hidden] { display: none !important; }
+.bar .left { display: flex; align-items: center; gap: 0.7rem; }
+.menu-btn { width: 46px; height: 46px; border: 1px solid var(--line-strong); background: var(--surface); border-radius: 10px; display: inline-flex; flex-direction: column; justify-content: center; align-items: center; gap: 6px; cursor: pointer; padding: 0; }
+.menu-btn span { display: block; width: 26px; height: 4px; border-radius: 3px; background: var(--ink); }
+.menu-btn:hover { background: var(--surface-2); }
+.backdrop { position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 39; }
+.drawer { position: fixed; top: 0; bottom: 0; left: 0; width: min(90vw, 25rem); background: var(--surface); border-right: 1px solid var(--line-strong); z-index: 40; overflow-y: auto; padding: 0.8rem 0.9rem 3rem; overscroll-behavior: contain; }
+body.noscroll { overflow: hidden; }
+.dhead { display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.6rem; }
+.dhead .wordmark { font-size: 1.4rem; }
+.dclose { padding: 0.4rem 0.9rem; }
+.dlink { display: flex; justify-content: space-between; align-items: center; gap: 0.6rem; padding: 0.85rem 0.7rem; border-radius: 10px; font-weight: 700; color: var(--ink); text-decoration: none; font-size: 1.05rem; }
+:root[data-theme="dark"] .dlink { color: var(--ink); }
+.dlink:hover, .dlink.cur { background: var(--surface-2); }
+.dlink.sub { font-weight: 600; font-size: 0.95rem; padding: 0.55rem 0.7rem; color: var(--accent); }
+:root[data-theme="dark"] .dlink.sub { color: var(--sage); }
+.dsem { margin: 1.2rem 0.7rem 0.3rem; color: var(--muted); font-weight: 700; font-size: 0.9rem; }
+.dsub { border-top: 1px solid var(--line); padding: 0.2rem 0; }
+.dsub > summary, .dlec > summary { display: flex; justify-content: space-between; align-items: center; gap: 0.6rem; cursor: pointer; list-style: none; padding: 0.85rem 0.7rem; border-radius: 10px; }
+.dsub > summary { font-family: var(--serif); font-weight: 700; font-size: 1.2rem; }
+.dsub > summary::-webkit-details-marker, .dlec > summary::-webkit-details-marker { display: none; }
+.dsub > summary::after, .dlec > summary::after { content: "+"; font-family: var(--sans); font-weight: 800; color: var(--accent); margin-left: 0.4rem; }
+:root[data-theme="dark"] .dsub > summary::after, :root[data-theme="dark"] .dlec > summary::after { color: var(--sage); }
+.dsub[open] > summary::after, .dlec[open] > summary::after { content: "\2212"; }
+.dsub > summary:hover, .dlec > summary:hover { background: var(--surface-2); }
+.dsub > summary > span:first-child, .dlec > summary > span:first-child { flex: 1; }
+.dgroup { margin: 0.9rem 0.7rem 0.2rem; font-weight: 700; font-size: 0.86rem; color: var(--muted); }
+.dlec { margin-left: 0.4rem; }
+.dlec > summary { font-weight: 600; font-size: 0.98rem; padding: 0.65rem 0.7rem; }
+.dlec ul { list-style: none; padding: 0 0 0.4rem 0.7rem; margin: 0; }
+.dlec li { margin: 0; }
+.dlec li a { display: flex; align-items: center; gap: 0.6rem; padding: 0.55rem 0.7rem; border-radius: 8px; color: var(--ink); text-decoration: none; font-size: 0.95rem; }
+:root[data-theme="dark"] .dlec li a { color: var(--ink); }
+.dlec li a:hover, .dlec li a.cur { background: var(--surface-2); font-weight: 700; }
+.dsoon { display: flex; justify-content: space-between; gap: 0.6rem; padding: 0.7rem 0.7rem; color: var(--muted); font-size: 0.95rem; border-top: 1px solid var(--line); }
+.dsoon.lec { border-top: 0; padding: 0.45rem 0.7rem 0.45rem 1.1rem; font-size: 0.9rem; }
+.dsoon em { font-style: normal; font-size: 0.82rem; }
+.pn { font-size: 0.82rem; color: var(--muted); font-weight: 600; font-family: var(--sans); }
+.ck { display: inline-grid; place-items: center; width: 1.25rem; height: 1.25rem; border: 2px solid var(--line-strong); border-radius: 5px; font-size: 0.85rem; font-weight: 800; line-height: 1; flex: none; color: var(--accent-ink); }
+.ck.on { background: var(--accent); border-color: var(--accent); }
+.sr { position: absolute; left: -9999px; }
+
+/* progress */
+.pcard { background: var(--surface); border: 1px solid var(--line-strong); border-radius: 14px; padding: 1.1rem 1.2rem; }
+.pcard h2 { margin: 0 0 0.3rem; font-size: 1.3rem; }
+.pbig { font-family: var(--serif); font-size: 1.5rem; margin: 0 0 0.6rem; }
+.plist { list-style: none; margin: 1rem 0 0.6rem; padding: 0; }
+.plist > li { padding: 0.8rem 0; border-top: 1px solid var(--line); margin: 0; }
+.prow { display: flex; justify-content: space-between; align-items: baseline; gap: 0.8rem; margin-bottom: 0.5rem; }
+.prow .pt { font-weight: 700; color: var(--ink); text-decoration: none; }
+:root[data-theme="dark"] .prow .pt { color: var(--ink); }
+.prow .pt:hover { text-decoration: underline; }
+.chips2 { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.chip2 { display: inline-flex; align-items: center; gap: 0.4rem; border: 1px solid var(--line-strong); background: var(--bg); border-radius: 999px; padding: 0.25rem 0.75rem 0.25rem 0.35rem; font-size: 0.86rem; font-weight: 600; color: var(--ink); text-decoration: none; }
+:root[data-theme="dark"] .chip2 { color: var(--ink); }
+.chip2:hover { background: var(--surface-2); }
+.chip2.on { border-color: var(--accent); background: var(--accent-soft); }
+.chip2 .ck { width: 1.1rem; height: 1.1rem; font-size: 0.75rem; }
+.chip2.on .ck { background: var(--accent); border-color: var(--accent); }
+.pstrip { display: flex; align-items: center; gap: 1rem; font-size: 0.92rem; margin: 0 0 0.4rem; }
+.pstrip .bar-track { flex: 1; margin: 0; }
+.donebar { display: flex; align-items: center; gap: 0.8rem; margin-top: 2.2rem; padding: 1rem 1.1rem; border: 2px solid var(--line-strong); border-radius: 12px; background: var(--surface); cursor: pointer; font-weight: 700; }
+.donebar.on { border-color: var(--accent); background: var(--accent-soft); }
+.donebar input { width: 1.6rem; height: 1.6rem; accent-color: var(--accent); flex: none; cursor: pointer; }

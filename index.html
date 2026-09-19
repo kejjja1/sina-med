@@ -21,10 +21,15 @@
   <a class="skip" href="#app">Skip to content</a>
   <header class="site-header">
     <div class="bar">
-      <a class="wordmark" href="#/" aria-label="Sina, home">Sina<span>.</span></a>
+      <div class="left">
+        <button class="menu-btn" id="menu-btn" type="button" aria-label="Open menu" aria-controls="drawer" aria-expanded="false"><span></span><span></span><span></span></button>
+        <a class="wordmark" href="#/" aria-label="Sina, home">Sina<span>.</span></a>
+      </div>
       <button class="icon-btn" id="theme-btn" type="button">Dark mode</button>
     </div>
   </header>
+  <nav id="drawer" class="drawer" aria-label="Site menu" hidden></nav>
+  <div id="backdrop" class="backdrop" hidden></div>
   <main id="app"><noscript><div class="wrap"><p>Sina needs JavaScript to show lectures.</p></div></noscript></main>
   <script src="js/data/index.js"></script>
   <script src="js/data/anat3-orbit.js"></script>
