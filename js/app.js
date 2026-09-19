@@ -27,7 +27,7 @@
     var b = document.getElementById("theme-btn");
     if (b) b.textContent = t === "dark" ? "Light mode" : "Dark mode";
     var m = document.querySelector('meta[name="theme-color"]');
-    if (m) m.setAttribute("content", t === "dark" ? "#1d1a17" : "#f5efe2");
+    if (m) m.setAttribute("content", t === "dark" ? "#1b1d20" : "#ffffff");
   }
   var theme = store.get("sina:theme", null) || (window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
   applyTheme(theme);
@@ -101,6 +101,27 @@
     }
     out += "</svg>";
     return out;
+  }
+
+  /* ---------- 3D viewer (Sketchfab embed, loaded on tap) and figures ---------- */
+  function viewer3dHTML(m) {
+    return '<div class="viewer3d"><div class="frame" data-embed="' + esc(m.embed) + '" data-title="' + esc(m.title) + '"><button class="btn primary load3d" type="button">Load the 3D model</button></div>' +
+      '<p class="how">' + esc(m.how) + '</p><p class="credit">' + esc(m.credit) + ' <a href="' + esc(m.url) + '" target="_blank" rel="noopener">Open on Sketchfab</a></p></div>';
+  }
+  function wireMedia(root) {
+    root.querySelectorAll(".load3d").forEach(function (b) {
+      b.addEventListener("click", function () {
+        var f = b.parentNode;
+        f.innerHTML = '<iframe title="3D model: ' + esc(f.dataset.title) + '" allow="autoplay; fullscreen; xr-spatial-tracking" allowfullscreen src="https://sketchfab.com/models/' + f.dataset.embed + '/embed?autostart=1&ui_infos=0&ui_ar=0&tracking=0&ui_watermark=0"></iframe>';
+      });
+    });
+    root.querySelectorAll("figure.fig img").forEach(function (img) {
+      img.addEventListener("error", function () {
+        var cap = img.parentNode.querySelector("figcaption");
+        img.replaceWith(Object.assign(document.createElement("p"), { className: "src", textContent: "The picture could not load. It needs an internet connection." }));
+        if (cap) cap.style.display = "block";
+      });
+    });
   }
 
   /* ---------- views ---------- */
@@ -191,12 +212,19 @@
     if (lec.checks && lec.checks.length) h += "<h2>Check with your professor</h2><p>Places where references disagree or where wording varies. Your lecture slides come first.</p>" + lec.checks.map(function (c) { return '<div class="check-item">' + c + "</div>"; }).join("");
     h += '<div class="foot"><p>Facts on this page were checked against these references (last check ' + esc(lec.verified) + "). Student flashcard sets were used only as a secondary consistency check.</p><ul class='sources'>" + lec.sources.map(function (s) { return '<li><a href="' + esc(s.url) + '" target="_blank" rel="noopener">' + esc(s.name) + "</a></li>"; }).join("") + "</ul></div>";
     p.innerHTML = h;
+    wireMedia(p);
   }
 
   function visualPanel(p, lec) {
     var v = lec.visual, layer = "walls";
     var hints = { walls: "Tap a wall to see which bones form it.", margins: "Tap a green edge to see which bones form that part of the rim.", openings: "Tap a dark opening to see what passes through it.", landmarks: "Tap a dashed outline to see what it is." };
-    p.innerHTML = "<p>" + esc(v.intro) + '</p><div class="layer-switch" role="group" aria-label="Diagram layer">' + ["walls", "margins", "openings", "landmarks"].map(function (l) { return '<button data-layer="' + l + '" aria-pressed="' + (l === layer) + '">' + l.charAt(0).toUpperCase() + l.slice(1) + "</button>"; }).join("") +
+    if (!v.regions) {
+      p.innerHTML = (v.model3d ? "<h2 style='margin-top:0'>3D model</h2>" + viewer3dHTML(v.model3d) : "<p>No visual for this lecture yet.</p>");
+      wireMedia(p);
+      return;
+    }
+    var m3 = v.model3d ? "<h2 style='margin-top:0'>3D model</h2>" + viewer3dHTML(v.model3d) + "<h2>Labeled schematic</h2>" : "";
+    p.innerHTML = m3 + "<p>" + esc(v.intro) + '</p><div class="layer-switch" role="group" aria-label="Diagram layer">' + ["walls", "margins", "openings", "landmarks"].map(function (l) { return '<button data-layer="' + l + '" aria-pressed="' + (l === layer) + '">' + l.charAt(0).toUpperCase() + l.slice(1) + "</button>"; }).join("") +
       '</div><div class="diagram-box" id="dia"></div><div class="info" id="info" aria-live="polite"></div>';
     var dia = document.getElementById("dia"), info = document.getElementById("info");
     function drawDia() { dia.innerHTML = orbitSVG({ mode: "explore", layer: layer, uid: "vis" }); info.innerHTML = "<p>" + hints[layer] + "</p>"; wire(); }
@@ -222,6 +250,7 @@
       });
     });
     drawDia();
+    wireMedia(p);
   }
 
   function questionsPanel(p, lec) {

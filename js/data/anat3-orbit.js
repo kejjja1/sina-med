@@ -25,7 +25,7 @@ SINA.lectures["anat3-orbit"] = {
   {
    "id": "bones",
    "title": "The seven bones",
-   "html": "<div class='table-wrap'><table class=''><thead><tr><th scope='col'>Group</th><th scope='col'>Bones</th></tr></thead><tbody><tr><th scope='row'>Cranial (3)</th><td>Frontal, sphenoid, ethmoid</td></tr><tr><th scope='row'>Facial (4)</th><td>Zygomatic, lacrimal, maxilla, palatine</td></tr></tbody></table></div>"
+   "html": "<div class='table-wrap'><table class=''><thead><tr><th scope='col'>Group</th><th scope='col'>Bones</th></tr></thead><tbody><tr><th scope='row'>Cranial (3)</th><td>Frontal, sphenoid, ethmoid</td></tr><tr><th scope='row'>Facial (4)</th><td>Zygomatic, lacrimal, maxilla, palatine</td></tr></tbody></table></div><figure class='fig'><img loading='lazy' src='https://commons.wikimedia.org/wiki/Special:FilePath/Gray190.png?width=600' alt='The human skull seen from the front, with the two orbits on either side of the nasal opening'><figcaption>The human skull from the front. The orbits are the two large sockets on either side of the nasal opening. Illustration from Gray's Anatomy (1918), public domain, via Wikimedia Commons (Gray190.png).</figcaption></figure>"
   },
   {
    "id": "margins",
@@ -160,7 +160,14 @@ SINA.lectures["anat3-orbit"] = {
     "body": "<p>Anterolateral in the roof, behind the zygomatic process of the frontal bone. Holds the orbital part of the lacrimal gland.</p>"
    }
   },
-  "intro": "Right orbit, seen from the front. Schematic, not to scale. Tap a layer, then tap a part of the diagram."
+  "intro": "Right orbit, seen from the front. Schematic, not to scale. Tap a layer, then tap a part of the diagram.",
+  "model3d": {
+   "title": "Bones of the orbit",
+   "embed": "c58a9186b52d4d62814b7e6e3164e032",
+   "url": "https://sketchfab.com/3d-models/bones-of-the-orbit-c58a9186b52d4d62814b7e6e3164e032",
+   "how": "Drag to rotate, pinch or scroll to zoom. Look for the four walls, the openings at the back of the socket and the rim at the front. The nasal bones and lower nasal conchae are also in the model but are not part of the orbit. Its author describes six orbital bones and leaves out the small palatine part, while your lecture and most references count seven.",
+   "credit": "3D model: Bones of the orbit by Cristina Sala on Sketchfab, licensed CC BY-SA 4.0. Based on BodyParts3D, © Database Center for Life Science, CC BY-SA 2.1 Japan. Needs an internet connection."
+  }
  },
  "mcqs": [
   {
@@ -566,6 +573,13 @@ SINA.lectures["anat3-orbit"] = {
    "note": ""
   },
   {
+   "title": "Bones of the orbit (3D model on Sketchfab)",
+   "url": "https://sketchfab.com/3d-models/bones-of-the-orbit-c58a9186b52d4d62814b7e6e3164e032",
+   "kind": "3D model",
+   "why": "Rotate the orbital bones yourself and find the walls, fissures and rim.",
+   "note": "Free 3D model, CC BY-SA 4.0."
+  },
+  {
    "title": "Bony orbit (Radiopaedia)",
    "url": "https://radiopaedia.org/articles/53679",
    "kind": "Reference",
@@ -590,6 +604,7 @@ SINA.lectures["anat3-orbit"] = {
  "checks": [
   "<strong>Sphenoid in the medial wall.</strong> Some references credit the lesser wing of the sphenoid, others the body of the sphenoid. Both appear in the literature, so this page just says the sphenoid contributes. If your professor names a specific part, use that.",
   "<strong>Inferior ophthalmic vein.</strong> References differ on whether it drains through the superior orbital fissure, the inferior orbital fissure, or both (it has branches that do each). Check which version your professor expects.",
+  "<strong>Six or seven bones.</strong> Some resources, including the 3D model on the Visual tab, describe six orbital bones and leave out the small palatine contribution to the floor. Your lecture and most references count seven.",
   "<strong>Medial margin.</strong> Most references say frontal bone above and the frontal process of the maxilla (anterior lacrimal crest) below. A few also mention the lacrimal bone here. This page follows the majority."
  ],
  "sources": [
@@ -640,6 +655,10 @@ SINA.lectures["anat3-orbit"] = {
   {
    "name": "IMAIOS e-anatomy, Orbit",
    "url": "https://www.imaios.cn/en/e-anatomy/anatomical-structures/orbit-123768"
+  },
+  {
+   "name": "Wikimedia Commons, Gray190.png (Gray's Anatomy, 1918, public domain)",
+   "url": "https://commons.wikimedia.org/wiki/File:Gray190.png"
   },
   {
    "name": "Osmosis, Anatomy of the orbit",
