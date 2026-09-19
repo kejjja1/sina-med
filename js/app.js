@@ -124,91 +124,47 @@
     });
   }
 
-  /* ---------- progress (saved on this device) ---------- */
-  var SECS = ["summary", "visual", "questions", "cards", "deeper", "resources"];
-  var SEC_LABEL = { summary: "Summary", visual: "Visual", questions: "Questions", cards: "Flashcards", deeper: "Go deeper", resources: "Resources" };
-  function progAll() { return store.get("sina:progress", {}); }
-  function isDone(lid, sec) { var p = progAll()[lid]; return !!(p && p[sec]); }
-  function setDone(lid, sec, v) {
-    var a = progAll(); a[lid] = a[lid] || {};
-    if (v) a[lid][sec] = true; else delete a[lid][sec];
-    store.set("sina:progress", a);
-  }
-  function lecDoneCount(lid) { return SECS.filter(function (s) { return isDone(lid, s); }).length; }
-  function readyLectures() {
-    var out = [];
-    S.subjects.forEach(function (sub) { (sub.groups || []).forEach(function (g) { g.items.forEach(function (it) { if (S.lectures[it.id]) out.push({ id: it.id, title: it.title, subject: sub }); }); }); });
-    return out;
-  }
-  function overall() {
-    var L = readyLectures(), total = L.length * SECS.length, done = 0;
-    L.forEach(function (l) { done += lecDoneCount(l.id); });
-    return { done: done, total: total, pct: total ? Math.round(done / total * 100) : 0, lectures: L };
-  }
-  function progressHTML(full) {
-    var o = overall();
-    var h = '<div class="pcard"><h2>Your progress</h2><p class="pbig">' + o.done + " of " + o.total + ' sections done</p><div class="bar-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="' + o.pct + '"><div class="bar-fill" style="width:' + o.pct + '%"></div></div><ul class="plist">';
-    o.lectures.forEach(function (l) {
-      var n = lecDoneCount(l.id);
-      h += '<li><div class="prow"><a class="pt" href="#/lecture/' + l.id + '">' + esc(l.title) + '</a><span class="pn">' + n + " of " + SECS.length + "</span></div>" +
-        '<div class="chips2">' + SECS.map(function (sec) {
-          var on = isDone(l.id, sec);
-          return '<a class="chip2' + (on ? " on" : "") + '" href="#/lecture/' + l.id + "/" + sec + '"><span class="ck" aria-hidden="true">' + (on ? "\u2713" : "") + "</span>" + SEC_LABEL[sec] + (on ? '<span class="sr"> done</span>' : "") + "</a>";
-        }).join("") + "</div></li>";
-    });
-    h += "</ul>";
-    if (!o.lectures.length) h += "<p>No lectures are ready yet.</p>";
-    h += '<p class="src">Progress is saved on this device only. It does not follow you to another phone, tablet or browser.</p>';
-    if (full) h += '<button class="btn" id="reset-progress" type="button">Reset my progress</button>';
-    else h += '<p style="margin:0.6rem 0 0"><a href="#/progress">See all my progress</a></p>';
-    return h + "</div>";
-  }
-  function wireProgress(root) {
-    var b = root.querySelector("#reset-progress");
-    if (b) b.addEventListener("click", function () {
-      if (confirm("Reset all your progress on this device?")) { store.set("sina:progress", {}); route(); }
-    });
-  }
-
-  /* ---------- left menu (drawer) ---------- */
+  /* ---------- left menu: subjects, then chapters, then lectures ---------- */
   var drawer = document.getElementById("drawer"), backdrop = document.getElementById("backdrop"), menuBtn = document.getElementById("menu-btn");
-  function currentRoute() {
-    var parts = location.hash.replace(/^#\/?/, "").split("/").filter(Boolean);
-    return { kind: parts[0] || "home", id: parts[1], tab: parts[2] };
-  }
+  var menuPath = []; // [] = subjects, [subjectId] = chapters, [subjectId, chapterIndex] = lectures
   function renderDrawer() {
-    var r = currentRoute(), curLec = r.kind === "lecture" ? r.id : null;
-    var curSub = null;
-    if (curLec && S.lectures[curLec]) curSub = S.lectures[curLec].subject; else if (r.kind === "subject") curSub = r.id;
-    var o = overall();
-    var h = '<div class="dhead"><span class="wordmark">Sina<span>.</span></span><button class="btn dclose" type="button">Close</button></div>' +
-      '<a class="dlink' + (r.kind === "home" ? " cur" : "") + '" href="#/">Home</a>' +
-      '<a class="dlink' + (r.kind === "progress" ? " cur" : "") + '" href="#/progress"><span>My progress</span><span class="pn">' + o.pct + '%</span></a>';
-    ["S3", "S4"].forEach(function (sem) {
-      h += '<p class="dsem">Semester ' + sem.charAt(1) + "</p>";
-      S.subjects.filter(function (s) { return s.semester === sem; }).forEach(function (sub) {
-        if (!sub.groups) { h += '<div class="dsoon"><span>' + esc(sub.name) + "</span><em>" + (sub.status === "next" ? "Up next" : "Planned") + "</em></div>"; return; }
-        h += '<details class="dsub"' + (curSub === sub.id ? " open" : "") + '><summary><span>' + esc(sub.name) + '</span><span class="pn">' + readyCount(sub) + " of " + totalCount(sub) + " ready</span></summary>";
-        h += '<a class="dlink sub" href="#/subject/' + sub.id + '">All ' + esc(sub.name) + " lectures</a>";
-        sub.groups.forEach(function (g) {
-          h += '<p class="dgroup">' + esc(g.name) + "</p>";
-          g.items.forEach(function (it) {
-            if (!S.lectures[it.id]) { h += '<div class="dsoon lec"><span>' + esc(it.title) + "</span><em>Coming</em></div>"; return; }
-            var n = lecDoneCount(it.id);
-            h += '<details class="dlec"' + (curLec === it.id ? " open" : "") + "><summary><span>" + esc(it.title) + '</span><span class="pn">' + n + "/" + SECS.length + "</span></summary><ul>" +
-              SECS.map(function (sec) {
-                return '<li><a class="' + (curLec === it.id && (r.tab || "summary") === sec ? "cur" : "") + '" href="#/lecture/' + it.id + "/" + sec + '"><span class="ck' + (isDone(it.id, sec) ? " on" : "") + '" aria-hidden="true">' + (isDone(it.id, sec) ? "\u2713" : "") + "</span>" + SEC_LABEL[sec] + (isDone(it.id, sec) ? '<span class="sr"> done</span>' : "") + "</a></li>";
-              }).join("") + "</ul></details>";
-          });
+    var h = '<div class="dhead"><span class="wordmark">Sina<span>.</span></span><button class="btn dclose" type="button">Close</button></div>';
+    if (menuPath.length === 0) {
+      h += '<a class="dlink" href="#/">Home</a><a class="dlink" href="#/papers">Past papers</a>';
+      ["S3", "S4"].forEach(function (sem) {
+        h += '<p class="dsem">Semester ' + sem.charAt(1) + "</p>";
+        S.subjects.filter(function (x) { return x.semester === sem; }).forEach(function (sub) {
+          if (sub.groups) h += '<button class="dnav" type="button" data-go="' + sub.id + '"><span>' + esc(sub.name) + '</span><span class="chev" aria-hidden="true">\u203a</span></button>';
+          else h += '<div class="dsoon"><span>' + esc(sub.name) + "</span><em>" + (sub.status === "next" ? "Up next" : "Planned") + "</em></div>";
         });
-        h += "</details>";
       });
-    });
+    } else if (menuPath.length === 1) {
+      var sub = subjectById(menuPath[0]);
+      h += '<button class="dback" type="button" data-back>\u2039 All subjects</button><h2 class="dtitle">' + esc(sub.name) + "</h2>";
+      sub.groups.forEach(function (g, i) {
+        var n = g.items.filter(function (it) { return S.lectures[it.id]; }).length;
+        h += '<button class="dnav" type="button" data-go="' + i + '"><span>' + esc(g.name) + '</span><span class="pn">' + n + " of " + g.items.length + ' ready</span><span class="chev" aria-hidden="true">\u203a</span></button>';
+      });
+      h += '<a class="dlink sub" href="#/papers/' + sub.id + '">Past papers</a>';
+    } else {
+      var sb = subjectById(menuPath[0]), gr = sb.groups[menuPath[1]];
+      h += '<button class="dback" type="button" data-back>\u2039 ' + esc(sb.name) + '</button><h2 class="dtitle">' + esc(gr.name) + '</h2><ul class="dlist">' +
+        gr.items.map(function (it) {
+          return S.lectures[it.id] ? '<li><a href="#/lecture/' + it.id + '">' + esc(it.title) + "</a></li>" : '<li><span class="dsoon-item"><span>' + esc(it.title) + "</span><em>Coming</em></span></li>";
+        }).join("") + "</ul>";
+    }
     drawer.innerHTML = h;
+    drawer.scrollTop = 0;
     drawer.querySelector(".dclose").addEventListener("click", closeDrawer);
     drawer.querySelectorAll("a").forEach(function (a) { a.addEventListener("click", closeDrawer); });
+    drawer.querySelectorAll("[data-go]").forEach(function (b) {
+      b.addEventListener("click", function () { menuPath.push(menuPath.length === 0 ? b.dataset.go : Number(b.dataset.go)); renderDrawer(); var f = drawer.querySelector(".dback"); if (f) f.focus(); });
+    });
+    var back = drawer.querySelector("[data-back]");
+    if (back) back.addEventListener("click", function () { menuPath.pop(); renderDrawer(); var f = drawer.querySelector(".dnav, .dback"); if (f) f.focus(); });
   }
   function openDrawer() {
+    menuPath = [];
     renderDrawer();
     drawer.hidden = false; backdrop.hidden = false;
     document.body.classList.add("noscroll");
@@ -247,23 +203,22 @@
     }
     var html = '<div class="wrap wide"><section class="hero"><div><h1>Study each lecture, then test yourself on it.</h1>' +
       '<p class="lede">Summaries, exam points, questions, flashcards and extra reading for every lecture of the promo. Each page is built from the lecture slides and checked against other references.</p>' +
-      '<div class="row"><a class="btn primary" href="#/lecture/anat3-orbit">Try the first lecture</a><a class="btn" href="#/subject/anat3">Browse Anatomy 3</a></div></div>' +
-      '<div id="home-progress">' + progressHTML(false) + '</div></section>' +
+      '<div class="row"><a class="btn primary" href="#/lecture/anat3-orbit">Try the first lecture</a><a class="btn" href="#/subject/anat3">Browse Anatomy 3</a><a class="btn" href="#/papers">Past papers</a></div></div>' +
+      '</section>' +
       '<h2>Subjects</h2><h3 class="sem-title">Semester 3</h3><ul class="subject-list">' + sems.S3.map(row).join("") + '</ul>' +
       '<h3 class="sem-title">Semester 4</h3><ul class="subject-list">' + sems.S4.map(row).join("") + "</ul></div>";
     setView(html, "");
-    wireProgress(app);
   }
 
   function subjectView(id) {
     var s = subjectById(id);
     if (!s || !s.groups) return notFound();
     var html = '<div class="wrap"><p class="crumbs"><a href="#/">Home</a> / ' + esc(s.name) + "</p><h1>" + esc(s.name) + "</h1>" +
-      '<p class="meta">' + readyCount(s) + " of " + totalCount(s) + " lectures ready. " + esc(s.blurb) + "</p>";
+      '<p class="meta">' + readyCount(s) + " of " + totalCount(s) + " lectures ready. " + esc(s.blurb) + '</p><p><a href="#/papers/' + s.id + '">Past papers for ' + esc(s.name) + "</a></p>";
     s.groups.forEach(function (g) {
       html += '<h2 class="group-title">' + esc(g.name) + '</h2><ul class="lec-list">' + g.items.map(function (it) {
         return S.lectures[it.id]
-          ? '<li><a href="#/lecture/' + it.id + '"><span>' + esc(it.title) + '</span><span class="pill">' + (lecDoneCount(it.id) === SECS.length ? "\u2713 Done" : lecDoneCount(it.id) ? lecDoneCount(it.id) + " of " + SECS.length + " done" : "Ready") + '</span></a></li>'
+          ? '<li><a href="#/lecture/' + it.id + '"><span>' + esc(it.title) + '</span><span class="pill">Ready</span></a></li>'
           : '<li><span class="soon"><span>' + esc(it.title) + '</span><span class="pill muted">Coming</span></span></li>';
       }).join("") + "</ul>";
     });
@@ -279,39 +234,22 @@
     tab = tab || "summary";
     if (!TABS.some(function (t) { return t[0] === tab; })) tab = "summary";
     var html = '<div class="wrap"><p class="crumbs"><a href="#/">Home</a> / <a href="#/subject/' + sub.id + '">' + esc(sub.name) + "</a></p><h1>" + esc(lec.title) + "</h1>" +
-      '<p class="meta">Source: ' + esc(lec.sourceFile) + "</p>" + '<div id="pstrip"></div>' +
+      '<p class="meta">Source: ' + esc(lec.sourceFile) + "</p>" +
       '<div class="tabs" role="tablist" aria-label="Lecture sections">' + TABS.map(function (t) {
         return '<button class="tab" role="tab" id="tab-' + t[0] + '" aria-selected="' + (t[0] === tab) + '" data-tab="' + t[0] + '">' + t[1] + "</button>";
-      }).join("") + '</div><div id="panel" role="tabpanel" aria-labelledby="tab-' + tab + '"></div><div id="donebar"></div></div>';
+      }).join("") + '</div><div id="panel" role="tabpanel" aria-labelledby="tab-' + tab + '"></div></div>';
     setView(html, lec.title);
     var panel = document.getElementById("panel");
     ({ summary: summaryPanel, visual: visualPanel, questions: questionsPanel, cards: cardsPanel, deeper: deeperPanel, resources: resourcesPanel })[tab](panel, lec);
     app.querySelectorAll(".tab").forEach(function (b) {
       b.addEventListener("click", function () { location.hash = "#/lecture/" + id + "/" + b.dataset.tab; });
     });
-    cur = { id: id, tab: tab };
-    refreshChrome();
-  }
-  var cur = null;
-  function refreshChrome() {
-    if (!cur) return;
-    var id = cur.id, tab = cur.tab, n = lecDoneCount(id);
-    var ps = document.getElementById("pstrip");
-    if (ps) ps.innerHTML = '<div class="pstrip"><span>Progress: <strong>' + n + " of " + SECS.length + '</strong> sections done</span><div class="bar-track"><div class="bar-fill" style="width:' + (n / SECS.length * 100) + '%"></div></div></div>';
-    TABS.forEach(function (t) { var b = document.getElementById("tab-" + t[0]); if (b) b.textContent = t[1] + (isDone(id, t[0]) ? " \u2713" : ""); });
-    var db = document.getElementById("donebar");
-    if (db) {
-      var on = isDone(id, tab);
-      db.innerHTML = '<label class="donebar' + (on ? " on" : "") + '"><input type="checkbox" id="donebox"' + (on ? " checked" : "") + '><span>' + (on ? "Done: " : "Mark as done: ") + SEC_LABEL[tab] + "</span></label>";
-      document.getElementById("donebox").addEventListener("change", function (e) { setDone(id, tab, e.target.checked); refreshChrome(); document.getElementById("donebox").focus(); });
-    }
   }
 
   function summaryPanel(p, lec) {
     var h = '<div class="note">' + lec.buildNote + "</div>";
     lec.summary.forEach(function (s) { h += "<h2>" + esc(s.title) + "</h2>" + s.html; });
     h += "<h2>Likely exam points</h2><ul class='exam-list'>" + lec.exam.map(function (e) { return "<li>" + esc(e) + "</li>"; }).join("") + "</ul>";
-    if (lec.checks && lec.checks.length) h += "<h2>Check with your professor</h2><p>Places where references disagree or where wording varies. Your lecture slides come first.</p>" + lec.checks.map(function (c) { return '<div class="check-item">' + c + "</div>"; }).join("");
     h += '<div class="foot"><p>Facts on this page were checked against these references (last check ' + esc(lec.verified) + "). Student flashcard sets were used only as a secondary consistency check.</p><ul class='sources'>" + lec.sources.map(function (s) { return '<li><a href="' + esc(s.url) + '" target="_blank" rel="noopener">' + esc(s.name) + "</a></li>"; }).join("") + "</ul></div>";
     p.innerHTML = h;
     wireMedia(p);
@@ -360,7 +298,7 @@
     function render() {
       if (i >= qs.length) {
         var best = store.get(key, 0); if (score > best) { best = score; store.set(key, best); }
-        setDone(lec.id, "questions", true); refreshChrome();
+
         p.innerHTML = '<div class="score">' + score + " / " + qs.length + "</div><p>Best score on this device: " + best + " / " + qs.length + '.</p><div class="row"><button class="btn primary" id="again">Try again</button></div>';
         p.querySelector("#again").onclick = function () { i = 0; score = 0; render(); };
         return;
@@ -400,7 +338,7 @@
       p.querySelectorAll(".chips button").forEach(function (b) { b.onclick = function () { filter = b.dataset.f; pos = 0; shown = false; render(); }; });
       var $ = function (s) { return p.querySelector(s); };
       if ($("#rev")) $("#rev").onclick = function () { shown = true; render(); var g = p.querySelector("#got"); if (g) g.focus(); };
-      if ($("#got")) $("#got").onclick = function () { if (known.indexOf(c.id) < 0) known.push(c.id); store.set(key, known); if (known.length >= lec.cards.length) { setDone(lec.id, "cards", true); refreshChrome(); } pos++; shown = false; render(); };
+      if ($("#got")) $("#got").onclick = function () { if (known.indexOf(c.id) < 0) known.push(c.id); store.set(key, known); pos++; shown = false; render(); };
       if ($("#again")) $("#again").onclick = function () { pos++; shown = false; render(); };
       $("#shuf").onclick = function () { order = shuffle(order); pos = 0; shown = false; render(); };
       $("#rst").onclick = function () { known = []; store.set(key, known); pos = 0; shown = false; render(); };
@@ -413,16 +351,55 @@
       lec.deeper.map(function (d, n) { return "<details" + (n === 0 ? " open" : "") + "><summary>" + esc(d.title) + "</summary>" + d.html + "</details>"; }).join("");
   }
 
+  function hostOf(u) { try { return new URL(u).hostname.replace(/^www\./, ""); } catch (e) { return ""; } }
+  function previewSrc(r) {
+    if (r.img) return r.img;
+    var m = /youtube\.com\/watch\?v=([\w-]{11})/.exec(r.url) || /youtu\.be\/([\w-]{11})/.exec(r.url);
+    if (m) return "https://img.youtube.com/vi/" + m[1] + "/hqdefault.jpg";
+    return "https://s.wordpress.com/mshots/v1/" + encodeURIComponent(r.url) + "?w=640&h=400";
+  }
   function resourcesPanel(p, lec) {
-    p.innerHTML = '<p>Links open other websites and need an internet connection. Items marked "reviewed by title and description only" were not watched in full.</p><ul class="res">' +
+    p.innerHTML = '<p>Each card shows a preview of the page, video or model you will open. Links open other websites and need an internet connection. Items marked "reviewed by title and description only" were not watched in full.</p><ul class="rgrid">' +
       lec.resources.map(function (r) {
-        return '<li><a class="t" href="' + esc(r.url) + '" target="_blank" rel="noopener">' + esc(r.title) + '</a><span class="k">' + esc(r.kind) + '</span><div class="w">' + esc(r.why) + "</div>" + (r.note ? '<div class="n">' + esc(r.note) + "</div>" : "") + "</li>";
+        return '<li class="rcard"><a class="rlink" href="' + esc(r.url) + '" target="_blank" rel="noopener"><span class="rthumb" data-host="' + esc(hostOf(r.url)) + '"><img loading="lazy" alt="" src="' + esc(previewSrc(r)) + '"><span class="rkind">' + esc(r.kind) + '</span></span>' +
+          '<span class="rbody"><span class="t">' + esc(r.title) + '</span><span class="w">' + esc(r.why) + '</span><span class="dom">' + esc(hostOf(r.url)) + "</span>" + (r.note ? '<span class="n">' + esc(r.note) + "</span>" : "") + "</span></a></li>";
       }).join("") + "</ul>";
+    p.querySelectorAll(".rthumb img").forEach(function (img) {
+      img.addEventListener("error", function () {
+        var box = img.parentNode; img.remove();
+        box.classList.add("nofoto");
+        var f = document.createElement("span"); f.className = "rfallback"; f.textContent = box.dataset.host; box.insertBefore(f, box.firstChild);
+      });
+    });
   }
 
-  function progressView() {
-    setView('<div class="wrap"><p class="crumbs"><a href="#/">Home</a> / My progress</p><h1>My progress</h1><p class="meta">Tick a section as done at the bottom of each lecture tab. Questions and flashcards tick themselves when you finish them.</p>' + progressHTML(true) + "</div>", "My progress");
-    wireProgress(app);
+  /* ---------- past papers ---------- */
+  function papersView(subjectId) {
+    var all = S.papers || [], sub = subjectId ? subjectById(subjectId) : null;
+    var html = '<div class="wrap"><p class="crumbs"><a href="#/">Home</a> / Past papers</p><h1>Past papers' + (sub ? ": " + esc(sub.name) : "") + "</h1>";
+    var any = false;
+    S.subjects.forEach(function (sb) {
+      if (subjectId && sb.id !== subjectId) return;
+      var list = all.filter(function (x) { return x.subject === sb.id; });
+      if (!list.length) return;
+      any = true;
+      html += "<h2>" + esc(sb.name) + '</h2><ul class="lec-list">' + list.map(function (x) {
+        var tags = [x.questions ? "Questions" : "", x.pdf ? "PDF" : ""].filter(Boolean).join(" and ");
+        return '<li><a href="#/paper/' + esc(x.id) + '"><span>' + esc(x.title) + (x.year ? " (" + esc(x.year) + ")" : "") + '</span><span class="pill">' + esc(tags || "Open") + "</span></a></li>";
+      }).join("") + "</ul>";
+    });
+    if (!any) html += "<p>Past papers will be added here soon.</p>";
+    setView(html + "</div>", "Past papers");
+  }
+  function paperView(id) {
+    var x = (S.papers || []).filter(function (q) { return q.id === id; })[0];
+    if (!x) return notFound();
+    var sb = subjectById(x.subject);
+    var html = '<div class="wrap"><p class="crumbs"><a href="#/">Home</a> / <a href="#/papers/' + x.subject + '">Past papers</a></p><h1>' + esc(x.title) + '</h1><p class="meta">' + esc(sb ? sb.name : "") + (x.year ? ", " + esc(x.year) : "") + (x.session ? ", " + esc(x.session) : "") + "</p>";
+    if (x.pdf) html += '<p><a class="btn primary" href="' + esc(x.pdf) + '" target="_blank" rel="noopener">Open the paper (PDF)</a>' + (x.answersPdf ? ' <a class="btn" href="' + esc(x.answersPdf) + '" target="_blank" rel="noopener">Open the answers (PDF)</a>' : "") + "</p>";
+    html += '<div id="paperq"></div></div>';
+    setView(html, x.title);
+    if (x.questions && x.questions.length) questionsPanel(document.getElementById("paperq"), { id: x.id, mcqs: x.questions });
   }
 
   function notFound() {
@@ -432,10 +409,10 @@
   /* ---------- router ---------- */
   function route() {
     var parts = location.hash.replace(/^#\/?/, "").split("/").filter(Boolean);
-    cur = null;
     if (!drawer.hidden) closeDrawer();
     if (!parts.length) return homeView();
-    if (parts[0] === "progress") return progressView();
+    if (parts[0] === "papers") return papersView(parts[1]);
+    if (parts[0] === "paper") return paperView(parts[1]);
     if (parts[0] === "subject") return subjectView(parts[1]);
     if (parts[0] === "lecture") return lectureView(parts[1], parts[2]);
     notFound();

@@ -165,7 +165,7 @@ SINA.lectures["anat3-orbit"] = {
    "title": "Bones of the orbit",
    "embed": "c58a9186b52d4d62814b7e6e3164e032",
    "url": "https://sketchfab.com/3d-models/bones-of-the-orbit-c58a9186b52d4d62814b7e6e3164e032",
-   "how": "Drag to rotate, pinch or scroll to zoom. Look for the four walls, the openings at the back of the socket and the rim at the front. The nasal bones and lower nasal conchae are also in the model but are not part of the orbit. Its author describes six orbital bones and leaves out the small palatine part, while your lecture and most references count seven.",
+   "how": "Drag to rotate, pinch or scroll to zoom. Look for the four walls, the openings at the back of the socket and the rim at the front. The nasal bones and lower nasal conchae are also in the model but are not part of the orbit. The orbit is normally described with seven bones. This model's author lists six and leaves out the small palatine part.",
    "credit": "3D model: Bones of the orbit by Cristina Sala on Sketchfab, licensed CC BY-SA 4.0. Based on BodyParts3D, © Database Center for Life Science, CC BY-SA 2.1 Japan. Needs an internet connection."
   }
  },
@@ -528,7 +528,8 @@ SINA.lectures["anat3-orbit"] = {
    "url": "https://www.kenhub.com/en/library/anatomy/bones-of-the-orbit",
    "kind": "Article",
    "why": "Bone by bone article with labeled diagrams for the walls and landmarks.",
-   "note": ""
+   "note": "",
+   "img": "https://www.kenhub.com/thumbor/8DJU9JW_2u1g35sL_MnHWgKJCys=/fit-in/800x1600/filters:watermark(/images/logo_url.png,-10,-10,0):background_color(FFFFFF):format(jpeg)/images/article/bones-of-the-orbit/fbPkbiZTakJp2wBLS0rbw_Bony_orbit.png"
   },
   {
    "title": "Superior and inferior orbital fissures: study unit",
@@ -577,7 +578,8 @@ SINA.lectures["anat3-orbit"] = {
    "url": "https://sketchfab.com/3d-models/bones-of-the-orbit-c58a9186b52d4d62814b7e6e3164e032",
    "kind": "3D model",
    "why": "Rotate the orbital bones yourself and find the walls, fissures and rim.",
-   "note": "Free 3D model, CC BY-SA 4.0."
+   "note": "Free 3D model, CC BY-SA 4.0.",
+   "img": "https://media.sketchfab.com/models/c58a9186b52d4d62814b7e6e3164e032/thumbnails/4e716640f51e44fcbfc4b6a5de37d19f/1440x810.jpeg"
   },
   {
    "title": "Bony orbit (Radiopaedia)",
@@ -601,12 +603,7 @@ SINA.lectures["anat3-orbit"] = {
    "note": "Some atlas features may need registration."
   }
  ],
- "checks": [
-  "<strong>Sphenoid in the medial wall.</strong> Some references credit the lesser wing of the sphenoid, others the body of the sphenoid. Both appear in the literature, so this page just says the sphenoid contributes. If your professor names a specific part, use that.",
-  "<strong>Inferior ophthalmic vein.</strong> References differ on whether it drains through the superior orbital fissure, the inferior orbital fissure, or both (it has branches that do each). Check which version your professor expects.",
-  "<strong>Six or seven bones.</strong> Some resources, including the 3D model on the Visual tab, describe six orbital bones and leave out the small palatine contribution to the floor. Your lecture and most references count seven.",
-  "<strong>Medial margin.</strong> Most references say frontal bone above and the frontal process of the maxilla (anterior lacrimal crest) below. A few also mention the lacrimal bone here. This page follows the majority."
- ],
+ "checks": [],
  "sources": [
   {
    "name": "StatPearls, Anatomy, Head and Neck, Orbit",

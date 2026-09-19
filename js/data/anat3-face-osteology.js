@@ -5,7 +5,7 @@ SINA.lectures["anat3-face-osteology"] = {
  "group": "Face and orbit",
  "title": "Osteology of the face",
  "sourceFile": "1. Osteology of Face_UM6SS.pptx (Facio-Maxillary Module)",
- "buildNote": "<strong>Prototype note.</strong> Sina could read this lecture's slide text (titles and lists) but not its pictures, so the page follows the lecture's outline: skull, cranium and facial bones, each bone, the base of the skull and the paranasal sinuses. Every fact was cross-checked against at least two references, listed at the bottom. Where the lecture and the references disagree, see \"Check with your professor\". If your slides say something different, trust your slides.",
+ "buildNote": "<strong>Prototype note.</strong> Sina could read this lecture's slide text (titles and lists) but not its pictures, so the page follows the lecture's outline: skull, cranium and facial bones, each bone, the base of the skull and the paranasal sinuses. Every fact was cross-checked against at least two references, listed at the bottom. If your slides say something different, trust your slides.",
  "summary": [
   {
    "id": "big",
@@ -529,18 +529,11 @@ SINA.lectures["anat3-face-osteology"] = {
    "url": "https://sketchfab.com/3d-models/human-skull-schemically-colored-bone-anatomy-d1d1aed420424c8db784391ad8261a2f",
    "kind": "3D model",
    "why": "Rotate a skull whose bones are colored differently, so you can see where each one starts and ends.",
-   "note": "Also embedded on the Visual tab."
+   "note": "Also embedded on the Visual tab.",
+   "img": "https://media.sketchfab.com/models/d1d1aed420424c8db784391ad8261a2f/thumbnails/2ebcf1e4b5f440188ddf1fe9c158508d/0927de14eea74844b6b2b8b6d899bd8a.jpeg"
   }
  ],
- "checks": [
-  "<strong>Skull base bones.</strong> The lecture lists the parietal bone among the bones of the cranial base. The references checked (Kenhub, OpenStax, Neurosurgical Atlas) list five: frontal, ethmoid, sphenoid, temporal and occipital. The parietal belongs to the vault. This page follows the references. Ask your professor which list to give in an exam.",
-  "<strong>Paranasal sinuses.</strong> The lecture names only the frontal, sphenoid and ethmoid bones as holding sinuses. Every reference checked counts four pairs, adding the maxillary sinus (the largest), so the maxilla is the only facial bone with a sinus.",
-  "<strong>Processes of the zygomatic bone.</strong> The lecture text refers to a fourth process. Kenhub, Radiopaedia and Wikipedia describe three (frontal, temporal, maxillary), and some call the maxillary one the orbital process. Check how many your professor expects.",
-  "<strong>Calvaria.</strong> The lecture lists the frontal, occipital and two parietal bones. StatPearls also includes the temporal bones. Wording differs between textbooks.",
-  "<strong>Lacrimal bones.</strong> The lecture calls them the tiniest bones of the face. I could not confirm that wording in the references I checked, so this page only says they are small.",
-  "<strong>Hard palate.</strong> References agree that the maxilla forms the front part and the palatine bones the back part, but the fraction quoted for the palatine part varies (about a quarter to a third). This page just says the posterior part.",
-  "<strong>Number of facial bones.</strong> 14 including the mandible (13 without it). The lecture also says the ethmoid, sphenoid and sometimes the frontal are 'sometimes included'. Counts differ between texts, so use the 22 = 8 + 14 split unless told otherwise."
- ],
+ "checks": [],
  "sources": [
   {
    "name": "StatPearls, Anatomy, Head and Neck, Skull",
