@@ -408,7 +408,8 @@ SINA.lectures["anat3-sinuses"] = {
   },
   "kind": "model",
   "intro": "",
-  "model3d": {
+  "models": [{"title": "Human skull, schematically colored", "embed": "d1d1aed420424c8db784391ad8261a2f", "url": "https://sketchfab.com/3d-models/human-skull-schemically-colored-bone-anatomy-d1d1aed420424c8db784391ad8261a2f", "how": "Drag to rotate, pinch or scroll to zoom. Find the four bones that hold the sinuses: the frontal above the orbits, the ethmoid between them, the sphenoid behind, and the maxilla below. The piriform aperture at the front is the bony opening of the nasal cavity.", "credit": "3D model: Human Skull: Schematically Colored Bone Anatomy by The Center for BioMedical Visualization at SGU (SGUMedArt) on Sketchfab. A bone model: it shows the bones the sinuses sit in, not the air spaces. Needs an internet connection.", "tab": "Bones"}],
+"model3d": {
    "title": "Human skull, schematically colored",
    "embed": "d1d1aed420424c8db784391ad8261a2f",
    "url": "https://sketchfab.com/3d-models/human-skull-schemically-colored-bone-anatomy-d1d1aed420424c8db784391ad8261a2f",

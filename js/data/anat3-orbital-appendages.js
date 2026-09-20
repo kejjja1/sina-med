@@ -264,7 +264,8 @@ SINA.lectures["anat3-orbital-appendages"] = {
   },
   "kind": "model",
   "intro": "",
-  "model3d": {
+  "models": [{"title": "Bones of the orbit", "embed": "c58a9186b52d4d62814b7e6e3164e032", "url": "https://sketchfab.com/3d-models/bones-of-the-orbit-c58a9186b52d4d62814b7e6e3164e032", "how": "Drag to rotate, pinch or scroll to zoom. Find the lacrimal fossa in the superolateral roof, where the lacrimal gland sits, and the lacrimal groove on the medial wall leading into the nasolacrimal canal, the route tears take to the nose.", "credit": "3D model: Bones of the orbit by Cristina Sala on Sketchfab, licensed CC BY-SA 4.0. Based on BodyParts3D, © Database Center for Life Science, CC BY-SA 2.1 Japan. This is a bone model: it shows where the soft structures sit, not the structures themselves. Needs an internet connection.", "tab": "Bones"}],
+"model3d": {
    "title": "Bones of the orbit",
    "embed": "c58a9186b52d4d62814b7e6e3164e032",
    "url": "https://sketchfab.com/3d-models/bones-of-the-orbit-c58a9186b52d4d62814b7e6e3164e032",

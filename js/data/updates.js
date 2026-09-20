@@ -4,6 +4,14 @@ window.SINA = window.SINA || { subjects: [], lectures: {} };
 SINA.updated = "20 September 2026";
 SINA.updates = [
   { date: "20 September 2026", items: [
+    "New lecture: Anatomy of the larynx, with 28 questions and 47 flashcards, on a new larynx diagram.",
+    "Search now ranks lectures whose titles match first.",
+    "New lecture: Anatomy of the nasal cavity, with 28 questions and 39 flashcards.",
+    "Search bar at the top: type any keyword to jump to a lecture, subject or past paper.",
+    "The menu now stays open on a wide screen; the button hides and shows it.",
+    "Some lectures now have two 3D models, bones and muscles, with a switch between them.",
+    "Resources now list recommended YouTube channels and anatomy apps.",
+    "The note at the end of a lecture can be closed for good with the X.",
     "New lecture: Nose and paranasal sinuses, with 24 questions and 28 flashcards, on a new nasal cavity diagram.",
     "New lecture: Oral cavity proper, tongue and palate, with 34 questions and 37 flashcards, on a new mouth diagram.",
     "New lecture: Motor and sensory innervation of the eye, with 24 questions and 30 flashcards.",

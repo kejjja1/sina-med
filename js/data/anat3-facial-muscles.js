@@ -280,7 +280,8 @@ SINA.lectures["anat3-facial-muscles"] = {
   },
   "kind": "model",
   "intro": "",
-  "model3d": {
+  "models": [{"title": "Muscles of the head and neck", "embed": "d1d1aed420424c8db784391ad8261a2f", "url": "https://sketchfab.com/3d-models/human-skull-schemically-colored-bone-anatomy-d1d1aed420424c8db784391ad8261a2f", "how": "Drag to rotate, pinch or scroll to zoom. Use it to find the bony landmarks these muscles attach to: the zygomatic arch (masseter), the temporal fossa (temporalis), the coronoid process and the angle of the mandible, and the pterygoid plates behind the maxilla.", "credit": "3D model: Human Skull: Schematically Colored Bone Anatomy by The Center for BioMedical Visualization at SGU (SGUMedArt) on Sketchfab. This is a bone model, not a muscle model: it shows the attachments, not the muscles themselves. Needs an internet connection.", "tab": "Bones"}, {"title": "Head and neck muscles", "tab": "Muscles", "embed": "99717ac9c0434ac59fc5efd3d1dc3471", "url": "https://sketchfab.com/3d-models/head-anatomy-for-artist-99717ac9c0434ac59fc5efd3d1dc3471", "how": "Drag to rotate, pinch or scroll to zoom. One side shows the colour-coded muscles of the head and neck, the other the skin of the face, so you can flip between surface and depth.", "credit": "3D model: Head anatomy for artist on Sketchfab, colour-coded muscles of the head with the facial skin on the opposite side. An artist's anatomy model, not a medical atlas. Needs an internet connection."}],
+"model3d": {
    "title": "Muscles of the head and neck",
    "embed": "d1d1aed420424c8db784391ad8261a2f",
    "url": "https://sketchfab.com/3d-models/human-skull-schemically-colored-bone-anatomy-d1d1aed420424c8db784391ad8261a2f",

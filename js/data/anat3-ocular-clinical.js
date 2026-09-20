@@ -247,7 +247,8 @@ SINA.lectures["anat3-ocular-clinical"] = {
   },
   "kind": "model",
   "intro": "",
-  "model3d": {
+  "models": [{"title": "Bones of the orbit", "embed": "c58a9186b52d4d62814b7e6e3164e032", "url": "https://sketchfab.com/3d-models/bones-of-the-orbit-c58a9186b52d4d62814b7e6e3164e032", "how": "Drag to rotate, pinch or scroll to zoom. Compare the thin floor, made of maxilla over the maxillary sinus, with the thick lateral wall of zygomatic bone and greater wing of sphenoid. That difference is why the floor blows out first.", "credit": "3D model: Bones of the orbit by Cristina Sala on Sketchfab, licensed CC BY-SA 4.0. Based on BodyParts3D, © Database Center for Life Science, CC BY-SA 2.1 Japan. Needs an internet connection.", "tab": "Bones"}],
+"model3d": {
    "title": "Bones of the orbit",
    "embed": "c58a9186b52d4d62814b7e6e3164e032",
    "url": "https://sketchfab.com/3d-models/bones-of-the-orbit-c58a9186b52d4d62814b7e6e3164e032",

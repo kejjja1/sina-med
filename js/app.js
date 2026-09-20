@@ -107,11 +107,34 @@
   }
 
   /* ---------- 3D viewer (Sketchfab embed, loaded on tap) and figures ---------- */
-  function viewer3dHTML(m) {
-    return '<div class="viewer3d"><div class="frame" data-embed="' + esc(m.embed) + '" data-title="' + esc(m.title) + '"><button class="btn primary load3d" type="button">Load the 3D model</button></div>' +
-      '<p class="how">' + esc(m.how) + '</p><p class="credit">' + esc(m.credit) + ' <a href="' + esc(m.url) + '" target="_blank" rel="noopener">Open on Sketchfab</a></p></div>';
+  function viewer3dHTML(list) {
+    var models = Array.isArray(list) ? list : [list], i = 0;
+    var tabs = models.length > 1
+      ? '<div class="model-switch" role="group" aria-label="Choose a model">' + models.map(function (m, n) {
+          return '<button type="button" data-m="' + n + '" aria-pressed="' + (n === 0) + '">' + esc(m.tab || m.title) + "</button>";
+        }).join("") + "</div>"
+      : "";
+    return '<div class="viewer3d" data-models=\'' + esc(JSON.stringify(models)).replace(/'/g, "&#39;") + '\'>' + tabs + '<div class="mbody"></div></div>';
+  }
+  function renderModel(box, n) {
+    var models = JSON.parse(box.getAttribute("data-models").replace(/&#39;/g, "'"));
+    var m = models[n];
+    box.querySelector(".mbody").innerHTML = '<div class="frame" data-embed="' + esc(m.embed) + '" data-title="' + esc(m.title) + '"><button class="btn primary load3d" type="button">Load the 3D model</button></div>' +
+      '<p class="how">' + esc(m.how) + '</p><p class="credit">' + esc(m.credit) + ' <a href="' + esc(m.url) + '" target="_blank" rel="noopener">Open on Sketchfab</a></p>';
+    wireMedia(box);
   }
   function wireMedia(root) {
+    root.querySelectorAll(".viewer3d").forEach(function (box) {
+      if (box.dataset.wired) return;
+      box.dataset.wired = "1";
+      box.querySelectorAll(".model-switch button").forEach(function (b) {
+        b.addEventListener("click", function () {
+          box.querySelectorAll(".model-switch button").forEach(function (x) { x.setAttribute("aria-pressed", String(x === b)); });
+          renderModel(box, +b.dataset.m);
+        });
+      });
+      renderModel(box, 0);
+    });
     root.querySelectorAll(".load3d").forEach(function (b) {
       b.addEventListener("click", function () {
         var f = b.parentNode;
@@ -158,6 +181,8 @@
     drawer.scrollTop = 0;
     drawer.querySelector(".dclose").addEventListener("click", closeDrawer);
     drawer.querySelectorAll("a").forEach(function (a) { a.addEventListener("click", closeDrawer); });
+    var dc = drawer.querySelector(".dclose");
+    if (dc) dc.textContent = document.body.classList.contains("pinned") ? "Hide" : "Close";
     drawer.querySelectorAll(".accbtn").forEach(function (btn) {
       btn.addEventListener("click", function () {
         var acc = btn.parentNode, open = !acc.classList.contains("open");
@@ -177,15 +202,85 @@
     drawer.querySelector(".dclose").focus();
   }
   function closeDrawer() {
+    if (document.body.classList.contains("pinned")) return;
     if (drawer.hidden) return;
     drawer.hidden = true; backdrop.hidden = true;
     document.body.classList.remove("noscroll");
     menuBtn.setAttribute("aria-expanded", "false");
     menuBtn.focus();
   }
-  menuBtn.addEventListener("click", function () { drawer.hidden ? openDrawer() : closeDrawer(); });
+  var DESKTOP = function () { return window.matchMedia("(min-width: 60rem)").matches; };
+  function setPinned(on) {
+    store.set("sina:pinned", on);
+    document.body.classList.toggle("pinned", on);
+    if (on) { drawer.hidden = false; renderDrawer(); backdrop.hidden = true; document.body.classList.remove("noscroll"); }
+    else { drawer.hidden = true; backdrop.hidden = true; document.body.classList.remove("noscroll"); }
+    menuBtn.setAttribute("aria-expanded", String(on));
+  }
+  function applyLayout() {
+    if (DESKTOP()) setPinned(store.get("sina:pinned", true));
+    else { document.body.classList.remove("pinned"); if (drawer.hidden !== true && backdrop.hidden) drawer.hidden = true; }
+  }
+  window.addEventListener("resize", applyLayout);
+  menuBtn.addEventListener("click", function () {
+    if (DESKTOP()) { setPinned(!document.body.classList.contains("pinned")); return; }
+    drawer.hidden ? openDrawer() : closeDrawer();
+  });
   backdrop.addEventListener("click", closeDrawer);
-  document.addEventListener("keydown", function (e) { if (e.key === "Escape") closeDrawer(); });
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape") { closeDrawer(); hideSearch(); } });
+  drawer.querySelector && 0;
+
+  /* ---------- search ---------- */
+  function searchIndex() {
+    var out = [];
+    S.subjects.forEach(function (sub) {
+      out.push({ kind: "Subject", title: sub.name, sub: sub.semester, href: sub.groups ? "#/subject/" + sub.id : null, hay: sub.name + " " + (sub.blurb || "") });
+      (sub.groups || []).forEach(function (g) {
+        g.items.forEach(function (it) {
+          var lec = S.lectures[it.id], extra = "";
+          if (lec) extra = (lec.exam || []).join(" ") + " " + (lec.summary || []).map(function (x) { return x.title; }).join(" ");
+          out.push({ kind: lec ? "Lecture" : "Coming soon", title: it.title, sub: sub.name + " \u00b7 " + g.name,
+                     href: lec ? "#/lecture/" + it.id : null, hay: it.title + " " + g.name + " " + sub.name + " " + extra });
+        });
+      });
+    });
+    (S.papers || []).forEach(function (x) {
+      out.push({ kind: "Past paper", title: x.title, sub: (subjectById(x.subject) || {}).name || "", href: "#/paper/" + x.id, hay: x.title + " " + (x.year || "") });
+    });
+    return out;
+  }
+  var IDX = null, sBox = document.getElementById("search"), sInput = document.getElementById("search-input"), sRes = document.getElementById("search-results");
+  function hideSearch() { sRes.hidden = true; sBox.classList.remove("open"); }
+  function runSearch() {
+    var q = sInput.value.trim().toLowerCase();
+    if (q.length < 2) { hideSearch(); return; }
+    if (!IDX) IDX = searchIndex();
+    var words = q.split(/\s+/);
+    var scored = [];
+    IDX.forEach(function (r) {
+      var title = r.title.toLowerCase(), hay = r.hay.toLowerCase();
+      var inTitle = words.every(function (w) { return title.indexOf(w) > -1; });
+      var inAll = words.every(function (w) { return hay.indexOf(w) > -1; });
+      var anyTitle = words.some(function (w) { return title.indexOf(w) > -1; });
+      if (!inTitle && !inAll && !anyTitle) return;
+      var score = inTitle ? 0 : anyTitle ? 1 : 2;
+      if (r.kind === "Lecture") score -= 0.5;
+      scored.push({ r: r, score: score });
+    });
+    scored.sort(function (a, b) { return a.score - b.score; });
+    var hits = scored.slice(0, 20).map(function (x) { return x.r; });
+    sRes.innerHTML = hits.length
+      ? hits.map(function (r) {
+          var inner = '<span class="sk">' + esc(r.kind) + '</span><span class="st">' + esc(r.title) + '</span><span class="ss">' + esc(r.sub) + "</span>";
+          return r.href ? '<a href="' + r.href + '">' + inner + "</a>" : '<span class="dim">' + inner + "</span>";
+        }).join("")
+      : '<p class="none">Nothing matches that yet.</p>';
+    sRes.hidden = false; sBox.classList.add("open");
+    sRes.querySelectorAll("a").forEach(function (a) { a.addEventListener("click", function () { sInput.value = ""; hideSearch(); }); });
+  }
+  sInput.addEventListener("input", runSearch);
+  sInput.addEventListener("focus", runSearch);
+  document.addEventListener("click", function (e) { if (!sBox.contains(e.target)) hideSearch(); });
 
   /* ---------- generic labelled figure (schematic, drawn for this site) ---------- */
   function figArrow(a) {
@@ -243,12 +338,17 @@
     }
     var html = '<div class="wrap wide"><section class="hero"><div><h1>Study each lecture, then test yourself on it.</h1>' +
       '<p class="lede">Summaries, exam points, questions, flashcards and extra reading for every lecture of the promo. Each page is built from the lecture slides and checked against other references.</p>' +
-      '<div class="row"><a class="btn primary" href="#/lecture/anat3-orbit">Try the first lecture</a><a class="btn" href="#/subject/anat3">Browse Anatomy 3</a><a class="btn" href="#/papers">Past papers</a></div>' +
+      '<div class="row"><a class="btn primary" href="#/lecture/anat3-orbit">Try the first lecture</a><button class="btn" type="button" id="browse-subjects">Browse subjects</button><a class="btn" href="#/papers">Past papers</a></div>' +
       (S.updated ? '<p class="meta" style="margin-top:1.4rem">Last updated ' + esc(S.updated) + '. <a href="#/updates">What\'s new' + (newBadge() ? ' <span class="badge">new</span>' : "") + "</a>.</p>" : "") + '</div>' +
       '</section>' +
-      '<h2>Subjects</h2><h3 class="sem-title">Semester 3</h3><ul class="subject-list">' + sems.S3.map(row).join("") + '</ul>' +
+      '<h2 id="subjects">Subjects</h2><h3 class="sem-title">Semester 3</h3><ul class="subject-list">' + sems.S3.map(row).join("") + '</ul>' +
       '<h3 class="sem-title">Semester 4</h3><ul class="subject-list">' + sems.S4.map(row).join("") + "</ul></div>";
     setView(html, "");
+    var bb = document.getElementById("browse-subjects");
+    if (bb) bb.addEventListener("click", function () {
+      var t = document.getElementById("subjects");
+      if (t) t.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
   }
 
   function subjectView(id) {
@@ -266,7 +366,15 @@
     setView(html + "</div>", s.name);
   }
 
-  var PSA = '<div class="psa"><strong>A quick word before you close this.</strong> Everything here is a study aid built from the lecture slides, not a replacement for them. Sit in your lectures, read your professor\'s slides and your textbooks, and use this site to make sense of them, revise them and test yourself. If something here disagrees with your professor, your professor is right.</div>';
+  function psaHTML() {
+    if (store.get("sina:psaDismissed", false)) return "";
+    return PSA;
+  }
+  var PSA = '<div class="psa"><button class="psa-close" type="button" aria-label="Close this note for good">&times;</button><strong>A quick word before you close this.</strong> Everything here is a study aid built from the lecture slides, not a replacement for them. Sit in your lectures, read your professor\'s slides and your textbooks, and use this site to make sense of them, revise them and test yourself. If something here disagrees with your professor, your professor is right.</div>';
+  function wirePSA(root) {
+    var x = root.querySelector(".psa-close");
+    if (x) x.addEventListener("click", function () { store.set("sina:psaDismissed", true); x.closest(".psa").remove(); });
+  }
   var TABS = [["summary", "Summary"], ["visual", "Visual"], ["questions", "Questions"], ["cards", "Flashcards"], ["deeper", "Go deeper"], ["resources", "Resources"]];
 
   function lectureView(id, tab) {
@@ -279,13 +387,14 @@
       '<p class="meta">Source: ' + (lec.sourceUrl ? '<a class="srclink" href="' + esc(lec.sourceUrl) + '" target="_blank" rel="noopener">' + esc(lec.sourceFile) + "</a>" : esc(lec.sourceFile)) + "</p>" +
       '<div class="tabs" role="tablist" aria-label="Lecture sections">' + TABS.map(function (t) {
         return '<button class="tab" role="tab" id="tab-' + t[0] + '" aria-selected="' + (t[0] === tab) + '" data-tab="' + t[0] + '">' + t[1] + "</button>";
-      }).join("") + '</div><div id="panel" role="tabpanel" aria-labelledby="tab-' + tab + '"></div>' + PSA + "</div>";
+      }).join("") + '</div><div id="panel" role="tabpanel" aria-labelledby="tab-' + tab + '"></div>' + psaHTML() + "</div>";
     setView(html, lec.title);
     var panel = document.getElementById("panel");
     ({ summary: summaryPanel, visual: visualPanel, questions: questionsPanel, cards: cardsPanel, deeper: deeperPanel, resources: resourcesPanel })[tab](panel, lec);
     app.querySelectorAll(".tab").forEach(function (b) {
       b.addEventListener("click", function () { location.hash = "#/lecture/" + id + "/" + b.dataset.tab; });
     });
+    wirePSA(app);
   }
 
   function summaryPanel(p, lec) {
@@ -301,13 +410,13 @@
     var v = lec.visual, layer = "walls";
     var hints = { walls: "Tap a wall to see which bones form it.", margins: "Tap a green edge to see which bones form that part of the rim.", openings: "Tap a dark opening to see what passes through it.", landmarks: "Tap a dashed outline to see what it is." };
     if (!v.regions) {
-      var h2 = v.model3d ? "<h2 style='margin-top:0'>3D model</h2>" + viewer3dHTML(v.model3d) : "";
+      var h2 = v.model3d ? "<h2 style='margin-top:0'>3D model</h2>" + viewer3dHTML(v.models || v.model3d) : "";
       if (v.figure) h2 += "<h2" + (h2 ? "" : " style='margin-top:0'") + ">Labelled schematic</h2><p>" + esc(v.figure.caption || "Schematic drawn for this site, not to scale.") + '</p><div class="diagram-box">' + figureSVG(v.figure, { uid: "vis" }) + "</div>";
       p.innerHTML = h2 || "<p>No visual for this lecture yet.</p>";
       wireMedia(p);
       return;
     }
-    var m3 = v.model3d ? "<h2 style='margin-top:0'>3D model</h2>" + viewer3dHTML(v.model3d) + "<h2>Labeled schematic</h2>" : "";
+    var m3 = v.model3d ? "<h2 style='margin-top:0'>3D model</h2>" + viewer3dHTML(v.models || v.model3d) + "<h2>Labeled schematic</h2>" : "";
     p.innerHTML = m3 + "<p>" + esc(v.intro) + '</p><div class="layer-switch" role="group" aria-label="Diagram layer">' + ["walls", "margins", "openings", "landmarks"].map(function (l) { return '<button data-layer="' + l + '" aria-pressed="' + (l === layer) + '">' + l.charAt(0).toUpperCase() + l.slice(1) + "</button>"; }).join("") +
       '</div><div class="diagram-box" id="dia"></div><div class="info" id="info" aria-live="polite"></div>';
     var dia = document.getElementById("dia"), info = document.getElementById("info");
@@ -435,6 +544,15 @@
         return '<li class="rcard"><a class="rlink" href="' + esc(r.url) + '" target="_blank" rel="noopener"><span class="rthumb" data-host="' + esc(hostOf(r.url)) + '"><img loading="lazy" alt="" src="' + esc(previewSrc(r)) + '"><span class="rkind">' + esc(r.kind) + '</span></span>' +
           '<span class="rbody"><span class="t">' + esc(r.title) + '</span><span class="w">' + esc(r.why) + '</span><span class="dom">' + esc(hostOf(r.url)) + "</span>" + (r.note ? '<span class="n">' + esc(r.note) + "</span>" : "") + "</span></a></li>";
       }).join("") + "</ul>";
+    var sub = subjectById(lec.subject), extra = "";
+    var chans = (S.channels && (S.channels[lec.id] || S.channels[lec.subject])) || [];
+    if (chans.length) extra += "<h2>Channels worth following</h2><ul class=\"rgrid\">" + chans.map(function (r) {
+      return '<li class="rcard"><a class="rlink" href="' + esc(r.url) + '" target="_blank" rel="noopener"><span class="rthumb" data-host="' + esc(hostOf(r.url)) + '"><img loading="lazy" alt="" src="' + esc(previewSrc(r)) + '"><span class="rkind">Channel</span></span><span class="rbody"><span class="t">' + esc(r.title) + '</span><span class="w">' + esc(r.why) + '</span><span class="dom">' + esc(hostOf(r.url)) + "</span></span></a></li>";
+    }).join("") + "</ul>";
+    if (S.apps && S.apps.length) extra += "<h2>Apps and practice sites</h2><ul class=\"rgrid\">" + S.apps.map(function (r) {
+      return '<li class="rcard"><a class="rlink" href="' + esc(r.url) + '" target="_blank" rel="noopener"><span class="rthumb" data-host="' + esc(hostOf(r.url)) + '"><img loading="lazy" alt="" src="' + esc(previewSrc(r)) + '"><span class="rkind">' + esc(r.kind) + '</span></span><span class="rbody"><span class="t">' + esc(r.title) + '</span><span class="w">' + esc(r.why) + '</span><span class="dom">' + esc(hostOf(r.url)) + "</span>" + (r.note ? '<span class="n">' + esc(r.note) + "</span>" : "") + "</span></a></li>";
+    }).join("") + "</ul>";
+    if (extra) p.insertAdjacentHTML("beforeend", extra);
     p.querySelectorAll(".rthumb img").forEach(function (img) {
       img.addEventListener("error", function () {
         var box = img.parentNode; img.remove();
@@ -516,6 +634,8 @@
     });
   }
   showWelcome();
+
+  applyLayout();
 
   /* ---------- router ---------- */
   function route() {

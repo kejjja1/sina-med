@@ -315,7 +315,8 @@ SINA.lectures["anat3-oral-cavity"] = {
   },
   "kind": "model",
   "intro": "",
-  "model3d": {
+  "models": [{"title": "Human skull, schematically colored", "embed": "d1d1aed420424c8db784391ad8261a2f", "url": "https://sketchfab.com/3d-models/human-skull-schemically-colored-bone-anatomy-d1d1aed420424c8db784391ad8261a2f", "how": "Drag to rotate, pinch or scroll to zoom, and look at the skull from below. The bony roof of the mouth is there: the palatine processes of the maxillae in front and the horizontal plates of the palatine bones behind, ringed by the alveolar arches that hold the teeth.", "credit": "3D model: Human Skull: Schematically Colored Bone Anatomy by The Center for BioMedical Visualization at SGU (SGUMedArt) on Sketchfab. A bone model: it shows the hard palate, not the soft tissues. Needs an internet connection.", "tab": "Bones"}, {"title": "Head and neck muscles", "tab": "Muscles", "embed": "99717ac9c0434ac59fc5efd3d1dc3471", "url": "https://sketchfab.com/3d-models/head-anatomy-for-artist-99717ac9c0434ac59fc5efd3d1dc3471", "how": "Drag to rotate, pinch or scroll to zoom. One side shows the colour-coded muscles of the head and neck, the other the skin of the face, so you can flip between surface and depth.", "credit": "3D model: Head anatomy for artist on Sketchfab, colour-coded muscles of the head with the facial skin on the opposite side. An artist's anatomy model, not a medical atlas. Needs an internet connection."}],
+"model3d": {
    "title": "Human skull, schematically colored",
    "embed": "d1d1aed420424c8db784391ad8261a2f",
    "url": "https://sketchfab.com/3d-models/human-skull-schemically-colored-bone-anatomy-d1d1aed420424c8db784391ad8261a2f",

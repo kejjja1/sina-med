@@ -483,7 +483,8 @@ SINA.lectures["anat3-face-osteology"] = {
   },
   "kind": "model",
   "intro": "",
-  "model3d": {
+  "models": [{"title": "Human skull, schematically colored", "embed": "d1d1aed420424c8db784391ad8261a2f", "url": "https://sketchfab.com/3d-models/human-skull-schemically-colored-bone-anatomy-d1d1aed420424c8db784391ad8261a2f", "how": "Drag to rotate, pinch or scroll to zoom. The bones are colored differently so you can see where one bone ends and the next begins. Use the Summary tab to name them. Turn the skull to look at it from the front, the side and below.", "credit": "3D model: Human Skull: Schematically Colored Bone Anatomy by The Center for BioMedical Visualization at SGU (SGUMedArt) on Sketchfab, embedded with Sketchfab's own viewer. Proportions derived from a real skull scan, with reference meshes from BodyParts3D (CC BY-SA 2.1 Japan). Needs an internet connection.", "tab": "Bones"}, {"title": "Head and neck muscles", "tab": "Muscles", "embed": "99717ac9c0434ac59fc5efd3d1dc3471", "url": "https://sketchfab.com/3d-models/head-anatomy-for-artist-99717ac9c0434ac59fc5efd3d1dc3471", "how": "Drag to rotate, pinch or scroll to zoom. One side shows the colour-coded muscles of the head and neck, the other the skin of the face, so you can flip between surface and depth.", "credit": "3D model: Head anatomy for artist on Sketchfab, colour-coded muscles of the head with the facial skin on the opposite side. An artist's anatomy model, not a medical atlas. Needs an internet connection."}],
+"model3d": {
    "title": "Human skull, schematically colored",
    "embed": "d1d1aed420424c8db784391ad8261a2f",
    "url": "https://sketchfab.com/3d-models/human-skull-schemically-colored-bone-anatomy-d1d1aed420424c8db784391ad8261a2f",
