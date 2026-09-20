@@ -135,7 +135,8 @@
   function renderDrawer() {
     accN = 0;
     var h = '<div class="dhead"><span class="wordmark">Sina<span>.</span></span><button class="btn dclose" type="button">Close</button></div>' +
-      '<a class="dlink" href="#/">Home</a><a class="dlink" href="#/papers">Past papers</a>';
+      '<a class="dlink" href="#/">Home</a><a class="dlink" href="#/papers">Past papers</a>' +
+      '<a class="dlink" href="#/updates"><span>What\'s new</span>' + (newBadge() ? '<span class="badge">new</span>' : "") + "</a>";
     ["S3", "S4"].forEach(function (sem) {
       h += '<p class="dsem">Semester ' + sem.charAt(1) + "</p>";
       S.subjects.filter(function (x) { return x.semester === sem; }).forEach(function (sub) {
@@ -204,7 +205,8 @@
     }
     var html = '<div class="wrap wide"><section class="hero"><div><h1>Study each lecture, then test yourself on it.</h1>' +
       '<p class="lede">Summaries, exam points, questions, flashcards and extra reading for every lecture of the promo. Each page is built from the lecture slides and checked against other references.</p>' +
-      '<div class="row"><a class="btn primary" href="#/lecture/anat3-orbit">Try the first lecture</a><a class="btn" href="#/subject/anat3">Browse Anatomy 3</a><a class="btn" href="#/papers">Past papers</a></div></div>' +
+      '<div class="row"><a class="btn primary" href="#/lecture/anat3-orbit">Try the first lecture</a><a class="btn" href="#/subject/anat3">Browse Anatomy 3</a><a class="btn" href="#/papers">Past papers</a></div>' +
+      (S.updated ? '<p class="meta" style="margin-top:1.4rem">Last updated ' + esc(S.updated) + '. <a href="#/updates">What\'s new' + (newBadge() ? ' <span class="badge">new</span>' : "") + "</a>.</p>" : "") + '</div>' +
       '</section>' +
       '<h2>Subjects</h2><h3 class="sem-title">Semester 3</h3><ul class="subject-list">' + sems.S3.map(row).join("") + '</ul>' +
       '<h3 class="sem-title">Semester 4</h3><ul class="subject-list">' + sems.S4.map(row).join("") + "</ul></div>";
@@ -432,6 +434,25 @@
     setView('<div class="wrap"><h1>Not built yet</h1><p>This lecture is on the list, but its page is not ready. <a href="#/">Back to the home page</a>.</p></div>', "Not ready");
   }
 
+  /* ---------- what's new ---------- */
+  function newBadge() {
+    var latest = (S.updates && S.updates[0] && S.updates[0].date) || null;
+    return latest ? store.get("sina:seenUpdate", null) !== latest : false;
+  }
+  function updatesView() {
+    var list = S.updates || [];
+    var html = '<div class="wrap"><p class="crumbs"><a href="#/">Home</a> / What\'s new</p><h1>What\'s new</h1>' +
+      (S.updated ? '<p class="meta">Last updated ' + esc(S.updated) + ".</p>" : "");
+    if (!list.length) html += "<p>No updates recorded yet.</p>";
+    list.forEach(function (u, i) {
+      html += '<div class="upd' + (i === 0 ? " latest" : "") + '"><h2>' + esc(u.date) + "</h2><ul>" +
+        u.items.map(function (x) { return "<li>" + esc(x) + "</li>"; }).join("") + "</ul></div>";
+    });
+    html += '<p class="src">If the site looks out of date on your device, close the tab and open it again.</p>';
+    setView(html + "</div>", "What's new");
+    if (list[0]) store.set("sina:seenUpdate", list[0].date);
+  }
+
   /* ---------- welcome screen ---------- */
   function showWelcome() {
     var w = document.getElementById("welcome");
@@ -455,6 +476,7 @@
     var parts = location.hash.replace(/^#\/?/, "").split("/").filter(Boolean);
     if (!drawer.hidden) closeDrawer();
     if (!parts.length) return homeView();
+    if (parts[0] === "updates") return updatesView();
     if (parts[0] === "papers") return papersView(parts[1]);
     if (parts[0] === "paper") return paperView(parts[1]);
     if (parts[0] === "subject") return subjectView(parts[1]);

@@ -326,3 +326,9 @@ body.noscroll { overflow: hidden; }
 .wbox p { color: var(--muted); font-size: 1.05rem; }
 .btn.big { font-size: 1.1rem; padding: 0.8rem 2rem; margin-top: 1.2rem; }
 .wsmall { font-size: 0.85rem; margin-top: 1.2rem; }
+
+/* what's new */
+.badge { display: inline-block; font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; background: var(--accent); color: var(--accent-ink); border-radius: 999px; padding: 0.08rem 0.5rem; margin-left: 0.4rem; vertical-align: 1px; }
+.upd { border-top: 1px solid var(--line); padding: 0.6rem 0 0.4rem; }
+.upd h2 { font-size: 1.2rem; margin: 0.6rem 0 0.4rem; }
+.upd.latest h2::after { content: "latest"; font-family: var(--sans); font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; background: var(--accent-soft); color: var(--ink); border-radius: 999px; padding: 0.1rem 0.5rem; margin-left: 0.6rem; vertical-align: 3px; }

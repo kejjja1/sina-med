@@ -5,7 +5,7 @@ SINA.lectures["anat3-facial-muscles"] = {
  "group": "Face and orbit",
  "title": "Muscles of the facio-maxillary region",
  "sourceFile": "2. Muscles of face.pptx (Facio-Maxillary Module, Prof. Zehra Jamil Sohail)",
- "sourceUrl": "https://drive.google.com/drive/folders/11sTN_ZxtN0sYsE6vNGbXKdFiHyZuf36K",
+ "sourceUrl": "https://drive.google.com/file/d/1dzsbGH6igdIto7nSD7nVj-dbhY-pqsdR/view?usp=drivesdk",
  "buildNote": "<strong>Built from the lecture slides.</strong> This page follows the lecture: the facial muscles group by group, the branches of the facial nerve, the muscles of mastication and the temporomandibular joint. Every fact was cross-checked against at least two references, listed at the bottom. If your professor says something different, trust your professor.",
  "summary": [
   {
