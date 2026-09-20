@@ -4,6 +4,7 @@ window.SINA = window.SINA || { subjects: [], lectures: {} };
 SINA.updated = "20 September 2026";
 SINA.updates = [
   { date: "20 September 2026", items: [
+    "New lecture: Blood supply of the facio-maxillary region, with 24 questions and 26 flashcards.",
     "New lecture: Muscles of the facio-maxillary region, with 20 questions and 32 flashcards.",
     "Every lecture now links to its original PowerPoint on Drive.",
     "Questions with more than one correct answer are now possible: tick all of them, then press Check my answer.",
