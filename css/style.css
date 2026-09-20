@@ -383,3 +383,4 @@ svg.fig-svg { width: 100%; height: auto; display: block; }
 body.pinned .drawer { width: 19rem; }
 @media (min-width: 60rem) { body.pinned #app { margin-left: 19rem; } }
 .search input { height: 2.6rem; }
+.qfig { margin: 0 0 1rem; max-width: 34rem; }

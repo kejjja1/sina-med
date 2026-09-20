@@ -179,7 +179,9 @@
     });
     drawer.innerHTML = h;
     drawer.scrollTop = 0;
-    drawer.querySelector(".dclose").addEventListener("click", closeDrawer);
+    drawer.querySelector(".dclose").addEventListener("click", function () {
+      if (document.body.classList.contains("pinned")) setPinned(false); else closeDrawer();
+    });
     drawer.querySelectorAll("a").forEach(function (a) { a.addEventListener("click", closeDrawer); });
     var dc = drawer.querySelector(".dclose");
     if (dc) dc.textContent = document.body.classList.contains("pinned") ? "Hide" : "Close";
@@ -465,7 +467,10 @@
         return;
       }
       var q = qs[i], multi = !!(q.answers && q.answers.length > 1);
-      p.innerHTML = '<p class="qhead">Question ' + (i + 1) + " of " + qs.length + (multi ? ", choose all correct answers" : "") + '</p><div class="bar-track"><div class="bar-fill" style="width:' + (i / qs.length * 100) + '%"></div></div><p class="qtext">' + esc(q.q) + "</p>" +
+      var pic = (q.target && lec.visual && lec.visual.figure)
+        ? '<div class="diagram-box qfig">' + figureSVG(lec.visual.figure, { mode: "quiz", target: q.target, uid: "q" + i }) + "</div>"
+        : "";
+      p.innerHTML = '<p class="qhead">Question ' + (i + 1) + " of " + qs.length + (multi ? ", choose all correct answers" : "") + '</p><div class="bar-track"><div class="bar-fill" style="width:' + (i / qs.length * 100) + '%"></div></div><p class="qtext">' + esc(q.q) + "</p>" + pic +
         q.options.map(function (o, n) { return '<button class="opt" data-n="' + n + '" aria-pressed="false"><span class="letter">' + LET[n].toUpperCase() + "</span><span>" + esc(o) + "</span></button>"; }).join("") + (multi ? '<button class="btn primary" id="chk" type="button">Check my answer</button>' : "") + '<div id="fb"></div>';
       var opts = p.querySelectorAll(".opt");
       function finish(chosen) {

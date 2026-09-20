@@ -264,8 +264,17 @@ SINA.lectures["anat3-orbital-appendages"] = {
   },
   "kind": "model",
   "intro": "",
-  "models": [{"title": "Bones of the orbit", "embed": "c58a9186b52d4d62814b7e6e3164e032", "url": "https://sketchfab.com/3d-models/bones-of-the-orbit-c58a9186b52d4d62814b7e6e3164e032", "how": "Drag to rotate, pinch or scroll to zoom. Find the lacrimal fossa in the superolateral roof, where the lacrimal gland sits, and the lacrimal groove on the medial wall leading into the nasolacrimal canal, the route tears take to the nose.", "credit": "3D model: Bones of the orbit by Cristina Sala on Sketchfab, licensed CC BY-SA 4.0. Based on BodyParts3D, © Database Center for Life Science, CC BY-SA 2.1 Japan. This is a bone model: it shows where the soft structures sit, not the structures themselves. Needs an internet connection.", "tab": "Bones"}],
-"model3d": {
+  "models": [
+   {
+    "title": "Bones of the orbit",
+    "embed": "c58a9186b52d4d62814b7e6e3164e032",
+    "url": "https://sketchfab.com/3d-models/bones-of-the-orbit-c58a9186b52d4d62814b7e6e3164e032",
+    "how": "Drag to rotate, pinch or scroll to zoom. Find the lacrimal fossa in the superolateral roof, where the lacrimal gland sits, and the lacrimal groove on the medial wall leading into the nasolacrimal canal, the route tears take to the nose.",
+    "credit": "3D model: Bones of the orbit by Cristina Sala on Sketchfab, licensed CC BY-SA 4.0. Based on BodyParts3D, © Database Center for Life Science, CC BY-SA 2.1 Japan. This is a bone model: it shows where the soft structures sit, not the structures themselves. Needs an internet connection.",
+    "tab": "Bones"
+   }
+  ],
+  "model3d": {
    "title": "Bones of the orbit",
    "embed": "c58a9186b52d4d62814b7e6e3164e032",
    "url": "https://sketchfab.com/3d-models/bones-of-the-orbit-c58a9186b52d4d62814b7e6e3164e032",
@@ -549,6 +558,66 @@ SINA.lectures["anat3-orbital-appendages"] = {
     1
    ],
    "why": "The lecture names the medial and lateral palpebral ligaments in connection with the orbital part of orbicularis oculi."
+  },
+  {
+   "q": "Which structure is at the arrow?",
+   "target": "skin",
+   "options": [
+    "Skin",
+    "Palpebral conjunctiva",
+    "Cornea",
+    "Superior conjunctival fornix"
+   ],
+   "answer": 0,
+   "why": "The arrow points to the skin. The fully labelled diagram is on the Visual tab."
+  },
+  {
+   "q": "Which structure is at the arrow?",
+   "target": "subcut",
+   "options": [
+    "Tarsal plate",
+    "Loose CT and fat",
+    "Cilia (eyelashes)",
+    "Skin"
+   ],
+   "answer": 1,
+   "why": "The arrow points to the loose ct and fat. The fully labelled diagram is on the Visual tab."
+  },
+  {
+   "q": "Which structure is at the arrow?",
+   "target": "muscle",
+   "options": [
+    "Tarsal plate",
+    "Cilia (eyelashes)",
+    "Orbicularis oculi",
+    "Loose CT and fat"
+   ],
+   "answer": 2,
+   "why": "The arrow points to the orbicularis oculi. The fully labelled diagram is on the Visual tab."
+  },
+  {
+   "q": "Which structure is at the arrow?",
+   "target": "tarsus",
+   "options": [
+    "Tarsal (meibomian) glands",
+    "Skin",
+    "Superior conjunctival fornix",
+    "Tarsal plate"
+   ],
+   "answer": 3,
+   "why": "The arrow points to the tarsal plate. The fully labelled diagram is on the Visual tab."
+  },
+  {
+   "q": "Which structure is at the arrow?",
+   "target": "conj",
+   "options": [
+    "Palpebral conjunctiva",
+    "Loose CT and fat",
+    "Cornea",
+    "Tarsal plate"
+   ],
+   "answer": 0,
+   "why": "The arrow points to the palpebral conjunctiva. The fully labelled diagram is on the Visual tab."
   }
  ],
  "cards": [

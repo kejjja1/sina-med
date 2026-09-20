@@ -244,8 +244,17 @@ SINA.lectures["anat3-eye-innervation"] = {
   },
   "kind": "model",
   "intro": "",
-  "models": [{"title": "Bones of the orbit", "embed": "c58a9186b52d4d62814b7e6e3164e032", "url": "https://sketchfab.com/3d-models/bones-of-the-orbit-c58a9186b52d4d62814b7e6e3164e032", "how": "Drag to rotate, pinch or scroll to zoom. Find the optic canal, which carries CN II, and the superior orbital fissure beside it, the route taken by CN III, IV and VI and by the branches of V1 that carry the corneal reflex.", "credit": "3D model: Bones of the orbit by Cristina Sala on Sketchfab, licensed CC BY-SA 4.0. Based on BodyParts3D, © Database Center for Life Science, CC BY-SA 2.1 Japan. This is a bone model: it shows the openings the nerves use, not the nerves. Needs an internet connection.", "tab": "Bones"}],
-"model3d": {
+  "models": [
+   {
+    "title": "Bones of the orbit",
+    "embed": "c58a9186b52d4d62814b7e6e3164e032",
+    "url": "https://sketchfab.com/3d-models/bones-of-the-orbit-c58a9186b52d4d62814b7e6e3164e032",
+    "how": "Drag to rotate, pinch or scroll to zoom. Find the optic canal, which carries CN II, and the superior orbital fissure beside it, the route taken by CN III, IV and VI and by the branches of V1 that carry the corneal reflex.",
+    "credit": "3D model: Bones of the orbit by Cristina Sala on Sketchfab, licensed CC BY-SA 4.0. Based on BodyParts3D, © Database Center for Life Science, CC BY-SA 2.1 Japan. This is a bone model: it shows the openings the nerves use, not the nerves. Needs an internet connection.",
+    "tab": "Bones"
+   }
+  ],
+  "model3d": {
    "title": "Bones of the orbit",
    "embed": "c58a9186b52d4d62814b7e6e3164e032",
    "url": "https://sketchfab.com/3d-models/bones-of-the-orbit-c58a9186b52d4d62814b7e6e3164e032",
@@ -529,6 +538,66 @@ SINA.lectures["anat3-eye-innervation"] = {
     1
    ],
    "why": "Scotopic: night and dim light vision, served by rods, low visual acuity, no colours or details, great sensitivity to light. Photopic vision by cones gives colour and detail."
+  },
+  {
+   "q": "Which structure is at the arrow?",
+   "target": "retina",
+   "options": [
+    "Retina (both eyes)",
+    "Primary visual cortex",
+    "Optic radiation",
+    "Optic tract"
+   ],
+   "answer": 0,
+   "why": "The arrow points to the retina (both eyes). The fully labelled diagram is on the Visual tab."
+  },
+  {
+   "q": "Which structure is at the arrow?",
+   "target": "optic-nerve",
+   "options": [
+    "Optic tract",
+    "Optic nerve",
+    "Optic chiasm",
+    "Lateral geniculate nucleus"
+   ],
+   "answer": 1,
+   "why": "The arrow points to the optic nerve. The fully labelled diagram is on the Visual tab."
+  },
+  {
+   "q": "Which structure is at the arrow?",
+   "target": "chiasm",
+   "options": [
+    "Optic nerve",
+    "Optic tract",
+    "Optic chiasm",
+    "Primary visual cortex"
+   ],
+   "answer": 2,
+   "why": "The arrow points to the optic chiasm. The fully labelled diagram is on the Visual tab."
+  },
+  {
+   "q": "Which structure is at the arrow?",
+   "target": "tract",
+   "options": [
+    "Retina (both eyes)",
+    "Optic radiation",
+    "Optic nerve",
+    "Optic tract"
+   ],
+   "answer": 3,
+   "why": "The arrow points to the optic tract. The fully labelled diagram is on the Visual tab."
+  },
+  {
+   "q": "Which structure is at the arrow?",
+   "target": "lgn",
+   "options": [
+    "Lateral geniculate nucleus",
+    "Retina (both eyes)",
+    "Primary visual cortex",
+    "Optic chiasm"
+   ],
+   "answer": 0,
+   "why": "The arrow points to the lateral geniculate nucleus. The fully labelled diagram is on the Visual tab."
   }
  ],
  "cards": [

@@ -280,8 +280,25 @@ SINA.lectures["anat3-facial-muscles"] = {
   },
   "kind": "model",
   "intro": "",
-  "models": [{"title": "Muscles of the head and neck", "embed": "d1d1aed420424c8db784391ad8261a2f", "url": "https://sketchfab.com/3d-models/human-skull-schemically-colored-bone-anatomy-d1d1aed420424c8db784391ad8261a2f", "how": "Drag to rotate, pinch or scroll to zoom. Use it to find the bony landmarks these muscles attach to: the zygomatic arch (masseter), the temporal fossa (temporalis), the coronoid process and the angle of the mandible, and the pterygoid plates behind the maxilla.", "credit": "3D model: Human Skull: Schematically Colored Bone Anatomy by The Center for BioMedical Visualization at SGU (SGUMedArt) on Sketchfab. This is a bone model, not a muscle model: it shows the attachments, not the muscles themselves. Needs an internet connection.", "tab": "Bones"}, {"title": "Head and neck muscles", "tab": "Muscles", "embed": "99717ac9c0434ac59fc5efd3d1dc3471", "url": "https://sketchfab.com/3d-models/head-anatomy-for-artist-99717ac9c0434ac59fc5efd3d1dc3471", "how": "Drag to rotate, pinch or scroll to zoom. One side shows the colour-coded muscles of the head and neck, the other the skin of the face, so you can flip between surface and depth.", "credit": "3D model: Head anatomy for artist on Sketchfab, colour-coded muscles of the head with the facial skin on the opposite side. An artist's anatomy model, not a medical atlas. Needs an internet connection."}],
-"model3d": {
+  "models": [
+   {
+    "title": "Muscles of the head and neck",
+    "embed": "d1d1aed420424c8db784391ad8261a2f",
+    "url": "https://sketchfab.com/3d-models/human-skull-schemically-colored-bone-anatomy-d1d1aed420424c8db784391ad8261a2f",
+    "how": "Drag to rotate, pinch or scroll to zoom. Use it to find the bony landmarks these muscles attach to: the zygomatic arch (masseter), the temporal fossa (temporalis), the coronoid process and the angle of the mandible, and the pterygoid plates behind the maxilla.",
+    "credit": "3D model: Human Skull: Schematically Colored Bone Anatomy by The Center for BioMedical Visualization at SGU (SGUMedArt) on Sketchfab. This is a bone model, not a muscle model: it shows the attachments, not the muscles themselves. Needs an internet connection.",
+    "tab": "Bones"
+   },
+   {
+    "title": "Head and neck muscles",
+    "tab": "Muscles",
+    "embed": "99717ac9c0434ac59fc5efd3d1dc3471",
+    "url": "https://sketchfab.com/3d-models/head-anatomy-for-artist-99717ac9c0434ac59fc5efd3d1dc3471",
+    "how": "Drag to rotate, pinch or scroll to zoom. One side shows the colour-coded muscles of the head and neck, the other the skin of the face, so you can flip between surface and depth.",
+    "credit": "3D model: Head anatomy for artist on Sketchfab, colour-coded muscles of the head with the facial skin on the opposite side. An artist's anatomy model, not a medical atlas. Needs an internet connection."
+   }
+  ],
+  "model3d": {
    "title": "Muscles of the head and neck",
    "embed": "d1d1aed420424c8db784391ad8261a2f",
    "url": "https://sketchfab.com/3d-models/human-skull-schemically-colored-bone-anatomy-d1d1aed420424c8db784391ad8261a2f",
@@ -521,6 +538,66 @@ SINA.lectures["anat3-facial-muscles"] = {
     1
    ],
    "why": "The lecture names three extracapsular ligaments: the lateral, sphenomandibular and stylomandibular ligaments. They stabilise the joint."
+  },
+  {
+   "q": "Which structure is at the arrow?",
+   "target": "temporal-fossa",
+   "options": [
+    "Temporal fossa: temporalis origin",
+    "Ramus: masseter insertion",
+    "Pterygoid plates: pterygoid origins",
+    "Temporomandibular joint"
+   ],
+   "answer": 0,
+   "why": "The arrow points to the temporal fossa: temporalis origin. The fully labelled diagram is on the Visual tab."
+  },
+  {
+   "q": "Which structure is at the arrow?",
+   "target": "zyg-arch",
+   "options": [
+    "Condylar process (head and neck)",
+    "Zygomatic arch: masseter origin",
+    "Pterygoid plates: pterygoid origins",
+    "Coronoid process: temporalis insertion"
+   ],
+   "answer": 1,
+   "why": "The arrow points to the zygomatic arch: masseter origin. The fully labelled diagram is on the Visual tab."
+  },
+  {
+   "q": "Which structure is at the arrow?",
+   "target": "coronoid",
+   "options": [
+    "Pterygoid plates: pterygoid origins",
+    "Temporomandibular joint",
+    "Coronoid process: temporalis insertion",
+    "Zygomatic arch: masseter origin"
+   ],
+   "answer": 2,
+   "why": "The arrow points to the coronoid process: temporalis insertion. The fully labelled diagram is on the Visual tab."
+  },
+  {
+   "q": "Which structure is at the arrow?",
+   "target": "condyle",
+   "options": [
+    "Angle",
+    "Ramus: masseter insertion",
+    "Body of mandible",
+    "Condylar process (head and neck)"
+   ],
+   "answer": 3,
+   "why": "The arrow points to the condylar process (head and neck). The fully labelled diagram is on the Visual tab."
+  },
+  {
+   "q": "Which structure is at the arrow?",
+   "target": "tmj",
+   "options": [
+    "Temporomandibular joint",
+    "Zygomatic arch: masseter origin",
+    "Ramus: masseter insertion",
+    "Temporal fossa: temporalis origin"
+   ],
+   "answer": 0,
+   "why": "The arrow points to the temporomandibular joint. The fully labelled diagram is on the Visual tab."
   }
  ],
  "cards": [

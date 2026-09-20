@@ -301,8 +301,25 @@ SINA.lectures["anat3-blood-supply"] = {
   },
   "kind": "model",
   "intro": "",
-  "models": [{"title": "Human skull, schematically colored", "embed": "d1d1aed420424c8db784391ad8261a2f", "url": "https://sketchfab.com/3d-models/human-skull-schemically-colored-bone-anatomy-d1d1aed420424c8db784391ad8261a2f", "how": "Drag to rotate, pinch or scroll to zoom. Use it to place the vessels on bone: find the foramen spinosum and foramen ovale on the base of the skull (middle meningeal artery and the emissary vein to the cavernous sinus), the stylomastoid foramen (stylomastoid branch), the jugular foramen (internal jugular vein) and the neck of the mandible, where the external carotid ends.", "credit": "3D model: Human Skull: Schematically Colored Bone Anatomy by The Center for BioMedical Visualization at SGU (SGUMedArt) on Sketchfab. This is a bone model: it shows the openings the vessels use, not the vessels themselves. Needs an internet connection.", "tab": "Bones"}, {"title": "Head and neck muscles", "tab": "Muscles", "embed": "99717ac9c0434ac59fc5efd3d1dc3471", "url": "https://sketchfab.com/3d-models/head-anatomy-for-artist-99717ac9c0434ac59fc5efd3d1dc3471", "how": "Drag to rotate, pinch or scroll to zoom. One side shows the colour-coded muscles of the head and neck, the other the skin of the face, so you can flip between surface and depth.", "credit": "3D model: Head anatomy for artist on Sketchfab, colour-coded muscles of the head with the facial skin on the opposite side. An artist's anatomy model, not a medical atlas. Needs an internet connection."}],
-"model3d": {
+  "models": [
+   {
+    "title": "Human skull, schematically colored",
+    "embed": "d1d1aed420424c8db784391ad8261a2f",
+    "url": "https://sketchfab.com/3d-models/human-skull-schemically-colored-bone-anatomy-d1d1aed420424c8db784391ad8261a2f",
+    "how": "Drag to rotate, pinch or scroll to zoom. Use it to place the vessels on bone: find the foramen spinosum and foramen ovale on the base of the skull (middle meningeal artery and the emissary vein to the cavernous sinus), the stylomastoid foramen (stylomastoid branch), the jugular foramen (internal jugular vein) and the neck of the mandible, where the external carotid ends.",
+    "credit": "3D model: Human Skull: Schematically Colored Bone Anatomy by The Center for BioMedical Visualization at SGU (SGUMedArt) on Sketchfab. This is a bone model: it shows the openings the vessels use, not the vessels themselves. Needs an internet connection.",
+    "tab": "Bones"
+   },
+   {
+    "title": "Head and neck muscles",
+    "tab": "Muscles",
+    "embed": "99717ac9c0434ac59fc5efd3d1dc3471",
+    "url": "https://sketchfab.com/3d-models/head-anatomy-for-artist-99717ac9c0434ac59fc5efd3d1dc3471",
+    "how": "Drag to rotate, pinch or scroll to zoom. One side shows the colour-coded muscles of the head and neck, the other the skin of the face, so you can flip between surface and depth.",
+    "credit": "3D model: Head anatomy for artist on Sketchfab, colour-coded muscles of the head with the facial skin on the opposite side. An artist's anatomy model, not a medical atlas. Needs an internet connection."
+   }
+  ],
+  "model3d": {
    "title": "Human skull, schematically colored",
    "embed": "d1d1aed420424c8db784391ad8261a2f",
    "url": "https://sketchfab.com/3d-models/human-skull-schemically-colored-bone-anatomy-d1d1aed420424c8db784391ad8261a2f",
@@ -586,6 +603,66 @@ SINA.lectures["anat3-blood-supply"] = {
     1
    ],
    "why": "Its three named branches are pharyngeal (pharynx, constrictors, stylopharyngeus, soft palate, tonsils, auditory tube), inferior tympanic (medial wall of the middle ear) and meningeal (dura mater and cranial nerves)."
+  },
+  {
+   "q": "Which structure is at the arrow?",
+   "target": "cca",
+   "options": [
+    "Common carotid",
+    "Facial",
+    "Maxillary",
+    "Superficial temporal"
+   ],
+   "answer": 0,
+   "why": "The arrow points to the common carotid. The fully labelled diagram is on the Visual tab."
+  },
+  {
+   "q": "Which structure is at the arrow?",
+   "target": "ica",
+   "options": [
+    "Common carotid",
+    "Internal carotid",
+    "Superficial temporal",
+    "Facial"
+   ],
+   "answer": 1,
+   "why": "The arrow points to the internal carotid. The fully labelled diagram is on the Visual tab."
+  },
+  {
+   "q": "Which structure is at the arrow?",
+   "target": "eca",
+   "options": [
+    "Superficial temporal",
+    "Common carotid",
+    "External carotid",
+    "Maxillary"
+   ],
+   "answer": 2,
+   "why": "The arrow points to the external carotid. The fully labelled diagram is on the Visual tab."
+  },
+  {
+   "q": "Which structure is at the arrow?",
+   "target": "sup-thyroid",
+   "options": [
+    "Internal carotid",
+    "Ascending pharyngeal",
+    "Maxillary",
+    "Superior thyroid"
+   ],
+   "answer": 3,
+   "why": "The arrow points to the superior thyroid. The fully labelled diagram is on the Visual tab."
+  },
+  {
+   "q": "Which structure is at the arrow?",
+   "target": "asc-pharyngeal",
+   "options": [
+    "Ascending pharyngeal",
+    "Lingual",
+    "Internal carotid",
+    "External carotid"
+   ],
+   "answer": 0,
+   "why": "The arrow points to the ascending pharyngeal. The fully labelled diagram is on the Visual tab."
   }
  ],
  "cards": [

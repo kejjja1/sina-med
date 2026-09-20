@@ -372,8 +372,17 @@ SINA.lectures["anat3-eyeball-1"] = {
   },
   "kind": "model",
   "intro": "",
-  "models": [{"title": "Bones of the orbit", "embed": "c58a9186b52d4d62814b7e6e3164e032", "url": "https://sketchfab.com/3d-models/bones-of-the-orbit-c58a9186b52d4d62814b7e6e3164e032", "how": "Drag to rotate, pinch or scroll to zoom. This is the socket the eyeball sits in. Find the optic canal at the apex, where the optic nerve leaves the back of the eye, and picture Tenon's capsule as a sleeve running from there forward to the corneal limbus.", "credit": "3D model: Bones of the orbit by Cristina Sala on Sketchfab, licensed CC BY-SA 4.0. Based on BodyParts3D, © Database Center for Life Science, CC BY-SA 2.1 Japan. This is a bone model: it shows where the eyeball sits, not the eyeball itself. Needs an internet connection.", "tab": "Bones"}],
-"model3d": {
+  "models": [
+   {
+    "title": "Bones of the orbit",
+    "embed": "c58a9186b52d4d62814b7e6e3164e032",
+    "url": "https://sketchfab.com/3d-models/bones-of-the-orbit-c58a9186b52d4d62814b7e6e3164e032",
+    "how": "Drag to rotate, pinch or scroll to zoom. This is the socket the eyeball sits in. Find the optic canal at the apex, where the optic nerve leaves the back of the eye, and picture Tenon's capsule as a sleeve running from there forward to the corneal limbus.",
+    "credit": "3D model: Bones of the orbit by Cristina Sala on Sketchfab, licensed CC BY-SA 4.0. Based on BodyParts3D, © Database Center for Life Science, CC BY-SA 2.1 Japan. This is a bone model: it shows where the eyeball sits, not the eyeball itself. Needs an internet connection.",
+    "tab": "Bones"
+   }
+  ],
+  "model3d": {
    "title": "Bones of the orbit",
    "embed": "c58a9186b52d4d62814b7e6e3164e032",
    "url": "https://sketchfab.com/3d-models/bones-of-the-orbit-c58a9186b52d4d62814b7e6e3164e032",
@@ -701,6 +710,66 @@ SINA.lectures["anat3-eyeball-1"] = {
     1
    ],
    "why": "Rods are thin and elongated, in two portions. Their flattened disks contain the pigment visual purple, or rhodopsin, bleached by light to initiate the visual stimulus. They are used at low light levels. The central fovea is populated exclusively by cones, which handle colour vision."
+  },
+  {
+   "q": "Which structure is at the arrow?",
+   "target": "sclera",
+   "options": [
+    "Sclera",
+    "Anterior chamber",
+    "Choroid (uvea)",
+    "Cornea"
+   ],
+   "answer": 0,
+   "why": "The arrow points to the sclera. The fully labelled diagram is on the Visual tab."
+  },
+  {
+   "q": "Which structure is at the arrow?",
+   "target": "cornea",
+   "options": [
+    "Ciliary body",
+    "Cornea",
+    "Optic nerve",
+    "Choroid (uvea)"
+   ],
+   "answer": 1,
+   "why": "The arrow points to the cornea. The fully labelled diagram is on the Visual tab."
+  },
+  {
+   "q": "Which structure is at the arrow?",
+   "target": "choroid",
+   "options": [
+    "Lens",
+    "Retina",
+    "Choroid (uvea)",
+    "Vitreous humour"
+   ],
+   "answer": 2,
+   "why": "The arrow points to the choroid (uvea). The fully labelled diagram is on the Visual tab."
+  },
+  {
+   "q": "Which structure is at the arrow?",
+   "target": "retina",
+   "options": [
+    "Cornea",
+    "Vitreous humour",
+    "Ciliary body",
+    "Retina"
+   ],
+   "answer": 3,
+   "why": "The arrow points to the retina. The fully labelled diagram is on the Visual tab."
+  },
+  {
+   "q": "Which structure is at the arrow?",
+   "target": "vitreous",
+   "options": [
+    "Vitreous humour",
+    "Lens",
+    "Choroid (uvea)",
+    "Fovea / macula"
+   ],
+   "answer": 0,
+   "why": "The arrow points to the vitreous humour. The fully labelled diagram is on the Visual tab."
   }
  ],
  "cards": [

@@ -408,8 +408,17 @@ SINA.lectures["anat3-sinuses"] = {
   },
   "kind": "model",
   "intro": "",
-  "models": [{"title": "Human skull, schematically colored", "embed": "d1d1aed420424c8db784391ad8261a2f", "url": "https://sketchfab.com/3d-models/human-skull-schemically-colored-bone-anatomy-d1d1aed420424c8db784391ad8261a2f", "how": "Drag to rotate, pinch or scroll to zoom. Find the four bones that hold the sinuses: the frontal above the orbits, the ethmoid between them, the sphenoid behind, and the maxilla below. The piriform aperture at the front is the bony opening of the nasal cavity.", "credit": "3D model: Human Skull: Schematically Colored Bone Anatomy by The Center for BioMedical Visualization at SGU (SGUMedArt) on Sketchfab. A bone model: it shows the bones the sinuses sit in, not the air spaces. Needs an internet connection.", "tab": "Bones"}],
-"model3d": {
+  "models": [
+   {
+    "title": "Human skull, schematically colored",
+    "embed": "d1d1aed420424c8db784391ad8261a2f",
+    "url": "https://sketchfab.com/3d-models/human-skull-schemically-colored-bone-anatomy-d1d1aed420424c8db784391ad8261a2f",
+    "how": "Drag to rotate, pinch or scroll to zoom. Find the four bones that hold the sinuses: the frontal above the orbits, the ethmoid between them, the sphenoid behind, and the maxilla below. The piriform aperture at the front is the bony opening of the nasal cavity.",
+    "credit": "3D model: Human Skull: Schematically Colored Bone Anatomy by The Center for BioMedical Visualization at SGU (SGUMedArt) on Sketchfab. A bone model: it shows the bones the sinuses sit in, not the air spaces. Needs an internet connection.",
+    "tab": "Bones"
+   }
+  ],
+  "model3d": {
    "title": "Human skull, schematically colored",
    "embed": "d1d1aed420424c8db784391ad8261a2f",
    "url": "https://sketchfab.com/3d-models/human-skull-schemically-colored-bone-anatomy-d1d1aed420424c8db784391ad8261a2f",
@@ -693,6 +702,66 @@ SINA.lectures["anat3-sinuses"] = {
     1
    ],
    "why": "The conchae divide each nasal cavity into four air channels: the inferior, middle and superior meatuses and the spheno-ethmoidal recess. The ethmoidal labyrinth is the honeycomb of air cells in the ethmoid bone, and the pterygopalatine fossa lies outside the nasal cavity."
+  },
+  {
+   "q": "Which structure is at the arrow?",
+   "target": "sphenoid-sinus",
+   "options": [
+    "Sphenoid sinus",
+    "Inferior concha",
+    "Middle concha",
+    "Maxillary sinus"
+   ],
+   "answer": 0,
+   "why": "The arrow points to the sphenoid sinus. The fully labelled diagram is on the Visual tab."
+  },
+  {
+   "q": "Which structure is at the arrow?",
+   "target": "frontal-sinus",
+   "options": [
+    "Superior concha",
+    "Frontal sinus",
+    "Nasolacrimal duct",
+    "Sphenoid sinus"
+   ],
+   "answer": 1,
+   "why": "The arrow points to the frontal sinus. The fully labelled diagram is on the Visual tab."
+  },
+  {
+   "q": "Which structure is at the arrow?",
+   "target": "superior-concha",
+   "options": [
+    "Frontal sinus",
+    "Superior meatus",
+    "Superior concha",
+    "Inferior concha"
+   ],
+   "answer": 2,
+   "why": "The arrow points to the superior concha. The fully labelled diagram is on the Visual tab."
+  },
+  {
+   "q": "Which structure is at the arrow?",
+   "target": "middle-concha",
+   "options": [
+    "Nasolacrimal duct",
+    "Superior meatus",
+    "Maxillary sinus",
+    "Middle concha"
+   ],
+   "answer": 3,
+   "why": "The arrow points to the middle concha. The fully labelled diagram is on the Visual tab."
+  },
+  {
+   "q": "Which structure is at the arrow?",
+   "target": "inferior-concha",
+   "options": [
+    "Inferior concha",
+    "Middle meatus",
+    "Middle concha",
+    "Inferior meatus"
+   ],
+   "answer": 0,
+   "why": "The arrow points to the inferior concha. The fully labelled diagram is on the Visual tab."
   }
  ],
  "cards": [

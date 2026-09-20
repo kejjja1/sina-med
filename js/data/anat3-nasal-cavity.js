@@ -435,8 +435,17 @@ SINA.lectures["anat3-nasal-cavity"] = {
   },
   "kind": "model",
   "intro": "",
-  "models": [{"title": "Human skull, schematically colored", "embed": "d1d1aed420424c8db784391ad8261a2f", "url": "https://sketchfab.com/3d-models/human-skull-schemically-colored-bone-anatomy-d1d1aed420424c8db784391ad8261a2f", "how": "Drag to rotate, pinch or scroll to zoom. Find the piriform aperture at the front, the bony opening of the nasal cavity, and look at how the ethmoid sits between the two orbits, with the maxillae below and the sphenoid behind.", "credit": "3D model: Human Skull: Schematically Colored Bone Anatomy by The Center for BioMedical Visualization at SGU (SGUMedArt) on Sketchfab. A bone model: it shows the bony framework, not the mucosa or conchae in detail. Needs an internet connection.", "tab": "Bones"}],
-"model3d": {
+  "models": [
+   {
+    "title": "Human skull, schematically colored",
+    "embed": "d1d1aed420424c8db784391ad8261a2f",
+    "url": "https://sketchfab.com/3d-models/human-skull-schemically-colored-bone-anatomy-d1d1aed420424c8db784391ad8261a2f",
+    "how": "Drag to rotate, pinch or scroll to zoom. Find the piriform aperture at the front, the bony opening of the nasal cavity, and look at how the ethmoid sits between the two orbits, with the maxillae below and the sphenoid behind.",
+    "credit": "3D model: Human Skull: Schematically Colored Bone Anatomy by The Center for BioMedical Visualization at SGU (SGUMedArt) on Sketchfab. A bone model: it shows the bony framework, not the mucosa or conchae in detail. Needs an internet connection.",
+    "tab": "Bones"
+   }
+  ],
+  "model3d": {
    "title": "Human skull, schematically colored",
    "embed": "d1d1aed420424c8db784391ad8261a2f",
    "url": "https://sketchfab.com/3d-models/human-skull-schemically-colored-bone-anatomy-d1d1aed420424c8db784391ad8261a2f",
@@ -764,6 +773,66 @@ SINA.lectures["anat3-nasal-cavity"] = {
     1
    ],
    "why": "Three valves regulate airflow: the nostril valve, the nasal valve and the septo-turbinal valve. They modify the size of the nasal fossa and so the resistance to airflow."
+  },
+  {
+   "q": "Which structure is at the arrow?",
+   "target": "sphenoid-sinus",
+   "options": [
+    "Sphenoid sinus",
+    "Superior concha",
+    "Inferior concha",
+    "Inferior meatus"
+   ],
+   "answer": 0,
+   "why": "The arrow points to the sphenoid sinus. The fully labelled diagram is on the Visual tab."
+  },
+  {
+   "q": "Which structure is at the arrow?",
+   "target": "frontal-sinus",
+   "options": [
+    "Nasolacrimal duct",
+    "Frontal sinus",
+    "Sphenoid sinus",
+    "Middle concha"
+   ],
+   "answer": 1,
+   "why": "The arrow points to the frontal sinus. The fully labelled diagram is on the Visual tab."
+  },
+  {
+   "q": "Which structure is at the arrow?",
+   "target": "superior-concha",
+   "options": [
+    "Spheno-ethmoidal recess",
+    "Middle concha",
+    "Superior concha",
+    "Sphenoid sinus"
+   ],
+   "answer": 2,
+   "why": "The arrow points to the superior concha. The fully labelled diagram is on the Visual tab."
+  },
+  {
+   "q": "Which structure is at the arrow?",
+   "target": "middle-concha",
+   "options": [
+    "Superior meatus",
+    "Frontal sinus",
+    "Maxillary sinus",
+    "Middle concha"
+   ],
+   "answer": 3,
+   "why": "The arrow points to the middle concha. The fully labelled diagram is on the Visual tab."
+  },
+  {
+   "q": "Which structure is at the arrow?",
+   "target": "inferior-concha",
+   "options": [
+    "Inferior concha",
+    "Frontal sinus",
+    "Superior meatus",
+    "Middle meatus"
+   ],
+   "answer": 0,
+   "why": "The arrow points to the inferior concha. The fully labelled diagram is on the Visual tab."
   }
  ],
  "cards": [

@@ -247,8 +247,17 @@ SINA.lectures["anat3-ocular-clinical"] = {
   },
   "kind": "model",
   "intro": "",
-  "models": [{"title": "Bones of the orbit", "embed": "c58a9186b52d4d62814b7e6e3164e032", "url": "https://sketchfab.com/3d-models/bones-of-the-orbit-c58a9186b52d4d62814b7e6e3164e032", "how": "Drag to rotate, pinch or scroll to zoom. Compare the thin floor, made of maxilla over the maxillary sinus, with the thick lateral wall of zygomatic bone and greater wing of sphenoid. That difference is why the floor blows out first.", "credit": "3D model: Bones of the orbit by Cristina Sala on Sketchfab, licensed CC BY-SA 4.0. Based on BodyParts3D, © Database Center for Life Science, CC BY-SA 2.1 Japan. Needs an internet connection.", "tab": "Bones"}],
-"model3d": {
+  "models": [
+   {
+    "title": "Bones of the orbit",
+    "embed": "c58a9186b52d4d62814b7e6e3164e032",
+    "url": "https://sketchfab.com/3d-models/bones-of-the-orbit-c58a9186b52d4d62814b7e6e3164e032",
+    "how": "Drag to rotate, pinch or scroll to zoom. Compare the thin floor, made of maxilla over the maxillary sinus, with the thick lateral wall of zygomatic bone and greater wing of sphenoid. That difference is why the floor blows out first.",
+    "credit": "3D model: Bones of the orbit by Cristina Sala on Sketchfab, licensed CC BY-SA 4.0. Based on BodyParts3D, © Database Center for Life Science, CC BY-SA 2.1 Japan. Needs an internet connection.",
+    "tab": "Bones"
+   }
+  ],
+  "model3d": {
    "title": "Bones of the orbit",
    "embed": "c58a9186b52d4d62814b7e6e3164e032",
    "url": "https://sketchfab.com/3d-models/bones-of-the-orbit-c58a9186b52d4d62814b7e6e3164e032",
@@ -576,6 +585,66 @@ SINA.lectures["anat3-ocular-clinical"] = {
     1
    ],
    "why": "Nystagmus often results in reduced vision and depth perception and can affect balance and coordination. The movements can be side to side, up and down, or circular."
+  },
+  {
+   "q": "Which structure is at the arrow?",
+   "target": "retina",
+   "options": [
+    "Retina (both eyes)",
+    "Primary visual cortex",
+    "Lateral geniculate nucleus",
+    "Optic radiation"
+   ],
+   "answer": 0,
+   "why": "The arrow points to the retina (both eyes). The fully labelled diagram is on the Visual tab."
+  },
+  {
+   "q": "Which structure is at the arrow?",
+   "target": "optic-nerve",
+   "options": [
+    "Primary visual cortex",
+    "Optic nerve",
+    "Lateral geniculate nucleus",
+    "Optic radiation"
+   ],
+   "answer": 1,
+   "why": "The arrow points to the optic nerve. The fully labelled diagram is on the Visual tab."
+  },
+  {
+   "q": "Which structure is at the arrow?",
+   "target": "chiasm",
+   "options": [
+    "Optic nerve",
+    "Optic tract",
+    "Optic chiasm",
+    "Optic radiation"
+   ],
+   "answer": 2,
+   "why": "The arrow points to the optic chiasm. The fully labelled diagram is on the Visual tab."
+  },
+  {
+   "q": "Which structure is at the arrow?",
+   "target": "tract",
+   "options": [
+    "Primary visual cortex",
+    "Retina (both eyes)",
+    "Optic nerve",
+    "Optic tract"
+   ],
+   "answer": 3,
+   "why": "The arrow points to the optic tract. The fully labelled diagram is on the Visual tab."
+  },
+  {
+   "q": "Which structure is at the arrow?",
+   "target": "lgn",
+   "options": [
+    "Lateral geniculate nucleus",
+    "Optic radiation",
+    "Optic tract",
+    "Optic nerve"
+   ],
+   "answer": 0,
+   "why": "The arrow points to the lateral geniculate nucleus. The fully labelled diagram is on the Visual tab."
   }
  ],
  "cards": [

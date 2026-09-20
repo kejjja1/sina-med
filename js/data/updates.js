@@ -4,6 +4,8 @@ window.SINA = window.SINA || { subjects: [], lectures: {} };
 SINA.updated = "20 September 2026";
 SINA.updates = [
   { date: "20 September 2026", items: [
+    "Every lecture now has picture questions in the quiz: an arrow points at a structure and you pick its name.",
+    "Sidebar: the same button now opens and hides it.",
     "New lecture: Anatomy of the larynx, with 28 questions and 47 flashcards, on a new larynx diagram.",
     "Search now ranks lectures whose titles match first.",
     "New lecture: Anatomy of the nasal cavity, with 28 questions and 39 flashcards.",

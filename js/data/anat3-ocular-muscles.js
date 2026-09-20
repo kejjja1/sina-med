@@ -236,8 +236,17 @@ SINA.lectures["anat3-ocular-muscles"] = {
   },
   "kind": "model",
   "intro": "",
-  "models": [{"title": "Bones of the orbit", "embed": "c58a9186b52d4d62814b7e6e3164e032", "url": "https://sketchfab.com/3d-models/bones-of-the-orbit-c58a9186b52d4d62814b7e6e3164e032", "how": "Drag to rotate, pinch or scroll to zoom. Find the optic canal at the apex, where the common ring tendon surrounds the opening and the four recti take origin, and the superomedial roof, where the trochlea anchors the superior oblique tendon.", "credit": "3D model: Bones of the orbit by Cristina Sala on Sketchfab, licensed CC BY-SA 4.0. Based on BodyParts3D, © Database Center for Life Science, CC BY-SA 2.1 Japan. This is a bone model: it shows the attachment sites, not the muscles. Needs an internet connection.", "tab": "Bones"}],
-"model3d": {
+  "models": [
+   {
+    "title": "Bones of the orbit",
+    "embed": "c58a9186b52d4d62814b7e6e3164e032",
+    "url": "https://sketchfab.com/3d-models/bones-of-the-orbit-c58a9186b52d4d62814b7e6e3164e032",
+    "how": "Drag to rotate, pinch or scroll to zoom. Find the optic canal at the apex, where the common ring tendon surrounds the opening and the four recti take origin, and the superomedial roof, where the trochlea anchors the superior oblique tendon.",
+    "credit": "3D model: Bones of the orbit by Cristina Sala on Sketchfab, licensed CC BY-SA 4.0. Based on BodyParts3D, © Database Center for Life Science, CC BY-SA 2.1 Japan. This is a bone model: it shows the attachment sites, not the muscles. Needs an internet connection.",
+    "tab": "Bones"
+   }
+  ],
+  "model3d": {
    "title": "Bones of the orbit",
    "embed": "c58a9186b52d4d62814b7e6e3164e032",
    "url": "https://sketchfab.com/3d-models/bones-of-the-orbit-c58a9186b52d4d62814b7e6e3164e032",
@@ -521,6 +530,66 @@ SINA.lectures["anat3-ocular-muscles"] = {
     1
    ],
    "why": "The non-visual retina is the portion not sensitive to light: the anterior continuation of the pigment cell layer plus supporting cells over the ciliary body and the posterior surface of the iris."
+  },
+  {
+   "q": "Which structure is at the arrow?",
+   "target": "retina",
+   "options": [
+    "Retina (both eyes)",
+    "Optic nerve",
+    "Optic tract",
+    "Optic radiation"
+   ],
+   "answer": 0,
+   "why": "The arrow points to the retina (both eyes). The fully labelled diagram is on the Visual tab."
+  },
+  {
+   "q": "Which structure is at the arrow?",
+   "target": "optic-nerve",
+   "options": [
+    "Lateral geniculate nucleus",
+    "Optic nerve",
+    "Optic tract",
+    "Optic chiasm"
+   ],
+   "answer": 1,
+   "why": "The arrow points to the optic nerve. The fully labelled diagram is on the Visual tab."
+  },
+  {
+   "q": "Which structure is at the arrow?",
+   "target": "chiasm",
+   "options": [
+    "Optic radiation",
+    "Primary visual cortex",
+    "Optic chiasm",
+    "Lateral geniculate nucleus"
+   ],
+   "answer": 2,
+   "why": "The arrow points to the optic chiasm. The fully labelled diagram is on the Visual tab."
+  },
+  {
+   "q": "Which structure is at the arrow?",
+   "target": "tract",
+   "options": [
+    "Optic radiation",
+    "Primary visual cortex",
+    "Lateral geniculate nucleus",
+    "Optic tract"
+   ],
+   "answer": 3,
+   "why": "The arrow points to the optic tract. The fully labelled diagram is on the Visual tab."
+  },
+  {
+   "q": "Which structure is at the arrow?",
+   "target": "lgn",
+   "options": [
+    "Lateral geniculate nucleus",
+    "Optic tract",
+    "Optic nerve",
+    "Optic chiasm"
+   ],
+   "answer": 0,
+   "why": "The arrow points to the lateral geniculate nucleus. The fully labelled diagram is on the Visual tab."
   }
  ],
  "cards": [

@@ -737,6 +737,66 @@ SINA.lectures["anat3-larynx"] = {
     1
    ],
    "why": "Elevators: thyrohyoid, mylohyoid and digastric. Depressors: sternothyroid, sternohyoid and omohyoid. The extrinsic muscles ensure laryngeal mobility, especially during swallowing."
+  },
+  {
+   "q": "Which structure is at the arrow?",
+   "target": "hyoid",
+   "options": [
+    "Hyoid bone",
+    "Laryngeal prominence (Adam’s apple)",
+    "Thyroid cartilage",
+    "Cricoid cartilage (complete ring)"
+   ],
+   "answer": 0,
+   "why": "The arrow points to the hyoid bone. The fully labelled diagram is on the Visual tab."
+  },
+  {
+   "q": "Which structure is at the arrow?",
+   "target": "thyrohyoid",
+   "options": [
+    "Cricoid cartilage (complete ring)",
+    "Thyrohyoid membrane",
+    "Thyroid cartilage",
+    "Trachea"
+   ],
+   "answer": 1,
+   "why": "The arrow points to the thyrohyoid membrane. The fully labelled diagram is on the Visual tab."
+  },
+  {
+   "q": "Which structure is at the arrow?",
+   "target": "epiglottis",
+   "options": [
+    "Thyroid cartilage",
+    "Hyoid bone",
+    "Epiglottis",
+    "Thyrohyoid membrane"
+   ],
+   "answer": 2,
+   "why": "The arrow points to the epiglottis. The fully labelled diagram is on the Visual tab."
+  },
+  {
+   "q": "Which structure is at the arrow?",
+   "target": "thyroid-cart",
+   "options": [
+    "Cricoid cartilage (complete ring)",
+    "Laryngeal prominence (Adam’s apple)",
+    "Epiglottis",
+    "Thyroid cartilage"
+   ],
+   "answer": 3,
+   "why": "The arrow points to the thyroid cartilage. The fully labelled diagram is on the Visual tab."
+  },
+  {
+   "q": "Which structure is at the arrow?",
+   "target": "prominence",
+   "options": [
+    "Laryngeal prominence (Adam’s apple)",
+    "Trachea",
+    "Thyrohyoid membrane",
+    "Superior thyroid notch"
+   ],
+   "answer": 0,
+   "why": "The arrow points to the laryngeal prominence (adam’s apple). The fully labelled diagram is on the Visual tab."
   }
  ],
  "cards": [
