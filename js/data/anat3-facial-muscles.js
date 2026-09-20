@@ -80,6 +80,204 @@ SINA.lectures["anat3-facial-muscles"] = {
   "In TMJ dislocation the mandibular head moves anteriorly and the patient cannot close the mouth."
  ],
  "visual": {
+  "figure": {
+   "viewBox": "150 30 400 400",
+   "alt": "Schematic of the skull from the side showing muscle attachment sites",
+   "caption": "Side view of the skull and mandible, showing where the muscles of mastication attach. Schematic, not to scale.",
+   "base": "",
+   "parts": {
+    "temporal-fossa": {
+     "shape": "<path class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d9534f\" fill-opacity=\"0.45\" d=\"M 180 70 Q 300 40 380 90 Q 360 160 300 180 Q 220 170 180 70 Z\"/>",
+     "label": [
+      "Temporal fossa:",
+      "temporalis origin"
+     ],
+     "lx": 270,
+     "ly": 120
+    },
+    "zyg-arch": {
+     "shape": "<path class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d8ccb4\" d=\"M 200 196 L 400 186 L 402 212 L 200 222 Z\"/>",
+     "label": [
+      "Zygomatic arch:",
+      "masseter origin"
+     ],
+     "lx": 300,
+     "ly": 176
+    },
+    "coronoid": {
+     "shape": "<path class=\"sh\" stroke=\"#8a8a8a\" fill=\"#cfe0cf\" d=\"M 300 230 L 330 168 L 352 232 Z\"/>",
+     "label": [
+      "Coronoid process:",
+      "temporalis insertion"
+     ],
+     "lx": 180,
+     "ly": 268,
+     "anchor": "start"
+    },
+    "condyle": {
+     "shape": "<g><ellipse class=\"sh\" stroke=\"#8a8a8a\" fill=\"#5b8fb9\" fill-opacity=\"0.6\" cx=\"410\" cy=\"212\" rx=\"30\" ry=\"16\"/><path class=\"sh\" stroke=\"#8a8a8a\" fill=\"#5b8fb9\" fill-opacity=\"0.35\" d=\"M 396 226 L 424 226 L 420 262 L 400 262 Z\"/></g>",
+     "label": [
+      "Condylar process",
+      "(head and neck)"
+     ],
+     "lx": 452,
+     "ly": 198,
+     "anchor": "start"
+    },
+    "tmj": {
+     "shape": "<path class=\"sh ln\" stroke=\"#3a3a3a\" stroke-width=\"4\" d=\"M 382 196 Q 410 188 438 198\"/>",
+     "label": [
+      "Temporomandibular",
+      "joint"
+     ],
+     "lx": 452,
+     "ly": 150,
+     "anchor": "start"
+    },
+    "ramus": {
+     "shape": "<path class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d8ccb4\" d=\"M 352 234 L 424 260 L 418 348 L 348 344 Z\"/>",
+     "label": [
+      "Ramus:",
+      "masseter insertion"
+     ],
+     "lx": 392,
+     "ly": 300
+    },
+    "angle": {
+     "shape": "<circle class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2e2a8\" cx=\"418\" cy=\"348\" r=\"16\"/>",
+     "label": "Angle",
+     "lx": 452,
+     "ly": 360,
+     "anchor": "start"
+    },
+    "pterygoid": {
+     "shape": "<path class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2d7cf\" d=\"M 296 240 L 340 250 L 336 312 L 292 300 Z\"/>",
+     "label": [
+      "Pterygoid plates:",
+      "pterygoid origins"
+     ],
+     "lx": 210,
+     "ly": 320,
+     "anchor": "start"
+    },
+    "body": {
+     "shape": "<path class=\"sh\" stroke=\"#8a8a8a\" fill=\"#e6dccb\" d=\"M 180 330 Q 300 372 418 348 L 414 392 Q 296 414 178 372 Z\"/>",
+     "label": "Body of mandible",
+     "lx": 280,
+     "ly": 404
+    }
+   },
+   "arrows": {
+    "temporal-fossa": [
+     {
+      "t": [
+       280,
+       110
+      ],
+      "d": [
+       0,
+       -66
+      ]
+     }
+    ],
+    "zyg-arch": [
+     {
+      "t": [
+       300,
+       204
+      ],
+      "d": [
+       -76,
+       -58
+      ]
+     }
+    ],
+    "coronoid": [
+     {
+      "t": [
+       328,
+       206
+      ],
+      "d": [
+       -110,
+       52
+      ]
+     }
+    ],
+    "condyle": [
+     {
+      "t": [
+       410,
+       212
+      ],
+      "d": [
+       66,
+       -22
+      ]
+     }
+    ],
+    "tmj": [
+     {
+      "t": [
+       410,
+       192
+      ],
+      "d": [
+       64,
+       -48
+      ]
+     }
+    ],
+    "ramus": [
+     {
+      "t": [
+       386,
+       300
+      ],
+      "d": [
+       74,
+       34
+      ]
+     }
+    ],
+    "angle": [
+     {
+      "t": [
+       418,
+       348
+      ],
+      "d": [
+       52,
+       20
+      ]
+     }
+    ],
+    "pterygoid": [
+     {
+      "t": [
+       314,
+       276
+      ],
+      "d": [
+       -96,
+       40
+      ]
+     }
+    ],
+    "body": [
+     {
+      "t": [
+       300,
+       368
+      ],
+      "d": [
+       -20,
+       54
+      ]
+     }
+    ]
+   }
+  },
   "kind": "model",
   "intro": "",
   "model3d": {
@@ -344,6 +542,13 @@ SINA.lectures["anat3-facial-muscles"] = {
    "back": "A broad musculofibrous layer covering the vertex from the occipital bone to the eyebrows. Two parts, occipitalis and frontalis, joined by the galea aponeurotica."
   },
   {
+   "id": "n1",
+   "type": "image",
+   "target": "temporal-fossa",
+   "front": "Which muscle arises from the highlighted area?",
+   "back": "Temporalis, from the floor of the temporal fossa and the deep temporal fascia. It elevates the mandible, and its posterior fibres retract it."
+  },
+  {
    "id": "m4",
    "type": "text",
    "front": "Occipital belly: origin, insertion, action.",
@@ -360,6 +565,13 @@ SINA.lectures["anat3-facial-muscles"] = {
    "type": "text",
    "front": "Orbicularis oculi: parts and action.",
    "back": "Surrounds the orbital opening and extends into each eyelid. Orbital part (thicker, a complete ellipse; origin nasal part of the frontal bone, frontal process of maxilla and medial palpebral ligament) closes the eye forcefully. Palpebral part (thin; from the medial palpebral ligament to the lateral palpebral raphe) closes the lids gently, as in blinking or sleep."
+  },
+  {
+   "id": "n2",
+   "type": "image",
+   "target": "zyg-arch",
+   "front": "Which muscle arises from the highlighted bone?",
+   "back": "Masseter, from the zygomatic arch. It inserts on the angle of the mandible and the coronoid process, and elevates the mandible."
   },
   {
    "id": "m7",
@@ -380,6 +592,13 @@ SINA.lectures["anat3-facial-muscles"] = {
    "back": "Transverse part: origin maxilla just lateral to the nose, insertion an aponeurosis across the dorsum of the nose. It compresses the nasal aperture. Alar part: origin maxilla over the lateral incisor, insertion alar cartilage. It draws the cartilage downward and opens the nostril laterally."
   },
   {
+   "id": "n3",
+   "type": "image",
+   "target": "coronoid",
+   "front": "What is the structure at the arrow, and what inserts there?",
+   "back": "The coronoid process of the mandible. The temporalis inserts on its tip and medial surface and on the anterior border of the ramus."
+  },
+  {
    "id": "m10",
    "type": "text",
    "front": "Procerus: origin, insertion, action.",
@@ -396,6 +615,13 @@ SINA.lectures["anat3-facial-muscles"] = {
    "type": "text",
    "front": "Orbicularis oris: origin, insertion, action.",
    "back": "A complex muscle encircling the mouth. Some fibres arise near the midline from the maxilla above and the mandible below, others come from the buccinator, the cheek and the surrounding lip muscles. It forms an ellipse around the mouth and inserts into the skin and mucous membrane of the lips. It narrows and closes the mouth, as in whistling or pursing the lips."
+  },
+  {
+   "id": "n4",
+   "type": "image",
+   "target": "condyle",
+   "front": "What is the structure at the arrow?",
+   "back": "The condylar process of the mandible, with its head and neck. The lateral pterygoid inserts on the pterygoid fovea of the neck."
   },
   {
    "id": "m13",
@@ -416,6 +642,13 @@ SINA.lectures["anat3-facial-muscles"] = {
    "back": "A small conical bundle at the tip of the chin, the deepest muscle of the lower group. Origin: mandible below the incisor teeth. Insertion: skin of the chin. It raises and protrudes the lower lip, wrinkling the chin, as when drinking from a cup or pouting."
   },
   {
+   "id": "n5",
+   "type": "image",
+   "target": "tmj",
+   "front": "What is the joint at the arrow?",
+   "back": "The temporomandibular joint, between the head of the mandible and the mandibular fossa of the temporal bone. An articular disc splits it into two synovial cavities."
+  },
+  {
    "id": "m16",
    "type": "text",
    "front": "Name the upper group of oral muscles.",
@@ -432,6 +665,13 @@ SINA.lectures["anat3-facial-muscles"] = {
    "type": "text",
    "front": "Zygomaticus minor and levator labii superioris: what do they do?",
    "back": "Zygomaticus minor: from the front of the zygomatic arch to the skin of the lateral upper lip, extending to the nasolabial sulcus; elevates and everts the upper lip. Levator labii superioris: from the infraorbital margin of the maxilla to the skin of the upper lip; retracts and everts the upper lip. Both take the buccal branch of CN VII."
+  },
+  {
+   "id": "n6",
+   "type": "image",
+   "target": "ramus",
+   "front": "What is the highlighted part, and which muscles attach to it?",
+   "back": "The ramus of the mandible. The masseter inserts on its lateral surface; the medial pterygoid inserts on its medial surface, up to the mandibular foramen."
   },
   {
    "id": "m19",
@@ -452,6 +692,13 @@ SINA.lectures["anat3-facial-muscles"] = {
    "back": "Temporal: frontalis, orbicularis oculi, corrugator supercilii. Zygomatic: orbicularis oculi. Buccal: orbicularis oris, buccinator, zygomaticus. Marginal mandibular: mentalis, depressor labii inferioris, depressor anguli oris. Cervical: platysma."
   },
   {
+   "id": "n7",
+   "type": "image",
+   "target": "pterygoid",
+   "front": "Which muscles arise from the highlighted plates?",
+   "back": "The pterygoid plates of the sphenoid. The lateral pterygoid arises from the lateral plate and the greater wing; the medial pterygoid from the medial surface of the lateral plate."
+  },
+  {
    "id": "m22",
    "type": "text",
    "front": "Name the four muscles of mastication and their nerve.",
@@ -468,6 +715,13 @@ SINA.lectures["anat3-facial-muscles"] = {
    "type": "text",
    "front": "Masseter: origin, insertion, actions.",
    "back": "Origin: zygomatic arch. Insertion: angle of the mandible and coronoid process. Actions: elevates and protrudes the mandible; its deep fibres retract it."
+  },
+  {
+   "id": "n8",
+   "type": "image",
+   "target": "angle",
+   "front": "What is the structure at the arrow?",
+   "back": "The angle of the mandible, where the body meets the ramus. The masseter inserts here."
   },
   {
    "id": "m25",

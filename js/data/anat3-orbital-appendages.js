@@ -66,6 +66,202 @@ SINA.lectures["anat3-orbital-appendages"] = {
   "Ciliary ganglion: parasympathetic from CN III; branches are the short ciliary nerves."
  ],
  "visual": {
+  "figure": {
+   "viewBox": "0 0 700 380",
+   "alt": "Schematic sagittal section of the upper eyelid",
+   "caption": "Sagittal section of the upper eyelid, layers from the skin outward to the conjunctiva. Schematic, not to scale.",
+   "base": "",
+   "parts": {
+    "skin": {
+     "shape": "<path class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2d7cf\" d=\"M 120 60 L 300 60 Q 330 150 300 250 L 250 300 L 230 285 Q 270 170 250 80 Z\"/>",
+     "label": "1. Skin",
+     "lx": 170,
+     "ly": 110,
+     "anchor": "start"
+    },
+    "subcut": {
+     "shape": "<path class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2e2a8\" d=\"M 250 80 Q 270 170 230 285 L 210 272 Q 248 165 228 86 Z\"/>",
+     "label": [
+      "2. Loose CT",
+      "and fat"
+     ],
+     "lx": 330,
+     "ly": 110,
+     "anchor": "start"
+    },
+    "muscle": {
+     "shape": "<path class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d9534f\" d=\"M 228 86 Q 248 165 210 272 L 188 258 Q 226 160 206 92 Z\"/>",
+     "label": [
+      "3. Orbicularis",
+      "oculi"
+     ],
+     "lx": 330,
+     "ly": 160,
+     "anchor": "start"
+    },
+    "tarsus": {
+     "shape": "<path class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d8ccb4\" d=\"M 206 92 Q 226 160 188 258 L 166 244 Q 204 155 184 98 Z\"/>",
+     "label": "4. Tarsal plate",
+     "lx": 330,
+     "ly": 210,
+     "anchor": "start"
+    },
+    "conj": {
+     "shape": "<path class=\"sh\" stroke=\"#8a8a8a\" fill=\"#cfe0cf\" d=\"M 184 98 Q 204 155 166 244 L 152 236 Q 190 150 170 102 Z\"/>",
+     "label": [
+      "5. Palpebral",
+      "conjunctiva"
+     ],
+     "lx": 330,
+     "ly": 258,
+     "anchor": "start"
+    },
+    "meibomian": {
+     "shape": "<g><ellipse class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2e2a8\" cx=\"198\" cy=\"130\" rx=\"7\" ry=\"15\"/><ellipse class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2e2a8\" cx=\"191\" cy=\"164\" rx=\"7\" ry=\"15\"/><ellipse class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2e2a8\" cx=\"184\" cy=\"198\" rx=\"7\" ry=\"15\"/><ellipse class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2e2a8\" cx=\"177\" cy=\"232\" rx=\"7\" ry=\"15\"/></g>",
+     "label": [
+      "Tarsal (meibomian)",
+      "glands"
+     ],
+     "lx": 120,
+     "ly": 330,
+     "anchor": "start"
+    },
+    "cilia": {
+     "shape": "<g><line class=\"ln\" stroke=\"#6a6a6a\" x1=\"245\" y1=\"288\" x2=\"300\" y2=\"318\"/><line class=\"ln\" stroke=\"#6a6a6a\" x1=\"245\" y1=\"292\" x2=\"306\" y2=\"328\"/><line class=\"ln\" stroke=\"#6a6a6a\" x1=\"245\" y1=\"296\" x2=\"312\" y2=\"338\"/></g>",
+     "label": "Cilia (eyelashes)",
+     "lx": 330,
+     "ly": 330,
+     "anchor": "start"
+    },
+    "cornea": {
+     "shape": "<path class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d9dde0\" d=\"M 150 60 A 200 200 0 0 0 150 300 L 120 300 L 120 60 Z\"/>",
+     "label": "Cornea",
+     "lx": 96,
+     "ly": 186,
+     "anchor": "end"
+    },
+    "fornix": {
+     "shape": "<circle class=\"sh\" stroke=\"#8a8a8a\" fill=\"#cfe0cf\" cx=\"168\" cy=\"74\" r=\"11\"/>",
+     "label": [
+      "Superior",
+      "conjunctival fornix"
+     ],
+     "lx": 220,
+     "ly": 36,
+     "anchor": "start"
+    }
+   },
+   "arrows": {
+    "skin": [
+     {
+      "t": [
+       270,
+       100
+      ],
+      "d": [
+       62,
+       -42
+      ]
+     }
+    ],
+    "subcut": [
+     {
+      "t": [
+       240,
+       140
+      ],
+      "d": [
+       86,
+       -24
+      ]
+     }
+    ],
+    "muscle": [
+     {
+      "t": [
+       218,
+       150
+      ],
+      "d": [
+       104,
+       6
+      ]
+     }
+    ],
+    "tarsus": [
+     {
+      "t": [
+       196,
+       170
+      ],
+      "d": [
+       124,
+       34
+      ]
+     }
+    ],
+    "conj": [
+     {
+      "t": [
+       176,
+       178
+      ],
+      "d": [
+       142,
+       72
+      ]
+     }
+    ],
+    "meibomian": [
+     {
+      "t": [
+       191,
+       164
+      ],
+      "d": [
+       -66,
+       84
+      ]
+     }
+    ],
+    "cilia": [
+     {
+      "t": [
+       276,
+       306
+      ],
+      "d": [
+       56,
+       22
+      ]
+     }
+    ],
+    "cornea": [
+     {
+      "t": [
+       132,
+       180
+      ],
+      "d": [
+       -44,
+       0
+      ]
+     }
+    ],
+    "fornix": [
+     {
+      "t": [
+       168,
+       74
+      ],
+      "d": [
+       56,
+       -40
+      ]
+     }
+    ]
+   }
+  },
   "kind": "model",
   "intro": "",
   "model3d": {
@@ -374,6 +570,13 @@ SINA.lectures["anat3-orbital-appendages"] = {
    "back": "A medial part and a lateral part. The lateral part carries the eyelashes and is known as the ciliary part. The eyelid is 2 to 3 mm thick."
   },
   {
+   "id": "a1",
+   "type": "image",
+   "target": "skin",
+   "front": "Which layer of the eyelid is highlighted?",
+   "back": "Layer 1: the skin, with the cilia (eyelashes) at the margin."
+  },
+  {
    "id": "p4",
    "type": "text",
    "front": "Name the five layers of the eyelid.",
@@ -390,6 +593,13 @@ SINA.lectures["anat3-orbital-appendages"] = {
    "type": "text",
    "front": "Which ligaments are associated with the orbital part of orbicularis oculi?",
    "back": "The medial and lateral palpebral ligaments."
+  },
+  {
+   "id": "a2",
+   "type": "image",
+   "target": "subcut",
+   "front": "Which layer is highlighted?",
+   "back": "Layer 2: loose connective tissue and adipose tissue, containing the sebaceous glands of Zeis and the ciliary glands of Moll."
   },
   {
    "id": "p7",
@@ -410,6 +620,13 @@ SINA.lectures["anat3-orbital-appendages"] = {
    "back": "The superior and inferior tarsal plates: dense connective tissue that shapes and stiffens the eyelid and contains the tarsal (meibomian) glands."
   },
   {
+   "id": "a3",
+   "type": "image",
+   "target": "muscle",
+   "front": "Which layer, and which muscle, is highlighted?",
+   "back": "Layer 3: the muscular layer. The orbicularis oculi closes the lids; the levator palpebrae superioris raises the upper lid."
+  },
+  {
    "id": "p10",
    "type": "text",
    "front": "Palpebral vs bulbar conjunctiva.",
@@ -426,6 +643,13 @@ SINA.lectures["anat3-orbital-appendages"] = {
    "type": "text",
    "front": "Name the three layers of the tear film, their source and their job.",
    "back": "Oil layer: meibomian glands, prevents evaporation. Water layer: lacrimal glands, lubricates, allows blinking, washes away debris, forms a smooth surface. Mucin layer: goblet cells of the conjunctiva, attaches the tear film to the eye and spreads the water evenly."
+  },
+  {
+   "id": "a4",
+   "type": "image",
+   "target": "tarsus",
+   "front": "Which layer is highlighted?",
+   "back": "Layer 4: the tarsal plate, of dense connective tissue, which gives the eyelid its shape and holds the tarsal (meibomian) glands."
   },
   {
    "id": "p13",
@@ -446,6 +670,13 @@ SINA.lectures["anat3-orbital-appendages"] = {
    "back": "The acini secrete into excretory ducts that empty into the superior conjunctival fornix. The fluid is then spread over the cornea by blinking."
   },
   {
+   "id": "a5",
+   "type": "image",
+   "target": "conj",
+   "front": "Which layer is highlighted?",
+   "back": "Layer 5: the palpebral conjunctiva, the mucous membrane lining the inner surface of the eyelid."
+  },
+  {
    "id": "p16",
    "type": "text",
    "front": "Trace the flow of tears from the gland to the nose.",
@@ -464,6 +695,13 @@ SINA.lectures["anat3-orbital-appendages"] = {
    "back": "The lacrimal nerve, a branch of the ophthalmic nerve (V1), itself derived from the trigeminal nerve."
   },
   {
+   "id": "a6",
+   "type": "image",
+   "target": "meibomian",
+   "front": "Which glands are at the arrow, and what do they make?",
+   "back": "The tarsal (meibomian) glands, inside the tarsal plate. They produce the oil layer of the tear film, which prevents evaporation."
+  },
+  {
    "id": "p19",
    "type": "text",
    "front": "Trace the parasympathetic supply of the lacrimal gland.",
@@ -480,6 +718,20 @@ SINA.lectures["anat3-orbital-appendages"] = {
    "type": "text",
    "front": "What is the ciliary ganglion?",
    "back": "A peripheral parasympathetic ganglion that relays parasympathetic impulses from the oculomotor nerve to their target structures. It also transports sympathetic impulses from the internal carotid plexus and sensory impulses from the nasociliary nerve. Its branches are the short ciliary nerves."
+  },
+  {
+   "id": "a7",
+   "type": "image",
+   "target": "fornix",
+   "front": "What is the structure at the arrow?",
+   "back": "The superior conjunctival fornix, where the palpebral conjunctiva reflects onto the eyeball as the bulbar conjunctiva. The lacrimal ducts empty here."
+  },
+  {
+   "id": "a8",
+   "type": "image",
+   "target": "cilia",
+   "front": "What are the structures at the arrow, and what do they do?",
+   "back": "The cilia (eyelashes). They protect the eye from foreign particles, prevent evaporation of the tear film, and act as sensory receptors."
   }
  ],
  "deeper": [

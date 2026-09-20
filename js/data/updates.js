@@ -4,7 +4,12 @@ window.SINA = window.SINA || { subjects: [], lectures: {} };
 SINA.updated = "20 September 2026";
 SINA.updates = [
   { date: "20 September 2026", items: [
-    "Hidden theme: tap the Light/Dark button ten times in a row.",
+    "New lecture: Nose and paranasal sinuses, with 24 questions and 28 flashcards, on a new nasal cavity diagram.",
+    "New lecture: Oral cavity proper, tongue and palate, with 34 questions and 37 flashcards, on a new mouth diagram.",
+    "New lecture: Motor and sensory innervation of the eye, with 24 questions and 30 flashcards.",
+    "New lecture: Vascular supply and applied anatomy of the eye, with 28 questions and 35 flashcards. Face and orbit is now complete.",
+    "New lecture: Extraocular muscles and eye movement, with 24 questions and 31 flashcards.",
+    "Picture flashcards added to every lecture: a diagram with an arrow and the name hidden. Each lecture also has a labelled schematic on the Visual tab.",
     "New lecture: Anatomy of the eyeball I, with 28 questions and 30 flashcards.",
     "New lecture: Anatomy of the orbital appendages, with 24 questions and 21 flashcards.",
     "New lecture: Blood supply of the facio-maxillary region, with 24 questions and 26 flashcards.",

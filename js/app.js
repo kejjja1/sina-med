@@ -21,40 +21,22 @@
   }
   function shuffle(a) { a = a.slice(); for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
 
-  /* ---------- theme: one toggle. Ten taps unlocks the hidden theme. ---------- */
+  /* ---------- theme: one button, light or dark ---------- */
   function applyTheme(t) {
     document.documentElement.setAttribute("data-theme", t);
     var btn = document.getElementById("theme-btn");
-    if (btn) btn.textContent = t === "light" ? "Dark mode" : t === "dark" ? "Light mode" : "Back to light";
+    if (btn) btn.textContent = t === "dark" ? "Light mode" : "Dark mode";
     var m = document.querySelector('meta[name="theme-color"]');
-    if (m) m.setAttribute("content", t === "light" ? "#ffffff" : t === "rebel" ? "#0a0a0c" : "#1b1d20");
+    if (m) m.setAttribute("content", t === "dark" ? "#1b1d20" : "#ffffff");
   }
   var theme = store.get("sina:theme", null) || (window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
-  if (["light", "dark", "rebel"].indexOf(theme) < 0) theme = "light";
+  if (theme !== "dark") theme = "light";
   applyTheme(theme);
-  (function () {
-    var btn = document.getElementById("theme-btn"), taps = 0, timer = null;
-    btn.addEventListener("click", function () {
-      taps++;
-      clearTimeout(timer);
-      timer = setTimeout(function () { taps = 0; }, 2500);
-      if (taps >= 10) {
-        taps = 0;
-        theme = "rebel";
-        store.set("sina:theme", theme);
-        applyTheme(theme);
-        var t = document.createElement("div");
-        t.className = "toast";
-        t.textContent = "Rebel mode unlocked";
-        document.body.appendChild(t);
-        setTimeout(function () { t.remove(); }, 2600);
-        return;
-      }
-      theme = theme === "light" ? "dark" : "light";
-      store.set("sina:theme", theme);
-      applyTheme(theme);
-    });
-  })();
+  document.getElementById("theme-btn").addEventListener("click", function () {
+    theme = theme === "dark" ? "light" : "dark";
+    store.set("sina:theme", theme);
+    applyTheme(theme);
+  });
 
   /* ---------- orbit diagram (schematic, right orbit, front view) ---------- */
   var RIM = "M 140 75 H 420 Q 480 75 480 135 V 325 Q 480 385 420 385 H 140 Q 80 385 80 325 V 135 Q 80 75 140 75 Z";
@@ -205,6 +187,41 @@
   backdrop.addEventListener("click", closeDrawer);
   document.addEventListener("keydown", function (e) { if (e.key === "Escape") closeDrawer(); });
 
+  /* ---------- generic labelled figure (schematic, drawn for this site) ---------- */
+  function figArrow(a) {
+    var sx = a.t[0] + a.d[0], sy = a.t[1] + a.d[1];
+    var dx = a.t[0] - sx, dy = a.t[1] - sy, len = Math.sqrt(dx * dx + dy * dy) || 1;
+    var ux = dx / len, uy = dy / len, gap = a.gap || 10;
+    var ex = a.t[0] - ux * gap, ey = a.t[1] - uy * gap;
+    var px = -uy, py = ux, hl = 13, hw = 6.5;
+    var bx = ex - ux * hl, by = ey - uy * hl;
+    return '<path class="arrow-halo" d="M ' + sx + " " + sy + " L " + bx + " " + by + '"/><path class="arrow-line" d="M ' + sx + " " + sy + " L " + bx + " " + by + '"/><polygon class="arrow-head" points="' + ex + "," + ey + " " + (bx + px * hw) + "," + (by + py * hw) + " " + (bx - px * hw) + "," + (by - py * hw) + '"/>';
+  }
+  function figureSVG(fig, cfg) {
+    cfg = cfg || {};
+    var quiz = cfg.mode === "quiz", uid = cfg.uid || "f";
+    var out = '<svg class="fig-svg' + (quiz ? " quiz" : "") + '" viewBox="' + fig.viewBox + '" role="img" aria-label="' + esc(fig.alt || "Schematic diagram") + '">';
+    out += fig.base || "";
+    Object.keys(fig.parts).forEach(function (id) {
+      var pt = fig.parts[id];
+      var on = quiz && cfg.target === id;
+      out += '<g class="fpart' + (on ? " hl" : "") + '" data-id="' + id + '">' + (pt.shape || "") + "</g>";
+    });
+    if (!quiz) {
+      Object.keys(fig.parts).forEach(function (id) {
+        var pt = fig.parts[id];
+        if (!pt.label) return;
+        if (pt.lead) out += '<path class="guide" d="M ' + pt.lead.map(function (q) { return q[0] + " " + q[1]; }).join(" L ") + '"/>';
+        (Array.isArray(pt.label) ? pt.label : [pt.label]).forEach(function (line, i) {
+          out += '<text class="flbl" x="' + pt.lx + '" y="' + (pt.ly + i * 16) + '" text-anchor="' + (pt.anchor || "middle") + '">' + esc(line) + "</text>";
+        });
+      });
+    } else {
+      ((fig.arrows && fig.arrows[cfg.target]) || []).forEach(function (a) { out += figArrow(a); });
+    }
+    return out + "</svg>";
+  }
+
   /* ---------- views ---------- */
   function setView(html, title) {
     app.innerHTML = html;
@@ -284,7 +301,9 @@
     var v = lec.visual, layer = "walls";
     var hints = { walls: "Tap a wall to see which bones form it.", margins: "Tap a green edge to see which bones form that part of the rim.", openings: "Tap a dark opening to see what passes through it.", landmarks: "Tap a dashed outline to see what it is." };
     if (!v.regions) {
-      p.innerHTML = (v.model3d ? "<h2 style='margin-top:0'>3D model</h2>" + viewer3dHTML(v.model3d) : "<p>No visual for this lecture yet.</p>");
+      var h2 = v.model3d ? "<h2 style='margin-top:0'>3D model</h2>" + viewer3dHTML(v.model3d) : "";
+      if (v.figure) h2 += "<h2" + (h2 ? "" : " style='margin-top:0'") + ">Labelled schematic</h2><p>" + esc(v.figure.caption || "Schematic drawn for this site, not to scale.") + '</p><div class="diagram-box">' + figureSVG(v.figure, { uid: "vis" }) + "</div>";
+      p.innerHTML = h2 || "<p>No visual for this lecture yet.</p>";
       wireMedia(p);
       return;
     }
@@ -374,9 +393,15 @@
       var L = list();
       if (pos >= L.length) pos = 0;
       var c = byId[L[pos]], nk = L.filter(function (id) { return known.indexOf(id) > -1; }).length;
-      var front = '<div class="kind">' + (c.type === "image" ? "Picture card" : "Text card") + '</div><div class="front">' + esc(c.front) + "</div>" +
-        (c.type === "image" ? '<div class="diagram-box">' + orbitSVG({ mode: "quiz", target: c.target, uid: "fc" }) + "</div>" : "");
-      p.innerHTML = '<div class="deck-tools"><div class="chips" role="group" aria-label="Card type">' + [["all", "All"], ["text", "Text"], ["image", "Pictures"]].map(function (f) { return '<button data-f="' + f[0] + '" aria-pressed="' + (f[0] === filter) + '">' + f[1] + "</button>"; }).join("") +
+      var pic = "";
+      if (c.type === "image") {
+        pic = lec.visual && lec.visual.figure
+          ? '<div class="diagram-box">' + figureSVG(lec.visual.figure, { mode: "quiz", target: c.target, uid: "fc" }) + "</div>"
+          : '<div class="diagram-box">' + orbitSVG({ mode: "quiz", target: c.target, uid: "fc" }) + "</div>";
+      }
+      var front = '<div class="kind">' + (c.type === "image" ? "Picture card" : "Text card") + '</div><div class="front">' + esc(c.front) + "</div>" + pic;
+      var kinds = lec.cards.some(function (x) { return x.type === "image"; }) ? [["all", "All"], ["text", "Text"], ["image", "Pictures"]] : [];
+      p.innerHTML = '<div class="deck-tools"><div class="chips" role="group" aria-label="Card type">' + kinds.map(function (f) { return '<button data-f="' + f[0] + '" aria-pressed="' + (f[0] === filter) + '">' + f[1] + "</button>"; }).join("") +
         '</div><span class="progress-line">Card ' + (pos + 1) + " of " + L.length + ", " + nk + ' known</span></div><div class="fcard" aria-live="polite">' + front +
         (shown ? '<div class="back"><p>' + esc(c.back) + "</p></div>" : "") + '</div><div class="row" style="margin-top:1rem">' +
         (shown ? '<button class="btn primary" id="got">I knew it</button><button class="btn" id="again">Still learning</button>' : '<button class="btn primary" id="rev">Show answer</button>') +

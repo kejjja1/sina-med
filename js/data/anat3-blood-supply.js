@@ -68,6 +68,237 @@ SINA.lectures["anat3-blood-supply"] = {
   "Lymph: upper face to preauricular, mid face to submandibular, lower lip and chin to submental; then cervical nodes and the jugular trunks."
  ],
  "visual": {
+  "figure": {
+   "viewBox": "0 0 640 400",
+   "alt": "Schematic of the external carotid artery and its branches",
+   "caption": "The external carotid artery and its eight branches, drawn as a branching tree. Schematic, not anatomical proportions.",
+   "base": "<text class=\"flbl\" x=\"20\" y=\"28\">Terminal branches at the top</text>",
+   "parts": {
+    "cca": {
+     "shape": "<path class=\"sh ln\" stroke=\"#d9534f\" stroke-width=\"14\" d=\"M 120 380 L 120 300\"/>",
+     "label": [
+      "Common",
+      "carotid"
+     ],
+     "lx": 96,
+     "ly": 372,
+     "anchor": "end"
+    },
+    "ica": {
+     "shape": "<path class=\"sh ln\" stroke=\"#5b8fb9\" stroke-width=\"11\" d=\"M 120 300 Q 96 210 108 110\"/>",
+     "label": [
+      "Internal",
+      "carotid"
+     ],
+     "lx": 78,
+     "ly": 120,
+     "anchor": "end"
+    },
+    "eca": {
+     "shape": "<path class=\"sh ln\" stroke=\"#d9534f\" stroke-width=\"11\" d=\"M 120 300 Q 160 220 190 150\"/>",
+     "label": [
+      "External",
+      "carotid"
+     ],
+     "lx": 166,
+     "ly": 300,
+     "anchor": "start"
+    },
+    "sup-thyroid": {
+     "shape": "<path class=\"sh ln\" stroke=\"#d9534f\" stroke-width=\"6\" d=\"M 125.88 286 L 211.88 270\"/>",
+     "label": "Superior thyroid",
+     "lx": 219.88,
+     "ly": 266,
+     "anchor": "start"
+    },
+    "asc-pharyngeal": {
+     "shape": "<path class=\"sh ln\" stroke=\"#d9534f\" stroke-width=\"6\" d=\"M 135.96 262 L 285.96000000000004 246\"/>",
+     "label": "Ascending pharyngeal",
+     "lx": 293.96000000000004,
+     "ly": 242,
+     "anchor": "start"
+    },
+    "lingual": {
+     "shape": "<path class=\"sh ln\" stroke=\"#d9534f\" stroke-width=\"6\" d=\"M 146.04 238 L 232.04 222\"/>",
+     "label": "Lingual",
+     "lx": 240.04,
+     "ly": 218,
+     "anchor": "start"
+    },
+    "facial": {
+     "shape": "<path class=\"sh ln\" stroke=\"#d9534f\" stroke-width=\"6\" d=\"M 156.12 214 L 274.12 198\"/>",
+     "label": "Facial",
+     "lx": 282.12,
+     "ly": 194,
+     "anchor": "start"
+    },
+    "occipital": {
+     "shape": "<path class=\"sh ln\" stroke=\"#d9534f\" stroke-width=\"6\" d=\"M 165.36 192 L 343.36 176\"/>",
+     "label": "Occipital",
+     "lx": 351.36,
+     "ly": 172,
+     "anchor": "start"
+    },
+    "post-auricular": {
+     "shape": "<path class=\"sh ln\" stroke=\"#d9534f\" stroke-width=\"6\" d=\"M 174.6 170 L 388.6 154\"/>",
+     "label": "Posterior auricular",
+     "lx": 396.6,
+     "ly": 150,
+     "anchor": "start"
+    },
+    "sup-temporal": {
+     "shape": "<path class=\"sh ln\" stroke=\"#d9534f\" stroke-width=\"8\" d=\"M 196 140 L 240 70\"/>",
+     "label": [
+      "Superficial",
+      "temporal"
+     ],
+     "lx": 248,
+     "ly": 62,
+     "anchor": "start"
+    },
+    "maxillary": {
+     "shape": "<path class=\"sh ln\" stroke=\"#d9534f\" stroke-width=\"8\" d=\"M 196 140 L 300 126\"/>",
+     "label": "Maxillary",
+     "lx": 310,
+     "ly": 126,
+     "anchor": "start"
+    }
+   },
+   "arrows": {
+    "sup-thyroid": [
+     {
+      "t": [
+       168.88,
+       278
+      ],
+      "d": [
+       40,
+       46
+      ]
+     }
+    ],
+    "asc-pharyngeal": [
+     {
+      "t": [
+       210.96000000000004,
+       254
+      ],
+      "d": [
+       40,
+       46
+      ]
+     }
+    ],
+    "lingual": [
+     {
+      "t": [
+       189.04,
+       230
+      ],
+      "d": [
+       40,
+       46
+      ]
+     }
+    ],
+    "facial": [
+     {
+      "t": [
+       215.12,
+       206
+      ],
+      "d": [
+       40,
+       46
+      ]
+     }
+    ],
+    "occipital": [
+     {
+      "t": [
+       254.36,
+       184
+      ],
+      "d": [
+       40,
+       46
+      ]
+     }
+    ],
+    "post-auricular": [
+     {
+      "t": [
+       281.6,
+       162
+      ],
+      "d": [
+       40,
+       46
+      ]
+     }
+    ],
+    "cca": [
+     {
+      "t": [
+       120,
+       350
+      ],
+      "d": [
+       -58,
+       18
+      ]
+     }
+    ],
+    "ica": [
+     {
+      "t": [
+       104,
+       180
+      ],
+      "d": [
+       -62,
+       -18
+      ]
+     }
+    ],
+    "eca": [
+     {
+      "t": [
+       152,
+       240
+      ],
+      "d": [
+       64,
+       34
+      ]
+     }
+    ],
+    "sup-temporal": [
+     {
+      "t": [
+       220,
+       100
+      ],
+      "d": [
+       58,
+       -36
+      ]
+     }
+    ],
+    "maxillary": [
+     {
+      "t": [
+       254,
+       132
+      ],
+      "d": [
+       56,
+       26
+      ]
+     }
+    ]
+   }
+  },
   "kind": "model",
   "intro": "",
   "model3d": {
@@ -376,6 +607,13 @@ SINA.lectures["anat3-blood-supply"] = {
    "back": "It begins lateral to the upper border of the thyroid cartilage, at the level of the C3 to C4 disc, anteromedial to the internal carotid. It ascends in a gentle spiral, first slightly forward then backward and laterally, passing between the mastoid tip and the mandibular angle, and ends lateral to the internal carotid."
   },
   {
+   "id": "c1",
+   "type": "image",
+   "target": "eca",
+   "front": "Which artery is highlighted?",
+   "back": "The external carotid artery. It begins at the upper border of the thyroid cartilage, anteromedial to the internal carotid, and ends in the parotid gland."
+  },
+  {
    "id": "b4",
    "type": "text",
    "front": "Where does the external carotid artery end?",
@@ -392,6 +630,13 @@ SINA.lectures["anat3-blood-supply"] = {
    "type": "text",
    "front": "What are the relations of the external carotid in the neck?",
    "back": "Medially: the wall of the pharynx and the internal carotid artery. The stylopharyngeus and styloglossus muscles, the glossopharyngeal nerve and the pharyngeal branch of the vagus pass between the external and internal carotid arteries."
+  },
+  {
+   "id": "c2",
+   "type": "image",
+   "target": "ica",
+   "front": "Which artery is highlighted?",
+   "back": "The internal carotid artery. It gives no branches in the neck and enters the carotid canal to supply the brain."
   },
   {
    "id": "b7",
@@ -412,6 +657,13 @@ SINA.lectures["anat3-blood-supply"] = {
    "back": "The principal artery of the tongue. Arises anteromedially from the external carotid opposite the tip of the greater cornu of the hyoid, between the superior thyroid and facial arteries, and is divided into three parts by the hyoglossus. Branches: suprahyoid (suprahyoid muscles), dorsal lingual (back of tongue and throat), sublingual (sublingual gland) and deep lingual (body and tip of the tongue)."
   },
   {
+   "id": "c3",
+   "type": "image",
+   "target": "sup-thyroid",
+   "front": "Which branch is at the arrow?",
+   "back": "The superior thyroid artery, the first branch, arising from the front of the external carotid below the greater cornu of the hyoid."
+  },
+  {
    "id": "b10",
    "type": "text",
    "front": "Describe the course of the facial artery.",
@@ -428,6 +680,13 @@ SINA.lectures["anat3-blood-supply"] = {
    "type": "text",
    "front": "Occipital artery: origin and what it supplies.",
    "back": "Arises in the carotid triangle from the posterior aspect of the external carotid about 2 cm from its origin. It passes backward and upward under cover of the posterior belly of digastric, crossing the internal carotid, internal jugular vein and the hypoglossal and accessory nerves. It supplies sternocleidomastoid, the posterior neck and deep back muscles, the posterior part of the auricle, the scalp and occipital muscles, and gives mastoid and meningeal branches to the dura."
+  },
+  {
+   "id": "c4",
+   "type": "image",
+   "target": "lingual",
+   "front": "Which branch is at the arrow?",
+   "back": "The lingual artery, the principal artery of the tongue. It is divided into three parts by the hyoglossus."
   },
   {
    "id": "b13",
@@ -448,6 +707,13 @@ SINA.lectures["anat3-blood-supply"] = {
    "back": "A terminal branch of the external carotid. It divides into frontal (anterior) and parietal (posterior) branches supplying the scalp and forehead. Other branches include the transverse facial, zygomatico-orbital, anterior auricular and middle temporal arteries."
   },
   {
+   "id": "c5",
+   "type": "image",
+   "target": "facial",
+   "front": "Which branch is at the arrow?",
+   "back": "The facial artery. It arises in the carotid triangle, crosses the mandible at the anterior border of the masseter, and ends as the angular artery."
+  },
+  {
    "id": "b16",
    "type": "text",
    "front": "Maxillary artery: origin, course and parts.",
@@ -464,6 +730,13 @@ SINA.lectures["anat3-blood-supply"] = {
    "type": "text",
    "front": "How is the facial vein formed, and where does it drain?",
    "back": "The supratrochlear and supraorbital veins merge at the medial angle of the eye to form the angular vein, which becomes the facial vein as it descends the face. At the angle of the mandible it joins the anterior division of the retromandibular vein to form the common facial vein, which drains into the internal jugular vein, generally at the level of the hyoid bone."
+  },
+  {
+   "id": "c6",
+   "type": "image",
+   "target": "occipital",
+   "front": "Which branch is at the arrow?",
+   "back": "The occipital artery, arising from the posterior aspect of the external carotid about 2 cm from its origin, supplying the back of the scalp and neck."
   },
   {
    "id": "b19",
@@ -484,6 +757,13 @@ SINA.lectures["anat3-blood-supply"] = {
    "back": "Formed in the parotid gland by the union of the superficial temporal and maxillary veins. On leaving the gland it divides into an anterior division, which joins the facial vein to form the common facial vein, and a posterior division, which joins the posterior auricular vein to form the external jugular vein."
   },
   {
+   "id": "c7",
+   "type": "image",
+   "target": "asc-pharyngeal",
+   "front": "Which branch is at the arrow?",
+   "back": "The ascending pharyngeal artery, the smallest branch of the external carotid, ascending between the pharynx and the internal carotid."
+  },
+  {
    "id": "b22",
    "type": "text",
    "front": "External jugular vein: formation, course and drainage.",
@@ -502,6 +782,13 @@ SINA.lectures["anat3-blood-supply"] = {
    "back": "It drains the brain (through the dural venous sinuses), the face, the thyroid gland and the neck. Tributaries: inferior petrosal sinus, facial vein, pharyngeal veins, lingual vein, superior thyroid vein and middle thyroid vein."
   },
   {
+   "id": "c8",
+   "type": "image",
+   "target": "post-auricular",
+   "front": "Which branch is at the arrow?",
+   "back": "The posterior auricular artery, supplying the back of the auricle, the external and middle ear, and giving the stylomastoid branch."
+  },
+  {
    "id": "b25",
    "type": "text",
    "front": "Name the three primary lymph node groups of the face and what drains to each.",
@@ -512,6 +799,27 @@ SINA.lectures["anat3-blood-supply"] = {
    "type": "text",
    "front": "Trace lymph from the face back to the bloodstream.",
    "back": "From the primary facial groups, lymph flows to the superficial and deep cervical nodes in the neck, then to the supraclavicular nodes, then through the jugular trunks into the large veins at the root of the neck, emptying into the thoracic duct on the left or the right lymphatic duct."
+  },
+  {
+   "id": "c9",
+   "type": "image",
+   "target": "maxillary",
+   "front": "Which terminal branch is at the arrow?",
+   "back": "The maxillary artery, the larger terminal branch, supplying the jaws, muscles of mastication, nose, palate, and the meninges via the middle meningeal artery."
+  },
+  {
+   "id": "c10",
+   "type": "image",
+   "target": "sup-temporal",
+   "front": "Which terminal branch is at the arrow?",
+   "back": "The superficial temporal artery, the other terminal branch, supplying the scalp and temporal region."
+  },
+  {
+   "id": "c11",
+   "type": "image",
+   "target": "cca",
+   "front": "Which vessel is highlighted?",
+   "back": "The common carotid artery. It divides in the carotid triangle at the upper border of the thyroid cartilage, opposite the C3 to C4 disc."
   }
  ],
  "deeper": [

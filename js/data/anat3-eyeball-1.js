@@ -65,6 +65,311 @@ SINA.lectures["anat3-eyeball-1"] = {
   "Photoreceptors and bipolar cells make graded potentials; ganglion cells make action potentials forming the optic nerve."
  ],
  "visual": {
+  "figure": {
+   "viewBox": "0 0 700 420",
+   "alt": "Schematic horizontal section of the eyeball",
+   "caption": "Horizontal section of the right eyeball, seen from above. Schematic, not to scale.",
+   "base": "<text class=\"flbl\" x=\"16\" y=\"26\">Front</text><text class=\"flbl\" x=\"684\" y=\"26\" text-anchor=\"end\">Back</text>",
+   "parts": {
+    "sclera": {
+     "shape": "<path class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d8ccb4\" d=\"M 330 80 A 150 150 0 1 1 330 380 A 150 150 0 0 1 200 305 A 110 110 0 0 0 200 155 A 150 150 0 0 1 330 80 Z\"/>",
+     "label": "Sclera",
+     "lx": 492,
+     "ly": 140,
+     "anchor": "start",
+     "lead": [
+      [
+       488,
+       136
+      ],
+      [
+       452,
+       136
+      ],
+      [
+       400,
+       96
+      ]
+     ]
+    },
+    "cornea": {
+     "shape": "<path class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d9dde0\" fill-opacity=\"0.85\" d=\"M 200 155 A 110 110 0 0 0 200 305 A 150 150 0 0 1 200 155 Z\"/>",
+     "label": "Cornea",
+     "lx": 120,
+     "ly": 230,
+     "anchor": "end"
+    },
+    "choroid": {
+     "shape": "<path class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2d7cf\" d=\"M 330 100 A 130 130 0 1 1 330 360 A 130 130 0 0 1 216 292 A 90 90 0 0 0 216 168 A 130 130 0 0 1 330 100 Z\"/>",
+     "label": "Choroid (uvea)",
+     "lx": 492,
+     "ly": 180,
+     "anchor": "start",
+     "lead": [
+      [
+       488,
+       176
+      ],
+      [
+       448,
+       176
+      ],
+      [
+       414,
+       124
+      ]
+     ]
+    },
+    "retina": {
+     "shape": "<path class=\"sh\" stroke=\"#8a8a8a\" fill=\"#cfe0cf\" d=\"M 330 118 A 112 112 0 1 1 330 342 A 112 112 0 0 1 238 285 L 238 175 A 112 112 0 0 1 330 118 Z\"/>",
+     "label": "Retina",
+     "lx": 492,
+     "ly": 320,
+     "anchor": "start",
+     "lead": [
+      [
+       488,
+       316
+      ],
+      [
+       452,
+       316
+      ],
+      [
+       420,
+       300
+      ]
+     ]
+    },
+    "vitreous": {
+     "shape": "<ellipse class=\"sh\" stroke=\"#8a8a8a\" fill=\"#5b8fb9\" fill-opacity=\"0.25\" cx=\"350\" cy=\"230\" rx=\"92\" ry=\"98\"/>",
+     "label": "Vitreous humour",
+     "lx": 360,
+     "ly": 236
+    },
+    "lens": {
+     "shape": "<path class=\"sh\" stroke=\"#8a8a8a\" fill=\"#fff\" d=\"M 238 188 Q 268 230 238 272 Q 208 230 238 188 Z\"/>",
+     "label": "Lens",
+     "lx": 238,
+     "ly": 300
+    },
+    "iris": {
+     "shape": "<g><rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#3a3a3a\" x=\"222\" y=\"150\" width=\"12\" height=\"32\" rx=\"4\"/><rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#3a3a3a\" x=\"222\" y=\"278\" width=\"12\" height=\"32\" rx=\"4\"/></g>",
+     "label": "Iris",
+     "lx": 190,
+     "ly": 142
+    },
+    "ciliary": {
+     "shape": "<g><path class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d9534f\" d=\"M 226 140 L 252 128 L 256 150 L 232 158 Z\"/><path class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d9534f\" d=\"M 226 320 L 252 332 L 256 310 L 232 302 Z\"/></g>",
+     "label": [
+      "Ciliary",
+      "body"
+     ],
+     "lx": 276,
+     "ly": 104,
+     "lead": [
+      [
+       276,
+       116
+      ],
+      [
+       264,
+       126
+      ],
+      [
+       248,
+       134
+      ]
+     ]
+    },
+    "ant-chamber": {
+     "shape": "<path class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2e2a8\" fill-opacity=\"0.8\" d=\"M 205 165 A 100 100 0 0 0 205 295 L 228 278 Q 250 230 228 182 Z\"/>",
+     "label": [
+      "Anterior",
+      "chamber"
+     ],
+     "lx": 120,
+     "ly": 334,
+     "anchor": "start",
+     "lead": [
+      [
+       160,
+       320
+      ],
+      [
+       196,
+       300
+      ],
+      [
+       214,
+       266
+      ]
+     ]
+    },
+    "optic-nerve": {
+     "shape": "<g><rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2e2a8\" x=\"478\" y=\"205\" width=\"86\" height=\"50\" rx=\"8\"/><circle class=\"sh\" stroke=\"#8a8a8a\" fill=\"#3a3a3a\" cx=\"478\" cy=\"230\" r=\"10\"/></g>",
+     "label": "Optic nerve",
+     "lx": 574,
+     "ly": 236,
+     "anchor": "start"
+    },
+    "fovea": {
+     "shape": "<circle class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d9534f\" cx=\"442\" cy=\"188\" r=\"9\"/>",
+     "label": "Fovea / macula",
+     "lx": 492,
+     "ly": 100,
+     "anchor": "start",
+     "lead": [
+      [
+       488,
+       96
+      ],
+      [
+       462,
+       96
+      ],
+      [
+       444,
+       180
+      ]
+     ]
+    }
+   },
+   "arrows": {
+    "sclera": [
+     {
+      "t": [
+       330,
+       82
+      ],
+      "d": [
+       10,
+       -52
+      ]
+     }
+    ],
+    "cornea": [
+     {
+      "t": [
+       160,
+       230
+      ],
+      "d": [
+       -62,
+       0
+      ]
+     }
+    ],
+    "choroid": [
+     {
+      "t": [
+       440,
+       120
+      ],
+      "d": [
+       74,
+       -40
+      ]
+     }
+    ],
+    "retina": [
+     {
+      "t": [
+       420,
+       140
+      ],
+      "d": [
+       86,
+       -8
+      ]
+     }
+    ],
+    "vitreous": [
+     {
+      "t": [
+       370,
+       250
+      ],
+      "d": [
+       92,
+       70
+      ]
+     }
+    ],
+    "lens": [
+     {
+      "t": [
+       238,
+       230
+      ],
+      "d": [
+       0,
+       96
+      ]
+     }
+    ],
+    "iris": [
+     {
+      "t": [
+       228,
+       166
+      ],
+      "d": [
+       -60,
+       -38
+      ]
+     }
+    ],
+    "ciliary": [
+     {
+      "t": [
+       244,
+       140
+      ],
+      "d": [
+       42,
+       -52
+      ]
+     }
+    ],
+    "ant-chamber": [
+     {
+      "t": [
+       215,
+       230
+      ],
+      "d": [
+       -60,
+       80
+      ]
+     }
+    ],
+    "optic-nerve": [
+     {
+      "t": [
+       520,
+       230
+      ],
+      "d": [
+       70,
+       52
+      ]
+     }
+    ],
+    "fovea": [
+     {
+      "t": [
+       442,
+       188
+      ],
+      "d": [
+       76,
+       -54
+      ]
+     }
+    ]
+   }
+  },
   "kind": "model",
   "intro": "",
   "model3d": {
@@ -417,6 +722,13 @@ SINA.lectures["anat3-eyeball-1"] = {
    "back": "Fibrous layer (sclera and cornea), vascular layer or uvea (iris, ciliary body, choroid) and neural layer (retina)."
   },
   {
+   "id": "e1",
+   "type": "image",
+   "target": "sclera",
+   "front": "Which layer is highlighted?",
+   "back": "The sclera, forming five sixths of the outer fibrous coat. Relatively avascular, less sensitive than the cornea, and it provides insertion for the extraocular muscles."
+  },
+  {
    "id": "y4",
    "type": "text",
    "front": "How is the outer coat divided between cornea and sclera?",
@@ -433,6 +745,13 @@ SINA.lectures["anat3-eyeball-1"] = {
    "type": "text",
    "front": "What is scleral icterus?",
    "back": "Yellowing of the white of the eye, also called icteric sclera, associated with hepatitis and other liver diseases."
+  },
+  {
+   "id": "e2",
+   "type": "image",
+   "target": "cornea",
+   "front": "Which structure is highlighted?",
+   "back": "The cornea, forming one sixth of the outer coat. Completely avascular, highly sensitive (CN V1), and the site of maximum refraction."
   },
   {
    "id": "y7",
@@ -453,6 +772,13 @@ SINA.lectures["anat3-eyeball-1"] = {
    "back": "A muscular structure connecting the choroid with the circumference of the iris. It alters the shape and thickness of the lens (accommodation), and its ciliary processes secrete aqueous humour."
   },
   {
+   "id": "e3",
+   "type": "image",
+   "target": "choroid",
+   "front": "Which layer is highlighted?",
+   "back": "The choroid, the posterior part of the vascular layer (uvea), lying between the sclera and the retina."
+  },
+  {
    "id": "y10",
    "type": "text",
    "front": "Describe the iris and how the pupil responds.",
@@ -469,6 +795,13 @@ SINA.lectures["anat3-eyeball-1"] = {
    "type": "text",
    "front": "How is the aqueous fluid formed?",
    "back": "By diffusion, ultrafiltration and active secretion. Diffusion and ultrafiltration form a reservoir of plasma in the ciliary stroma. Active secretion from that ultrafiltrate occurs across the ciliary epithelium and is relatively pressure independent. Ascorbic acid, amino acids and glucose are transported into the aqueous to supply the cornea and lens."
+  },
+  {
+   "id": "e4",
+   "type": "image",
+   "target": "retina",
+   "front": "Which layer is highlighted?",
+   "back": "The retina, the neural layer. Its light-receptive neural layer ends anteriorly at the ora serrata."
   },
   {
    "id": "y13",
@@ -489,6 +822,13 @@ SINA.lectures["anat3-eyeball-1"] = {
    "back": "Aqueous passes freely from the anterior chamber angle into the connective tissue spaces within the ciliary muscle, via the iris root and anterior face of the ciliary body. Its flow is intraocular pressure independent, so it keeps draining despite pressure fluctuations. Inflammation can clog the trabecular meshwork, but locally produced prostaglandins enhance uveoscleral drainage and prevent dangerously high pressure."
   },
   {
+   "id": "e5",
+   "type": "image",
+   "target": "lens",
+   "front": "Which structure is highlighted?",
+   "back": "The lens: transparent, biconvex, enclosed in a capsule suspended by zonular fibres. It thickens for near vision when CN III makes the ciliary muscle contract."
+  },
+  {
    "id": "y16",
    "type": "text",
    "front": "What is intraocular pressure?",
@@ -505,6 +845,13 @@ SINA.lectures["anat3-eyeball-1"] = {
    "type": "text",
    "front": "Describe the lens.",
    "back": "Transparent, biconvex, enclosed in a capsule suspended by zonular fibres, the suspensory ligament of the lens. It sits next to the anterior surface of the eye. With no nerve stimulation, more distant objects come into focus."
+  },
+  {
+   "id": "e6",
+   "type": "image",
+   "target": "iris",
+   "front": "Which structure is highlighted?",
+   "back": "The iris, a pigmented diaphragm with the pupil at its centre. Sphincter pupillae narrows the pupil (parasympathetic); dilator pupillae widens it (sympathetic)."
   },
   {
    "id": "y19",
@@ -525,6 +872,13 @@ SINA.lectures["anat3-eyeball-1"] = {
    "back": "They permit focusing on near and far objects by changing the curvature of the lens. At rest or far gaze the lens is stretched or flat; to focus near, the lens thickens."
   },
   {
+   "id": "e7",
+   "type": "image",
+   "target": "ciliary",
+   "front": "Which structure is at the arrow?",
+   "back": "The ciliary body. It alters the shape and thickness of the lens for accommodation, and its ciliary processes secrete the aqueous humour."
+  },
+  {
    "id": "y22",
    "type": "text",
    "front": "What is a cataract, and what are its symptoms?",
@@ -541,6 +895,13 @@ SINA.lectures["anat3-eyeball-1"] = {
    "type": "text",
    "front": "Name the parts of the visual retina.",
    "back": "Neural layer (light-receptive, ending anteriorly at the ora serrata), pigmented cell layer (a single layer of cells absorbing light to reduce scattering), optic disc or papilla, macula and fovea."
+  },
+  {
+   "id": "e8",
+   "type": "image",
+   "target": "vitreous",
+   "front": "Which space is highlighted?",
+   "back": "The vitreous humour, filling about 80 percent of the posterior segment. It transmits light and holds the retina and lens in place."
   },
   {
    "id": "y25",
@@ -561,6 +922,13 @@ SINA.lectures["anat3-eyeball-1"] = {
    "back": "Photoreceptors and bipolar cells produce graded potentials rather than action potentials. Ganglion cells generate action potentials, and their axons join together to form the optic nerve, which exits through the back of the eye at the optic disc."
   },
   {
+   "id": "e9",
+   "type": "image",
+   "target": "ant-chamber",
+   "front": "Which space is highlighted?",
+   "back": "The anterior chamber, between the cornea and the iris. Aqueous fluid reaches it through the pupil and drains at the angle."
+  },
+  {
    "id": "y28",
    "type": "text",
    "front": "Rods versus cones.",
@@ -577,6 +945,20 @@ SINA.lectures["anat3-eyeball-1"] = {
    "type": "text",
    "front": "Describe the structure of a cone cell.",
    "back": "Similar to rods, with outer and inner segments, a basal body with a cilium, and an accumulation of mitochondria and ribosomes. There are three functional types that cannot be distinguished morphologically. Each type has a photopigment called iodopsin, with maximum sensitivity in the red, green or blue region. Cones are sensitive only to light of higher intensity but are believed to permit better visual acuity than rods."
+  },
+  {
+   "id": "e10",
+   "type": "image",
+   "target": "optic-nerve",
+   "front": "Which structure is at the arrow?",
+   "back": "The optic nerve, leaving the back of the eye at the optic disc, where there are no photoreceptors: the blind spot."
+  },
+  {
+   "id": "e11",
+   "type": "image",
+   "target": "fovea",
+   "front": "What is the structure at the arrow?",
+   "back": "The macula, with the fovea at its centre. It is densely packed with cones, lacks blood vessels, and is responsible for high-acuity vision."
   }
  ],
  "deeper": [

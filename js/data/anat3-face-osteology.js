@@ -95,6 +95,392 @@ SINA.lectures["anat3-face-osteology"] = {
   "Skull base bones: frontal, ethmoid, sphenoid, temporal, occipital."
  ],
  "visual": {
+  "figure": {
+   "viewBox": "40 0 640 470",
+   "alt": "Schematic of the skull seen from the front, bones coloured",
+   "caption": "The skull from the front, with the main bones shown in different colours. Schematic, not to scale.",
+   "base": "",
+   "parts": {
+    "frontal": {
+     "shape": "<path class=\"sh\" stroke=\"#8a8a8a\" fill=\"#5b8fb9\" fill-opacity=\"0.5\" d=\"M 200 40 Q 330 10 460 40 Q 480 110 470 150 L 190 150 Q 180 110 200 40 Z\"/>",
+     "label": "Frontal",
+     "lx": 330,
+     "ly": 90
+    },
+    "parietal": {
+     "shape": "<g><path class=\"sh\" stroke=\"#8a8a8a\" fill=\"#cfe0cf\" d=\"M 186 60 Q 170 110 182 150 L 190 150 Q 180 110 200 40 Z\"/><path class=\"sh\" stroke=\"#8a8a8a\" fill=\"#cfe0cf\" d=\"M 474 60 Q 490 110 478 150 L 470 150 Q 480 110 460 40 Z\"/></g>",
+     "label": "Parietal",
+     "lx": 156,
+     "ly": 72,
+     "anchor": "end",
+     "lead": [
+      [
+       160,
+       68
+      ],
+      [
+       184,
+       68
+      ],
+      [
+       186,
+       96
+      ]
+     ]
+    },
+    "orbit-l": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d9dde0\" x=\"214\" y=\"158\" width=\"118\" height=\"84\" rx=\"22\"/>",
+     "label": "Orbit",
+     "lx": 140,
+     "ly": 186,
+     "anchor": "end",
+     "lead": [
+      [
+       146,
+       182
+      ],
+      [
+       190,
+       186
+      ],
+      [
+       218,
+       196
+      ]
+     ]
+    },
+    "orbit-r": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d9dde0\" x=\"336\" y=\"158\" width=\"118\" height=\"84\" rx=\"22\"/>",
+     "label": "",
+     "lx": 0,
+     "ly": 0
+    },
+    "zygomatic": {
+     "shape": "<g><path class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d9534f\" fill-opacity=\"0.55\" d=\"M 196 200 Q 186 250 216 268 L 250 248 L 216 214 Z\"/><path class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d9534f\" fill-opacity=\"0.55\" d=\"M 472 200 Q 482 250 452 268 L 418 248 L 452 214 Z\"/></g>",
+     "label": "Zygomatic",
+     "lx": 166,
+     "ly": 246,
+     "anchor": "end",
+     "lead": [
+      [
+       170,
+       242
+      ],
+      [
+       192,
+       242
+      ],
+      [
+       206,
+       232
+      ]
+     ]
+    },
+    "nasal": {
+     "shape": "<path class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2e2a8\" d=\"M 322 166 L 346 166 L 350 226 L 318 226 Z\"/>",
+     "label": "Nasal bones",
+     "lx": 494,
+     "ly": 180,
+     "anchor": "start",
+     "lead": [
+      [
+       490,
+       176
+      ],
+      [
+       420,
+       176
+      ],
+      [
+       348,
+       190
+      ]
+     ]
+    },
+    "maxilla": {
+     "shape": "<path class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2d7cf\" d=\"M 232 268 Q 334 250 436 268 L 424 352 Q 334 372 244 352 Z\"/>",
+     "label": "Maxilla",
+     "lx": 140,
+     "ly": 312,
+     "anchor": "end",
+     "lead": [
+      [
+       146,
+       308
+      ],
+      [
+       210,
+       308
+      ],
+      [
+       244,
+       310
+      ]
+     ]
+    },
+    "mandible": {
+     "shape": "<path class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d8ccb4\" d=\"M 236 366 Q 334 420 432 366 L 424 400 Q 334 452 244 400 Z\"/>",
+     "label": "Mandible",
+     "lx": 140,
+     "ly": 404,
+     "anchor": "end",
+     "lead": [
+      [
+       146,
+       400
+      ],
+      [
+       220,
+       398
+      ],
+      [
+       262,
+       392
+      ]
+     ]
+    },
+    "piriform": {
+     "shape": "<path class=\"sh\" stroke=\"#8a8a8a\" fill=\"#3a3a3a\" d=\"M 334 232 L 362 300 Q 334 314 306 300 Z\"/>",
+     "label": [
+      "Piriform",
+      "aperture"
+     ],
+     "lx": 494,
+     "ly": 330,
+     "anchor": "start",
+     "lead": [
+      [
+       490,
+       326
+      ],
+      [
+       420,
+       320
+      ],
+      [
+       352,
+       292
+      ]
+     ]
+    },
+    "supraorbital": {
+     "shape": "<g><circle class=\"sh\" stroke=\"#8a8a8a\" fill=\"#3a3a3a\" cx=\"252\" cy=\"160\" r=\"7\"/><circle class=\"sh\" stroke=\"#8a8a8a\" fill=\"#3a3a3a\" cx=\"416\" cy=\"160\" r=\"7\"/></g>",
+     "label": [
+      "Supraorbital",
+      "notch"
+     ],
+     "lx": 216,
+     "ly": 120,
+     "anchor": "end",
+     "lead": [
+      [
+       220,
+       116
+      ],
+      [
+       240,
+       130
+      ],
+      [
+       250,
+       154
+      ]
+     ]
+    },
+    "infraorbital": {
+     "shape": "<g><circle class=\"sh\" stroke=\"#8a8a8a\" fill=\"#3a3a3a\" cx=\"258\" cy=\"264\" r=\"7\"/><circle class=\"sh\" stroke=\"#8a8a8a\" fill=\"#3a3a3a\" cx=\"410\" cy=\"264\" r=\"7\"/></g>",
+     "label": [
+      "Infraorbital",
+      "foramen"
+     ],
+     "lx": 494,
+     "ly": 282,
+     "anchor": "start",
+     "lead": [
+      [
+       490,
+       278
+      ],
+      [
+       452,
+       272
+      ],
+      [
+       416,
+       266
+      ]
+     ]
+    },
+    "mental": {
+     "shape": "<g><circle class=\"sh\" stroke=\"#8a8a8a\" fill=\"#3a3a3a\" cx=\"282\" cy=\"386\" r=\"7\"/><circle class=\"sh\" stroke=\"#8a8a8a\" fill=\"#3a3a3a\" cx=\"386\" cy=\"386\" r=\"7\"/></g>",
+     "label": [
+      "Mental",
+      "foramen"
+     ],
+     "lx": 494,
+     "ly": 394,
+     "anchor": "start",
+     "lead": [
+      [
+       490,
+       390
+      ],
+      [
+       434,
+       388
+      ],
+      [
+       392,
+       387
+      ]
+     ]
+    }
+   },
+   "arrows": {
+    "frontal": [
+     {
+      "t": [
+       334,
+       80
+      ],
+      "d": [
+       0,
+       -62
+      ]
+     }
+    ],
+    "parietal": [
+     {
+      "t": [
+       186,
+       100
+      ],
+      "d": [
+       -58,
+       -24
+      ]
+     }
+    ],
+    "orbit-l": [
+     {
+      "t": [
+       272,
+       200
+      ],
+      "d": [
+       -86,
+       -60
+      ]
+     }
+    ],
+    "zygomatic": [
+     {
+      "t": [
+       210,
+       238
+      ],
+      "d": [
+       -70,
+       18
+      ]
+     }
+    ],
+    "nasal": [
+     {
+      "t": [
+       334,
+       190
+      ],
+      "d": [
+       84,
+       -56
+      ]
+     }
+    ],
+    "maxilla": [
+     {
+      "t": [
+       334,
+       300
+      ],
+      "d": [
+       100,
+       44
+      ]
+     }
+    ],
+    "mandible": [
+     {
+      "t": [
+       334,
+       392
+      ],
+      "d": [
+       92,
+       42
+      ]
+     }
+    ],
+    "piriform": [
+     {
+      "t": [
+       334,
+       272
+      ],
+      "d": [
+       86,
+       -8
+      ]
+     }
+    ],
+    "supraorbital": [
+     {
+      "t": [
+       252,
+       160
+      ],
+      "d": [
+       -60,
+       -38
+      ]
+     },
+     {
+      "t": [
+       416,
+       160
+      ],
+      "d": [
+       60,
+       -38
+      ]
+     }
+    ],
+    "infraorbital": [
+     {
+      "t": [
+       410,
+       264
+      ],
+      "d": [
+       74,
+       18
+      ]
+     }
+    ],
+    "mental": [
+     {
+      "t": [
+       386,
+       386
+      ],
+      "d": [
+       80,
+       10
+      ]
+     }
+    ]
+   }
+  },
   "kind": "model",
   "intro": "",
   "model3d": {
@@ -359,6 +745,13 @@ SINA.lectures["anat3-face-osteology"] = {
    "back": "6 paired: maxilla, zygomatic, palatine, nasal, lacrimal, inferior nasal concha. 2 unpaired: mandible and vomer."
   },
   {
+   "id": "f1",
+   "type": "image",
+   "target": "frontal",
+   "front": "Which bone is highlighted?",
+   "back": "Frontal bone. It forms the forehead and the roof of the orbits, and is one of the 8 cranial bones."
+  },
+  {
    "id": "t4",
    "type": "text",
    "front": "Which joints let the skull nod and rotate?",
@@ -375,6 +768,13 @@ SINA.lectures["anat3-face-osteology"] = {
    "type": "text",
    "front": "What is the sella turcica and where is it?",
    "back": "A saddle-shaped depression on the upper surface of the sphenoid body. It holds the pituitary gland (hypophysial fossa, with the tuberculum sellae in front and the dorsum sellae behind)."
+  },
+  {
+   "id": "f2",
+   "type": "image",
+   "target": "zygomatic",
+   "front": "Which bone is highlighted, on both sides?",
+   "back": "Zygomatic bone (the cheekbone). It has frontal, temporal and maxillary processes and joins the temporal bone to form the zygomatic arch."
   },
   {
    "id": "t7",
@@ -395,6 +795,13 @@ SINA.lectures["anat3-face-osteology"] = {
    "back": "Cribriform plate, crista galli, perpendicular plate, and the two ethmoidal labyrinths."
   },
   {
+   "id": "f3",
+   "type": "image",
+   "target": "maxilla",
+   "front": "Which bone is highlighted?",
+   "back": "Maxilla, the upper jaw. Its body holds the maxillary sinus, and it has four processes: frontal, zygomatic, alveolar and palatine."
+  },
+  {
    "id": "t10",
    "type": "text",
    "front": "What does the cribriform plate do?",
@@ -411,6 +818,13 @@ SINA.lectures["anat3-face-osteology"] = {
    "type": "text",
    "front": "Name the parts of the temporal bone.",
    "back": "Squamous, petrous, tympanic and mastoid parts, plus the styloid process."
+  },
+  {
+   "id": "f4",
+   "type": "image",
+   "target": "mandible",
+   "front": "Which bone is highlighted?",
+   "back": "Mandible, the lower jaw, and the only skull bone that moves. It articulates with the temporal bone at the temporomandibular joint."
   },
   {
    "id": "t13",
@@ -431,6 +845,13 @@ SINA.lectures["anat3-face-osteology"] = {
    "back": "A pyramid-shaped body containing the maxillary sinus, plus four processes: frontal, zygomatic, alveolar and palatine."
   },
   {
+   "id": "f5",
+   "type": "image",
+   "target": "nasal",
+   "front": "Which bones are highlighted?",
+   "back": "The nasal bones, which form the bridge of the nose and meet at the internasal suture."
+  },
+  {
    "id": "t16",
    "type": "text",
    "front": "Which maxillary features carry nerves or drain the sinus?",
@@ -447,6 +868,13 @@ SINA.lectures["anat3-face-osteology"] = {
    "type": "text",
    "front": "What forms the bony nasal septum?",
    "back": "The perpendicular plate of the ethmoid (upper part) and the vomer (lower and posterior part), with septal cartilage in front."
+  },
+  {
+   "id": "f6",
+   "type": "image",
+   "target": "supraorbital",
+   "front": "What is the opening at the arrows?",
+   "back": "The supraorbital notch (or foramen), in the superior orbital margin of the frontal bone. It transmits the supraorbital nerve and vessels."
   },
   {
    "id": "t19",
@@ -467,6 +895,13 @@ SINA.lectures["anat3-face-osteology"] = {
    "back": "The H-shaped junction of the frontal, parietal, squamous temporal and greater wing of the sphenoid on the side of the skull. It is the thinnest part of the skull wall and overlies the anterior branch of the middle meningeal artery."
   },
   {
+   "id": "f7",
+   "type": "image",
+   "target": "infraorbital",
+   "front": "What is the opening at the arrow?",
+   "back": "The infraorbital foramen, in the maxilla just below the inferior orbital margin. The infraorbital nerve and vessels emerge here onto the face."
+  },
+  {
    "id": "t25",
    "type": "text",
    "front": "Sublingual vs submandibular fossa on the mandible?",
@@ -485,6 +920,13 @@ SINA.lectures["anat3-face-osteology"] = {
    "back": "Frontal, ethmoidal (air cells), sphenoid and maxillary. The maxillary is the largest."
   },
   {
+   "id": "f8",
+   "type": "image",
+   "target": "mental",
+   "front": "What is the opening at the arrow?",
+   "back": "The mental foramen, on the outer surface of the body of the mandible. It transmits the mental nerve and vessels."
+  },
+  {
    "id": "t22",
    "type": "text",
    "front": "Where do the paranasal sinuses drain?",
@@ -495,6 +937,27 @@ SINA.lectures["anat3-face-osteology"] = {
    "type": "text",
    "front": "Give the functions of the paranasal sinuses.",
    "back": "They lighten the skull, humidify and warm inhaled air, help the immune response of the nose and add resonance to the voice (some of these roles are debated)."
+  },
+  {
+   "id": "f9",
+   "type": "image",
+   "target": "piriform",
+   "front": "What is the opening at the arrow?",
+   "back": "The piriform aperture, the bony opening of the nasal cavity, bounded by the nasal bones and the maxillae."
+  },
+  {
+   "id": "f10",
+   "type": "image",
+   "target": "parietal",
+   "front": "Which bone is highlighted?",
+   "back": "Parietal bone. There are two, and they form the sides and roof of the skull."
+  },
+  {
+   "id": "f11",
+   "type": "image",
+   "target": "orbit-l",
+   "front": "Which bones build the cavity at the arrow?",
+   "back": "The orbit, built by 7 bones: frontal, sphenoid, ethmoid, zygomatic, lacrimal, maxilla and palatine."
   }
  ],
  "deeper": [

@@ -1,5 +1,5 @@
-const CACHE = "sina-v14";
-const CORE = ["./", "index.html", "css/style.css", "js/app.js", "js/data/index.js", "js/data/papers.js", "js/data/updates.js", "js/data/anat3-orbit.js", "js/data/anat3-face-osteology.js", "js/data/anat3-facial-muscles.js", "js/data/anat3-blood-supply.js", "js/data/anat3-orbital-appendages.js", "js/data/anat3-eyeball-1.js", "manifest.webmanifest", "icons/favicon.svg", "icons/icon-192.png", "icons/icon-512.png", "icons/apple-touch-icon.png"];
+const CACHE = "sina-v19";
+const CORE = ["./", "index.html", "css/style.css", "js/app.js", "js/data/index.js", "js/data/papers.js", "js/data/updates.js", "js/data/anat3-orbit.js", "js/data/anat3-face-osteology.js", "js/data/anat3-facial-muscles.js", "js/data/anat3-blood-supply.js", "js/data/anat3-orbital-appendages.js", "js/data/anat3-eyeball-1.js", "js/data/anat3-ocular-muscles.js", "js/data/anat3-eye-innervation.js", "js/data/anat3-ocular-clinical.js", "js/data/anat3-sinuses.js", "js/data/anat3-oral-cavity.js", "manifest.webmanifest", "icons/favicon.svg", "icons/icon-192.png", "icons/icon-512.png", "icons/apple-touch-icon.png"];
 self.addEventListener("install", (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(CORE)).then(() => self.skipWaiting()));
 });
