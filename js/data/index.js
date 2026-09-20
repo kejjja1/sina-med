@@ -6,7 +6,7 @@ SINA.subjects = [
     groups: [
       { name: "Face and orbit", items: [
         { id: "anat3-face-osteology", title: "Osteology of the face" },
-        { id: "anat3-facial-muscles", title: "Muscles of the face" },
+        { id: "anat3-facial-muscles", title: "Muscles of the facio-maxillary region" },
         { id: "anat3-blood-supply", title: "Blood supply of the region" },
         { id: "anat3-orbit", title: "The orbit: osteology and myology" },
         { id: "anat3-orbital-appendages", title: "Anatomy of the orbital appendages" },

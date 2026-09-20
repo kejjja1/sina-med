@@ -5,6 +5,7 @@ SINA.lectures["anat3-orbit"] = {
  "group": "Face and orbit",
  "title": "The orbit: osteology and myology",
  "sourceFile": "1. Osteology of the orbit.pptx (Facio-Maxillary Module, CM1, 2025-26)",
+ "sourceUrl": "https://drive.google.com/file/d/1CWrYVfc7FBfNMNYLl13cBPVSgAdQ55MR/view?usp=drivesdk",
  "buildNote": "<strong>Built from the lecture slides.</strong> This page follows the lecture: orbital margins, walls, foramina and fissures, optic canal, and the muscle attachments. The wording of the slides was compared with the pictures on them, and every fact was cross-checked against at least two references, listed at the bottom. The diagrams are schematics drawn for this site. If your professor says something different, trust your professor.",
  "summary": [
   {
@@ -51,11 +52,6 @@ SINA.lectures["anat3-orbit"] = {
    "id": "pathways",
    "title": "Pathways worth tracing",
    "html": "<ul><li><strong>Optic nerve and ophthalmic artery:</strong> travel together through the optic canal into the orbit.</li><li><strong>Ophthalmic division (V1):</strong> its three branches (lacrimal, frontal, nasociliary) enter through the superior orbital fissure.</li><li><strong>Maxillary nerve (V2):</strong> comes from the pterygopalatine fossa, enters through the inferior orbital fissure, runs in the infraorbital groove and canal as the infraorbital nerve, and exits at the infraorbital foramen onto the cheek.</li><li><strong>Eye movement nerves:</strong> CN III and CN VI go through the fissure inside the tendinous ring, right where the four recti arise. CN IV goes through outside the ring.</li></ul>"
-  },
-  {
-   "id": "glossary",
-   "title": "Key definitions",
-   "html": "<dl class='glossary'><dt>Orbital margin</dt><dd>The bony rim at the front of the orbit; the base of the pyramid.</dd><dt>Apex</dt><dd>The back of the orbit, at the optic canal.</dd><dt>Optic canal</dt><dd>Bony tunnel in the lesser wing of the sphenoid carrying the optic nerve and ophthalmic artery.</dd><dt>Superior orbital fissure</dt><dd>Cleft between the lesser and greater wings of the sphenoid; the main route for nerves to the eye muscles.</dd><dt>Inferior orbital fissure</dt><dd>Cleft between the greater wing of the sphenoid and the maxilla; carries V2 branches.</dd><dt>Common tendinous ring (annulus of Zinn)</dt><dd>Fibrous ring at the apex where the four recti arise; it sits over the middle of the superior orbital fissure.</dd><dt>Trochlea</dt><dd>Fibrous pulley on the superomedial orbit through which the superior oblique tendon turns.</dd><dt>Lamina papyracea</dt><dd>The paper-thin orbital plate of the ethmoid forming most of the medial wall.</dd><dt>Infraorbital groove and canal</dt><dd>Channel along the orbital floor that carries the infraorbital nerve and vessels to the infraorbital foramen.</dd><dt>Lacrimal fossa</dt><dd>Depression on the medial wall holding the lacrimal sac; continues as the nasolacrimal canal.</dd><dt>Orbital axis</dt><dd>The long axis of the bony socket, pointing forward and outward.</dd><dt>Visual axis</dt><dd>The line along which the eye looks; parallel to the other eye's when gazing ahead.</dd></dl>"
   }
  ],
  "exam": [
@@ -301,6 +297,48 @@ SINA.lectures["anat3-orbit"] = {
    ],
    "answer": 1,
    "why": "The lateral walls of the two orbits meet at about 90 degrees. The two orbital axes make about 45 degrees with each other, while the medial walls are roughly parallel."
+  },
+  {
+   "q": "Which structures pass through the superior orbital fissure INSIDE the common tendinous ring? (choose all)",
+   "options": [
+    "Abducens nerve (CN VI)",
+    "Nasociliary nerve",
+    "Frontal nerve",
+    "Superior ophthalmic vein"
+   ],
+   "answers": [
+    0,
+    1
+   ],
+   "why": "Inside the ring: both divisions of CN III, CN VI and the nasociliary nerve. The frontal nerve and the superior ophthalmic vein pass outside the ring."
+  },
+  {
+   "q": "Which muscles are supplied by the oculomotor nerve (CN III)? (choose all)",
+   "options": [
+    "Inferior oblique",
+    "Superior oblique",
+    "Levator palpebrae superioris",
+    "Lateral rectus"
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "why": "LR6 SO4: lateral rectus is CN VI and superior oblique is CN IV. Everything else, including the inferior oblique and levator palpebrae superioris, is CN III."
+  },
+  {
+   "q": "Which bones take part in the floor of the orbit? (choose all)",
+   "options": [
+    "Maxilla",
+    "Palatine",
+    "Lacrimal",
+    "Ethmoid"
+   ],
+   "answers": [
+    0,
+    1
+   ],
+   "why": "The floor is formed by the orbital surface of the maxilla, the zygomatic bone and the orbital process of the palatine. The lacrimal and ethmoid belong to the medial wall."
   }
  ],
  "cards": [

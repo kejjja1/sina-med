@@ -280,19 +280,19 @@ SINA.papers = [
  {
   "id": "anat3-paper-50",
   "subject": "anat3",
-  "title": "Anatomy 3 paper with corrections (50 questions)",
+  "title": "Anatomy 3 past exam (50 questions)",
   "year": "Year 2",
   "links": [
    {
-    "label": "Open the paper (PDF)",
-    "url": "https://drive.google.com/file/d/1jvSzHbT1Na2RmnkRKkkY0T-a_uf_q2yC/view?usp=drivesdk"
+    "label": "Open the exam paper (PDF)",
+    "url": "https://drive.google.com/file/d/1GtuKoI4lk6j7H-pkP0yS3ivgpWevpmW2/view?usp=drivesdk"
    },
    {
-    "label": "Open the color version (PDF)",
-    "url": "https://drive.google.com/file/d/1GtuKoI4lk6j7H-pkP0yS3ivgpWevpmW2/view?usp=drivesdk"
+    "label": "Open the correction (PDF)",
+    "url": "https://drive.google.com/file/d/1jvSzHbT1Na2RmnkRKkkY0T-a_uf_q2yC/view?usp=drivesdk"
    }
   ],
-  "note": "The plain and color versions contain the same 50 questions."
+  "note": "Same 50 questions in both files: the exam paper first, the correction second."
  },
  {
   "id": "physio-neuromuscular-bioenergetic",

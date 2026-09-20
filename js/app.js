@@ -226,6 +226,7 @@
     setView(html + "</div>", s.name);
   }
 
+  var PSA = '<div class="psa"><strong>A quick word before you close this.</strong> Everything here is a study aid built from the lecture slides, not a replacement for them. Sit in your lectures, read your professor\'s slides and your textbooks, and use this site to make sense of them, revise them and test yourself. If something here disagrees with your professor, your professor is right.</div>';
   var TABS = [["summary", "Summary"], ["visual", "Visual"], ["questions", "Questions"], ["cards", "Flashcards"], ["deeper", "Go deeper"], ["resources", "Resources"]];
 
   function lectureView(id, tab) {
@@ -235,10 +236,10 @@
     tab = tab || "summary";
     if (!TABS.some(function (t) { return t[0] === tab; })) tab = "summary";
     var html = '<div class="wrap"><p class="crumbs"><a href="#/">Home</a> / <a href="#/subject/' + sub.id + '">' + esc(sub.name) + "</a></p><h1>" + esc(lec.title) + "</h1>" +
-      '<p class="meta">Source: ' + esc(lec.sourceFile) + "</p>" +
+      '<p class="meta">Source: ' + (lec.sourceUrl ? '<a class="srclink" href="' + esc(lec.sourceUrl) + '" target="_blank" rel="noopener">' + esc(lec.sourceFile) + "</a>" : esc(lec.sourceFile)) + "</p>" +
       '<div class="tabs" role="tablist" aria-label="Lecture sections">' + TABS.map(function (t) {
         return '<button class="tab" role="tab" id="tab-' + t[0] + '" aria-selected="' + (t[0] === tab) + '" data-tab="' + t[0] + '">' + t[1] + "</button>";
-      }).join("") + '</div><div id="panel" role="tabpanel" aria-labelledby="tab-' + tab + '"></div></div>';
+      }).join("") + '</div><div id="panel" role="tabpanel" aria-labelledby="tab-' + tab + '"></div>' + PSA + "</div>";
     setView(html, lec.title);
     var panel = document.getElementById("panel");
     ({ summary: summaryPanel, visual: visualPanel, questions: questionsPanel, cards: cardsPanel, deeper: deeperPanel, resources: resourcesPanel })[tab](panel, lec);
@@ -430,6 +431,24 @@
   function notFound() {
     setView('<div class="wrap"><h1>Not built yet</h1><p>This lecture is on the list, but its page is not ready. <a href="#/">Back to the home page</a>.</p></div>', "Not ready");
   }
+
+  /* ---------- welcome screen ---------- */
+  function showWelcome() {
+    var w = document.getElementById("welcome");
+    if (!w) return;
+    if (store.get("sina:welcomed", false)) { w.remove(); return; }
+    w.hidden = false;
+    document.body.classList.add("noscroll");
+    var btn = w.querySelector("#enter");
+    btn.focus();
+    btn.addEventListener("click", function () {
+      store.set("sina:welcomed", true);
+      w.classList.add("leaving");
+      document.body.classList.remove("noscroll");
+      setTimeout(function () { w.remove(); }, 260);
+    });
+  }
+  showWelcome();
 
   /* ---------- router ---------- */
   function route() {

@@ -4,8 +4,9 @@ SINA.lectures["anat3-face-osteology"] = {
  "subject": "anat3",
  "group": "Face and orbit",
  "title": "Osteology of the face",
- "sourceFile": "1. Osteology of Face_UM6SS.pptx (Facio-Maxillary Module)",
- "buildNote": "<strong>Prototype note.</strong> Sina could read this lecture's slide text (titles and lists) but not its pictures, so the page follows the lecture's outline: skull, cranium and facial bones, each bone, the base of the skull and the paranasal sinuses. Every fact was cross-checked against at least two references, listed at the bottom. If your slides say something different, trust your slides.",
+ "sourceFile": "1. Osteology of Face_UM6SS.pptx (Facio-Maxillary Module, Prof. Zehra Jamil)",
+ "sourceUrl": "https://drive.google.com/file/d/1u-4O0m328SdTCymZjS6VDkONg14ya608/view?usp=drivesdk",
+ "buildNote": "<strong>Built from the lecture slides.</strong> This page follows Prof. Zehra Jamil’s lecture: the skull and how it sits on the neck, the cranium, the facial bones one by one, the external base of the skull and the paranasal sinuses. Every fact was cross-checked against at least two references, listed at the bottom. If your professor says something different, trust your professor.",
  "summary": [
   {
    "id": "big",
@@ -45,7 +46,7 @@ SINA.lectures["anat3-face-osteology"] = {
   {
    "id": "temporal",
    "title": "Temporal bone",
-   "html": "<div class='table-wrap'><table class=''><thead><tr><th scope='col'>Part</th><th scope='col'>What to know</th></tr></thead><tbody><tr><th scope='row'>Squamous part</th><td>Large flat plate on the side of the skull. Origin of temporalis. Its zygomatic process meets the zygomatic bone to form the zygomatic arch. The mandibular fossa below it receives the head of the mandible.</td></tr><tr><th scope='row'>Petrous part</th><td>Dense, pyramid-shaped part that separates the middle and posterior cranial fossae and protects the inner ear. Has the internal acoustic meatus, carotid canal and jugular foramen.</td></tr><tr><th scope='row'>Tympanic part</th><td>Curved plate that forms much of the external acoustic meatus.</td></tr><tr><th scope='row'>Mastoid part</th><td>Contains the mastoid air cells. The mastoid process is an attachment for sternocleidomastoid.</td></tr><tr><th scope='row'>Styloid process</th><td>Thin spike pointing down and forward. The stylomastoid foramen just behind it carries the facial nerve. Attachment for stylopharyngeus, styloglossus and stylohyoid.</td></tr></tbody></table></div>"
+   "html": "<div class='table-wrap'><table class=''><thead><tr><th scope='col'>Part</th><th scope='col'>What to know</th></tr></thead><tbody><tr><th scope='row'>Squamous part</th><td>Large flat plate on the side of the skull. Origin of temporalis. Its zygomatic process meets the zygomatic bone to form the zygomatic arch. The mandibular fossa below it receives the head of the mandible.</td></tr><tr><th scope='row'>Petrous part</th><td>Dense, pyramid-shaped part that separates the middle and posterior cranial fossae and protects the inner ear. Has the internal acoustic meatus, carotid canal and jugular foramen.</td></tr><tr><th scope='row'>Tympanic part</th><td>Curved plate that forms much of the external acoustic meatus.</td></tr><tr><th scope='row'>Mastoid part</th><td>Contains the mastoid air cells. The mastoid process is an attachment for sternocleidomastoid.</td></tr><tr><th scope='row'>Mandibular (glenoid) fossa</th><td>Hollow on the underside of the squamous part, behind the articular eminence. It receives the head (condyle) of the mandible at the temporomandibular joint.</td></tr><tr><th scope='row'>Styloid process</th><td>Thin spike pointing down and forward. The stylomastoid foramen just behind it carries the facial nerve. Attachment for stylopharyngeus, styloglossus and stylohyoid.</td></tr></tbody></table></div><p><strong>The pterion</strong> is the H-shaped meeting point on the side of the skull of four bones: frontal, parietal, squamous temporal and greater wing of the sphenoid. It is the thinnest part of the skull wall and lies over the anterior branch of the middle meningeal artery, so a blow there can tear the artery.</p>"
   },
   {
    "id": "zygomatic",
@@ -65,7 +66,7 @@ SINA.lectures["anat3-face-osteology"] = {
   {
    "id": "mandible",
    "title": "Mandible",
-   "html": "<p>The lower jaw, and the only bone of the skull that moves. It has a horseshoe-shaped <strong>body</strong> and two <strong>rami</strong> that meet the body at the <strong>angle</strong>.</p><div class='table-wrap'><table class=''><thead><tr><th scope='col'>Feature</th><th scope='col'>What to know</th></tr></thead><tbody><tr><th scope='row'>Body</th><td>Curved; the upper alveolar part holds the lower teeth. The two halves fuse at the midline (symphysis).</td></tr><tr><th scope='row'>Mental foramen</th><td>On the outer surface of the body, below the premolars. Transmits the mental nerve and vessels.</td></tr><tr><th scope='row'>Ramus</th><td>Vertical part. Its upper border has the coronoid process in front, the condylar process behind, and the mandibular notch between them.</td></tr><tr><th scope='row'>Coronoid process</th><td>Triangular, flattened; the temporalis muscle inserts here.</td></tr><tr><th scope='row'>Condylar process</th><td>Head and neck; the head articulates with the mandibular fossa of the temporal bone (temporomandibular joint).</td></tr><tr><th scope='row'>Mandibular foramen</th><td>On the inner surface of the ramus. The inferior alveolar nerve and vessels enter here and run in the mandibular canal.</td></tr></tbody></table></div>"
+   "html": "<p>The lower jaw, and the only bone of the skull that moves. It has a horseshoe-shaped <strong>body</strong> and two <strong>rami</strong> that meet the body at the <strong>angle</strong>.</p><div class='table-wrap'><table class=''><thead><tr><th scope='col'>Feature</th><th scope='col'>What to know</th></tr></thead><tbody><tr><th scope='row'>Body</th><td>Curved; the upper alveolar part holds the lower teeth. The two halves fuse at the midline (symphysis).</td></tr><tr><th scope='row'>Mental foramen</th><td>On the outer surface of the body, below the premolars. Transmits the mental nerve and vessels.</td></tr><tr><th scope='row'>Ramus</th><td>Vertical part. Its upper border has the coronoid process in front, the condylar process behind, and the mandibular notch between them.</td></tr><tr><th scope='row'>Coronoid process</th><td>Triangular, flattened; the temporalis muscle inserts here.</td></tr><tr><th scope='row'>Condylar process</th><td>Head and neck; the head articulates with the mandibular fossa of the temporal bone (temporomandibular joint).</td></tr><tr><th scope='row'>Mandibular foramen</th><td>On the inner surface of the ramus. The inferior alveolar nerve and vessels enter here and run in the mandibular canal.</td></tr><tr><th scope='row'>Sublingual fossa</th><td>Inner surface of the body, above the mylohyoid line and near the midline. Lodges the sublingual gland.</td></tr><tr><th scope='row'>Submandibular fossa</th><td>Inner surface of the body, below the mylohyoid line. Lodges the submandibular gland.</td></tr><tr><th scope='row'>Mental protuberance</th><td>The chin: the triangular prominence in the midline of the outer surface.</td></tr></tbody></table></div>"
   },
   {
    "id": "base",
@@ -76,11 +77,6 @@ SINA.lectures["anat3-face-osteology"] = {
    "id": "sinuses",
    "title": "Paranasal sinuses",
    "html": "<p>Four pairs of air-filled spaces around the nasal cavity, named after the bones that hold them. They drain into the nasal cavity.</p><div class='table-wrap'><table class=''><thead><tr><th scope='col'>Sinus</th><th scope='col'>Where</th><th scope='col'>Drains into</th></tr></thead><tbody><tr><th scope='row'>Frontal</th><td>Frontal bone, behind the eyebrows</td><td>Middle meatus, through the frontonasal duct and infundibulum</td></tr><tr><th scope='row'>Ethmoidal</th><td>Air cells in the ethmoidal labyrinths</td><td>Anterior cells: middle meatus. Posterior cells: superior meatus</td></tr><tr><th scope='row'>Sphenoid</th><td>Body of the sphenoid</td><td>Sphenoethmoidal recess</td></tr><tr><th scope='row'>Maxillary</th><td>Body of the maxilla; the largest</td><td>Middle meatus, at the hiatus semilunaris</td></tr></tbody></table></div><p><strong>Functions</strong> (some are debated): lightening the skull, humidifying and warming inhaled air, supporting the immune defence of the nose, and giving resonance to the voice. Three sinuses lie in neurocranial bones (frontal, ethmoid, sphenoid). The maxilla is the only facial bone that contains a sinus.</p>"
-  },
-  {
-   "id": "glossary",
-   "title": "Key definitions",
-   "html": "<dl class='glossary'><dt>Neurocranium</dt><dd>The 8 bones that enclose the brain.</dd><dt>Viscerocranium</dt><dd>The 14 bones of the facial skeleton.</dd><dt>Calvaria</dt><dd>The skull cap, the upper domed part of the neurocranium.</dd><dt>Foramen and fissure</dt><dd>A foramen is an opening, usually round. A fissure is a longer slit-like gap between bones.</dd><dt>Sella turcica</dt><dd>The saddle-shaped fossa on the sphenoid that holds the pituitary gland.</dd><dt>Alveolar process</dt><dd>The part of the maxilla or mandible that holds the tooth sockets.</dd><dt>Temporomandibular joint</dt><dd>The joint between the head of the mandible and the mandibular fossa of the temporal bone.</dd><dt>Zygomatic arch</dt><dd>The bony bridge of the cheek, made by the temporal process of the zygomatic bone and the zygomatic process of the temporal bone.</dd><dt>Hard palate</dt><dd>The bony roof of the mouth: palatine processes of the maxillae in front, horizontal plates of the palatine bones behind.</dd><dt>Nasal septum</dt><dd>The wall dividing the nasal cavity: perpendicular plate of the ethmoid, vomer and septal cartilage.</dd><dt>Paranasal sinus</dt><dd>An air-filled space in a skull bone that opens into the nasal cavity.</dd></dl>"
   }
  ],
  "exam": [
@@ -94,6 +90,7 @@ SINA.lectures["anat3-face-osteology"] = {
   "Maxilla: body with the maxillary sinus plus four processes (frontal, zygomatic, alveolar, palatine). Infraorbital foramen below the orbit.",
   "Nasal septum: perpendicular plate of the ethmoid + vomer.",
   "Mandible: mental foramen (mental nerve), mandibular foramen (inferior alveolar nerve), coronoid vs condylar processes, mandibular notch between them.",
+  "Pterion: frontal + parietal + squamous temporal + greater wing of sphenoid; thinnest part of the skull, over the anterior branch of the middle meningeal artery.",
   "Four paired paranasal sinuses: frontal, ethmoidal, sphenoid, maxillary (largest).",
   "Skull base bones: frontal, ethmoid, sphenoid, temporal, occipital."
  ],
@@ -240,6 +237,106 @@ SINA.lectures["anat3-face-osteology"] = {
    ],
    "answer": 2,
    "why": "The inferior alveolar nerve (from V3) enters the mandibular foramen and runs in the mandibular canal. Its mental branch later exits through the mental foramen."
+  },
+  {
+   "q": "Which bones meet at the pterion?",
+   "options": [
+    "Frontal, parietal, occipital and lesser wing of the sphenoid",
+    "Frontal, nasal, maxilla and zygomatic bone together",
+    "Parietal, occipital, squamous temporal and the mastoid process of the temporal bone",
+    "Frontal, parietal, squamous temporal and greater wing of sphenoid"
+   ],
+   "answer": 3,
+   "why": "The pterion is the H-shaped junction of the frontal bone, parietal bone, squamous part of the temporal bone and greater wing of the sphenoid. It lies over the anterior branch of the middle meningeal artery."
+  },
+  {
+   "q": "Which gland sits in the sublingual fossa of the mandible?",
+   "options": [
+    "Sublingual gland",
+    "Parotid gland",
+    "Submandibular gland",
+    "Lacrimal gland"
+   ],
+   "answer": 0,
+   "why": "The sublingual fossa lies above the mylohyoid line near the midline and holds the sublingual gland. The submandibular gland sits in the submandibular fossa, below the line."
+  },
+  {
+   "q": "The glenoid (mandibular) fossa, which receives the head of the mandible, belongs to which bone?",
+   "options": [
+    "Sphenoid bone",
+    "Temporal bone",
+    "Occipital bone",
+    "Zygomatic bone"
+   ],
+   "answer": 1,
+   "why": "The mandibular (glenoid) fossa is on the squamous part of the temporal bone, just below the zygomatic process. Together with the head of the mandible it forms the temporomandibular joint."
+  },
+  {
+   "q": "Which structure forms the posterior part of the hard palate?",
+   "options": [
+    "Palatine process of the maxilla",
+    "Perpendicular plate of the ethmoid",
+    "Horizontal plate of the palatine",
+    "Medial pterygoid plate of sphenoid"
+   ],
+   "answer": 2,
+   "why": "The palatine processes of the maxillae form the front of the hard palate, and the horizontal plates of the palatine bones complete it behind."
+  },
+  {
+   "q": "Which bones are shown as part of the cranial base in the lecture figure? (choose all)",
+   "options": [
+    "Sphenoid",
+    "Ethmoid",
+    "Nasal bone",
+    "Vomer"
+   ],
+   "answers": [
+    0,
+    1
+   ],
+   "why": "The lecture's cranial base figure colours the frontal, sphenoid, temporal, parietal, occipital and ethmoid bones. The nasal bone and vomer are facial bones that take no part in the cranial base."
+  },
+  {
+   "q": "Which processes belong to the maxilla? (choose all)",
+   "options": [
+    "Frontal process",
+    "Palatine process",
+    "Pterygoid process",
+    "Petrous process"
+   ],
+   "answers": [
+    0,
+    1
+   ],
+   "why": "The maxilla has four processes: frontal, zygomatic, alveolar and palatine. The pterygoid process belongs to the sphenoid and the petrous part to the temporal bone."
+  },
+  {
+   "q": "Which structures are found on the inner surface of the body of the mandible? (choose all)",
+   "options": [
+    "Sublingual fossa",
+    "Submandibular fossa",
+    "Mental foramen",
+    "Coronoid process"
+   ],
+   "answers": [
+    0,
+    1
+   ],
+   "why": "The sublingual and submandibular fossae lie on the inner surface, above and below the mylohyoid line. The mental foramen is on the outer surface and the coronoid process is on the ramus."
+  },
+  {
+   "q": "Which bones meet at the pterion? (choose all)",
+   "options": [
+    "Frontal bone",
+    "Greater wing of the sphenoid",
+    "Occipital bone",
+    "Ethmoid bone"
+   ],
+   "answers": [
+    0,
+    1
+   ],
+   "why": "The pterion is the H-shaped junction of the frontal, parietal, squamous temporal and greater wing of the sphenoid. The occipital and ethmoid take no part in it."
   }
  ],
  "cards": [
@@ -362,6 +459,24 @@ SINA.lectures["anat3-face-osteology"] = {
    "type": "text",
    "front": "Mental foramen vs mandibular foramen: where and what passes?",
    "back": "Mental foramen: on the outer surface of the body, transmits the mental nerve and vessels. Mandibular foramen: on the inner surface of the ramus, where the inferior alveolar nerve enters."
+  },
+  {
+   "id": "t24",
+   "type": "text",
+   "front": "What is the pterion and why does it matter?",
+   "back": "The H-shaped junction of the frontal, parietal, squamous temporal and greater wing of the sphenoid on the side of the skull. It is the thinnest part of the skull wall and overlies the anterior branch of the middle meningeal artery."
+  },
+  {
+   "id": "t25",
+   "type": "text",
+   "front": "Sublingual vs submandibular fossa on the mandible?",
+   "back": "Both are on the inner surface of the body. Sublingual fossa: above the mylohyoid line, near the midline, holds the sublingual gland. Submandibular fossa: below the line, holds the submandibular gland."
+  },
+  {
+   "id": "t26",
+   "type": "text",
+   "front": "What does the mandibular (glenoid) fossa do, and which bone is it on?",
+   "back": "It is on the squamous part of the temporal bone and receives the head of the mandible, forming the temporomandibular joint."
   },
   {
    "id": "t21",

@@ -310,3 +310,19 @@ body.noscroll { overflow: hidden; }
 .rbody .n { font-size: 0.82rem; color: var(--muted); font-style: italic; }
 
 .opt.picked { border-color: var(--accent); background: var(--accent-soft); }
+
+/* source link */
+.srclink { font-weight: 600; }
+
+/* PSA */
+.psa { margin-top: 2.6rem; padding: 1rem 1.2rem; border-left: 4px solid var(--sage); background: var(--sage-soft); border-radius: 0 var(--radius) var(--radius) 0; font-size: 0.95rem; }
+
+/* welcome */
+.welcome { position: fixed; inset: 0; z-index: 60; background: var(--bg); display: grid; place-items: center; padding: 1.5rem; opacity: 1; transition: opacity 0.25s ease; }
+.welcome.leaving { opacity: 0; }
+.wbox { max-width: 34rem; text-align: center; }
+.weyebrow { font-size: 0.85rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.8rem; }
+.wbox h1 { font-size: clamp(2rem, 7vw, 3rem); margin-bottom: 1rem; }
+.wbox p { color: var(--muted); font-size: 1.05rem; }
+.btn.big { font-size: 1.1rem; padding: 0.8rem 2rem; margin-top: 1.2rem; }
+.wsmall { font-size: 0.85rem; margin-top: 1.2rem; }
