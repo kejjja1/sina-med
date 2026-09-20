@@ -11,9 +11,9 @@ SINA.subjects = [
         { id: "anat3-orbit", title: "The orbit: osteology and myology" },
         { id: "anat3-orbital-appendages", title: "Anatomy of the orbital appendages" },
         { id: "anat3-eyeball-1", title: "Anatomy of the eyeball I" },
-        { id: "anat3-eyeball-2", title: "Anatomy of the eyeball II" },
+        { id: "anat3-ocular-muscles", title: "Extraocular muscles and eye movement" },
         { id: "anat3-eye-innervation", title: "Motor and sensory innervation of the eye and its appendages" },
-        { id: "anat3-ocular-muscles", title: "Clinical and applied anatomy of the ocular muscles and eyeball" }
+        { id: "anat3-ocular-clinical", title: "Vascular supply and applied anatomy of the eye" }
       ]},
       { name: "Nose, mouth, throat and neck", items: [
         { id: "anat3-nasal-cavity", title: "Anatomy of the nasal cavity" },

@@ -209,7 +209,7 @@
     menuBtn.setAttribute("aria-expanded", "false");
     menuBtn.focus();
   }
-  var DESKTOP = function () { return window.matchMedia("(min-width: 64rem)").matches; };
+  var DESKTOP = function () { return window.matchMedia("(min-width: 60rem)").matches; };
   function setPinned(on) {
     store.set("sina:pinned", on);
     document.body.classList.toggle("pinned", on);
@@ -256,7 +256,19 @@
     if (q.length < 2) { hideSearch(); return; }
     if (!IDX) IDX = searchIndex();
     var words = q.split(/\s+/);
-    var hits = IDX.filter(function (r) { var h = r.hay.toLowerCase(); return words.every(function (w) { return h.indexOf(w) > -1; }); }).slice(0, 12);
+    var scored = [];
+    IDX.forEach(function (r) {
+      var title = r.title.toLowerCase(), hay = r.hay.toLowerCase();
+      var inTitle = words.every(function (w) { return title.indexOf(w) > -1; });
+      var inAll = words.every(function (w) { return hay.indexOf(w) > -1; });
+      var anyTitle = words.some(function (w) { return title.indexOf(w) > -1; });
+      if (!inTitle && !inAll && !anyTitle) return;
+      var score = inTitle ? 0 : anyTitle ? 1 : 2;
+      if (r.kind === "Lecture") score -= 0.5;
+      scored.push({ r: r, score: score });
+    });
+    scored.sort(function (a, b) { return a.score - b.score; });
+    var hits = scored.slice(0, 20).map(function (x) { return x.r; });
     sRes.innerHTML = hits.length
       ? hits.map(function (r) {
           var inner = '<span class="sk">' + esc(r.kind) + '</span><span class="st">' + esc(r.title) + '</span><span class="ss">' + esc(r.sub) + "</span>";
