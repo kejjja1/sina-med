@@ -339,6 +339,11 @@ SINA.lectures["anat3-oral-cavity"] = {
    "url": "https://sketchfab.com/3d-models/human-skull-schemically-colored-bone-anatomy-d1d1aed420424c8db784391ad8261a2f",
    "how": "Drag to rotate, pinch or scroll to zoom, and look at the skull from below. The bony roof of the mouth is there: the palatine processes of the maxillae in front and the horizontal plates of the palatine bones behind, ringed by the alveolar arches that hold the teeth.",
    "credit": "3D model: Human Skull: Schematically Colored Bone Anatomy by The Center for BioMedical Visualization at SGU (SGUMedArt) on Sketchfab. A bone model: it shows the hard palate, not the soft tissues. Needs an internet connection."
+  },
+  "image": {
+   "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Gray1015.png?width=700",
+   "alt": "The mouth seen from the front, with the palate, tonsils and tongue.",
+   "caption": "The mouth, anterior view. Gray's Anatomy (1918), public domain, via Wikimedia Commons. If it does not load, use the schematic below."
   }
  },
  "mcqs": [

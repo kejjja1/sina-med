@@ -388,6 +388,11 @@ SINA.lectures["anat3-eyeball-1"] = {
    "url": "https://sketchfab.com/3d-models/bones-of-the-orbit-c58a9186b52d4d62814b7e6e3164e032",
    "how": "Drag to rotate, pinch or scroll to zoom. This is the socket the eyeball sits in. Find the optic canal at the apex, where the optic nerve leaves the back of the eye, and picture Tenon's capsule as a sleeve running from there forward to the corneal limbus.",
    "credit": "3D model: Bones of the orbit by Cristina Sala on Sketchfab, licensed CC BY-SA 4.0. Based on BodyParts3D, © Database Center for Life Science, CC BY-SA 2.1 Japan. This is a bone model: it shows where the eyeball sits, not the eyeball itself. Needs an internet connection."
+  },
+  "image": {
+   "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Schematic_diagram_of_the_human_eye_en.svg?width=760",
+   "alt": "Labelled horizontal section through the human eyeball.",
+   "caption": "Horizontal section of the human eye, labelled. Public domain, via Wikimedia Commons. If it does not load, use the schematic below."
   }
  },
  "mcqs": [

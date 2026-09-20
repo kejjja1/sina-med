@@ -413,6 +413,11 @@
     var hints = { walls: "Tap a wall to see which bones form it.", margins: "Tap a green edge to see which bones form that part of the rim.", openings: "Tap a dark opening to see what passes through it.", landmarks: "Tap a dashed outline to see what it is." };
     if (!v.regions) {
       var h2 = v.model3d ? "<h2 style='margin-top:0'>3D model</h2>" + viewer3dHTML(v.models || v.model3d) : "";
+      if (v.image) {
+        h2 = "<h2 style='margin-top:0'>Reference picture</h2>" +
+          "<figure class='fig'><img loading='lazy' src='" + esc(v.image.src) + "' alt='" + esc(v.image.alt || "") + "'>" +
+          "<figcaption>" + esc(v.image.caption) + "</figcaption></figure>" + h2;
+      }
       if (v.figure) h2 += "<h2" + (h2 ? "" : " style='margin-top:0'") + ">Labelled schematic</h2><p>" + esc(v.figure.caption || "Schematic drawn for this site, not to scale.") + '</p><div class="diagram-box">' + figureSVG(v.figure, { uid: "vis" }) + "</div>";
       p.innerHTML = h2 || "<p>No visual for this lecture yet.</p>";
       wireMedia(p);

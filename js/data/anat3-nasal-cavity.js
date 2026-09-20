@@ -451,6 +451,11 @@ SINA.lectures["anat3-nasal-cavity"] = {
    "url": "https://sketchfab.com/3d-models/human-skull-schemically-colored-bone-anatomy-d1d1aed420424c8db784391ad8261a2f",
    "how": "Drag to rotate, pinch or scroll to zoom. Find the piriform aperture at the front, the bony opening of the nasal cavity, and look at how the ethmoid sits between the two orbits, with the maxillae below and the sphenoid behind.",
    "credit": "3D model: Human Skull: Schematically Colored Bone Anatomy by The Center for BioMedical Visualization at SGU (SGUMedArt) on Sketchfab. A bone model: it shows the bony framework, not the mucosa or conchae in detail. Needs an internet connection."
+  },
+  "image": {
+   "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Gray994.png?width=760",
+   "alt": "The lateral wall of the nasal cavity with the three conchae.",
+   "caption": "Lateral wall of the nasal cavity. Gray's Anatomy (1918), public domain, via Wikimedia Commons. If it does not load, use the schematic below."
   }
  },
  "mcqs": [

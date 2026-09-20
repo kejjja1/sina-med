@@ -304,6 +304,11 @@ SINA.lectures["anat3-facial-muscles"] = {
    "url": "https://sketchfab.com/3d-models/human-skull-schemically-colored-bone-anatomy-d1d1aed420424c8db784391ad8261a2f",
    "how": "Drag to rotate, pinch or scroll to zoom. Use it to find the bony landmarks these muscles attach to: the zygomatic arch (masseter), the temporal fossa (temporalis), the coronoid process and the angle of the mandible, and the pterygoid plates behind the maxilla.",
    "credit": "3D model: Human Skull: Schematically Colored Bone Anatomy by The Center for BioMedical Visualization at SGU (SGUMedArt) on Sketchfab. This is a bone model, not a muscle model: it shows the attachments, not the muscles themselves. Needs an internet connection."
+  },
+  "image": {
+   "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Gray378.png?width=700",
+   "alt": "The muscles of mastication, seen from the side.",
+   "caption": "Muscles of mastication. Gray's Anatomy (1918), public domain, via Wikimedia Commons. If it does not load, use the schematic below."
   }
  },
  "mcqs": [

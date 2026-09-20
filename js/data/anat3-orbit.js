@@ -157,13 +157,27 @@ SINA.lectures["anat3-orbit"] = {
    }
   },
   "intro": "Right orbit, seen from the front. Schematic, not to scale. Tap a layer, then tap a part of the diagram.",
-  "models": [{"title": "Bones of the orbit", "embed": "c58a9186b52d4d62814b7e6e3164e032", "url": "https://sketchfab.com/3d-models/bones-of-the-orbit-c58a9186b52d4d62814b7e6e3164e032", "how": "Drag to rotate, pinch or scroll to zoom. Look for the four walls, the openings at the back of the socket and the rim at the front. The nasal bones and lower nasal conchae are also in the model but are not part of the orbit. The orbit is normally described with seven bones. This model's author lists six and leaves out the small palatine part.", "credit": "3D model: Bones of the orbit by Cristina Sala on Sketchfab, licensed CC BY-SA 4.0. Based on BodyParts3D, © Database Center for Life Science, CC BY-SA 2.1 Japan. Needs an internet connection.", "tab": "Bones"}],
-"model3d": {
+  "models": [
+   {
+    "title": "Bones of the orbit",
+    "embed": "c58a9186b52d4d62814b7e6e3164e032",
+    "url": "https://sketchfab.com/3d-models/bones-of-the-orbit-c58a9186b52d4d62814b7e6e3164e032",
+    "how": "Drag to rotate, pinch or scroll to zoom. Look for the four walls, the openings at the back of the socket and the rim at the front. The nasal bones and lower nasal conchae are also in the model but are not part of the orbit. The orbit is normally described with seven bones. This model's author lists six and leaves out the small palatine part.",
+    "credit": "3D model: Bones of the orbit by Cristina Sala on Sketchfab, licensed CC BY-SA 4.0. Based on BodyParts3D, © Database Center for Life Science, CC BY-SA 2.1 Japan. Needs an internet connection.",
+    "tab": "Bones"
+   }
+  ],
+  "model3d": {
    "title": "Bones of the orbit",
    "embed": "c58a9186b52d4d62814b7e6e3164e032",
    "url": "https://sketchfab.com/3d-models/bones-of-the-orbit-c58a9186b52d4d62814b7e6e3164e032",
    "how": "Drag to rotate, pinch or scroll to zoom. Look for the four walls, the openings at the back of the socket and the rim at the front. The nasal bones and lower nasal conchae are also in the model but are not part of the orbit. The orbit is normally described with seven bones. This model's author lists six and leaves out the small palatine part.",
    "credit": "3D model: Bones of the orbit by Cristina Sala on Sketchfab, licensed CC BY-SA 4.0. Based on BodyParts3D, © Database Center for Life Science, CC BY-SA 2.1 Japan. Needs an internet connection."
+  },
+  "image": {
+   "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Gray189.png?width=700",
+   "alt": "The bones forming the left orbit, seen from the front.",
+   "caption": "Bones of the left orbit. Gray's Anatomy (1918), public domain, via Wikimedia Commons. If it does not load, use the schematic below."
   }
  },
  "mcqs": [

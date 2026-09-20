@@ -507,6 +507,11 @@ SINA.lectures["anat3-face-osteology"] = {
    "url": "https://sketchfab.com/3d-models/human-skull-schemically-colored-bone-anatomy-d1d1aed420424c8db784391ad8261a2f",
    "how": "Drag to rotate, pinch or scroll to zoom. The bones are colored differently so you can see where one bone ends and the next begins. Use the Summary tab to name them. Turn the skull to look at it from the front, the side and below.",
    "credit": "3D model: Human Skull: Schematically Colored Bone Anatomy by The Center for BioMedical Visualization at SGU (SGUMedArt) on Sketchfab, embedded with Sketchfab's own viewer. Proportions derived from a real skull scan, with reference meshes from BodyParts3D (CC BY-SA 2.1 Japan). Needs an internet connection."
+  },
+  "image": {
+   "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Gray190.png?width=760",
+   "alt": "The human skull seen from the front, with each bone shaded.",
+   "caption": "Skull from the front. Gray's Anatomy (1918), public domain, via Wikimedia Commons. If it does not load, use the schematic below."
   }
  },
  "mcqs": [

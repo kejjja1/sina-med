@@ -325,6 +325,11 @@ SINA.lectures["anat3-blood-supply"] = {
    "url": "https://sketchfab.com/3d-models/human-skull-schemically-colored-bone-anatomy-d1d1aed420424c8db784391ad8261a2f",
    "how": "Drag to rotate, pinch or scroll to zoom. Use it to place the vessels on bone: find the foramen spinosum and foramen ovale on the base of the skull (middle meningeal artery and the emissary vein to the cavernous sinus), the stylomastoid foramen (stylomastoid branch), the jugular foramen (internal jugular vein) and the neck of the mandible, where the external carotid ends.",
    "credit": "3D model: Human Skull: Schematically Colored Bone Anatomy by The Center for BioMedical Visualization at SGU (SGUMedArt) on Sketchfab. This is a bone model: it shows the openings the vessels use, not the vessels themselves. Needs an internet connection."
+  },
+  "image": {
+   "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Gray508.svg?width=760",
+   "alt": "The arteries of the neck and face, with the external carotid and its branches.",
+   "caption": "Arteries of the neck. Gray's Anatomy (1918), public domain, via Wikimedia Commons. If it does not load, use the schematic below."
   }
  },
  "mcqs": [

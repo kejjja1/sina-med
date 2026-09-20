@@ -415,7 +415,12 @@ SINA.lectures["anat3-larynx"] = {
     "credit": "3D model hosted on Sketchfab and embedded with Sketchfab's own viewer. If it does not load, use the labelled schematic below. Needs an internet connection."
    }
   ],
-  "intro": ""
+  "intro": "",
+  "image": {
+   "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Illu_larynx.jpg?width=700",
+   "alt": "The cartilages of the larynx.",
+   "caption": "Larynx. US National Cancer Institute (SEER), public domain, via Wikimedia Commons. If it does not load, use the schematic below."
+  }
  },
  "mcqs": [
   {
