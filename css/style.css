@@ -332,3 +332,86 @@ body.noscroll { overflow: hidden; }
 .upd { border-top: 1px solid var(--line); padding: 0.6rem 0 0.4rem; }
 .upd h2 { font-size: 1.2rem; margin: 0.6rem 0 0.4rem; }
 .upd.latest h2::after { content: "latest"; font-family: var(--sans); font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; background: var(--accent-soft); color: var(--ink); border-radius: 999px; padding: 0.1rem 0.5rem; margin-left: 0.6rem; vertical-align: 3px; }
+
+/* ---------- rebel theme: black, crimson, white. Angular and loud. ---------- */
+:root[data-theme="rebel"] {
+  --bg: #0a0a0c;
+  --surface: #131317;
+  --surface-2: #1c1c22;
+  --ink: #ffffff;
+  --muted: #a9a9b4;
+  --line: #2a2a32;
+  --line-strong: #43434f;
+  --accent: #e0122a;
+  --accent-ink: #ffffff;
+  --accent-soft: #3d0710;
+  --alert: #ff2740;
+  --alert-soft: #3d0710;
+  --sage: #ff3347;
+  --sage-soft: #24060b;
+  --good: #22c55e;
+  --bad: #ff5468;
+  --w1: #3d0710;
+  --w2: #26262e;
+  --w3: #4a0a15;
+  --w4: #1c1c22;
+  --serif: "Anton", "Oswald", "Impact", "Haettenschweiler", var(--sans);
+  --radius: 0px;
+  color-scheme: dark;
+}
+:root[data-theme="rebel"] body { background:
+  repeating-linear-gradient(115deg, transparent 0 38px, rgba(224,18,42,0.05) 38px 40px), var(--bg); }
+:root[data-theme="rebel"] h1, :root[data-theme="rebel"] h2, :root[data-theme="rebel"] h3,
+:root[data-theme="rebel"] .wordmark, :root[data-theme="rebel"] .qtext,
+:root[data-theme="rebel"] .fcard .front, :root[data-theme="rebel"] .accbtn .lbl,
+:root[data-theme="rebel"] .score, :root[data-theme="rebel"] .wbox h1 {
+  text-transform: uppercase; letter-spacing: 0.01em; font-weight: 400;
+}
+:root[data-theme="rebel"] h1 { transform: skewY(-1.4deg); }
+:root[data-theme="rebel"] a { color: var(--sage); }
+:root[data-theme="rebel"] .btn { border-width: 2px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; clip-path: polygon(10px 0, 100% 0, calc(100% - 10px) 100%, 0 100%); }
+:root[data-theme="rebel"] .btn.primary { background: var(--accent); border-color: var(--accent); }
+:root[data-theme="rebel"] .btn:hover { transform: translateY(-2px); }
+:root[data-theme="rebel"] .btn { transition: transform 0.12s ease; }
+:root[data-theme="rebel"] .icon-btn, :root[data-theme="rebel"] .menu-btn { border-width: 2px; }
+:root[data-theme="rebel"] .site-header { border-bottom: 2px solid var(--accent); }
+:root[data-theme="rebel"] .tabs { border-bottom: 2px solid var(--line-strong); }
+:root[data-theme="rebel"] .tab { text-transform: uppercase; letter-spacing: 0.03em; }
+:root[data-theme="rebel"] .tab[aria-selected="true"] { background: var(--accent); color: #fff; border-bottom-color: var(--accent); }
+:root[data-theme="rebel"] .opt { border-width: 2px; clip-path: polygon(0 0, 100% 0, calc(100% - 14px) 100%, 0 100%); transition: transform 0.12s ease; }
+:root[data-theme="rebel"] .opt:hover:not([disabled]) { transform: translateX(6px); }
+:root[data-theme="rebel"] .opt .letter { color: var(--accent); }
+:root[data-theme="rebel"] .pill, :root[data-theme="rebel"] .rkind, :root[data-theme="rebel"] .badge { text-transform: uppercase; letter-spacing: 0.05em; }
+:root[data-theme="rebel"] .pill { background: var(--accent); color: #fff; }
+:root[data-theme="rebel"] .fcard, :root[data-theme="rebel"] .rlink, :root[data-theme="rebel"] .diagram-box,
+:root[data-theme="rebel"] .info, :root[data-theme="rebel"] .table-wrap, :root[data-theme="rebel"] .viewer3d { border-width: 2px; }
+:root[data-theme="rebel"] .why, :root[data-theme="rebel"] .note, :root[data-theme="rebel"] .psa { border-left-width: 6px; }
+:root[data-theme="rebel"] thead th { background: var(--accent); color: #fff; text-transform: uppercase; letter-spacing: 0.04em; }
+:root[data-theme="rebel"] .accbtn:hover, :root[data-theme="rebel"] .dlist a:hover { background: var(--accent); color: #fff; }
+:root[data-theme="rebel"] .drawer { border-right: 2px solid var(--accent); }
+:root[data-theme="rebel"] .lec-list a:hover, :root[data-theme="rebel"] .subject-list a:hover { background: var(--accent-soft); }
+:root[data-theme="rebel"] .bar-fill { background: var(--accent); }
+:root[data-theme="rebel"] .welcome { background:
+  radial-gradient(circle at 70% 20%, rgba(224,18,42,0.22), transparent 60%),
+  repeating-linear-gradient(115deg, transparent 0 38px, rgba(224,18,42,0.06) 38px 40px), var(--bg); }
+
+/* entrances, only in this theme */
+@keyframes slideCut { from { opacity: 0; transform: translateX(-18px) skewX(-6deg); } to { opacity: 1; transform: none; } }
+@keyframes popIn { from { opacity: 0; transform: scale(0.96); } to { opacity: 1; transform: none; } }
+:root[data-theme="rebel"] #app > .wrap > h1 { animation: slideCut 0.34s cubic-bezier(.2,.9,.3,1) both; }
+:root[data-theme="rebel"] #app > .wrap > .tabs { animation: slideCut 0.34s 0.05s cubic-bezier(.2,.9,.3,1) both; }
+:root[data-theme="rebel"] #panel { animation: popIn 0.3s 0.08s ease both; }
+:root[data-theme="rebel"] .opt { animation: slideCut 0.26s cubic-bezier(.2,.9,.3,1) both; }
+:root[data-theme="rebel"] .opt:nth-child(2) { animation-delay: 0.04s; }
+:root[data-theme="rebel"] .opt:nth-child(3) { animation-delay: 0.08s; }
+:root[data-theme="rebel"] .opt:nth-child(4) { animation-delay: 0.12s; }
+:root[data-theme="rebel"] .opt:nth-child(5) { animation-delay: 0.16s; }
+:root[data-theme="rebel"] .fcard { animation: popIn 0.26s ease both; }
+:root[data-theme="rebel"] .drawer { animation: slideCut 0.24s cubic-bezier(.2,.9,.3,1) both; }
+@media (prefers-reduced-motion: reduce) { :root[data-theme="rebel"] * { animation: none !important; } }
+
+/* theme switcher */
+.theme-row { display: flex; gap: 0.3rem; }
+.theme-row button { border: 1px solid var(--line-strong); background: var(--surface); color: var(--ink); font: inherit; font-size: 0.82rem; font-weight: 700; padding: 0.35rem 0.7rem; border-radius: 999px; cursor: pointer; }
+.theme-row button[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+:root[data-theme="rebel"] .theme-row button[aria-pressed="true"] { background: var(--accent); color: #fff; border-color: var(--accent); }

@@ -13,9 +13,9 @@
   <meta name="apple-mobile-web-app-title" content="Sina">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Manrope:wght@400;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Manrope:wght@400;600;700;800&display=swap">
   <link rel="stylesheet" href="css/style.css">
-  <script>try{var t=localStorage.getItem("sina:theme");t=t?JSON.parse(t):(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+  <script>try{var t=localStorage.getItem("sina:theme");t=t?JSON.parse(t):(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");if(["light","dark","rebel"].indexOf(t)<0)t="light";document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 </head>
 <body>
   <a class="skip" href="#app">Skip to content</a>
@@ -25,7 +25,7 @@
         <button class="menu-btn" id="menu-btn" type="button" aria-label="Open menu" aria-controls="drawer" aria-expanded="false"><span></span><span></span><span></span></button>
         <a class="wordmark" href="#/" aria-label="Sina, home">Sina<span>.</span></a>
       </div>
-      <button class="icon-btn" id="theme-btn" type="button">Dark mode</button>
+      <div id="theme-btn"></div>
     </div>
   </header>
   <div id="welcome" class="welcome" hidden>
@@ -47,6 +47,7 @@
   <script src="js/data/anat3-face-osteology.js"></script>
   <script src="js/data/anat3-facial-muscles.js"></script>
   <script src="js/data/anat3-blood-supply.js"></script>
+  <script src="js/data/anat3-orbital-appendages.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

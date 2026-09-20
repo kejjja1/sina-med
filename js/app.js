@@ -22,18 +22,27 @@
   function shuffle(a) { a = a.slice(); for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
 
   /* ---------- theme ---------- */
+  var THEMES = [["light", "Light"], ["dark", "Dark"], ["rebel", "Rebel"]];
   function applyTheme(t) {
     document.documentElement.setAttribute("data-theme", t);
-    var b = document.getElementById("theme-btn");
-    if (b) b.textContent = t === "dark" ? "Light mode" : "Dark mode";
+    var box = document.getElementById("theme-btn");
+    if (box) box.querySelectorAll("button").forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.t === t)); });
     var m = document.querySelector('meta[name="theme-color"]');
-    if (m) m.setAttribute("content", t === "dark" ? "#1b1d20" : "#ffffff");
+    if (m) m.setAttribute("content", t === "light" ? "#ffffff" : t === "rebel" ? "#0a0a0c" : "#1b1d20");
   }
   var theme = store.get("sina:theme", null) || (window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
-  applyTheme(theme);
-  document.getElementById("theme-btn").addEventListener("click", function () {
-    theme = theme === "dark" ? "light" : "dark"; store.set("sina:theme", theme); applyTheme(theme);
-  });
+  if (["light", "dark", "rebel"].indexOf(theme) < 0) theme = "light";
+  (function () {
+    var box = document.getElementById("theme-btn");
+    box.className = "theme-row";
+    box.setAttribute("role", "group");
+    box.setAttribute("aria-label", "Theme");
+    box.innerHTML = THEMES.map(function (t) { return '<button type="button" data-t="' + t[0] + '" aria-pressed="false">' + t[1] + "</button>"; }).join("");
+    box.querySelectorAll("button").forEach(function (b) {
+      b.addEventListener("click", function () { theme = b.dataset.t; store.set("sina:theme", theme); applyTheme(theme); });
+    });
+    applyTheme(theme);
+  })();
 
   /* ---------- orbit diagram (schematic, right orbit, front view) ---------- */
   var RIM = "M 140 75 H 420 Q 480 75 480 135 V 325 Q 480 385 420 385 H 140 Q 80 385 80 325 V 135 Q 80 75 140 75 Z";
