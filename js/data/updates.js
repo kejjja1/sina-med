@@ -4,7 +4,8 @@ window.SINA = window.SINA || { subjects: [], lectures: {} };
 SINA.updated = "20 September 2026";
 SINA.updates = [
   { date: "20 September 2026", items: [
-    "New theme: Rebel. A black, crimson and white look with angular edges and animations. Pick Light, Dark or Rebel in the top corner.",
+    "Hidden theme: tap the Light/Dark button ten times in a row.",
+    "New lecture: Anatomy of the eyeball I, with 28 questions and 30 flashcards.",
     "New lecture: Anatomy of the orbital appendages, with 24 questions and 21 flashcards.",
     "New lecture: Blood supply of the facio-maxillary region, with 24 questions and 26 flashcards.",
     "New lecture: Muscles of the facio-maxillary region, with 20 questions and 32 flashcards.",

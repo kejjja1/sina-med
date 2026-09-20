@@ -80,7 +80,8 @@ h1:focus, h1:focus-visible { outline: none; }
 .bar { display: flex; align-items: center; justify-content: space-between; max-width: 64rem; margin: 0 auto; padding: 0.7rem 1.1rem; }
 .wordmark { font-family: var(--serif); font-size: 1.45rem; font-weight: 700; color: var(--ink); text-decoration: none; letter-spacing: -0.02em; }
 .wordmark span { color: var(--alert); }
-.icon-btn { background: none; border: 1px solid var(--line-strong); color: var(--ink); border-radius: 999px; padding: 0.4rem 0.9rem; font: inherit; font-size: 0.88rem; cursor: pointer; }
+.icon-btn { background: none; border: 2px solid var(--line-strong); color: var(--ink); border-radius: 999px; padding: 0.45rem 1.1rem; font: inherit; font-size: 0.88rem; font-weight: 700; cursor: pointer; transition: border-color 0.15s ease, background 0.15s ease; }
+.icon-btn:hover { border-color: var(--accent); }
 .icon-btn:hover { background: var(--surface-2); }
 
 .wrap { max-width: 46rem; margin: 0 auto; padding: 1.6rem 1.1rem 4rem; }
@@ -411,7 +412,9 @@ body.noscroll { overflow: hidden; }
 @media (prefers-reduced-motion: reduce) { :root[data-theme="rebel"] * { animation: none !important; } }
 
 /* theme switcher */
-.theme-row { display: flex; gap: 0.3rem; }
-.theme-row button { border: 1px solid var(--line-strong); background: var(--surface); color: var(--ink); font: inherit; font-size: 0.82rem; font-weight: 700; padding: 0.35rem 0.7rem; border-radius: 999px; cursor: pointer; }
-.theme-row button[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
-:root[data-theme="rebel"] .theme-row button[aria-pressed="true"] { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+:root[data-theme="rebel"] .icon-btn { border-color: var(--accent); text-transform: uppercase; letter-spacing: 0.04em; }
+.toast { position: fixed; left: 50%; bottom: 2rem; transform: translateX(-50%); z-index: 70; background: var(--accent); color: var(--accent-ink); font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; padding: 0.8rem 1.6rem; border-radius: 999px; box-shadow: 0 8px 30px rgba(0,0,0,0.45); animation: popIn 0.25s ease both; }
+
+:root[data-theme="rebel"] .btn.primary { color: #fff; text-shadow: none; }
+:root[data-theme="rebel"] a.btn.primary { color: #fff; }

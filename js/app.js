@@ -21,27 +21,39 @@
   }
   function shuffle(a) { a = a.slice(); for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
 
-  /* ---------- theme ---------- */
-  var THEMES = [["light", "Light"], ["dark", "Dark"], ["rebel", "Rebel"]];
+  /* ---------- theme: one toggle. Ten taps unlocks the hidden theme. ---------- */
   function applyTheme(t) {
     document.documentElement.setAttribute("data-theme", t);
-    var box = document.getElementById("theme-btn");
-    if (box) box.querySelectorAll("button").forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.t === t)); });
+    var btn = document.getElementById("theme-btn");
+    if (btn) btn.textContent = t === "light" ? "Dark mode" : t === "dark" ? "Light mode" : "Back to light";
     var m = document.querySelector('meta[name="theme-color"]');
     if (m) m.setAttribute("content", t === "light" ? "#ffffff" : t === "rebel" ? "#0a0a0c" : "#1b1d20");
   }
   var theme = store.get("sina:theme", null) || (window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
   if (["light", "dark", "rebel"].indexOf(theme) < 0) theme = "light";
+  applyTheme(theme);
   (function () {
-    var box = document.getElementById("theme-btn");
-    box.className = "theme-row";
-    box.setAttribute("role", "group");
-    box.setAttribute("aria-label", "Theme");
-    box.innerHTML = THEMES.map(function (t) { return '<button type="button" data-t="' + t[0] + '" aria-pressed="false">' + t[1] + "</button>"; }).join("");
-    box.querySelectorAll("button").forEach(function (b) {
-      b.addEventListener("click", function () { theme = b.dataset.t; store.set("sina:theme", theme); applyTheme(theme); });
+    var btn = document.getElementById("theme-btn"), taps = 0, timer = null;
+    btn.addEventListener("click", function () {
+      taps++;
+      clearTimeout(timer);
+      timer = setTimeout(function () { taps = 0; }, 2500);
+      if (taps >= 10) {
+        taps = 0;
+        theme = "rebel";
+        store.set("sina:theme", theme);
+        applyTheme(theme);
+        var t = document.createElement("div");
+        t.className = "toast";
+        t.textContent = "Rebel mode unlocked";
+        document.body.appendChild(t);
+        setTimeout(function () { t.remove(); }, 2600);
+        return;
+      }
+      theme = theme === "light" ? "dark" : "light";
+      store.set("sina:theme", theme);
+      applyTheme(theme);
     });
-    applyTheme(theme);
   })();
 
   /* ---------- orbit diagram (schematic, right orbit, front view) ---------- */
