@@ -1,7 +1,7 @@
 window.SINA = window.SINA || { subjects: [], lectures: {} };
 
 SINA.subjects = [
-  { id: "anat3", name: "Anatomy 3", semester: "S3", status: "building",
+  { id: "anat3", name: "Anatomy 3", semester: "S3", status: "live",
     blurb: "Head and neck, then neuroanatomy.",
     groups: [
       { name: "Face and orbit", items: [
@@ -37,7 +37,28 @@ SINA.subjects = [
         { id: "anat3-pns", title: "The peripheral nervous system" }
       ]}
     ]},
-  { id: "physio", name: "Physiology", semester: "S3", status: "next", count: 10, blurb: "Neurophysiology, muscle, senses, renal filtration." },
+  { id: "physio", name: "Physiology", semester: "S3", status: "building",
+    blurb: "Neurophysiology, muscle, senses, renal filtration.",
+    groups: [
+      { name: "Neurophysiology", items: [
+        { id: "physio-intro-neuro", title: "Introduction to neurophysiology" },
+        { id: "physio-neurons", title: "Neurons and electrical communication" },
+        { id: "physio-myotatic", title: "The myotatic reflexes" },
+        { id: "physio-pain", title: "Physiology of pain" },
+        { id: "physio-stress", title: "Physiology of stress" }
+      ]},
+      { name: "Muscle", items: [
+        { id: "physio-muscle-2", title: "Muscle physiology, part II" }
+      ]},
+      { name: "Special senses", items: [
+        { id: "physio-vision", title: "Physiology of vision" },
+        { id: "physio-vestibular", title: "The vestibular system" },
+        { id: "physio-taste-smell", title: "Taste and olfaction" }
+      ]},
+      { name: "Renal", items: [
+        { id: "physio-renal-gfr", title: "Renal physiology 3: glomerular filtration" }
+      ]}
+    ] },
   { id: "semio", name: "Semiology", semester: "S3", status: "planned", count: 16, blurb: "Respiratory, cardiovascular, digestive and endocrine examination." },
   { id: "biochem", name: "Clinical Biochemistry", semester: "S3", status: "planned", count: 13, blurb: "Biochemical exploration of organs, hormones and balances." },
   { id: "firstaid", name: "First Aid", semester: "S3", status: "planned", count: 10, blurb: "Vital functions and emergency care." },
