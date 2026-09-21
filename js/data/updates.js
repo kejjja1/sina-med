@@ -4,6 +4,10 @@ window.SINA = window.SINA || { subjects: [], lectures: {} };
 SINA.updated = "20 September 2026";
 SINA.updates = [
   { date: "20 September 2026", items: [
+    "New lecture: Anatomy of the spinal cord, with 34 questions and 30 flashcards.",
+    "New lecture: Anatomy of the brainstem, with 34 questions and 32 flashcards.",
+    "New lecture: Anatomy of the ear, part 1: external and middle ear, with 34 questions and 35 flashcards.",
+    "New lecture: Anatomy of the ear, part 2: the inner ear, with 34 questions and 32 flashcards. The head and neck is now complete.",
     "New lecture: The forgotten triangles of the neck, with 25 questions and 25 flashcards. Nose, mouth, throat and neck is now complete.",
     "Past papers rebuilt from your Drive: 27 papers across Anatomy, Physiology, Semiology, Biochemistry, Parasitology, Pharmacology and Radiology.",
     "New lecture: Anatomy of the thyroid gland, with 33 questions and 36 flashcards.",

@@ -27,3 +27,5 @@ SINA.channels["anat3-neuro"] = [
   { title: "Neuroanatomy with Dr. Wolfe", url: "https://www.youtube.com/@neuroanatomy", why: "Systematic neuroanatomy lectures, good for the spinal cord and descending tracts." },
   { title: "Ninja Nerd", url: "https://www.youtube.com/@NinjaNerdOfficial", why: "Its neurology and neuroanatomy playlists cover the tracts in detail." }
 ];
+
+["anat3-spinal-cord","anat3-brainstem","anat3-cerebrum","anat3-diencephalon","anat3-descending-tracts","anat3-pns"].forEach(function (id) { SINA.channels[id] = SINA.channels["anat3-neuro"]; });
