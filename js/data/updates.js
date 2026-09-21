@@ -4,6 +4,7 @@ window.SINA = window.SINA || { subjects: [], lectures: {} };
 SINA.updated = "20 September 2026";
 SINA.updates = [
   { date: "20 September 2026", items: [
+    "New lecture: Anatomy of the thyroid gland, with 33 questions and 36 flashcards.",
     "New lecture: Anatomy of the pharynx, with 29 questions and 33 flashcards.",
     "Each lecture now opens with a real reference picture on the Visual tab, above the schematic.",
     "Every lecture now has picture questions in the quiz: an arrow points at a structure and you pick its name.",
