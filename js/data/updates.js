@@ -4,6 +4,8 @@ window.SINA = window.SINA || { subjects: [], lectures: {} };
 SINA.updated = "20 September 2026";
 SINA.updates = [
   { date: "20 September 2026", items: [
+    "New lecture: The forgotten triangles of the neck, with 25 questions and 25 flashcards. Nose, mouth, throat and neck is now complete.",
+    "Past papers rebuilt from your Drive: 27 papers across Anatomy, Physiology, Semiology, Biochemistry, Parasitology, Pharmacology and Radiology.",
     "New lecture: Anatomy of the thyroid gland, with 33 questions and 36 flashcards.",
     "New lecture: Anatomy of the pharynx, with 29 questions and 33 flashcards.",
     "Each lecture now opens with a real reference picture on the Visual tab, above the schematic.",

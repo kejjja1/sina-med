@@ -46,5 +46,6 @@ SINA.subjects = [
   { id: "parasito", name: "Parasitology and Mycology", semester: "S4", status: "planned", count: 18, blurb: "" },
   { id: "infectious", name: "Infectious Diseases", semester: "S4", status: "planned", count: 11, blurb: "" },
   { id: "pharma", name: "Pharmacology", semester: "S4", status: "planned", count: 8, blurb: "" },
-  { id: "toxico", name: "Toxicology", semester: "S4", status: "planned", count: 4, blurb: "" }
+  { id: "toxico", name: "Toxicology", semester: "S4", status: "planned", count: 4, blurb: "" },
+  { id: "radio", name: "Radiology", semester: "S4", status: "planned", count: 0, blurb: "Past papers only for now." }
 ];

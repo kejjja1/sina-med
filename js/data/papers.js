@@ -53,7 +53,7 @@ SINA.papers = [
     "answer": 2
    },
    {
-    "q": "An expanding pituitary tumor compresses the optic chiasm. What visual defect results from this compression?",
+    "q": "An expanding pituitary tumor compresses the optic chiasm. What visual defect results?",
     "options": [
      "Contralateral hemianopia",
      "Left-sided blindness",
@@ -63,7 +63,7 @@ SINA.papers = [
     "answer": 3
    },
    {
-    "q": "In the pupillary light reflex, illumination of one eye causes constriction of both pupils. The consensual response occurs because the pretectal nuclei project bilaterally to which structure?",
+    "q": "In the pupillary light reflex, the consensual response occurs because the pretectal nuclei project bilaterally to which structure?",
     "options": [
      "Edinger–Westphal nuclei",
      "Optic nerves",
@@ -73,7 +73,7 @@ SINA.papers = [
     "answer": 0
    },
    {
-    "q": "A vessel labeled “X” passes through the optic canal and supplies the eye. Which vessel is this?",
+    "q": "A vessel passes through the optic canal and supplies the eye. Which vessel is this?",
     "options": [
      "Inferior orbital artery",
      "Ophthalmic artery",
@@ -83,7 +83,7 @@ SINA.papers = [
     "answer": 1
    },
    {
-    "q": "A right-sided pontine infarction damages the right abducens (VI) nerve nucleus, causing medial deviation of the right eye. Which muscle is affected?",
+    "q": "A right-sided pontine infarction damages the right abducens nucleus, causing medial deviation of the right eye. Which muscle is affected?",
     "options": [
      "Right superior rectus muscle",
      "Right lateral rectus muscle",
@@ -196,7 +196,7 @@ SINA.papers = [
     "answer": 1
    },
    {
-    "q": "Cerebrospinal fluid passes from the lateral ventricles to the third ventricle through the:",
+    "q": "CSF passes from the lateral ventricles to the third ventricle through the:",
     "options": [
      "Foramen of Magendie",
      "Cerebral aqueduct",
@@ -275,7 +275,7 @@ SINA.papers = [
     ]
    }
   ],
-  "note": "25 questions. Some questions have two correct answers: tick both, then press Check my answer. Answers come from the answer key in the PDF."
+  "note": "25 questions, playable here. Some have two correct answers: tick both, then press Check my answer. Answers come from the correction PDF."
  },
  {
   "id": "anat3-paper-50",
@@ -295,7 +295,31 @@ SINA.papers = [
   "note": "Same 50 questions in both files: the exam paper first, the correction second."
  },
  {
-  "id": "physio-neuromuscular-bioenergetic",
+  "id": "anat3-mock-2026",
+  "subject": "anat3",
+  "title": "Anatomy mock exam",
+  "year": "2026",
+  "links": [
+   {
+    "label": "Open the paper (PDF)",
+    "url": "https://drive.google.com/file/d/16HG19b5YOjq7cF1ULJ_Bv1oobYzinoCy/view?usp=drivesdk"
+   }
+  ]
+ },
+ {
+  "id": "physio-mock-2026",
+  "subject": "physio",
+  "title": "Physiology mock exam",
+  "year": "2026",
+  "links": [
+   {
+    "label": "Open the paper (PDF)",
+    "url": "https://drive.google.com/file/d/1IcmWm1MySGkLOA4jbraBnCVtC8jm1Ep3/view?usp=drivesdk"
+   }
+  ]
+ },
+ {
+  "id": "physio-neuromuscular",
   "subject": "physio",
   "title": "Neuromuscular and bioenergetic physiology",
   "year": "Year 2",
@@ -307,7 +331,7 @@ SINA.papers = [
   ]
  },
  {
-  "id": "physio-neuro-renal-retake",
+  "id": "physio-retake",
   "subject": "physio",
   "title": "Neurophysiology and renal physiology, retake",
   "year": "Year 2",
@@ -315,6 +339,310 @@ SINA.papers = [
    {
     "label": "Open the paper (PDF)",
     "url": "https://drive.google.com/file/d/1i740k0nW0id9hLZXpXAafXXPX9gjm2v2/view?usp=drivesdk"
+   }
+  ]
+ },
+ {
+  "id": "semio-mock-2026",
+  "subject": "semio",
+  "title": "Semiology mock exam",
+  "year": "2026",
+  "links": [
+   {
+    "label": "Open the paper (PDF)",
+    "url": "https://drive.google.com/file/d/1o6PrPiflOCYKBE9qNdwR5tAAGAhOABmV/view?usp=drivesdk"
+   }
+  ]
+ },
+ {
+  "id": "semio-mock-2805",
+  "subject": "semio",
+  "title": "Semiology mock exam (28 May)",
+  "year": "Year 2",
+  "links": [
+   {
+    "label": "Open the paper (PDF)",
+    "url": "https://drive.google.com/file/d/1ykDs1RpiYDundo5SyOelFfLLPtDKCYwb/view?usp=drivesdk"
+   }
+  ]
+ },
+ {
+  "id": "semio-mock-correction",
+  "subject": "semio",
+  "title": "Semiology mock test and correction",
+  "year": "Year 2",
+  "links": [
+   {
+    "label": "Open the paper (PDF)",
+    "url": "https://drive.google.com/file/d/1vrgXt_yI2VWm7o7G8F8SqvacAPpNthL3/view?usp=drivesdk"
+   },
+   {
+    "label": "Open the correction (PDF)",
+    "url": "https://drive.google.com/file/d/1ypCRN5wZmI12i_jBtcu66DkGK6HLH2lA/view?usp=drivesdk"
+   }
+  ]
+ },
+ {
+  "id": "semio-final-2324",
+  "subject": "semio",
+  "title": "Semiology final exam",
+  "year": "2023-2024",
+  "links": [
+   {
+    "label": "Open the paper (PDF)",
+    "url": "https://drive.google.com/file/d/13VbwA4Te54LdV1FGe02KitG41KQmZSuB/view?usp=drivesdk"
+   }
+  ]
+ },
+ {
+  "id": "semio-obgyn-urinary",
+  "subject": "semio",
+  "title": "Semiology II: obstetrics, gynaecology and urinary",
+  "year": "Year 2",
+  "links": [
+   {
+    "label": "Open the paper (PDF)",
+    "url": "https://drive.google.com/file/d/1bN6KGdq6orvUhRhc5E2mzVRdbb4f7Gxi/view?usp=drivesdk"
+   }
+  ]
+ },
+ {
+  "id": "semio-msk",
+  "subject": "semio",
+  "title": "General and musculoskeletal semiology",
+  "year": "Year 2",
+  "links": [
+   {
+    "label": "Open the paper (PDF)",
+    "url": "https://drive.google.com/file/d/16cyWV9uzgrucPpCXHcR0os1RYgH1KW-r/view?usp=drivesdk"
+   },
+   {
+    "label": "Open the midterm (PDF)",
+    "url": "https://drive.google.com/file/d/15XGWsC0yaxlNx5EE1RZJcrQBUmFB9NXR/view?usp=drivesdk"
+   }
+  ]
+ },
+ {
+  "id": "semio-neuro-midterm",
+  "subject": "semio",
+  "title": "Neurology midterm",
+  "year": "2026",
+  "links": [
+   {
+    "label": "Open the paper (PDF)",
+    "url": "https://drive.google.com/file/d/1DqgzlIRzwoNzvrPlm2Yr0zxHmxs29csP/view?usp=drivesdk"
+   }
+  ]
+ },
+ {
+  "id": "biochem-mock-2026",
+  "subject": "biochem",
+  "title": "Clinical biochemistry mock exam",
+  "year": "2026",
+  "links": [
+   {
+    "label": "Open the paper (PDF)",
+    "url": "https://drive.google.com/file/d/19LyF_TYHrL_HeDP-M1zDd9DD200dLiz_/view?usp=drivesdk"
+   }
+  ]
+ },
+ {
+  "id": "parasito-mock-2026",
+  "subject": "parasito",
+  "title": "Parasitology, mycology and infectious diseases mock",
+  "year": "2026",
+  "links": [
+   {
+    "label": "Open the paper (PDF)",
+    "url": "https://drive.google.com/file/d/1tQuqiCpXma5H5MZ-gqvkjw0TT2ZTUwUs/view?usp=drivesdk"
+   }
+  ]
+ },
+ {
+  "id": "parasito-midterm",
+  "subject": "parasito",
+  "title": "Parasitology midterm",
+  "year": "Year 2",
+  "links": [
+   {
+    "label": "Open the paper (PDF)",
+    "url": "https://drive.google.com/file/d/1t_-l4k2eAx_nP2SDDdFZaHtVgPJBp9XR/view?usp=drivesdk"
+   }
+  ]
+ },
+ {
+  "id": "parasito-mcqs",
+  "subject": "parasito",
+  "title": "Parasitology MCQ bank",
+  "year": "Year 2",
+  "links": [
+   {
+    "label": "Open the questions (PDF)",
+    "url": "https://drive.google.com/file/d/1rkYpiXFF3WrFZ2gWKqwcuvkK_xnKn8SM/view?usp=drivesdk"
+   },
+   {
+    "label": "Open the 2020 bank with answers (PDF)",
+    "url": "https://drive.google.com/file/d/11Vd0EPUb6LCqgvbUi8VvDOQ2jIJ4d8OO/view?usp=drivesdk"
+   }
+  ]
+ },
+ {
+  "id": "myco-qcm",
+  "subject": "parasito",
+  "title": "Mycology MCQs, sorted and corrected",
+  "year": "Year 2",
+  "links": [
+   {
+    "label": "Open the questions (PDF)",
+    "url": "https://drive.google.com/file/d/18EIEy6LgrnrgQpIc4pVNJ2r5ydLPZvzr/view?usp=drivesdk"
+   },
+   {
+    "label": "Open the correction (PDF)",
+    "url": "https://drive.google.com/file/d/1zdtzUwWF8HI2YU_3pYD7qVBgvDm24QaI/view?usp=drivesdk"
+   }
+  ]
+ },
+ {
+  "id": "myco-partiel",
+  "subject": "parasito",
+  "title": "Mycology midterm and practicals",
+  "year": "2024-2025",
+  "links": [
+   {
+    "label": "Open the midterm (PDF)",
+    "url": "https://drive.google.com/file/d/1CWJDWDEzNwDtzlWAOxcLRtxYu5VhyrV9/view?usp=drivesdk"
+   },
+   {
+    "label": "Open the practicals (PDF)",
+    "url": "https://drive.google.com/file/d/1Wk8I8unKoTgtobr7xxwfk3h1gqtN0nLO/view?usp=drivesdk"
+   }
+  ]
+ },
+ {
+  "id": "infect-test",
+  "subject": "infectious",
+  "title": "Infectious diseases test",
+  "year": "Year 2",
+  "links": [
+   {
+    "label": "Open the paper (PDF)",
+    "url": "https://drive.google.com/file/d/1jniCDgadR_QQQhRkF1KqiOEEO_cVcnMI/view?usp=drivesdk"
+   },
+   {
+    "label": "Open the MCQ exercise (PPTX)",
+    "url": "https://drive.google.com/file/d/11vn5VPg2-mAhwfdkEATawx4HvdSmb4Jo/view?usp=drivesdk"
+   }
+  ]
+ },
+ {
+  "id": "pharma-mock",
+  "subject": "pharma",
+  "title": "Pharmacology and toxicology mock test",
+  "year": "Year 2",
+  "links": [
+   {
+    "label": "Open the paper (PDF)",
+    "url": "https://drive.google.com/file/d/12yWmvbNCbJzIWG3MDm6lurWYEnob5WIO/view?usp=drivesdk"
+   },
+   {
+    "label": "Open the correction (PDF)",
+    "url": "https://drive.google.com/file/d/1SStlBdnNemcTXdYQ__u9DJp_cFQKQ8JY/view?usp=drivesdk"
+   }
+  ]
+ },
+ {
+  "id": "pharma-mock-exam",
+  "subject": "pharma",
+  "title": "Pharmacology mock exam",
+  "year": "Year 2",
+  "links": [
+   {
+    "label": "Open the paper (PDF)",
+    "url": "https://drive.google.com/file/d/12HCV8wEqSl8sui9S2pkqoL77iwMZF-wA/view?usp=drivesdk"
+   }
+  ]
+ },
+ {
+  "id": "radio-mock-2026",
+  "subject": "radio",
+  "title": "Radiology mock exam",
+  "year": "2026",
+  "links": [
+   {
+    "label": "Open the paper (PDF)",
+    "url": "https://drive.google.com/file/d/119HtITZKaQceJFeD1PFzHoY-ajcPrr-G/view?usp=drivesdk"
+   }
+  ]
+ },
+ {
+  "id": "radio-midterm-2026",
+  "subject": "radio",
+  "title": "Radiology midterm",
+  "year": "2026",
+  "links": [
+   {
+    "label": "Open the paper (PDF)",
+    "url": "https://drive.google.com/file/d/1bMb4lQxf3D3ZjWQ0T3fVoPuw6aXm0Awq/view?usp=drivesdk"
+   },
+   {
+    "label": "Open another midterm (PDF)",
+    "url": "https://drive.google.com/file/d/1zx3uJM2Iu2dtWQrYiz2P53TeeWJt4tm1/view?usp=drivesdk"
+   }
+  ]
+ },
+ {
+  "id": "radio-mock-2025",
+  "subject": "radio",
+  "title": "Radiology mock test and correction",
+  "year": "2025",
+  "links": [
+   {
+    "label": "Open the paper (PDF)",
+    "url": "https://drive.google.com/file/d/1GFMr8YdKzyXGt25EaZgeanofdCqXLkyr/view?usp=drivesdk"
+   },
+   {
+    "label": "Open the correction (PDF)",
+    "url": "https://drive.google.com/file/d/1Pij5LGA-Hv4Sdl7tLUnG74oR7OS2m0OR/view?usp=drivesdk"
+   }
+  ]
+ },
+ {
+  "id": "radio-qbank",
+  "subject": "radio",
+  "title": "Radiology question bank and past questions",
+  "year": "Year 2",
+  "links": [
+   {
+    "label": "Open the question bank (PDF)",
+    "url": "https://drive.google.com/file/d/1qYEeFt5iXGaS7w1xvLlQ1LpH0DsV1_kQ/view?usp=drivesdk"
+   },
+   {
+    "label": "Open past questions (PDF)",
+    "url": "https://drive.google.com/file/d/1ktGja43Hyu5f0NkuYl-2Js4ArxUV459G/view?usp=drivesdk"
+   },
+   {
+    "label": "Open imaging practice questions (PDF)",
+    "url": "https://drive.google.com/file/d/1csRB7w_7PudCfe30IGLirW9Ob9GZ2n4e/view?usp=drivesdk"
+   }
+  ]
+ },
+ {
+  "id": "radio-2020-2021",
+  "subject": "radio",
+  "title": "Radiology past exams",
+  "year": "2020 to 2022",
+  "links": [
+   {
+    "label": "June 2020 (PDF)",
+    "url": "https://drive.google.com/file/d/1MifFilAJv-oaC6uZ-169PshSKSUOO5rb/view?usp=drivesdk"
+   },
+   {
+    "label": "January 2021 (PDF)",
+    "url": "https://drive.google.com/file/d/1nSGpa3HDm3tJ6hGXjyEdAbHcZ0j_sTII/view?usp=drivesdk"
+   },
+   {
+    "label": "January 2022 (PDF)",
+    "url": "https://drive.google.com/file/d/145tSNT7vYADqTl6fkry6NsFoiZGGjxcA/view?usp=drivesdk"
    }
   ]
  }
