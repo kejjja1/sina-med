@@ -4,6 +4,8 @@ window.SINA = window.SINA || { subjects: [], lectures: {} };
 SINA.updated = "20 September 2026";
 SINA.updates = [
   { date: "20 September 2026", items: [
+    "New lecture: Physiology of pain, with 32 questions and 27 flashcards.",
+    "New lecture: Physiology of stress, with 32 questions and 20 flashcards.",
     "New lecture: Introduction to neurophysiology, with 33 questions and 32 flashcards.",
     "New lecture: The myotatic reflexes, with 34 questions and 33 flashcards.",
     "New lecture: Muscle physiology, part II, with 36 questions and 35 flashcards.",
