@@ -4,6 +4,8 @@ window.SINA = window.SINA || { subjects: [], lectures: {} };
 SINA.updated = "20 September 2026";
 SINA.updates = [
   { date: "20 September 2026", items: [
+    "First Aid is complete: all 10 lectures, from protection and CPR to the vital functions.",
+    "Clinical Biochemistry is complete, and 4 new digestive semiology lectures: diarrhoea, dysphagia, GERD and GI bleeding. Some pages are short versions for now; full versions are coming.",
     "New lectures: Steroid hormones, cardiac exploration and renal exploration.",
     "Clinical Biochemistry has started: preanalytical phase, adrenal medulla hormones, insulin and hepatic exploration.",
     "Semiology is complete: all 16 lectures, including the digestive and endocrine blocks.",

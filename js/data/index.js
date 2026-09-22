@@ -80,14 +80,18 @@ SINA.subjects = [
         { id: "semio-gi-jaundice", title: "Jaundice" },
         { id: "semio-gi-hepatomegaly", title: "Hepatomegaly" },
         { id: "semio-gi-constipation", title: "Constipation" },
-        { id: "semio-gi-dysentery", title: "Dysentery" }
+        { id: "semio-gi-dysentery", title: "Dysentery" },
+        { id: "semio-gi-diarrhoea", title: "Diarrhoea" },
+        { id: "semio-gi-dysphagia", title: "Dysphagia" },
+        { id: "semio-gi-gerd", title: "Gastro-oesophageal reflux disease" },
+        { id: "semio-gi-bleeding", title: "Gastrointestinal bleeding" }
       ]},
       { name: "Endocrine", items: [
         { id: "semio-endo-thyroid", title: "Thyroid semiology" },
         { id: "semio-endo-adrenal", title: "Adrenal semiology" }
       ]}
     ] },
-  { id: "biochem", name: "Clinical Biochemistry", semester: "S3", status: "building",
+  { id: "biochem", name: "Clinical Biochemistry", semester: "S3", status: "live",
     blurb: "Biochemical exploration of organs, hormones and balances.",
     groups: [
       { name: "Basics and hormones", items: [
@@ -110,7 +114,24 @@ SINA.subjects = [
         { id: "biochem-acid-base", title: "Acid-base balance" }
       ]}
     ] },
-  { id: "firstaid", name: "First Aid", semester: "S3", status: "planned", count: 10, blurb: "Vital functions and emergency care." },
+  { id: "firstaid", name: "First Aid", semester: "S3", status: "live",
+    blurb: "Emergency care and vital functions.",
+    groups: [
+      { name: "Emergency care", items: [
+        { id: "fa-protection", title: "Protection and alert" },
+        { id: "fa-cardiac-arrest", title: "Cardiac arrest" },
+        { id: "fa-bleeding", title: "Bleeding" },
+        { id: "fa-trauma-burns", title: "Trauma injuries and burns" }
+      ]},
+      { name: "Vital functions", items: [
+        { id: "fa-neural", title: "Neural function: intracranial pressure" },
+        { id: "fa-cardiovascular", title: "Cardiovascular function: shock" },
+        { id: "fa-renal", title: "Renal function: acute kidney injury" },
+        { id: "fa-endocrine", title: "Endocrine function: endocrine crises" },
+        { id: "fa-immune", title: "Immune function" },
+        { id: "fa-digestive", title: "Digestive and nutrition function" }
+      ]}
+    ] },
   { id: "pathanat", name: "Pathological Anatomy", semester: "S3", status: "planned", count: 9, blurb: "Cell injury, inflammation, vasculopathy, oncology." },
   { id: "history", name: "History and Art of Medicine", semester: "S3", status: "planned", count: 7, blurb: "" },
   { id: "parasito", name: "Parasitology and Mycology", semester: "S4", status: "planned", count: 18, blurb: "" },
