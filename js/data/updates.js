@@ -4,6 +4,9 @@ window.SINA = window.SINA || { subjects: [], lectures: {} };
 SINA.updated = "20 September 2026";
 SINA.updates = [
   { date: "20 September 2026", items: [
+    "New lectures: Steroid hormones, cardiac exploration and renal exploration.",
+    "Clinical Biochemistry has started: preanalytical phase, adrenal medulla hormones, insulin and hepatic exploration.",
+    "Semiology is complete: all 16 lectures, including the digestive and endocrine blocks.",
     "New: all six cardiovascular semiology lectures, from the introduction to arrhythmias and revision.",
     "Semiology has started: respiratory symptoms, the chest examination and thoracic syndromes.",
     "The Likely exam points section is now called Key points.",

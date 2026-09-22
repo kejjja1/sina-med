@@ -59,7 +59,7 @@ SINA.subjects = [
         { id: "physio-renal-gfr", title: "Renal physiology 3: glomerular filtration" }
       ]}
     ] },
-  { id: "semio", name: "Semiology", semester: "S3", status: "building",
+  { id: "semio", name: "Semiology", semester: "S3", status: "live",
     blurb: "Respiratory, cardiovascular, digestive and endocrine examination.",
     groups: [
       { name: "Respiratory", items: [
@@ -87,7 +87,29 @@ SINA.subjects = [
         { id: "semio-endo-adrenal", title: "Adrenal semiology" }
       ]}
     ] },
-  { id: "biochem", name: "Clinical Biochemistry", semester: "S3", status: "planned", count: 13, blurb: "Biochemical exploration of organs, hormones and balances." },
+  { id: "biochem", name: "Clinical Biochemistry", semester: "S3", status: "building",
+    blurb: "Biochemical exploration of organs, hormones and balances.",
+    groups: [
+      { name: "Basics and hormones", items: [
+        { id: "biochem-preanalytical", title: "Preanalytical phase of biochemical analyses" },
+        { id: "biochem-adrenal-medulla", title: "Adrenal medulla hormones" },
+        { id: "biochem-insulin", title: "Insulin" },
+        { id: "biochem-steroids", title: "Steroid hormones" }
+      ]},
+      { name: "Organ exploration", items: [
+        { id: "biochem-hepatic", title: "Hepatic biochemical exploration" },
+        { id: "biochem-cardiac", title: "Cardiac biochemical exploration" },
+        { id: "biochem-renal", title: "Renal biochemical exploration" },
+        { id: "biochem-spe", title: "Serum protein electrophoresis" },
+        { id: "biochem-lipids", title: "Exploration of a lipid anomaly" }
+      ]},
+      { name: "Balances", items: [
+        { id: "biochem-calcium", title: "Calcium-phosphate balance" },
+        { id: "biochem-iron", title: "Iron balance" },
+        { id: "biochem-water", title: "Hydro-electrolytic balance" },
+        { id: "biochem-acid-base", title: "Acid-base balance" }
+      ]}
+    ] },
   { id: "firstaid", name: "First Aid", semester: "S3", status: "planned", count: 10, blurb: "Vital functions and emergency care." },
   { id: "pathanat", name: "Pathological Anatomy", semester: "S3", status: "planned", count: 9, blurb: "Cell injury, inflammation, vasculopathy, oncology." },
   { id: "history", name: "History and Art of Medicine", semester: "S3", status: "planned", count: 7, blurb: "" },
