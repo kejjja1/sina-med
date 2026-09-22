@@ -132,7 +132,7 @@ SINA.subjects = [
         { id: "fa-digestive", title: "Digestive and nutrition function" }
       ]}
     ] },
-  { id: "pathanat", name: "Pathological Anatomy", semester: "S3", status: "building",
+  { id: "pathanat", name: "Pathological Anatomy", semester: "S4", status: "live",
     blurb: "Cell injury, inflammation, vasculopathy, oncology.",
     groups: [
       { name: "General pathology", items: [
@@ -155,7 +155,7 @@ SINA.subjects = [
         { id: "pathanat-carcinogenesis", title: "Carcinogenesis and the hallmarks of cancer" }
       ]}
     ]},
-  { id: "history", name: "History and Art of Medicine", semester: "S3", status: "building",
+  { id: "history", name: "History and Art of Medicine", semester: "S3", status: "live",
     blurb: "How medicine became what it is, and the human side of care.",
     groups: [
       { name: "History of medicine", items: [

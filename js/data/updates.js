@@ -4,6 +4,22 @@ window.SINA = window.SINA || { subjects: [], lectures: {} };
 SINA.updated = "22 September 2026";
 SINA.updates = [
   { date: "22 September 2026", items: [
+    "The menu now slides in and out smoothly, and the page eases over when you pin or hide it on a computer.",
+    "New Useful apps section on the home page (and in the menu): Gizmo and Daily Anatomy Flashcards.",
+    "New 3D models where they help: eyeball and eye muscles (University of Dundee), the ear with its ossicles and inner ear (Dundee, from MRI data), cranial nerves, a real brainstem specimen (UBC), the brain and a spinal cord section. The skull model was removed from lectures where it did not fit.",
+    "Past papers: new Orbital anatomy practice quiz (12 questions with explanations). New flashcards from it in The orbit and Orbital appendages.",
+    "Pathological Anatomy now sits in Semester 4.",
+    "Chapter titles are now in gold to stand out from the lectures inside them.",
+    "The Suggestion button now opens our suggestion form in a new tab."
+  ]},
+  { date: "22 September 2026", items: [
+    "New Settings button (the cog, top right): choose light or dark mode from a small menu.",
+    "New Suggestion button next to it: tell us what to fix or add.",
+    "Reference pictures: 69 lectures now have a picture gallery on the Visual tab, with arrows, dots and swipe to move between pictures.",
+    "Checked all of S3 for consistency: fixed the eye-muscle action grid in Ocular muscles (elevation and depression were swapped), a broken answer explanation and flashcard, a wording slip in Nasal cavity, and made question options more even in length so the answer is not given away by its length.",
+    "Lectures still in their short version now say so on the Go deeper and Resources tabs instead of showing an empty page."
+  ]},
+  { date: "22 September 2026", items: [
     "Pathological Anatomy is here: all 9 lectures, from the introduction and lab techniques to cell injury, cell death, acute inflammation, vascular pathology and oncology, each with a labelled schematic, picture questions, tables, Go deeper reading and resources.",
     "History and Art of Medicine is here: all 7 lectures, from the history of physiology to surgery, plus the Art of Medicine on emotions, empathy and communication, built in the same full format.",
     "S3 is now complete on the site."

@@ -21,21 +21,44 @@
   }
   function shuffle(a) { a = a.slice(); for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
 
-  /* ---------- theme: one button, light or dark ---------- */
+  /* ---------- settings menu (light or dark) and suggestion button ---------- */
+  var setBtn = document.getElementById("settings-btn"), setMenu = document.getElementById("settings-menu");
   function applyTheme(t) {
     document.documentElement.setAttribute("data-theme", t);
-    var btn = document.getElementById("theme-btn");
-    if (btn) btn.textContent = t === "dark" ? "Light mode" : "Dark mode";
+    setMenu.querySelectorAll("[data-theme-choice]").forEach(function (b) { b.setAttribute("aria-checked", String(b.dataset.themeChoice === t)); });
     var m = document.querySelector('meta[name="theme-color"]');
     if (m) m.setAttribute("content", t === "dark" ? "#1b1d20" : "#ffffff");
   }
   var theme = store.get("sina:theme", null) || (window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
   if (theme !== "dark") theme = "light";
   applyTheme(theme);
-  document.getElementById("theme-btn").addEventListener("click", function () {
-    theme = theme === "dark" ? "light" : "dark";
-    store.set("sina:theme", theme);
-    applyTheme(theme);
+  function openSettings(open) {
+    setMenu.hidden = !open;
+    setBtn.setAttribute("aria-expanded", String(open));
+    if (open) { var cur = setMenu.querySelector('[aria-checked="true"]') || setMenu.querySelector("button"); cur.focus(); }
+  }
+  setBtn.addEventListener("click", function (e) { e.stopPropagation(); openSettings(setMenu.hidden); });
+  setMenu.querySelectorAll("[data-theme-choice]").forEach(function (b) {
+    b.addEventListener("click", function () {
+      theme = b.dataset.themeChoice; store.set("sina:theme", theme); applyTheme(theme);
+      openSettings(false); setBtn.focus();
+    });
+  });
+  setMenu.addEventListener("keydown", function (e) {
+    var items = [].slice.call(setMenu.querySelectorAll("button")), k = items.indexOf(document.activeElement);
+    if (e.key === "ArrowDown") { e.preventDefault(); items[(k + 1) % items.length].focus(); }
+    else if (e.key === "ArrowUp") { e.preventDefault(); items[(k - 1 + items.length) % items.length].focus(); }
+  });
+  document.addEventListener("click", function (e) { if (!setMenu.hidden && !setMenu.contains(e.target)) openSettings(false); });
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !setMenu.hidden) { openSettings(false); setBtn.focus(); } });
+
+  var sugBtn = document.getElementById("suggest-btn"), formUrl = (sugBtn.getAttribute("data-form") || "").trim();
+  if (/^https?:\/\//.test(formUrl)) sugBtn.href = formUrl;
+  else sugBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    var t = document.getElementById("toast") || document.body.appendChild(Object.assign(document.createElement("div"), { id: "toast", className: "toast", role: "status" }));
+    t.textContent = "The suggestion form is coming soon."; t.classList.add("show");
+    clearTimeout(t._h); t._h = setTimeout(function () { t.classList.remove("show"); }, 2600);
   });
 
   /* ---------- orbit diagram (schematic, right orbit, front view) ---------- */
@@ -161,7 +184,7 @@
   function renderDrawer() {
     accN = 0;
     var h = '<div class="dhead"><span class="wordmark">Sina<span>.</span></span><button class="btn dclose" type="button">Close</button></div>' +
-      '<a class="dlink" href="#/">Home</a><a class="dlink" href="#/papers">Past papers</a>' +
+      '<a class="dlink" href="#/">Home</a><a class="dlink" href="#/papers">Past papers</a><a class="dlink" href="#/apps">Useful apps</a>' +
       '<a class="dlink" href="#/updates"><span>What\'s new</span>' + (newBadge() ? '<span class="badge">new</span>' : "") + "</a>";
     ["S3", "S4"].forEach(function (sem) {
       h += '<p class="dsem">Semester ' + sem.charAt(1) + "</p>";
@@ -196,37 +219,44 @@
       });
     });
   }
+  function isOpen() { return drawer.classList.contains("is-open"); }
+  function showDrawer(on, withBackdrop) {
+    drawer.classList.toggle("is-open", on);
+    drawer.setAttribute("aria-hidden", String(!on));
+    backdrop.classList.toggle("is-open", !!(on && withBackdrop));
+  }
   function openDrawer() {
     renderDrawer();
-    drawer.hidden = false; backdrop.hidden = false;
+    showDrawer(true, true);
     document.body.classList.add("noscroll");
     menuBtn.setAttribute("aria-expanded", "true");
-    drawer.querySelector(".dclose").focus();
+    var dc = drawer.querySelector(".dclose"); if (dc) dc.focus({ preventScroll: true });
   }
   function closeDrawer() {
     if (document.body.classList.contains("pinned")) return;
-    if (drawer.hidden) return;
-    drawer.hidden = true; backdrop.hidden = true;
+    if (!isOpen()) return;
+    showDrawer(false, false);
     document.body.classList.remove("noscroll");
     menuBtn.setAttribute("aria-expanded", "false");
-    menuBtn.focus();
+    menuBtn.focus({ preventScroll: true });
   }
   var DESKTOP = function () { return window.matchMedia("(min-width: 60rem)").matches; };
   function setPinned(on) {
     store.set("sina:pinned", on);
     document.body.classList.toggle("pinned", on);
-    if (on) { drawer.hidden = false; renderDrawer(); backdrop.hidden = true; document.body.classList.remove("noscroll"); }
-    else { drawer.hidden = true; backdrop.hidden = true; document.body.classList.remove("noscroll"); }
+    if (on) renderDrawer();
+    showDrawer(on, false);
+    document.body.classList.remove("noscroll");
     menuBtn.setAttribute("aria-expanded", String(on));
   }
   function applyLayout() {
-    if (DESKTOP()) setPinned(store.get("sina:pinned", true));
-    else { document.body.classList.remove("pinned"); if (drawer.hidden !== true && backdrop.hidden) drawer.hidden = true; }
+    if (DESKTOP()) { if (!document.body.classList.contains("pinned") && !isOpen()) setPinned(store.get("sina:pinned", true)); else if (isOpen() && !document.body.classList.contains("pinned")) setPinned(true); }
+    else if (document.body.classList.contains("pinned")) { document.body.classList.remove("pinned"); showDrawer(false, false); menuBtn.setAttribute("aria-expanded", "false"); }
   }
-  window.addEventListener("resize", applyLayout);
+  var rsz; window.addEventListener("resize", function () { clearTimeout(rsz); rsz = setTimeout(applyLayout, 120); });
   menuBtn.addEventListener("click", function () {
     if (DESKTOP()) { setPinned(!document.body.classList.contains("pinned")); return; }
-    drawer.hidden ? openDrawer() : closeDrawer();
+    isOpen() ? closeDrawer() : openDrawer();
   });
   backdrop.addEventListener("click", closeDrawer);
   document.addEventListener("keydown", function (e) { if (e.key === "Escape") { closeDrawer(); hideSearch(); } });
@@ -327,6 +357,22 @@
     var h = app.querySelector("h1"); if (h) { h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true }); }
   }
 
+  function appsHTML() {
+    var list = S.usefulApps || []; if (!list.length) return "";
+    return '<ul class="apps-grid">' + list.map(function (a) {
+      var mono = esc(a.name.charAt(0));
+      return '<li class="app-card"><div class="app-top"><span class="app-icon" aria-hidden="true"><span class="mono">' + mono + '</span>' +
+        (a.domain ? '<img alt="" loading="lazy" src="https://www.google.com/s2/favicons?domain=' + esc(a.domain) + '&sz=64" onerror="this.remove()">' : "") + "</span>" +
+        '<span class="app-head"><span class="app-name">' + esc(a.name) + '</span><span class="app-kind">' + esc(a.kind || "") + "</span></span></div>" +
+        '<p class="app-desc">' + esc(a.desc) + "</p>" +
+        '<div class="app-plat">' + (a.platforms || []).map(function (p) { return '<span class="chip">' + esc(p) + "</span>"; }).join("") + "</div>" +
+        '<div class="app-actions">' + a.links.map(function (l, n) { return '<a class="btn' + (n === 0 ? " primary" : "") + '" href="' + esc(l.url) + '" target="_blank" rel="noopener">' + esc(l.label) + "</a>"; }).join("") + "</div></li>";
+    }).join("") + "</ul>";
+  }
+  function appsView() {
+    setView('<div class="wrap wide"><p class="crumbs"><a href="#/">Home</a> / Useful apps</p><h1>Useful apps and resources</h1><p class="meta">Apps and websites recommended for medical students. They open in a new tab.</p>' + appsHTML() + "</div>", "Useful apps");
+  }
+
   function homeView() {
     var sems = { S3: [], S4: [] };
     S.subjects.forEach(function (s) { sems[s.semester].push(s); });
@@ -340,11 +386,12 @@
     }
     var html = '<div class="wrap wide"><section class="hero"><div><h1>Study each lecture, then test yourself on it.</h1>' +
       '<p class="lede">Summaries, key points, questions, flashcards and extra reading for every lecture of the promo. Each page is built from the lecture slides and checked against other references.</p>' +
-      '<div class="row"><a class="btn primary" href="#/lecture/anat3-orbit">Try the first lecture</a><button class="btn" type="button" id="browse-subjects">Browse subjects</button><a class="btn" href="#/papers">Past papers</a></div>' +
+      '<div class="row"><a class="btn primary" href="#/lecture/anat3-orbit">Try the first lecture</a><button class="btn" type="button" id="browse-subjects">Browse subjects</button><a class="btn" href="#/papers">Past papers</a><a class="btn" href="#/apps">Useful apps</a></div>' +
       (S.updated ? '<p class="meta" style="margin-top:1.4rem">Last updated ' + esc(S.updated) + '. <a href="#/updates">What\'s new' + (newBadge() ? ' <span class="badge">new</span>' : "") + "</a>.</p>" : "") + '</div>' +
       '</section>' +
       '<h2 id="subjects">Subjects</h2><h3 class="sem-title">Semester 3</h3><ul class="subject-list">' + sems.S3.map(row).join("") + '</ul>' +
-      '<h3 class="sem-title">Semester 4</h3><ul class="subject-list">' + sems.S4.map(row).join("") + "</ul></div>";
+      '<h3 class="sem-title">Semester 4</h3><ul class="subject-list">' + sems.S4.map(row).join("") + "</ul>" +
+      (appsHTML() ? '<h2 id="apps" style="margin-top:2.4rem">Useful apps and resources</h2><p class="meta">Recommended apps and websites for medical students.</p>' + appsHTML() : "") + "</div>";
     setView(html, "");
     var bb = document.getElementById("browse-subjects");
     if (bb) bb.addEventListener("click", function () {
@@ -403,9 +450,49 @@
     var h = '<div class="note">' + lec.buildNote + "</div>";
     lec.summary.forEach(function (s) { h += "<h2>" + esc(s.title) + "</h2>" + s.html; });
     h += "<h2>Key points</h2><ul class='exam-list'>" + lec.exam.map(function (e) { return "<li>" + esc(e) + "</li>"; }).join("") + "</ul>";
-    h += '<div class="foot"><p>Facts on this page were checked against these references (last check ' + esc(lec.verified) + "). Student flashcard sets were used only as a secondary consistency check.</p><ul class='sources'>" + lec.sources.map(function (s) { return '<li><a href="' + esc(s.url) + '" target="_blank" rel="noopener">' + esc(s.name) + "</a></li>"; }).join("") + "</ul></div>";
+    h += (lec.sources && lec.sources.length)
+      ? '<div class="foot"><p>Facts on this page were checked against these references (last check ' + esc(lec.verified) + "). Student flashcard sets were used only as a secondary consistency check.</p><ul class='sources'>" + lec.sources.map(function (s) { return '<li><a href="' + esc(s.url) + '" target="_blank" rel="noopener">' + esc(s.name) + "</a></li>"; }).join("") + "</ul></div>"
+      : '<div class="foot"><p>Built from the lecture slides (last check ' + esc(lec.verified) + "). Outside references will be added with the full version.</p></div>";
     p.innerHTML = h;
     wireMedia(p);
+  }
+
+  /* ---------- reference pictures: a small carousel, broken pictures drop out ---------- */
+  function galleryImages(v) { return (v.images && v.images.length ? v.images : (v.image ? [v.image] : [])).filter(function (im) { return im && im.src; }); }
+  function galleryHTML(v) {
+    var ims = galleryImages(v); if (!ims.length) return "";
+    return "<h2 style='margin-top:0'>Reference pictures</h2><div class='gallery' data-ims='" + esc(JSON.stringify(ims)).replace(/'/g, "&#39;") + "'></div>";
+  }
+  function commonsPage(src) { var m = /Special:FilePath\/([^?]+)/.exec(src); return m ? "https://commons.wikimedia.org/wiki/File:" + m[1] : src; }
+  function wireGallery(root) {
+    root.querySelectorAll(".gallery").forEach(function (g) {
+      if (g.dataset.wired) return; g.dataset.wired = "1";
+      var ims = JSON.parse(g.getAttribute("data-ims").replace(/&#39;/g, "'")), i = 0, x0 = null;
+      function draw() {
+        if (!ims.length) { g.innerHTML = "<p class='src'>The pictures could not load. They need an internet connection.</p>"; return; }
+        if (i >= ims.length) i = 0;
+        var im = ims[i], many = ims.length > 1;
+        g.innerHTML = "<figure class='fig gfig'><div class='gstage'>" +
+          (many ? "<button type='button' class='gnav prev' aria-label='Previous picture'>&#8249;</button>" : "") +
+          "<img src='" + esc(im.src) + "' alt='" + esc(im.alt || im.caption || "") + "'>" +
+          (many ? "<button type='button' class='gnav next' aria-label='Next picture'>&#8250;</button>" : "") +
+          "</div><figcaption>" + (many ? "<span class='gcount'>" + (i + 1) + " / " + ims.length + "</span>" : "") + esc(im.caption || "") +
+          " <a href='" + esc(commonsPage(im.src)) + "' target='_blank' rel='noopener'>Full size</a>" + (im.credit ? "<span class='gcredit'>" + esc(im.credit) + "</span>" : "") + "</figcaption>" +
+          (many ? "<div class='gdots' role='group' aria-label='Choose a picture'>" + ims.map(function (m, n) { return "<button type='button' data-n='" + n + "' aria-label='Picture " + (n + 1) + ": " + esc(m.caption || "") + "' aria-pressed='" + (n === i) + "'></button>"; }).join("") + "</div>" : "") +
+          "</figure>";
+        var img = g.querySelector("img");
+        img.addEventListener("error", function () { ims.splice(i, 1); draw(); });
+        var pv = g.querySelector(".prev"), nx = g.querySelector(".next");
+        if (pv) pv.addEventListener("click", function () { go(-1); });
+        if (nx) nx.addEventListener("click", function () { go(1); });
+        g.querySelectorAll(".gdots button").forEach(function (b) { b.addEventListener("click", function () { i = +b.dataset.n; draw(); }); });
+      }
+      function go(d) { i = (i + d + ims.length) % ims.length; draw(); var b = g.querySelector(d < 0 ? ".prev" : ".next"); if (b) b.focus(); }
+      g.addEventListener("keydown", function (e) { if (ims.length < 2) return; if (e.key === "ArrowLeft") go(-1); else if (e.key === "ArrowRight") go(1); });
+      g.addEventListener("touchstart", function (e) { x0 = e.touches[0].clientX; }, { passive: true });
+      g.addEventListener("touchend", function (e) { if (x0 === null || ims.length < 2) return; var dx = e.changedTouches[0].clientX - x0; if (Math.abs(dx) > 45) go(dx < 0 ? 1 : -1); x0 = null; });
+      draw();
+    });
   }
 
   function visualPanel(p, lec) {
@@ -413,19 +500,18 @@
     var hints = { walls: "Tap a wall to see which bones form it.", margins: "Tap a green edge to see which bones form that part of the rim.", openings: "Tap a dark opening to see what passes through it.", landmarks: "Tap a dashed outline to see what it is." };
     if (!v.regions) {
       var h2 = v.model3d ? "<h2 style='margin-top:0'>3D model</h2>" + viewer3dHTML(v.models || v.model3d) : "";
-      if (v.image) {
-        h2 = "<h2 style='margin-top:0'>Reference picture</h2>" +
-          "<figure class='fig'><img loading='lazy' src='" + esc(v.image.src) + "' alt='" + esc(v.image.alt || "") + "'>" +
-          "<figcaption>" + esc(v.image.caption) + "</figcaption></figure>" + h2;
-      }
+      var gal = galleryHTML(v);
+      if (gal) h2 = gal + h2;
       if (v.figure) h2 += "<h2" + (h2 ? "" : " style='margin-top:0'") + ">Labelled schematic</h2><p>" + esc(v.figure.caption || "Schematic drawn for this site, not to scale.") + '</p><div class="diagram-box">' + figureSVG(v.figure, { uid: "vis" }) + "</div>";
       p.innerHTML = h2 || "<p>No visual for this lecture yet.</p>";
-      wireMedia(p);
+      wireMedia(p); wireGallery(p);
       return;
     }
-    var m3 = v.model3d ? "<h2 style='margin-top:0'>3D model</h2>" + viewer3dHTML(v.models || v.model3d) + "<h2>Labeled schematic</h2>" : "";
+    var gal0 = galleryHTML(v);
+    var m3 = gal0 + (v.model3d ? "<h2" + (gal0 ? "" : " style='margin-top:0'") + ">3D model</h2>" + viewer3dHTML(v.models || v.model3d) : "") + ((gal0 || v.model3d) ? "<h2>Labelled schematic</h2>" : "");
     p.innerHTML = m3 + "<p>" + esc(v.intro) + '</p><div class="layer-switch" role="group" aria-label="Diagram layer">' + ["walls", "margins", "openings", "landmarks"].map(function (l) { return '<button data-layer="' + l + '" aria-pressed="' + (l === layer) + '">' + l.charAt(0).toUpperCase() + l.slice(1) + "</button>"; }).join("") +
       '</div><div class="diagram-box" id="dia"></div><div class="info" id="info" aria-live="polite"></div>';
+    wireGallery(p);
     var dia = document.getElementById("dia"), info = document.getElementById("info");
     function drawDia() { dia.innerHTML = orbitSVG({ mode: "explore", layer: layer, uid: "vis" }); info.innerHTML = "<p>" + hints[layer] + "</p>"; wire(); }
     function select(id) {
@@ -537,6 +623,7 @@
   }
 
   function deeperPanel(p, lec) {
+    if (!lec.deeper || !lec.deeper.length) { p.innerHTML = '<div class="note">Extra reading for this lecture is coming with the full version. Meanwhile, the Summary, Questions and Flashcards tabs cover the lecture.</div>'; return; }
     p.innerHTML = '<div class="note">Everything here goes beyond your lecture. It is optional, sourced, and meant to help you understand the topic more deeply.</div>' +
       lec.deeper.map(function (d, n) { return "<details" + (n === 0 ? " open" : "") + "><summary>" + esc(d.title) + "</summary>" + d.html + "</details>"; }).join("");
   }
@@ -549,11 +636,12 @@
     return "https://s.wordpress.com/mshots/v1/" + encodeURIComponent(r.url) + "?w=640&h=400";
   }
   function resourcesPanel(p, lec) {
-    p.innerHTML = '<p>Each card shows a preview of the page, video or model you will open. Links open other websites and need an internet connection. Items marked "reviewed by title and description only" were not watched in full.</p><ul class="rgrid">' +
+    var noRes = !lec.resources || !lec.resources.length;
+    p.innerHTML = noRes ? '<div class="note">Videos and websites for this lecture are coming with the full version.</div>' : ( '<p>Each card shows a preview of the page, video or model you will open. Links open other websites and need an internet connection. Items marked "reviewed by title and description only" were not watched in full.</p><ul class="rgrid">' +
       lec.resources.map(function (r) {
         return '<li class="rcard"><a class="rlink" href="' + esc(r.url) + '" target="_blank" rel="noopener"><span class="rthumb" data-host="' + esc(hostOf(r.url)) + '"><img loading="lazy" alt="" src="' + esc(previewSrc(r)) + '"><span class="rkind">' + esc(r.kind) + '</span></span>' +
           '<span class="rbody"><span class="t">' + esc(r.title) + '</span><span class="w">' + esc(r.why) + '</span><span class="dom">' + esc(hostOf(r.url)) + "</span>" + (r.note ? '<span class="n">' + esc(r.note) + "</span>" : "") + "</span></a></li>";
-      }).join("") + "</ul>";
+      }).join("") + "</ul>");
     var sub = subjectById(lec.subject), extra = "";
     var chans = (S.channels && (S.channels[lec.id] || S.channels[lec.subject])) || [];
     if (chans.length) extra += "<h2>Channels worth following</h2><ul class=\"rgrid\">" + chans.map(function (r) {
@@ -648,11 +736,14 @@
   applyLayout();
 
   /* ---------- router ---------- */
+  requestAnimationFrame(function () { requestAnimationFrame(function () { document.body.classList.remove("no-anim"); }); });
+
   function route() {
     var parts = location.hash.replace(/^#\/?/, "").split("/").filter(Boolean);
-    if (!drawer.hidden) closeDrawer();
+    if (isOpen()) closeDrawer();
     if (!parts.length) return homeView();
     if (parts[0] === "updates") return updatesView();
+    if (parts[0] === "apps") return appsView();
     if (parts[0] === "papers") return papersView(parts[1]);
     if (parts[0] === "paper") return paperView(parts[1]);
     if (parts[0] === "subject") return subjectView(parts[1]);

@@ -29,3 +29,16 @@ SINA.channels["anat3-neuro"] = [
 ];
 
 ["anat3-spinal-cord","anat3-brainstem","anat3-cerebrum","anat3-diencephalon","anat3-descending-tracts","anat3-pns"].forEach(function (id) { SINA.channels[id] = SINA.channels["anat3-neuro"]; });
+
+/* Useful apps and resources, shown on the home page and at #/apps. */
+SINA.usefulApps = [
+  { name: "Gizmo", domain: "gizmo.ai", kind: "AI flashcards and quizzes",
+    desc: "Turns your notes, PDFs and slides into flashcards and quizzes, then schedules reviews with spaced repetition.",
+    platforms: ["Web", "iOS", "Android"],
+    links: [{ label: "Visit website", url: "https://gizmo.ai/" }] },
+  { name: "Daily Anatomy Flashcards", domain: "kenhub.com", kind: "Anatomy flashcards by Kenhub",
+    desc: "A few illustrated anatomy flashcards every day on muscles and bones, to keep anatomy fresh between exams.",
+    platforms: ["iOS", "Android"],
+    links: [{ label: "App Store", url: "https://apps.apple.com/ca/app/daily-anatomy-flashcards/id1271405479" },
+            { label: "Google Play", url: "https://play.google.com/store/apps/details?id=com.kenhub.dailyanatomy.musclesandbones&hl=en_CA" }] }
+];

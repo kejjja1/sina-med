@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="css/style.css">
   <script>try{var t=localStorage.getItem("sina:theme");t=t?JSON.parse(t):(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");if(t!=="dark")t="light";document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 </head>
-<body>
+<body class="no-anim">
   <a class="skip" href="#app">Skip to content</a>
   <header class="site-header">
     <div class="bar">
@@ -29,7 +29,20 @@
         <input id="search-input" type="search" placeholder="Search lectures and subjects" aria-label="Search lectures and subjects" autocomplete="off">
         <div class="search-results" id="search-results" hidden></div>
       </div>
-      <button class="icon-btn" id="theme-btn" type="button">Dark mode</button>
+      <div class="hdr-actions">
+        <!-- Paste the Google Form link inside data-form="https://forms.gle/F8G5jWpr6S1NoMmdA" below. -->
+        <a class="pill-btn" id="suggest-btn" href="#" data-form="https://forms.gle/F8G5jWpr6S1NoMmdA" target="_blank" rel="noopener" aria-label="Send a suggestion"><span class="qmark" aria-hidden="true">?</span><span class="plbl">Suggestion</span></a>
+        <div class="settings">
+          <button class="gear-btn" id="settings-btn" type="button" aria-label="Settings" aria-haspopup="true" aria-expanded="false" aria-controls="settings-menu">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+          </button>
+          <div class="settings-menu" id="settings-menu" role="menu" aria-label="Settings" hidden>
+            <p class="sm-title">Appearance</p>
+            <button type="button" role="menuitemradio" data-theme-choice="light" aria-checked="false"><span class="sm-ico" aria-hidden="true">&#9728;</span>Light mode<span class="sm-tick" aria-hidden="true">&#10003;</span></button>
+            <button type="button" role="menuitemradio" data-theme-choice="dark" aria-checked="false"><span class="sm-ico" aria-hidden="true">&#9790;</span>Dark mode<span class="sm-tick" aria-hidden="true">&#10003;</span></button>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
   <div id="welcome" class="welcome" hidden>
@@ -41,106 +54,20 @@
       <p class="wsmall">A study aid, not a replacement for your lectures.</p>
     </div>
   </div>
-  <nav id="drawer" class="drawer" aria-label="Site menu" hidden></nav>
-  <div id="backdrop" class="backdrop" hidden></div>
+  <nav id="drawer" class="drawer" aria-label="Site menu"></nav>
+  <div id="backdrop" class="backdrop"></div>
   <main id="app"><noscript><div class="wrap"><p>Sina needs JavaScript to show lectures.</p></div></noscript></main>
   <script src="js/data/index.js"></script>
   <script src="js/data/papers.js"></script>
   <script src="js/data/updates.js"></script>
   <script src="js/data/extras.js"></script>
-  <script src="js/data/anat3-orbit.js"></script>
-  <script src="js/data/anat3-face-osteology.js"></script>
-  <script src="js/data/anat3-facial-muscles.js"></script>
-  <script src="js/data/anat3-blood-supply.js"></script>
-  <script src="js/data/anat3-orbital-appendages.js"></script>
-  <script src="js/data/anat3-eyeball-1.js"></script>
-  <script src="js/data/anat3-ocular-muscles.js"></script>
-  <script src="js/data/anat3-eye-innervation.js"></script>
-  <script src="js/data/anat3-ocular-clinical.js"></script>
-  <script src="js/data/anat3-sinuses.js"></script>
-  <script src="js/data/anat3-oral-cavity.js"></script>
-  <script src="js/data/anat3-nasal-cavity.js"></script>
-  <script src="js/data/anat3-larynx.js"></script>
-  <script src="js/data/anat3-pharynx.js"></script>
-  <script src="js/data/anat3-thyroid.js"></script>
-  <script src="js/data/anat3-neck-triangles.js"></script>
-  <script src="js/data/anat3-ear-1.js"></script>
-  <script src="js/data/anat3-ear-2.js"></script>
-  <script src="js/data/anat3-spinal-cord.js"></script>
-  <script src="js/data/anat3-brainstem.js"></script>
-  <script src="js/data/anat3-cerebrum.js"></script>
-  <script src="js/data/anat3-diencephalon.js"></script>
-  <script src="js/data/anat3-descending-tracts.js"></script>
-  <script src="js/data/anat3-pns.js"></script>
-  <script src="js/data/physio-intro-neuro.js"></script>
-  <script src="js/data/physio-neurons.js"></script>
-  <script src="js/data/physio-myotatic.js"></script>
-  <script src="js/data/physio-muscle-2.js"></script>
-  <script src="js/data/physio-pain.js"></script>
-  <script src="js/data/physio-stress.js"></script>
-  <script src="js/data/physio-vision.js"></script>
-  <script src="js/data/physio-vestibular.js"></script>
-  <script src="js/data/physio-taste-smell.js"></script>
-  <script src="js/data/physio-renal-gfr.js"></script>
-  <script src="js/data/semio-resp-symptoms.js"></script>
-  <script src="js/data/semio-resp-exam.js"></script>
-  <script src="js/data/semio-resp-syndromes.js"></script>
-  <script src="js/data/semio-cv-intro.js"></script>
-  <script src="js/data/semio-cv-lhf.js"></script>
-  <script src="js/data/semio-cv-rhf.js"></script>
-  <script src="js/data/semio-cv-angina.js"></script>
-  <script src="js/data/semio-cv-arrhythmia.js"></script>
-  <script src="js/data/semio-cv-revision.js"></script>
-  <script src="js/data/semio-gi-exam.js"></script>
-  <script src="js/data/semio-gi-jaundice.js"></script>
-  <script src="js/data/semio-gi-hepatomegaly.js"></script>
-  <script src="js/data/semio-gi-constipation.js"></script>
-  <script src="js/data/semio-gi-dysentery.js"></script>
-  <script src="js/data/semio-endo-thyroid.js"></script>
-  <script src="js/data/semio-endo-adrenal.js"></script>
-  <script src="js/data/biochem-preanalytical.js"></script>
-  <script src="js/data/biochem-adrenal-medulla.js"></script>
-  <script src="js/data/biochem-insulin.js"></script>
-  <script src="js/data/biochem-hepatic.js"></script>
-  <script src="js/data/biochem-steroids.js"></script>
-  <script src="js/data/biochem-cardiac.js"></script>
-  <script src="js/data/biochem-renal.js"></script>
-  <script src="js/data/semio-gi-diarrhoea.js"></script>
-  <script src="js/data/semio-gi-dysphagia.js"></script>
-  <script src="js/data/semio-gi-gerd.js"></script>
-  <script src="js/data/semio-gi-bleeding.js"></script>
-  <script src="js/data/biochem-spe.js"></script>
-  <script src="js/data/biochem-lipids.js"></script>
-  <script src="js/data/biochem-calcium.js"></script>
-  <script src="js/data/biochem-iron.js"></script>
-  <script src="js/data/biochem-water.js"></script>
-  <script src="js/data/biochem-acid-base.js"></script>
-  <script src="js/data/fa-protection.js"></script>
-  <script src="js/data/fa-cardiac-arrest.js"></script>
-  <script src="js/data/fa-bleeding.js"></script>
-  <script src="js/data/fa-trauma-burns.js"></script>
-  <script src="js/data/pathanat-intro.js"></script>
-  <script src="js/data/pathanat-techniques.js"></script>
-  <script src="js/data/pathanat-adaptation.js"></script>
-  <script src="js/data/pathanat-cell-injury.js"></script>
-  <script src="js/data/pathanat-cell-death.js"></script>
-  <script src="js/data/pathanat-inflammation-acute.js"></script>
-  <script src="js/data/pathanat-vascular.js"></script>
-  <script src="js/data/pathanat-onco-intro.js"></script>
-  <script src="js/data/pathanat-carcinogenesis.js"></script>
-  <script src="js/data/history-physiology.js"></script>
-  <script src="js/data/history-pathology.js"></script>
-  <script src="js/data/history-pharmacology.js"></script>
-  <script src="js/data/history-epidemics.js"></script>
-  <script src="js/data/history-technology.js"></script>
-  <script src="js/data/history-surgery.js"></script>
-  <script src="js/data/history-medical-art.js"></script>
-  <script src="js/data/fa-neural.js"></script>
-  <script src="js/data/fa-cardiovascular.js"></script>
-  <script src="js/data/fa-renal.js"></script>
-  <script src="js/data/fa-endocrine.js"></script>
-  <script src="js/data/fa-immune.js"></script>
-  <script src="js/data/fa-digestive.js"></script>
+  <script src="js/data/lectures-anat3.js"></script>
+  <script src="js/data/lectures-physio.js"></script>
+  <script src="js/data/lectures-semio.js"></script>
+  <script src="js/data/lectures-biochem.js"></script>
+  <script src="js/data/lectures-fa.js"></script>
+  <script src="js/data/lectures-pathanat.js"></script>
+  <script src="js/data/lectures-history.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

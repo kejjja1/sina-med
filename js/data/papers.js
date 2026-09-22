@@ -1,6 +1,153 @@
 window.SINA = window.SINA || { subjects: [], lectures: {} };
 SINA.papers = [
  {
+  "id": "anat3-orbital-quiz",
+  "subject": "anat3",
+  "title": "Orbital anatomy practice quiz",
+  "year": "Practice",
+  "note": "12 questions on the orbit, eyelids and lacrimal apparatus. Answers come with a short explanation.",
+  "links": [
+   {
+    "label": "Open the original quiz (PDF)",
+    "url": "https://drive.google.com/file/d/1xJPeE0Y5ZM41iFDwJIWLEe3NQegq0Dmu/view?usp=drivesdk"
+   }
+  ],
+  "questions": [
+   {
+    "q": "How many bones contribute to the orbital cavity, and which statement about them is correct?",
+    "options": [
+     "5 bones total, all of which are cranial bones",
+     "7 bones total, with 3 cranial and 4 facial bones",
+     "7 bones total, with 4 cranial and 3 facial bones",
+     "9 bones total, all of which are facial bones"
+    ],
+    "answer": 1,
+    "why": "Cranial: sphenoid, frontal, ethmoid. Facial: zygomatic, lacrimal, maxilla, palatine."
+   },
+   {
+    "q": "Which structures pass through the optic foramen (optic canal)?",
+    "options": [
+     "Ophthalmic artery only",
+     "Optic nerve and ophthalmic artery",
+     "Optic nerve, ophthalmic artery and sympathetic fibres",
+     "Lacrimal nerve and blood vessels"
+    ],
+    "answer": 2,
+    "why": "The optic canal transmits the optic nerve and the ophthalmic artery, with sympathetic fibres."
+   },
+   {
+    "q": "The superior orbital fissure transmits all of the following EXCEPT:",
+    "options": [
+     "Cranial nerve III (oculomotor)",
+     "Cranial nerve IV (trochlear)",
+     "Cranial nerve VI (abducens)",
+     "Cranial nerve II (optic)"
+    ],
+    "answer": 3,
+    "why": "CN II passes through the optic canal; CN III, IV and VI pass through the superior orbital fissure."
+   },
+   {
+    "q": "Which muscle is responsible for elevating the upper eyelid?",
+    "options": [
+     "Orbicularis oculi",
+     "Levator palpebrae superioris",
+     "Superior rectus",
+     "Müller's muscle only"
+    ],
+    "answer": 1,
+    "why": "Levator palpebrae superioris is the main elevator; Müller's (superior tarsal) muscle adds a little sympathetic elevation."
+   },
+   {
+    "q": "The orbicularis oculi has three parts. Which part is used for forceful eye closure?",
+    "options": [
+     "Orbital part",
+     "Palpebral part",
+     "Lacrimal part",
+     "Tarsal part"
+    ],
+    "answer": 0,
+    "why": "The orbital part closes the eye forcefully; the palpebral part does gentle blinking."
+   },
+   {
+    "q": "What is the main function of tears?",
+    "options": [
+     "Temperature regulation of the eye",
+     "Lubrication, protection from infection and removal of debris",
+     "Nutrient supply to the cornea only",
+     "Production of visual pigments"
+    ],
+    "answer": 1,
+    "why": "The tear film lubricates the eye, protects it from infection and washes away dust and debris."
+   },
+   {
+    "q": "Which nerve carries the parasympathetic supply to the lacrimal gland?",
+    "options": [
+     "Lacrimal branch of the ophthalmic nerve",
+     "Facial nerve via the greater petrosal nerve",
+     "Trigeminal nerve (CN V)",
+     "Glossopharyngeal nerve"
+    ],
+    "answer": 1,
+    "why": "Parasympathetic fibres travel with CN VII and the greater petrosal nerve, then reach the gland via the zygomatic nerve."
+   },
+   {
+    "q": "Where is the lacrimal gland located?",
+    "options": [
+     "Inferomedial orbit",
+     "Superolateral orbit, in the lacrimal fossa of the frontal bone",
+     "Superolateral orbit, within the lacrimal bone",
+     "Superomedial orbit"
+    ],
+    "answer": 1,
+    "why": "It sits in a depression of the orbital plate of the frontal bone, superolaterally."
+   },
+   {
+    "q": "Which of the following is NOT a component of the tear film?",
+    "options": [
+     "Water and electrolytes",
+     "Proteins",
+     "A lipid layer from the meibomian glands",
+     "Insulin and glucose"
+    ],
+    "answer": 3,
+    "why": "Tear film: water, electrolytes, proteins and lipids."
+   },
+   {
+    "q": "After secretion into the superior conjunctival fornix, how do tears drain?",
+    "options": [
+     "Directly into the inferior nasal meatus via the puncta",
+     "Across the cornea, then puncta, lacrimal sac, and inferior nasal meatus",
+     "Into the orbital fat for absorption",
+     "Through the lacrimal sac and nasolacrimal duct into the nasopharynx"
+    ],
+    "answer": 1,
+    "why": "Across the cornea to the puncta, canaliculi, lacrimal sac, nasolacrimal duct and inferior nasal meatus."
+   },
+   {
+    "q": "Where does the levator palpebrae superioris insert?",
+    "options": [
+     "The orbital septum and orbital fat",
+     "The superior tarsal plate and the skin of the upper eyelid",
+     "The orbital plate of the frontal bone",
+     "The medial and lateral palpebral ligaments"
+    ],
+    "answer": 1,
+    "why": "It inserts on the superior tarsal plate and the skin of the upper lid, forming the eyelid crease."
+   },
+   {
+    "q": "Which statement about the nasolacrimal duct is correct?",
+    "options": [
+     "Its superior relation is the zygomatic process of the frontal bone",
+     "Its anterior relation is the orbital septum",
+     "It runs in a canal formed by the maxilla and lacrimal bone and opens into the inferior nasal meatus",
+     "Its posterior relation is the orbital fat"
+    ],
+    "answer": 2,
+    "why": "The canal is formed by grooves in the maxilla and lacrimal bone; the duct opens into the inferior meatus."
+   }
+  ]
+ },
+ {
   "id": "anat3-mock-test",
   "subject": "anat3",
   "title": "Anatomy 3 mock test",
