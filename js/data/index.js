@@ -37,7 +37,7 @@ SINA.subjects = [
         { id: "anat3-pns", title: "The peripheral nervous system" }
       ]}
     ]},
-  { id: "physio", name: "Physiology", semester: "S3", status: "building",
+  { id: "physio", name: "Physiology", semester: "S3", status: "live",
     blurb: "Neurophysiology, muscle, senses, renal filtration.",
     groups: [
       { name: "Neurophysiology", items: [
@@ -59,7 +59,34 @@ SINA.subjects = [
         { id: "physio-renal-gfr", title: "Renal physiology 3: glomerular filtration" }
       ]}
     ] },
-  { id: "semio", name: "Semiology", semester: "S3", status: "planned", count: 16, blurb: "Respiratory, cardiovascular, digestive and endocrine examination." },
+  { id: "semio", name: "Semiology", semester: "S3", status: "building",
+    blurb: "Respiratory, cardiovascular, digestive and endocrine examination.",
+    groups: [
+      { name: "Respiratory", items: [
+        { id: "semio-resp-symptoms", title: "Respiratory clinical symptoms" },
+        { id: "semio-resp-exam", title: "Respiratory clinical examination" },
+        { id: "semio-resp-syndromes", title: "Thoracic syndromes" }
+      ]},
+      { name: "Cardiovascular", items: [
+        { id: "semio-cv-intro", title: "Cardiovascular semiology: introduction" },
+        { id: "semio-cv-lhf", title: "Left heart failure" },
+        { id: "semio-cv-rhf", title: "Right heart failure" },
+        { id: "semio-cv-angina", title: "Angina pectoris" },
+        { id: "semio-cv-arrhythmia", title: "Arrhythmias" },
+        { id: "semio-cv-revision", title: "Cardiovascular revision" }
+      ]},
+      { name: "Digestive", items: [
+        { id: "semio-gi-exam", title: "Digestive physical examination" },
+        { id: "semio-gi-jaundice", title: "Jaundice" },
+        { id: "semio-gi-hepatomegaly", title: "Hepatomegaly" },
+        { id: "semio-gi-constipation", title: "Constipation" },
+        { id: "semio-gi-dysentery", title: "Dysentery" }
+      ]},
+      { name: "Endocrine", items: [
+        { id: "semio-endo-thyroid", title: "Thyroid semiology" },
+        { id: "semio-endo-adrenal", title: "Adrenal semiology" }
+      ]}
+    ] },
   { id: "biochem", name: "Clinical Biochemistry", semester: "S3", status: "planned", count: 13, blurb: "Biochemical exploration of organs, hormones and balances." },
   { id: "firstaid", name: "First Aid", semester: "S3", status: "planned", count: 10, blurb: "Vital functions and emergency care." },
   { id: "pathanat", name: "Pathological Anatomy", semester: "S3", status: "planned", count: 9, blurb: "Cell injury, inflammation, vasculopathy, oncology." },

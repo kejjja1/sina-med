@@ -4,6 +4,11 @@ window.SINA = window.SINA || { subjects: [], lectures: {} };
 SINA.updated = "20 September 2026";
 SINA.updates = [
   { date: "20 September 2026", items: [
+    "New: all six cardiovascular semiology lectures, from the introduction to arrhythmias and revision.",
+    "Semiology has started: respiratory symptoms, the chest examination and thoracic syndromes.",
+    "The Likely exam points section is now called Key points.",
+    "Physiology is complete: all 10 lectures.",
+    "New lectures: Physiology of vision, The vestibular system, Taste and olfaction, and Glomerular filtration.",
     "New lecture: Physiology of pain, with 32 questions and 27 flashcards.",
     "New lecture: Physiology of stress, with 32 questions and 20 flashcards.",
     "New lecture: Introduction to neurophysiology, with 33 questions and 32 flashcards.",
