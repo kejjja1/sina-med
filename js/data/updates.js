@@ -4,8 +4,8 @@ window.SINA = window.SINA || { subjects: [], lectures: {} };
 SINA.updated = "22 September 2026";
 SINA.updates = [
   { date: "22 September 2026", items: [
-    "Pathological Anatomy is here: all 9 lectures, from the introduction and lab techniques to cell injury, cell death, acute inflammation, vascular pathology and oncology. Short versions for now; full versions are coming.",
-    "History and Art of Medicine is here: all 7 lectures, from the history of physiology to surgery, plus the Art of Medicine on emotions, empathy and communication. Short versions for now.",
+    "Pathological Anatomy is here: all 9 lectures, from the introduction and lab techniques to cell injury, cell death, acute inflammation, vascular pathology and oncology, each with a labelled schematic, picture questions, tables, Go deeper reading and resources.",
+    "History and Art of Medicine is here: all 7 lectures, from the history of physiology to surgery, plus the Art of Medicine on emotions, empathy and communication, built in the same full format.",
     "S3 is now complete on the site."
   ]},
   { date: "20 September 2026", items: [

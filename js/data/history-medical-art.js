@@ -1,17 +1,17 @@
 window.SINA = window.SINA || {subjects:[], lectures:{}};
-SINA.lectures["history-medical-art"] =  {
+SINA.lectures["history-medical-art"] = {
  "id": "history-medical-art",
  "subject": "history",
  "group": "Medical art",
  "title": "The art of medicine: emotions, self-care and understanding others",
  "sourceFile": "Medical Art handout.pdf (History of Medicine & Medical Art, Pr Maryam Fourtassi)",
  "sourceUrl": "https://drive.google.com/file/d/17CmnBhK5RvQhUabRmKB81b0uuG_fbGRA/view?usp=drivesdk",
- "buildNote": "<strong>Short version.</strong> The full version, with more questions and extra reading, is coming soon. <strong>Built from the lecture slides.</strong> If your professor says something different, trust your professor.",
+ "buildNote": "<strong>Built from the lecture slides.</strong> Slides that only show pictures are covered in outline. If your professor says something different, trust your professor.",
  "summary": [
   {
    "id": "s0",
    "title": "Reading emotions on faces",
-   "html": "<p>The human side of care begins with observation. <strong>Confusion</strong>: raised or drawn eyebrows with forehead creases, narrowed unfocused eyes, mouth partly open, head tilted. <strong>Fear/scare</strong>: wide eyes, raised or furrowed brows, tense mouth, pale face. <strong>Anger</strong>: narrowed eyes, furrowed brows, clenched jaw, pressed lips or bared teeth. <strong>Confidence</strong>: relaxed steady eyes, slightly raised brows, small closed-lip smile, chin lifted. <strong>Disappointment</strong>: downcast half-closed eyes, lowered brows, downturned slack lips, low energy. <strong>Sadness</strong>: pained brows, drooping lids, watery eyes, downturned mouth. <strong>Contempt</strong>: one raised eyebrow, sideways narrowed glance, curled lip or sneer, head tilted back — a mix of anger and disgust. <strong>Disgust</strong>: wrinkled nose bridge, lowered brows, curled upper lip, tongue slightly out. <strong>Surprise</strong>: wide eyes with dilated pupils, arched brows, open mouth. Patients' expressions can conceal as much as they reveal; empathy expands what the observer perceives — \"observation is attention with intention; when we slow down to see, we begin to understand.\"</p>"
+   "html": "<p>The human side of care begins with observation. <strong>Confusion</strong>: raised or drawn eyebrows with forehead creases, narrowed unfocused eyes, mouth partly open, head tilted. <strong>Fear/scare</strong>: wide eyes, raised or furrowed brows, tense mouth, pale face. <strong>Anger</strong>: narrowed eyes, furrowed brows, clenched jaw, pressed lips or bared teeth. <strong>Confidence</strong>: relaxed steady eyes, slightly raised brows, small closed-lip smile, chin lifted. <strong>Disappointment</strong>: downcast half-closed eyes, lowered brows, downturned slack lips, low energy. <strong>Sadness</strong>: pained brows, drooping lids, watery eyes, downturned mouth. <strong>Contempt</strong>: one raised eyebrow, sideways narrowed glance, curled lip or sneer, head tilted back — a mix of anger and disgust. <strong>Disgust</strong>: wrinkled nose bridge, lowered brows, curled upper lip, tongue slightly out. <strong>Surprise</strong>: wide eyes with dilated pupils, arched brows, open mouth. Patients' expressions can conceal as much as they reveal; empathy expands what the observer perceives — \"observation is attention with intention; when we slow down to see, we begin to understand.\"</p><div class='table-wrap'><table class='wide'><thead><tr><th scope='col'>Emotion</th><th scope='col'>Key facial cues</th></tr></thead><tbody><tr><th scope='row'>Confusion</th><td>Drawn/raised brows, forehead creases, unfocused eyes, tilted head</td></tr><tr><th scope='row'>Fear</th><td>Wide eyes, raised/furrowed brows, tense mouth, pallor</td></tr><tr><th scope='row'>Anger</th><td>Narrowed eyes, furrowed brows, clenched jaw, pressed lips</td></tr><tr><th scope='row'>Confidence</th><td>Relaxed eyes, small closed smile, lifted chin</td></tr><tr><th scope='row'>Disappointment</th><td>Downcast half-closed eyes, lowered brows, slack downturned lips</td></tr><tr><th scope='row'>Sadness</th><td>Pained brows, drooping lids, watery eyes, downturned mouth</td></tr><tr><th scope='row'>Contempt</th><td>One raised brow, sideways glance, curled lip, head tilted back</td></tr><tr><th scope='row'>Disgust</th><td>Wrinkled nose bridge, curled upper lip, tongue slightly out</td></tr><tr><th scope='row'>Surprise</th><td>Wide eyes, dilated pupils, arched brows, open mouth</td></tr></tbody></table></div>"
   },
   {
    "id": "s1",
@@ -26,7 +26,7 @@ SINA.lectures["history-medical-art"] =  {
   {
    "id": "s3",
    "title": "Empathy",
-   "html": "<p>Three dimensions: <strong>cognitive</strong> (perspective-taking: knowing what the other thinks or believes), <strong>emotional</strong> (standing in their shoes: feeling what they feel) and <strong>behavioural</strong> (compassion: willingness to act to help and relieve). Empathic replies name the feeling and offer presence: \"I can see that really got to you; being corrected in front of everyone can feel embarrassing\"; \"it sounds like you're carrying a lot right now — let's break things down together\"; \"that sounds like a tough experience; if you want to talk it through, I'm here.\" Avoid dismissal (\"stop overreacting\", \"just manage your time better\") and false empathy that ends in \"but you're wrong\" or \"you're off base\".</p>"
+   "html": "<p>Three dimensions: <strong>cognitive</strong> (perspective-taking: knowing what the other thinks or believes), <strong>emotional</strong> (standing in their shoes: feeling what they feel) and <strong>behavioural</strong> (compassion: willingness to act to help and relieve). Empathic replies name the feeling and offer presence: \"I can see that really got to you; being corrected in front of everyone can feel embarrassing\"; \"it sounds like you're carrying a lot right now — let's break things down together\"; \"that sounds like a tough experience; if you want to talk it through, I'm here.\" Avoid dismissal (\"stop overreacting\", \"just manage your time better\") and false empathy that ends in \"but you're wrong\" or \"you're off base\".</p><div class='table-wrap'><table class='wide'><thead><tr><th scope='col'>Dimension</th><th scope='col'>Name</th><th scope='col'>Meaning</th></tr></thead><tbody><tr><th scope='row'>Cognitive</th><td>Perspective-taking</td><td>Know what the other thinks or believes</td></tr><tr><th scope='row'>Emotional</th><td>Standing in their shoes</td><td>Feel what the other feels</td></tr><tr><th scope='row'>Behavioural</th><td>Compassion</td><td>Willingness to act to help and relieve</td></tr></tbody></table></div>"
   },
   {
    "id": "s4",
@@ -47,49 +47,235 @@ SINA.lectures["history-medical-art"] =  {
  ],
  "visual": {
   "kind": "model",
-  "intro": ""
+  "intro": "",
+  "figure": {
+   "viewBox": "0 0 760 420",
+   "alt": "Emotional intelligence for the future doctor",
+   "caption": "The five keys and their tools, as taught in the lecture. Schematic drawn for this site.",
+   "base": "<defs><marker id=\"ah\" markerWidth=\"10\" markerHeight=\"8\" refX=\"9\" refY=\"4\" orient=\"auto\"><path d=\"M0,0 L10,4 L0,8 Z\" fill=\"#8a8a8a\"/></marker></defs><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"240\" y1=\"60\" x2=\"280\" y2=\"60\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"480\" y1=\"60\" x2=\"520\" y2=\"60\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"620\" y1=\"90\" x2=\"620\" y2=\"160\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"720\" y1=\"190\" x2=\"280\" y2=\"190\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"480\" y1=\"190\" x2=\"40\" y2=\"190\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"140\" y1=\"220\" x2=\"210\" y2=\"300\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"380\" y1=\"330\" x2=\"520\" y2=\"330\"/>",
+   "parts": {
+    "observation": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2d7cf\" x=\"40\" y=\"30\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Observation: reading",
+      "emotions on faces"
+     ],
+     "lx": 140.0,
+     "ly": 58.0
+    },
+    "selfaware": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#cfe3f2\" x=\"280\" y=\"30\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Self-awareness:",
+      "style, personality, emotions"
+     ],
+     "lx": 380.0,
+     "ly": 58.0
+    },
+    "selfreg": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d7edd2\" x=\"520\" y=\"30\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Self-regulation:",
+      "acting over reacting"
+     ],
+     "lx": 620.0,
+     "ly": 58.0
+    },
+    "empathy": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2e2a8\" x=\"520\" y=\"160\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Empathy: cognitive,",
+      "emotional, behavioural"
+     ],
+     "lx": 620.0,
+     "ly": 188.0
+    },
+    "social": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#e3d5f0\" x=\"280\" y=\"160\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Social skills: listening,",
+      "disagreeing, praising"
+     ],
+     "lx": 380.0,
+     "ly": 188.0
+    },
+    "conflict": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f7d9b8\" x=\"40\" y=\"160\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Conflict resolution:",
+      "Thomas-Kilmann model"
+     ],
+     "lx": 140.0,
+     "ly": 188.0
+    },
+    "nvc": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d9ecec\" x=\"40\" y=\"300\" width=\"340\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Non-violent communication:",
+      "observation, feeling, need, request"
+     ],
+     "lx": 210.0,
+     "ly": 328.0
+    },
+    "care": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f0d0e0\" x=\"520\" y=\"300\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "The human side",
+      "of care"
+     ],
+     "lx": 620.0,
+     "ly": 328.0
+    }
+   },
+   "arrows": {
+    "observation": [
+     {
+      "t": [
+       40.0,
+       38.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "selfaware": [
+     {
+      "t": [
+       280.0,
+       38.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "selfreg": [
+     {
+      "t": [
+       520.0,
+       38.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "empathy": [
+     {
+      "t": [
+       520.0,
+       168.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "social": [
+     {
+      "t": [
+       280.0,
+       168.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "conflict": [
+     {
+      "t": [
+       40.0,
+       168.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "nvc": [
+     {
+      "t": [
+       40.0,
+       308.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "care": [
+     {
+      "t": [
+       520.0,
+       308.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ]
+   }
+  }
  },
  "mcqs": [
   {
    "q": "One raised eyebrow, a sideways glance down the nose and a curled lip express:",
    "options": [
-    "Contempt",
+    "Fear",
     "Surprise",
-    "Sadness",
-    "Fear"
+    "Contempt",
+    "Sadness"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "Contempt mixes anger and disgust with a sense of superiority."
   },
   {
    "q": "A wrinkled nose bridge with a curled upper lip exposing the teeth indicates:",
    "options": [
-    "Confusion",
-    "Disappointment",
     "Disgust",
-    "Confidence"
+    "Confidence",
+    "Disappointment",
+    "Confusion"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "A strong aversion to odours, tastes, sights or actions."
   },
   {
    "q": "Wide eyes with dilated pupils, dramatically arched eyebrows and an open mouth show:",
    "options": [
-    "Contempt",
     "Anger",
-    "Sadness",
-    "Surprise"
+    "Surprise",
+    "Contempt",
+    "Sadness"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "A sudden, unexpected reaction."
   },
   {
    "q": "Which is NOT one of the five keys to emotional intelligence?",
    "options": [
-    "Empathy",
+    "Social skills",
     "Memory",
     "Self-awareness",
-    "Social skills"
+    "Empathy"
    ],
    "answer": 1,
    "why": "The keys are self-awareness, self-regulation, motivation, empathy and social skills."
@@ -97,32 +283,32 @@ SINA.lectures["history-medical-art"] =  {
   {
    "q": "A 'humanistic' social style is:",
    "options": [
-    "Rule-driven",
     "Relationship-driven",
+    "Rule-driven",
     "Performance-driven",
     "Task-avoidant"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "Pragmatic = performance-driven; humanistic = relationship-driven."
   },
   {
    "q": "Emotional self-regulation aims to:",
    "options": [
     "Ignore feedback",
-    "Avoid all conflict",
     "Suppress all emotions",
-    "Empower thoughtful acting over reacting"
+    "Empower thoughtful acting over reacting",
+    "Avoid all conflict"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "Using short-term tools (breathing, grounding) and long-term ones (journaling, self-compassion)."
   },
   {
    "q": "Which is a LONG-term self-regulation tool?",
    "options": [
     "Emotional journaling",
+    "Sensory grounding",
     "Conscious breathing",
-    "Postural change",
-    "Sensory grounding"
+    "Postural change"
    ],
    "answer": 0,
    "why": "Long-term: proactive thinking, journaling, emotional hygiene, visual imagery, cognitive empathy, self-compassion."
@@ -131,20 +317,20 @@ SINA.lectures["history-medical-art"] =  {
    "q": "'Perspective-taking' corresponds to which dimension of empathy?",
    "options": [
     "Behavioural",
+    "Emotional",
     "Cognitive",
-    "Social",
-    "Emotional"
+    "Social"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "Emotional = feeling what the other feels; behavioural = compassion, acting to help."
   },
   {
    "q": "Which reply is most empathic to a classmate who feels they are 'failing'?",
    "options": [
     "It sounds like you're carrying a lot right now; that must feel overwhelming",
-    "Maybe you're just not managing your time well",
+    "Everyone is stressed, deal with it",
     "You need to study more",
-    "Everyone is stressed, deal with it"
+    "Maybe you're just not managing your time well"
    ],
    "answer": 0,
    "why": "It names the feeling and offers presence rather than judgement."
@@ -152,46 +338,373 @@ SINA.lectures["history-medical-art"] =  {
   {
    "q": "When you disagree with someone, you should:",
    "options": [
-    "Avoid the topic",
     "Convince them you are right",
-    "Understand how they feel and treat their feelings as information",
-    "Raise your voice"
+    "Raise your voice",
+    "Avoid the topic",
+    "Understand how they feel and treat their feelings as information"
    ],
-   "answer": 2,
+   "answer": 3,
    "why": "Disagree with grace and manner."
   },
   {
    "q": "The Thomas-Kilmann model balances:",
    "options": [
-    "Motivation to reach one's interests and motivation to cooperate",
     "Speed and accuracy",
+    "Pain and infection",
     "Cost and benefit",
-    "Pain and infection"
+    "Motivation to reach one's interests and motivation to cooperate"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "It maps conflict-resolution styles on these two axes."
   },
   {
    "q": "The correct order of non-violent communication is:",
    "options": [
+    "Observation → feeling → need → request",
     "Feeling → request → observation → need",
     "Request → need → feeling → observation",
-    "Observation → feeling → need → request",
     "Need → observation → request → feeling"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "State what you observed, how you felt, the need behind it, and a concrete request."
   },
   {
    "q": "'I understand how you feel, but you're wrong' is an example of:",
    "options": [
-    "Non-violent communication",
+    "False empathy that cancels itself",
     "Active listening",
     "Self-compassion",
-    "False empathy that cancels itself"
+    "Non-violent communication"
+   ],
+   "answer": 0,
+   "why": "The 'but' negates the empathy expressed."
+  },
+  {
+   "q": "Which cues signal confusion?",
+   "options": [
+    "Clenched jaw",
+    "Wide eyes and pallor",
+    "Drawn eyebrows with forehead creases, unfocused eyes, tilted head",
+    "Curled lip"
+   ],
+   "answer": 2,
+   "why": "Uncertainty while trying to make sense of something."
+  },
+  {
+   "q": "A pale face with wide eyes and a tense mouth signals:",
+   "options": [
+    "Confidence",
+    "Fear",
+    "Disappointment",
+    "Contempt"
+   ],
+   "answer": 1,
+   "why": "A natural response to perceived danger."
+  },
+  {
+   "q": "A small closed-lip smile with lifted chin and relaxed eyes signals:",
+   "options": [
+    "Disgust",
+    "Confidence",
+    "Surprise",
+    "Sadness"
+   ],
+   "answer": 1,
+   "why": "Ease and readiness, no visible tension."
+  },
+  {
+   "q": "Downcast half-closed eyes and slack downturned lips signal:",
+   "options": [
+    "Anger",
+    "Confidence",
+    "Disappointment",
+    "Surprise"
+   ],
+   "answer": 2,
+   "why": "Low energy, dejection, unfulfilled expectation."
+  },
+  {
+   "q": "Watery eyes with drooping lids and a downturned mouth signal:",
+   "options": [
+    "Sadness",
+    "Confidence",
+    "Contempt",
+    "Disgust"
+   ],
+   "answer": 0,
+   "why": "Sorrow and emotional pain."
+  },
+  {
+   "q": "The lecture says patients' expressions:",
+   "options": [
+    "Always reveal everything",
+    "Can conceal as much as they reveal",
+    "Are irrelevant",
+    "Never change"
+   ],
+   "answer": 1,
+   "why": "Empathy expands what the observer perceives."
+  },
+  {
+   "q": "'Observation is more than eyesight' means:",
+   "options": [
+    "Observation is attention with intention",
+    "Look quickly",
+    "Use glasses",
+    "Ignore faces"
+   ],
+   "answer": 0,
+   "why": "'When we slow down to see, we begin to understand.'"
+  },
+  {
+   "q": "A pragmatic social style is:",
+   "options": [
+    "Performance-driven",
+    "Relationship-driven",
+    "Value-driven",
+    "Emotion-driven"
+   ],
+   "answer": 0,
+   "why": "The humanistic style is relationship-driven."
+  },
+  {
+   "q": "Which component of self-awareness covers what drives you?",
+   "options": [
+    "Emotions",
+    "Values/motivation",
+    "Personality",
+    "Social style"
+   ],
+   "answer": 1,
+   "why": "Alongside mindset."
+  },
+  {
+   "q": "The median-nerve scenario in the lecture is used to identify:",
+   "options": [
+    "A surgical technique",
+    "A social style",
+    "Your main emotion and its physical sign",
+    "A diagnosis"
+   ],
+   "answer": 2,
+   "why": "Emotional self-awareness."
+  },
+  {
+   "q": "Mindset in the lecture concerns your attitude toward:",
+   "options": [
+    "Exams only",
+    "Anatomy",
+    "Money",
+    "Personalities, stress, emotions and relationships"
    ],
    "answer": 3,
-   "why": "The 'but' negates the empathy expressed."
+   "why": "A component of self-awareness."
+  },
+  {
+   "q": "Which is a SHORT-term self-regulation tool?",
+   "options": [
+    "Self-compassion",
+    "Proactive thinking",
+    "Emotional hygiene",
+    "Sensory grounding"
+   ],
+   "answer": 3,
+   "why": "With breathing, posture, cognitive break, positive self-talk."
+  },
+  {
+   "q": "'My ideas aren't always chosen; maybe I should get feedback' is an example of:",
+   "options": [
+    "Negative self-talk",
+    "Rephrased positive self-talk",
+    "Contempt",
+    "Non-violent communication"
+   ],
+   "answer": 1,
+   "why": "Rephrasing negative into proactive thinking."
+  },
+  {
+   "q": "The behavioural dimension of empathy is:",
+   "options": [
+    "Compassion: willingness to act to help",
+    "Listening",
+    "Feeling what the other feels",
+    "Perspective-taking"
+   ],
+   "answer": 0,
+   "why": "Cognitive, emotional, behavioural."
+  },
+  {
+   "q": "'It's just basic tissues, how did you confuse those?' is:",
+   "options": [
+    "Dismissive and shaming",
+    "Empathic",
+    "Non-violent",
+    "Neutral"
+   ],
+   "answer": 0,
+   "why": "Contrast with naming the embarrassment."
+  },
+  {
+   "q": "'Don't be so sensitive; it's part of medicine' fails because it:",
+   "options": [
+    "Names the feeling",
+    "Dismisses the feeling",
+    "Asks a question",
+    "Offers help"
+   ],
+   "answer": 1,
+   "why": "Better: acknowledge, then offer to talk it through."
+  },
+  {
+   "q": "Which social skill is listed?",
+   "options": [
+    "Praising",
+    "Operating",
+    "Prescribing",
+    "Diagnosing"
+   ],
+   "answer": 0,
+   "why": "With active listening, disagreeing, conflict resolution, NVC."
+  },
+  {
+   "q": "In the Thomas-Kilmann model, the two axes are:",
+   "options": [
+    "Speed and quality",
+    "Cost and benefit",
+    "Anger and fear",
+    "Motivation to reach one's interests and motivation to cooperate"
+   ],
+   "answer": 3,
+   "why": "Defining conflict styles."
+  },
+  {
+   "q": "In NVC, 'because I need to feel listened to' is the:",
+   "options": [
+    "Request",
+    "Observation",
+    "Need",
+    "Feeling"
+   ],
+   "answer": 2,
+   "why": "Request follows: a concrete, willing action."
+  },
+  {
+   "q": "An NVC request should be:",
+   "options": [
+    "A demand",
+    "Concrete and asked with willingness ('would you be willing...')",
+    "Vague",
+    "Silent"
+   ],
+   "answer": 1,
+   "why": "E.g. put the phone aside for 10 minutes."
+  },
+  {
+   "q": "'I appreciate what you are telling me, but you're off base' illustrates:",
+   "options": [
+    "Active listening",
+    "Praising",
+    "Good empathy",
+    "Empathy cancelled by 'but'"
+   ],
+   "answer": 3,
+   "why": "Such statements negate the acknowledgement."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "observation",
+   "options": [
+    "The human side of care",
+    "Non-violent communication",
+    "Self-regulation",
+    "Observation"
+   ],
+   "answer": 3,
+   "why": "The arrow points to: Observation. Attention with intention: reading confusion, fear, anger, sadness, contempt, disgust, surprise."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "selfaware",
+   "options": [
+    "Non-violent communication",
+    "Self-awareness",
+    "Empathy",
+    "Conflict resolution"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: Self-awareness. Social style, personality, emotions, values, mindset."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "selfreg",
+   "options": [
+    "The human side of care",
+    "Self-awareness",
+    "Self-regulation",
+    "Social skills"
+   ],
+   "answer": 2,
+   "why": "The arrow points to: Self-regulation. Short-term tools (breathing, grounding) and long-term tools (journaling, self-compassion)."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "empathy",
+   "options": [
+    "Non-violent communication",
+    "Conflict resolution",
+    "Empathy",
+    "Social skills"
+   ],
+   "answer": 2,
+   "why": "The arrow points to: Empathy. Perspective-taking, standing in someone's shoes, compassion."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "social",
+   "options": [
+    "Non-violent communication",
+    "Self-awareness",
+    "The human side of care",
+    "Social skills"
+   ],
+   "answer": 3,
+   "why": "The arrow points to: Social skills. Active listening, the art of disagreeing, praising."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "conflict",
+   "options": [
+    "The human side of care",
+    "Conflict resolution",
+    "Empathy",
+    "Self-regulation"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: Conflict resolution. Thomas-Kilmann: balancing own interests with cooperation."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "nvc",
+   "options": [
+    "Social skills",
+    "Observation",
+    "Self-awareness",
+    "Non-violent communication"
+   ],
+   "answer": 3,
+   "why": "The arrow points to: Non-violent communication. Observation → feeling → need → request."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "care",
+   "options": [
+    "Conflict resolution",
+    "Empathy",
+    "The human side of care",
+    "Self-awareness"
+   ],
+   "answer": 2,
+   "why": "The arrow points to: The human side of care. Emotional intelligence in the service of patients and colleagues."
   }
  ],
  "cards": [
@@ -242,11 +755,160 @@ SINA.lectures["history-medical-art"] =  {
    "type": "text",
    "front": "Four steps of non-violent communication, with an example?",
    "back": "Observation ('when I was talking and you looked at your phone'), feeling ('I felt frustrated and unheard'), need ('because I need to feel listened to'), request ('would you put your phone aside for 10 minutes?')."
+  },
+  {
+   "id": "x0",
+   "type": "text",
+   "front": "Cues of confusion and of surprise?",
+   "back": "Confusion: eyebrows raised/drawn with forehead creases, narrowed unfocused eyes, mouth partly open, head tilted. Surprise: wide eyes, dilated pupils, arched brows, open mouth."
+  },
+  {
+   "id": "x1",
+   "type": "text",
+   "front": "Cues of confidence and of disappointment?",
+   "back": "Confidence: relaxed steady eyes, slightly raised brows, small closed-lip smile, chin lifted. Disappointment: downcast half-closed eyes, lowered brows, slack downturned lips."
+  },
+  {
+   "id": "x2",
+   "type": "text",
+   "front": "What does 'seeing beyond appearances' mean?",
+   "back": "Expressions can conceal as much as they reveal; empathy expands perception; observation is attention with intention."
+  },
+  {
+   "id": "x3",
+   "type": "text",
+   "front": "Components of self-awareness?",
+   "back": "Social style (pragmatic vs humanistic), personality, emotions, values/motivation, mindset (toward personalities, stress, emotions, relationships)."
+  },
+  {
+   "id": "x4",
+   "type": "text",
+   "front": "The two personality scenarios in the lecture?",
+   "back": "Group study invitation before S5 exams: accept as a new experience or decline knowing yourself. Night before semiology exam: panic and skim, or a calm structured review then sleep."
+  },
+  {
+   "id": "x5",
+   "type": "text",
+   "front": "Define emotional self-regulation.",
+   "back": "Empowering thoughtful acting over reacting, with short-term (mindfulness, breathing, posture, cognitive break/assessment, grounding, positive self-talk) and long-term tools (proactive thinking, journaling, emotional hygiene, imagery, cognitive empathy, self-compassion)."
+  },
+  {
+   "id": "x6",
+   "type": "text",
+   "front": "Examples of rephrased self-talk?",
+   "back": "'I made an honest mistake; frustrating but fixable.' 'I need to refocus and ask for help.' 'My ideas aren't always chosen; get feedback.' 'He may not want a friendship, and that's OK.'"
+  },
+  {
+   "id": "x7",
+   "type": "text",
+   "front": "Empathic responses to an overwhelmed classmate?",
+   "back": "'It sounds like you're carrying a lot right now; that must feel overwhelming.' 'Let's look at what's stressing you most and break it down together.'"
+  },
+  {
+   "id": "x8",
+   "type": "text",
+   "front": "What are the social skills listed?",
+   "back": "Active listening, the art of disagreeing, praising, conflict resolution (Thomas-Kilmann), non-violent communication."
+  },
+  {
+   "id": "x9",
+   "type": "text",
+   "front": "Write an NVC message for a friend who checks their phone while you talk.",
+   "back": "Observation: 'When I was talking and you looked at your phone.' Feeling: 'I felt frustrated and unheard.' Need: 'I need to feel listened to.' Request: 'Would you put your phone aside for 10 minutes?'"
+  },
+  {
+   "id": "img-observation",
+   "type": "image",
+   "target": "observation",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Observation. Attention with intention: reading confusion, fear, anger, sadness, contempt, disgust, surprise."
+  },
+  {
+   "id": "img-selfaware",
+   "type": "image",
+   "target": "selfaware",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Self-awareness. Social style, personality, emotions, values, mindset."
+  },
+  {
+   "id": "img-selfreg",
+   "type": "image",
+   "target": "selfreg",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Self-regulation. Short-term tools (breathing, grounding) and long-term tools (journaling, self-compassion)."
+  },
+  {
+   "id": "img-empathy",
+   "type": "image",
+   "target": "empathy",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Empathy. Perspective-taking, standing in someone's shoes, compassion."
+  },
+  {
+   "id": "img-social",
+   "type": "image",
+   "target": "social",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Social skills. Active listening, the art of disagreeing, praising."
+  },
+  {
+   "id": "img-conflict",
+   "type": "image",
+   "target": "conflict",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Conflict resolution. Thomas-Kilmann: balancing own interests with cooperation."
+  },
+  {
+   "id": "img-nvc",
+   "type": "image",
+   "target": "nvc",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Non-violent communication. Observation → feeling → need → request."
+  },
+  {
+   "id": "img-care",
+   "type": "image",
+   "target": "care",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "The human side of care. Emotional intelligence in the service of patients and colleagues."
   }
  ],
- "deeper": [],
- "resources": [],
+ "deeper": [
+  {
+   "title": "Why naming a feeling calms it",
+   "html": "<p>The empathic replies in the lecture all start by naming the emotion — embarrassed, overwhelmed, discouraged — before offering anything. Putting a feeling into words engages the reflective parts of the brain and dampens the alarm response, which is why the person feels calmer and heard even before any problem is solved. Advice given before that step usually lands as judgement.</p><p class='src'>Source: the lecture's empathy scenarios.</p>"
+  },
+  {
+   "title": "Why 'but' undoes empathy",
+   "html": "<p>'I understand how you feel, but...' tells the listener that the first half was a formality. The lecture's three examples all follow this shape and all end by declaring the other person wrong. Non-violent communication avoids the trap by separating observation, feeling and need from the request, so disagreement can be expressed without cancelling the acknowledgement.</p><p class='src'>Source: the lecture's empathy and NVC slides.</p>"
+  }
+ ],
+ "resources": [
+  {
+   "title": "Nonviolent Communication (Center for Nonviolent Communication)",
+   "url": "https://www.cnvc.org/learn-nvc/what-is-nvc",
+   "kind": "Website",
+   "why": "The four steps explained by its founders.",
+   "note": ""
+  },
+  {
+   "title": "Emotional intelligence (Harvard Business Review overview)",
+   "url": "https://hbr.org/topic/subject/emotional-intelligence",
+   "kind": "Website",
+   "why": "Articles on self-awareness, self-regulation and empathy at work.",
+   "note": ""
+  }
+ ],
  "checks": [],
- "sources": [],
+ "sources": [
+  {
+   "name": "Nonviolent Communication (Center for Nonviolent Communication)",
+   "url": "https://www.cnvc.org/learn-nvc/what-is-nvc"
+  },
+  {
+   "name": "Emotional intelligence (Harvard Business Review overview)",
+   "url": "https://hbr.org/topic/subject/emotional-intelligence"
+  }
+ ],
  "verified": "22 Sep 2026"
 };
