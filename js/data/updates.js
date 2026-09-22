@@ -10,7 +10,8 @@ SINA.updates = [
     "Past papers: new Orbital anatomy practice quiz (12 questions with explanations). New flashcards from it in The orbit and Orbital appendages.",
     "Pathological Anatomy now sits in Semester 4.",
     "Chapter titles are now in gold to stand out from the lectures inside them.",
-    "The Suggestion button now opens our suggestion form in a new tab."
+    "The Suggestion button now opens our suggestion form in a new tab.",
+    "Renamed Extraocular muscles and eye movement to Anatomy of the eyeball II, to match the lecture file, and linked it to the PDF."
   ]},
   { date: "22 September 2026", items: [
     "New Settings button (the cog, top right): choose light or dark mode from a small menu.",

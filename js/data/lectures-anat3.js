@@ -6015,9 +6015,9 @@ SINA.lectures["anat3-ocular-muscles"] = {
  "id": "anat3-ocular-muscles",
  "subject": "anat3",
  "group": "Face and orbit",
- "title": "Extraocular muscles and eye movement",
- "sourceFile": "4. Anatomy of the Eye Ball-II.pptx (Facio-Maxillary Module, Zehra Jamil)",
- "sourceUrl": "https://drive.google.com/file/d/1RipxaiH8V7rkRdUUEnRRcEzY8p_Bznta/view?usp=drivesdk",
+ "title": "Anatomy of the eyeball II: extraocular muscles and eye movement",
+ "sourceFile": "4. Anatomy of the Eye Ball-II (Facio-Maxillary Module, Dr Zehra Jamil)",
+ "sourceUrl": "https://drive.google.com/file/d/14z5iJ2zh1qp9piAPRjQkq6P4cdEuTqrY/view?usp=drivesdk",
  "buildNote": "<strong>Built from the lecture slides.</strong> This page follows the lecture: the extraocular muscles with their origins, insertions, nerves and actions, the neural layer of the retina, the visual pathway with its lesion sites, and the pupillary light reflex. Every fact was cross-checked against at least two references, listed at the bottom. If your professor says something different, trust your professor.",
  "summary": [
   {
