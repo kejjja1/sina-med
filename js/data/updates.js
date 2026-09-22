@@ -1,8 +1,13 @@
 /* What's new. Newest entry first. Add one block per update.
    date: what people see. items: short lines. */
 window.SINA = window.SINA || { subjects: [], lectures: {} };
-SINA.updated = "20 September 2026";
+SINA.updated = "22 September 2026";
 SINA.updates = [
+  { date: "22 September 2026", items: [
+    "Pathological Anatomy is here: all 9 lectures, from the introduction and lab techniques to cell injury, cell death, acute inflammation, vascular pathology and oncology. Short versions for now; full versions are coming.",
+    "History and Art of Medicine is here: all 7 lectures, from the history of physiology to surgery, plus the Art of Medicine on emotions, empathy and communication. Short versions for now.",
+    "S3 is now complete on the site."
+  ]},
   { date: "20 September 2026", items: [
     "First Aid is complete: all 10 lectures, from protection and CPR to the vital functions.",
     "Clinical Biochemistry is complete, and 4 new digestive semiology lectures: diarrhoea, dysphagia, GERD and GI bleeding. Some pages are short versions for now; full versions are coming.",

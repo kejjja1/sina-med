@@ -132,8 +132,44 @@ SINA.subjects = [
         { id: "fa-digestive", title: "Digestive and nutrition function" }
       ]}
     ] },
-  { id: "pathanat", name: "Pathological Anatomy", semester: "S3", status: "planned", count: 9, blurb: "Cell injury, inflammation, vasculopathy, oncology." },
-  { id: "history", name: "History and Art of Medicine", semester: "S3", status: "planned", count: 7, blurb: "" },
+  { id: "pathanat", name: "Pathological Anatomy", semester: "S3", status: "building",
+    blurb: "Cell injury, inflammation, vasculopathy, oncology.",
+    groups: [
+      { name: "General pathology", items: [
+        { id: "pathanat-intro", title: "Introduction to pathology" },
+        { id: "pathanat-techniques", title: "Techniques in pathology" }
+      ]},
+      { name: "Cell injury and death", items: [
+        { id: "pathanat-adaptation", title: "Cellular adaptation" },
+        { id: "pathanat-cell-injury", title: "Cell injury: causes and pathogenesis" },
+        { id: "pathanat-cell-death", title: "Cell death: necrosis and apoptosis" }
+      ]},
+      { name: "Inflammation", items: [
+        { id: "pathanat-inflammation-acute", title: "Acute inflammation and repair" }
+      ]},
+      { name: "Vascular pathology", items: [
+        { id: "pathanat-vascular", title: "Vascular pathology: haemodynamics and oedema" }
+      ]},
+      { name: "Oncology", items: [
+        { id: "pathanat-onco-intro", title: "Neoplasia: introduction to tumours" },
+        { id: "pathanat-carcinogenesis", title: "Carcinogenesis and the hallmarks of cancer" }
+      ]}
+    ]},
+  { id: "history", name: "History and Art of Medicine", semester: "S3", status: "building",
+    blurb: "How medicine became what it is, and the human side of care.",
+    groups: [
+      { name: "History of medicine", items: [
+        { id: "history-physiology", title: "History of physiology" },
+        { id: "history-pathology", title: "History of pathology" },
+        { id: "history-pharmacology", title: "History of pharmacology" },
+        { id: "history-epidemics", title: "Epidemics in history" },
+        { id: "history-technology", title: "History of medical technology" },
+        { id: "history-surgery", title: "History of surgery" }
+      ]},
+      { name: "Medical art", items: [
+        { id: "history-medical-art", title: "The art of medicine: emotions, self-care and understanding others" }
+      ]}
+    ]},
   { id: "parasito", name: "Parasitology and Mycology", semester: "S4", status: "planned", count: 18, blurb: "" },
   { id: "infectious", name: "Infectious Diseases", semester: "S4", status: "planned", count: 11, blurb: "" },
   { id: "pharma", name: "Pharmacology", semester: "S4", status: "planned", count: 8, blurb: "" },
