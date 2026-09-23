@@ -171,8 +171,53 @@ SINA.subjects = [
       ]}
     ]},
   { id: "parasito", name: "Parasitology and Mycology", semester: "S4", status: "planned", count: 18, blurb: "" },
-  { id: "infectious", name: "Infectious Diseases", semester: "S4", status: "planned", count: 11, blurb: "" },
-  { id: "pharma", name: "Pharmacology", semester: "S4", status: "planned", count: 8, blurb: "" },
-  { id: "toxico", name: "Toxicology", semester: "S4", status: "planned", count: 4, blurb: "" },
+  { id: "infectious", name: "Infectious Diseases", semester: "S4", status: "live",
+    blurb: "Anti-infectives, HIV, meningitis, zoonoses, prolonged fever.",
+    groups: [
+      { name: "Anti-infective therapy", items: [
+        { id: "infect-atb-principles", title: "Principles of antibiotic therapy" },
+        { id: "infect-antivirals", title: "Antiviral drugs for systemic use" },
+        { id: "infect-antifungals", title: "Antifungal drugs for invasive fungal infections" }
+      ]},
+      { name: "HIV infection", items: [
+        { id: "infect-hiv", title: "HIV/AIDS infection" },
+        { id: "infect-hiv-manifestations", title: "Other clinical manifestations of AIDS" }
+      ]},
+      { name: "Bacterial and viral infections", items: [
+        { id: "infect-meningitis", title: "Community-acquired bacterial meningitis" },
+        { id: "infect-cholera", title: "Cholera" },
+        { id: "infect-tiac", title: "Collective foodborne toxi-infections (TIAC)" },
+        { id: "infect-leptospirosis", title: "Leptospirosis" },
+        { id: "infect-rickettsiosis", title: "Rickettsioses: Mediterranean spotted fever" },
+        { id: "infect-rabies", title: "Rabies" }
+      ]},
+      { name: "Syndromes", items: [
+        { id: "infect-prolonged-fever", title: "Prolonged fever (fever of unknown origin)" }
+      ]}
+    ]},
+  { id: "pharma", name: "Pharmacology", semester: "S4", status: "live",
+    blurb: "Pharmacodynamics, metabolism, interactions, trials, safety, asthma drugs.",
+    groups: [
+      { name: "General pharmacology", items: [
+        { id: "pharma-dynamics", title: "Pharmacodynamics" },
+        { id: "pharma-biotransformation", title: "Biotransformation (drug metabolism)" },
+        { id: "pharma-trials", title: "Clinical trials and new drug development" },
+        { id: "pharma-vigilance", title: "Pharmacovigilance" },
+        { id: "pharma-interactions", title: "Drug interactions" }
+      ]},
+      { name: "Systemic pharmacology", items: [
+        { id: "pharma-asthma", title: "Drugs for asthma and COPD" }
+      ]}
+    ]},
+  { id: "toxico", name: "Toxicology", semester: "S4", status: "live",
+    blurb: "Toxicants, toxicokinetics, preclinical testing, systemic toxicity.",
+    groups: [
+      { name: "Toxicology", items: [
+        { id: "toxico-intro", title: "Introduction to toxicology" },
+        { id: "toxico-kinetics", title: "Toxicokinetics" },
+        { id: "toxico-experimental", title: "Experimental (preclinical) toxicology" },
+        { id: "toxico-systemic", title: "Systemic toxicology" }
+      ]}
+    ]},
   { id: "radio", name: "Radiology", semester: "S4", status: "planned", count: 0, blurb: "Past papers only for now." }
 ];

@@ -477,3 +477,26 @@ body.noscroll { overflow: hidden; }
 .drawer { top: 0 !important; width: min(88vw, 22rem); }
 #app { margin-left: 0 !important; transition: none !important; }
 @media (min-width: 60rem) { .drawer.is-open { box-shadow: 0 0 48px rgba(0,0,0,0.22) !important; } }
+
+/* mind maps */
+:root { --mm1: #2f7d6d; --mm2: #9a6b1f; --mm3: #4b62a8; --mm4: #a3475f; --mm5: #6d5aa6; --mm6: #3d7fa0; }
+:root[data-theme="dark"] { --mm1: #6fc2ae; --mm2: #d9ac5f; --mm3: #93a7e8; --mm4: #e08aa0; --mm5: #b3a2e6; --mm6: #7fc0de; }
+.mm { position: relative; }
+.mm-tools { display: flex; gap: 0.5rem; justify-content: flex-end; margin-bottom: 0.6rem; flex-wrap: wrap; }
+.mm-tools .btn { font-size: 0.85rem; padding: 0.35rem 0.8rem; }
+.mm-root { display: table; margin: 0 auto 1.1rem; padding: 0.6rem 1.3rem; border-radius: 999px; background: var(--accent); color: var(--accent-ink); font-family: var(--serif); font-weight: 700; font-size: 1.1rem; text-align: center; position: relative; }
+.mm-root::after { content: ""; position: absolute; left: 50%; top: 100%; height: 1.1rem; border-left: 2px solid var(--line-strong); }
+.mm-branches { display: grid; gap: 0.8rem; grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr)); border-top: 2px solid var(--line-strong); padding-top: 0.9rem; }
+.mm-branch { background: var(--surface); border: 1px solid var(--line-strong); border-left: 5px solid var(--mmc); border-radius: 12px; padding: 0.35rem 0.6rem 0.5rem; align-self: start; }
+.mm-tog { display: flex; align-items: center; gap: 0.45rem; width: 100%; text-align: left; background: none; border: 0; padding: 0.35rem 0.2rem; font: inherit; color: var(--ink); cursor: pointer; border-radius: 6px; }
+.mm-tog:hover { background: var(--surface-2); }
+.mm-head { font-weight: 700; font-family: var(--serif); font-size: 1.02rem; color: var(--mmc); }
+.mm-n { margin-left: auto; font-family: var(--sans); font-size: 0.72rem; font-weight: 700; color: var(--muted); background: var(--surface-2); border-radius: 999px; padding: 0.05rem 0.5rem; }
+.mm-caret { flex: none; width: 0; height: 0; border-left: 5px solid currentColor; border-top: 4px solid transparent; border-bottom: 4px solid transparent; transition: transform 0.15s ease; opacity: 0.8; }
+.mm-tog[aria-expanded="true"] > .mm-caret { transform: rotate(90deg); }
+.mm-kids { list-style: none; margin: 0.1rem 0 0.2rem 0.55rem; padding: 0 0 0 0.8rem; border-left: 2px solid var(--mmc); }
+.mm-kids li { margin: 0; position: relative; font-size: 0.92rem; line-height: 1.4; }
+.mm-leaf { padding: 0.22rem 0.2rem; }
+.mm-kids li::before { content: ""; position: absolute; left: -0.8rem; top: 0.95rem; width: 0.6rem; border-top: 2px solid var(--mmc); }
+.mm-sub > .mm-tog { font-weight: 600; font-size: 0.92rem; padding: 0.22rem 0.2rem; }
+@media (prefers-reduced-motion: reduce) { .mm-caret { transition: none; } }

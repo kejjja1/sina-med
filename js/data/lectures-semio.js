@@ -5578,7 +5578,57 @@ SINA.lectures["semio-gi-diarrhoea"] = {
     "caption": "The digestive system, labelled.",
     "credit": "Via Wikimedia Commons (open licence; see Full size for author and licence)."
    }
-  ]
+  ],
+  "mindmap": {
+   "root": "Diarrhoea",
+   "branches": [
+    [
+     "Definition",
+     [
+      "> 300 g/day, > 3/day, > 90% water",
+      "Acute < 2 wk, prolonged 2-4, chronic > 4"
+     ]
+    ],
+    [
+     "Acute",
+     [
+      [
+       "Choleriform",
+       [
+        "Toxin, watery",
+        "Persists fasting"
+       ]
+      ],
+      [
+       "Dysenteric",
+       [
+        "Invasive: blood, fever, tenesmus"
+       ]
+      ],
+      "Tests if severe, bloody, febrile, > 3 days"
+     ]
+    ],
+    [
+     "Chronic mechanisms",
+     [
+      "Osmotic: stops fasting",
+      "Secretory: persists fasting",
+      "Malabsorptive: greasy stools",
+      "Motor: post-prandial, urgent",
+      "Exudative: α1-antitrypsin clearance"
+     ]
+    ],
+    [
+     "Chronic work-up",
+     [
+      "Digital rectal exam",
+      "CBC, CRP, albumin, ferritin",
+      "Anti-transglutaminase",
+      "Endoscopy with biopsies"
+     ]
+    ]
+   ]
+  }
  },
  "mcqs": [
   {

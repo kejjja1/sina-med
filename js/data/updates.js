@@ -3,6 +3,13 @@
 window.SINA = window.SINA || { subjects: [], lectures: {} };
 SINA.updated = "23 September 2026";
 SINA.updates = [
+  { date: "24 September 2026", items: [
+    "New: mind maps in the Visual tab. They open with just the main branches; tap a branch to expand it, or use Expand all. Added to all 13 Clinical Biochemistry lectures and to lectures that are mostly classifications (shock, acute kidney injury, diarrhoea, systemic toxicology, drug metabolism, drug interactions, antibiotics, antivirals, antifungals, HIV, meningitis, prolonged fever).",
+    "Infectious Diseases is now complete (12 lectures): antibiotics, antivirals, antifungals, HIV and its complications, bacterial meningitis, cholera, foodborne outbreaks, leptospirosis, rickettsioses, rabies and prolonged fever."
+  ]},
+  { date: "23 September 2026", items: [
+    "Semester 4 has started: Toxicology (all 4 lectures), Pharmacology (6 lectures: pharmacodynamics, biotransformation, clinical trials, pharmacovigilance, drug interactions, asthma and COPD drugs) and the first Infectious Diseases lecture (principles of antibiotic therapy). Each has a full summary, a labelled diagram with picture questions, questions, flashcards, Go deeper and resources."
+  ]},
   { date: "23 September 2026", items: [
     "The menu now opens as an overlay on every screen: it slides in over the page with a dimmed background, and the page and the menu button no longer move.",
     "First Aid (all 10 lectures), six Clinical Biochemistry lectures and four GI Semiology lectures are now full versions: longer summaries built from the slides, a labelled diagram with picture questions, many more questions and flashcards, Go deeper reading and trusted resources.",

@@ -49,7 +49,55 @@ SINA.lectures["biochem-preanalytical"] = {
  ],
  "visual": {
   "kind": "model",
-  "intro": ""
+  "intro": "",
+  "mindmap": {
+   "root": "Preanalytical phase (68% of lab errors)",
+   "branches": [
+    [
+     "Prescription",
+     [
+      "Time of day (cortisol, thyroid, adrenaline)",
+      "Sex, age (ALP ↑ in children)",
+      "Pregnancy: ALP ↑; proteins, iron, ferritin ↓",
+      "Infusion: sample the other arm"
+     ]
+    ],
+    [
+     "Patient",
+     [
+      "Rest 15 min, same posture",
+      "No exercise 12 h (CK ×4)",
+      "Fast ≥ 8 h, sample 7-9 a.m. (lipids +21%)",
+      "Stress ↑ prolactin, adrenaline, cortisol"
+     ]
+    ],
+    [
+     "Equipment & technique",
+     [
+      "CE/FDA marked, EN 14820",
+      "Tourniquet 7-10 cm above, off < 1 min",
+      "Respect tube order, never transfer blood",
+      "Fill ratio (citrate 1:4), mix 5-10×",
+      "Label at once, check identity"
+     ]
+    ],
+    [
+     "Transport & storage",
+     [
+      "Upright, analyse < 2 h",
+      "Delay: glucose ↓, K⁺ and transaminases ↑",
+      "Store 4-8 °C; bilirubin away from light"
+     ]
+    ],
+    [
+     "Haemolysis",
+     [
+      "Causes: tight tourniquet, syringe turbulence, shaking, delay",
+      "Effect: false ↑ K⁺ and intracellular enzymes"
+     ]
+    ]
+   ]
+  }
  },
  "mcqs": [
   {
@@ -455,7 +503,66 @@ SINA.lectures["biochem-adrenal-medulla"] = {
     "caption": "Adrenal gland: cortex and medulla.",
     "credit": "Via Wikimedia Commons (open licence; see Full size for author and licence)."
    }
-  ]
+  ],
+  "mindmap": {
+   "root": "Adrenal medulla hormones",
+   "branches": [
+    [
+     "Synthesis",
+     [
+      "Phenylalanine → tyrosine → DOPA (tyrosine hydroxylase, rate-limiting)",
+      "→ dopamine → noradrenaline",
+      "→ adrenaline (PNMT)"
+     ]
+    ],
+    [
+     "Secretion",
+     [
+      "Splanchnic nerves",
+      "Triggers: low BP, hypoxia, hypoglycaemia, pain, stress, exercise",
+      "Helped by ACTH and cortisol"
+     ]
+    ],
+    [
+     "Receptors",
+     [
+      "β1: heart rate and force, lipolysis",
+      "β2: bronchodilation, glycogenolysis, renin",
+      "α1: vasoconstriction, sphincters",
+      "α2: inhibits noradrenaline release"
+     ]
+    ],
+    [
+     "Metabolism",
+     [
+      "COMT (70%) → metanephrines",
+      "MAO (20%) in nerve endings",
+      "Urine: VMA 80%, metanephrines 10-15%, free 5%"
+     ]
+    ],
+    [
+     "Tumours",
+     [
+      [
+       "Phaeochromocytoma",
+       [
+        "Adults 20-50, 90% benign",
+        "Hypertension",
+        "Test: plasma metanephrines"
+       ]
+      ],
+      [
+       "Neuroblastoma",
+       [
+        "Early childhood, malignant",
+        "No PNMT: dopamine accumulates",
+        "Test: 24-h urinary dopamine and VMA"
+       ]
+      ]
+     ]
+    ]
+   ]
+  }
  },
  "mcqs": [
   {
@@ -812,7 +919,73 @@ SINA.lectures["biochem-insulin"] = {
  ],
  "visual": {
   "kind": "model",
-  "intro": ""
+  "intro": "",
+  "mindmap": {
+   "root": "Insulin",
+   "branches": [
+    [
+     "Structure",
+     [
+      "A chain 21 aa, B chain 30 aa",
+      "3 disulphide bridges",
+      "Gene on chromosome 11",
+      "Preproinsulin → proinsulin → insulin + C-peptide"
+     ]
+    ],
+    [
+     "Secretion",
+     [
+      "Glucose enters β cell → ATP ↑",
+      "K⁺-ATP channels close → depolarisation",
+      "Ca²⁺ channels open → exocytosis"
+     ]
+    ],
+    [
+     "Actions",
+     [
+      [
+       "Carbohydrate",
+       [
+        "↑ glycogenesis, glycolysis",
+        "↓ gluconeogenesis, glycogenolysis"
+       ]
+      ],
+      [
+       "Lipid",
+       [
+        "↑ triglyceride synthesis",
+        "↓ lipolysis"
+       ]
+      ],
+      [
+       "Protein",
+       [
+        "↑ amino acid uptake, anabolism",
+        "↓ catabolism"
+       ]
+      ]
+     ]
+    ],
+    [
+     "Diagnosis of diabetes",
+     [
+      "Fasting glucose",
+      "HbA1c",
+      "Urine glucose and ketones",
+      "OGTT for prediabetes"
+     ]
+    ],
+    [
+     "Monitoring",
+     [
+      "Glucose monthly",
+      "HbA1c every 2-3 months",
+      "Fructosamine (15 days) if haemoglobinopathy",
+      "Lipids, microalbuminuria, creatinine"
+     ]
+    ]
+   ]
+  }
  },
  "mcqs": [
   {
@@ -1134,7 +1307,46 @@ SINA.lectures["biochem-hepatic"] = {
     "caption": "The digestive system, labelled.",
     "credit": "Via Wikimedia Commons (open licence; see Full size for author and licence)."
    }
-  ]
+  ],
+  "mindmap": {
+   "root": "Liver tests: three patterns",
+   "branches": [
+    [
+     "Cytolysis",
+     [
+      "ALT: liver-specific",
+      "AST: also heart and muscle",
+      "Normal < 45 IU/L (men), 35 (women)",
+      "Very high in acute hepatitis"
+     ]
+    ],
+    [
+     "Cholestasis",
+     [
+      "ALP: liver and bone; ↑ children, pregnancy",
+      "GGT: most sensitive; isolated ↑ = alcohol",
+      "Bilirubin 3.4-17.1 µmol/L; jaundice > 30 (eyes), > 50 (skin)",
+      "Effects: pale stools, pruritus, ADEK malabsorption"
+     ]
+    ],
+    [
+     "Insufficiency",
+     [
+      "Albumin 35-50 g/L (liver only)",
+      "Prothrombin time (+3 s = bleeding risk)",
+      "Ammonium ↑ (urea cycle)"
+     ]
+    ],
+    [
+     "Specific markers",
+     [
+      "α-fetoprotein: HCC",
+      "Ceruloplasmin ↓: Wilson's",
+      "α1-antitrypsin deficiency: cirrhosis"
+     ]
+    ]
+   ]
+  }
  },
  "mcqs": [
   {
@@ -1553,7 +1765,57 @@ SINA.lectures["biochem-steroids"] = {
     "caption": "Steroidogenesis: from cholesterol to the steroid hormones.",
     "credit": "Via Wikimedia Commons (open licence; see Full size for author and licence)."
    }
-  ]
+  ],
+  "mindmap": {
+   "root": "Steroid hormones (all from cholesterol)",
+   "branches": [
+    [
+     "Sites",
+     [
+      "Glomerulosa: aldosterone",
+      "Fasciculata: cortisol",
+      "Reticularis: DHEA, androgens",
+      "Ovary: oestradiol, progesterone",
+      "Testis (Leydig): testosterone",
+      "Placenta: oestriol, progesterone"
+     ]
+    ],
+    [
+     "Classes by carbons",
+     [
+      "C18: oestrogens (E1, E2, E3)",
+      "C19: androgens (DHT most potent)",
+      "C21: progesterone, cortisol, aldosterone"
+     ]
+    ],
+    [
+     "Biosynthesis",
+     [
+      "Cholesterol → pregnenolone (20-22 desmolase, key step)",
+      "Cortisol: 21- then 11β-hydroxylase",
+      "Oestrogens: aromatase from androgens"
+     ]
+    ],
+    [
+     "21-hydroxylase deficiency (CAH)",
+     [
+      "↑ 17-OH progesterone, androgens, ACTH",
+      "↓ cortisol, aldosterone",
+      "Ambiguous genitalia, salt loss, early puberty"
+     ]
+    ],
+    [
+     "Roles",
+     [
+      "Cortisol: stress, anti-inflammatory",
+      "Aldosterone: Na⁺ in, K⁺ out",
+      "Oestrogens: bone, sex traits",
+      "Progesterone: implantation",
+      "Androgens: anabolism, spermatogenesis"
+     ]
+    ]
+   ]
+  }
  },
  "mcqs": [
   {
@@ -1998,7 +2260,39 @@ SINA.lectures["biochem-cardiac"] = {
     "caption": "Chambers, valves and great vessels of the heart.",
     "credit": "Via Wikimedia Commons (open licence; see Full size for author and licence)."
    }
-  ]
+  ],
+  "mindmap": {
+   "root": "Cardiac biomarkers",
+   "branches": [
+    [
+     "Infarction: troponin",
+     [
+      "cTnI and cTnT are cardiac-specific",
+      "Rise 2 h (hs) or 4 h; peak ~14 h",
+      "cTnI up 75-140 h; cTnT > 10 days",
+      "Also ↑ myocarditis, pericarditis, toxicity",
+      "Old markers (CK-MB, myoglobin) non-specific"
+     ]
+    ],
+    [
+     "Heart failure: BNP / NT-proBNP",
+     [
+      "From cardiomyocytes: diuretic, natriuretic, vasodilator",
+      "↑ with age and in women; ↓ with high BMI",
+      "NT-proBNP distorted in renal failure",
+      "Use the same peptide and lab"
+     ]
+    ],
+    [
+     "Risk: ultrasensitive CRP",
+     [
+      "Liver, via IL-6",
+      "Rises 6-7 h, peaks 48-72 h",
+      "Persistent low-grade ↑ = cardiovascular risk"
+     ]
+    ]
+   ]
+  }
  },
  "mcqs": [
   {
@@ -2307,7 +2601,55 @@ SINA.lectures["biochem-renal"] = {
     "caption": "Kidney anatomy, labelled.",
     "credit": "Via Wikimedia Commons (open licence; see Full size for author and licence)."
    }
-  ]
+  ],
+  "mindmap": {
+   "root": "Renal biochemical exploration",
+   "branches": [
+    [
+     "Blood",
+     [
+      "Creatinine: M 9-12, F 6-11 mg/L",
+      "Urea 0.15-0.45 g/L (diet, hydration)",
+      "Cystatin C: less muscle-dependent",
+      "Uric acid ↑ in renal failure",
+      "K⁺ > 6.5 mmol/L life-threatening",
+      "CKD: Ca ↓, P and PTH ↑"
+     ]
+    ],
+    [
+     "Urine",
+     [
+      "Diuresis 0.75-2 L; oliguria < 0.6; anuria < 0.1",
+      "Proteinuria > 150 mg/24 h pathological",
+      "Microalbuminuria 30-300 mg/24 h: early damage"
+     ]
+    ],
+    [
+     "Clearance",
+     [
+      "C = U × V / P",
+      "Men 130 ± 20, women 110 ± 20 mL/min",
+      "MDRD avoids collection errors"
+     ]
+    ],
+    [
+     "CKD stages (clearance)",
+     [
+      "50-70 moderate",
+      "20-50 significant",
+      "5-20 severe",
+      "< 5 dialysis or transplant"
+     ]
+    ],
+    [
+     "Tubular tests",
+     [
+      "Concentration: urine > 800 mOsm/kg",
+      "Dilution: 80% of water load out in 5 h"
+     ]
+    ]
+   ]
+  }
  },
  "mcqs": [
   {
@@ -2888,6 +3230,53 @@ SINA.lectures["biochem-spe"] = {
      }
     ]
    }
+  },
+  "mindmap": {
+   "root": "Serum protein electrophoresis",
+   "branches": [
+    [
+     "Principle",
+     [
+      "pH 8.2-8.6: proteins negative → anode",
+      "Albumin fastest",
+      "Five fractions: albumin, α1, α2, β, γ"
+     ]
+    ],
+    [
+     "Preanalytical",
+     [
+      "Serum, not plasma (fibrinogen band)",
+      "No haemolysis (Hb band)",
+      "Keep at 4 °C up to a week"
+     ]
+    ],
+    [
+     "Techniques",
+     [
+      "Gel: amido black + densitometer",
+      "Capillary: automated, same-day",
+      "A/G ratio 1.2-1.8"
+     ]
+    ],
+    [
+     "Profiles",
+     [
+      "Inflammation: α1 and α2 ↑",
+      "Nephrotic: albumin ↓, α2 ↑",
+      "Cirrhosis: β-γ block",
+      "Myeloma: narrow γ spike",
+      "Immune deficiency: γ ↓",
+      "Haemolysis: α2 ↓ (haptoglobin)"
+     ]
+    ],
+    [
+     "Next steps",
+     [
+      "Monoclonal spike → immunofixation",
+      "Kahler vs Waldenström"
+     ]
+    ]
+   ]
   }
  },
  "mcqs": [
@@ -3746,6 +4135,53 @@ SINA.lectures["biochem-lipids"] = {
      }
     ]
    }
+  },
+  "mindmap": {
+   "root": "Lipid exploration",
+   "branches": [
+    [
+     "Lipoproteins",
+     [
+      "Chylomicrons: most TG, largest",
+      "VLDL: hepatic TG",
+      "LDL: cholesterol esters, apo B100 (atherogenic)",
+      "HDL: densest, apo AI (protective)"
+     ]
+    ],
+    [
+     "Metabolism",
+     [
+      "Exogenous: gut → chylomicrons → LPL → remnants",
+      "Endogenous: VLDL → IDL → LDL",
+      "HDL + LCAT: reverse transport"
+     ]
+    ],
+    [
+     "Sampling",
+     [
+      "Fast 12 h, rest 15 min",
+      "Wait 3-4 months after MI",
+      "Report serum appearance"
+     ]
+    ],
+    [
+     "Reference values",
+     [
+      "TG 0.5-1.5 g/L",
+      "TC 1.50-2 g/L",
+      "HDL 0.35-0.65 g/L",
+      "Friedewald LDL valid if TG < 3.5 g/L"
+     ]
+    ],
+    [
+     "Targets & risk",
+     [
+      "LDL < 2.6 mmol/L with risk factors",
+      "LDL < 4 mmol/L without",
+      "Apo B / apo AI ratio"
+     ]
+    ]
+   ]
   }
  },
  "mcqs": [
@@ -4546,6 +4982,46 @@ SINA.lectures["biochem-calcium"] = {
      }
     ]
    }
+  },
+  "mindmap": {
+   "root": "Calcium-phosphate balance",
+   "branches": [
+    [
+     "Calcium",
+     [
+      "99% in bone",
+      "Serum: 50% diffusible (45% ionised), 50% protein-bound",
+      "Absorbed in duodenum (calcitriol)",
+      "95% of filtered Ca reabsorbed"
+     ]
+    ],
+    [
+     "Phosphorus",
+     [
+      "85% bone, 14% cells, 1% ECF",
+      "Absorbed jejunum-ileum",
+      "90% reabsorbed in proximal tubule"
+     ]
+    ],
+    [
+     "Hormones",
+     [
+      "PTH: Ca ↑, P ↓",
+      "Calcitonin: Ca ↓, P ↓",
+      "Calcitriol: Ca ↑, P ↑"
+     ]
+    ],
+    [
+     "Tests",
+     [
+      "Calcaemia 2.25-2.60 mmol/L",
+      "No EDTA/citrate/oxalate; short tourniquet",
+      "Corrected Ca = Ca + (40 - albumin)/40",
+      "Phosphate adult 30-40 mg/L",
+      "PTH, vitamin D"
+     ]
+    ]
+   ]
   }
  },
  "mcqs": [
@@ -5343,6 +5819,52 @@ SINA.lectures["biochem-iron"] = {
      }
     ]
    }
+  },
+  "mindmap": {
+   "root": "Iron balance",
+   "branches": [
+    [
+     "Distribution (4 g)",
+     [
+      "Haemoglobin 60%",
+      "Stores 35% (ferritin, haemosiderin)",
+      "Plasma on transferrin"
+     ]
+    ],
+    [
+     "Absorption & transport",
+     [
+      "Duodenum, ~10% of intake; vitamin C helps",
+      "Transferrin: 2 Fe³⁺, 1/3 saturated",
+      "Hepcidin blocks iron exit"
+     ]
+    ],
+    [
+     "Tests",
+     [
+      "Ferritin: stores (first-line)",
+      "TIBC = transferrin × 25",
+      "TS = iron / (25 × transferrin)",
+      "sTfR: marrow demand"
+     ]
+    ],
+    [
+     "Deficiency",
+     [
+      "Losses (GI, menses) or poor intake",
+      "Ferritin < 30 µg/L + anaemia",
+      "Hb < 120 (F) / 130 (M); MCV < 80"
+     ]
+    ],
+    [
+     "Overload",
+     [
+      "HFE haemochromatosis: TS > 45%",
+      "Liver, heart, pancreas",
+      "Secondary: transfusions, haemolysis"
+     ]
+    ]
+   ]
   }
  },
  "mcqs": [
@@ -6182,6 +6704,55 @@ SINA.lectures["biochem-water"] = {
      }
     ]
    }
+  },
+  "mindmap": {
+   "root": "Water and electrolytes",
+   "branches": [
+    [
+     "Compartments (70 kg)",
+     [
+      "Water 60% = 42 L",
+      "Intracellular 28 L",
+      "Interstitial 12 L",
+      "Plasma 3 L"
+     ]
+    ],
+    [
+     "Composition",
+     [
+      "Plasma: Na⁺, Cl⁻, HCO₃⁻",
+      "Cells: K⁺, phosphates",
+      "Interstitium: plasma minus proteins (Donnan)"
+     ]
+    ],
+    [
+     "Regulation",
+     [
+      "ADH: water",
+      "RAAS / aldosterone: Na⁺ and water",
+      "ANF: natriuresis",
+      "Thirst"
+     ]
+    ],
+    [
+     "Ionogram",
+     [
+      "Na⁺ 135-145",
+      "K⁺ 3.5-5.5 (> 6.5 dangerous)",
+      "Cl⁻ 95-108",
+      "Pitfalls: haemolysis, EDTA, Na-heparin, lipids"
+     ]
+    ],
+    [
+     "Water disorders",
+     [
+      "Osmolality = (Na + K) × 2 + urea + glucose",
+      "EC dehydration: isotonic loss",
+      "IC dehydration: water deficit (diabetes insipidus)",
+      "EC hyperhydration: oedema (HF, cirrhosis, renal failure)"
+     ]
+    ]
+   ]
   }
  },
  "mcqs": [
@@ -7053,6 +7624,59 @@ SINA.lectures["biochem-acid-base"] = {
      }
     ]
    }
+  },
+  "mindmap": {
+   "root": "Acid-base balance",
+   "branches": [
+    [
+     "Acids",
+     [
+      "Volatile: CO₂ (lungs)",
+      "Fixed: lactate, ketones, H₂SO₄, H₃PO₄ (kidneys)"
+     ]
+    ],
+    [
+     "Buffers",
+     [
+      "Bicarbonate: main extracellular",
+      "Haemoglobin: main red cell",
+      "Phosphate: urine"
+     ]
+    ],
+    [
+     "Lungs",
+     [
+      "Fast; chemoreceptors",
+      "Metabolic acidosis → hyperventilation"
+     ]
+    ],
+    [
+     "Kidneys",
+     [
+      "Reabsorb HCO₃⁻ (excrete > 28 mmol/L)",
+      "H⁺: 1/3 titratable, 2/3 NH₄⁺",
+      "Each H⁺ → one new HCO₃⁻"
+     ]
+    ],
+    [
+     "Blood gases",
+     [
+      "pH 7.37-7.43",
+      "PaCO₂ 37-43 mmHg",
+      "HCO₃⁻ 22-26 mmol/L",
+      "Anion gap 12 ± 2"
+     ]
+    ],
+    [
+     "Disorders",
+     [
+      "Metabolic acidosis: HCO₃⁻ ↓, PaCO₂ ↓",
+      "Respiratory acidosis: PaCO₂ ↑, HCO₃⁻ ↑",
+      "Metabolic alkalosis: HCO₃⁻ ↑, PaCO₂ ↑",
+      "Respiratory alkalosis: PaCO₂ ↓, HCO₃⁻ ↓"
+     ]
+    ]
+   ]
   }
  },
  "mcqs": [

@@ -482,6 +482,30 @@
     });
   }
 
+  /* mind map: root + colour-coded branches; nodes are "text" or ["text", [children]] */
+  function mmNode(n, depth) {
+    var label = Array.isArray(n) ? n[0] : n, kids = Array.isArray(n) ? (n[1] || []) : [];
+    if (!kids.length) return '<li class="mm-leaf">' + esc(label) + "</li>";
+    return '<li class="mm-sub"><button type="button" class="mm-tog" aria-expanded="false"><span class="mm-caret" aria-hidden="true"></span>' + esc(label) +
+      '</button><ul class="mm-kids" hidden>' + kids.map(function (k) { return mmNode(k, depth + 1); }).join("") + "</ul></li>";
+  }
+  function mindmapHTML(mm) {
+    if (!mm || !mm.branches) return "";
+    return '<h2 style="margin-top:0">Mind map</h2><p class="meta">The whole lecture at a glance. Tap a branch to open it.</p>' +
+      '<div class="mm"><div class="mm-tools"><button type="button" class="btn mm-all" data-open="1">Expand all</button><button type="button" class="btn mm-all" data-open="0">Collapse all</button></div>' +
+      '<div class="mm-root">' + esc(mm.root) + '</div><div class="mm-branches">' +
+      mm.branches.map(function (b, i) {
+        var label = Array.isArray(b) ? b[0] : b, kids = Array.isArray(b) ? (b[1] || []) : [];
+        return '<div class="mm-branch" style="--mmc:var(--mm' + (i % 6 + 1) + ')"><button type="button" class="mm-head mm-tog" aria-expanded="false"><span class="mm-caret" aria-hidden="true"></span>' + esc(label) +
+          (kids.length ? '<span class="mm-n">' + kids.length + "</span>" : "") + '</button><ul class="mm-kids" hidden>' + kids.map(function (k) { return mmNode(k, 1); }).join("") + "</ul></div>";
+      }).join("") + "</div></div>";
+  }
+  function wireMindmap(p) {
+    function set(btn, open) { btn.setAttribute("aria-expanded", String(open)); var ul = btn.nextElementSibling; if (ul) ul.hidden = !open; }
+    p.querySelectorAll(".mm-tog").forEach(function (b) { b.addEventListener("click", function () { set(b, b.getAttribute("aria-expanded") !== "true"); }); });
+    p.querySelectorAll(".mm-all").forEach(function (b) { b.addEventListener("click", function () { var o = b.dataset.open === "1"; p.querySelectorAll(".mm-tog").forEach(function (t) { set(t, o); }); }); });
+  }
+
   function visualPanel(p, lec) {
     var v = lec.visual, layer = "walls";
     var hints = { walls: "Tap a wall to see which bones form it.", margins: "Tap a green edge to see which bones form that part of the rim.", openings: "Tap a dark opening to see what passes through it.", landmarks: "Tap a dashed outline to see what it is." };
@@ -489,9 +513,11 @@
       var h2 = v.model3d ? "<h2 style='margin-top:0'>3D model</h2>" + viewer3dHTML(v.models || v.model3d) : "";
       var gal = galleryHTML(v);
       if (gal) h2 = gal + h2;
+      var mmh = mindmapHTML(v.mindmap);
+      if (mmh) h2 = mmh + (h2 ? h2.replace("<h2 style='margin-top:0'>", "<h2>").replace('<h2 style="margin-top:0">', "<h2>") : "");
       if (v.figure) h2 += "<h2" + (h2 ? "" : " style='margin-top:0'") + ">Labelled schematic</h2><p>" + esc(v.figure.caption || "Schematic drawn for this site, not to scale.") + '</p><div class="diagram-box">' + figureSVG(v.figure, { uid: "vis" }) + "</div>";
       p.innerHTML = h2 || "<p>No visual for this lecture yet.</p>";
-      wireMedia(p); wireGallery(p);
+      wireMedia(p); wireGallery(p); wireMindmap(p);
       return;
     }
     var gal0 = galleryHTML(v);

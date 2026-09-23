@@ -3636,6 +3636,61 @@ SINA.lectures["fa-cardiovascular"] = {
      }
     ]
    }
+  },
+  "mindmap": {
+   "root": "Shock",
+   "branches": [
+    [
+     "Cardiogenic",
+     [
+      "MI, myocarditis",
+      "High-degree AV block, SVT",
+      "Acute MR/AR, septal rupture"
+     ]
+    ],
+    [
+     "Hypovolaemic",
+     [
+      "Haemorrhage",
+      "GI losses",
+      "Burns",
+      "Dehydration"
+     ]
+    ],
+    [
+     "Distributive",
+     [
+      "Septic",
+      "Anaphylactic",
+      "Inflammatory (pancreatitis)",
+      "Spinal"
+     ]
+    ],
+    [
+     "Obstructive",
+     [
+      "Tamponade",
+      "Pulmonary embolism",
+      "Tension pneumothorax"
+     ]
+    ],
+    [
+     "Recognise",
+     [
+      "Mottling, CRT > 3 s",
+      "Confusion, oliguria, tachypnoea",
+      "Lactate ↑"
+     ]
+    ],
+    [
+     "Treat",
+     [
+      "O₂, fluids",
+      "Catecholamines",
+      "Treat the cause"
+     ]
+    ]
+   ]
   }
  },
  "mcqs": [
@@ -4363,6 +4418,54 @@ SINA.lectures["fa-renal"] = {
      }
     ]
    }
+  },
+  "mindmap": {
+   "root": "Acute kidney injury",
+   "branches": [
+    [
+     "Prerenal (40-55%)",
+     [
+      "True hypovolaemia",
+      "Low effective volume (shock, cirrhosis)",
+      "Reversible"
+     ]
+    ],
+    [
+     "Intrinsic",
+     [
+      "ATN (ischaemic, septic)",
+      "Interstitial nephritis",
+      "Nephrotoxins (aminoglycosides, NSAIDs, contrast)",
+      "Vascular (HUS, vasculitis)"
+     ]
+    ],
+    [
+     "Postrenal",
+     [
+      "Bilateral ureteric obstruction",
+      "Bladder outlet (prostate)",
+      "Urethral"
+     ]
+    ],
+    [
+     "Complications",
+     [
+      "Hyperkalaemia",
+      "Pulmonary oedema",
+      "Acidosis",
+      "Uraemia"
+     ]
+    ],
+    [
+     "Management",
+     [
+      "Fluids (prerenal); relieve obstruction",
+      "Stop nephrotoxins",
+      "Diuretics only for overload",
+      "Dialysis indications"
+     ]
+    ]
+   ]
   }
  },
  "mcqs": [
