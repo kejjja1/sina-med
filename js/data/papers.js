@@ -497,7 +497,7 @@ SINA.papers = [
   "links": [
    {
     "label": "Open the paper (PDF)",
-    "url": "https://drive.google.com/file/d/1o6PrPiflOCYKBE9qNdwR5tAAGAhOABmV/view?usp=drivesdk"
+    "url": "https://drive.google.com/file/d/1S5KJzDuycLmQSVv-V2wGo95CtGRkr6TX/view?usp=drivesdk"
    }
   ]
  },

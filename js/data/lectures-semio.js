@@ -5346,36 +5346,231 @@ SINA.lectures["semio-gi-diarrhoea"] = {
  "title": "Diarrhoea",
  "sourceFile": "DIARRHEA SEMIO 26.27 CANVAS.pdf (Digestive semiology, Prof. O. Bahlaoui, 2026-2027)",
  "sourceUrl": "https://drive.google.com/file/d/1yWMsG97izVIsT2KPJ1txGDvHraUgUP4G/view?usp=drivesdk",
- "buildNote": "<strong>Short version.</strong> The full version, with more questions and extra reading, is coming soon. <strong>Built from the lecture slides.</strong> If your professor says something different, trust your professor.",
+ "buildNote": "<strong>Built from the lecture slides.</strong> Slides that only show pictures are covered in outline. If your professor says something different, trust your professor.",
  "summary": [
   {
    "id": "s0",
    "title": "The big picture",
-   "html": "<p>Diarrhoea is common and usually benign, but the reasoning is always the same: <strong>duration, stool aspect, associated signs, mechanism</strong>.</p>"
+   "html": "<p><strong>Diarrhoea</strong> is the passage of loose or watery stools with more frequency and/or volume: <strong>over 300 g/day, more than 3 per day, over 90% water</strong>. By duration: <strong>acute</strong> (under 2 weeks: infection, food poisoning), <strong>prolonged</strong> (2 to 4 weeks: post-infectious, parasitic), <strong>chronic</strong> (over 4 weeks: IBD, coeliac disease, pancreatic insufficiency). Reason in steps: duration, stool aspect, associated signs, mechanism.</p><p><strong>Differential diagnoses</strong>: false diarrhoea (small hard stools, under 300 g/day), anal incontinence, non-faecal discharge (blood, pus, mucus without stool).</p>"
   },
   {
    "id": "s1",
-   "title": "Definition and acute diarrhoea",
-   "html": "<p>Over <strong>300 g/day</strong>, over 3 stools, water over 90 percent. Acute under <strong>2 weeks</strong>, prolonged 2 to 4, chronic over <strong>4</strong>.</p><div class='table-wrap'><table class='wide'><thead><tr><th scope='col'>Acute type</th><th scope='col'>Mechanism</th><th scope='col'>Features</th></tr></thead><tbody><tr><th scope='row'>Secretory</th><td>Enterotoxin (cholera, ETEC)</td><td>Profuse, watery, persists fasting</td></tr><tr><th scope='row'>Invasive</th><td>Mucosal invasion (Shigella, Salmonella)</td><td>Bloody mucus, fever, tenesmus</td></tr></tbody></table></div><p>Tests only if severe, bloody, fever over 38°C, over 3 days, epidemic or immunosuppressed. Antibiotics suggest <strong>C. difficile</strong>.</p>"
+   "title": "Acute diarrhoea",
+   "html": "<p>Very frequent, usually benign and self-limiting, but dangerous in <strong>infants, the elderly and the immunocompromised</strong>, and sometimes reveals a chronic disease. Two mechanisms: <strong>secretory (choleriform)</strong>: an enterotoxin drives massive water and salt secretion (cholera, enterotoxigenic E. coli), profuse watery stools, dehydration, <strong>persists during fasting</strong>; <strong>invasive (dysenteric)</strong>: mucosal invasion (Shigella, Salmonella, Campylobacter), <strong>bloody mucous stools, fever, pain, tenesmus</strong>.</p><p><strong>Severity</strong>: context (extreme ages, immunosuppression, cardiac, renal or liver disease), dehydration (dry tongue, thirst, skin fold, hypotension, oliguria), complications (dysenteric colitis, sepsis). <strong>Orientation</strong>: recent meals, collective cases, tropical travel, <strong>antibiotics (C. difficile)</strong>, HIV or chemotherapy; stool frequency, volume, blood or pus; vomiting, pain, tenesmus. <strong>Tests only if</strong>: severe dehydration, blood or pus, fever over 38 °C, <strong>duration over 3 days</strong>, epidemic context or immunosuppression: CBC, CRP, electrolytes, renal function; stool culture and parasitology; CT or colonoscopy if complicated.</p>"
   },
   {
    "id": "s2",
-   "title": "Chronic diarrhoea",
-   "html": "<p><div class='table-wrap'><table class='wide'><thead><tr><th scope='col'>Mechanism</th><th scope='col'>Stool</th><th scope='col'>Stops fasting?</th><th scope='col'>Causes</th></tr></thead><tbody><tr><th scope='row'>Osmotic</th><td>Watery</td><td>Yes</td><td>Lactose intolerance, laxatives</td></tr><tr><th scope='row'>Secretory</th><td>Profuse watery</td><td>No</td><td>Cholera, VIPoma, IBD, colchicine</td></tr><tr><th scope='row'>Malabsorptive</th><td>Greasy, pale</td><td>No</td><td>Celiac, Crohn's, pancreas</td></tr><tr><th scope='row'>Motor</th><td>Food debris</td><td>Yes</td><td>IBS, hyperthyroidism, diabetes</td></tr><tr><th scope='row'>Exudative</th><td>Protein loss</td><td></td><td></td></tr></tbody></table></div></p><p>Work-up: bloods, then TSH, HIV, <strong>anti-transglutaminase</strong>, parasitology, then endoscopy with biopsies; rectal exam is mandatory.</p>"
+   "title": "Chronic diarrhoea: approach",
+   "html": "<p>Over 4 weeks, from malabsorption, secretion, osmotic effect, accelerated transit or exudative protein loss. <strong>History</strong>: onset, frequency, relation to meals and time of day, stool aspect (liquid, greasy, bloody, mucous), weight loss, fever, pain, drugs (NSAIDs, laxatives, antibiotics), family history (IBD, cancer, coeliac). <strong>Examination</strong>: hydration and nutrition, abdomen, <strong>mandatory digital rectal exam</strong>, extra-abdominal signs (nodes, skin, joints, eyes, thyroid).</p><p><strong>Tests</strong>: first line CBC, CRP, electrolytes, liver tests, protein electrophoresis, calcium, vitamin D, ferritin, albumin (severity, malabsorption); second line TSH, HIV serology, <strong>anti-transglutaminase antibodies</strong>, stool parasitology; endoscopy: gastroscopy with <strong>duodenal biopsies</strong>, colonoscopy with ileal and colonic biopsies (IBD, coeliac, microscopic colitis); imaging: ultrasound, CT enterography, MRI.</p>"
+  },
+  {
+   "id": "s3",
+   "title": "Chronic diarrhoea: mechanisms",
+   "html": "<p><strong>Malabsorptive</strong>: abundant, greasy, pale, foul-smelling stools; weight loss, anaemia, bone pain, brittle nails; small-bowel disease (coeliac, Crohn's, Whipple, lymphoma, giardiasis), pancreatic insufficiency, bile-salt deficiency. <strong>Motor</strong>: accelerated transit; post-prandial, urgent, improves with fasting; hyperthyroidism, diabetes, carcinoid tumour, gastrectomy, IBS. <strong>Osmotic</strong>: osmotically active substances (mannitol, lactulose, laxatives, <strong>lactase deficiency</strong>); <strong>stops with fasting</strong>; no blood, no general deterioration. <strong>Secretory</strong>: active hypersecretion; <strong>persists during fasting</strong>; IBD, endocrine tumours (VIPoma), microscopic colitis, infections, drugs (colchicine, digitalis). <strong>Exudative</strong>: plasma protein loss into the gut, diagnosed by <strong>alpha-1 antitrypsin clearance</strong>; lymphangiectasia, lymphoma, cirrhosis, ulcerative colitis.</p>"
   }
  ],
  "exam": [
-  "Diarrhoea: over 300 g/day, over 3/day.",
-  "Acute under 2 weeks, chronic over 4.",
-  "Secretory persists fasting; osmotic and motor stop.",
-  "Invasive: Shigella, Salmonella, Campylobacter.",
-  "Antibiotics: think C. difficile.",
-  "Malabsorption: greasy pale stools.",
-  "Exudative: alpha-1 antitrypsin clearance."
+  "Diarrhoea: > 300 g/day, > 3 stools/day, > 90% water.",
+  "Acute < 2 weeks; prolonged 2-4 weeks; chronic > 4 weeks.",
+  "Choleriform: toxin, watery, persists fasting. Dysenteric: invasive, blood, fever, tenesmus.",
+  "Dangerous in infants, elderly, immunocompromised.",
+  "Antibiotics → think C. difficile.",
+  "Tests in acute diarrhoea only if severe, bloody, febrile, > 3 days, epidemic or immunosuppressed.",
+  "Digital rectal examination is mandatory in chronic diarrhoea.",
+  "Anti-transglutaminase antibodies and duodenal biopsies for coeliac disease.",
+  "Osmotic and motor stop/improve with fasting; secretory persists.",
+  "Malabsorption: greasy, pale, foul stools.",
+  "Exudative diarrhoea: alpha-1 antitrypsin clearance."
  ],
  "visual": {
   "kind": "model",
   "intro": "",
+  "figure": {
+   "viewBox": "0 0 760 420",
+   "alt": "Approach to diarrhoea",
+   "caption": "Duration, then mechanism. Schematic drawn for this site.",
+   "base": "<defs><marker id=\"ah\" markerWidth=\"10\" markerHeight=\"8\" refX=\"9\" refY=\"4\" orient=\"auto\"><path d=\"M0,0 L10,4 L0,8 Z\" fill=\"#8a8a8a\"/></marker></defs><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"480\" y1=\"60\" x2=\"40\" y2=\"180\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"380\" y1=\"90\" x2=\"380\" y2=\"150\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"480\" y1=\"60\" x2=\"520\" y2=\"180\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"720\" y1=\"180\" x2=\"390\" y2=\"320\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"620\" y1=\"210\" x2=\"645\" y2=\"290\"/>",
+   "parts": {
+    "def": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2d7cf\" x=\"280\" y=\"30\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Diarrhoea: > 300 g/day,",
+      "> 3/day, > 90% water"
+     ],
+     "lx": 380.0,
+     "ly": 58.0
+    },
+    "acute": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#cfe3f2\" x=\"40\" y=\"150\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Acute < 2 weeks:",
+      "secretory or invasive"
+     ],
+     "lx": 140.0,
+     "ly": 178.0
+    },
+    "prol": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d7edd2\" x=\"280\" y=\"150\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Prolonged",
+      "2 to 4 weeks"
+     ],
+     "lx": 380.0,
+     "ly": 178.0
+    },
+    "chron": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2e2a8\" x=\"520\" y=\"150\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Chronic > 4 weeks:",
+      "find the mechanism"
+     ],
+     "lx": 620.0,
+     "ly": 178.0
+    },
+    "osm": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#e3d5f0\" x=\"40\" y=\"290\" width=\"160\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Osmotic: stops",
+      "with fasting"
+     ],
+     "lx": 120.0,
+     "ly": 318.0
+    },
+    "sec": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f7d9b8\" x=\"215\" y=\"290\" width=\"160\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Secretory: persists",
+      "with fasting"
+     ],
+     "lx": 295.0,
+     "ly": 318.0
+    },
+    "malab": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d9ecec\" x=\"390\" y=\"290\" width=\"160\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Malabsorptive:",
+      "greasy stools"
+     ],
+     "lx": 470.0,
+     "ly": 318.0
+    },
+    "motor": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f0d0e0\" x=\"565\" y=\"290\" width=\"160\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Motor: post-",
+      "prandial, urgent"
+     ],
+     "lx": 645.0,
+     "ly": 318.0
+    }
+   },
+   "arrows": {
+    "def": [
+     {
+      "t": [
+       280.0,
+       38.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "acute": [
+     {
+      "t": [
+       40.0,
+       158.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "prol": [
+     {
+      "t": [
+       280.0,
+       158.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "chron": [
+     {
+      "t": [
+       520.0,
+       158.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "osm": [
+     {
+      "t": [
+       40.0,
+       298.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "sec": [
+     {
+      "t": [
+       215.0,
+       298.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "malab": [
+     {
+      "t": [
+       390.0,
+       298.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "motor": [
+     {
+      "t": [
+       565.0,
+       298.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ]
+   }
+  },
   "images": [
    {
     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Digestive_system_diagram_en.svg?width=760",
@@ -5390,9 +5585,9 @@ SINA.lectures["semio-gi-diarrhoea"] = {
    "q": "What stool weight defines diarrhoea?",
    "options": [
     "Over 300 g/day",
-    "Over 100 g/day",
     "Over 1 kg/day",
-    "Over 50 g/day"
+    "Over 50 g/day",
+    "Over 100 g/day"
    ],
    "answer": 0,
    "why": "Over 300 g/day, more than 3 stools a day, water over 90 percent of stool weight."
@@ -5400,64 +5595,64 @@ SINA.lectures["semio-gi-diarrhoea"] = {
   {
    "q": "How long does acute diarrhoea last?",
    "options": [
-    "2 to 4 weeks",
     "Under 2 weeks",
+    "Over 3 months",
     "Over 4 weeks",
-    "Over 3 months"
+    "2 to 4 weeks"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "Acute under 2 weeks; prolonged 2 to 4 weeks; chronic over 4 weeks."
   },
   {
    "q": "What is false diarrhoea?",
    "options": [
     "Watery stool over 1 L",
+    "Night-time stools",
     "Bloody mucus only",
-    "Small hard stools under 300 g",
-    "Night-time stools"
+    "Small hard stools under 300 g"
    ],
-   "answer": 2,
+   "answer": 3,
    "why": "Small hard stools totalling under 300 g/day; distinguish from incontinence and non-faecal discharge."
   },
   {
    "q": "Which mechanism causes choleriform diarrhoea?",
    "options": [
-    "Mucosal invasion",
+    "Enterotoxin secretion",
     "Osmotic load",
-    "Fast transit",
-    "Enterotoxin secretion"
+    "Mucosal invasion",
+    "Fast transit"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "Secretory (choleriform): profuse watery diarrhoea persisting during fasting, e.g. cholera, ETEC."
   },
   {
    "q": "Which germ causes invasive dysenteric diarrhoea?",
    "options": [
-    "Vibrio cholerae",
-    "Shigella",
+    "Rotavirus",
     "Enterotoxigenic E. coli",
-    "Rotavirus"
+    "Shigella",
+    "Vibrio cholerae"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "Invasive: Shigella, Salmonella, Campylobacter, with bloody mucus, fever, pain, tenesmus."
   },
   {
    "q": "Which recent drug suggests C. difficile?",
    "options": [
-    "Paracetamol",
-    "Antacids",
     "Iron",
-    "Antibiotics"
+    "Paracetamol",
+    "Antibiotics",
+    "Antacids"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "Recent antibiotics point to Clostridioides difficile."
   },
   {
    "q": "Above what duration are tests indicated in acute diarrhoea?",
    "options": [
     "3 days",
-    "1 day",
     "2 weeks",
+    "1 day",
     "1 month"
    ],
    "answer": 0,
@@ -5466,23 +5661,23 @@ SINA.lectures["semio-gi-diarrhoea"] = {
   {
    "q": "Which diarrhoea stops with fasting?",
    "options": [
-    "Secretory",
+    "Exudative",
     "Malabsorptive",
-    "Osmotic",
-    "Exudative"
+    "Secretory",
+    "Osmotic"
    ],
-   "answer": 2,
+   "answer": 3,
    "why": "Osmotic and motor diarrhoea stop with fasting; secretory and malabsorptive persist."
   },
   {
    "q": "Which diarrhoea gives greasy, pale, foul stools?",
    "options": [
-    "Motor",
-    "Osmotic",
     "Secretory",
-    "Malabsorption"
+    "Malabsorption",
+    "Motor",
+    "Osmotic"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "Malabsorption: abundant greasy stools with weight loss, anaemia, bone pain; celiac, Crohn's, pancreatic insufficiency."
   },
   {
@@ -5490,8 +5685,8 @@ SINA.lectures["semio-gi-diarrhoea"] = {
    "options": [
     "Hyperthyroidism",
     "Lactase deficiency",
-    "Cholera",
-    "Lymphangiectasia"
+    "Lymphangiectasia",
+    "Cholera"
    ],
    "answer": 0,
    "why": "Motor: hyperthyroidism, diabetes, carcinoid, gastrectomy, IBS; post-prandial and urgent."
@@ -5499,10 +5694,10 @@ SINA.lectures["semio-gi-diarrhoea"] = {
   {
    "q": "How is exudative diarrhoea diagnosed?",
    "options": [
+    "TSH",
     "Stool culture",
-    "Anti-transglutaminase",
     "Alpha-1 antitrypsin clearance",
-    "TSH"
+    "Anti-transglutaminase"
    ],
    "answer": 2,
    "why": "Protein loss into the gut, from lymphangiectasia, lymphoma, cirrhosis, UC."
@@ -5511,11 +5706,11 @@ SINA.lectures["semio-gi-diarrhoea"] = {
    "q": "Which test screens for celiac disease?",
    "options": [
     "HIV serology",
-    "Anti-transglutaminase",
     "Serum ferritin",
-    "Stool culture"
+    "Stool culture",
+    "Anti-transglutaminase"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "Second-line tests: TSH, HIV, anti-transglutaminase, stool parasitology; then EGD with duodenal biopsies."
   },
   {
@@ -5531,6 +5726,245 @@ SINA.lectures["semio-gi-diarrhoea"] = {
     1
    ],
    "why": "CBC, CRP, electrolytes, liver tests, electrophoresis, calcium, vitamin D, ferritin, albumin."
+  },
+  {
+   "q": "Which stool weight defines diarrhoea?",
+   "options": [
+    "Over 1 kg/day",
+    "Over 50 g/day",
+    "Over 100 g/day",
+    "Over 300 g/day"
+   ],
+   "answer": 3,
+   "why": "With frequency over 3/day and water over 90%."
+  },
+  {
+   "q": "Small, hard stools totalling under 300 g/day suggest:",
+   "options": [
+    "False diarrhoea",
+    "Malabsorption",
+    "Secretory diarrhoea",
+    "Cholera"
+   ],
+   "answer": 0,
+   "why": "A differential diagnosis of diarrhoea."
+  },
+  {
+   "q": "Choleriform diarrhoea is caused by:",
+   "options": [
+    "Lactase deficiency with osmotic water retention",
+    "Mucosal invasion by bacteria",
+    "An enterotoxin causing massive secretion",
+    "Accelerated transit after a meal"
+   ],
+   "answer": 2,
+   "why": "Cholera, enterotoxigenic E. coli."
+  },
+  {
+   "q": "Which feature suggests dysenteric diarrhoea?",
+   "options": [
+    "Greasy, pale, foul-smelling stools",
+    "Painless watery stools without fever",
+    "Bloody mucous stools with fever and tenesmus",
+    "Diarrhoea that stops with fasting"
+   ],
+   "answer": 2,
+   "why": "Shigella, Salmonella, Campylobacter."
+  },
+  {
+   "q": "Recent antibiotic use with diarrhoea suggests:",
+   "options": [
+    "Cholera",
+    "Clostridioides difficile",
+    "Giardia",
+    "Coeliac disease"
+   ],
+   "answer": 1,
+   "why": "A key point of the history."
+  },
+  {
+   "q": "In acute diarrhoea, tests are indicated when it lasts over:",
+   "options": [
+    "3 months",
+    "3 weeks",
+    "1 day",
+    "3 days"
+   ],
+   "answer": 3,
+   "why": "Or with dehydration, blood, fever, epidemic context, immunosuppression."
+  },
+  {
+   "q": "Which examination is mandatory in chronic diarrhoea?",
+   "options": [
+    "Lumbar puncture",
+    "Fundoscopy",
+    "Digital rectal examination",
+    "Spirometry"
+   ],
+   "answer": 2,
+   "why": "Along with hydration, nutrition and extra-abdominal signs."
+  },
+  {
+   "q": "Which second-line test screens for coeliac disease?",
+   "options": [
+    "HIV serology",
+    "Anti-transglutaminase antibodies",
+    "Serum ferritin",
+    "Thyroid-stimulating hormone"
+   ],
+   "answer": 1,
+   "why": "Confirmed by duodenal biopsies."
+  },
+  {
+   "q": "Which diarrhoea stops with fasting?",
+   "options": [
+    "VIPoma",
+    "Cholera",
+    "Secretory",
+    "Osmotic"
+   ],
+   "answer": 3,
+   "why": "Motor diarrhoea also improves with fasting."
+  },
+  {
+   "q": "Abundant, greasy, pale, foul-smelling stools suggest:",
+   "options": [
+    "Osmotic diarrhoea",
+    "Malabsorption",
+    "Cholera",
+    "Motor diarrhoea"
+   ],
+   "answer": 1,
+   "why": "With weight loss, anaemia, bone pain."
+  },
+  {
+   "q": "Post-prandial, urgent diarrhoea that improves with fasting, in hyperthyroidism, is:",
+   "options": [
+    "Malabsorptive",
+    "Exudative",
+    "Secretory",
+    "Motor"
+   ],
+   "answer": 3,
+   "why": "Due to accelerated transit."
+  },
+  {
+   "q": "How is exudative diarrhoea diagnosed?",
+   "options": [
+    "Alpha-1 antitrypsin clearance",
+    "Hydrogen breath test",
+    "Stool culture for bacteria",
+    "Double-contrast barium enema"
+   ],
+   "answer": 0,
+   "why": "Loss of plasma proteins into the gut."
+  },
+  {
+   "q": "Which drug can cause secretory diarrhoea?",
+   "options": [
+    "Insulin",
+    "Paracetamol",
+    "Omeprazole",
+    "Colchicine"
+   ],
+   "answer": 3,
+   "why": "Also digitalis."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "def",
+   "options": [
+    "Definition",
+    "Prolonged diarrhoea",
+    "Chronic diarrhoea",
+    "Acute diarrhoea"
+   ],
+   "answer": 0,
+   "why": "The arrow points to: Definition. Stools over 300 g/day, more than 3 per day, over 90% water."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "acute",
+   "options": [
+    "Osmotic diarrhoea",
+    "Acute diarrhoea",
+    "Motor diarrhoea",
+    "Chronic diarrhoea"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: Acute diarrhoea. Under 2 weeks; choleriform (secretory) or dysenteric (invasive)."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "prol",
+   "options": [
+    "Prolonged diarrhoea",
+    "Motor diarrhoea",
+    "Definition",
+    "Chronic diarrhoea"
+   ],
+   "answer": 0,
+   "why": "The arrow points to: Prolonged diarrhoea. 2 to 4 weeks; post-infectious or parasitic."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "chron",
+   "options": [
+    "Osmotic diarrhoea",
+    "Prolonged diarrhoea",
+    "Chronic diarrhoea",
+    "Malabsorptive diarrhoea"
+   ],
+   "answer": 2,
+   "why": "The arrow points to: Chronic diarrhoea. Over 4 weeks; identify the mechanism."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "osm",
+   "options": [
+    "Definition",
+    "Osmotic diarrhoea",
+    "Malabsorptive diarrhoea",
+    "Motor diarrhoea"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: Osmotic diarrhoea. Osmotically active substances (lactase deficiency, laxatives); stops with fasting."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "sec",
+   "options": [
+    "Motor diarrhoea",
+    "Acute diarrhoea",
+    "Secretory diarrhoea",
+    "Malabsorptive diarrhoea"
+   ],
+   "answer": 2,
+   "why": "The arrow points to: Secretory diarrhoea. Active secretion; persists during fasting (IBD, endocrine tumours, drugs)."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "malab",
+   "options": [
+    "Acute diarrhoea",
+    "Malabsorptive diarrhoea",
+    "Prolonged diarrhoea",
+    "Motor diarrhoea"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: Malabsorptive diarrhoea. Abundant, greasy, pale, foul stools with deficiencies (coeliac, pancreatic insufficiency)."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "motor",
+   "options": [
+    "Prolonged diarrhoea",
+    "Motor diarrhoea",
+    "Osmotic diarrhoea",
+    "Secretory diarrhoea"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: Motor diarrhoea. Accelerated transit; post-prandial, urgent, improves with fasting (hyperthyroidism, IBS)."
   }
  ],
  "cards": [
@@ -5569,12 +6003,149 @@ SINA.lectures["semio-gi-diarrhoea"] = {
    "type": "text",
    "front": "Compare the mechanisms of chronic diarrhoea.",
    "back": "Osmotic: moderate, watery, stops fasting (lactose intolerance). Secretory: profuse, watery, persists (cholera, VIPoma, IBD, drugs). Malabsorptive: abundant, greasy, persists (celiac, pancreatic insufficiency). Motor: variable, food debris, stops fasting (IBS, hyperthyroidism). Exudative: protein loss (alpha-1 antitrypsin clearance)."
+  },
+  {
+   "id": "x0",
+   "type": "text",
+   "front": "Define diarrhoea and classify by duration.",
+   "back": "> 300 g/day, > 3/day, > 90% water. Acute < 2 weeks, prolonged 2-4 weeks, chronic > 4 weeks."
+  },
+  {
+   "id": "x1",
+   "type": "text",
+   "front": "Differential diagnoses of diarrhoea?",
+   "back": "False diarrhoea (small hard stools < 300 g/day), anal incontinence, non-faecal discharge (blood, pus, mucus without stool)."
+  },
+  {
+   "id": "x2",
+   "type": "text",
+   "front": "Secretory vs invasive acute diarrhoea?",
+   "back": "Secretory (choleriform): toxin, profuse watery, dehydration, persists fasting. Invasive (dysenteric): bloody mucous stools, fever, pain, tenesmus."
+  },
+  {
+   "id": "x3",
+   "type": "text",
+   "front": "Severity criteria in acute diarrhoea?",
+   "back": "Extreme ages, immunosuppression, comorbidities; dehydration (dry tongue, thirst, skin fold, hypotension, oliguria); dysenteric colitis, sepsis."
+  },
+  {
+   "id": "x4",
+   "type": "text",
+   "front": "When are tests needed in acute diarrhoea?",
+   "back": "Severe dehydration, blood or pus, fever > 38 °C, duration > 3 days, epidemic context or immunosuppression."
+  },
+  {
+   "id": "x5",
+   "type": "text",
+   "front": "First-line tests in chronic diarrhoea?",
+   "back": "CBC, CRP, electrolytes, liver tests, protein electrophoresis, calcium, vitamin D, ferritin, albumin."
+  },
+  {
+   "id": "x6",
+   "type": "text",
+   "front": "Five mechanisms of chronic diarrhoea?",
+   "back": "Malabsorptive, motor, osmotic, secretory, exudative."
+  },
+  {
+   "id": "x7",
+   "type": "text",
+   "front": "Fasting test: which diarrhoeas stop?",
+   "back": "Osmotic stops and motor improves with fasting; secretory and malabsorptive persist."
+  },
+  {
+   "id": "img-def",
+   "type": "image",
+   "target": "def",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Definition. Stools over 300 g/day, more than 3 per day, over 90% water."
+  },
+  {
+   "id": "img-acute",
+   "type": "image",
+   "target": "acute",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Acute diarrhoea. Under 2 weeks; choleriform (secretory) or dysenteric (invasive)."
+  },
+  {
+   "id": "img-prol",
+   "type": "image",
+   "target": "prol",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Prolonged diarrhoea. 2 to 4 weeks; post-infectious or parasitic."
+  },
+  {
+   "id": "img-chron",
+   "type": "image",
+   "target": "chron",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Chronic diarrhoea. Over 4 weeks; identify the mechanism."
+  },
+  {
+   "id": "img-osm",
+   "type": "image",
+   "target": "osm",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Osmotic diarrhoea. Osmotically active substances (lactase deficiency, laxatives); stops with fasting."
+  },
+  {
+   "id": "img-sec",
+   "type": "image",
+   "target": "sec",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Secretory diarrhoea. Active secretion; persists during fasting (IBD, endocrine tumours, drugs)."
+  },
+  {
+   "id": "img-malab",
+   "type": "image",
+   "target": "malab",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Malabsorptive diarrhoea. Abundant, greasy, pale, foul stools with deficiencies (coeliac, pancreatic insufficiency)."
+  },
+  {
+   "id": "img-motor",
+   "type": "image",
+   "target": "motor",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Motor diarrhoea. Accelerated transit; post-prandial, urgent, improves with fasting (hyperthyroidism, IBS)."
   }
  ],
- "deeper": [],
- "resources": [],
+ "deeper": [
+  {
+   "title": "Why the fasting test separates osmotic from secretory diarrhoea",
+   "html": "<p>Osmotic diarrhoea is caused by something the patient eats that stays in the lumen and holds water; stop eating and the water stops. Secretory diarrhoea comes from the gut wall actively pumping out salt and water, driven by a toxin, hormone or inflammation, which continues regardless of food. That simple observation narrows the list of causes dramatically.</p><p class='src'>Source: the lecture's synthetic comparison table.</p>"
+  },
+  {
+   "title": "Why dysenteric stools contain blood",
+   "html": "<p>Invasive bacteria penetrate and destroy the colonic mucosa, producing ulcers that bleed and inflammatory exudate rich in mucus and pus. Inflammation of the rectum also causes tenesmus, the painful urge to pass stool with little output. Toxin-mediated diarrhoea leaves the mucosa intact, which is why it is watery rather than bloody.</p><p class='src'>Source: the lecture's pathophysiological types slide.</p>"
+  }
+ ],
+ "resources": [
+  {
+   "title": "Diarrhoea and vomiting (NHS)",
+   "url": "https://www.nhs.uk/conditions/diarrhoea-and-vomiting/",
+   "kind": "Article",
+   "why": "When diarrhoea needs medical attention.",
+   "note": ""
+  },
+  {
+   "title": "Coeliac disease (NHS)",
+   "url": "https://www.nhs.uk/conditions/coeliac-disease/",
+   "kind": "Article",
+   "why": "A key cause of malabsorptive diarrhoea.",
+   "note": ""
+  }
+ ],
  "checks": [],
- "sources": [],
+ "sources": [
+  {
+   "name": "Diarrhoea and vomiting (NHS)",
+   "url": "https://www.nhs.uk/conditions/diarrhoea-and-vomiting/"
+  },
+  {
+   "name": "Coeliac disease (NHS)",
+   "url": "https://www.nhs.uk/conditions/coeliac-disease/"
+  }
+ ],
  "verified": "22 Sep 2026"
 };
 window.SINA = window.SINA || {subjects:[], lectures:{}};
@@ -5585,36 +6156,234 @@ SINA.lectures["semio-gi-dysphagia"] = {
  "title": "Dysphagia",
  "sourceFile": "DYSPHAGIA SEMIO 26.27 CANVAS.pdf (Digestive semiology, Prof. O. Bahlaoui, 2026-2027)",
  "sourceUrl": "https://drive.google.com/file/d/1khY9fFEvzjfvnyWnsQcdpX5xAGLKUP9o/view?usp=drivesdk",
- "buildNote": "<strong>Short version.</strong> The full version, with more questions and extra reading, is coming soon. <strong>Built from the lecture slides.</strong> If your professor says something different, trust your professor.",
+ "buildNote": "<strong>Built from the lecture slides.</strong> Slides that only show pictures are covered in outline. If your professor says something different, trust your professor.",
  "summary": [
   {
    "id": "s0",
    "title": "The big picture",
-   "html": "<p>Dysphagia is an alarm symptom: in any adult with <strong>progressive</strong> dysphagia, assume <strong>oesophageal cancer</strong> until endoscopy proves otherwise.</p>"
+   "html": "<p><strong>Dysphagia</strong> is difficulty or discomfort swallowing solids or liquids from mouth to stomach. It is always an alarm sign: <strong>any adult with progressive dysphagia has oesophageal cancer until proven otherwise</strong>, and <strong>upper GI endoscopy</strong> is the key test. Distinguish it from <strong>odynophagia</strong> (painful swallowing), <strong>aphagia</strong> (complete inability) and <strong>globus</strong> (lump sensation without real difficulty); always clarify what the patient means.</p>"
   },
   {
    "id": "s1",
-   "title": "Definitions and classification",
-   "html": "<p>Odynophagia = painful; aphagia = impossible; globus = lump without real difficulty.</p><div class='table-wrap'><table class='wide'><thead><tr><th scope='col'>Type</th><th scope='col'>Clue</th><th scope='col'>Causes</th></tr></thead><tbody><tr><th scope='row'>Oropharyngeal</th><td>Cough, nasal regurgitation</td><td>Neurological, muscular, ENT</td></tr><tr><th scope='row'>Oesophageal</th><td>Sticking behind the sternum</td><td>Mechanical, motor</td></tr><tr><th scope='row'>Organic</th><td>Progressive, solids then liquids</td><td>Cancer, stricture, foreign body</td></tr><tr><th scope='row'>Motor</th><td>Intermittent, liquids too (paradoxical)</td><td>Achalasia, spasm, scleroderma</td></tr></tbody></table></div>"
+   "title": "Physiology and classification",
+   "html": "<p>Swallowing has three phases: <strong>oral</strong> (voluntary), <strong>pharyngeal</strong> (reflex laryngeal closure and propulsion), <strong>oesophageal</strong> (involuntary peristalsis). By level: <strong>oropharyngeal (high)</strong>: difficulty starting, cough, nasal regurgitation; neurological, muscular or ENT causes; <strong>oesophageal (low)</strong>: food sticking behind the sternum. By mechanism: <strong>organic/mechanical</strong> (tumour, peptic stricture, foreign body) vs <strong>functional/motor</strong> (achalasia, diffuse spasm, scleroderma).</p>"
   },
   {
    "id": "s2",
-   "title": "Approach and causes",
-   "html": "<p><strong>EGD</strong> first; barium swallow (Zenker's), <strong>manometry</strong> (achalasia: no peristalsis, LES not relaxing), CT or EUS, laryngoscopy.</p><p>Causes: cancer, peptic stricture, achalasia, foreign body, caustic stenosis, infectious oesophagitis; extrinsic compression; ENT; neurological (stroke, Parkinson's, ALS, MS, myasthenia).</p><p><strong>Red flags:</strong> age over 50, rapid progression, weight loss over 5 kg, anaemia. Complications: aspiration pneumonia, malnutrition, aphagia.</p>"
+   "title": "History and examination",
+   "html": "<p><strong>Age</strong>: in the elderly always rule out cancer. <strong>Risk factors</strong>: alcohol, tobacco, caustics, GERD, radiotherapy, surgery. <strong>Onset</strong>: sudden (foreign body, spasm), progressive (cancer, peptic stricture), intermittent (motor). <strong>Food type</strong>: <strong>solids then liquids → organic</strong>; <strong>liquids as much as or more than solids → motor (paradoxical dysphagia, achalasia)</strong>. <strong>Associated signs</strong>: odynophagia (infection, inflammation), heartburn and regurgitation (reflux, stricture), cough at meals and nasal regurgitation (oropharyngeal), hoarseness (larynx), weight loss and asthenia (cancer); night cough or hiccups (reflux, compression).</p><p><strong>Examination</strong>: general state (weight loss, malnutrition, dehydration), neck (lymph nodes suggest cancer, thyroid masses), ENT (mouth, oropharynx, larynx), neurology (cranial nerves <strong>IX, X, XI, XII</strong>, stroke, neuromuscular disease). Intermittent → functional; constant and progressive → organic.</p>"
+  },
+  {
+   "id": "s3",
+   "title": "Investigations and causes",
+   "html": "<p><strong>Tests</strong>: <strong>upper GI endoscopy first line</strong> (mucosa, biopsies, obstruction); barium swallow (motility, Zenker's diverticulum); <strong>oesophageal manometry</strong> (peristalsis, LES relaxation); CT or endoscopic ultrasound (staging, extrinsic compression); laryngoscopy (ENT).</p><p><strong>Oesophageal causes</strong>: <strong>cancer of the oesophagus or cardia</strong> (recent, progressive solids → liquids, weight loss, smoking and alcohol; endoscopy with biopsy confirms); <strong>peptic stricture</strong> (long reflux history, slow, mainly solids, no early deterioration); <strong>achalasia</strong> (solids and liquids from the start, paradoxical, intermittent, worse with hot or cold foods, general state preserved; manometry shows <strong>absent peristalsis and a non-relaxing LES</strong>); foreign body, benign tumours, caustic stenosis, infectious oesophagitis (Candida, HSV, TB). <strong>Extra-oesophageal</strong>: compression (mediastinal tumours, thoracic aortic aneurysm, large left atrium); ENT (tonsillitis, pharyngitis, oral candidiasis; pharyngeal, laryngeal and thyroid cancers; <strong>Zenker's diverticulum</strong>); neurological and muscular (stroke, Parkinson's, ALS, MS, myasthenia, myopathies).</p>"
+  },
+  {
+   "id": "s4",
+   "title": "Red flags and complications",
+   "html": "<p><strong>Refer urgently</strong>: age over 50, rapidly progressive dysphagia, <strong>weight loss over 5 kg</strong>, iron-deficiency anaemia, history of caustics, GERD or radiation. <strong>Complications</strong>: aspiration pneumonia, malnutrition and dehydration, complete obstruction (aphagia), cancer progression or perforation.</p>"
   }
  ],
  "exam": [
-  "Progressive adult dysphagia = cancer until proven otherwise.",
-  "Odynophagia painful; globus no real difficulty.",
-  "Oropharyngeal: cough, nasal regurgitation.",
-  "Solids then liquids: organic; paradoxical: achalasia.",
-  "EGD is first-line.",
-  "Achalasia manometry: no peristalsis, LES does not relax.",
-  "Red flags: over 50, weight loss over 5 kg, anaemia."
+  "Dysphagia = difficulty swallowing; odynophagia = pain; aphagia = inability; globus = lump sensation.",
+  "Progressive dysphagia in an adult = oesophageal cancer until proven otherwise.",
+  "Upper GI endoscopy is first line.",
+  "Oropharyngeal: cough, nasal regurgitation. Oesophageal: food stuck behind the sternum.",
+  "Solids then liquids → organic; liquids ≥ solids (paradoxical) → motor.",
+  "Achalasia: absent peristalsis + non-relaxing LES on manometry.",
+  "Examine cranial nerves IX to XII.",
+  "Red flags: > 50 years, rapid progression, weight loss > 5 kg, iron-deficiency anaemia.",
+  "Complications: aspiration pneumonia, malnutrition, aphagia, perforation."
  ],
  "visual": {
   "kind": "model",
   "intro": "",
+  "figure": {
+   "viewBox": "0 0 760 420",
+   "alt": "Approach to dysphagia",
+   "caption": "Level first, then mechanism. Schematic drawn for this site.",
+   "base": "<defs><marker id=\"ah\" markerWidth=\"10\" markerHeight=\"8\" refX=\"9\" refY=\"4\" orient=\"auto\"><path d=\"M0,0 L10,4 L0,8 Z\" fill=\"#8a8a8a\"/></marker></defs><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"240\" y1=\"60\" x2=\"280\" y2=\"60\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"480\" y1=\"60\" x2=\"520\" y2=\"60\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"500\" y1=\"190\" x2=\"540\" y2=\"190\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"400\" y1=\"220\" x2=\"400\" y2=\"290\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"640\" y1=\"220\" x2=\"640\" y2=\"290\"/>",
+   "parts": {
+    "oral": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2d7cf\" x=\"40\" y=\"30\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Oral phase",
+      "(voluntary)"
+     ],
+     "lx": 140.0,
+     "ly": 58.0
+    },
+    "phar": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#cfe3f2\" x=\"280\" y=\"30\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Pharyngeal phase",
+      "(reflex)"
+     ],
+     "lx": 380.0,
+     "ly": 58.0
+    },
+    "oeso": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d7edd2\" x=\"520\" y=\"30\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Oesophageal phase",
+      "(peristalsis)"
+     ],
+     "lx": 620.0,
+     "ly": 58.0
+    },
+    "high": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2e2a8\" x=\"40\" y=\"160\" width=\"220\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Oropharyngeal: cough,",
+      "nasal regurgitation"
+     ],
+     "lx": 150.0,
+     "ly": 188.0
+    },
+    "low": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#e3d5f0\" x=\"300\" y=\"160\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Oesophageal: food",
+      "sticks behind sternum"
+     ],
+     "lx": 400.0,
+     "ly": 188.0
+    },
+    "organic": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f7d9b8\" x=\"540\" y=\"160\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Organic: solids then",
+      "liquids, progressive"
+     ],
+     "lx": 640.0,
+     "ly": 188.0
+    },
+    "motor": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d9ecec\" x=\"300\" y=\"290\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Motor: liquids ≥ solids,",
+      "intermittent (achalasia)"
+     ],
+     "lx": 400.0,
+     "ly": 318.0
+    },
+    "egd": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f0d0e0\" x=\"540\" y=\"290\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Upper GI endoscopy",
+      "first line"
+     ],
+     "lx": 640.0,
+     "ly": 318.0
+    }
+   },
+   "arrows": {
+    "oral": [
+     {
+      "t": [
+       40.0,
+       38.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "phar": [
+     {
+      "t": [
+       280.0,
+       38.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "oeso": [
+     {
+      "t": [
+       520.0,
+       38.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "high": [
+     {
+      "t": [
+       40.0,
+       168.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "low": [
+     {
+      "t": [
+       300.0,
+       168.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "organic": [
+     {
+      "t": [
+       540.0,
+       168.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "motor": [
+     {
+      "t": [
+       300.0,
+       298.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "egd": [
+     {
+      "t": [
+       540.0,
+       298.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ]
+   }
+  },
   "images": [
    {
     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Illu_conducting_passages.svg?width=760",
@@ -5634,63 +6403,63 @@ SINA.lectures["semio-gi-dysphagia"] = {
   {
    "q": "What is odynophagia?",
    "options": [
+    "A lump in the throat",
     "Pain on swallowing",
     "Inability to swallow",
-    "A lump in the throat",
     "Food sticking"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "Odynophagia: painful swallowing. Aphagia: complete inability. Globus: lump sensation without true difficulty."
   },
   {
    "q": "What must progressive dysphagia in an adult be assumed to be?",
    "options": [
     "Achalasia",
+    "Globus",
     "Oesophageal cancer",
-    "GERD",
-    "Globus"
+    "GERD"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "Until proven otherwise, investigated by upper endoscopy."
   },
   {
    "q": "Which phase of swallowing is voluntary?",
    "options": [
-    "The pharyngeal phase",
-    "The oesophageal phase",
     "The oral phase",
-    "All three"
+    "All three",
+    "The oesophageal phase",
+    "The pharyngeal phase"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "Oral: voluntary; pharyngeal: reflex; oesophageal: involuntary peristalsis."
   },
   {
    "q": "What suggests oropharyngeal dysphagia?",
    "options": [
-    "Retrosternal sticking",
-    "Heartburn",
     "Weight gain",
-    "Cough or nasal regurgitation"
+    "Retrosternal sticking",
+    "Cough or nasal regurgitation",
+    "Heartburn"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "Difficulty initiating, with cough or nasal regurgitation: neurological, muscular or ENT causes."
   },
   {
    "q": "Solids first then liquids suggests?",
    "options": [
     "Achalasia",
+    "Spasm only",
     "Organic obstruction",
-    "Globus",
-    "Spasm only"
+    "Globus"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "Solids then liquids: mechanical. Liquids more than solids (paradoxical): motor, as in achalasia."
   },
   {
    "q": "Which disorder causes paradoxical dysphagia?",
    "options": [
-    "Peptic stricture",
     "Oesophageal cancer",
+    "Peptic stricture",
     "Foreign body",
     "Achalasia"
    ],
@@ -5700,67 +6469,67 @@ SINA.lectures["semio-gi-dysphagia"] = {
   {
    "q": "What does manometry show in achalasia?",
    "options": [
-    "No peristalsis, tight LES",
     "Strong peristalsis",
+    "No peristalsis, tight LES",
     "A tumour mass",
     "Acid reflux only"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "Absent peristalsis and a lower oesophageal sphincter that does not relax."
   },
   {
    "q": "What is the first-line test for dysphagia?",
    "options": [
     "Barium swallow",
-    "Manometry",
     "Upper GI endoscopy",
-    "CT scan"
+    "CT scan",
+    "Manometry"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "EGD visualises the mucosa and allows biopsies; it is the gold standard."
   },
   {
    "q": "Which cause follows long-standing reflux?",
    "options": [
-    "Achalasia",
-    "Zenker's diverticulum",
     "ALS",
-    "Peptic stricture"
+    "Achalasia",
+    "Peptic stricture",
+    "Zenker's diverticulum"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "Peptic stricture: reflux history, slow progression, mainly solids, no early deterioration."
   },
   {
    "q": "What is Zenker's diverticulum?",
    "options": [
-    "A pulsion pouch",
+    "An ulcer",
     "A tumour",
-    "A spasm",
-    "An ulcer"
+    "A pulsion pouch",
+    "A spasm"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "A structural ENT cause, a pulsion diverticulum, shown by barium swallow."
   },
   {
    "q": "Which is a neurological cause of dysphagia?",
    "options": [
-    "Peptic ulcer",
-    "Hiatal hernia",
     "Myasthenia gravis",
-    "Gallstones"
+    "Gallstones",
+    "Peptic ulcer",
+    "Hiatal hernia"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "Stroke, Parkinson's, ALS, multiple sclerosis, myasthenia gravis, myopathies."
   },
   {
    "q": "Which weight loss is a red flag?",
    "options": [
-    "Over 500 g",
-    "Over 5 kg",
     "Over 1 kg",
-    "Over 50 kg"
+    "Over 500 g",
+    "Over 50 kg",
+    "Over 5 kg"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "Red flags: age over 50, rapid progression, weight loss over 5 kg, iron deficiency anaemia, caustic, GERD or radiation history."
   },
   {
@@ -5776,6 +6545,245 @@ SINA.lectures["semio-gi-dysphagia"] = {
     1
    ],
    "why": "Age over 50, rapid progression, weight loss over 5 kg, anaemia, caustic or radiation history."
+  },
+  {
+   "q": "Painful swallowing is called:",
+   "options": [
+    "Aphagia",
+    "Dysphagia",
+    "Odynophagia",
+    "Globus"
+   ],
+   "answer": 2,
+   "why": "Often infectious or inflammatory."
+  },
+  {
+   "q": "A lump sensation in the throat without real difficulty swallowing is:",
+   "options": [
+    "Aphagia",
+    "Achalasia",
+    "Odynophagia",
+    "Globus"
+   ],
+   "answer": 3,
+   "why": "Always clarify what the patient means."
+  },
+  {
+   "q": "Cough during meals and nasal regurgitation suggest:",
+   "options": [
+    "Oesophageal dysphagia",
+    "Peptic stricture",
+    "Achalasia",
+    "Oropharyngeal dysphagia"
+   ],
+   "answer": 3,
+   "why": "Neurological, muscular or ENT causes."
+  },
+  {
+   "q": "Dysphagia to solids then liquids, progressive, suggests:",
+   "options": [
+    "Achalasia",
+    "Globus",
+    "An organic obstruction",
+    "Diffuse spasm"
+   ],
+   "answer": 2,
+   "why": "Such as cancer or peptic stricture."
+  },
+  {
+   "q": "Paradoxical dysphagia (liquids as much as solids) suggests:",
+   "options": [
+    "Peptic stricture",
+    "Foreign body",
+    "Oesophageal cancer",
+    "Achalasia"
+   ],
+   "answer": 3,
+   "why": "A motor disorder."
+  },
+  {
+   "q": "Sudden dysphagia most suggests:",
+   "options": [
+    "Peptic stricture",
+    "Cancer",
+    "Scleroderma",
+    "Foreign body or spasm"
+   ],
+   "answer": 3,
+   "why": "Progressive onset suggests cancer or stricture."
+  },
+  {
+   "q": "What is the first-line investigation for dysphagia?",
+   "options": [
+    "Upper GI endoscopy",
+    "CT",
+    "Barium swallow",
+    "Manometry"
+   ],
+   "answer": 0,
+   "why": "Allows biopsies to exclude malignancy."
+  },
+  {
+   "q": "Which test confirms achalasia?",
+   "options": [
+    "Laryngoscopy",
+    "pH-metry",
+    "Oesophageal manometry",
+    "Endoscopy alone"
+   ],
+   "answer": 2,
+   "why": "Absent peristalsis and a non-relaxing LES."
+  },
+  {
+   "q": "Zenker's diverticulum is best seen on:",
+   "options": [
+    "Colonoscopy",
+    "Manometry",
+    "Abdominal ultrasound",
+    "Barium swallow"
+   ],
+   "answer": 3,
+   "why": "A pulsion diverticulum of the pharynx."
+  },
+  {
+   "q": "Which cranial nerves are examined in dysphagia?",
+   "options": [
+    "V to VIII",
+    "IX to XII",
+    "III, IV, VI",
+    "I to IV"
+   ],
+   "answer": 1,
+   "why": "Glossopharyngeal, vagus, accessory, hypoglossal."
+  },
+  {
+   "q": "Which is NOT a red flag for dysphagia?",
+   "options": [
+    "Iron-deficiency anaemia on the blood count",
+    "Intermittent symptoms for 10 years with no weight loss",
+    "Age over 50 at the onset of dysphagia",
+    "Weight loss of more than 5 kg"
+   ],
+   "answer": 1,
+   "why": "The others require urgent referral."
+  },
+  {
+   "q": "A peptic stricture typically presents with:",
+   "options": [
+    "Long reflux history, slow progression, mainly solids",
+    "Nasal regurgitation and cough at every meal",
+    "Paradoxical dysphagia from the very start",
+    "Sudden aphagia after eating a piece of meat"
+   ],
+   "answer": 0,
+   "why": "General state initially preserved."
+  },
+  {
+   "q": "Which is an extrinsic cause of dysphagia?",
+   "options": [
+    "Thoracic aortic aneurysm",
+    "Candida oesophagitis",
+    "Peptic stricture",
+    "Achalasia"
+   ],
+   "answer": 0,
+   "why": "Also mediastinal tumours and an enlarged left atrium."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "oral",
+   "options": [
+    "Oesophageal phase",
+    "Oral phase",
+    "Upper GI endoscopy",
+    "Pharyngeal phase"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: Oral phase. Voluntary transport of the bolus to the oropharynx."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "phar",
+   "options": [
+    "Oropharyngeal dysphagia",
+    "Upper GI endoscopy",
+    "Pharyngeal phase",
+    "Motor dysphagia"
+   ],
+   "answer": 2,
+   "why": "The arrow points to: Pharyngeal phase. Reflex closure of the larynx and propulsion into the oesophagus."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "oeso",
+   "options": [
+    "Oesophageal phase",
+    "Oesophageal dysphagia",
+    "Motor dysphagia",
+    "Pharyngeal phase"
+   ],
+   "answer": 0,
+   "why": "The arrow points to: Oesophageal phase. Involuntary peristalsis toward the stomach."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "high",
+   "options": [
+    "Pharyngeal phase",
+    "Oropharyngeal dysphagia",
+    "Oesophageal phase",
+    "Motor dysphagia"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: Oropharyngeal dysphagia. Difficulty starting the swallow, cough, nasal regurgitation; neurological, muscular or ENT causes."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "low",
+   "options": [
+    "Oesophageal phase",
+    "Oesophageal dysphagia",
+    "Organic dysphagia",
+    "Upper GI endoscopy"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: Oesophageal dysphagia. Food sticks behind the sternum; mechanical or motor disorders."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "organic",
+   "options": [
+    "Organic dysphagia",
+    "Oral phase",
+    "Oesophageal phase",
+    "Upper GI endoscopy"
+   ],
+   "answer": 0,
+   "why": "The arrow points to: Organic dysphagia. Obstruction (tumour, stricture): solids then liquids, constant and progressive."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "motor",
+   "options": [
+    "Motor dysphagia",
+    "Oropharyngeal dysphagia",
+    "Upper GI endoscopy",
+    "Oral phase"
+   ],
+   "answer": 0,
+   "why": "The arrow points to: Motor dysphagia. Impaired peristalsis or LES relaxation: liquids as much as solids (paradoxical), intermittent."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "egd",
+   "options": [
+    "Organic dysphagia",
+    "Upper GI endoscopy",
+    "Oral phase",
+    "Oropharyngeal dysphagia"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: Upper GI endoscopy. First-line test: sees the mucosa and takes biopsies to exclude cancer."
   }
  ],
  "cards": [
@@ -5814,12 +6822,149 @@ SINA.lectures["semio-gi-dysphagia"] = {
    "type": "text",
    "front": "List the causes.",
    "back": "Oesophageal: cancer (progressive, weight loss, smoking, alcohol), peptic stricture, achalasia, foreign body, benign tumour, caustic stenosis, infectious oesophagitis. Extrinsic: mediastinal tumours, aortic aneurysm, big left atrium. ENT: infection, cancers, Zenker's. Neurological: stroke, Parkinson's, ALS, MS, myasthenia, myopathies."
+  },
+  {
+   "id": "x0",
+   "type": "text",
+   "front": "Define dysphagia, odynophagia, aphagia and globus.",
+   "back": "Dysphagia: difficulty swallowing. Odynophagia: pain on swallowing. Aphagia: complete inability. Globus: lump sensation without true difficulty."
+  },
+  {
+   "id": "x1",
+   "type": "text",
+   "front": "Three phases of swallowing?",
+   "back": "Oral (voluntary), pharyngeal (reflex laryngeal closure, propulsion), oesophageal (involuntary peristalsis)."
+  },
+  {
+   "id": "x2",
+   "type": "text",
+   "front": "Oropharyngeal vs oesophageal dysphagia?",
+   "back": "Oropharyngeal: difficulty starting, cough, nasal regurgitation (neuro, muscle, ENT). Oesophageal: food sticking behind the sternum (mechanical or motor)."
+  },
+  {
+   "id": "x3",
+   "type": "text",
+   "front": "How does the type of food point to the mechanism?",
+   "back": "Solids then liquids → organic obstruction. Liquids as much as or more than solids (paradoxical) → motor disorder such as achalasia."
+  },
+  {
+   "id": "x4",
+   "type": "text",
+   "front": "Investigations for dysphagia and their roles?",
+   "back": "Endoscopy (first line, biopsy), barium swallow (motility, Zenker), manometry (peristalsis, LES), CT/EUS (staging, compression), laryngoscopy (ENT)."
+  },
+  {
+   "id": "x5",
+   "type": "text",
+   "front": "Features of achalasia?",
+   "back": "Solids and liquids from onset, paradoxical, intermittent, worse with hot or cold food, general state preserved; manometry: no peristalsis, non-relaxing LES."
+  },
+  {
+   "id": "x6",
+   "type": "text",
+   "front": "Neurological causes of dysphagia?",
+   "back": "Stroke, Parkinson's, ALS, multiple sclerosis, myasthenia gravis, myopathies."
+  },
+  {
+   "id": "x7",
+   "type": "text",
+   "front": "Red flags for dysphagia?",
+   "back": "Age > 50, rapidly progressive, weight loss > 5 kg, iron-deficiency anaemia, history of caustics, GERD or radiation."
+  },
+  {
+   "id": "img-oral",
+   "type": "image",
+   "target": "oral",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Oral phase. Voluntary transport of the bolus to the oropharynx."
+  },
+  {
+   "id": "img-phar",
+   "type": "image",
+   "target": "phar",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Pharyngeal phase. Reflex closure of the larynx and propulsion into the oesophagus."
+  },
+  {
+   "id": "img-oeso",
+   "type": "image",
+   "target": "oeso",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Oesophageal phase. Involuntary peristalsis toward the stomach."
+  },
+  {
+   "id": "img-high",
+   "type": "image",
+   "target": "high",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Oropharyngeal dysphagia. Difficulty starting the swallow, cough, nasal regurgitation; neurological, muscular or ENT causes."
+  },
+  {
+   "id": "img-low",
+   "type": "image",
+   "target": "low",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Oesophageal dysphagia. Food sticks behind the sternum; mechanical or motor disorders."
+  },
+  {
+   "id": "img-organic",
+   "type": "image",
+   "target": "organic",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Organic dysphagia. Obstruction (tumour, stricture): solids then liquids, constant and progressive."
+  },
+  {
+   "id": "img-motor",
+   "type": "image",
+   "target": "motor",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Motor dysphagia. Impaired peristalsis or LES relaxation: liquids as much as solids (paradoxical), intermittent."
+  },
+  {
+   "id": "img-egd",
+   "type": "image",
+   "target": "egd",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Upper GI endoscopy. First-line test: sees the mucosa and takes biopsies to exclude cancer."
   }
  ],
- "deeper": [],
- "resources": [],
+ "deeper": [
+  {
+   "title": "Why cancer makes solids stick first",
+   "html": "<p>A growing tumour narrows the lumen gradually. At first only a solid bolus is too large to pass; liquids still flow around it. As the stricture tightens, even liquids stop, and the patient ends up unable to swallow saliva. That steady, progressive pattern is the signature of mechanical obstruction.</p><p class='src'>Source: the lecture's history-taking and cancer slides.</p>"
+  },
+  {
+   "title": "Why achalasia makes liquids stick as much as solids",
+   "html": "<p>In achalasia the problem is not a narrow lumen but a sphincter that will not open and an oesophagus that no longer pushes. Everything, liquid or solid, depends on gravity and pressure building up above the closed sphincter. That is why liquids can be as difficult as solids from the start, and why symptoms come and go.</p><p class='src'>Source: the lecture's achalasia slide.</p>"
+  }
+ ],
+ "resources": [
+  {
+   "title": "Swallowing problems (NHS)",
+   "url": "https://www.nhs.uk/conditions/swallowing-problems-dysphagia/",
+   "kind": "Article",
+   "why": "Causes of dysphagia and when to get help.",
+   "note": ""
+  },
+  {
+   "title": "Oesophageal cancer (NHS)",
+   "url": "https://www.nhs.uk/conditions/oesophageal-cancer/",
+   "kind": "Article",
+   "why": "The diagnosis to exclude in progressive dysphagia.",
+   "note": ""
+  }
+ ],
  "checks": [],
- "sources": [],
+ "sources": [
+  {
+   "name": "Swallowing problems (NHS)",
+   "url": "https://www.nhs.uk/conditions/swallowing-problems-dysphagia/"
+  },
+  {
+   "name": "Oesophageal cancer (NHS)",
+   "url": "https://www.nhs.uk/conditions/oesophageal-cancer/"
+  }
+ ],
  "verified": "22 Sep 2026"
 };
 window.SINA = window.SINA || {subjects:[], lectures:{}};
@@ -5830,36 +6975,213 @@ SINA.lectures["semio-gi-gerd"] = {
  "title": "Gastro-oesophageal reflux disease",
  "sourceFile": "GERD semiology 26.27 CANVAS.pdf (Digestive semiology, Prof. O. Bahlaoui, 2026-2027)",
  "sourceUrl": "https://drive.google.com/file/d/14eyx9RZKtKEZdNjzowCdOv8Rzvs2MFtC/view?usp=drivesdk",
- "buildNote": "<strong>Short version.</strong> The full version, with more questions and extra reading, is coming soon. <strong>Built from the lecture slides.</strong> If your professor says something different, trust your professor.",
+ "buildNote": "<strong>Built from the lecture slides.</strong> Slides that only show pictures are covered in outline. If your professor says something different, trust your professor.",
  "summary": [
   {
    "id": "s0",
    "title": "The big picture",
-   "html": "<p>GERD is common, chronic and usually benign. <strong>Heartburn plus regurgitation</strong> is diagnosed clinically; <strong>alarm signs</strong> send the patient to endoscopy.</p>"
+   "html": "<p><strong>GERD</strong> is reflux of gastric contents into the oesophagus causing symptoms and/or complications. It is one of the commonest digestive complaints, chronic and relapsing, and severity depends on lesions and complications. <strong>Physiological reflux</strong> is transient, post-prandial, asymptomatic and harmless; <strong>pathological reflux</strong> is frequent or prolonged and causes symptoms, inflammation or complications.</p>"
   },
   {
    "id": "s1",
-   "title": "Mechanism and symptoms",
-   "html": "<p>The <strong>LES and diaphragmatic crura</strong> normally block reflux. Predisposing: LES hypotonia, <strong>hiatal hernia</strong>, obesity, pregnancy, slow emptying, fat, chocolate, caffeine, alcohol, mint, nitrates, calcium blockers, progesterone.</p><p><strong>Pyrosis</strong>, <strong>regurgitation</strong>, belching, water brash. Extra-digestive: hoarseness, laryngitis, dental erosions, nocturnal cough, asthma, pseudo-anginal pain.</p>"
+   "title": "Mechanism and risk factors",
+   "html": "<p>At rest the <strong>lower oesophageal sphincter (LES)</strong> and the <strong>diaphragmatic crura</strong> prevent reflux; weakness or transient relaxation lets contents rise. Factors: <strong>LES hypotonia</strong>, <strong>hiatal hernia (the commonest anatomical cause)</strong>, raised intra-abdominal pressure (obesity, pregnancy, tight clothing), delayed gastric emptying. Foods lowering LES tone: fats, chocolate, caffeine, alcohol, mint, spicy food. Drugs: nitrates, theophylline, anticholinergics, calcium channel blockers, progesterone, sedatives. Lifestyle: smoking, alcohol, large or late meals.</p>"
   },
   {
    "id": "s2",
-   "title": "Diagnosis and complications",
-   "html": "<p><div class='table-wrap'><table class='wide'><thead><tr><th scope='col'>Test</th><th scope='col'>Use</th></tr></thead><tbody><tr><th scope='row'>Endoscopy</th><td>Alarm signs, atypical, over 50, resistant; normal does not exclude (NERD)</td></tr><tr><th scope='row'>24-h pH-metry</th><td>Reference: pH under 4 over 5 percent of time</td></tr><tr><th scope='row'>Impedancemetry</th><td>Non-acid reflux</td></tr><tr><th scope='row'>Manometry</th><td>LES pressure, motility</td></tr><tr><th scope='row'>Barium swallow</th><td>Stricture, hernia</td></tr></tbody></table></div></p><p><strong>Alarm signs:</strong> dysphagia, odynophagia, bleeding, anaemia, weight loss, vomiting. <strong>Complications:</strong> oesophagitis, bleeding, stricture, <strong>Barrett's</strong> (cancer risk), respiratory.</p>"
+   "title": "Symptoms",
+   "html": "<p><strong>Pyrosis (heartburn)</strong>, the most characteristic: retrosternal burning rising from the epigastrium to the throat, post-prandial or nocturnal, triggered by bending forward, lying down or heavy meals, worsened by fatty or acidic food, chocolate, coffee, alcohol, mint, relieved by antacids. <strong>Regurgitation</strong>: effortless return of acid contents into the mouth, hot bitter taste. Others: epigastric burning, belching, bloating, nausea, early satiety, <strong>water brash</strong>.</p><p><strong>Extra-digestive</strong>: ENT and oral (dental erosions, gingivitis, chronic pharyngitis and laryngitis, globus, hoarseness); respiratory (chronic nocturnal cough, asthma-like symptoms from micro-aspiration, bronchitis, laryngospasm); <strong>non-cardiac chest pain</strong> mimicking angina. These atypical forms can delay diagnosis.</p>"
+  },
+  {
+   "id": "s3",
+   "title": "Diagnosis",
+   "html": "<p><strong>Typical forms (heartburn + regurgitation): the diagnosis is clinical.</strong> Tests are reserved for atypical or extra-digestive forms, alarm signs, poor response to treatment, age over 50 or long-standing reflux. <strong>Alarm signs</strong>: dysphagia, odynophagia, GI bleeding (haematemesis, melaena), iron-deficiency anaemia, weight loss, vomiting or obstruction; all require endoscopy.</p><p><strong>Upper GI endoscopy</strong> (alarm signs, atypical symptoms, age over 50, treatment failure) shows peptic oesophagitis, stricture or <strong>Barrett's oesophagus</strong>; a normal endoscopy does not exclude GERD (<strong>non-erosive reflux disease, NERD</strong>). <strong>24-hour pH-metry</strong> is the reference test: GERD confirmed if <strong>pH < 4 for more than 5% of the time</strong>; useful in atypical forms and NERD. Manometry (LES pressure, motility), impedance (non-acid reflux), barium swallow (stricture, hernia).</p>"
+  },
+  {
+   "id": "s4",
+   "title": "Complications",
+   "html": "<p>Peptic oesophagitis; bleeding (haematemesis, anaemia); <strong>peptic stricture</strong> with dysphagia; <strong>Barrett's oesophagus</strong> (metaplasia with cancer risk); respiratory complications (chronic cough, asthma, aspiration).</p>"
   }
  ],
  "exam": [
-  "Typical GERD (heartburn + regurgitation) is a clinical diagnosis.",
-  "Hiatal hernia: commonest anatomical cause.",
-  "Chocolate, fat, caffeine, nitrates lower LES tone.",
+  "GERD: reflux causing symptoms and/or complications.",
+  "Barrier: LES + diaphragmatic crura.",
+  "Hiatal hernia is the commonest anatomical cause.",
+  "Typical symptoms: pyrosis and regurgitation.",
+  "Typical forms: diagnosis is clinical.",
+  "Extra-digestive: chronic cough, hoarseness, dental erosions, non-cardiac chest pain.",
+  "Alarm signs → endoscopy.",
   "Normal endoscopy does not exclude GERD (NERD).",
-  "pH-metry: pH under 4 over 5 percent.",
-  "Barrett's: metaplasia, cancer risk.",
-  "Alarm signs: dysphagia, bleeding, anaemia, weight loss."
+  "pH-metry: pH < 4 for > 5% of the time.",
+  "Complications: oesophagitis, bleeding, stricture, Barrett's."
  ],
  "visual": {
   "kind": "model",
   "intro": "",
+  "figure": {
+   "viewBox": "0 0 760 420",
+   "alt": "Gastro-oesophageal reflux disease",
+   "caption": "Mechanism, symptoms, alarm signs and complications. Schematic drawn for this site.",
+   "base": "<defs><marker id=\"ah\" markerWidth=\"10\" markerHeight=\"8\" refX=\"9\" refY=\"4\" orient=\"auto\"><path d=\"M0,0 L10,4 L0,8 Z\" fill=\"#8a8a8a\"/></marker></defs><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"240\" y1=\"60\" x2=\"280\" y2=\"60\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"480\" y1=\"60\" x2=\"520\" y2=\"60\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"620\" y1=\"90\" x2=\"620\" y2=\"160\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"380\" y1=\"220\" x2=\"380\" y2=\"290\"/>",
+   "parts": {
+    "barrier": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2d7cf\" x=\"280\" y=\"30\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "LES + diaphragmatic",
+      "crura: anti-reflux barrier"
+     ],
+     "lx": 380.0,
+     "ly": 58.0
+    },
+    "factors": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#cfe3f2\" x=\"40\" y=\"30\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Risk factors: hiatal hernia,",
+      "obesity, pregnancy, drugs"
+     ],
+     "lx": 140.0,
+     "ly": 58.0
+    },
+    "typical": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d7edd2\" x=\"520\" y=\"30\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Typical: pyrosis +",
+      "regurgitation"
+     ],
+     "lx": 620.0,
+     "ly": 58.0
+    },
+    "extra": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2e2a8\" x=\"520\" y=\"160\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Extra-digestive: cough,",
+      "hoarseness, chest pain"
+     ],
+     "lx": 620.0,
+     "ly": 188.0
+    },
+    "alarm": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#e3d5f0\" x=\"280\" y=\"160\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Alarm signs →",
+      "endoscopy"
+     ],
+     "lx": 380.0,
+     "ly": 188.0
+    },
+    "comp": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f7d9b8\" x=\"40\" y=\"160\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Complications: oesophagitis,",
+      "stricture, Barrett's"
+     ],
+     "lx": 140.0,
+     "ly": 188.0
+    },
+    "ph": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d9ecec\" x=\"280\" y=\"290\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "24 h pH-metry:",
+      "pH < 4 > 5% of time"
+     ],
+     "lx": 380.0,
+     "ly": 318.0
+    }
+   },
+   "arrows": {
+    "barrier": [
+     {
+      "t": [
+       280.0,
+       38.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "factors": [
+     {
+      "t": [
+       40.0,
+       38.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "typical": [
+     {
+      "t": [
+       520.0,
+       38.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "extra": [
+     {
+      "t": [
+       520.0,
+       168.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "alarm": [
+     {
+      "t": [
+       280.0,
+       168.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "comp": [
+     {
+      "t": [
+       40.0,
+       168.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "ph": [
+     {
+      "t": [
+       280.0,
+       298.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ]
+   }
+  },
   "images": [
    {
     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Digestive_system_diagram_en.svg?width=760",
@@ -5873,12 +7195,12 @@ SINA.lectures["semio-gi-gerd"] = {
   {
    "q": "What is the most characteristic GERD symptom?",
    "options": [
+    "Diarrhoea",
     "Pyrosis (heartburn)",
-    "Dysphagia",
     "Hemoptysis",
-    "Diarrhoea"
+    "Dysphagia"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "Retrosternal burning rising to the throat, postprandial or nocturnal, triggered by bending or lying."
   },
   {
@@ -5886,8 +7208,8 @@ SINA.lectures["semio-gi-gerd"] = {
    "options": [
     "The pylorus",
     "The LES and diaphragmatic crura",
-    "The upper sphincter only",
-    "Saliva"
+    "Saliva",
+    "The upper sphincter only"
    ],
    "answer": 1,
    "why": "The lower oesophageal sphincter and the diaphragmatic crura form the anti-reflux barrier."
@@ -5895,10 +7217,10 @@ SINA.lectures["semio-gi-gerd"] = {
   {
    "q": "What is the most frequent anatomical cause of GERD?",
    "options": [
+    "Zenker's diverticulum",
     "Achalasia",
-    "Pyloric stenosis",
     "Hiatal hernia",
-    "Zenker's diverticulum"
+    "Pyloric stenosis"
    ],
    "answer": 2,
    "why": "Hiatal hernia is the most frequent anatomical cause."
@@ -5906,31 +7228,31 @@ SINA.lectures["semio-gi-gerd"] = {
   {
    "q": "Which food lowers LES tone?",
    "options": [
-    "Rice",
-    "Bread",
     "Apples",
-    "Chocolate"
+    "Chocolate",
+    "Rice",
+    "Bread"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "Fats, chocolate, caffeine, alcohol, mint and spicy foods lower LES tone."
   },
   {
    "q": "Which drug lowers LES tone?",
    "options": [
     "Paracetamol",
-    "Nitrates",
     "Amoxicillin",
+    "Nitrates",
     "Metformin"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "Nitrates, theophylline, anticholinergics, calcium channel blockers, progesterone, sedatives."
   },
   {
    "q": "Which is an extra-digestive GERD sign?",
    "options": [
-    "Jaundice",
     "Haematuria",
     "Tense ascites",
+    "Jaundice",
     "Nocturnal cough"
    ],
    "answer": 3,
@@ -5939,42 +7261,42 @@ SINA.lectures["semio-gi-gerd"] = {
   {
    "q": "When is the diagnosis of GERD clinical?",
    "options": [
+    "Never",
     "Heartburn plus regurgitation",
     "Only after endoscopy",
-    "Only after pH-metry",
-    "Never"
+    "Only after pH-metry"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "Typical forms are diagnosed clinically; tests are for atypical cases, red flags, poor response or age over 50."
   },
   {
    "q": "Does a normal endoscopy exclude GERD?",
    "options": [
-    "Yes, always",
-    "Only in children",
+    "Only after 50",
     "No, NERD exists",
-    "Only after 50"
+    "Only in children",
+    "Yes, always"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "Many patients have non-erosive reflux disease."
   },
   {
    "q": "What pH-metry result confirms GERD?",
    "options": [
-    "pH over 7 all day",
-    "pH under 2 once",
+    "pH under 4, over 5 percent",
     "pH under 6 at night",
-    "pH under 4, over 5 percent"
+    "pH under 2 once",
+    "pH over 7 all day"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "24-hour pH-metry is the reference test."
   },
   {
    "q": "Which test detects non-acid reflux?",
    "options": [
     "Impedancemetry",
-    "Manometry",
     "Barium swallow",
+    "Manometry",
     "Endoscopy"
    ],
    "answer": 0,
@@ -5994,12 +7316,12 @@ SINA.lectures["semio-gi-gerd"] = {
   {
    "q": "Which is a GERD alarm sign?",
    "options": [
-    "Heartburn",
-    "Dysphagia",
     "Regurgitation",
-    "Belching"
+    "Belching",
+    "Heartburn",
+    "Dysphagia"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "Dysphagia, odynophagia, GI bleeding, iron deficiency anaemia, weight loss, vomiting: endoscopy needed."
   },
   {
@@ -6015,6 +7337,233 @@ SINA.lectures["semio-gi-gerd"] = {
     1
    ],
    "why": "Obesity, pregnancy and tight clothing raise intra-abdominal pressure."
+  },
+  {
+   "q": "What prevents reflux at rest?",
+   "options": [
+    "Gastric acid",
+    "The pylorus",
+    "The upper oesophageal sphincter only",
+    "The LES and the diaphragmatic crura"
+   ],
+   "answer": 3,
+   "why": "Weakness or transient relaxation allows reflux."
+  },
+  {
+   "q": "The most frequent anatomical cause of GERD is:",
+   "options": [
+    "Hiatal hernia",
+    "Zenker's diverticulum",
+    "Achalasia",
+    "Pyloric stenosis"
+   ],
+   "answer": 0,
+   "why": "It displaces the LES from the crura."
+  },
+  {
+   "q": "Which food lowers LES tone?",
+   "options": [
+    "Water",
+    "Chocolate",
+    "Lean meat",
+    "Rice"
+   ],
+   "answer": 1,
+   "why": "Also fats, caffeine, alcohol, mint, spicy food."
+  },
+  {
+   "q": "Which drug can promote reflux?",
+   "options": [
+    "Paracetamol",
+    "Nitrates",
+    "Metformin",
+    "Amoxicillin"
+   ],
+   "answer": 1,
+   "why": "Also theophylline, anticholinergics, calcium channel blockers, progesterone."
+  },
+  {
+   "q": "What is the most characteristic symptom of GERD?",
+   "options": [
+    "Diarrhoea",
+    "Dysphagia",
+    "Haematemesis",
+    "Pyrosis (heartburn)"
+   ],
+   "answer": 3,
+   "why": "A retrosternal burning rising to the throat."
+  },
+  {
+   "q": "Water brash means:",
+   "options": [
+    "Nasal regurgitation",
+    "Diarrhoea",
+    "Vomiting water",
+    "Hypersalivation"
+   ],
+   "answer": 3,
+   "why": "An 'other digestive sign' of GERD."
+  },
+  {
+   "q": "Which is an extra-digestive manifestation of GERD?",
+   "options": [
+    "Chronic nocturnal cough",
+    "Jaundice",
+    "Haematuria",
+    "Ascites"
+   ],
+   "answer": 0,
+   "why": "Also hoarseness, dental erosions, non-cardiac chest pain."
+  },
+  {
+   "q": "In typical GERD (heartburn + regurgitation), the diagnosis is:",
+   "options": [
+    "Clinical",
+    "By barium swallow",
+    "Always by endoscopy",
+    "Always by pH-metry"
+   ],
+   "answer": 0,
+   "why": "Tests are reserved for specific situations."
+  },
+  {
+   "q": "Which is an alarm sign requiring endoscopy?",
+   "options": [
+    "Heartburn after a large meal",
+    "Belching",
+    "Regurgitation when lying down",
+    "Dysphagia"
+   ],
+   "answer": 3,
+   "why": "Also odynophagia, bleeding, anaemia, weight loss, vomiting."
+  },
+  {
+   "q": "A normal endoscopy in a patient with typical symptoms:",
+   "options": [
+    "Means achalasia",
+    "Means cancer",
+    "Does not exclude GERD (NERD)",
+    "Excludes GERD"
+   ],
+   "answer": 2,
+   "why": "Non-erosive reflux disease is common."
+  },
+  {
+   "q": "pH-metry confirms GERD when oesophageal pH is below 4 for more than:",
+   "options": [
+    "5% of the time",
+    "25% of the time",
+    "1% of the time",
+    "50% of the time"
+   ],
+   "answer": 0,
+   "why": "The reference test for acid reflux."
+  },
+  {
+   "q": "Which test detects non-acid reflux?",
+   "options": [
+    "pH-metry",
+    "Manometry",
+    "Impedance monitoring",
+    "Barium swallow"
+   ],
+   "answer": 2,
+   "why": "Manometry evaluates LES pressure and motility."
+  },
+  {
+   "q": "Barrett's oesophagus is:",
+   "options": [
+    "A stricture",
+    "An ulcer",
+    "Metaplasia with cancer risk",
+    "A diverticulum"
+   ],
+   "answer": 2,
+   "why": "A complication of long-standing reflux."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "barrier",
+   "options": [
+    "Extra-digestive forms",
+    "Anti-reflux barrier",
+    "pH monitoring",
+    "Typical symptoms"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: Anti-reflux barrier. The lower oesophageal sphincter and diaphragmatic crura prevent reflux at rest."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "factors",
+   "options": [
+    "Predisposing factors",
+    "Anti-reflux barrier",
+    "Alarm signs",
+    "pH monitoring"
+   ],
+   "answer": 0,
+   "why": "The arrow points to: Predisposing factors. LES hypotonia, hiatal hernia, raised abdominal pressure, slow gastric emptying, foods and drugs."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "typical",
+   "options": [
+    "pH monitoring",
+    "Alarm signs",
+    "Typical symptoms",
+    "Complications"
+   ],
+   "answer": 2,
+   "why": "The arrow points to: Typical symptoms. Pyrosis (retrosternal burning rising to the throat) and regurgitation."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "extra",
+   "options": [
+    "pH monitoring",
+    "Predisposing factors",
+    "Extra-digestive forms",
+    "Complications"
+   ],
+   "answer": 2,
+   "why": "The arrow points to: Extra-digestive forms. ENT, respiratory and non-cardiac chest pain."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "alarm",
+   "options": [
+    "Alarm signs",
+    "Extra-digestive forms",
+    "pH monitoring",
+    "Predisposing factors"
+   ],
+   "answer": 0,
+   "why": "The arrow points to: Alarm signs. Dysphagia, odynophagia, bleeding, anaemia, weight loss, vomiting: endoscopy required."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "comp",
+   "options": [
+    "Complications",
+    "Anti-reflux barrier",
+    "Typical symptoms",
+    "Extra-digestive forms"
+   ],
+   "answer": 0,
+   "why": "The arrow points to: Complications. Peptic oesophagitis, bleeding, peptic stricture, Barrett's oesophagus, respiratory complications."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "ph",
+   "options": [
+    "Typical symptoms",
+    "pH monitoring",
+    "Anti-reflux barrier",
+    "Complications"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: pH monitoring. Reference test: GERD confirmed if oesophageal pH is below 4 for more than 5% of the time."
   }
  ],
  "cards": [
@@ -6053,12 +7602,136 @@ SINA.lectures["semio-gi-gerd"] = {
    "type": "text",
    "front": "List the complications.",
    "back": "Peptic oesophagitis, bleeding (haematemesis, anaemia), peptic stricture (dysphagia), Barrett's oesophagus (cancer risk), respiratory complications (cough, asthma, aspiration)."
+  },
+  {
+   "id": "x0",
+   "type": "text",
+   "front": "Physiological vs pathological reflux?",
+   "back": "Physiological: transient, post-prandial, asymptomatic, no damage. Pathological: frequent or prolonged, causing symptoms, inflammation or complications."
+  },
+  {
+   "id": "x1",
+   "type": "text",
+   "front": "Predisposing factors for GERD?",
+   "back": "LES hypotonia, hiatal hernia, raised abdominal pressure (obesity, pregnancy, tight clothing), delayed emptying, foods and drugs, smoking, alcohol, late meals."
+  },
+  {
+   "id": "x2",
+   "type": "text",
+   "front": "Describe pyrosis.",
+   "back": "Retrosternal burning rising from the epigastrium to the throat; post-prandial or nocturnal; worse bending or lying; relieved by antacids."
+  },
+  {
+   "id": "x3",
+   "type": "text",
+   "front": "Extra-digestive manifestations of GERD?",
+   "back": "ENT/oral: dental erosions, pharyngitis, laryngitis, globus, hoarseness. Respiratory: nocturnal cough, asthma, bronchitis, laryngospasm. Non-cardiac chest pain."
+  },
+  {
+   "id": "x4",
+   "type": "text",
+   "front": "When are tests needed in GERD?",
+   "back": "Atypical or extra-digestive forms, alarm signs, poor treatment response, age > 50, long-standing reflux."
+  },
+  {
+   "id": "x5",
+   "type": "text",
+   "front": "Endoscopic findings in GERD?",
+   "back": "Peptic oesophagitis (erosions, ulcers), peptic stricture, Barrett's oesophagus; normal in NERD."
+  },
+  {
+   "id": "x6",
+   "type": "text",
+   "front": "Tests beyond endoscopy?",
+   "back": "24-h pH-metry (pH < 4 > 5% of time), manometry, impedance (non-acid reflux), barium swallow (stricture, hernia)."
+  },
+  {
+   "id": "img-barrier",
+   "type": "image",
+   "target": "barrier",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Anti-reflux barrier. The lower oesophageal sphincter and diaphragmatic crura prevent reflux at rest."
+  },
+  {
+   "id": "img-factors",
+   "type": "image",
+   "target": "factors",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Predisposing factors. LES hypotonia, hiatal hernia, raised abdominal pressure, slow gastric emptying, foods and drugs."
+  },
+  {
+   "id": "img-typical",
+   "type": "image",
+   "target": "typical",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Typical symptoms. Pyrosis (retrosternal burning rising to the throat) and regurgitation."
+  },
+  {
+   "id": "img-extra",
+   "type": "image",
+   "target": "extra",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Extra-digestive forms. ENT, respiratory and non-cardiac chest pain."
+  },
+  {
+   "id": "img-alarm",
+   "type": "image",
+   "target": "alarm",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Alarm signs. Dysphagia, odynophagia, bleeding, anaemia, weight loss, vomiting: endoscopy required."
+  },
+  {
+   "id": "img-comp",
+   "type": "image",
+   "target": "comp",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Complications. Peptic oesophagitis, bleeding, peptic stricture, Barrett's oesophagus, respiratory complications."
+  },
+  {
+   "id": "img-ph",
+   "type": "image",
+   "target": "ph",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "pH monitoring. Reference test: GERD confirmed if oesophageal pH is below 4 for more than 5% of the time."
   }
  ],
- "deeper": [],
- "resources": [],
+ "deeper": [
+  {
+   "title": "Why reflux is worse lying down and at night",
+   "html": "<p>Standing, gravity keeps gastric contents in the stomach and swallowed saliva washes the oesophagus. Lying down removes gravity, swallowing becomes rare during sleep, and acid stays in contact with the mucosa longer. That is why the lecture lists nocturnal symptoms, bending and lying down as classic triggers.</p><p class='src'>Source: the lecture's pyrosis slide.</p>"
+  },
+  {
+   "title": "Why GERD can cause a cough without heartburn",
+   "html": "<p>Tiny amounts of refluxed acid can reach the larynx and be aspirated into the airways, and acid in the lower oesophagus can trigger a vagal cough reflex. Some patients therefore present with chronic cough, hoarseness or asthma-like symptoms and little heartburn, which is why the lecture insists on considering GERD in chronic cough or dysphonia.</p><p class='src'>Source: the lecture's extra-digestive manifestations slides.</p>"
+  }
+ ],
+ "resources": [
+  {
+   "title": "Heartburn and acid reflux (NHS)",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "kind": "Article",
+   "why": "Symptoms, triggers and when to see a doctor.",
+   "note": ""
+  },
+  {
+   "title": "Barrett's oesophagus (NHS)",
+   "url": "https://www.nhs.uk/conditions/barretts-oesophagus/",
+   "kind": "Article",
+   "why": "The metaplastic complication of reflux.",
+   "note": ""
+  }
+ ],
  "checks": [],
- "sources": [],
+ "sources": [
+  {
+   "name": "Heartburn and acid reflux (NHS)",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/"
+  },
+  {
+   "name": "Barrett's oesophagus (NHS)",
+   "url": "https://www.nhs.uk/conditions/barretts-oesophagus/"
+  }
+ ],
  "verified": "22 Sep 2026"
 };
 window.SINA = window.SINA || {subjects:[], lectures:{}};
@@ -6069,41 +7742,214 @@ SINA.lectures["semio-gi-bleeding"] = {
  "title": "Gastrointestinal bleeding",
  "sourceFile": "GI BLEEDING SEMIO 26.27 CANVAS.pdf (Digestive semiology, Prof. O. Bahlaoui, 2026-2027)",
  "sourceUrl": "https://drive.google.com/file/d/1rSH7BDxM7SwwWMMLyhBGbrFFdNnoKRo8/view?usp=drivesdk",
- "buildNote": "<strong>Short version.</strong> The full version, with more questions and extra reading, is coming soon. <strong>Built from the lecture slides.</strong> If your professor says something different, trust your professor.",
+ "buildNote": "<strong>Built from the lecture slides.</strong> Slides that only show pictures are covered in outline. If your professor says something different, trust your professor.",
  "summary": [
   {
    "id": "s0",
    "title": "The big picture",
-   "html": "<p>GI bleeding is a <strong>vital emergency</strong>: assess severity and stabilise first, then find where and why, with <strong>endoscopy</strong> as the cornerstone.</p>"
+   "html": "<p><strong>GI bleeding</strong> is blood loss through the digestive tract, visible or occult; a <strong>medical and surgical emergency</strong>. Management: assess severity, stabilise and resuscitate, find the cause, give specific (often endoscopic) treatment. The approach has three levels: <strong>positive</strong> (is it digestive?), <strong>topographic</strong> (upper or lower?), <strong>etiological</strong> (which lesion?).</p>"
   },
   {
    "id": "s1",
-   "title": "Forms and diagnosis",
-   "html": "<p><div class='table-wrap'><table class='wide'><thead><tr><th scope='col'>Form</th><th scope='col'>Meaning</th></tr></thead><tbody><tr><th scope='row'>Haematemesis</th><td>Vomited blood, above the angle of Treitz</td></tr><tr><th scope='row'>Melena</th><td>Black tarry digested blood, mostly upper, after 6 to 8 h</td></tr><tr><th scope='row'>Haematochezia</th><td>Bright red rectal blood, lower (or massive upper)</td></tr><tr><th scope='row'>Occult</th><td>Iron deficiency anaemia, positive FOBT</td></tr></tbody></table></div></p><p>Exclude hemoptysis, swallowed epistaxis, gum bleeding, and iron or bismuth stools.</p>"
+   "title": "Positive diagnosis",
+   "html": "<p><strong>Haematemesis</strong>: vomiting of red or black blood, sometimes with food or clots, often after nausea; a lesion above the <strong>angle of Treitz</strong>. Differentials: haemoptysis (frothy, after coughing), swallowed epistaxis, gum bleeding, coloured food or drugs. <strong>Melaena</strong>: black, tarry, foul-smelling stools of digested blood; usually upper GI, but possibly small bowel or right colon; appears <strong>6 to 8 hours</strong> after bleeding starts; differentials: iron, charcoal, bismuth, some foods. <strong>Haematochezia</strong>: bright red blood per anus, sometimes clots; suggests colon, rectum or anus, or a <strong>massive upper bleed with rapid transit</strong>. <strong>Occult bleeding</strong>: chronic minimal loss shown by a faecal occult blood test or microcytic anaemia; a massive non-externalised bleed can present as <strong>shock without visible blood</strong> (gastric aspiration or rectal exam).</p>"
   },
   {
    "id": "s2",
-   "title": "Severity and emergency",
-   "html": "<p>Pallor, cold extremities, tachycardia; severe: hypotension, oliguria, confusion, mottling. A <strong>normal Hb does not exclude</strong> recent bleeding. Two large-bore lines, group and crossmatch, filling and transfusion, oxygen, gastric tube, catheter, monitoring.</p>"
+   "title": "Severity and emergency measures",
+   "html": "<p><strong>Warning signs</strong>: pallor, cold extremities, restlessness, tachycardia; <strong>severe</strong>: hypotension, polypnoea, oliguria, altered consciousness, mottling. Haemoglobin and haematocrit fall, but <strong>a normal haemoglobin does not exclude recent bleeding</strong>. Haematemesis with melaena or rectal bleeding means abundant bleeding.</p><p><strong>Emergency</strong>: emergency or intensive care unit; <strong>two large-bore IV lines</strong>; CBC, blood group and cross-match, ionogram, creatinine, liver tests; crystalloids and transfusion as needed; oxygen; gastric tube and urinary catheter; continuous monitoring of blood pressure, pulse, urine output and consciousness.</p>"
   },
   {
    "id": "s3",
-   "title": "Causes and treatment",
-   "html": "<p><strong>Upper:</strong> peptic ulcer, varices, <strong>Mallory-Weiss</strong>, gastritis, cancer, NSAIDs. <strong>Lower:</strong> haemorrhoids, fissure, cancer and polyps, diverticula, angiodysplasia, IBD, <strong>Meckel's</strong> (young). EGD finds the source in over 90 percent; colonoscopy for lower bleeding. Treatment: PPIs, endoscopic haemostasis, <strong>band ligation</strong> for varices, surgery if refractory.</p>"
+   "title": "Etiological diagnosis",
+   "html": "<p><strong>History</strong>: peptic ulcer, liver disease, <strong>anticoagulants, NSAIDs, aspirin</strong>; sudden or progressive onset, pain; asthenia, weight loss, diarrhoea. <strong>Examination</strong>: epigastric tenderness (ulcer, gastritis), signs of liver disease or portal hypertension (varices), <strong>rectal examination</strong> (melaena, haematochezia, haemorrhoids, fissure, mass). <strong>Upper GI endoscopy</strong>: first line in any suspected upper bleed, urgent after stabilisation; diagnostic, prognostic and therapeutic; finds the source in <strong>over 90%</strong>. Lower: anoscopy and rectoscopy, <strong>colonoscopy</strong> (key test); enteroscopy or capsule if no source.</p><p><strong>Upper causes</strong>: peptic ulcer, oesophageal or gastric varices (portal hypertension), <strong>Mallory-Weiss tear</strong> (after vomiting), erosive gastritis or duodenitis, cancer, stress ulcers, NSAID or aspirin lesions. <strong>Lower causes</strong>: anal (haemorrhoids, fissure, fistula, cancer); colorectal (cancer, polyps, diverticular disease, angiodysplasia, IBD); small bowel (vascular malformations, tumours, <strong>Meckel's diverticulum in the young</strong>).</p>"
+  },
+  {
+   "id": "s4",
+   "title": "Treatment and prognosis",
+   "html": "<p><strong>Supportive</strong>: volume resuscitation, oxygen, transfusion, <strong>proton pump inhibitors</strong> for a suspected peptic cause. <strong>Endoscopic haemostasis</strong>: injection (adrenaline, sclerosant), thermal coagulation, haemoclips, <strong>variceal band ligation</strong>; surgery for refractory bleeding or perforation. <strong>Prognosis</strong> depends on the cause (variceal and malignant worse), initial severity, comorbidities and speed of management. Causes vary with age: ulcers and varices in adults, polyps or cancer in the elderly, Meckel's in the young.</p>"
   }
  ],
  "exam": [
-  "Haematemesis: above Treitz; melena after 6 to 8 h.",
-  "Haematochezia: lower, or massive upper.",
+  "GI bleeding is a vital emergency: assess severity first.",
+  "Haematemesis: lesion above the angle of Treitz.",
+  "Melaena: digested blood, usually upper GI, appears 6-8 h after onset.",
+  "Haematochezia: usually lower GI, or massive upper bleed.",
   "Normal Hb does not exclude recent bleeding.",
-  "Two large-bore IV lines.",
-  "EGD first; finds source over 90 percent.",
-  "Mallory-Weiss after vomiting; Meckel's in the young.",
-  "Varices: band ligation."
+  "Two large-bore IV lines, group and cross-match, fluids, transfusion, oxygen.",
+  "Upper endoscopy first line; finds the source in > 90%.",
+  "Colonoscopy is the key test for lower bleeding.",
+  "Upper causes: ulcer, varices, Mallory-Weiss, gastritis, cancer, NSAIDs.",
+  "Lower causes: haemorrhoids, fissure, cancer, polyps, diverticula, angiodysplasia, IBD, Meckel's.",
+  "Endoscopic haemostasis: injection, coagulation, clips, band ligation."
  ],
  "visual": {
   "kind": "model",
   "intro": "",
+  "figure": {
+   "viewBox": "0 0 760 420",
+   "alt": "GI bleeding approach",
+   "caption": "Positive, topographic, then etiological diagnosis. Schematic drawn for this site.",
+   "base": "<defs><marker id=\"ah\" markerWidth=\"10\" markerHeight=\"8\" refX=\"9\" refY=\"4\" orient=\"auto\"><path d=\"M0,0 L10,4 L0,8 Z\" fill=\"#8a8a8a\"/></marker></defs><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"120\" y1=\"90\" x2=\"140\" y2=\"170\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"240\" y1=\"200\" x2=\"280\" y2=\"200\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"480\" y1=\"200\" x2=\"520\" y2=\"200\"/>",
+   "parts": {
+    "hema": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2d7cf\" x=\"40\" y=\"30\" width=\"160\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Haematemesis:",
+      "upper GI"
+     ],
+     "lx": 120.0,
+     "ly": 58.0
+    },
+    "mel": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#cfe3f2\" x=\"215\" y=\"30\" width=\"160\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Melaena:",
+      "usually upper"
+     ],
+     "lx": 295.0,
+     "ly": 58.0
+    },
+    "hemato": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d7edd2\" x=\"390\" y=\"30\" width=\"160\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Haematochezia:",
+      "usually lower"
+     ],
+     "lx": 470.0,
+     "ly": 58.0
+    },
+    "occ": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2e2a8\" x=\"565\" y=\"30\" width=\"160\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Occult: anaemia,",
+      "FOBT"
+     ],
+     "lx": 645.0,
+     "ly": 58.0
+    },
+    "sev": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#e3d5f0\" x=\"40\" y=\"170\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Assess severity:",
+      "shock signs"
+     ],
+     "lx": 140.0,
+     "ly": 198.0
+    },
+    "resus": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f7d9b8\" x=\"280\" y=\"170\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "2 large IV lines,",
+      "fluids, transfusion"
+     ],
+     "lx": 380.0,
+     "ly": 198.0
+    },
+    "egd": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d9ecec\" x=\"520\" y=\"170\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Endoscopy: diagnosis",
+      "and haemostasis"
+     ],
+     "lx": 620.0,
+     "ly": 198.0
+    }
+   },
+   "arrows": {
+    "hema": [
+     {
+      "t": [
+       40.0,
+       38.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "mel": [
+     {
+      "t": [
+       215.0,
+       38.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "hemato": [
+     {
+      "t": [
+       390.0,
+       38.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "occ": [
+     {
+      "t": [
+       565.0,
+       38.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "sev": [
+     {
+      "t": [
+       40.0,
+       178.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "resus": [
+     {
+      "t": [
+       280.0,
+       178.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "egd": [
+     {
+      "t": [
+       520.0,
+       178.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ]
+   }
+  },
   "images": [
    {
     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Digestive_system_diagram_en.svg?width=760",
@@ -6117,23 +7963,23 @@ SINA.lectures["semio-gi-bleeding"] = {
   {
    "q": "What is melena?",
    "options": [
-    "Black tarry digested blood",
-    "Bright red rectal blood",
+    "Coughed-up blood",
     "Vomited blood",
-    "Coughed-up blood"
+    "Bright red rectal blood",
+    "Black tarry digested blood"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "Melena: black, tarry, foul stools of digested blood. Haematochezia: bright red rectal blood."
   },
   {
    "q": "Haematemesis indicates a lesion above what?",
    "options": [
-    "The ileocaecal valve",
-    "The angle of Treitz",
+    "The rectum",
     "The pylorus only",
-    "The rectum"
+    "The angle of Treitz",
+    "The ileocaecal valve"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "Haematemesis points to the upper GI tract, proximal to the angle of Treitz."
   },
   {
@@ -6150,9 +7996,9 @@ SINA.lectures["semio-gi-bleeding"] = {
   {
    "q": "What can mimic melena?",
    "options": [
-    "Vitamin C",
-    "Antibiotics",
     "Insulin",
+    "Antibiotics",
+    "Vitamin C",
     "Iron supplements"
    ],
    "answer": 3,
@@ -6161,67 +8007,67 @@ SINA.lectures["semio-gi-bleeding"] = {
   {
    "q": "What can haematochezia also indicate?",
    "options": [
-    "Minor gastritis",
     "Massive upper GI bleeding",
-    "Occult bleeding",
-    "Hemoptysis"
+    "Minor gastritis",
+    "Hemoptysis",
+    "Occult bleeding"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "Usually lower tract, but massive upper bleeding with fast transit can cause it."
   },
   {
    "q": "How is occult bleeding revealed?",
    "options": [
-    "Haematemesis",
-    "Melena",
     "Haematochezia",
-    "Anaemia or FOBT"
+    "Melena",
+    "Anaemia or FOBT",
+    "Haematemesis"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "Chronic minimal loss shows as iron deficiency anaemia or a positive faecal occult blood test."
   },
   {
    "q": "Does a normal haemoglobin rule out recent bleeding?",
    "options": [
-    "No",
     "Yes",
     "Only in children",
+    "No",
     "Only if melena"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "Haemoglobin takes time to fall after acute bleeding."
   },
   {
    "q": "How many IV lines are placed in severe GI bleeding?",
    "options": [
-    "One small line",
     "None",
-    "Two large-bore lines",
-    "Four central lines"
+    "Four central lines",
+    "One small line",
+    "Two large-bore lines"
    ],
-   "answer": 2,
+   "answer": 3,
    "why": "Two large-bore lines for filling and transfusion, plus group, crossmatch and bloods."
   },
   {
    "q": "What is the first-line exam for upper GI bleeding?",
    "options": [
+    "Urgent upper endoscopy",
     "Colonoscopy",
-    "CT scan",
     "Capsule endoscopy",
-    "Urgent upper endoscopy"
+    "CT scan"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "EGD after stabilisation finds the source in over 90 percent and can treat it."
   },
   {
    "q": "What causes a Mallory-Weiss tear?",
    "options": [
-    "Vomiting",
+    "Crohn's disease",
     "NSAIDs",
     "Portal hypertension",
-    "Crohn's disease"
+    "Vomiting"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "A mucosal tear at the oesophagogastric junction after vomiting."
   },
   {
@@ -6229,19 +8075,19 @@ SINA.lectures["semio-gi-bleeding"] = {
    "options": [
     "Diverticular disease",
     "Colorectal cancer",
-    "Meckel's diverticulum",
-    "Angiodysplasia"
+    "Angiodysplasia",
+    "Meckel's diverticulum"
    ],
-   "answer": 2,
+   "answer": 3,
    "why": "Ulcers and varices in adults, polyps or cancer in the elderly, Meckel's in the young."
   },
   {
    "q": "Which endoscopic treatment is used for varices?",
    "options": [
-    "Hemoclips only",
+    "Thermal probe",
     "Band ligation",
-    "Adrenaline only",
-    "Thermal probe"
+    "Hemoclips only",
+    "Adrenaline only"
    ],
    "answer": 1,
    "why": "Variceal band ligation; injection, thermal coagulation and clips for other lesions."
@@ -6259,6 +8105,244 @@ SINA.lectures["semio-gi-bleeding"] = {
     1
    ],
    "why": "Pallor, cold extremities, tachycardia; severe: hypotension, polypnoea, oliguria, altered consciousness, mottling."
+  },
+  {
+   "q": "Haematemesis indicates a lesion located:",
+   "options": [
+    "Below the angle of Treitz",
+    "Above the angle of Treitz",
+    "In the lungs",
+    "In the rectum"
+   ],
+   "answer": 1,
+   "why": "The upper GI tract."
+  },
+  {
+   "q": "Which feature distinguishes haemoptysis from haematemesis?",
+   "options": [
+    "Black blood mixed with food",
+    "Preceding nausea and retching",
+    "Frothy blood after coughing",
+    "Clots mixed with food debris"
+   ],
+   "answer": 2,
+   "why": "Haematemesis follows nausea and may contain food."
+  },
+  {
+   "q": "How long after bleeding starts does melaena appear?",
+   "options": [
+    "Immediately",
+    "3 days",
+    "1 week",
+    "6 to 8 hours"
+   ],
+   "answer": 3,
+   "why": "Time for blood to be digested."
+  },
+  {
+   "q": "Which can mimic melaena?",
+   "options": [
+    "Iron supplements",
+    "Paracetamol",
+    "Antibiotics",
+    "Beetroot only"
+   ],
+   "answer": 0,
+   "why": "Also charcoal, bismuth and some foods."
+  },
+  {
+   "q": "Bright red rectal blood with shock may come from:",
+   "options": [
+    "A massive upper GI bleed with rapid transit",
+    "Only haemorrhoids, never higher lesions",
+    "Only colon cancer in the elderly",
+    "Only a Mallory-Weiss tear"
+   ],
+   "answer": 0,
+   "why": "Haematochezia usually suggests a lower source."
+  },
+  {
+   "q": "Why can a normal haemoglobin be misleading?",
+   "options": [
+    "It measures iron rather than blood loss",
+    "In acute bleeding, haemodilution has not yet occurred",
+    "Haemoglobin rises in acute bleeding",
+    "The analyser is often inaccurate"
+   ],
+   "answer": 1,
+   "why": "A normal Hb does not rule out recent bleeding."
+  },
+  {
+   "q": "Which is a sign of severe bleeding?",
+   "options": [
+    "Hypotension, oliguria, altered consciousness",
+    "Normal pulse and warm extremities",
+    "Mild pallor with a normal pulse",
+    "Abdominal bloating without pallor"
+   ],
+   "answer": 0,
+   "why": "Also polypnoea and mottling."
+  },
+  {
+   "q": "The first emergency measure is to place:",
+   "options": [
+    "A nasogastric tube only",
+    "Nothing until endoscopy",
+    "A central line only",
+    "Two large-bore peripheral IV lines"
+   ],
+   "answer": 3,
+   "why": "For fluids and transfusion."
+  },
+  {
+   "q": "Upper GI endoscopy identifies the source in:",
+   "options": [
+    "Over 90%",
+    "100%",
+    "About 60%",
+    "About 30%"
+   ],
+   "answer": 0,
+   "why": "It is diagnostic, prognostic and therapeutic."
+  },
+  {
+   "q": "A tear after repeated vomiting is:",
+   "options": [
+    "Barrett's oesophagus",
+    "Boerhaave syndrome",
+    "Mallory-Weiss tear",
+    "Zenker's diverticulum"
+   ],
+   "answer": 2,
+   "why": "A mucosal rupture causing haematemesis."
+  },
+  {
+   "q": "Which is a lower GI bleeding cause typical in young patients?",
+   "options": [
+    "Meckel's diverticulum",
+    "Angiodysplasia",
+    "Diverticular disease",
+    "Colon cancer"
+   ],
+   "answer": 0,
+   "why": "Polyps and cancer are commoner in the elderly."
+  },
+  {
+   "q": "Which endoscopic technique treats oesophageal varices?",
+   "options": [
+    "Capsule",
+    "Band ligation",
+    "Haemoclips only",
+    "Colonoscopy"
+   ],
+   "answer": 1,
+   "why": "Other techniques: injection, thermal coagulation, clips."
+  },
+  {
+   "q": "Which drug is given for a suspected peptic ulcer bleed?",
+   "options": [
+    "Proton pump inhibitor",
+    "Anticoagulant",
+    "Aspirin",
+    "NSAID"
+   ],
+   "answer": 0,
+   "why": "NSAIDs and aspirin are causes."
+  },
+  {
+   "q": "Which causes carry the worst prognosis?",
+   "options": [
+    "Anal fissure",
+    "Haemorrhoidal bleeding",
+    "Variceal and malignant bleeding",
+    "Erosive gastritis"
+   ],
+   "answer": 2,
+   "why": "Along with severity, comorbidities and delay."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "hema",
+   "options": [
+    "Severity",
+    "Emergency measures",
+    "Haematochezia",
+    "Haematemesis"
+   ],
+   "answer": 3,
+   "why": "The arrow points to: Haematemesis. Vomiting red or black blood; lesion above the angle of Treitz."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "mel",
+   "options": [
+    "Haematochezia",
+    "Haematemesis",
+    "Melaena",
+    "Severity"
+   ],
+   "answer": 2,
+   "why": "The arrow points to: Melaena. Black, tarry, smelly stools of digested blood; usually upper GI; appears 6-8 h after bleeding starts."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "hemato",
+   "options": [
+    "Endoscopy",
+    "Haematochezia",
+    "Emergency measures",
+    "Occult bleeding"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: Haematochezia. Bright red blood per anus; usually lower GI, or massive upper bleeding."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "occ",
+   "options": [
+    "Endoscopy",
+    "Occult bleeding",
+    "Emergency measures",
+    "Haematochezia"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: Occult bleeding. Revealed only by anaemia or a positive faecal occult blood test."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "sev",
+   "options": [
+    "Melaena",
+    "Haematochezia",
+    "Severity",
+    "Endoscopy"
+   ],
+   "answer": 2,
+   "why": "The arrow points to: Severity. Pallor, cold extremities, tachycardia; then hypotension, oliguria, confusion, mottling."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "resus",
+   "options": [
+    "Severity",
+    "Haematochezia",
+    "Haematemesis",
+    "Emergency measures"
+   ],
+   "answer": 3,
+   "why": "The arrow points to: Emergency measures. ICU, two large-bore IV lines, bloods and cross-match, fluids, oxygen, monitoring."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "egd",
+   "options": [
+    "Endoscopy",
+    "Emergency measures",
+    "Melaena",
+    "Occult bleeding"
+   ],
+   "answer": 0,
+   "why": "The arrow points to: Endoscopy. Upper endoscopy finds the source in over 90%; colonoscopy for lower bleeding; treats by injection, coagulation, clips, banding."
   }
  ],
  "cards": [
@@ -6303,11 +8387,141 @@ SINA.lectures["semio-gi-bleeding"] = {
    "type": "text",
    "front": "How is GI bleeding treated?",
    "back": "Resuscitation, oxygen, transfusion, PPIs if peptic. Endoscopic haemostasis: injection (adrenaline, sclerosant), thermal coagulation, clips, variceal band ligation. Surgery for refractory bleeding or perforation. Prognosis is worse with varices and cancer."
+  },
+  {
+   "id": "x0",
+   "type": "text",
+   "front": "Four types of GI bleeding?",
+   "back": "Haematemesis (vomiting blood), melaena (black tarry stools), haematochezia (bright red rectal blood), occult (anaemia or positive FOBT)."
+  },
+  {
+   "id": "x1",
+   "type": "text",
+   "front": "Three levels of diagnosis?",
+   "back": "Positive (is it digestive?), topographic (upper or lower?), etiological (which lesion?)."
+  },
+  {
+   "id": "x2",
+   "type": "text",
+   "front": "Differentials of haematemesis and melaena?",
+   "back": "Haematemesis: haemoptysis, swallowed epistaxis, gum bleeding, coloured food. Melaena: iron, charcoal, bismuth, foods."
+  },
+  {
+   "id": "x3",
+   "type": "text",
+   "front": "Signs of severity in GI bleeding?",
+   "back": "Warning: pallor, cold extremities, restlessness, tachycardia. Severe: hypotension, polypnoea, oliguria, altered consciousness, mottling."
+  },
+  {
+   "id": "x4",
+   "type": "text",
+   "front": "Emergency measures?",
+   "back": "ICU/emergency admission, two large-bore IV lines, CBC, group and cross-match, ionogram, creatinine, liver tests, fluids/transfusion, oxygen, gastric tube, urinary catheter, monitoring."
+  },
+  {
+   "id": "x5",
+   "type": "text",
+   "front": "Main upper GI bleeding causes?",
+   "back": "Peptic ulcer, varices, Mallory-Weiss tear, erosive gastritis/duodenitis, cancer, stress ulcers, NSAIDs/aspirin."
+  },
+  {
+   "id": "x6",
+   "type": "text",
+   "front": "Main lower GI bleeding causes?",
+   "back": "Anal (haemorrhoids, fissure, fistula, cancer), colorectal (cancer, polyps, diverticula, angiodysplasia, IBD), small bowel (malformations, tumours, Meckel's)."
+  },
+  {
+   "id": "x7",
+   "type": "text",
+   "front": "Endoscopic haemostasis options?",
+   "back": "Injection (adrenaline, sclerosant), thermal coagulation, haemoclips, variceal band ligation; surgery if refractory or perforated."
+  },
+  {
+   "id": "img-hema",
+   "type": "image",
+   "target": "hema",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Haematemesis. Vomiting red or black blood; lesion above the angle of Treitz."
+  },
+  {
+   "id": "img-mel",
+   "type": "image",
+   "target": "mel",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Melaena. Black, tarry, smelly stools of digested blood; usually upper GI; appears 6-8 h after bleeding starts."
+  },
+  {
+   "id": "img-hemato",
+   "type": "image",
+   "target": "hemato",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Haematochezia. Bright red blood per anus; usually lower GI, or massive upper bleeding."
+  },
+  {
+   "id": "img-occ",
+   "type": "image",
+   "target": "occ",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Occult bleeding. Revealed only by anaemia or a positive faecal occult blood test."
+  },
+  {
+   "id": "img-sev",
+   "type": "image",
+   "target": "sev",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Severity. Pallor, cold extremities, tachycardia; then hypotension, oliguria, confusion, mottling."
+  },
+  {
+   "id": "img-resus",
+   "type": "image",
+   "target": "resus",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Emergency measures. ICU, two large-bore IV lines, bloods and cross-match, fluids, oxygen, monitoring."
+  },
+  {
+   "id": "img-egd",
+   "type": "image",
+   "target": "egd",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Endoscopy. Upper endoscopy finds the source in over 90%; colonoscopy for lower bleeding; treats by injection, coagulation, clips, banding."
   }
  ],
- "deeper": [],
- "resources": [],
+ "deeper": [
+  {
+   "title": "Why haemoglobin can be normal in a major bleed",
+   "html": "<p>Blood is lost whole: red cells and plasma leave together, so the concentration of haemoglobin is unchanged at first. It only falls hours later, when fluid from the tissues and infusions dilute the remaining blood. Pulse, blood pressure and perfusion therefore judge the severity of an acute bleed better than the first haemoglobin.</p><p class='src'>Source: the lecture's biological evaluation slide.</p>"
+  },
+  {
+   "title": "Why melaena is black",
+   "html": "<p>Blood that passes slowly through the stomach and small bowel is exposed to acid and bacteria, which turn haemoglobin into black haematin. That takes hours, which is why melaena appears 6 to 8 hours after an upper bleed. Blood from the lower colon has no time to change and stays red.</p><p class='src'>Source: the lecture's melaena slide.</p>"
+  }
+ ],
+ "resources": [
+  {
+   "title": "Stomach ulcer (NHS)",
+   "url": "https://www.nhs.uk/conditions/stomach-ulcer/",
+   "kind": "Article",
+   "why": "The commonest cause of upper GI bleeding.",
+   "note": ""
+  },
+  {
+   "title": "Piles (haemorrhoids) (NHS)",
+   "url": "https://www.nhs.uk/conditions/piles-haemorrhoids/",
+   "kind": "Article",
+   "why": "A common cause of bright red rectal blood.",
+   "note": ""
+  }
+ ],
  "checks": [],
- "sources": [],
+ "sources": [
+  {
+   "name": "Stomach ulcer (NHS)",
+   "url": "https://www.nhs.uk/conditions/stomach-ulcer/"
+  },
+  {
+   "name": "Piles (haemorrhoids) (NHS)",
+   "url": "https://www.nhs.uk/conditions/piles-haemorrhoids/"
+  }
+ ],
  "verified": "22 Sep 2026"
 };

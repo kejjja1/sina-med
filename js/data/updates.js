@@ -1,8 +1,13 @@
 /* What's new. Newest entry first. Add one block per update.
    date: what people see. items: short lines. */
 window.SINA = window.SINA || { subjects: [], lectures: {} };
-SINA.updated = "22 September 2026";
+SINA.updated = "23 September 2026";
 SINA.updates = [
+  { date: "23 September 2026", items: [
+    "The menu now opens as an overlay on every screen: it slides in over the page with a dimmed background, and the page and the menu button no longer move.",
+    "First Aid (all 10 lectures), six Clinical Biochemistry lectures and four GI Semiology lectures are now full versions: longer summaries built from the slides, a labelled diagram with picture questions, many more questions and flashcards, Go deeper reading and trusted resources.",
+    "Checked every S3 lecture against the Drive: all are on the site. Source links for ten Anatomy 3 lectures now open the current slide files, and the Semiology mock exam now opens the right file."
+  ]},
   { date: "22 September 2026", items: [
     "The menu now slides in and out smoothly, and the page eases over when you pin or hide it on a computer.",
     "New Useful apps section on the home page (and in the menu): Gizmo and Daily Anatomy Flashcards.",

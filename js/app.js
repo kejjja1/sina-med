@@ -203,11 +203,11 @@
     drawer.innerHTML = h;
     drawer.scrollTop = 0;
     drawer.querySelector(".dclose").addEventListener("click", function () {
-      if (document.body.classList.contains("pinned")) setPinned(false); else closeDrawer();
+      closeDrawer();
     });
     drawer.querySelectorAll("a").forEach(function (a) { a.addEventListener("click", closeDrawer); });
     var dc = drawer.querySelector(".dclose");
-    if (dc) dc.textContent = document.body.classList.contains("pinned") ? "Hide" : "Close";
+    if (dc) dc.textContent = "Close";
     drawer.querySelectorAll(".accbtn").forEach(function (btn) {
       btn.addEventListener("click", function () {
         var acc = btn.parentNode, open = !acc.classList.contains("open");
@@ -240,24 +240,11 @@
     menuBtn.setAttribute("aria-expanded", "false");
     menuBtn.focus({ preventScroll: true });
   }
-  var DESKTOP = function () { return window.matchMedia("(min-width: 60rem)").matches; };
-  function setPinned(on) {
-    store.set("sina:pinned", on);
-    document.body.classList.toggle("pinned", on);
-    if (on) renderDrawer();
-    showDrawer(on, false);
-    document.body.classList.remove("noscroll");
-    menuBtn.setAttribute("aria-expanded", String(on));
-  }
+  /* the menu is always an overlay: it never moves or resizes the page */
   function applyLayout() {
-    if (DESKTOP()) { if (!document.body.classList.contains("pinned") && !isOpen()) setPinned(store.get("sina:pinned", true)); else if (isOpen() && !document.body.classList.contains("pinned")) setPinned(true); }
-    else if (document.body.classList.contains("pinned")) { document.body.classList.remove("pinned"); showDrawer(false, false); menuBtn.setAttribute("aria-expanded", "false"); }
+    if (document.body.classList.contains("pinned")) { document.body.classList.remove("pinned"); showDrawer(false, false); menuBtn.setAttribute("aria-expanded", "false"); }
   }
-  var rsz; window.addEventListener("resize", function () { clearTimeout(rsz); rsz = setTimeout(applyLayout, 120); });
-  menuBtn.addEventListener("click", function () {
-    if (DESKTOP()) { setPinned(!document.body.classList.contains("pinned")); return; }
-    isOpen() ? closeDrawer() : openDrawer();
-  });
+  menuBtn.addEventListener("click", function () { isOpen() ? closeDrawer() : openDrawer(); });
   backdrop.addEventListener("click", closeDrawer);
   document.addEventListener("keydown", function (e) { if (e.key === "Escape") { closeDrawer(); hideSearch(); } });
   drawer.querySelector && 0;

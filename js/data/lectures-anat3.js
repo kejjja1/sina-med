@@ -5,8 +5,8 @@ SINA.lectures["anat3-orbit"] = {
  "subject": "anat3",
  "group": "Face and orbit",
  "title": "The orbit: osteology and myology",
- "sourceFile": "1. Osteology of the orbit.pptx (Facio-Maxillary Module, CM1, 2025-26)",
- "sourceUrl": "https://drive.google.com/file/d/1CWrYVfc7FBfNMNYLl13cBPVSgAdQ55MR/view?usp=drivesdk",
+ "sourceFile": "1. Osteology of the orbit.pdf (Facio-Maxillary Module, CM1, 2025-26)",
+ "sourceUrl": "https://drive.google.com/file/d/1TbWitUZWJ2CvpTh0RIYK3vscePsgzNzV/view?usp=drivesdk",
  "buildNote": "<strong>Built from the lecture slides.</strong> This page follows the lecture: orbital margins, walls, foramina and fissures, optic canal, and the muscle attachments. The wording of the slides was compared with the pictures on them, and every fact was cross-checked against at least two references, listed at the bottom. The diagrams are schematics drawn for this site. If your professor says something different, trust your professor.",
  "summary": [
   {
@@ -750,8 +750,8 @@ SINA.lectures["anat3-face-osteology"] = {
  "subject": "anat3",
  "group": "Face and orbit",
  "title": "Osteology of the face",
- "sourceFile": "1. Osteology of Face_UM6SS.pptx (Facio-Maxillary Module, Prof. Zehra Jamil)",
- "sourceUrl": "https://drive.google.com/file/d/1u-4O0m328SdTCymZjS6VDkONg14ya608/view?usp=drivesdk",
+ "sourceFile": "1. Osteology of Face.pdf (Facio-Maxillary Module, Prof. Zehra Jamil)",
+ "sourceUrl": "https://drive.google.com/file/d/1BH5683b1-PuQWATnZBM157owvzpOpC6s/view?usp=drivesdk",
  "buildNote": "<strong>Built from the lecture slides.</strong> This page follows Prof. Zehra Jamil’s lecture: the skull and how it sits on the neck, the cranium, the facial bones one by one, the external base of the skull and the paranasal sinuses. Every fact was cross-checked against at least two references, listed at the bottom. If your professor says something different, trust your professor.",
  "summary": [
   {
@@ -2061,8 +2061,8 @@ SINA.lectures["anat3-facial-muscles"] = {
  "subject": "anat3",
  "group": "Face and orbit",
  "title": "Muscles of the facio-maxillary region",
- "sourceFile": "2. Muscles of face.pptx (Facio-Maxillary Module, Prof. Zehra Jamil Sohail)",
- "sourceUrl": "https://drive.google.com/file/d/1dzsbGH6igdIto7nSD7nVj-dbhY-pqsdR/view?usp=drivesdk",
+ "sourceFile": "2. Muscles of the facio-maxillary region.pdf (Facio-Maxillary Module, Prof. Zehra Jamil Sohail)",
+ "sourceUrl": "https://drive.google.com/file/d/1yZC9iQb6YuOWHevYTFrAn-iSH4q-boOv/view?usp=drivesdk",
  "buildNote": "<strong>Built from the lecture slides.</strong> This page follows the lecture: the facial muscles group by group, the branches of the facial nerve, the muscles of mastication and the temporomandibular joint. Every fact was cross-checked against at least two references, listed at the bottom. If your professor says something different, trust your professor.",
  "summary": [
   {
@@ -3004,8 +3004,8 @@ SINA.lectures["anat3-blood-supply"] = {
  "subject": "anat3",
  "group": "Face and orbit",
  "title": "Blood supply of the facio-maxillary region",
- "sourceFile": "3. Blood Supply of the region_UM6SS.pptx (Facio-Maxillary Module, Prof. Zehra Jamil)",
- "sourceUrl": "https://drive.google.com/file/d/1INuA-gjs_GTjIwcqUKvikRJsiogoiQLr/view?usp=drivesdk",
+ "sourceFile": "3. Blood Supply of the region.pdf (Facio-Maxillary Module, Prof. Zehra Jamil)",
+ "sourceUrl": "https://drive.google.com/file/d/1Q28xrgRntDaLYcKlu3kzgW4vh9zX5tG_/view?usp=drivesdk",
  "buildNote": "<strong>Built from the lecture slides.</strong> This page follows the lecture: the aorta and common carotid, the course and relations of the external carotid, its eight branches one by one, the venous drainage and the lymphatics. Every fact was cross-checked against at least two references, listed at the bottom. If your professor says something different, trust your professor.",
  "summary": [
   {
@@ -3999,8 +3999,8 @@ SINA.lectures["anat3-orbital-appendages"] = {
  "subject": "anat3",
  "group": "Face and orbit",
  "title": "Anatomy of the orbital appendages",
- "sourceFile": "2. Anatomy of orbital appendages.pptx (Facio-Maxillary Module, Dr Zehra Jamil)",
- "sourceUrl": "https://drive.google.com/file/d/1R843YyLcEMwR_f6WXY2d-wuNKtCCB9pO/view?usp=drivesdk",
+ "sourceFile": "2. Anatomy of orbital appendages.pdf (Facio-Maxillary Module, Dr Zehra Jamil)",
+ "sourceUrl": "https://drive.google.com/file/d/1GZPQX3yNw534FLpTn_eqSh7KDsNh-4xc/view?usp=drivesdk",
  "buildNote": "<strong>Built from the lecture slides.</strong> This page follows the lecture: the contents of the orbit, the eyelids layer by layer, the conjunctiva, the tear film, the lacrimal gland and its innervation, and the ciliary ganglion. Every fact was cross-checked against at least two references, listed at the bottom. If your professor says something different, trust your professor.",
  "summary": [
   {
@@ -4896,8 +4896,8 @@ SINA.lectures["anat3-eyeball-1"] = {
  "subject": "anat3",
  "group": "Face and orbit",
  "title": "Anatomy of the eyeball I",
- "sourceFile": "3. Anatomy of the Eye Ball-I.pptx (Facio-Maxillary Module, Dr Zehra Jamil)",
- "sourceUrl": "https://drive.google.com/file/d/1B7SPq0ALgAioDC0MbjJAxSGZRbcvlNtK/view?usp=drivesdk",
+ "sourceFile": "3. Anatomy of the Eye Ball-I.pdf (Facio-Maxillary Module, Dr Zehra Jamil)",
+ "sourceUrl": "https://drive.google.com/file/d/1O8XZPNZfvo05VoFbyroa7TdI3nw4XBpC/view?usp=drivesdk",
  "buildNote": "<strong>Built from the lecture slides.</strong> This page follows the lecture: Tenon's capsule, the three layers of the eyeball, the aqueous fluid and intraocular pressure, the refractive media, and the retina with its photoreceptors. Every fact was cross-checked against at least two references, listed at the bottom. If your professor says something different, trust your professor.",
  "summary": [
   {
@@ -6904,8 +6904,8 @@ SINA.lectures["anat3-eye-innervation"] = {
  "subject": "anat3",
  "group": "Face and orbit",
  "title": "Motor and sensory innervation of the eye and its appendages",
- "sourceFile": "5. The Motor and Sensory innervation of the Eye and its appendages.pptx (Facio-Maxillary Module, Dr Zehra Jamil)",
- "sourceUrl": "https://drive.google.com/file/d/1hT-Ky5jBkLLZ6mRjMDvB4eTiL2V6nxrN/view?usp=drivesdk",
+ "sourceFile": "5. The Motor and Sensory innervation of the Eye and its appendages.pdf (Facio-Maxillary Module, Dr Zehra Jamil)",
+ "sourceUrl": "https://drive.google.com/file/d/1ROO86939KlrLfj1-1Ug3X5cjkNWcAcI3/view?usp=drivesdk",
  "buildNote": "<strong>Built from the lecture slides.</strong> This page follows the lecture: the cranial nerves of the eye, the optic nerve and visual pathway, the motor nerves and their palsies, accommodation, the pupillary light reflex, the corneal reflex, and the autonomic control of the lacrimal gland. Every fact was cross-checked against at least two references, listed at the bottom. If your professor says something different, trust your professor.",
  "summary": [
   {
@@ -7776,8 +7776,8 @@ SINA.lectures["anat3-ocular-clinical"] = {
  "subject": "anat3",
  "group": "Face and orbit",
  "title": "Vascular supply and applied anatomy of the eye",
- "sourceFile": "6. Clinical & Applied anatomy of Ocular muscles and eyeball.pptx (Facio-Maxillary Module, Dr Zehra Jamil)",
- "sourceUrl": "https://drive.google.com/file/d/1kUGjOo3l7SxGl11j20bUZ4c-pfQ5xTK-/view?usp=drivesdk",
+ "sourceFile": "6. Clinical & Applied anatomy of Ocular muscles and eyeball.pdf (Facio-Maxillary Module, Dr Zehra Jamil)",
+ "sourceUrl": "https://drive.google.com/file/d/1iM5jz0YHhpnj5VPLiMbteZmKorC-5mVz/view?usp=drivesdk",
  "buildNote": "<strong>Built from the lecture slides.</strong> This page follows the lecture: the ophthalmic artery and its branches, the venous drainage of the orbit, and the clinical conditions from strabismus and nystagmus to blowout fractures, ptosis, glaucoma and retinal detachment. Every fact was cross-checked against at least two references, listed at the bottom. This is anatomy teaching, not clinical guidance: treatment decisions belong to your professors and to qualified clinicians.",
  "summary": [
   {
@@ -8727,8 +8727,8 @@ SINA.lectures["anat3-sinuses"] = {
  "subject": "anat3",
  "group": "Nose, mouth, throat and neck",
  "title": "Nose and paranasal sinuses",
- "sourceFile": "4. Paranasal sinuses.pptx (Facio-Maxillary Module, Zehra Jamil)",
- "sourceUrl": "https://drive.google.com/file/d/1rFXrLmRQsFqBIzXOIRgcHXTPnrMUvkaA/view?usp=drivesdk",
+ "sourceFile": "4. Paranasal sinuses.pdf (Facio-Maxillary Module, Zehra Jamil)",
+ "sourceUrl": "https://drive.google.com/file/d/11ufWBZM-NYR0kVWdVYuHA-nRvO85UMj6/view?usp=drivesdk",
  "buildNote": "<strong>Built from the lecture slides.</strong> This page follows the lecture: the nasal cavity and its lateral wall, then each of the four paranasal sinuses with its relations, nerve and blood supply, and finally the full table of where each one opens. Every fact was cross-checked against at least two references, listed at the bottom. If your professor says something different, trust your professor.",
  "summary": [
   {
@@ -9748,8 +9748,8 @@ SINA.lectures["anat3-oral-cavity"] = {
  "subject": "anat3",
  "group": "Nose, mouth, throat and neck",
  "title": "Oral cavity proper, tongue and palate",
- "sourceFile": "5. Oral Cavity Proper.pptx (Facio-Maxillary Module, Zehra Jamil, 2025)",
- "sourceUrl": "https://drive.google.com/file/d/1JQjCEHBiPgBSkS8rY2rdUIKOOSL4TsMR/view?usp=drivesdk",
+ "sourceFile": "5. Oral Cavity Proper.pdf (Facio-Maxillary Module, Zehra Jamil, 2025)",
+ "sourceUrl": "https://drive.google.com/file/d/1H09EE9YoF1FMy1agb77jeCYF65aUgtzP/view?usp=drivesdk",
  "buildNote": "<strong>Built from the lecture slides.</strong> This page follows the lecture: the oral cavity and its two parts, the floor of the mouth, the tongue with its surfaces, muscles, nerves, vessels and lymphatics, the hard and soft palate with the palatine muscles, and the three major salivary glands. Every fact was cross-checked against at least two references, listed at the bottom. If your professor says something different, trust your professor.",
  "summary": [
   {

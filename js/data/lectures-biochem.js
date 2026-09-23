@@ -2657,58 +2657,260 @@ SINA.lectures["biochem-spe"] = {
  "title": "Serum protein electrophoresis",
  "sourceFile": "9 Serum protein electrophoresis.pdf (Clinical Biochemistry, Prof. Nabiha Kamal)",
  "sourceUrl": "https://drive.google.com/file/d/165ujDfRKXV5QP2Qj4f0pxrPHx2cPkYi0/view?usp=drivesdk",
- "buildNote": "<strong>Short version.</strong> The full version, with more questions and extra reading, is coming soon. <strong>Built from the lecture slides.</strong> If your professor says something different, trust your professor.",
+ "buildNote": "<strong>Built from the lecture slides.</strong> Slides that only show pictures are covered in outline. If your professor says something different, trust your professor.",
  "summary": [
   {
    "id": "s0",
    "title": "The big picture",
-   "html": "<p>Electrophoresis splits serum proteins into <strong>five bands</strong>. Each disease leaves a signature: inflammation raises the <strong>alpha</strong> bands, cirrhosis gives a <strong>beta-gamma block</strong>, myeloma gives a <strong>narrow gamma peak</strong>.</p>"
+   "html": "<p><strong>Serum protein electrophoresis (PEP)</strong> separates serum proteins into <strong>five fractions</strong> in an electric field: albumin, alpha-1, alpha-2, beta and gamma globulins. The liver makes all serum proteins except gamma globulins, which come from lymphoid tissue. PEP gives a <strong>diagnostic orientation</strong> (not a confirmation), helps assess severity and follows treatment.</p>"
   },
   {
    "id": "s1",
-   "title": "Principle and technique",
-   "html": "<p>At <strong>pH 8.2 to 8.6</strong> proteins are anions and move to the <strong>anode</strong>. Use <strong>serum</strong>, not plasma (fibrinogen) and no haemolysis. Gel (semi-automated, 90 min) or capillary (automated, same day). Normal <strong>A/G 1.2 to 1.8</strong>.</p>"
+   "title": "Principle",
+   "html": "<p>Proteins are <strong>amphoteric</strong>. In an alkaline buffer (<strong>pH 8.2 to 8.6</strong>) all serum proteins are negatively charged (anions), so they all migrate toward the <strong>anode (+)</strong>. Speed depends on particle size, ionic strength and the porosity of the support. <strong>Albumin</strong> migrates fastest and furthest.</p>"
   },
   {
    "id": "s2",
-   "title": "Reading the profile",
-   "html": "<p><div class='table-wrap'><table class='wide'><thead><tr><th scope='col'>Fraction</th><th scope='col'>Low</th><th scope='col'>High</th></tr></thead><tbody><tr><th scope='row'>Albumin</th><td>Malnutrition, cirrhosis, nephrotic syndrome, inflammation</td><td>Split peak: bisalbuminaemia</td></tr><tr><th scope='row'>Alpha-1</th><td>Alpha-1 antitrypsin deficiency</td><td>Acute inflammation</td></tr><tr><th scope='row'>Alpha-2</th><td>Haemolysis (haptoglobin)</td><td>Inflammation, nephrotic syndrome</td></tr><tr><th scope='row'>Beta</th><td>C3 consumption</td><td>Beta-gamma block: cirrhosis</td></tr><tr><th scope='row'>Gamma</th><td>Infants, immunodeficiency</td><td>Dome: polyclonal; narrow peak: monoclonal</td></tr></tbody></table></div></p><p>Pitfalls: dye bubble, high CRP, haemolysis, fibrinogen. A monoclonal peak needs <strong>immunofixation</strong>.</p>"
+   "title": "Pre-analytical rules",
+   "html": "<p>Use <strong>serum</strong> (dry tube or clot activator), never plasma on anticoagulant: plasma contains <strong>fibrinogen</strong>, which would appear as an extra band. Avoid <strong>haemolysis</strong>: haemoglobin would also appear as an extra band. If delayed, blood can be kept at <strong>4 °C for up to a week</strong>.</p>"
+  },
+  {
+   "id": "s3",
+   "title": "Techniques and results",
+   "html": "<p><strong>Gel electrophoresis</strong> (agarose; blotting paper was the 1937 original): semi-automated; 0.1 mL of serum; several patients per gel; about 20 min of migration; <strong>amido black</strong> staining; a <strong>densitometer</strong> turns band intensity (optical density) into five peaks; about 90 min in total. <strong>Capillary zone electrophoresis</strong>: fully automated, faster, one patient at a time with same-day results. Results: the proteinogram (bands), the electrophoretic profile (peaks), and values in % and g/L; the <strong>A/G ratio is normally 1.2 to 1.8</strong>.</p>"
+  },
+  {
+   "id": "s4",
+   "title": "Fractions and variations",
+   "html": "<p>Albumin: transport, acid-base buffer, oncotic pressure. Alpha-1 and alpha-2: inflammatory proteins. Gamma: antibodies. <strong>Physiological</strong>: albumin falls in pregnancy and old age; alpha globulins rise in pregnancy; beta rises in pregnancy and at 40 to 70 years; gamma is low in infants and the elderly.</p><p><strong>Pitfalls</strong>: a dye bubble (artefact peak), a large CRP (over about 100 to 150 mg/L, a peak in the gamma zone that should disappear with the inflammation), haemoglobin (splits alpha-2), fibrinogen (extra peak in the gamma zone).</p><p><strong>Albumin</strong>: <em>bisalbuminaemia</em> (hereditary and harmless, or acquired, e.g. beta-lactams in renal failure); <em>hypoalbuminaemia</em> from low intake, cirrhosis, nephrotic syndrome, severe inflammation. <strong>Alpha-1</strong> ↓ alpha-1 antitrypsin deficiency; ↑ acute inflammation. <strong>Alpha-2</strong> ↓ intravascular haemolysis (low haptoglobin); ↑ inflammation and <strong>nephrotic syndrome</strong> (alpha-2 macroglobulin). <strong>Beta</strong> ↓ C3 consumption in infection; <strong>beta-gamma block</strong> in alcoholic cirrhosis (polyclonal IgA). <strong>Gamma</strong> ↓ in infants and immune deficiency (primary or chemo/steroids); ↑ <strong>polyclonal</strong> (dome, infection) or <strong>monoclonal</strong> (narrow spike: myeloma, lymphoma, benign in the elderly).</p>"
+  },
+  {
+   "id": "s5",
+   "title": "Monoclonal gammopathies and indications",
+   "html": "<p>PEP cannot type the monoclonal immunoglobulin: request <strong>immunofixation</strong> (six lanes with anti-IgG, IgA, IgM, kappa and lambda) to distinguish Kahler (myeloma) from Waldenström disease, which are treated differently. <strong>When to order PEP</strong>: high serum protein, unexplained high ESR, recurrent bacterial infections (hypogammaglobulinaemia), bone pain or hypercalcaemia (myeloma), suspected inflammation or cirrhosis.</p>"
   }
  ],
  "exam": [
-  "Liver makes all serum proteins except gamma globulins.",
-  "pH 8.2 to 8.6; proteins move to the anode.",
-  "Use serum: plasma fibrinogen gives a false band.",
-  "Five fractions; A/G 1.2 to 1.8.",
-  "Inflammation: alpha-1 and alpha-2 up.",
-  "Beta-gamma block: cirrhosis.",
-  "Narrow gamma peak: monoclonal (myeloma); confirm by immunofixation."
+  "Five fractions: albumin, α1, α2, β, γ.",
+  "Alkaline buffer pH 8.2-8.6: all proteins negative, migrate to the anode.",
+  "Albumin migrates fastest; the liver makes all but gamma globulins.",
+  "Use serum (dry tube), not plasma: fibrinogen gives a false band.",
+  "Haemolysis adds a haemoglobin band (splits α2).",
+  "Normal A/G ratio 1.2 to 1.8.",
+  "Inflammation: α1 and α2 up.",
+  "Nephrotic syndrome: albumin down, α2 up.",
+  "Cirrhosis: beta-gamma block (polyclonal IgA).",
+  "Monoclonal spike → immunofixation (myeloma vs Waldenström).",
+  "PEP orients the diagnosis; it does not confirm it."
  ],
  "visual": {
   "kind": "model",
-  "intro": ""
+  "intro": "",
+  "figure": {
+   "viewBox": "0 0 760 420",
+   "alt": "Serum protein electrophoresis",
+   "caption": "The five fractions from anode to cathode and what raises each. Schematic drawn for this site.",
+   "base": "<defs><marker id=\"ah\" markerWidth=\"10\" markerHeight=\"8\" refX=\"9\" refY=\"4\" orient=\"auto\"><path d=\"M0,0 L10,4 L0,8 Z\" fill=\"#8a8a8a\"/></marker></defs><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"170\" y1=\"70\" x2=\"190\" y2=\"70\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"300\" y1=\"70\" x2=\"320\" y2=\"70\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"430\" y1=\"70\" x2=\"450\" y2=\"70\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"560\" y1=\"70\" x2=\"580\" y2=\"70\"/>",
+   "parts": {
+    "alb": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2d7cf\" x=\"40\" y=\"40\" width=\"130\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Albumin",
+      "(fastest, to anode)"
+     ],
+     "lx": 105.0,
+     "ly": 68.0
+    },
+    "a1": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#cfe3f2\" x=\"190\" y=\"40\" width=\"110\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Alpha-1"
+     ],
+     "lx": 245.0,
+     "ly": 76.0
+    },
+    "a2": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d7edd2\" x=\"320\" y=\"40\" width=\"110\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Alpha-2"
+     ],
+     "lx": 375.0,
+     "ly": 76.0
+    },
+    "beta": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2e2a8\" x=\"450\" y=\"40\" width=\"110\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Beta"
+     ],
+     "lx": 505.0,
+     "ly": 76.0
+    },
+    "gamma": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#e3d5f0\" x=\"580\" y=\"40\" width=\"130\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Gamma",
+      "(near cathode)"
+     ],
+     "lx": 645.0,
+     "ly": 68.0
+    },
+    "infl": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f7d9b8\" x=\"190\" y=\"180\" width=\"240\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Inflammation:",
+      "α1 and α2 up"
+     ],
+     "lx": 310.0,
+     "ly": 208.0
+    },
+    "block": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d9ecec\" x=\"450\" y=\"180\" width=\"130\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Cirrhosis:",
+      "beta-gamma block"
+     ],
+     "lx": 515.0,
+     "ly": 208.0
+    },
+    "mono": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f0d0e0\" x=\"600\" y=\"180\" width=\"130\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Myeloma: narrow",
+      "monoclonal peak"
+     ],
+     "lx": 665.0,
+     "ly": 208.0
+    }
+   },
+   "arrows": {
+    "alb": [
+     {
+      "t": [
+       40.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "a1": [
+     {
+      "t": [
+       190.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "a2": [
+     {
+      "t": [
+       320.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "beta": [
+     {
+      "t": [
+       450.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "gamma": [
+     {
+      "t": [
+       580.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "infl": [
+     {
+      "t": [
+       190.0,
+       188.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "block": [
+     {
+      "t": [
+       450.0,
+       188.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "mono": [
+     {
+      "t": [
+       600.0,
+       188.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ]
+   }
+  }
  },
  "mcqs": [
   {
    "q": "Which serum proteins are NOT made by the liver?",
    "options": [
-    "Gamma globulins",
-    "Albumin",
     "Alpha-1 globulins",
-    "Beta globulins"
+    "Beta globulins",
+    "Albumin",
+    "Gamma globulins"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "The liver makes all serum proteins except gamma globulins, made by lymphoid tissue."
   },
   {
    "q": "At what pH is electrophoresis run?",
    "options": [
+    "10 to 12",
     "2 to 3",
     "8.2 to 8.6",
-    "5 to 6",
-    "10 to 12"
+    "5 to 6"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "At alkaline pH all serum proteins are negatively charged and migrate towards the anode."
   },
   {
@@ -2716,85 +2918,85 @@ SINA.lectures["biochem-spe"] = {
    "options": [
     "The cathode",
     "Neither",
-    "The anode",
-    "Both equally"
+    "Both equally",
+    "The anode"
    ],
-   "answer": 2,
+   "answer": 3,
    "why": "As anions, proteins move to the positive anode."
   },
   {
    "q": "Why is an anticoagulant tube forbidden?",
    "options": [
-    "It haemolyses cells",
     "It lowers albumin",
-    "It denatures IgG",
-    "Plasma contains fibrinogen"
+    "Plasma contains fibrinogen",
+    "It haemolyses cells",
+    "It denatures IgG"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "Plasma fibrinogen adds an extra band; use a dry or clot-activator tube (serum)."
   },
   {
    "q": "How many fractions does agarose gel separate?",
    "options": [
-    "Two",
-    "Five",
+    "Ten",
     "Three",
-    "Ten"
+    "Two",
+    "Five"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "Albumin plus alpha-1, alpha-2, beta and gamma globulins."
   },
   {
    "q": "Which protein migrates fastest and farthest?",
    "options": [
-    "IgG",
-    "Fibrinogen",
+    "Albumin",
     "Beta globulins",
-    "Albumin"
+    "IgG",
+    "Fibrinogen"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "Albumin is the most abundant and fastest fraction."
   },
   {
    "q": "What is the normal albumin/globulin ratio?",
    "options": [
-    "1.2 to 1.8",
-    "0.2 to 0.5",
     "3 to 5",
+    "0.2 to 0.5",
+    "1.2 to 1.8",
     "Exactly 1"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "The A/G ratio compares albumin to all globulins."
   },
   {
    "q": "What is the advantage of capillary electrophoresis?",
    "options": [
-    "Uses blotting paper",
-    "Needs 30 patients",
+    "No electric field",
     "Fully automated",
-    "No electric field"
+    "Needs 30 patients",
+    "Uses blotting paper"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "CZE is automated, fast, and runs each patient independently."
   },
   {
    "q": "What does a split albumin peak indicate?",
    "options": [
     "Nephrotic syndrome",
-    "Myeloma",
+    "Bisalbuminaemia",
     "Cirrhosis",
-    "Bisalbuminaemia"
+    "Myeloma"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "Two albumins of different structure: hereditary (permanent, harmless) or acquired (beta-lactams in renal failure)."
   },
   {
    "q": "Which fraction falls in intravascular haemolysis?",
    "options": [
     "Alpha-2",
-    "Albumin",
     "Gamma",
-    "Beta"
+    "Beta",
+    "Albumin"
    ],
    "answer": 0,
    "why": "Haptoglobin, in alpha-2, is consumed in haemolysis."
@@ -2813,34 +3015,34 @@ SINA.lectures["biochem-spe"] = {
   {
    "q": "What causes a beta-gamma block?",
    "options": [
-    "Myeloma",
     "Alcoholic cirrhosis",
-    "Nephrotic syndrome",
-    "Haemolysis"
+    "Haemolysis",
+    "Myeloma",
+    "Nephrotic syndrome"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "Polyclonal IgA rise fuses the beta and gamma fractions."
   },
   {
    "q": "What does a narrow-based gamma peak suggest?",
    "options": [
-    "Polyclonal infection",
     "Haemolysis",
     "Nephrotic syndrome",
-    "Monoclonal gammopathy"
+    "Monoclonal gammopathy",
+    "Polyclonal infection"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "Monoclonal: malignant (myeloma), accompanying (lymphoma) or benign (elderly). A dome shape is polyclonal."
   },
   {
    "q": "Which test identifies the monoclonal immunoglobulin?",
    "options": [
-    "Densitometry",
-    "Capillary electrophoresis",
     "Immunofixation",
-    "CRP assay"
+    "CRP assay",
+    "Densitometry",
+    "Capillary electrophoresis"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "Anti-G, A, M, kappa and lambda antibodies type the immunoglobulin."
   },
   {
@@ -2856,6 +3058,278 @@ SINA.lectures["biochem-spe"] = {
     1
    ],
    "why": "Albumin is lost in urine while alpha-2 macroglobulin rises."
+  },
+  {
+   "q": "At pH 8.2-8.6, serum proteins migrate toward:",
+   "options": [
+    "Both electrodes",
+    "Neither",
+    "The cathode",
+    "The anode"
+   ],
+   "answer": 3,
+   "why": "They are all negatively charged anions at alkaline pH."
+  },
+  {
+   "q": "Which protein migrates fastest and furthest?",
+   "options": [
+    "Fibrinogen",
+    "Gamma globulin",
+    "Albumin",
+    "Beta globulin"
+   ],
+   "answer": 2,
+   "why": "It is also the most abundant, giving the most intense band."
+  },
+  {
+   "q": "Why must SPE use serum and not plasma?",
+   "options": [
+    "Plasma has no albumin to separate",
+    "Plasma contains fibrinogen, which gives a false band",
+    "Plasma clots inside the agarose gel",
+    "Serum is cheaper to collect than plasma"
+   ],
+   "answer": 1,
+   "why": "Collect in a dry tube or with a clot activator."
+  },
+  {
+   "q": "Which organ produces gamma globulins?",
+   "options": [
+    "Liver",
+    "Kidney",
+    "Lymphoid tissue",
+    "Bone"
+   ],
+   "answer": 2,
+   "why": "The liver makes all other serum proteins."
+  },
+  {
+   "q": "The normal albumin/globulin ratio is:",
+   "options": [
+    "0.2 to 0.5",
+    "1.2 to 1.8",
+    "Exactly 1",
+    "3 to 5"
+   ],
+   "answer": 1,
+   "why": "Derived from the fraction values."
+  },
+  {
+   "q": "Which stain reveals the bands on the gel?",
+   "options": [
+    "Haematoxylin",
+    "Congo red",
+    "Gram",
+    "Amido black"
+   ],
+   "answer": 3,
+   "why": "Then a densitometer reads optical density."
+  },
+  {
+   "q": "An advantage of capillary zone electrophoresis is:",
+   "options": [
+    "It needs a technician at each step of the run",
+    "It still uses blotting paper as its support",
+    "It separates serum into twelve fractions",
+    "It is fully automated and gives same-day results per patient"
+   ],
+   "answer": 3,
+   "why": "No need to batch 15 to 30 patients."
+  },
+  {
+   "q": "Haemolysis on SPE typically shows as:",
+   "options": [
+    "A beta-gamma block from IgA",
+    "A narrow monoclonal spike",
+    "Splitting of the alpha-2 fraction",
+    "Bisalbuminaemia with two peaks"
+   ],
+   "answer": 2,
+   "why": "Haemoglobin appears as an extra band."
+  },
+  {
+   "q": "Bisalbuminaemia can be acquired with:",
+   "options": [
+    "Cirrhosis with portal hypertension",
+    "Beta-lactams in renal failure",
+    "Multiple myeloma with a spike",
+    "Normal pregnancy after 20 weeks"
+   ],
+   "answer": 1,
+   "why": "It may also be hereditary and harmless."
+  },
+  {
+   "q": "A decreased alpha-1 fraction suggests:",
+   "options": [
+    "Alpha-1 antitrypsin deficiency",
+    "Nephrotic syndrome",
+    "Acute inflammation",
+    "Myeloma"
+   ],
+   "answer": 0,
+   "why": "Or general causes of low protein."
+  },
+  {
+   "q": "Nephrotic syndrome raises which fraction?",
+   "options": [
+    "Alpha-2 (alpha-2 macroglobulin)",
+    "Beta (complement C3)",
+    "Albumin (oncotic pressure)",
+    "Gamma (immunoglobulins)"
+   ],
+   "answer": 0,
+   "why": "While albumin falls through urinary loss."
+  },
+  {
+   "q": "Intravascular haemolysis lowers alpha-2 because of low:",
+   "options": [
+    "Ceruloplasmin",
+    "Transferrin",
+    "Haptoglobin",
+    "CRP"
+   ],
+   "answer": 2,
+   "why": "Haptoglobin binds free haemoglobin and is consumed."
+  },
+  {
+   "q": "A beta-gamma block is typical of:",
+   "options": [
+    "Myeloma",
+    "Infancy",
+    "Nephrotic syndrome",
+    "Alcoholic cirrhosis"
+   ],
+   "answer": 3,
+   "why": "Due to polyclonal IgA."
+  },
+  {
+   "q": "A polyclonal increase in gamma globulins looks like:",
+   "options": [
+    "A broad dome",
+    "A split alpha-2",
+    "A narrow spike",
+    "No change"
+   ],
+   "answer": 0,
+   "why": "Seen in infections; a monoclonal spike is narrow-based."
+  },
+  {
+   "q": "Which test types a monoclonal immunoglobulin?",
+   "options": [
+    "Densitometry",
+    "Capillary electrophoresis alone",
+    "CRP",
+    "Immunofixation"
+   ],
+   "answer": 3,
+   "why": "Anti-IgG, IgA, IgM, kappa and lambda lanes."
+  },
+  {
+   "q": "Which is an indication for SPE?",
+   "options": [
+    "A simple ankle sprain",
+    "Recurrent bacterial infections",
+    "Myopia in a young adult",
+    "Mild acne vulgaris"
+   ],
+   "answer": 1,
+   "why": "Suspected hypogammaglobulinaemia; also high ESR, bone pain, hypercalcaemia, inflammation, cirrhosis."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "alb",
+   "options": [
+    "Albumin",
+    "Beta globulins",
+    "Alpha-2 globulins",
+    "Alpha-1 globulins"
+   ],
+   "answer": 0,
+   "why": "The arrow points to: Albumin. Most abundant protein, most intense band, migrates furthest toward the anode."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "a1",
+   "options": [
+    "Beta globulins",
+    "Gamma globulins",
+    "Alpha-1 globulins",
+    "Monoclonal gammopathy"
+   ],
+   "answer": 2,
+   "why": "The arrow points to: Alpha-1 globulins. Inflammatory proteins; low in alpha-1 antitrypsin deficiency."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "a2",
+   "options": [
+    "Alpha-2 globulins",
+    "Monoclonal gammopathy",
+    "Albumin",
+    "Beta globulins"
+   ],
+   "answer": 0,
+   "why": "The arrow points to: Alpha-2 globulins. Rise in inflammation and nephrotic syndrome (alpha-2 macroglobulin); fall in haemolysis."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "beta",
+   "options": [
+    "Beta globulins",
+    "Gamma globulins",
+    "Beta-gamma block",
+    "Alpha-2 globulins"
+   ],
+   "answer": 0,
+   "why": "The arrow points to: Beta globulins. Fall when complement C3 is consumed; merge with gamma in cirrhosis."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "gamma",
+   "options": [
+    "Albumin",
+    "Beta-gamma block",
+    "Monoclonal gammopathy",
+    "Gamma globulins"
+   ],
+   "answer": 3,
+   "why": "The arrow points to: Gamma globulins. Immunoglobulins made by lymphoid tissue; polyclonal dome or monoclonal spike."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "infl",
+   "options": [
+    "Alpha-1 globulins",
+    "Inflammatory profile",
+    "Monoclonal gammopathy",
+    "Beta-gamma block"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: Inflammatory profile. Alpha-1 and alpha-2 both increase."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "block",
+   "options": [
+    "Monoclonal gammopathy",
+    "Beta-gamma block",
+    "Alpha-2 globulins",
+    "Alpha-1 globulins"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: Beta-gamma block. Polyclonal IgA fills the gap between beta and gamma in alcoholic cirrhosis."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "mono",
+   "options": [
+    "Alpha-2 globulins",
+    "Gamma globulins",
+    "Monoclonal gammopathy",
+    "Inflammatory profile"
+   ],
+   "answer": 2,
+   "why": "The arrow points to: Monoclonal gammopathy. A narrow-based peak: myeloma, lymphoma or benign; confirmed by immunofixation."
   }
  ],
  "cards": [
@@ -2906,12 +3380,149 @@ SINA.lectures["biochem-spe"] = {
    "type": "text",
    "front": "When should electrophoresis be requested?",
    "back": "High blood protein, unexplained high ESR, recurrent bacterial infections, bone pain or hypercalcaemia (myeloma), suspected inflammation or cirrhosis. It orients rather than confirms; immunofixation types a monoclonal Ig."
+  },
+  {
+   "id": "x0",
+   "type": "text",
+   "front": "Principle of SPE?",
+   "back": "In an alkaline buffer (pH 8.2-8.6) all serum proteins are anions and migrate to the anode; speed depends on size, ionic strength and support porosity; five fractions."
+  },
+  {
+   "id": "x1",
+   "type": "text",
+   "front": "Pre-analytical precautions for SPE?",
+   "back": "Serum in a dry tube (no anticoagulant: fibrinogen), no haemolysis (haemoglobin), store at 4 °C up to a week if delayed."
+  },
+  {
+   "id": "x2",
+   "type": "text",
+   "front": "Gel vs capillary electrophoresis?",
+   "back": "Gel: semi-automated, batches of patients, amido black and densitometer, ~90 min. Capillary: fully automated, faster, one patient at a time, same-day result."
+  },
+  {
+   "id": "x3",
+   "type": "text",
+   "front": "Four pitfalls when reading SPE?",
+   "back": "Dye bubble artefact, high CRP peak in the gamma zone, haemoglobin (haemolysis, splits α2), fibrinogen (plasma instead of serum)."
+  },
+  {
+   "id": "x4",
+   "type": "text",
+   "front": "Causes of hypoalbuminaemia?",
+   "back": "Low intake (malnutrition), low synthesis (cirrhosis), loss (nephrotic syndrome), increased catabolism (severe inflammation)."
+  },
+  {
+   "id": "x5",
+   "type": "text",
+   "front": "Classic SPE profiles?",
+   "back": "Inflammation: α1+α2 up. Nephrotic: albumin down, α2 up. Cirrhosis: beta-gamma block. Myeloma: narrow gamma spike. Immune deficiency: low gamma."
+  },
+  {
+   "id": "x6",
+   "type": "text",
+   "front": "Monoclonal gammopathy: causes and next step?",
+   "back": "Malignant (myeloma), associated (lymphoma) or benign (elderly); confirm and type by immunofixation (IgG, IgA, IgM, kappa, lambda)."
+  },
+  {
+   "id": "x7",
+   "type": "text",
+   "front": "When to request SPE?",
+   "back": "High serum protein, unexplained high ESR, recurrent bacterial infections, bone pain or hypercalcaemia, suspected inflammation or cirrhosis."
+  },
+  {
+   "id": "img-alb",
+   "type": "image",
+   "target": "alb",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Albumin. Most abundant protein, most intense band, migrates furthest toward the anode."
+  },
+  {
+   "id": "img-a1",
+   "type": "image",
+   "target": "a1",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Alpha-1 globulins. Inflammatory proteins; low in alpha-1 antitrypsin deficiency."
+  },
+  {
+   "id": "img-a2",
+   "type": "image",
+   "target": "a2",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Alpha-2 globulins. Rise in inflammation and nephrotic syndrome (alpha-2 macroglobulin); fall in haemolysis."
+  },
+  {
+   "id": "img-beta",
+   "type": "image",
+   "target": "beta",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Beta globulins. Fall when complement C3 is consumed; merge with gamma in cirrhosis."
+  },
+  {
+   "id": "img-gamma",
+   "type": "image",
+   "target": "gamma",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Gamma globulins. Immunoglobulins made by lymphoid tissue; polyclonal dome or monoclonal spike."
+  },
+  {
+   "id": "img-infl",
+   "type": "image",
+   "target": "infl",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Inflammatory profile. Alpha-1 and alpha-2 both increase."
+  },
+  {
+   "id": "img-block",
+   "type": "image",
+   "target": "block",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Beta-gamma block. Polyclonal IgA fills the gap between beta and gamma in alcoholic cirrhosis."
+  },
+  {
+   "id": "img-mono",
+   "type": "image",
+   "target": "mono",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Monoclonal gammopathy. A narrow-based peak: myeloma, lymphoma or benign; confirmed by immunofixation."
   }
  ],
- "deeper": [],
- "resources": [],
+ "deeper": [
+  {
+   "title": "Why albumin runs furthest",
+   "html": "<p>At pH 8.6 albumin carries a large net negative charge for its size, so the electric field pulls it hardest toward the anode. Immunoglobulins have isoelectric points close to neutral and carry little charge at that pH, so they barely move and stay near the application point. That is why the order runs albumin, alpha-1, alpha-2, beta, gamma.</p><p class='src'>Source: the lecture's principle slides.</p>"
+  },
+  {
+   "title": "Why a narrow spike is worrying and a dome is not",
+   "html": "<p>Each plasma-cell clone makes one exact immunoglobulin, with one charge and one migration speed, so a single clone expanding gives a sharp, narrow peak. An infection activates many clones at once, each with slightly different antibodies, which spread across the gamma zone as a broad dome. A spike therefore points to one abnormal clone, as in myeloma, and needs immunofixation.</p><p class='src'>Source: the lecture's gamma-globulin variation slides.</p>"
+  }
+ ],
+ "resources": [
+  {
+   "title": "Multiple myeloma (NHS)",
+   "url": "https://www.nhs.uk/conditions/multiple-myeloma/",
+   "kind": "Article",
+   "why": "The main disease behind a monoclonal spike.",
+   "note": ""
+  },
+  {
+   "title": "Nephrotic syndrome (NHS)",
+   "url": "https://www.nhs.uk/conditions/nephrotic-syndrome/",
+   "kind": "Article",
+   "why": "Why albumin is lost in the urine.",
+   "note": ""
+  }
+ ],
  "checks": [],
- "sources": [],
+ "sources": [
+  {
+   "name": "Multiple myeloma (NHS)",
+   "url": "https://www.nhs.uk/conditions/multiple-myeloma/"
+  },
+  {
+   "name": "Nephrotic syndrome (NHS)",
+   "url": "https://www.nhs.uk/conditions/nephrotic-syndrome/"
+  }
+ ],
  "verified": "22 Sep 2026"
 };
 window.SINA = window.SINA || {subjects:[], lectures:{}};
@@ -2922,101 +3533,283 @@ SINA.lectures["biochem-lipids"] = {
  "title": "Exploration of a lipid anomaly",
  "sourceFile": "10 Exploration of a lipid anomaly.pdf (Clinical Biochemistry, Prof. Nabiha Kamal)",
  "sourceUrl": "https://drive.google.com/file/d/1e3luKvTuXCSFwbRVp1u1e4zUzILcBabO/view?usp=drivesdk",
- "buildNote": "<strong>Short version.</strong> The full version, with more questions and extra reading, is coming soon. <strong>Built from the lecture slides.</strong> If your professor says something different, trust your professor.",
+ "buildNote": "<strong>Built from the lecture slides.</strong> Slides that only show pictures are covered in outline. If your professor says something different, trust your professor.",
  "summary": [
   {
    "id": "s0",
    "title": "The big picture",
-   "html": "<p>Lipids travel in <strong>lipoproteins</strong>. Chylomicrons and VLDL carry triglycerides out, <strong>LDL</strong> delivers cholesterol to tissues (bad), and <strong>HDL</strong> brings it back to the liver (good).</p>"
+   "html": "<p>Lipoprotein disorders are frequent and damage the arterial wall, so they are major cardiovascular risk factors. The lipid profile, now called <strong>Exploration of a Lipid Anomaly (ELA)</strong>, is requested as a systematic check, for clinical signs (obesity, sedentary life, hypertension) and for treatment follow-up.</p>"
   },
   {
    "id": "s1",
-   "title": "Lipoproteins",
-   "html": "<p><div class='table-wrap'><table class='wide'><thead><tr><th scope='col'>Lipoprotein</th><th scope='col'>Rich in</th><th scope='col'>Apoproteins</th><th scope='col'>Notes</th></tr></thead><tbody><tr><th scope='row'>Chylomicrons</th><td>Triglycerides (86 to 94 percent)</td><td>B48, A</td><td>Largest, lightest; dietary</td></tr><tr><th scope='row'>VLDL</th><td>Triglycerides</td><td>B100, C</td><td>Hepatic</td></tr><tr><th scope='row'>LDL</th><td>Cholesterol esters</td><td>B100</td><td>Bad cholesterol</td></tr><tr><th scope='row'>HDL</th><td>Phospholipids</td><td>A, C</td><td>Densest; good cholesterol</td></tr></tbody></table></div></p><p>LPL degrades chylomicrons and VLDL; VLDL → IDL → LDL; HDL esterifies cholesterol by <strong>LCAT</strong> (activated by Apo AI).</p>"
+   "title": "Lipoprotein structure",
+   "html": "<p>Lipids are insoluble, so they travel on albumin or inside <strong>lipoproteins</strong>: an apolar core of <strong>triglycerides and cholesterol esters</strong>, surrounded by <strong>phospholipids, free cholesterol and apoproteins</strong>. <strong>Triglycerides</strong> (glycerol + 3 fatty acids) come from food or from sugars and alcohol via acetyl-CoA; they are the energy reserve. <strong>Cholesterol</strong> is one third dietary, two thirds hepatic; it builds membranes, steroid hormones and bile acids and is eliminated in bile (enterohepatic cycle). <strong>Phospholipids</strong> build membranes.</p><p><strong>Apoproteins</strong> have a structural role (keep the complex soluble for transport) and a metabolic role (bind receptors, activate enzymes: <strong>apo AI activates LCAT</strong>). Five classes: A (AI, AII, AIV), B (B100, B48), C (CI, CII, CIII), D, E (E2, E3, E4).</p>"
   },
   {
    "id": "s2",
+   "title": "Classification",
+   "html": "<p>Four classes: <strong>chylomicrons, VLDL, LDL, HDL</strong>. Chylomicrons are richest in triglycerides (86 to 94%), then VLDL (55 to 65%); <strong>LDL is rich in cholesterol esters</strong> (apo B100); <strong>HDL is rich in phospholipids</strong> and protein (apo A and C). The fattier a particle, the bigger and the less dense it is: chylomicrons float (density below 0.94) and are largest; <strong>HDL is the densest and smallest</strong>.</p>"
+  },
+  {
+   "id": "s3",
+   "title": "Metabolism",
+   "html": "<p><strong>Endogenous</strong>: the liver makes triglycerides from glucose and free fatty acids and cholesterol from acetyl-CoA (about 800 mg/day). <strong>Exogenous</strong>: over 95% of dietary lipid is triglyceride; digested into monoglycerides and fatty acids, solubilised by bile acids, reassembled by enterocytes into <strong>chylomicrons</strong> that pass via lymph into blood.</p><p><strong>Lipoprotein lipase</strong> on capillary endothelium hydrolyses the triglycerides of chylomicrons and VLDL into glycerol and fatty acids (energy or storage). Chylomicrons become <strong>remnants</strong> cleared by hepatic B/E receptors; VLDL become <strong>IDL</strong>, then <strong>LDL</strong> through hepatic triglyceride lipase. <strong>LDL</strong> binds receptors in liver and peripheral tissues; lysosomes free the cholesterol; excess returns to blood. <strong>HDL</strong> picks up excess free cholesterol, esterifies it via <strong>LCAT</strong> (anti-atherogenic), and delivers it to the liver or steroidogenic tissues.</p>"
+  },
+  {
+   "id": "s4",
    "title": "The lipid profile",
-   "html": "<p>Fast <strong>12 h</strong>, rest 15 min, not within 3 to 4 months of an MI. Serum: clear normal, creamy = chylomicrons, cloudy = VLDL.</p><div class='table-wrap'><table class='wide'><thead><tr><th scope='col'>Test</th><th scope='col'>Normal</th></tr></thead><tbody><tr><th scope='row'>Triglycerides</th><td>0.5 to 1.5 g/L</td></tr><tr><th scope='row'>Total cholesterol</th><td>1.5 to 2 g/L</td></tr><tr><th scope='row'>HDL</th><td>0.35 to 0.65 g/L</td></tr><tr><th scope='row'>TC/HDL</th><td>Under 4.9 men, 4.2 women</td></tr><tr><th scope='row'>LDL (Friedewald)</th><td>TC − HDL − TG/5, if TG under 3.5 g/L</td></tr><tr><th scope='row'>Apo B / Apo AI</th><td>0.6 to 1.4 / over 1.1 g/L</td></tr></tbody></table></div><p>LDL target: under 4 mmol/L without risk factors, <strong>under 2.6</strong> with them.</p>"
+   "html": "<p><strong>Sampling</strong>: fast of at least <strong>12 hours</strong>, rest 15 minutes, away from acute illness (viral infection, hepatitis, surgery; <strong>wait 3 to 4 months after an infarction</strong>), dry or heparin tube, no haemolysis. <strong>Serum appearance</strong> must be reported: clear (normal, but does not exclude hypercholesterolaemia), lactescent or creamy layer (chylomicrons), cloudy/opalescent (VLDL or IDL), cloudy with creamy supernatant (VLDL + chylomicrons).</p><p><strong>Reference values</strong>: TG 0.5 to 1.5 g/L; total cholesterol 1.50 to 2 g/L; HDL 0.35 to 0.65 g/L; total/HDL ratio under 4.9 (men) and 4.2 (women). <strong>Friedewald</strong>: LDL = TC - HDL - TG/5 (g/L) or TG/2.2 (mmol/L), valid only if <strong>TG under 3.5 g/L (4 mmol/L)</strong>; otherwise measure LDL directly or use Planella's formula.</p><p><strong>LDL targets</strong>: under 4 mmol/L without risk factors, under <strong>2.6 mmol/L</strong> with risk factors (men over 50 or women over 60, family history of early coronary disease, smoking, hypertension, type 2 diabetes, HDL under 1 mmol/L, microalbuminuria). <strong>Apo AI and B</strong>: the most accurate atherogenic risk measure; apo B 0.6 to 1.40 g/L, apo AI above 1.10 g/L; risk rises with the apo B/apo AI ratio.</p>"
+  },
+  {
+   "id": "s5",
+   "title": "Dyslipidaemia",
+   "html": "<p>Raised cholesterol and/or triglycerides, or high LDL with low HDL, contributing to atherosclerosis. <strong>Hyperlipoproteinaemias</strong> (about 4% of adults over 30) are primary (genetic) or secondary (disease or drugs). <strong>Hypocholesterolaemia</strong> (total cholesterol under 1.30 g/L) is hereditary or secondary (hyperthyroidism, severe liver disease). The <strong>Fredrickson classification</strong> types the disorders; type I is hyperchylomicronaemia.</p>"
   }
  ],
  "exam": [
-  "Core: TG and cholesterol esters.",
-  "Two thirds of cholesterol is hepatic.",
-  "Chylomicrons richest in TG; HDL densest.",
-  "LDL: Apo B100; HDL: Apo A, C.",
-  "Apo AI activates LCAT.",
-  "VLDL → IDL → LDL.",
-  "Fast 12 h; creamy serum = chylomicrons.",
-  "Friedewald only if TG under 3.5 g/L.",
-  "LDL target under 2.6 mmol/L with risk factors."
+  "Lipoprotein core: TG and cholesterol esters; shell: phospholipids, free cholesterol, apoproteins.",
+  "Cholesterol: 1/3 dietary, 2/3 hepatic.",
+  "Apo AI activates LCAT; LDL carries apo B100.",
+  "Chylomicrons: most TG, largest, least dense. HDL: densest, smallest.",
+  "LPL hydrolyses TG of chylomicrons and VLDL.",
+  "VLDL → IDL → LDL (hepatic lipase).",
+  "HDL + LCAT: reverse cholesterol transport (anti-atherogenic).",
+  "Fast 12 h; wait 3-4 months after an MI.",
+  "Lactescent serum = chylomicrons; opalescent = VLDL/IDL.",
+  "Friedewald: LDL = TC - HDL - TG/5 (g/L), valid if TG < 3.5 g/L.",
+  "LDL target < 2.6 mmol/L if risk factors, < 4 without.",
+  "Apo B/apo AI ratio: best measure of atherogenic risk."
  ],
  "visual": {
   "kind": "model",
-  "intro": ""
+  "intro": "",
+  "figure": {
+   "viewBox": "0 0 760 420",
+   "alt": "Lipoprotein metabolism",
+   "caption": "Exogenous and endogenous pathways and reverse cholesterol transport. Schematic drawn for this site.",
+   "base": "<defs><marker id=\"ah\" markerWidth=\"10\" markerHeight=\"8\" refX=\"9\" refY=\"4\" orient=\"auto\"><path d=\"M0,0 L10,4 L0,8 Z\" fill=\"#8a8a8a\"/></marker></defs><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"240\" y1=\"70\" x2=\"280\" y2=\"70\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"720\" y1=\"70\" x2=\"280\" y2=\"70\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"480\" y1=\"70\" x2=\"40\" y2=\"200\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"480\" y1=\"70\" x2=\"520\" y2=\"200\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"620\" y1=\"230\" x2=\"620\" y2=\"300\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"720\" y1=\"330\" x2=\"280\" y2=\"330\"/>",
+   "parts": {
+    "gut": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2d7cf\" x=\"40\" y=\"40\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Intestine:",
+      "chylomicrons"
+     ],
+     "lx": 140.0,
+     "ly": 68.0
+    },
+    "liver": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#cfe3f2\" x=\"520\" y=\"40\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Liver:",
+      "VLDL"
+     ],
+     "lx": 620.0,
+     "ly": 68.0
+    },
+    "lpl": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d7edd2\" x=\"280\" y=\"40\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Lipoprotein lipase:",
+      "TG → FA + glycerol"
+     ],
+     "lx": 380.0,
+     "ly": 68.0
+    },
+    "remn": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2e2a8\" x=\"40\" y=\"170\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Chylomicron remnants",
+      "→ liver"
+     ],
+     "lx": 140.0,
+     "ly": 198.0
+    },
+    "idl": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#e3d5f0\" x=\"520\" y=\"170\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "IDL → LDL",
+      "(hepatic lipase)"
+     ],
+     "lx": 620.0,
+     "ly": 198.0
+    },
+    "ldl": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f7d9b8\" x=\"520\" y=\"300\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "LDL: delivers cholesterol",
+      "(bad)"
+     ],
+     "lx": 620.0,
+     "ly": 328.0
+    },
+    "hdl": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d9ecec\" x=\"280\" y=\"300\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "HDL + LCAT: collects",
+      "excess cholesterol (good)"
+     ],
+     "lx": 380.0,
+     "ly": 328.0
+    }
+   },
+   "arrows": {
+    "gut": [
+     {
+      "t": [
+       40.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "liver": [
+     {
+      "t": [
+       520.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "lpl": [
+     {
+      "t": [
+       280.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "remn": [
+     {
+      "t": [
+       40.0,
+       178.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "idl": [
+     {
+      "t": [
+       520.0,
+       178.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "ldl": [
+     {
+      "t": [
+       520.0,
+       308.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "hdl": [
+     {
+      "t": [
+       280.0,
+       308.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ]
+   }
+  }
  },
  "mcqs": [
   {
    "q": "What forms the core of a lipoprotein?",
    "options": [
-    "TG and cholesterol esters",
-    "Phospholipids only",
+    "Apoproteins only",
     "Free cholesterol",
-    "Apoproteins only"
+    "TG and cholesterol esters",
+    "Phospholipids only"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "The apolar core holds triglycerides and cholesterol esters; the shell holds phospholipids, free cholesterol and apoproteins."
   },
   {
    "q": "What share of cholesterol is endogenous?",
    "options": [
-    "One third",
-    "Two thirds",
+    "None",
     "All of it",
-    "None"
+    "One third",
+    "Two thirds"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "Two thirds from hepatic synthesis, one third from food."
   },
   {
    "q": "Which lipoprotein is richest in triglycerides?",
    "options": [
-    "LDL",
     "HDL",
     "Chylomicrons",
-    "IDL"
+    "IDL",
+    "LDL"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "Chylomicrons (86 to 94 percent TG), then VLDL; LDL is rich in cholesterol esters; HDL in phospholipids."
   },
   {
    "q": "Which apoprotein characterises LDL?",
    "options": [
     "Apo AI",
-    "Apo CII",
+    "Apo B100",
     "Apo E4",
-    "Apo B100"
+    "Apo CII"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "LDL carries Apo B100; HDL carries Apo A and C."
   },
   {
    "q": "Which lipoprotein is the densest?",
    "options": [
+    "LDL",
     "Chylomicrons",
     "HDL",
-    "VLDL",
-    "LDL"
+    "VLDL"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "The fattier the lipoprotein the lighter; HDL is densest, chylomicrons largest."
   },
   {
    "q": "Which enzyme does Apo AI activate?",
    "options": [
-    "Lipoprotein lipase",
     "Hepatic lipase",
     "HMG-CoA reductase",
+    "Lipoprotein lipase",
     "LCAT"
    ],
    "answer": 3,
@@ -3025,30 +3818,30 @@ SINA.lectures["biochem-lipids"] = {
   {
    "q": "Which enzyme degrades chylomicron triglycerides?",
    "options": [
-    "Lipoprotein lipase",
     "LCAT",
+    "Pancreatic amylase",
     "Hepatic lipase",
-    "Pancreatic amylase"
+    "Lipoprotein lipase"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "Endothelial LPL releases glycerol and fatty acids."
   },
   {
    "q": "What does IDL become in the liver?",
    "options": [
+    "LDL",
     "HDL",
     "Chylomicrons",
-    "LDL",
     "VLDL"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "VLDL → IDL (by LPL) → LDL (by hepatic triglyceride lipase)."
   },
   {
    "q": "Why is HDL good cholesterol?",
    "options": [
-    "It carries triglycerides",
     "It deposits cholesterol",
+    "It carries triglycerides",
     "It raises LDL",
     "It removes excess cholesterol"
    ],
@@ -3058,41 +3851,41 @@ SINA.lectures["biochem-lipids"] = {
   {
    "q": "How long should the patient fast for a lipid profile?",
    "options": [
-    "At least 12 hours",
     "2 hours",
+    "No fasting",
     "24 hours",
-    "No fasting"
+    "At least 12 hours"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "12-hour fast, 15 min rest, away from acute illness; wait 3 to 4 months after an infarction."
   },
   {
    "q": "What does a lactescent creamy serum mean?",
    "options": [
-    "Excess LDL",
-    "Excess HDL",
     "Excess chylomicrons",
-    "Normal serum"
+    "Excess HDL",
+    "Normal serum",
+    "Excess LDL"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "Clear: normal. Creamy layer: chylomicrons. Cloudy: VLDL or IDL."
   },
   {
    "q": "What is the upper limit of normal triglycerides?",
    "options": [
-    "0.5 g/L",
     "1.5 g/L",
-    "4 g/L",
-    "10 g/L"
+    "0.5 g/L",
+    "10 g/L",
+    "4 g/L"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "TG 0.5 to 1.5 g/L; total cholesterol 1.5 to 2 g/L; HDL 0.35 to 0.65 g/L."
   },
   {
    "q": "When can Friedewald's formula not be used?",
    "options": [
-    "HDL over 0.5 g/L",
     "Cholesterol under 2 g/L",
+    "HDL over 0.5 g/L",
     "After fasting",
     "Triglycerides over 3.5 g/L"
    ],
@@ -3102,12 +3895,12 @@ SINA.lectures["biochem-lipids"] = {
   {
    "q": "What is the LDL target with cardiovascular risk factors?",
    "options": [
-    "Under 4 mmol/L",
-    "Under 6 mmol/L",
     "Under 2.6 mmol/L",
+    "Under 6 mmol/L",
+    "Under 4 mmol/L",
     "Under 1 mmol/L"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "Without risk factors under 4 mmol/L; with them under 2.6 mmol/L."
   },
   {
@@ -3123,6 +3916,255 @@ SINA.lectures["biochem-lipids"] = {
     1
    ],
    "why": "Age over 50 (men) or 60 (women), family coronary history, tobacco, hypertension, type 2 diabetes, HDL under 1 mmol/L, microalbuminuria."
+  },
+  {
+   "q": "Which lipids form the apolar core of a lipoprotein?",
+   "options": [
+    "Bile acids",
+    "Triglycerides and cholesterol esters",
+    "Phospholipids and free cholesterol",
+    "Apoproteins"
+   ],
+   "answer": 1,
+   "why": "The shell holds phospholipids, free cholesterol and apoproteins."
+  },
+  {
+   "q": "What proportion of cholesterol is made by the liver?",
+   "options": [
+    "All of it",
+    "Two thirds",
+    "One third",
+    "None"
+   ],
+   "answer": 1,
+   "why": "One third comes from food."
+  },
+  {
+   "q": "Which apoprotein activates LCAT?",
+   "options": [
+    "Apo CII",
+    "Apo B100",
+    "Apo AI",
+    "Apo E"
+   ],
+   "answer": 2,
+   "why": "LCAT esterifies HDL cholesterol."
+  },
+  {
+   "q": "Which lipoprotein is richest in triglycerides?",
+   "options": [
+    "IDL",
+    "LDL",
+    "Chylomicrons",
+    "HDL"
+   ],
+   "answer": 2,
+   "why": "86 to 94%, followed by VLDL."
+  },
+  {
+   "q": "Which lipoprotein is the densest?",
+   "options": [
+    "HDL",
+    "LDL",
+    "Chylomicrons",
+    "VLDL"
+   ],
+   "answer": 0,
+   "why": "Less fat means smaller and denser."
+  },
+  {
+   "q": "Which enzyme converts IDL to LDL?",
+   "options": [
+    "LCAT",
+    "Lipoprotein lipase",
+    "Hepatic triglyceride lipase",
+    "HMG-CoA reductase"
+   ],
+   "answer": 2,
+   "why": "LPL converts VLDL to IDL."
+  },
+  {
+   "q": "Why is HDL called 'good cholesterol'?",
+   "options": [
+    "It collects excess free cholesterol and esterifies it via LCAT",
+    "It delivers cholesterol to the arterial wall",
+    "It contains apo B100 like LDL",
+    "It carries dietary triglycerides from the gut"
+   ],
+   "answer": 0,
+   "why": "Preventing accumulation in the vascular wall."
+  },
+  {
+   "q": "How long should the fast be before a lipid profile?",
+   "options": [
+    "None",
+    "2 hours",
+    "At least 12 hours",
+    "48 hours"
+   ],
+   "answer": 2,
+   "why": "And 15 minutes' rest."
+  },
+  {
+   "q": "How long should you wait after a myocardial infarction before a lipid profile?",
+   "options": [
+    "1 day",
+    "1 week",
+    "3 to 4 months",
+    "1 year"
+   ],
+   "answer": 2,
+   "why": "Acute illness distorts the results."
+  },
+  {
+   "q": "A lactescent serum with a creamy layer indicates excess:",
+   "options": [
+    "LDL",
+    "HDL",
+    "Albumin",
+    "Chylomicrons"
+   ],
+   "answer": 3,
+   "why": "Opalescent serum points to VLDL or IDL."
+  },
+  {
+   "q": "Friedewald's formula can be used only if triglycerides are below:",
+   "options": [
+    "Any value",
+    "10 g/L",
+    "3.5 g/L (4 mmol/L)",
+    "1 g/L"
+   ],
+   "answer": 2,
+   "why": "Above that, measure LDL directly or use Planella's formula."
+  },
+  {
+   "q": "Which is NOT listed as a cardiovascular risk factor for the LDL target?",
+   "options": [
+    "Microalbuminuria",
+    "Smoking",
+    "HDL above 1.5 mmol/L",
+    "Type 2 diabetes"
+   ],
+   "answer": 2,
+   "why": "Low HDL (under 1 mmol/L) is the risk factor."
+  },
+  {
+   "q": "With cardiovascular risk factors, the LDL target is below:",
+   "options": [
+    "2.6 mmol/L",
+    "6 mmol/L",
+    "1 mmol/L",
+    "4 mmol/L"
+   ],
+   "answer": 0,
+   "why": "Below 4 mmol/L without risk factors."
+  },
+  {
+   "q": "Atherogenic risk rises with:",
+   "options": [
+    "Total/HDL ratio below 3",
+    "Apo AI alone",
+    "HDL",
+    "The apo B/apo AI ratio"
+   ],
+   "answer": 3,
+   "why": "Apo dosage is the most accurate risk assessment."
+  },
+  {
+   "q": "Type I hyperlipoproteinaemia in the Fredrickson classification is:",
+   "options": [
+    "Hypocholesterolaemia",
+    "Hyperchylomicronaemia",
+    "Hyper-HDL",
+    "Hyper-LDL"
+   ],
+   "answer": 1,
+   "why": "Mainly triglycerides."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "gut",
+   "options": [
+    "Chylomicron remnants",
+    "Chylomicrons",
+    "VLDL",
+    "Lipoprotein lipase"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: Chylomicrons. Made by enterocytes from dietary lipids after a meal; the largest and richest in triglycerides."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "liver",
+   "options": [
+    "Chylomicron remnants",
+    "IDL to LDL",
+    "VLDL",
+    "Chylomicrons"
+   ],
+   "answer": 2,
+   "why": "The arrow points to: VLDL. Made by the liver from endogenous triglycerides."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "lpl",
+   "options": [
+    "Chylomicron remnants",
+    "Lipoprotein lipase",
+    "HDL",
+    "VLDL"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: Lipoprotein lipase. Endothelial enzyme that hydrolyses triglycerides of chylomicrons and VLDL."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "remn",
+   "options": [
+    "Chylomicron remnants",
+    "IDL to LDL",
+    "Lipoprotein lipase",
+    "LDL"
+   ],
+   "answer": 0,
+   "why": "The arrow points to: Chylomicron remnants. Taken up by hepatic B/E receptors and degraded."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "idl",
+   "options": [
+    "Lipoprotein lipase",
+    "IDL to LDL",
+    "Chylomicrons",
+    "Chylomicron remnants"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: IDL to LDL. IDL is converted to LDL by hepatic triglyceride lipase."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "ldl",
+   "options": [
+    "LDL",
+    "IDL to LDL",
+    "VLDL",
+    "Chylomicrons"
+   ],
+   "answer": 0,
+   "why": "The arrow points to: LDL. Rich in cholesterol esters and apo B100; delivers cholesterol to tissues; atherogenic."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "hdl",
+   "options": [
+    "HDL",
+    "LDL",
+    "Chylomicron remnants",
+    "VLDL"
+   ],
+   "answer": 0,
+   "why": "The arrow points to: HDL. Apo AI activates LCAT, which esterifies free cholesterol; anti-atherogenic."
   }
  ],
  "cards": [
@@ -3173,12 +4215,142 @@ SINA.lectures["biochem-lipids"] = {
    "type": "text",
    "front": "Define dyslipidaemia.",
    "back": "High cholesterol and/or TG, or high LDL and low HDL, promoting atherosclerosis. Hyperlipoproteinaemia (about 4 percent of adults over 30) is primary (genetic) or secondary (disease, drugs). Hypocholesterolaemia: TC under 1.3 g/L (hereditary or hyperthyroidism, liver disease). Fredrickson classification: type I = excess chylomicrons."
+  },
+  {
+   "id": "x0",
+   "type": "text",
+   "front": "Structure of a lipoprotein?",
+   "back": "Apolar core of triglycerides and cholesterol esters; amphipathic shell of phospholipids, free cholesterol and apoproteins."
+  },
+  {
+   "id": "x1",
+   "type": "text",
+   "front": "Roles of apoproteins?",
+   "back": "Structural (solubilise and transport the complex) and metabolic (bind receptors, activate enzymes such as apo AI activating LCAT)."
+  },
+  {
+   "id": "x2",
+   "type": "text",
+   "front": "Compare the four lipoproteins.",
+   "back": "Chylomicrons: most TG, apo B48, largest. VLDL: hepatic TG, B100. LDL: cholesterol esters, B100. HDL: phospholipids, apo A and C, densest."
+  },
+  {
+   "id": "x3",
+   "type": "text",
+   "front": "Exogenous lipid pathway?",
+   "back": "Dietary TG → monoglycerides and FA → bile acid micelles → enterocyte chylomicrons → lymph → blood → LPL → remnants cleared by the liver."
+  },
+  {
+   "id": "x4",
+   "type": "text",
+   "front": "Endogenous pathway?",
+   "back": "Liver VLDL → LPL → IDL → hepatic lipase → LDL → LDL receptors in liver and tissues."
+  },
+  {
+   "id": "x5",
+   "type": "text",
+   "front": "Sampling rules for a lipid profile?",
+   "back": "12 h fast, 15 min rest, away from acute illness (3-4 months after MI), dry or heparin tube, no haemolysis."
+  },
+  {
+   "id": "x6",
+   "type": "text",
+   "front": "Reference values?",
+   "back": "TG 0.5-1.5 g/L; TC 1.50-2 g/L; HDL 0.35-0.65 g/L; TC/HDL < 4.9 men, < 4.2 women; apo B 0.6-1.40 g/L; apo AI > 1.10 g/L."
+  },
+  {
+   "id": "x7",
+   "type": "text",
+   "front": "Friedewald's formula and its limit?",
+   "back": "LDL = TC - HDL - TG/5 (g/L) or TG/2.2 (mmol/L); only if TG < 3.5 g/L (4 mmol/L)."
+  },
+  {
+   "id": "img-gut",
+   "type": "image",
+   "target": "gut",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Chylomicrons. Made by enterocytes from dietary lipids after a meal; the largest and richest in triglycerides."
+  },
+  {
+   "id": "img-liver",
+   "type": "image",
+   "target": "liver",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "VLDL. Made by the liver from endogenous triglycerides."
+  },
+  {
+   "id": "img-lpl",
+   "type": "image",
+   "target": "lpl",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Lipoprotein lipase. Endothelial enzyme that hydrolyses triglycerides of chylomicrons and VLDL."
+  },
+  {
+   "id": "img-remn",
+   "type": "image",
+   "target": "remn",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Chylomicron remnants. Taken up by hepatic B/E receptors and degraded."
+  },
+  {
+   "id": "img-idl",
+   "type": "image",
+   "target": "idl",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "IDL to LDL. IDL is converted to LDL by hepatic triglyceride lipase."
+  },
+  {
+   "id": "img-ldl",
+   "type": "image",
+   "target": "ldl",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "LDL. Rich in cholesterol esters and apo B100; delivers cholesterol to tissues; atherogenic."
+  },
+  {
+   "id": "img-hdl",
+   "type": "image",
+   "target": "hdl",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "HDL. Apo AI activates LCAT, which esterifies free cholesterol; anti-atherogenic."
   }
  ],
- "deeper": [],
- "resources": [],
+ "deeper": [
+  {
+   "title": "Why Friedewald fails when triglycerides are high",
+   "html": "<p>The formula estimates VLDL cholesterol as a fixed fraction of triglycerides (TG/5 in g/L). When triglycerides are very high, chylomicrons and remnants appear with a different cholesterol/TG ratio, the estimate breaks down, and the calculated LDL becomes wrong. That is why LDL must be measured directly above 3.5 g/L.</p><p class='src'>Source: the lecture's reference values slide.</p>"
+  },
+  {
+   "title": "Why the serum's appearance is informative",
+   "html": "<p>Particles scatter light in proportion to their size. Huge chylomicrons make serum milky and, being light, float up as a creamy layer on standing; smaller VLDL make it uniformly cloudy; LDL and HDL are too small to affect clarity. A clear serum therefore does not rule out high LDL cholesterol.</p><p class='src'>Source: the lecture's serum appearance slide.</p>"
+  }
+ ],
+ "resources": [
+  {
+   "title": "High cholesterol (NHS)",
+   "url": "https://www.nhs.uk/conditions/high-cholesterol/",
+   "kind": "Article",
+   "why": "Risks, testing and treatment of hypercholesterolaemia.",
+   "note": ""
+  },
+  {
+   "title": "Lipid metabolism (Osmosis)",
+   "url": "https://www.osmosis.org/",
+   "kind": "Website",
+   "why": "Animated reviews of lipoprotein metabolism.",
+   "note": ""
+  }
+ ],
  "checks": [],
- "sources": [],
+ "sources": [
+  {
+   "name": "High cholesterol (NHS)",
+   "url": "https://www.nhs.uk/conditions/high-cholesterol/"
+  },
+  {
+   "name": "Lipid metabolism (Osmosis)",
+   "url": "https://www.osmosis.org/"
+  }
+ ],
  "verified": "22 Sep 2026"
 };
 window.SINA = window.SINA || {subjects:[], lectures:{}};
@@ -3189,72 +4361,223 @@ SINA.lectures["biochem-calcium"] = {
  "title": "Calcium-phosphate balance",
  "sourceFile": "11 Calcium phosphate balance.pdf (Clinical Biochemistry, Prof. Nabiha Kamal)",
  "sourceUrl": "https://drive.google.com/file/d/1DLjREp0DQI-EYwR4A9H0zhAWC8OUjEd4/view?usp=drivesdk",
- "buildNote": "<strong>Short version.</strong> The full version, with more questions and extra reading, is coming soon. <strong>Built from the lecture slides.</strong> If your professor says something different, trust your professor.",
+ "buildNote": "<strong>Built from the lecture slides.</strong> Slides that only show pictures are covered in outline. If your professor says something different, trust your professor.",
  "summary": [
   {
    "id": "s0",
    "title": "The big picture",
-   "html": "<p>Calcium and phosphate are balanced by <strong>bone, gut and kidney</strong> under three hormones. The key exam trio: <strong>PTH raises Ca, lowers P; calcitriol raises both; calcitonin lowers both</strong>.</p>"
+   "html": "<p>Calcium and phosphorus build the skeleton, but they are also vital: calcium for neuromuscular excitability, enzymes, membrane transport, hormone action and <strong>clotting</strong>; phosphorus for activating molecules (sugar-phosphates), <strong>ATP</strong>, enzyme regulation, phospholipids and nucleic acids, and <strong>acid-base buffering</strong>. Their metabolisms are linked and regulated by <strong>three organs</strong> (bone, intestine, kidney) and <strong>three hormones</strong> (PTH, calcitonin, vitamin D).</p>"
   },
   {
    "id": "s1",
-   "title": "Metabolism",
-   "html": "<p><div class='table-wrap'><table class='wide'><thead><tr><th scope='col'></th><th scope='col'>Calcium</th><th scope='col'>Phosphorus</th></tr></thead><tbody><tr><th scope='row'>Needs</th><td>800 to 1000 mg/day</td><td>1 g/day</td></tr><tr><th scope='row'>In bone</th><td>99 percent</td><td>85 percent</td></tr><tr><th scope='row'>Absorbed</th><td>Duodenum</td><td>Jejunum, ileum</td></tr><tr><th scope='row'>Renal reabsorption</th><td>95 percent</td><td>90 percent (proximal)</td></tr></tbody></table></div></p><p>Serum calcium: 45 percent ionised, 5 percent complexed, <strong>50 percent protein-bound</strong>.</p>"
+   "title": "Calcium",
+   "html": "<p><strong>Needs</strong>: 800 to 1,000 mg/day in adults, 1.2 g/day in growth, pregnancy, lactation and menopause (milk, cheese, mineral waters). <strong>Distribution</strong>: about 1 kg (25 mol), <strong>99% in bone</strong>. In serum, <strong>half is diffusible</strong> (45% ionised, 5% complexed) and half is <strong>protein-bound</strong>, mostly (80%) to albumin. <strong>Absorption</strong>: mainly duodenum (acid helps); active, calcitriol-dependent, saturable transport when intake is low; passive transport takes over above about 600 mg/day. <strong>Elimination</strong>: stool, and urine (only the ultrafilterable half is filtered; <strong>95% is reabsorbed</strong>; all when calcaemia is low, only half when it is high).</p>"
   },
   {
    "id": "s2",
-   "title": "Hormones",
-   "html": "<p><div class='table-wrap'><table class='wide'><thead><tr><th scope='col'>Hormone</th><th scope='col'>Source</th><th scope='col'>Calcium</th><th scope='col'>Phosphate</th></tr></thead><tbody><tr><th scope='row'>PTH</th><td>Parathyroid</td><td>Up</td><td>Down</td></tr><tr><th scope='row'>Calcitriol</th><td>Kidney-activated vitamin D</td><td>Up</td><td>Up</td></tr><tr><th scope='row'>Calcitonin</th><td>Thyroid C cells</td><td>Down</td><td>Down</td></tr></tbody></table></div></p><p>Oestrogens and thyroid hormones increase absorption; cortisol decreases mineralisation.</p>"
+   "title": "Phosphorus",
+   "html": "<p><strong>Needs</strong>: 1 g/day (1.2 to 1.4 g/day in pregnancy and lactation). About 600 g (0.8% of body mass): <strong>85% bone</strong>, 14% intracellular, 1% extracellular. Organic (ATP, phospholipids) and inorganic forms; 90% of inorganic phosphate is ultrafilterable (HPO4²⁻ 80%, H2PO4⁻ 20%). Absorbed in the <strong>jejunum and ileum</strong>, in proportion to intake (active calcitriol-dependent plus passive). Renal: <strong>90% reabsorbed in the proximal tubule</strong>, in competition with glucose.</p>"
   },
   {
    "id": "s3",
+   "title": "Regulation",
+   "html": "<p><strong>PTH</strong>: 84 amino acids from the parathyroids; cleaved in liver and kidney, the <strong>N-terminal fragment carries the activity</strong>. It increases bone resorption, intestinal absorption and renal reabsorption of calcium, with the opposite effect on phosphate: <strong>hypercalcaemic, hypophosphataemic</strong>. <strong>Calcitonin</strong>: from thyroid <strong>parafollicular cells</strong>; fixes calcium and phosphate on bone, no direct gut action, lowers their renal reabsorption: <strong>hypocalcaemic, hypophosphataemic</strong>. <strong>Calcitriol</strong> (1,25-dihydroxycholecalciferol, the most active vitamin D metabolite): resorbs old bone and mineralises new bone, increases gut absorption and renal reabsorption of both: <strong>hypercalcaemic, hyperphosphataemic</strong>. Other hormones affect bone without regulating the balance: oestrogens (more absorption and mineralisation), thyroid hormones (more turnover), cortisol (less mineralisation and absorption).</p>"
+  },
+  {
+   "id": "s4",
    "title": "Exploration",
-   "html": "<p>Fasting, short tourniquet, <strong>no EDTA</strong>. Calcium <strong>2.25 to 2.60 mmol/L</strong>; correct for albumin: measured + (40 − albumin)/40. Phosphate 30 to 40 mg/L (adult). PTH and vitamin D assays.</p>"
+   "html": "<p><strong>Calcaemia</strong>: morning, fasting; tourniquet neither too tight nor too long (venous stasis concentrates proteins and falsely raises calcium); no <strong>EDTA, citrate or oxalate</strong> (they chelate calcium). Reference <strong>85 to 105 mg/L (2.25 to 2.60 mmol/L)</strong>. <strong>Calciuria</strong> on 24-hour urine in a plastic or decalcified glass bottle. Because half of calcium is protein-bound, correct it: <strong>corrected Ca = measured Ca (mmol/L) + (40 - albumin g/L)/40</strong>, or measured Ca / [0.55 + (protein g/L)/160]. <strong>Phosphate</strong> (inorganic, fasting): adult 30 to 40 mg/L, child 40 to 60 mg/L. <strong>Hormones</strong>: PTH (useful in hypercalcaemia) and vitamin D.</p>"
   }
  ],
  "exam": [
-  "Ca needs 800 to 1000 mg/day; 99 percent in bone.",
-  "Serum Ca: 45 percent ionised, 50 percent bound.",
-  "Ca absorbed in duodenum; P in jejunum and ileum.",
-  "PTH: Ca up, P down.",
-  "Calcitriol: both up; calcitonin: both down.",
-  "No EDTA; correct Ca for albumin.",
-  "Ca 2.25 to 2.60 mmol/L; P 30 to 40 mg/L."
+  "Ca: 99% in bone; P: 85% in bone.",
+  "Serum Ca: 50% diffusible (45% ionised), 50% protein-bound (80% albumin).",
+  "Ca absorbed mainly in the duodenum; P in the jejunum-ileum.",
+  "Active Ca absorption is calcitriol-dependent and saturable; passive above ~600 mg/day.",
+  "Kidney reabsorbs 95% of filtered Ca and 90% of filtered P.",
+  "PTH: Ca↑ P↓; calcitonin: Ca↓ P↓; calcitriol: Ca↑ P↑.",
+  "PTH: 84 amino acids, active N-terminal fragment.",
+  "Calcitonin comes from thyroid parafollicular cells.",
+  "Calcaemia 85-105 mg/L (2.25-2.60 mmol/L); no EDTA, citrate, oxalate.",
+  "Corrected Ca = measured + (40 - albumin)/40.",
+  "Phosphataemia: adult 30-40 mg/L, child 40-60 mg/L."
  ],
  "visual": {
   "kind": "model",
-  "intro": ""
+  "intro": "",
+  "figure": {
+   "viewBox": "0 0 760 420",
+   "alt": "Calcium-phosphate regulation",
+   "caption": "Three hormones acting on three organs. Schematic drawn for this site.",
+   "base": "<defs><marker id=\"ah\" markerWidth=\"10\" markerHeight=\"8\" refX=\"9\" refY=\"4\" orient=\"auto\"><path d=\"M0,0 L10,4 L0,8 Z\" fill=\"#8a8a8a\"/></marker></defs><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"140\" y1=\"100\" x2=\"140\" y2=\"180\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"240\" y1=\"70\" x2=\"520\" y2=\"210\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"380\" y1=\"100\" x2=\"380\" y2=\"180\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"720\" y1=\"70\" x2=\"40\" y2=\"210\"/>",
+   "parts": {
+    "pth": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2d7cf\" x=\"40\" y=\"40\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "PTH (parathyroid):",
+      "Ca↑, P↓"
+     ],
+     "lx": 140.0,
+     "ly": 68.0
+    },
+    "vitd": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#cfe3f2\" x=\"280\" y=\"40\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Calcitriol (1,25-OH2 D3):",
+      "Ca↑, P↑"
+     ],
+     "lx": 380.0,
+     "ly": 68.0
+    },
+    "ct": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d7edd2\" x=\"520\" y=\"40\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Calcitonin (thyroid C cells):",
+      "Ca↓, P↓"
+     ],
+     "lx": 620.0,
+     "ly": 68.0
+    },
+    "bone": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2e2a8\" x=\"40\" y=\"180\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Bone: 99% of Ca,",
+      "85% of P"
+     ],
+     "lx": 140.0,
+     "ly": 208.0
+    },
+    "gut": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#e3d5f0\" x=\"280\" y=\"180\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Intestine: Ca duodenum,",
+      "P jejunum-ileum"
+     ],
+     "lx": 380.0,
+     "ly": 208.0
+    },
+    "kid": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f7d9b8\" x=\"520\" y=\"180\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Kidney: tubular",
+      "reabsorption"
+     ],
+     "lx": 620.0,
+     "ly": 208.0
+    }
+   },
+   "arrows": {
+    "pth": [
+     {
+      "t": [
+       40.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "vitd": [
+     {
+      "t": [
+       280.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "ct": [
+     {
+      "t": [
+       520.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "bone": [
+     {
+      "t": [
+       40.0,
+       188.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "gut": [
+     {
+      "t": [
+       280.0,
+       188.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "kid": [
+     {
+      "t": [
+       520.0,
+       188.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ]
+   }
+  }
  },
  "mcqs": [
   {
    "q": "What is the adult daily calcium need?",
    "options": [
+    "3 to 4 g",
     "800 to 1000 mg",
     "100 to 200 mg",
-    "3 to 4 g",
     "10 g"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "Rising to 1.2 g/day in growth, pregnancy, lactation and menopause."
   },
   {
    "q": "What share of body calcium is in bone?",
    "options": [
-    "50 percent",
-    "99 percent",
+    "10 percent",
     "75 percent",
-    "10 percent"
+    "50 percent",
+    "99 percent"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "1 kg of calcium, 99 percent in bone."
   },
   {
    "q": "What share of serum calcium is ionised?",
    "options": [
+    "100 percent",
     "5 percent",
-    "80 percent",
     "45 percent",
-    "100 percent"
+    "80 percent"
    ],
    "answer": 2,
    "why": "45 percent ionised, 5 percent complexed (diffusible), 50 percent protein-bound, mostly albumin."
@@ -3262,30 +4585,30 @@ SINA.lectures["biochem-calcium"] = {
   {
    "q": "Where is calcium mainly absorbed?",
    "options": [
-    "The ileum",
-    "The colon",
+    "The duodenum",
     "The stomach",
-    "The duodenum"
+    "The ileum",
+    "The colon"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "Acidity helps; active transport needs calcitriol and is saturable; passive transport takes over above 600 mg/day."
   },
   {
    "q": "What share of filtered calcium is reabsorbed?",
    "options": [
-    "10 percent",
-    "95 percent",
+    "All of it always",
     "50 percent",
-    "All of it always"
+    "95 percent",
+    "10 percent"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "Calciuria depends on calcaemia: all reabsorbed when low, half when high."
   },
   {
    "q": "Where is phosphorus mainly absorbed?",
    "options": [
-    "The duodenum",
     "The stomach",
+    "The duodenum",
     "The colon",
     "The jejunum and ileum"
    ],
@@ -3295,31 +4618,31 @@ SINA.lectures["biochem-calcium"] = {
   {
    "q": "What share of body phosphorus is in bone?",
    "options": [
-    "85 percent",
-    "99 percent",
     "50 percent",
-    "14 percent"
+    "85 percent",
+    "14 percent",
+    "99 percent"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "85 percent bone, 14 percent intracellular, 1 percent extracellular."
   },
   {
    "q": "What is the net effect of PTH?",
    "options": [
-    "Lowers Ca, raises phosphate",
-    "Lowers both",
     "Raises Ca, lowers phosphate",
+    "Lowers both",
+    "Lowers Ca, raises phosphate",
     "Raises both"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "PTH is hypercalcaemic and hypophosphataemic."
   },
   {
    "q": "Which PTH fragment is active?",
    "options": [
+    "Neither",
     "The C-terminal fragment",
     "Both equally",
-    "Neither",
     "The N-terminal fragment"
    ],
    "answer": 3,
@@ -3328,56 +4651,56 @@ SINA.lectures["biochem-calcium"] = {
   {
    "q": "Which cells make calcitonin?",
    "options": [
+    "Osteoblasts",
     "Thyroid parafollicular cells",
-    "Parathyroid chief cells",
     "Kidney tubule cells",
-    "Osteoblasts"
+    "Parathyroid chief cells"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "Calcitonin fixes Ca and P on bone and lowers their renal reabsorption: hypocalcaemic, hypophosphataemic."
   },
   {
    "q": "What is the net effect of calcitriol?",
    "options": [
-    "Lowers Ca and phosphate",
     "Raises Ca only",
     "Raises Ca and phosphate",
+    "Lowers Ca and phosphate",
     "Lowers phosphate only"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "1,25-dihydroxy vitamin D3 raises intestinal absorption and renal reabsorption of both."
   },
   {
    "q": "Which tube is forbidden for calcium?",
    "options": [
+    "Heparin tube",
     "Dry tube",
     "EDTA",
-    "Heparin tube",
     "Serum gel tube"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "EDTA, citrate and oxalate chelate calcium."
   },
   {
    "q": "What is normal serum calcium?",
    "options": [
-    "1.0 to 1.5 mmol/L",
-    "3.5 to 4.0 mmol/L",
+    "2.25 to 2.60 mmol/L",
     "0.5 to 1 mmol/L",
-    "2.25 to 2.60 mmol/L"
+    "1.0 to 1.5 mmol/L",
+    "3.5 to 4.0 mmol/L"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "85 to 105 mg/L; fasting morning sample, short tourniquet."
   },
   {
    "q": "Why correct calcium for albumin?",
    "options": [
-    "Albumin chelates calcium",
-    "Albumin lowers PTH",
+    "It is ionised",
     "Half is protein-bound",
-    "It is ionised"
+    "Albumin chelates calcium",
+    "Albumin lowers PTH"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "Corrected Ca = measured + (40 − albumin)/40 (mmol/L)."
   },
   {
@@ -3393,6 +4716,243 @@ SINA.lectures["biochem-calcium"] = {
     1
    ],
    "why": "PTH and calcitriol are hypercalcaemic; calcitonin lowers calcium; cortisol reduces bone mineralisation and absorption."
+  },
+  {
+   "q": "What fraction of body calcium is in bone?",
+   "options": [
+    "25%",
+    "85%",
+    "50%",
+    "99%"
+   ],
+   "answer": 3,
+   "why": "About 1 kg of calcium in total."
+  },
+  {
+   "q": "What share of serum calcium is ionised?",
+   "options": [
+    "5%",
+    "100%",
+    "45%",
+    "80%"
+   ],
+   "answer": 2,
+   "why": "Another 5% is complexed; half is protein-bound."
+  },
+  {
+   "q": "Where is calcium mainly absorbed?",
+   "options": [
+    "Ileum only",
+    "Colon",
+    "Stomach",
+    "Duodenum"
+   ],
+   "answer": 3,
+   "why": "The acid environment helps dissolve calcium salts."
+  },
+  {
+   "q": "Active intestinal calcium absorption depends on:",
+   "options": [
+    "Calcitonin",
+    "PTH directly",
+    "Insulin",
+    "1,25-dihydroxyvitamin D3"
+   ],
+   "answer": 3,
+   "why": "It is efficient but saturable."
+  },
+  {
+   "q": "What proportion of filtered calcium is reabsorbed by the kidney?",
+   "options": [
+    "95%",
+    "10%",
+    "50%",
+    "100% always"
+   ],
+   "answer": 0,
+   "why": "All of it when calcaemia is low; only half when it is high."
+  },
+  {
+   "q": "Where is phosphate reabsorbed in the kidney?",
+   "options": [
+    "Proximal tubule, competing with glucose",
+    "Loop of Henle, with sodium",
+    "Distal tubule only, via PTH",
+    "Collecting duct, under ADH"
+   ],
+   "answer": 0,
+   "why": "About 90% of the ultrafilterable fraction."
+  },
+  {
+   "q": "What is the overall effect of PTH?",
+   "options": [
+    "Hypocalcaemic, hyperphosphataemic",
+    "No effect on P",
+    "Hypercalcaemic, hyperphosphataemic",
+    "Hypercalcaemic, hypophosphataemic"
+   ],
+   "answer": 3,
+   "why": "Opposite actions on calcium and phosphate in the three organs."
+  },
+  {
+   "q": "Which fragment of PTH is biologically active?",
+   "options": [
+    "C-terminal",
+    "None",
+    "N-terminal",
+    "Middle"
+   ],
+   "answer": 2,
+   "why": "PTH is cleaved in the liver and kidney."
+  },
+  {
+   "q": "Calcitonin is produced by:",
+   "options": [
+    "Parathyroid chief cells",
+    "Kidney",
+    "Thyroid parafollicular cells",
+    "Adrenal cortex"
+   ],
+   "answer": 2,
+   "why": "It is hypocalcaemic and hypophosphataemic."
+  },
+  {
+   "q": "Which hormone raises both calcium and phosphate?",
+   "options": [
+    "Calcitriol",
+    "PTH",
+    "Calcitonin",
+    "Cortisol"
+   ],
+   "answer": 0,
+   "why": "It increases intestinal absorption and renal reabsorption of both."
+  },
+  {
+   "q": "Why must EDTA tubes not be used for calcaemia?",
+   "options": [
+    "They clot",
+    "EDTA chelates calcium",
+    "They haemolyse",
+    "They contain calcium"
+   ],
+   "answer": 1,
+   "why": "Citrate and oxalate do the same."
+  },
+  {
+   "q": "Why should the tourniquet not stay on long?",
+   "options": [
+    "Stasis concentrates proteins: Ca falsely high",
+    "It activates parathyroid hormone release",
+    "It causes haemolysis of the sample",
+    "It lowers calcium by chelation"
+   ],
+   "answer": 0,
+   "why": "Half of calcium is protein-bound."
+  },
+  {
+   "q": "Normal total calcaemia is:",
+   "options": [
+    "1.0 to 1.3 mmol/L",
+    "0.8 to 1.2 mmol/L",
+    "3.5 to 4.0 mmol/L",
+    "2.25 to 2.60 mmol/L"
+   ],
+   "answer": 3,
+   "why": "85 to 105 mg/L."
+  },
+  {
+   "q": "A patient has calcium 2.0 mmol/L and albumin 30 g/L. Corrected calcium is:",
+   "options": [
+    "2.25 mmol/L",
+    "2.0 mmol/L",
+    "3.0 mmol/L",
+    "1.75 mmol/L"
+   ],
+   "answer": 0,
+   "why": "2.0 + (40 - 30)/40 = 2.25 mmol/L, which is normal."
+  },
+  {
+   "q": "Which hormone decreases bone mineralisation and calcium absorption?",
+   "options": [
+    "Oestrogen",
+    "Calcitriol",
+    "Cortisol",
+    "Thyroid hormone"
+   ],
+   "answer": 2,
+   "why": "Hence bone loss on long-term corticosteroids."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "pth",
+   "options": [
+    "Parathyroid hormone",
+    "Calcitonin",
+    "Bone",
+    "Calcitriol"
+   ],
+   "answer": 0,
+   "why": "The arrow points to: Parathyroid hormone. 84 amino acids; N-terminal fragment active; raises calcium and lowers phosphate."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "vitd",
+   "options": [
+    "Parathyroid hormone",
+    "Intestine",
+    "Calcitriol",
+    "Bone"
+   ],
+   "answer": 2,
+   "why": "The arrow points to: Calcitriol. 1,25-dihydroxycholecalciferol, the most active vitamin D metabolite; raises calcium and phosphate."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "ct",
+   "options": [
+    "Intestine",
+    "Calcitonin",
+    "Calcitriol",
+    "Bone"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: Calcitonin. From thyroid parafollicular cells; lowers calcium and phosphate, no direct gut action."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "bone",
+   "options": [
+    "Calcitriol",
+    "Calcitonin",
+    "Bone",
+    "Intestine"
+   ],
+   "answer": 2,
+   "why": "The arrow points to: Bone. Stores 99% of body calcium and 85% of phosphorus."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "gut",
+   "options": [
+    "Calcitonin",
+    "Intestine",
+    "Kidney",
+    "Bone"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: Intestine. Calcium absorbed mainly in the duodenum; phosphorus in the jejunum and ileum."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "kid",
+   "options": [
+    "Calcitonin",
+    "Kidney",
+    "Parathyroid hormone",
+    "Bone"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: Kidney. Reabsorbs 95% of filtered calcium and 90% of filtered phosphate."
   }
  ],
  "cards": [
@@ -3437,12 +4997,129 @@ SINA.lectures["biochem-calcium"] = {
    "type": "text",
    "front": "How is calcium-phosphate balance explored?",
    "back": "Calcium: fasting morning, short tourniquet (stasis raises protein and calcium), no EDTA, citrate or oxalate; 85 to 105 mg/L (2.25 to 2.60 mmol/L); correct for albumin. 24-h calciuria in plastic bottles. Phosphate: fasting; adult 30 to 40, child 40 to 60 mg/L. PTH (hypercalcaemia) and vitamin D assays."
+  },
+  {
+   "id": "x0",
+   "type": "text",
+   "front": "Roles of calcium and phosphorus beyond bone?",
+   "back": "Ca: neuromuscular excitability, enzymes, membrane transport, hormone action, clotting. P: sugar-phosphates, ATP, enzyme regulation, phospholipids and nucleic acids, acid-base buffer."
+  },
+  {
+   "id": "x1",
+   "type": "text",
+   "front": "Distribution of serum calcium?",
+   "back": "50% diffusible (45% ionised, 5% complexed), 50% protein-bound (80% on albumin)."
+  },
+  {
+   "id": "x2",
+   "type": "text",
+   "front": "Calcium absorption mechanisms?",
+   "back": "Duodenum; active, calcitriol-dependent, saturable when intake is low; passive gradient-driven above about 600 mg/day."
+  },
+  {
+   "id": "x3",
+   "type": "text",
+   "front": "Distribution of phosphorus?",
+   "back": "About 600 g: 85% bone, 14% intracellular, 1% extracellular; inorganic mostly ultrafilterable (HPO4²⁻ 80%, H2PO4⁻ 20%)."
+  },
+  {
+   "id": "x4",
+   "type": "text",
+   "front": "Compare PTH, calcitonin and calcitriol.",
+   "back": "PTH: Ca↑ P↓ (bone, gut, kidney). Calcitonin: Ca↓ P↓ (bone fixation, less renal reabsorption). Calcitriol: Ca↑ P↑ (gut absorption, renal reabsorption, bone turnover)."
+  },
+  {
+   "id": "x5",
+   "type": "text",
+   "front": "Pre-analytical rules for calcaemia?",
+   "back": "Morning fasting sample, short gentle tourniquet, no EDTA, citrate or oxalate; 24-h urine in a plastic or decalcified glass bottle."
+  },
+  {
+   "id": "x6",
+   "type": "text",
+   "front": "How do you correct calcium for albumin?",
+   "back": "Corrected Ca (mmol/L) = measured Ca + (40 - albumin g/L)/40."
+  },
+  {
+   "id": "img-pth",
+   "type": "image",
+   "target": "pth",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Parathyroid hormone. 84 amino acids; N-terminal fragment active; raises calcium and lowers phosphate."
+  },
+  {
+   "id": "img-vitd",
+   "type": "image",
+   "target": "vitd",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Calcitriol. 1,25-dihydroxycholecalciferol, the most active vitamin D metabolite; raises calcium and phosphate."
+  },
+  {
+   "id": "img-ct",
+   "type": "image",
+   "target": "ct",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Calcitonin. From thyroid parafollicular cells; lowers calcium and phosphate, no direct gut action."
+  },
+  {
+   "id": "img-bone",
+   "type": "image",
+   "target": "bone",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Bone. Stores 99% of body calcium and 85% of phosphorus."
+  },
+  {
+   "id": "img-gut",
+   "type": "image",
+   "target": "gut",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Intestine. Calcium absorbed mainly in the duodenum; phosphorus in the jejunum and ileum."
+  },
+  {
+   "id": "img-kid",
+   "type": "image",
+   "target": "kid",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Kidney. Reabsorbs 95% of filtered calcium and 90% of filtered phosphate."
   }
  ],
- "deeper": [],
- "resources": [],
+ "deeper": [
+  {
+   "title": "Why low albumin fakes hypocalcaemia",
+   "html": "<p>Half of serum calcium rides on proteins, mostly albumin, but only the ionised fraction acts on cells. When albumin falls, bound calcium falls and total calcium looks low, while ionised calcium can be perfectly normal. The correction formula adds back 0.025 mmol/L for each g/L of missing albumin.</p><p class='src'>Source: the lecture's Purfitt formula slide.</p>"
+  },
+  {
+   "title": "Why PTH moves calcium and phosphate in opposite directions",
+   "html": "<p>Releasing calcium from bone also releases phosphate, and a high product of the two would precipitate in tissues. PTH solves this by making the kidney excrete phosphate while it retains calcium, so blood calcium rises without phosphate following.</p><p class='src'>Source: the lecture's parathyroid hormone slide.</p>"
+  }
+ ],
+ "resources": [
+  {
+   "title": "Hypercalcaemia (NHS)",
+   "url": "https://www.nhs.uk/conditions/hypercalcaemia/",
+   "kind": "Article",
+   "why": "Symptoms and causes of high calcium.",
+   "note": ""
+  },
+  {
+   "title": "Vitamin D (NHS)",
+   "url": "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-d/",
+   "kind": "Article",
+   "why": "Sources and role of vitamin D.",
+   "note": ""
+  }
+ ],
  "checks": [],
- "sources": [],
+ "sources": [
+  {
+   "name": "Hypercalcaemia (NHS)",
+   "url": "https://www.nhs.uk/conditions/hypercalcaemia/"
+  },
+  {
+   "name": "Vitamin D (NHS)",
+   "url": "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-d/"
+  }
+ ],
  "verified": "22 Sep 2026"
 };
 window.SINA = window.SINA || {subjects:[], lectures:{}};
@@ -3453,62 +5130,240 @@ SINA.lectures["biochem-iron"] = {
  "title": "Iron balance",
  "sourceFile": "12 Iron balance.pdf (Clinical Biochemistry, Prof. Nabiha Kamal)",
  "sourceUrl": "https://drive.google.com/file/d/1WP92lLxsVCG8zh1TwbveHqH-vCuDABz2/view?usp=drivesdk",
- "buildNote": "<strong>Short version.</strong> The full version, with more questions and extra reading, is coming soon. <strong>Built from the lecture slides.</strong> If your professor says something different, trust your professor.",
+ "buildNote": "<strong>Built from the lecture slides.</strong> Slides that only show pictures are covered in outline. If your professor says something different, trust your professor.",
  "summary": [
   {
    "id": "s0",
    "title": "The big picture",
-   "html": "<p>For iron, remember two first-line tests: <strong>ferritin</strong> when you suspect deficiency, and <strong>transferrin saturation</strong> when you suspect overload. Serum iron alone is useless.</p>"
+   "html": "<p>Iron is essential for erythropoiesis. <strong>Iron deficiency is the commonest nutritional deficiency</strong>, especially in women and infants. The iron balance ('bilan martial') is interpreted with the clinical context (bleeding, inflammation, liver disease), age and sex.</p>"
   },
   {
    "id": "s1",
-   "title": "Iron metabolism",
-   "html": "<p>About <strong>4 g</strong>: 60 percent haemoglobin, 35 percent reserves. Needs: men 1, women 2 mg/day; <strong>10 percent</strong> of dietary iron absorbed (duodenum, vitamin C helps). <strong>Transferrin</strong> carries two ferric atoms and rises when stores fall. <strong>Ferritin</strong> is the available store; <strong>haemosiderin</strong> the slow one. <strong>Hepcidin</strong> traps iron in cells when iron is high.</p>"
+   "title": "Distribution and cycle",
+   "html": "<p>A healthy adult has about <strong>4 g</strong>. <strong>Haem iron (Fe²⁺)</strong>: 60% (2.4 g) in haemoglobin, 5% in myoglobin, traces in respiratory enzymes. <strong>Non-haem iron (Fe³⁺)</strong>: stores (ferritin and haemosiderin, 1.4 g, 35%) and plasma iron on transferrin (0.05 g). Macrophages destroy old red cells; the iron is stored or carried by transferrin back to the marrow; small amounts are lost in urine, desquamation, hair and nails, and episodically in menstruation and pregnancy.</p>"
   },
   {
    "id": "s2",
-   "title": "Tests",
-   "html": "<p><div class='table-wrap'><table class='wide'><thead><tr><th scope='col'>Test</th><th scope='col'>Normal</th></tr></thead><tbody><tr><th scope='row'>Serum iron</th><td>Men 10 to 30, women 8 to 28 µmol/L</td></tr><tr><th scope='row'>Transferrin</th><td>2.4 to 3.8 g/L</td></tr><tr><th scope='row'>TIBC</th><td>Transferrin x 25 = 60 to 95 µmol/L</td></tr><tr><th scope='row'>Saturation</th><td>Men 20 to 40, women 15 to 35 percent</td></tr><tr><th scope='row'>Ferritin</th><td>Men 30 to 300, women 20 to 200 µg/L</td></tr></tbody></table></div></p>"
+   "title": "Needs, absorption and transport",
+   "html": "<p><strong>Needs</strong>: 1 mg/day (men), 2 mg/day (women), 3 mg/day in the first two trimesters of pregnancy and 10 mg/day in the third; higher in infancy and adolescence. Sources: meat, fish, pulses; offal is richest. <strong>Absorption</strong>: duodenum and upper jejunum, about <strong>10% of intake</strong> (so intake should be 10 mg in men, 20 mg in women), helped by <strong>vitamin C and acid</strong>; animal (haem) iron is absorbed better than plant iron; absorption falls with overload and rises with increased erythropoiesis (bleeding, haemolysis).</p><p><strong>Transferrin</strong>, made mainly by hepatocytes, binds <strong>two ferric iron atoms</strong> and is about <strong>one-third saturated</strong>; its synthesis <strong>rises when stores fall</strong> and falls in overload. <strong>Transferrin receptors</strong> are richest on erythroblasts; a truncated <strong>soluble receptor (sTfR)</strong> reflects marrow activity.</p>"
   },
   {
    "id": "s3",
+   "title": "Stores and regulation",
+   "html": "<p>Stores are about one third of body iron, in liver, spleen and marrow. <strong>Ferritin</strong> (apoferritin + ferric iron) is readily mobilised; macrophage ferritin is used first, hepatocyte ferritin only afterwards. <strong>Plasma ferritin</strong> (about 150 µg/L; 80% glycosylated from macrophages) reflects stores well. <strong>Haemosiderin</strong> releases iron slowly and stains with Perls' Prussian blue. <strong>Hepcidin</strong>, from the liver, is induced by excess iron and blocks iron exit from enterocytes and macrophages; low iron lowers hepcidin.</p>"
+  },
+  {
+   "id": "s4",
+   "title": "Laboratory exploration",
+   "html": "<p>Serum iron alone is useless: HAS (2011) recommends measuring <strong>iron with transferrin</strong>. Sample fasting, no iron therapy for a week, no haemolysis. <strong>Serum iron</strong>: men 10 to 30 µmol/L, women 8 to 28. <strong>Transferrin</strong>: 2.4 to 3.8 g/L. <strong>TIBC = transferrin (g/L) × 25</strong> (60 to 95 µmol/L). <strong>Transferrin saturation = iron / (25 × transferrin) × 100</strong>: men 20 to 40%, women 15 to 35%. Functional iron: <strong>Hb, MCV, MCHC</strong>, and <strong>sTfR</strong> (rises in deficiency). <strong>Ferritin</strong> (no daily cycle): men 30 to 300, women 20 to 200, children 15 to 100 µg/L.</p>"
+  },
+  {
+   "id": "s5",
    "title": "Deficiency and overload",
-   "html": "<p><strong>Deficiency:</strong> bleeding, demand, poor intake. Hb under 120 (F) or 130 g/L (M), MCV under 80. <strong>Ferritin under 30 µg/L</strong> is diagnostic. sTfR helps in inflammation.</p><p><strong>Haemochromatosis:</strong> HFE mutation, low hepcidin; melanoderma, cirrhosis, diabetes, hypogonadism, heart disease. <strong>Saturation over 45 percent</strong> with high ferritin; HFE testing confirms. Secondary overload: haemolysis, transfusions, dialysis.</p>"
+   "html": "<p><strong>Deficiency</strong>: losses (chronic digestive bleeding in the elderly, genital bleeding in women, pregnancy, lactation, prematurity, blood donation, haemodialysis) or poor intake (infants, elderly, pregnancy; malabsorption: IBD, chronic diarrhoea, gastrectomy, bowel resection). It develops in three phases: latent deficiency, proven deficiency, anaemia. WHO anaemia: <strong>Hb under 120 g/L (women) or 130 g/L (men)</strong>, microcytic (MCV under 80 fL), hypochromic. <strong>Ferritin is the first-line test</strong>: <strong>under 30 µg/L with anaemia</strong> is enough; transferrin saturation (under 16%) falls only late and is a poor diagnostic test.</p><p><strong>Primary haemochromatosis</strong>: autosomal recessive, usually <strong>HFE mutation</strong>, which lowers hepcidin; non-transferrin-bound iron loads the <strong>liver, heart and pancreas</strong>. Signs: melanoderma, hepatomegaly to cirrhosis, diabetes, pituitary hypogonadism, arrhythmias and heart failure, joint disease. Biology: high iron, low transferrin, <strong>very high saturation</strong>; ferritin rises late. Screening threshold: <strong>saturation over 45%</strong>, confirmed with ferritin over 200 (women) or 300 µg/L (men) and HFE genotyping. <strong>Secondary overload</strong>: haemolytic anaemias (ineffective erythropoiesis), repeated transfusions, haemodialysis supplementation, liver disease, atransferrinaemia. In inflammation, sTfR helps find a deficiency component.</p>"
   }
  ],
  "exam": [
-  "Total iron about 4 g; 60 percent in haemoglobin.",
-  "Heme iron ferrous; reserve ferric.",
-  "Women need 2 mg/day; 10 percent absorbed.",
-  "Transferrin rises when stores fall.",
-  "TIBC = transferrin x 25.",
-  "Deficiency: ferritin first (under 30 µg/L).",
-  "Anaemia: Hb under 120 (F), MCV under 80.",
-  "Overload: saturation over 45 percent; HFE confirms."
+  "Body iron ≈ 4 g; 60% in haemoglobin; 35% in stores.",
+  "Haem iron Fe²⁺; non-haem Fe³⁺.",
+  "Needs: 1 mg/day men, 2 mg/day women, up to 10 mg/day late pregnancy.",
+  "Absorption: duodenum, ~10% of intake; vitamin C helps.",
+  "Transferrin binds 2 Fe³⁺, ~1/3 saturated; rises when stores fall.",
+  "TIBC = transferrin × 25; TS = iron / (25 × transferrin) × 100.",
+  "Ferritin reflects stores; first-line test for deficiency.",
+  "Ferritin < 30 µg/L + anaemia = iron deficiency anaemia.",
+  "WHO anaemia: Hb < 120 g/L women, < 130 g/L men.",
+  "Hepcidin blocks iron exit; low in HFE haemochromatosis.",
+  "Haemochromatosis screening: TS > 45%.",
+  "sTfR rises in deficiency and helps in inflammation."
  ],
  "visual": {
   "kind": "model",
-  "intro": ""
+  "intro": "",
+  "figure": {
+   "viewBox": "0 0 760 420",
+   "alt": "The iron cycle",
+   "caption": "How iron moves between gut, blood, marrow, red cells and stores. Schematic drawn for this site.",
+   "base": "<defs><marker id=\"ah\" markerWidth=\"10\" markerHeight=\"8\" refX=\"9\" refY=\"4\" orient=\"auto\"><path d=\"M0,0 L10,4 L0,8 Z\" fill=\"#8a8a8a\"/></marker></defs><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"240\" y1=\"70\" x2=\"280\" y2=\"70\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"480\" y1=\"70\" x2=\"520\" y2=\"70\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"620\" y1=\"100\" x2=\"620\" y2=\"170\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"720\" y1=\"200\" x2=\"280\" y2=\"200\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"380\" y1=\"230\" x2=\"380\" y2=\"40\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"480\" y1=\"200\" x2=\"40\" y2=\"200\"/>",
+   "parts": {
+    "gut": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2d7cf\" x=\"40\" y=\"40\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Duodenum: absorbs",
+      "~10% of intake"
+     ],
+     "lx": 140.0,
+     "ly": 68.0
+    },
+    "tf": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#cfe3f2\" x=\"280\" y=\"40\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Transferrin: carries",
+      "2 Fe³⁺, 1/3 saturated"
+     ],
+     "lx": 380.0,
+     "ly": 68.0
+    },
+    "marrow": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d7edd2\" x=\"520\" y=\"40\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Marrow erythroblasts",
+      "(transferrin receptors)"
+     ],
+     "lx": 620.0,
+     "ly": 68.0
+    },
+    "rbc": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2e2a8\" x=\"520\" y=\"170\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Red cells: Hb holds",
+      "60% of body iron"
+     ],
+     "lx": 620.0,
+     "ly": 198.0
+    },
+    "mac": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#e3d5f0\" x=\"280\" y=\"170\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Macrophages recycle",
+      "old red cells"
+     ],
+     "lx": 380.0,
+     "ly": 198.0
+    },
+    "store": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f7d9b8\" x=\"40\" y=\"170\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Stores: ferritin,",
+      "haemosiderin (35%)"
+     ],
+     "lx": 140.0,
+     "ly": 198.0
+    },
+    "hep": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d9ecec\" x=\"280\" y=\"300\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Hepcidin blocks",
+      "iron exit"
+     ],
+     "lx": 380.0,
+     "ly": 328.0
+    }
+   },
+   "arrows": {
+    "gut": [
+     {
+      "t": [
+       40.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "tf": [
+     {
+      "t": [
+       280.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "marrow": [
+     {
+      "t": [
+       520.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "rbc": [
+     {
+      "t": [
+       520.0,
+       178.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "mac": [
+     {
+      "t": [
+       280.0,
+       178.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "store": [
+     {
+      "t": [
+       40.0,
+       178.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "hep": [
+     {
+      "t": [
+       280.0,
+       308.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ]
+   }
+  }
  },
  "mcqs": [
   {
    "q": "How much iron does a healthy adult have?",
    "options": [
-    "About 4 g",
-    "About 40 mg",
     "About 400 g",
+    "About 40 mg",
+    "About 4 g",
     "About 40 g"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "About 4 g: 60 percent in haemoglobin, 5 percent myoglobin, 35 percent reserves."
   },
   {
    "q": "In which form is heme iron?",
    "options": [
-    "Ferric (Fe3+)",
+    "Metallic iron",
     "Ferrous (Fe2+)",
-    "Fe4+",
-    "Metallic iron"
+    "Ferric (Fe3+)",
+    "Fe4+"
    ],
    "answer": 1,
    "why": "Heme iron is ferrous; reserve and transport iron is ferric."
@@ -3516,32 +5371,32 @@ SINA.lectures["biochem-iron"] = {
   {
    "q": "What share of iron is in the reserves?",
    "options": [
-    "About 5 percent",
-    "About 60 percent",
+    "About 90 percent",
     "About 35 percent",
-    "About 90 percent"
+    "About 5 percent",
+    "About 60 percent"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "1.4 g in ferritin and haemosiderin."
   },
   {
    "q": "What is the daily iron need of a woman?",
    "options": [
-    "20 mg",
     "0.2 mg",
-    "10 mg",
-    "2 mg"
+    "20 mg",
+    "2 mg",
+    "10 mg"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "Men 1 mg, women 2 mg, pregnancy 3 mg (up to 10 mg in the third trimester)."
   },
   {
    "q": "What share of dietary iron is absorbed?",
    "options": [
-    "About 50 percent",
+    "About 1 percent",
     "About 10 percent",
-    "About 90 percent",
-    "About 1 percent"
+    "About 50 percent",
+    "About 90 percent"
    ],
    "answer": 1,
    "why": "So intake should be about 10 mg (men) and 20 mg (women); absorbed in duodenum, helped by vitamin C."
@@ -3549,8 +5404,8 @@ SINA.lectures["biochem-iron"] = {
   {
    "q": "How many ferric atoms does transferrin bind?",
    "options": [
-    "One",
     "Four",
+    "One",
     "Six",
     "Two"
    ],
@@ -3560,43 +5415,43 @@ SINA.lectures["biochem-iron"] = {
   {
    "q": "What happens to transferrin when stores fall?",
    "options": [
-    "Synthesis rises",
-    "Synthesis falls",
     "It disappears",
-    "It is unchanged"
+    "Synthesis falls",
+    "It is unchanged",
+    "Synthesis rises"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "Low stores increase transferrin synthesis; overload reduces it."
   },
   {
    "q": "What does soluble transferrin receptor reflect?",
    "options": [
-    "Iron stores",
-    "Liver function",
     "Marrow activity",
-    "Haemolysis only"
+    "Haemolysis only",
+    "Iron stores",
+    "Liver function"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "sTfR rises in iron deficiency and helps detect it within inflammatory anaemia."
   },
   {
    "q": "Which reserve is readily available?",
    "options": [
     "Haemosiderin",
+    "Ferritin",
     "Transferrin",
-    "Myoglobin",
-    "Ferritin"
+    "Myoglobin"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "Ferritin is easily mobilised; haemosiderin releases iron slowly (Perls' Prussian blue stain)."
   },
   {
    "q": "Is isolated serum iron useful?",
    "options": [
     "No",
+    "Only in children",
     "Yes, first-line",
-    "Only in men",
-    "Only in children"
+    "Only in men"
    ],
    "answer": 0,
    "why": "Measure iron together with transferrin to calculate TIBC and saturation."
@@ -3606,29 +5461,29 @@ SINA.lectures["biochem-iron"] = {
    "options": [
     "Iron x 25",
     "Ferritin / 25",
-    "Transferrin (g/L) x 25",
-    "Transferrin / 25"
+    "Transferrin / 25",
+    "Transferrin (g/L) x 25"
    ],
-   "answer": 2,
+   "answer": 3,
    "why": "TIBC 60 to 95 µmol/L in adults."
   },
   {
    "q": "What is the first-line test for iron deficiency?",
    "options": [
-    "Serum iron",
     "Serum ferritin",
-    "Transferrin saturation",
-    "Hepcidin"
+    "Hepcidin",
+    "Serum iron",
+    "Transferrin saturation"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "Ferritin under 30 µg/L with anaemia is enough to diagnose iron deficiency anaemia."
   },
   {
    "q": "What defines iron deficiency anaemia in women?",
    "options": [
     "Hb under 150 g/L",
-    "Macrocytic anaemia",
     "Normal MCV",
+    "Macrocytic anaemia",
     "Hb under 120 g/L, microcytic"
    ],
    "answer": 3,
@@ -3637,21 +5492,21 @@ SINA.lectures["biochem-iron"] = {
   {
    "q": "What does hepcidin do?",
    "options": [
-    "Increases iron absorption",
-    "Carries iron in plasma",
     "Blocks iron exit from cells",
-    "Stores iron"
+    "Increases iron absorption",
+    "Stores iron",
+    "Carries iron in plasma"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "Induced by excess iron, it traps iron in enterocytes and macrophages."
   },
   {
    "q": "What saturation threshold screens for haemochromatosis?",
    "options": [
     "Over 45 percent",
-    "Over 15 percent",
+    "Under 16 percent",
     "Over 90 percent",
-    "Under 16 percent"
+    "Over 15 percent"
    ],
    "answer": 0,
    "why": "TS over 45 percent with raised ferritin; HFE gene testing confirms."
@@ -3669,6 +5524,277 @@ SINA.lectures["biochem-iron"] = {
     1
    ],
    "why": "Melanoderma, hepatomegaly to cirrhosis, diabetes, pituitary hypogonadism, heart disease, joint disease."
+  },
+  {
+   "q": "How much iron does a healthy adult contain?",
+   "options": [
+    "About 40 g",
+    "About 1 g",
+    "About 400 mg",
+    "About 4 g"
+   ],
+   "answer": 3,
+   "why": "60% of it in haemoglobin."
+  },
+  {
+   "q": "Which form of iron is found in haem?",
+   "options": [
+    "Iron sulphate",
+    "Ferric Fe³⁺",
+    "Free ionic iron",
+    "Ferrous Fe²⁺"
+   ],
+   "answer": 3,
+   "why": "Stores and plasma iron are ferric."
+  },
+  {
+   "q": "What are the daily iron needs in the third trimester of pregnancy?",
+   "options": [
+    "1 mg/day",
+    "2 mg/day",
+    "10 mg/day",
+    "50 mg/day"
+   ],
+   "answer": 2,
+   "why": "3 mg/day in the first two trimesters."
+  },
+  {
+   "q": "What proportion of dietary iron is absorbed?",
+   "options": [
+    "About 50%",
+    "About 10%",
+    "All of it",
+    "About 1%"
+   ],
+   "answer": 1,
+   "why": "So a woman needs about 20 mg of intake."
+  },
+  {
+   "q": "Which factor promotes iron absorption?",
+   "options": [
+    "An alkaline pH in the duodenum",
+    "Drinking tea with meals",
+    "Vitamin C in an acid medium",
+    "Calcium taken with the meal"
+   ],
+   "answer": 2,
+   "why": "Animal iron is also better absorbed than plant iron."
+  },
+  {
+   "q": "How many iron atoms does one transferrin molecule bind?",
+   "options": [
+    "Four",
+    "Eight",
+    "Two",
+    "One"
+   ],
+   "answer": 2,
+   "why": "Normally about one-third saturated."
+  },
+  {
+   "q": "What happens to transferrin synthesis when stores fall?",
+   "options": [
+    "It rises",
+    "It stops",
+    "It falls",
+    "No change"
+   ],
+   "answer": 0,
+   "why": "So transferrin is high in iron deficiency."
+  },
+  {
+   "q": "Which iron store is mobilised slowly and stains with Perls' blue?",
+   "options": [
+    "Ferritin",
+    "Haemosiderin",
+    "Transferrin",
+    "Myoglobin"
+   ],
+   "answer": 1,
+   "why": "Ferritin is the readily available store."
+  },
+  {
+   "q": "TIBC is calculated as:",
+   "options": [
+    "Iron × 25",
+    "Ferritin / 25",
+    "Transferrin (g/L) × 25",
+    "Iron / transferrin"
+   ],
+   "answer": 2,
+   "why": "In µmol/L; normal 60 to 95."
+  },
+  {
+   "q": "Normal transferrin saturation in men is:",
+   "options": [
+    "20 to 40%",
+    "5 to 10%",
+    "Above 90%",
+    "60 to 80%"
+   ],
+   "answer": 0,
+   "why": "Women 15 to 35%."
+  },
+  {
+   "q": "What is the first-line test for suspected iron deficiency?",
+   "options": [
+    "Transferrin saturation",
+    "Serum iron",
+    "Ferritin",
+    "Hepcidin"
+   ],
+   "answer": 2,
+   "why": "Per the HAS 2011 recommendations."
+  },
+  {
+   "q": "Which ferritin value, with anaemia, confirms iron deficiency anaemia in adults?",
+   "options": [
+    "Exactly 150 µg/L",
+    "Below 300 µg/L",
+    "Below 30 µg/L",
+    "Above 200 µg/L"
+   ],
+   "answer": 2,
+   "why": "No other marker is then needed."
+  },
+  {
+   "q": "Why is transferrin saturation a poor test for iron deficiency?",
+   "options": [
+    "It rises early in iron deficiency",
+    "It falls late; poor sensitivity",
+    "It cannot be measured in routine labs",
+    "It is too expensive for screening"
+   ],
+   "answer": 1,
+   "why": "It drops below 16% once anaemia is established."
+  },
+  {
+   "q": "Hepcidin is:",
+   "options": [
+    "Made by the kidney in response to anaemia",
+    "Raised in HFE haemochromatosis",
+    "A soluble form of the transferrin receptor",
+    "Induced by excess iron and blocks iron exit from cells"
+   ],
+   "answer": 3,
+   "why": "HFE mutations lower hepcidin."
+  },
+  {
+   "q": "Which is the screening threshold for primary haemochromatosis?",
+   "options": [
+    "Hb > 130",
+    "Ferritin > 30",
+    "Transferrin saturation > 45%",
+    "Serum iron > 10"
+   ],
+   "answer": 2,
+   "why": "Confirmed with ferritin and HFE genotyping."
+  },
+  {
+   "q": "Which organs are preferentially loaded in haemochromatosis?",
+   "options": [
+    "Liver, heart, pancreas",
+    "Skin only",
+    "Brain, lungs, kidneys",
+    "Bone and muscle"
+   ],
+   "answer": 0,
+   "why": "They avidly take up non-transferrin-bound iron."
+  },
+  {
+   "q": "Which marker helps find iron deficiency during an inflammatory syndrome?",
+   "options": [
+    "Serum iron",
+    "Ferritin alone",
+    "Soluble transferrin receptor",
+    "Albumin"
+   ],
+   "answer": 2,
+   "why": "Ferritin is raised by inflammation, sTfR is not."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "gut",
+   "options": [
+    "Haemoglobin iron",
+    "Transferrin",
+    "Bone marrow",
+    "Intestinal absorption"
+   ],
+   "answer": 3,
+   "why": "The arrow points to: Intestinal absorption. Duodenum and upper jejunum; about 10% of dietary iron; helped by vitamin C and acid."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "tf",
+   "options": [
+    "Haemoglobin iron",
+    "Macrophage recycling",
+    "Transferrin",
+    "Intestinal absorption"
+   ],
+   "answer": 2,
+   "why": "The arrow points to: Transferrin. Liver glycoprotein binding two ferric iron atoms; normally about one-third saturated."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "marrow",
+   "options": [
+    "Hepcidin",
+    "Bone marrow",
+    "Haemoglobin iron",
+    "Transferrin"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: Bone marrow. Erythroblasts take up iron through transferrin receptors, the richest cells in them."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "rbc",
+   "options": [
+    "Haemoglobin iron",
+    "Macrophage recycling",
+    "Bone marrow",
+    "Iron stores"
+   ],
+   "answer": 0,
+   "why": "The arrow points to: Haemoglobin iron. About 2.4 g, 60% of the 4 g body iron."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "mac",
+   "options": [
+    "Haemoglobin iron",
+    "Macrophage recycling",
+    "Bone marrow",
+    "Intestinal absorption"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: Macrophage recycling. Macrophages destroy old red cells and release their iron back to transferrin."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "store",
+   "options": [
+    "Iron stores",
+    "Transferrin",
+    "Intestinal absorption",
+    "Macrophage recycling"
+   ],
+   "answer": 0,
+   "why": "The arrow points to: Iron stores. Ferritin (readily mobilised) and haemosiderin (slow), in liver, spleen and marrow."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "hep",
+   "options": [
+    "Hepcidin",
+    "Haemoglobin iron",
+    "Transferrin",
+    "Iron stores"
+   ],
+   "answer": 0,
+   "why": "The arrow points to: Hepcidin. Liver hormone that blocks iron exit from enterocytes and macrophages when iron is high."
   }
  ],
  "cards": [
@@ -3719,12 +5845,142 @@ SINA.lectures["biochem-iron"] = {
    "type": "text",
    "front": "Describe iron overload.",
    "back": "Primary haemochromatosis: autosomal recessive, usually HFE mutation lowering hepcidin, with high saturation and non-transferrin-bound iron taken up by liver, heart and pancreas; melanoderma, cirrhosis, diabetes, hypogonadism, heart and joint disease. Secondary: haemolytic anaemias, transfusions, dialysis supplementation, liver disease, atransferrinaemia. Screening: saturation over 45 percent with ferritin over 200 (women) or 300 µg/L (men); HFE testing confirms."
+  },
+  {
+   "id": "x0",
+   "type": "text",
+   "front": "Distribution of body iron?",
+   "back": "About 4 g: haemoglobin 60% (2.4 g), myoglobin 5%, enzymes traces (haem Fe²⁺); stores 35% (ferritin, haemosiderin) and transferrin-bound plasma iron 0.05 g (non-haem Fe³⁺)."
+  },
+  {
+   "id": "x1",
+   "type": "text",
+   "front": "Describe the iron cycle.",
+   "back": "Macrophages destroy old red cells; iron is stored or carried by transferrin to the marrow for new erythroblasts; small losses in urine, desquamation, menstruation, pregnancy."
+  },
+  {
+   "id": "x2",
+   "type": "text",
+   "front": "Iron needs and absorption?",
+   "back": "1 mg/day men, 2 women, 3 then 10 in pregnancy; about 10% absorbed in the duodenum/upper jejunum; vitamin C and acid help; haem iron absorbed best."
+  },
+  {
+   "id": "x3",
+   "type": "text",
+   "front": "Ferritin vs haemosiderin?",
+   "back": "Ferritin: readily mobilised store; plasma ferritin reflects stores. Haemosiderin: stable, slow release, lysosomal digestion of ferritin, Perls positive."
+  },
+  {
+   "id": "x4",
+   "type": "text",
+   "front": "How is transferrin saturation calculated?",
+   "back": "TS (%) = plasma iron (µmol/L) / [25 × transferrin (g/L)] × 100; normal men 20-40%, women 15-35%."
+  },
+  {
+   "id": "x5",
+   "type": "text",
+   "front": "Causes of iron deficiency?",
+   "back": "Losses (digestive bleeding, menstruation, pregnancy, lactation, prematurity, donation, dialysis) or poor intake/absorption (infants, elderly, IBD, gastrectomy, resection)."
+  },
+  {
+   "id": "x6",
+   "type": "text",
+   "front": "WHO criteria for iron deficiency anaemia?",
+   "back": "Hb < 120 g/L (women) or < 130 g/L (men), microcytic (MCV < 80 fL), hypochromic."
+  },
+  {
+   "id": "x7",
+   "type": "text",
+   "front": "Haemochromatosis: genetics and biology?",
+   "back": "Autosomal recessive, mostly HFE mutation lowering hepcidin; high iron, low transferrin, TS > 45%, ferritin high late; liver, heart, pancreas overload."
+  },
+  {
+   "id": "img-gut",
+   "type": "image",
+   "target": "gut",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Intestinal absorption. Duodenum and upper jejunum; about 10% of dietary iron; helped by vitamin C and acid."
+  },
+  {
+   "id": "img-tf",
+   "type": "image",
+   "target": "tf",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Transferrin. Liver glycoprotein binding two ferric iron atoms; normally about one-third saturated."
+  },
+  {
+   "id": "img-marrow",
+   "type": "image",
+   "target": "marrow",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Bone marrow. Erythroblasts take up iron through transferrin receptors, the richest cells in them."
+  },
+  {
+   "id": "img-rbc",
+   "type": "image",
+   "target": "rbc",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Haemoglobin iron. About 2.4 g, 60% of the 4 g body iron."
+  },
+  {
+   "id": "img-mac",
+   "type": "image",
+   "target": "mac",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Macrophage recycling. Macrophages destroy old red cells and release their iron back to transferrin."
+  },
+  {
+   "id": "img-store",
+   "type": "image",
+   "target": "store",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Iron stores. Ferritin (readily mobilised) and haemosiderin (slow), in liver, spleen and marrow."
+  },
+  {
+   "id": "img-hep",
+   "type": "image",
+   "target": "hep",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Hepcidin. Liver hormone that blocks iron exit from enterocytes and macrophages when iron is high."
   }
  ],
- "deeper": [],
- "resources": [],
+ "deeper": [
+  {
+   "title": "Why ferritin misleads in inflammation",
+   "html": "<p>Ferritin is also an acute-phase protein: inflammation raises it whatever the stores. A patient with chronic inflammation and genuinely empty stores can therefore show a normal ferritin. The soluble transferrin receptor is not raised by inflammation but rises when erythroblasts are iron-hungry, so it reveals the deficiency hidden behind the inflammation.</p><p class='src'>Source: the lecture's conclusion on sTfR.</p>"
+  },
+  {
+   "title": "Why HFE mutations overload the liver, heart and pancreas",
+   "html": "<p>Without enough hepcidin, enterocytes keep exporting iron even when the body is full. Transferrin saturates, and the surplus circulates as non-transferrin-bound iron that the liver, heart and pancreas take up avidly. That is why haemochromatosis brings cirrhosis, heart failure and diabetes.</p><p class='src'>Source: the lecture's HFE protein slide.</p>"
+  }
+ ],
+ "resources": [
+  {
+   "title": "Iron deficiency anaemia (NHS)",
+   "url": "https://www.nhs.uk/conditions/iron-deficiency-anaemia/",
+   "kind": "Article",
+   "why": "Symptoms, causes and treatment.",
+   "note": ""
+  },
+  {
+   "title": "Haemochromatosis (NHS)",
+   "url": "https://www.nhs.uk/conditions/haemochromatosis/",
+   "kind": "Article",
+   "why": "Inherited iron overload.",
+   "note": ""
+  }
+ ],
  "checks": [],
- "sources": [],
+ "sources": [
+  {
+   "name": "Iron deficiency anaemia (NHS)",
+   "url": "https://www.nhs.uk/conditions/iron-deficiency-anaemia/"
+  },
+  {
+   "name": "Haemochromatosis (NHS)",
+   "url": "https://www.nhs.uk/conditions/haemochromatosis/"
+  }
+ ],
  "verified": "22 Sep 2026"
 };
 window.SINA = window.SINA || {subjects:[], lectures:{}};
@@ -3735,51 +5991,207 @@ SINA.lectures["biochem-water"] = {
  "title": "Hydro-electrolytic balance",
  "sourceFile": "13 Hydro-electrolytic balance.pdf (Clinical Biochemistry, Prof. Nabiha Kamal)",
  "sourceUrl": "https://drive.google.com/file/d/16SJIbEhx3gw_7Wj0QQMU74Ktxlz3kFbN/view?usp=drivesdk",
- "buildNote": "<strong>Short version.</strong> The full version, with more questions and extra reading, is coming soon. <strong>Built from the lecture slides.</strong> If your professor says something different, trust your professor.",
+ "buildNote": "<strong>Built from the lecture slides.</strong> Slides that only show pictures are covered in outline. If your professor says something different, trust your professor.",
  "summary": [
   {
    "id": "s0",
    "title": "The big picture",
-   "html": "<p>Water follows salt. <strong>Sodium</strong> sets extracellular volume and osmolality; <strong>potassium</strong> is the dangerous one. The <strong>ionogram</strong> is among the most common emergency tests.</p>"
+   "html": "<p>Electrolytes dissociate into ions in water; every fluid stays electrically neutral, and water moves between compartments mainly because electrolytes move. The <strong>plasma ionogram</strong> (with or without a urine ionogram) is a very common routine and emergency test for ionic and hydration disorders; the <strong>kidney</strong> is central to the balance.</p>"
   },
   {
    "id": "s1",
    "title": "Body water",
-   "html": "<p>About <strong>60 percent</strong> of body weight (42 L); 50 percent women, 75 percent infants. Intake and output about <strong>2.5 L/day</strong>.</p><div class='table-wrap'><table class='wide'><thead><tr><th scope='col'>Compartment</th><th scope='col'>Body weight</th><th scope='col'>Volume</th></tr></thead><tbody><tr><th scope='row'>Intracellular</th><td>40 to 50 percent</td><td>28 L</td></tr><tr><th scope='row'>Interstitial</th><td>15 percent</td><td>12 L</td></tr><tr><th scope='row'>Plasma</th><td>5 percent</td><td>3 L</td></tr></tbody></table></div><p>Plasma: Na+, Cl-. Cells: K+, phosphates. Water moves by osmosis; capillaries follow Starling (hydrostatic out at arterial end, oncotic in at venous end).</p>"
+   "html": "<p>Water is about <strong>60% of body weight</strong> (42 L at 70 kg): less in women (50%), more in infants (75%), less in the elderly; 75% in muscle, 22% in bone, 10% in fat. A rapid weight change suggests water gain or loss. <strong>Intake</strong>: the lecture lists drinks 2.2 L, food 0.7 L and metabolic water 0.3 L per day, for a stated total of <strong>2.5 L/day</strong>; <strong>output 2.5 L/day</strong>: urine 1.5, insensible losses (skin, lungs) 0.9, stool 0.1.</p><p><strong>Intracellular</strong>: 40 to 50% of body weight, two thirds of water, 28 L. <strong>Extracellular</strong> (internal environment): 20% of body weight: <strong>interstitial</strong> 15% (12 L, a protein-poor plasma ultrafiltrate) and <strong>plasma</strong> 5% (3 L).</p>"
   },
   {
    "id": "s2",
-   "title": "Regulation",
-   "html": "<p>Thirst and shifts; <strong>ADH</strong> (water, collecting ducts), <strong>RAAS</strong> (Na+ and water), <strong>ANF</strong> (excretes Na+ and water).</p>"
+   "title": "Ionic composition",
+   "html": "<p>For a monovalent ion mEq = mmol (sodium 142 mmol/L = 142 mEq/L); for a divalent ion mEq = mmol × 2 (calcium 2.50 mmol/L = 5 mEq/L). Proteins are negative at physiological pH. <strong>Plasma</strong>: sodium is the main cation (potassium low); chloride the main anion, then bicarbonate and proteins. <strong>Intracellular</strong>: potassium is the main cation, <strong>phosphates</strong> the main anions, then proteins; little sodium and chloride. <strong>Interstitial fluid</strong>: like plasma without proteins, so anions ×1.05 and cations ×0.95 (<strong>Donnan equilibrium</strong>).</p>"
   },
   {
    "id": "s3",
+   "title": "Exchanges and regulation",
+   "html": "<p><strong>Cell membrane</strong>: electrolytes cross by diffusion or active transport (the <strong>Na⁺/K⁺-ATPase</strong> pumps sodium out); water follows osmosis, from hypotonic to hypertonic. <strong>Capillary</strong>: freely permeable to water and ions, not to proteins; <strong>Starling's law</strong>: at the arterial end hydrostatic pressure exceeds oncotic pressure and water leaves with O2 and nutrients; at the venous end oncotic pressure wins and water returns with CO2 and waste.</p><p><strong>Extra-renal</strong>: water shifts and the thirst centre. <strong>Renal</strong>: <strong>ADH</strong> (hypothalamus, released by the pituitary) reabsorbs water alone in collecting ducts; <strong>RAAS</strong>: low blood pressure releases renin, the angiotensin pathway leads to <strong>aldosterone</strong> from the adrenal cortex, which retains sodium and water; <strong>ANF</strong> from the atria is diuretic, natriuretic and vasodilating.</p>"
+  },
+  {
+   "id": "s4",
    "title": "The ionogram",
-   "html": "<p>No haemolysis or delay; no sodium heparin or EDTA; lipaemia causes false hyponatraemia.</p><div class='table-wrap'><table class='wide'><thead><tr><th scope='col'>Ion</th><th scope='col'>Normal</th><th scope='col'>Low</th><th scope='col'>High</th></tr></thead><tbody><tr><th scope='row'>Na+</th><td>135 to 145</td><td>Losses, excess water, ADH</td><td>Salt excess, water loss</td></tr><tr><th scope='row'>K+</th><td>3.5 to 5.5</td><td>Vomiting, diarrhoea, hyperaldosteronism</td><td>Renal failure, burns, infusion (over 6.5 vital)</td></tr><tr><th scope='row'>Cl-</th><td>95 to 108</td><td>Vomiting, diuretics</td><td>Excess intake, dehydration</td></tr></tbody></table></div><p>Osmolality = (Na + K) x 2 + urea + glucose = <strong>280 to 300</strong>. Extracellular dehydration: isotonic loss; intracellular: water deficit (diabetes insipidus); oedema: renal, heart failure, cirrhosis.</p>"
+   "html": "<p><strong>Pre-analytical</strong>: avoid haemolysis and delays (release intracellular potassium); no <strong>sodium heparin</strong> (false sodium) or <strong>EDTA</strong> (false potassium); hypertriglyceridaemia and hyperproteinaemia cause <strong>false hyponatraemia</strong>; samples keep a week at 4 °C; 24-h urine without antiseptic.</p><p><strong>Sodium</strong> (main extracellular cation, 90% extracellular, sets extracellular osmolality): <strong>135 to 145 mmol/L</strong>. Hyponatraemia: sodium loss (renal, digestive), excess water, or reduced water excretion (ADH excess). Hypernatraemia: excess sodium (hypertonic saline), too little water, or water loss (renal: diuretics, hyperglycaemia; insensible: fever, hyperventilation, sweating; intestinal: diarrhoea). <strong>Potassium</strong> (main intracellular cation, excitability): <strong>3.5 to 5.5 mmol/L</strong>. Hypokalaemia: constipation, cramps, hypotonia, cardiac signs; from vomiting, diarrhoea, hyperaldosteronism, tubulopathy, poor intake. Hyperkalaemia: <strong>life-threatening above 6.5 mmol/L</strong> (conduction disorders); from IV overload, renal failure, cell lysis (burns). <strong>Chloride</strong> (main extracellular anion): <strong>95 to 108 mmol/L</strong>; varies with sodium and opposite to bicarbonate; high with NaCl or KCl infusion, tubulopathies, dehydration; low with vomiting or diuretics.</p>"
+  },
+  {
+   "id": "s5",
+   "title": "Water disorders",
+   "html": "<p><strong>Osmolality</strong> (particles per kg of water) is well reflected by sodium: <strong>calculated = (Na + K) × 2 + urea + glucose = 280 to 300 mOsm/kg</strong>, or measured by osmometer; <strong>osmolarity</strong> (per litre) 280 to 295 mOsm/L. <strong>Extracellular dehydration</strong>: isotonic loss of water and sodium (vomiting, diarrhoea, heat stroke, renal failure). <strong>Intracellular dehydration</strong>: pure water deficit (respiratory losses on intubation, inability to drink after head injury, <strong>diabetes insipidus</strong>). <strong>Global</strong>: cystic fibrosis, infant gastroenteritis, diabetes. <strong>Extracellular hyperhydration</strong> (oedema): sodium excess in renal failure, heart failure, cirrhosis. <strong>Intracellular hyperhydration</strong>: falling osmolarity from sodium loss or dilution.</p>"
   }
  ],
  "exam": [
-  "Water 60 percent (men), 50 (women), 75 (infants).",
-  "Intracellular 40 to 50 percent; plasma 5 percent.",
-  "In and out about 2.5 L/day.",
-  "K+ main intracellular; Na+ main extracellular.",
-  "ADH: water in collecting ducts; ANF: excretes Na+.",
-  "Na+ 135 to 145; K+ 3.5 to 5.5; Cl- 95 to 108.",
-  "No sodium heparin or EDTA; lipaemia gives false low Na+.",
-  "Osmolality 280 to 300."
+  "Water = 60% of body weight (50% women, 75% infants).",
+  "Intracellular 28 L; interstitial 12 L; plasma 3 L.",
+  "Intake = output = 2.5 L/day; urine 1.5 L.",
+  "Plasma: Na⁺ and Cl⁻ dominate. Cells: K⁺ and phosphates dominate.",
+  "Interstitial fluid = plasma without proteins (Donnan).",
+  "Na⁺ 135-145; K⁺ 3.5-5.5; Cl⁻ 95-108 mmol/L.",
+  "K⁺ > 6.5 mmol/L is life-threatening.",
+  "Haemolysis and delay raise potassium; EDTA falsifies K⁺, Na-heparin Na⁺.",
+  "Hypertriglyceridaemia and hyperproteinaemia give false hyponatraemia.",
+  "Osmolality = (Na + K) × 2 + urea + glucose = 280-300 mOsm/kg.",
+  "ADH retains water; aldosterone retains Na⁺ and water; ANF excretes them.",
+  "Diabetes insipidus → intracellular dehydration."
  ],
  "visual": {
   "kind": "model",
-  "intro": ""
+  "intro": "",
+  "figure": {
+   "viewBox": "0 0 760 420",
+   "alt": "Body water compartments",
+   "caption": "Where the 42 litres of a 70 kg adult sit, and what regulates them. Schematic drawn for this site.",
+   "base": "<defs><marker id=\"ah\" markerWidth=\"10\" markerHeight=\"8\" refX=\"9\" refY=\"4\" orient=\"auto\"><path d=\"M0,0 L10,4 L0,8 Z\" fill=\"#8a8a8a\"/></marker></defs><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"150\" y1=\"100\" x2=\"150\" y2=\"180\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"400\" y1=\"100\" x2=\"520\" y2=\"180\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"640\" y1=\"100\" x2=\"520\" y2=\"180\"/>",
+   "parts": {
+    "icf": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2d7cf\" x=\"40\" y=\"40\" width=\"220\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Intracellular: 28 L",
+      "(K⁺, phosphates)"
+     ],
+     "lx": 150.0,
+     "ly": 68.0
+    },
+    "isf": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#cfe3f2\" x=\"300\" y=\"40\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Interstitial: 12 L",
+      "(plasma ultrafiltrate)"
+     ],
+     "lx": 400.0,
+     "ly": 68.0
+    },
+    "plasma": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d7edd2\" x=\"540\" y=\"40\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Plasma: 3 L",
+      "(Na⁺, Cl⁻, HCO₃⁻, proteins)"
+     ],
+     "lx": 640.0,
+     "ly": 68.0
+    },
+    "osm": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2e2a8\" x=\"40\" y=\"180\" width=\"220\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Osmosis: Na⁺/K⁺ pump,",
+      "water to hypertonic side"
+     ],
+     "lx": 150.0,
+     "ly": 208.0
+    },
+    "starl": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#e3d5f0\" x=\"420\" y=\"180\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Starling: hydrostatic",
+      "vs oncotic pressure"
+     ],
+     "lx": 520.0,
+     "ly": 208.0
+    },
+    "reg": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f7d9b8\" x=\"280\" y=\"300\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "ADH, RAAS, ANF,",
+      "thirst"
+     ],
+     "lx": 380.0,
+     "ly": 328.0
+    }
+   },
+   "arrows": {
+    "icf": [
+     {
+      "t": [
+       40.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "isf": [
+     {
+      "t": [
+       300.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "plasma": [
+     {
+      "t": [
+       540.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "osm": [
+     {
+      "t": [
+       40.0,
+       188.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "starl": [
+     {
+      "t": [
+       420.0,
+       188.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "reg": [
+     {
+      "t": [
+       280.0,
+       308.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ]
+   }
+  }
  },
  "mcqs": [
   {
    "q": "What share of body weight is water in men?",
    "options": [
     "About 60 percent",
-    "About 30 percent",
     "About 90 percent",
-    "About 45 percent"
+    "About 45 percent",
+    "About 30 percent"
    ],
    "answer": 0,
    "why": "About 42 L at 70 kg; 50 percent in women, 75 percent in infants."
@@ -3787,30 +6199,30 @@ SINA.lectures["biochem-water"] = {
   {
    "q": "Which tissue has the least water?",
    "options": [
-    "Muscle",
-    "Adipose tissue",
+    "Blood",
     "Bone",
-    "Blood"
+    "Adipose tissue",
+    "Muscle"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "Muscle 75, bone 22, fat 10 percent."
   },
   {
    "q": "What is the daily water balance?",
    "options": [
-    "About 0.5 L",
-    "About 10 L",
     "About 2.5 L in and out",
+    "About 10 L",
+    "About 0.5 L",
     "About 1 L"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "In: 2.2 L drinks, 0.7 L food, 0.3 L metabolic. Out: 1.5 L urine, 0.9 L insensible, 0.1 L stool."
   },
   {
    "q": "What share of body weight is intracellular water?",
    "options": [
-    "5 percent",
     "15 percent",
+    "5 percent",
     "70 percent",
     "40 to 50 percent"
    ],
@@ -3820,10 +6232,10 @@ SINA.lectures["biochem-water"] = {
   {
    "q": "What is the main intracellular cation?",
    "options": [
-    "Sodium",
+    "Magnesium",
     "Potassium",
-    "Calcium",
-    "Magnesium"
+    "Sodium",
+    "Calcium"
    ],
    "answer": 1,
    "why": "Intracellular: K+ and phosphates. Plasma: Na+ and Cl-."
@@ -3842,31 +6254,31 @@ SINA.lectures["biochem-water"] = {
   {
    "q": "Which pressure predominates at venous capillaries?",
    "options": [
+    "Osmotic pressure",
     "Oncotic pressure",
     "Hydrostatic pressure",
-    "Atmospheric pressure",
-    "Osmotic pressure"
+    "Atmospheric pressure"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "Starling: hydrostatic wins at arterial ends (water out), oncotic at venous ends (water back)."
   },
   {
    "q": "Where does ADH act?",
    "options": [
-    "The glomerulus",
-    "The proximal tubule",
     "The collecting ducts",
-    "The loop of Henle only"
+    "The proximal tubule",
+    "The loop of Henle only",
+    "The glomerulus"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "ADH reabsorbs water alone in the collecting ducts."
   },
   {
    "q": "What does ANF do?",
    "options": [
     "Retains sodium",
-    "Retains water",
     "Constricts vessels",
+    "Retains water",
     "Excretes water and sodium"
    ],
    "answer": 3,
@@ -3875,21 +6287,21 @@ SINA.lectures["biochem-water"] = {
   {
    "q": "Which tube falsely raises sodium?",
    "options": [
-    "Sodium heparin",
+    "Gel tube",
     "Lithium heparin",
     "Dry tube",
-    "Gel tube"
+    "Sodium heparin"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "Sodium heparin falsifies sodium; EDTA falsifies potassium."
   },
   {
    "q": "Which causes false hyponatraemia?",
    "options": [
-    "Hypoglycaemia",
+    "Hypocalcaemia",
     "Hypokalaemia",
     "Hypertriglyceridaemia",
-    "Hypocalcaemia"
+    "Hypoglycaemia"
    ],
    "answer": 2,
    "why": "Lactescent serum and hyperprotidaemia cause false hyponatraemia."
@@ -3898,44 +6310,44 @@ SINA.lectures["biochem-water"] = {
    "q": "What is normal serum sodium?",
    "options": [
     "3.5 to 5.5 mmol/L",
+    "22 to 26 mmol/L",
     "135 to 145 mmol/L",
-    "95 to 108 mmol/L",
-    "22 to 26 mmol/L"
+    "95 to 108 mmol/L"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "Sodium 135 to 145, potassium 3.5 to 5.5, chloride 95 to 108 mmol/L."
   },
   {
    "q": "Which hormone excess causes hyponatraemia?",
    "options": [
-    "Aldosterone",
-    "Cortisol",
+    "ADH",
     "Insulin",
-    "ADH"
+    "Cortisol",
+    "Aldosterone"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "ADH hypersecretion lowers free water excretion."
   },
   {
    "q": "Which is a cause of hypokalaemia?",
    "options": [
     "Renal failure",
+    "Potassium infusion",
     "Burns",
-    "Hyperaldosteronism",
-    "Potassium infusion"
+    "Hyperaldosteronism"
    ],
-   "answer": 2,
+   "answer": 3,
    "why": "Also vomiting, diarrhoea, tubulopathy, anorexia, unsupplemented parenteral nutrition."
   },
   {
    "q": "What causes intracellular dehydration?",
    "options": [
-    "Diabetes insipidus",
     "Diarrhoea",
-    "Heat stroke",
-    "Heart failure"
+    "Heart failure",
+    "Diabetes insipidus",
+    "Heat stroke"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "Pure water loss (diabetes insipidus, intubation, head injury). Extracellular dehydration: isotonic losses (vomiting, diarrhoea, heat stroke)."
   },
   {
@@ -3951,6 +6363,287 @@ SINA.lectures["biochem-water"] = {
     1
    ],
    "why": "Renal failure, heart failure and cirrhosis retain sodium."
+  },
+  {
+   "q": "What percentage of body weight is water in a woman?",
+   "options": [
+    "75%",
+    "40%",
+    "60%",
+    "50%"
+   ],
+   "answer": 3,
+   "why": "60% overall, 75% in infants."
+  },
+  {
+   "q": "Which tissue has the lowest water content?",
+   "options": [
+    "Skin",
+    "Adipose tissue",
+    "Bone",
+    "Muscle"
+   ],
+   "answer": 1,
+   "why": "Fat 10%, bone 22%, muscle 75%."
+  },
+  {
+   "q": "What is the daily urine output in the lecture's water balance?",
+   "options": [
+    "1.5 L",
+    "0.5 L",
+    "0.1 L",
+    "3 L"
+   ],
+   "answer": 0,
+   "why": "Insensible losses 0.9 L, stool 0.1 L."
+  },
+  {
+   "q": "How much water is in the plasma of a 70 kg adult?",
+   "options": [
+    "28 L",
+    "42 L",
+    "3 L",
+    "12 L"
+   ],
+   "answer": 2,
+   "why": "About 5% of body weight."
+  },
+  {
+   "q": "A calcium of 2.50 mmol/L corresponds to:",
+   "options": [
+    "10 mEq/L",
+    "5 mEq/L",
+    "1.25 mEq/L",
+    "2.50 mEq/L"
+   ],
+   "answer": 1,
+   "why": "Divalent ion: mEq = mmol × 2."
+  },
+  {
+   "q": "Which is the main intracellular anion?",
+   "options": [
+    "Bicarbonate",
+    "Sodium",
+    "Phosphates",
+    "Chloride"
+   ],
+   "answer": 2,
+   "why": "Followed by proteins."
+  },
+  {
+   "q": "Why does interstitial fluid have slightly more anions than plasma?",
+   "options": [
+    "It contains more proteins",
+    "Active pumping",
+    "Hormones",
+    "It lacks proteins (Donnan equilibrium)"
+   ],
+   "answer": 3,
+   "why": "Anions ×1.05, cations ×0.95."
+  },
+  {
+   "q": "Which pump expels sodium from cells?",
+   "options": [
+    "Ca²⁺-ATPase",
+    "Na⁺/K⁺-ATPase",
+    "NKCC2",
+    "H⁺/K⁺-ATPase"
+   ],
+   "answer": 1,
+   "why": "It needs energy to work against the gradient."
+  },
+  {
+   "q": "At the arterial end of a capillary:",
+   "options": [
+    "Oncotic pressure wins, water returns",
+    "Hydrostatic pressure wins, water leaves",
+    "No exchange",
+    "Proteins leave freely"
+   ],
+   "answer": 1,
+   "why": "At the venous end oncotic pressure recalls water."
+  },
+  {
+   "q": "Which hormone reabsorbs water alone in the collecting duct?",
+   "options": [
+    "Renin",
+    "Aldosterone",
+    "ADH",
+    "ANF"
+   ],
+   "answer": 2,
+   "why": "Aldosterone retains sodium and water."
+  },
+  {
+   "q": "Atrial natriuretic factor is:",
+   "options": [
+    "Diuretic, natriuretic and vasodilating",
+    "Antidiuretic and sodium-retaining",
+    "Made by the kidney in response to renin",
+    "Vasoconstricting and pressor"
+   ],
+   "answer": 0,
+   "why": "Secreted by the cardiac atria."
+  },
+  {
+   "q": "Which tube gives a false potassium result?",
+   "options": [
+    "Dry tube",
+    "Lithium heparin",
+    "Serum gel",
+    "EDTA"
+   ],
+   "answer": 3,
+   "why": "Sodium heparin falsifies sodium."
+  },
+  {
+   "q": "What can cause a false hyponatraemia?",
+   "options": [
+    "Hypertriglyceridaemia",
+    "Fasting",
+    "Hypokalaemia",
+    "Dehydration"
+   ],
+   "answer": 0,
+   "why": "Also hyperproteinaemia."
+  },
+  {
+   "q": "Above which potassium level is the prognosis vital?",
+   "options": [
+    "4.0 mmol/L",
+    "5.5 mmol/L",
+    "5.0 mmol/L",
+    "6.5 mmol/L"
+   ],
+   "answer": 3,
+   "why": "Cardiac conduction and neuromuscular disorders."
+  },
+  {
+   "q": "Which is a renal cause of hypokalaemia?",
+   "options": [
+    "IV overload",
+    "Burns",
+    "Hyperaldosteronism",
+    "Renal failure"
+   ],
+   "answer": 2,
+   "why": "Also tubular nephropathy."
+  },
+  {
+   "q": "Plasma chloride typically varies:",
+   "options": [
+    "In parallel with sodium and opposite to bicarbonate",
+    "Opposite to sodium and parallel to potassium",
+    "Only with changes in potassium",
+    "Never, it stays fixed at 100 mmol/L"
+   ],
+   "answer": 0,
+   "why": "It is the main extracellular anion."
+  },
+  {
+   "q": "Calculated plasma osmolality equals:",
+   "options": [
+    "Na + K + urea + glucose",
+    "(Na + Cl) × 2 + creatinine",
+    "(Na + K) × 2 + urea + glucose",
+    "Na × 3 + urea"
+   ],
+   "answer": 2,
+   "why": "Normal 280 to 300 mOsm/kg H2O."
+  },
+  {
+   "q": "Diabetes insipidus causes which disorder?",
+   "options": [
+    "Extracellular dehydration",
+    "Extracellular hyperhydration",
+    "Intracellular dehydration",
+    "No disorder"
+   ],
+   "answer": 2,
+   "why": "Free water is lost because of ADH deficiency."
+  },
+  {
+   "q": "Oedema in heart failure is:",
+   "options": [
+    "Extracellular hyperhydration",
+    "Intracellular hyperhydration",
+    "Intracellular dehydration",
+    "Global dehydration"
+   ],
+   "answer": 0,
+   "why": "From sodium retention."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "icf",
+   "options": [
+    "Intracellular compartment",
+    "Interstitial fluid",
+    "Cell membrane exchange",
+    "Plasma"
+   ],
+   "answer": 0,
+   "why": "The arrow points to: Intracellular compartment. Two thirds of body water (28 L); potassium and phosphates dominate."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "isf",
+   "options": [
+    "Capillary exchange",
+    "Interstitial fluid",
+    "Intracellular compartment",
+    "Cell membrane exchange"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: Interstitial fluid. About 12 L; plasma ultrafiltrate without proteins (Donnan equilibrium)."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "plasma",
+   "options": [
+    "Cell membrane exchange",
+    "Interstitial fluid",
+    "Capillary exchange",
+    "Plasma"
+   ],
+   "answer": 3,
+   "why": "The arrow points to: Plasma. About 3 L; sodium and chloride dominate, with bicarbonate and proteins."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "osm",
+   "options": [
+    "Interstitial fluid",
+    "Plasma",
+    "Cell membrane exchange",
+    "Capillary exchange"
+   ],
+   "answer": 2,
+   "why": "The arrow points to: Cell membrane exchange. Na⁺/K⁺-ATPase expels sodium; water follows osmolality."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "starl",
+   "options": [
+    "Plasma",
+    "Capillary exchange",
+    "Regulation",
+    "Cell membrane exchange"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: Capillary exchange. Hydrostatic pressure pushes water out at the arterial end; oncotic pressure pulls it back at the venous end."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "reg",
+   "options": [
+    "Intracellular compartment",
+    "Regulation",
+    "Cell membrane exchange",
+    "Plasma"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: Regulation. Thirst, ADH (water), RAAS/aldosterone (sodium and water), ANF (natriuresis)."
   }
  ],
  "cards": [
@@ -4013,12 +6706,135 @@ SINA.lectures["biochem-water"] = {
    "type": "text",
    "front": "Describe osmolality and hydration disorders.",
    "back": "Calculated osmolality = (Na + K) x 2 + urea + glucose = 280 to 300 mOsm/kg; osmolarity 280 to 295 mOsm/L; sodium reflects it. Extracellular dehydration: isotonic loss (vomiting, diarrhoea, heat stroke, renal). Intracellular dehydration: water deficit (intubation, head injury, diabetes insipidus). Extracellular hyperhydration (oedema): renal, heart failure, cirrhosis. Intracellular hyperhydration: low osmolarity from sodium loss or dilution."
+  },
+  {
+   "id": "x0",
+   "type": "text",
+   "front": "How is body water distributed at 70 kg?",
+   "back": "42 L total: intracellular 28 L (40-50% of weight), interstitial 12 L (15%), plasma 3 L (5%)."
+  },
+  {
+   "id": "x1",
+   "type": "text",
+   "front": "Daily water balance?",
+   "back": "In: drinks 2.2 L, food 0.7 L, metabolic water 0.3 L (as given in the lecture). Out: urine 1.5 L, insensible 0.9 L, stool 0.1 L; about 2.5 L each way."
+  },
+  {
+   "id": "x2",
+   "type": "text",
+   "front": "Ionic composition of plasma vs cells?",
+   "back": "Plasma: Na⁺ main cation, Cl⁻ main anion, then HCO₃⁻ and proteins. Cells: K⁺ main cation, phosphates main anion, then proteins."
+  },
+  {
+   "id": "x3",
+   "type": "text",
+   "front": "What is the Donnan equilibrium?",
+   "back": "Interstitial fluid lacks proteins, so it has slightly more anions (×1.05) and fewer cations (×0.95) than plasma."
+  },
+  {
+   "id": "x4",
+   "type": "text",
+   "front": "List the hormonal regulators of water and sodium.",
+   "back": "ADH (water only, collecting duct), RAAS/aldosterone (sodium and water), ANF (diuretic, natriuretic, vasodilator); plus thirst."
+  },
+  {
+   "id": "x5",
+   "type": "text",
+   "front": "Pre-analytical pitfalls of the ionogram?",
+   "back": "Haemolysis and delay (false high K⁺), sodium heparin (false Na⁺), EDTA (false K⁺), hypertriglyceridaemia and hyperproteinaemia (false hyponatraemia)."
+  },
+  {
+   "id": "x6",
+   "type": "text",
+   "front": "Causes of hyponatraemia vs hypernatraemia?",
+   "back": "Hypo: sodium loss (renal, digestive), excess water, ADH excess. Hyper: excess sodium, water deficit, water loss (renal, insensible, intestinal)."
+  },
+  {
+   "id": "x7",
+   "type": "text",
+   "front": "Types of dehydration and examples?",
+   "back": "Extracellular: isotonic loss (vomiting, diarrhoea, heat stroke). Intracellular: water deficit (intubation, head injury, diabetes insipidus). Global: cystic fibrosis, infant gastroenteritis, diabetes."
+  },
+  {
+   "id": "img-icf",
+   "type": "image",
+   "target": "icf",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Intracellular compartment. Two thirds of body water (28 L); potassium and phosphates dominate."
+  },
+  {
+   "id": "img-isf",
+   "type": "image",
+   "target": "isf",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Interstitial fluid. About 12 L; plasma ultrafiltrate without proteins (Donnan equilibrium)."
+  },
+  {
+   "id": "img-plasma",
+   "type": "image",
+   "target": "plasma",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Plasma. About 3 L; sodium and chloride dominate, with bicarbonate and proteins."
+  },
+  {
+   "id": "img-osm",
+   "type": "image",
+   "target": "osm",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Cell membrane exchange. Na⁺/K⁺-ATPase expels sodium; water follows osmolality."
+  },
+  {
+   "id": "img-starl",
+   "type": "image",
+   "target": "starl",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Capillary exchange. Hydrostatic pressure pushes water out at the arterial end; oncotic pressure pulls it back at the venous end."
+  },
+  {
+   "id": "img-reg",
+   "type": "image",
+   "target": "reg",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Regulation. Thirst, ADH (water), RAAS/aldosterone (sodium and water), ANF (natriuresis)."
   }
  ],
- "deeper": [],
- "resources": [],
+ "deeper": [
+  {
+   "title": "Why sodium tracks osmolality",
+   "html": "<p>Sodium and its accompanying anions make up almost all the osmotically active particles outside cells, which is why the osmolality formula starts with (Na + K) × 2. Because water moves freely across cell membranes, a low sodium means cells swell and a high sodium means they shrink: the brain feels this first, causing confusion and seizures.</p><p class='src'>Source: the lecture's osmolality slide.</p>"
+  },
+  {
+   "title": "Why a haemolysed sample shows false hyperkalaemia",
+   "html": "<p>Red cells hold about 30 times more potassium than plasma. Rupturing even a few of them during a difficult draw, or letting the tube wait too long, releases enough potassium to raise the measured value. The patient's real potassium may be normal, so a high result from a haemolysed sample must be repeated.</p><p class='src'>Source: the lecture's pre-analytical conditions slide.</p>"
+  }
+ ],
+ "resources": [
+  {
+   "title": "Dehydration (NHS)",
+   "url": "https://www.nhs.uk/conditions/dehydration/",
+   "kind": "Article",
+   "why": "Signs and causes of dehydration.",
+   "note": ""
+  },
+  {
+   "title": "Diabetes insipidus (NHS)",
+   "url": "https://www.nhs.uk/conditions/diabetes-insipidus/",
+   "kind": "Article",
+   "why": "The classic cause of pure water loss.",
+   "note": ""
+  }
+ ],
  "checks": [],
- "sources": [],
+ "sources": [
+  {
+   "name": "Dehydration (NHS)",
+   "url": "https://www.nhs.uk/conditions/dehydration/"
+  },
+  {
+   "name": "Diabetes insipidus (NHS)",
+   "url": "https://www.nhs.uk/conditions/diabetes-insipidus/"
+  }
+ ],
  "verified": "22 Sep 2026"
 };
 window.SINA = window.SINA || {subjects:[], lectures:{}};
@@ -4029,96 +6845,268 @@ SINA.lectures["biochem-acid-base"] = {
  "title": "Acid-base balance",
  "sourceFile": "14 Acid-base balance.pdf (Clinical Biochemistry, Prof. Nabiha Kamal)",
  "sourceUrl": "https://drive.google.com/file/d/1eZczDwTlB9U-bWvYrTyKP5RMet9ONwa1/view?usp=drivesdk",
- "buildNote": "<strong>Short version.</strong> The full version, with more questions and extra reading, is coming soon. <strong>Built from the lecture slides.</strong> If your professor says something different, trust your professor.",
+ "buildNote": "<strong>Built from the lecture slides.</strong> Slides that only show pictures are covered in outline. If your professor says something different, trust your professor.",
  "summary": [
   {
    "id": "s0",
    "title": "The big picture",
-   "html": "<p>pH stays at <strong>7.37 to 7.43</strong> thanks to three lines of defence: <strong>buffers</strong> (instant), <strong>lungs</strong> (minutes, CO2) and <strong>kidneys</strong> (days, H+ and bicarbonate).</p>"
+   "html": "<p>Acid-base balance is the set of mechanisms keeping blood H⁺ constant: <strong>plasma pH 7.37 to 7.43</strong>, despite a daily acid load mainly from protein metabolism. Regulation relies on <strong>buffers</strong>, then the <strong>lungs</strong>, then the <strong>kidneys</strong>. Any serious imbalance can be incompatible with life.</p>"
   },
   {
    "id": "s1",
-   "title": "Acids and buffers",
-   "html": "<p><strong>Volatile</strong> acid CO2 goes via the lungs; <strong>fixed</strong> acids (lactic, ketones, phosphoric, sulphuric) via the kidneys. Main buffer: <strong>bicarbonate</strong>, pH = 6.1 + log [HCO3-] / (0.03 x PCO2). Others: proteinate, phosphate (urine), <strong>haemoglobin</strong> (high capacity), bone.</p>"
+   "title": "Acids and their origin",
+   "html": "<p>An acid donates protons, a base accepts them; <strong>pH = -log [H⁺]</strong>. Plasma [H⁺] is about 40 nmol/L (pH 7.4); intracellular about 100 nmol/L (pH 7). Protons come from diet (protein; plants are mostly alkaline) and metabolism: <strong>volatile acid (CO₂)</strong>, eliminated by the lungs through carbonic anhydrase; <strong>fixed acids</strong>, organic (lactic acid, ketone bodies) or mineral (phosphoric, sulphuric), highly dissociated and eliminated by the <strong>kidneys</strong> as free H⁺ (with bicarbonate reabsorption) or bound to NH₄⁺ and NaH₂PO₄.</p>"
   },
   {
    "id": "s2",
-   "title": "Lungs and kidneys",
-   "html": "<p><strong>Lungs:</strong> metabolic acidosis triggers hyperventilation; alkalosis, hypoventilation. <strong>Kidneys:</strong> reabsorb bicarbonate (excrete it above 28 mmol/L); excrete H+ as <strong>NH4+ (two thirds)</strong> and titratable acid (one third), regenerating HCO3-. Acidosis causes <strong>hyperkalaemia</strong>.</p>"
+   "title": "Buffers",
+   "html": "<p>A buffer is an acid/base pair; <strong>Henderson-Hasselbalch</strong>: pH = pKa + log [A⁻]/[AH]; buffering is strongest when pKa is close to pH and concentration is high. <strong>Bicarbonate/carbonic acid</strong>: the main extracellular buffer, immediate first line, efficient thanks to its high concentration, its pKa and ventilatory control, but consumed over time: <strong>pH = 6.1 + log [HCO₃⁻] / (0.03 × PCO₂)</strong>. Proteinate: low capacity. <strong>Phosphate</strong> (NaH₂PO₄/Na₂HPO₄): low capacity, important in urine. <strong>Haemoglobin/haemoglobinate</strong>: high-capacity red-cell buffer; HbO₂ releases O₂ and binds H⁺ in tissues; in the lung H⁺ joins HCO₃⁻ to give CO₂. Bone proteins, phosphates and carbamates help in acidosis.</p>"
   },
   {
    "id": "s3",
-   "title": "Blood gases and disorders",
-   "html": "<p>Heparinised, airtight arterial sample on ice within 1 h.</p><div class='table-wrap'><table class='wide'><thead><tr><th scope='col'>Parameter</th><th scope='col'>Normal</th></tr></thead><tbody><tr><th scope='row'>pH</th><td>7.37 to 7.43</td></tr><tr><th scope='row'>PaCO2</th><td>37 to 43 mmHg</td></tr><tr><th scope='row'>PaO2</th><td>75 to 100 mmHg</td></tr><tr><th scope='row'>HCO3-</th><td>22 to 26 mmol/L</td></tr><tr><th scope='row'>Anion gap</th><td>12 ± 2 mEq/L</td></tr></tbody></table></div><div class='table-wrap'><table class='wide'><thead><tr><th scope='col'>Disorder</th><th scope='col'>pH</th><th scope='col'>Primary change</th><th scope='col'>Compensation</th></tr></thead><tbody><tr><th scope='row'>Metabolic acidosis</th><td>Low</td><td>HCO3- down</td><td>PaCO2 down</td></tr><tr><th scope='row'>Respiratory acidosis</th><td>Low</td><td>PaCO2 up</td><td>HCO3- up</td></tr><tr><th scope='row'>Metabolic alkalosis</th><td>High</td><td>HCO3- up</td><td>PaCO2 up</td></tr><tr><th scope='row'>Respiratory alkalosis</th><td>High</td><td>PaCO2 down</td><td>HCO3- down</td></tr></tbody></table></div>"
+   "title": "Lungs and kidneys",
+   "html": "<p><strong>Lungs</strong>: rapid; medullary and peripheral chemoreceptors are very sensitive to pH. Metabolic acidosis → <strong>hyperventilation</strong> lowers PaCO₂; metabolic alkalosis → hypoventilation raises it. Limited capacity.</p><p><strong>Kidneys</strong>: slower but more powerful and lasting, against both acidosis and alkalosis. (1) <strong>Reabsorb filtered bicarbonate</strong> in the proximal tubule; above <strong>28 mmol/L</strong> bicarbonate is excreted. (2) <strong>Excrete H⁺ and regenerate bicarbonate</strong>: a little free H⁺ (urine pH down to about 4.4, exchanged for Na⁺ in the distal tubule; hence acidosis ↔ hyperkalaemia through H⁺/K⁺ exchange); most H⁺ bound: <strong>one third as titratable acidity</strong> (H₂PO₄⁻) and <strong>two thirds as ammonium (NH₄⁺)</strong>, stimulated by acidosis and hyperkalaemia. Each mmol of H⁺ excreted generates one mmol of new HCO₃⁻.</p>"
+  },
+  {
+   "id": "s4",
+   "title": "Exploration",
+   "html": "<p><strong>Blood gases</strong>: arterial puncture (radial, femoral; capillary in newborns), single-use <strong>heparinised syringe</strong>, strictly anaerobic and sealed, analysed within an hour, on ice, gently mixed; note temperature, respiratory status, atmospheric pressure. Bicarbonate: heparin tube, no EDTA, citrate or oxalate. <strong>Values</strong>: pH 7.37 to 7.43 (corrected for temperature: pH - 0.014 × (T - 37)); <strong>PaCO₂ 37 to 43 mmHg</strong>; PaO₂ 75 to 100 mmHg; <strong>HCO₃⁻ 22 to 26 mmol/L</strong>; SaO₂ 95 to 99%. <strong>Anion gap = (Na⁺ + K⁺) - (Cl⁻ + HCO₃⁻) = 12 ± 2 mEq/L</strong>; lactate 1 to 2 mmol/L; ketone bodies.</p><p><strong>Disorders</strong>: metabolic acidosis (pH < 7.38, HCO₃⁻ < 22, compensatory PaCO₂ fall); respiratory acidosis (pH < 7.38, PaCO₂ > 42 mmHg, HCO₃⁻ rises); metabolic alkalosis (pH > 7.42, HCO₃⁻ > 26, PaCO₂ rises); respiratory alkalosis (pH > 7.42, PaCO₂ < 36 mmHg, HCO₃⁻ falls). Mixed acidosis: PaCO₂ up and HCO₃⁻ down; mixed alkalosis: the reverse.</p>"
   }
  ],
  "exam": [
-  "pH 7.37 to 7.43.",
-  "CO2 volatile (lungs); fixed acids (kidneys).",
-  "Bicarbonate is the main buffer; pKa 6.1.",
-  "Haemoglobin: main intracellular buffer.",
-  "Kidney excretes HCO3- above 28 mmol/L.",
-  "NH4+ eliminates two thirds of acid.",
-  "Acidosis causes hyperkalaemia.",
-  "Arterial heparinised airtight sample on ice.",
-  "PaCO2 37 to 43; HCO3- 22 to 26; anion gap 12."
+  "Plasma pH 7.37-7.43; pH = -log [H⁺].",
+  "CO₂ is volatile (lungs); fixed acids (lactate, ketones, phosphoric, sulphuric) go through the kidneys.",
+  "Henderson-Hasselbalch: pH = 6.1 + log [HCO₃⁻]/(0.03 × PCO₂).",
+  "Main extracellular buffer: bicarbonate; main red-cell buffer: haemoglobin.",
+  "Phosphate buffer matters most in urine.",
+  "Lungs: fast; kidneys: slow but powerful and lasting.",
+  "Bicarbonate excreted above 28 mmol/L.",
+  "Renal H⁺: 1/3 titratable acidity, 2/3 ammonium; each H⁺ regenerates one HCO₃⁻.",
+  "Acidosis ↔ hyperkalaemia (H⁺/K⁺ exchange).",
+  "Blood gases: anaerobic heparinised syringe, on ice, within 1 h.",
+  "PaCO₂ 37-43 mmHg; HCO₃⁻ 22-26 mmol/L; PaO₂ 75-100 mmHg.",
+  "Anion gap = (Na + K) - (Cl + HCO₃) = 12 ± 2."
  ],
  "visual": {
   "kind": "model",
-  "intro": ""
+  "intro": "",
+  "figure": {
+   "viewBox": "0 0 760 420",
+   "alt": "Acid-base regulation and disorders",
+   "caption": "Buffers act in seconds, lungs in minutes, kidneys in days. Schematic drawn for this site.",
+   "base": "<defs><marker id=\"ah\" markerWidth=\"10\" markerHeight=\"8\" refX=\"9\" refY=\"4\" orient=\"auto\"><path d=\"M0,0 L10,4 L0,8 Z\" fill=\"#8a8a8a\"/></marker></defs><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"260\" y1=\"70\" x2=\"300\" y2=\"70\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"500\" y1=\"70\" x2=\"540\" y2=\"70\"/>",
+   "parts": {
+    "buffer": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2d7cf\" x=\"40\" y=\"40\" width=\"220\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Buffers: HCO₃⁻/H₂CO₃,",
+      "haemoglobin (immediate)"
+     ],
+     "lx": 150.0,
+     "ly": 68.0
+    },
+    "lung": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#cfe3f2\" x=\"300\" y=\"40\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Lungs: adjust PaCO₂",
+      "(rapid)"
+     ],
+     "lx": 400.0,
+     "ly": 68.0
+    },
+    "kidney": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d7edd2\" x=\"540\" y=\"40\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Kidneys: reabsorb HCO₃⁻,",
+      "excrete H⁺ (slow, lasting)"
+     ],
+     "lx": 640.0,
+     "ly": 68.0
+    },
+    "macid": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2e2a8\" x=\"40\" y=\"180\" width=\"170\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Metabolic acidosis:",
+      "HCO₃⁻↓, PaCO₂↓"
+     ],
+     "lx": 125.0,
+     "ly": 208.0
+    },
+    "racid": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#e3d5f0\" x=\"225\" y=\"180\" width=\"170\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Respiratory acidosis:",
+      "PaCO₂↑, HCO₃⁻↑"
+     ],
+     "lx": 310.0,
+     "ly": 208.0
+    },
+    "malk": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f7d9b8\" x=\"410\" y=\"180\" width=\"170\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Metabolic alkalosis:",
+      "HCO₃⁻↑, PaCO₂↑"
+     ],
+     "lx": 495.0,
+     "ly": 208.0
+    },
+    "ralk": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d9ecec\" x=\"595\" y=\"180\" width=\"160\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Respiratory alkalosis:",
+      "PaCO₂↓, HCO₃⁻↓"
+     ],
+     "lx": 675.0,
+     "ly": 208.0
+    }
+   },
+   "arrows": {
+    "buffer": [
+     {
+      "t": [
+       40.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "lung": [
+     {
+      "t": [
+       300.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "kidney": [
+     {
+      "t": [
+       540.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "macid": [
+     {
+      "t": [
+       40.0,
+       188.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "racid": [
+     {
+      "t": [
+       225.0,
+       188.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "malk": [
+     {
+      "t": [
+       410.0,
+       188.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "ralk": [
+     {
+      "t": [
+       595.0,
+       188.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ]
+   }
+  }
  },
  "mcqs": [
   {
    "q": "What is the normal plasma pH?",
    "options": [
-    "7.37 to 7.43",
-    "7.0 to 7.1",
     "7.6 to 7.8",
-    "6.8 to 7.0"
+    "6.8 to 7.0",
+    "7.0 to 7.1",
+    "7.37 to 7.43"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "Kept stable by buffers, the lungs and the kidneys."
   },
   {
    "q": "Which acids do the lungs eliminate?",
    "options": [
+    "Ketone bodies",
     "Lactic acid",
-    "Volatile acid (CO2)",
     "Sulphuric acid",
-    "Ketone bodies"
+    "Volatile acid (CO2)"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "CO2 is the volatile acid; fixed acids (lactic, ketones, phosphoric, sulphuric) go by the kidneys."
   },
   {
    "q": "What is the main extracellular buffer?",
    "options": [
-    "Haemoglobin",
     "Phosphate",
     "Bicarbonate",
-    "Proteinate"
+    "Proteinate",
+    "Haemoglobin"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "High concentration, pKa near body pH, and regulated by lungs and kidneys."
   },
   {
    "q": "What is the pKa in the Henderson-Hasselbalch bicarbonate equation?",
    "options": [
-    "7.4",
-    "4.4",
+    "6.1",
     "8.2",
-    "6.1"
+    "4.4",
+    "7.4"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "pH = 6.1 + log [HCO3-] / (0.03 x PCO2)."
   },
   {
    "q": "Which intracellular buffer has high capacity?",
    "options": [
-    "Proteinate",
-    "Haemoglobin",
     "Phosphate",
-    "Carbamate"
+    "Haemoglobin",
+    "Carbamate",
+    "Proteinate"
    ],
    "answer": 1,
    "why": "The haemoglobin-haemoglobinate system in red cells."
@@ -4127,20 +7115,20 @@ SINA.lectures["biochem-acid-base"] = {
    "q": "How do the lungs respond to metabolic acidosis?",
    "options": [
     "Hypoventilation",
-    "Apnoea",
     "No response",
-    "Hyperventilation"
+    "Hyperventilation",
+    "Apnoea"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "Chemoreceptors trigger hyperventilation, lowering PaCO2."
   },
   {
    "q": "Above which bicarbonate level does the kidney excrete it?",
    "options": [
     "28 mmol/L",
+    "40 mmol/L",
     "18 mmol/L",
-    "22 mmol/L",
-    "40 mmol/L"
+    "22 mmol/L"
    ],
    "answer": 0,
    "why": "Above 28 mmol/L the kidney excretes HCO3- to prevent alkaline overload."
@@ -4149,44 +7137,44 @@ SINA.lectures["biochem-acid-base"] = {
    "q": "Which form eliminates two thirds of acid?",
    "options": [
     "Free H+",
+    "Bicarbonate",
     "Titratable acid",
-    "Ammonium (NH4+)",
-    "Bicarbonate"
+    "Ammonium (NH4+)"
    ],
-   "answer": 2,
+   "answer": 3,
    "why": "NH4+ two thirds; titratable acid (H2PO4-) one third; free H+ little."
   },
   {
    "q": "How does acidosis affect potassium?",
    "options": [
-    "It causes hypokalaemia",
-    "No effect",
     "It lowers sodium",
-    "It causes hyperkalaemia"
+    "It causes hypokalaemia",
+    "It causes hyperkalaemia",
+    "No effect"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "H+ and K+ exchange."
   },
   {
    "q": "Which sample is used for blood gases?",
    "options": [
-    "Heparinised arterial blood",
-    "Venous EDTA blood",
     "Capillary citrate blood",
+    "Venous EDTA blood",
+    "Heparinised arterial blood",
     "Urine"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "Airtight heparinised syringe, anaerobic, on ice, analysed within 1 hour."
   },
   {
    "q": "What is normal PaCO2?",
    "options": [
-    "75 to 100 mmHg",
     "22 to 26 mmHg",
-    "37 to 43 mmHg",
-    "10 to 15 mmHg"
+    "10 to 15 mmHg",
+    "75 to 100 mmHg",
+    "37 to 43 mmHg"
    ],
-   "answer": 2,
+   "answer": 3,
    "why": "PaO2 75 to 100 mmHg; HCO3- 22 to 26 mmol/L; SaO2 95 to 99 percent."
   },
   {
@@ -4194,8 +7182,8 @@ SINA.lectures["biochem-acid-base"] = {
    "options": [
     "30 ± 5 mEq/L",
     "12 ± 2 mEq/L",
-    "2 ± 1 mEq/L",
-    "50 ± 10 mEq/L"
+    "50 ± 10 mEq/L",
+    "2 ± 1 mEq/L"
    ],
    "answer": 1,
    "why": "(Na + K) − (Cl + HCO3)."
@@ -4203,8 +7191,8 @@ SINA.lectures["biochem-acid-base"] = {
   {
    "q": "Low pH with low HCO3- is which disorder?",
    "options": [
-    "Respiratory acidosis",
     "Metabolic alkalosis",
+    "Respiratory acidosis",
     "Respiratory alkalosis",
     "Metabolic acidosis"
    ],
@@ -4214,21 +7202,21 @@ SINA.lectures["biochem-acid-base"] = {
   {
    "q": "Low pH with high PaCO2 is which disorder?",
    "options": [
+    "Metabolic alkalosis",
     "Metabolic acidosis",
     "Respiratory alkalosis",
-    "Respiratory acidosis",
-    "Metabolic alkalosis"
+    "Respiratory acidosis"
    ],
-   "answer": 2,
+   "answer": 3,
    "why": "PaCO2 over 42 mmHg; compensated by higher HCO3-."
   },
   {
    "q": "High pH with low PaCO2 is which disorder?",
    "options": [
     "Respiratory alkalosis",
-    "Metabolic alkalosis",
+    "Metabolic acidosis",
     "Respiratory acidosis",
-    "Metabolic acidosis"
+    "Metabolic alkalosis"
    ],
    "answer": 0,
    "why": "PaCO2 under 36 mmHg; compensated by lower HCO3-."
@@ -4246,6 +7234,266 @@ SINA.lectures["biochem-acid-base"] = {
     1
    ],
    "why": "Organic (lactic, ketones) and mineral (phosphoric, sulphuric) fixed acids go by the kidneys."
+  },
+  {
+   "q": "What is the normal plasma pH range given in the lecture?",
+   "options": [
+    "7.00 to 7.20",
+    "7.50 to 7.60",
+    "7.37 to 7.43",
+    "6.80 to 7.00"
+   ],
+   "answer": 2,
+   "why": "Despite a daily acid load."
+  },
+  {
+   "q": "Which acid is eliminated by the lungs?",
+   "options": [
+    "Sulphuric acid",
+    "Lactic acid",
+    "Ketone bodies",
+    "CO₂ (volatile acid)"
+   ],
+   "answer": 3,
+   "why": "Fixed acids are eliminated by the kidneys."
+  },
+  {
+   "q": "A buffer is most effective when:",
+   "options": [
+    "It is volatile and leaves through the lungs",
+    "Its pKa is close to pH and its concentration is high",
+    "Its pKa is far from the pH of the medium",
+    "It is found only inside cells"
+   ],
+   "answer": 1,
+   "why": "From the Henderson-Hasselbalch relation."
+  },
+  {
+   "q": "What is the pKa used for the bicarbonate system?",
+   "options": [
+    "7.4",
+    "6.1",
+    "4.4",
+    "9.2"
+   ],
+   "answer": 1,
+   "why": "pH = 6.1 + log [HCO₃⁻] / (0.03 × PCO₂)."
+  },
+  {
+   "q": "Which is the main extracellular buffer?",
+   "options": [
+    "Phosphate",
+    "Proteinate",
+    "Bicarbonate/carbonic acid",
+    "Haemoglobin"
+   ],
+   "answer": 2,
+   "why": "Immediate first line of defence."
+  },
+  {
+   "q": "Which buffer is the high-capacity red-cell buffer?",
+   "options": [
+    "Haemoglobin/haemoglobinate",
+    "Albumin/proteinate",
+    "Phosphate (H₂PO₄⁻/HPO₄²⁻)",
+    "Ammonia/ammonium"
+   ],
+   "answer": 0,
+   "why": "HbO₂ releases O₂ and binds H⁺."
+  },
+  {
+   "q": "How do the lungs respond to metabolic acidosis?",
+   "options": [
+    "Apnoea to retain CO₂",
+    "Hyperventilation lowering PaCO₂",
+    "No ventilatory change",
+    "Hypoventilation raising PaCO₂"
+   ],
+   "answer": 1,
+   "why": "Chemoreceptors sense the falling pH."
+  },
+  {
+   "q": "Above what plasma bicarbonate does the kidney excrete it?",
+   "options": [
+    "40 mmol/L",
+    "22 mmol/L",
+    "28 mmol/L",
+    "18 mmol/L"
+   ],
+   "answer": 2,
+   "why": "Protecting against alkaline overload."
+  },
+  {
+   "q": "What share of renal acid excretion is in the form of ammonium?",
+   "options": [
+    "Two thirds",
+    "None",
+    "All",
+    "One third"
+   ],
+   "answer": 0,
+   "why": "One third as titratable acidity (H₂PO₄⁻)."
+  },
+  {
+   "q": "Why does acidosis cause hyperkalaemia?",
+   "options": [
+    "Less aldosterone secretion by the adrenal",
+    "More potassium eaten in the diet",
+    "H⁺/K⁺ exchange across cells and in the distal tubule",
+    "Haemolysis of the blood sample"
+   ],
+   "answer": 2,
+   "why": "And conversely alkalosis lowers potassium."
+  },
+  {
+   "q": "How must a blood gas sample be handled?",
+   "options": [
+    "Open tube, room temperature, analysed next day",
+    "Citrate tube, analysed within 24 hours",
+    "Sealed heparinised syringe, anaerobic, on ice, within 1 hour",
+    "EDTA tube, kept at room temperature"
+   ],
+   "answer": 2,
+   "why": "Air bubbles and delay change the gases."
+  },
+  {
+   "q": "Normal arterial PaCO₂ is:",
+   "options": [
+    "37 to 43 mmHg",
+    "20 to 25 mmHg",
+    "60 to 70 mmHg",
+    "75 to 100 mmHg"
+   ],
+   "answer": 0,
+   "why": "PaO₂ is 75 to 100 mmHg."
+  },
+  {
+   "q": "Normal anion gap is:",
+   "options": [
+    "50 mEq/L",
+    "12 ± 2 mEq/L",
+    "2 ± 1 mEq/L",
+    "30 ± 5 mEq/L"
+   ],
+   "answer": 1,
+   "why": "(Na + K) - (Cl + HCO₃)."
+  },
+  {
+   "q": "pH 7.30, HCO₃⁻ 15 mmol/L, PaCO₂ 30 mmHg indicates:",
+   "options": [
+    "Respiratory alkalosis with renal compensation",
+    "Respiratory acidosis with renal compensation",
+    "Metabolic acidosis with respiratory compensation",
+    "Metabolic alkalosis with hypoventilation"
+   ],
+   "answer": 2,
+   "why": "Low bicarbonate is primary; PaCO₂ falls in compensation."
+  },
+  {
+   "q": "pH 7.30 with PaCO₂ 55 mmHg and raised bicarbonate indicates:",
+   "options": [
+    "Respiratory acidosis with renal compensation",
+    "Metabolic acidosis with hyperventilation",
+    "Respiratory alkalosis with renal compensation",
+    "Mixed alkalosis"
+   ],
+   "answer": 0,
+   "why": "PaCO₂ > 42 mmHg is the primary change."
+  },
+  {
+   "q": "PaCO₂ up and HCO₃⁻ down together indicate:",
+   "options": [
+    "Compensated alkalosis",
+    "Normal",
+    "Mixed alkalosis",
+    "Mixed acidosis"
+   ],
+   "answer": 3,
+   "why": "Both components push pH down."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "buffer",
+   "options": [
+    "Metabolic acidosis",
+    "Kidneys",
+    "Lungs",
+    "Buffer systems"
+   ],
+   "answer": 3,
+   "why": "The arrow points to: Buffer systems. Bicarbonate/carbonic acid is the main extracellular buffer; haemoglobin the main red-cell buffer."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "lung",
+   "options": [
+    "Respiratory acidosis",
+    "Lungs",
+    "Buffer systems",
+    "Metabolic acidosis"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: Lungs. Chemoreceptors change ventilation to eliminate or retain CO₂ within minutes."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "kidney",
+   "options": [
+    "Metabolic acidosis",
+    "Kidneys",
+    "Respiratory alkalosis",
+    "Lungs"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: Kidneys. Reabsorb filtered bicarbonate, excrete H⁺ as titratable acid and ammonium, regenerate bicarbonate."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "macid",
+   "options": [
+    "Metabolic acidosis",
+    "Kidneys",
+    "Metabolic alkalosis",
+    "Respiratory acidosis"
+   ],
+   "answer": 0,
+   "why": "The arrow points to: Metabolic acidosis. pH < 7.38, HCO₃⁻ < 22 mmol/L, compensated by hyperventilation."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "racid",
+   "options": [
+    "Buffer systems",
+    "Respiratory acidosis",
+    "Metabolic acidosis",
+    "Kidneys"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: Respiratory acidosis. pH < 7.38, PaCO₂ > 42 mmHg, compensated by renal HCO₃⁻ retention."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "malk",
+   "options": [
+    "Metabolic alkalosis",
+    "Lungs",
+    "Buffer systems",
+    "Respiratory acidosis"
+   ],
+   "answer": 0,
+   "why": "The arrow points to: Metabolic alkalosis. pH > 7.42, HCO₃⁻ > 26 mmol/L, compensated by hypoventilation."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "ralk",
+   "options": [
+    "Respiratory alkalosis",
+    "Lungs",
+    "Metabolic acidosis",
+    "Metabolic alkalosis"
+   ],
+   "answer": 0,
+   "why": "The arrow points to: Respiratory alkalosis. pH > 7.42, PaCO₂ < 36 mmHg, compensated by lower HCO₃⁻."
   }
  ],
  "cards": [
@@ -4302,11 +7550,141 @@ SINA.lectures["biochem-acid-base"] = {
    "type": "text",
    "front": "Classify acid-base disorders.",
    "back": "Metabolic acidosis: pH under 7.38, HCO3- under 22, PaCO2 falls. Respiratory acidosis: pH under 7.38, PaCO2 over 42, HCO3- rises. Metabolic alkalosis: pH over 7.42, HCO3- over 26, PaCO2 rises. Respiratory alkalosis: pH over 7.42, PaCO2 under 36, HCO3- falls. Mixed: both change in the same harmful direction."
+  },
+  {
+   "id": "x0",
+   "type": "text",
+   "front": "What regulates acid-base balance, in order?",
+   "back": "Buffers (immediate), lungs (minutes, PaCO₂), kidneys (hours to days, HCO₃⁻ and H⁺)."
+  },
+  {
+   "id": "x1",
+   "type": "text",
+   "front": "Volatile vs fixed acids?",
+   "back": "Volatile: CO₂, eliminated by the lungs via carbonic anhydrase. Fixed: organic (lactate, ketones) and mineral (phosphoric, sulphuric), eliminated by the kidneys."
+  },
+  {
+   "id": "x2",
+   "type": "text",
+   "front": "Henderson-Hasselbalch for bicarbonate?",
+   "back": "pH = 6.1 + log [HCO₃⁻] / (0.03 × PCO₂)."
+  },
+  {
+   "id": "x3",
+   "type": "text",
+   "front": "List the buffer systems and their importance.",
+   "back": "Extracellular: bicarbonate (main), proteinate (low), phosphate (low, urine). Intracellular: haemoglobin (high), proteins, bone phosphates and carbamates."
+  },
+  {
+   "id": "x4",
+   "type": "text",
+   "front": "How does the kidney handle acid?",
+   "back": "Reabsorbs filtered HCO₃⁻ (excretes above 28 mmol/L); excretes H⁺ free (urine pH ≥ 4.4) and bound (1/3 titratable, 2/3 NH₄⁺), regenerating one HCO₃⁻ per H⁺."
+  },
+  {
+   "id": "x5",
+   "type": "text",
+   "front": "Blood gas sampling rules?",
+   "back": "Arterial (radial, femoral) or capillary in newborns; heparinised syringe; sealed, anaerobic; on ice; analysed within 1 h; note temperature."
+  },
+  {
+   "id": "x6",
+   "type": "text",
+   "front": "Reference values of blood gases?",
+   "back": "pH 7.37-7.43; PaCO₂ 37-43 mmHg; PaO₂ 75-100 mmHg; HCO₃⁻ 22-26 mmol/L; SaO₂ 95-99%; anion gap 12 ± 2; lactate 1-2 mmol/L."
+  },
+  {
+   "id": "x7",
+   "type": "text",
+   "front": "Four primary disorders and compensation?",
+   "back": "Metabolic acidosis: HCO₃⁻↓, PaCO₂↓. Respiratory acidosis: PaCO₂↑, HCO₃⁻↑. Metabolic alkalosis: HCO₃⁻↑, PaCO₂↑. Respiratory alkalosis: PaCO₂↓, HCO₃⁻↓."
+  },
+  {
+   "id": "img-buffer",
+   "type": "image",
+   "target": "buffer",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Buffer systems. Bicarbonate/carbonic acid is the main extracellular buffer; haemoglobin the main red-cell buffer."
+  },
+  {
+   "id": "img-lung",
+   "type": "image",
+   "target": "lung",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Lungs. Chemoreceptors change ventilation to eliminate or retain CO₂ within minutes."
+  },
+  {
+   "id": "img-kidney",
+   "type": "image",
+   "target": "kidney",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Kidneys. Reabsorb filtered bicarbonate, excrete H⁺ as titratable acid and ammonium, regenerate bicarbonate."
+  },
+  {
+   "id": "img-macid",
+   "type": "image",
+   "target": "macid",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Metabolic acidosis. pH < 7.38, HCO₃⁻ < 22 mmol/L, compensated by hyperventilation."
+  },
+  {
+   "id": "img-racid",
+   "type": "image",
+   "target": "racid",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Respiratory acidosis. pH < 7.38, PaCO₂ > 42 mmHg, compensated by renal HCO₃⁻ retention."
+  },
+  {
+   "id": "img-malk",
+   "type": "image",
+   "target": "malk",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Metabolic alkalosis. pH > 7.42, HCO₃⁻ > 26 mmol/L, compensated by hypoventilation."
+  },
+  {
+   "id": "img-ralk",
+   "type": "image",
+   "target": "ralk",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Respiratory alkalosis. pH > 7.42, PaCO₂ < 36 mmHg, compensated by lower HCO₃⁻."
   }
  ],
- "deeper": [],
- "resources": [],
+ "deeper": [
+  {
+   "title": "Why bicarbonate is the best buffer despite its pKa of 6.1",
+   "html": "<p>A pKa of 6.1 is a full unit below blood pH, which would make a closed buffer weak. But the bicarbonate system is open: the lungs remove CO₂ and the kidneys adjust bicarbonate, so neither side of the pair runs out. That dual control makes it the most effective extracellular buffer, as the lecture explains.</p><p class='src'>Source: the lecture's bicarbonate buffer slide.</p>"
+  },
+  {
+   "title": "Why compensation never overshoots",
+   "html": "<p>Compensation is driven by the pH error itself. As pH returns toward normal, the stimulus fades, so the compensating change slows before pH is fully corrected. A pH on the opposite side of 7.40 therefore points to a second, mixed disorder rather than 'over-compensation'.</p><p class='src'>Source: the lecture's disorder table.</p>"
+  }
+ ],
+ "resources": [
+  {
+   "title": "Acid-base balance (TeachMePhysiology)",
+   "url": "https://teachmephysiology.com/respiratory-system/",
+   "kind": "Website",
+   "why": "Revision of buffering and respiratory control.",
+   "note": ""
+  },
+  {
+   "title": "Diabetic ketoacidosis (NHS)",
+   "url": "https://www.nhs.uk/conditions/diabetic-ketoacidosis/",
+   "kind": "Article",
+   "why": "A classic cause of metabolic acidosis.",
+   "note": ""
+  }
+ ],
  "checks": [],
- "sources": [],
+ "sources": [
+  {
+   "name": "Acid-base balance (TeachMePhysiology)",
+   "url": "https://teachmephysiology.com/respiratory-system/"
+  },
+  {
+   "name": "Diabetic ketoacidosis (NHS)",
+   "url": "https://www.nhs.uk/conditions/diabetic-ketoacidosis/"
+  }
+ ],
  "verified": "22 Sep 2026"
 };

@@ -470,3 +470,10 @@ body.no-anim .drawer, body.no-anim .backdrop, body.no-anim #app { transition: no
 .app-plat .chip { font-size: 0.75rem; font-weight: 700; padding: 0.15rem 0.6rem; border-radius: 999px; background: var(--surface-2); color: var(--muted); border: 1px solid var(--line); }
 .app-actions { display: flex; flex-wrap: wrap; gap: 0.5rem; }
 .app-actions .btn { font-size: 0.9rem; }
+
+/* overlay menu on every screen: reserve the scrollbar so opening the menu never shifts the page */
+html { scrollbar-gutter: stable; }
+body.noscroll { overflow: hidden; }
+.drawer { top: 0 !important; width: min(88vw, 22rem); }
+#app { margin-left: 0 !important; transition: none !important; }
+@media (min-width: 60rem) { .drawer.is-open { box-shadow: 0 0 48px rgba(0,0,0,0.22) !important; } }
