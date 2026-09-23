@@ -170,7 +170,36 @@ SINA.subjects = [
         { id: "history-medical-art", title: "The art of medicine: emotions, self-care and understanding others" }
       ]}
     ]},
-  { id: "parasito", name: "Parasitology and Mycology", semester: "S4", status: "planned", count: 18, blurb: "" },
+  { id: "parasito", name: "Parasitology and Mycology", semester: "S4", status: "live",
+    blurb: "Protozoa, helminths and medical mycology.",
+    groups: [
+      { name: "General parasitology", items: [
+        { id: "parasito-intro", title: "Introduction to parasitology" },
+        { id: "parasito-diagnosis", title: "Diagnosis in parasitology" }
+      ]},
+      { name: "Protozoa", items: [
+        { id: "parasito-amoebiasis", title: "Amoebiasis" },
+        { id: "parasito-flagellates", title: "Intestinal and urogenital flagellates" },
+        { id: "parasito-coccidiosis", title: "Intestinal coccidioses and blastocystosis" },
+        { id: "parasito-malaria", title: "Malaria" },
+        { id: "parasito-toxoplasmosis", title: "Toxoplasmosis" },
+        { id: "parasito-leishmaniasis", title: "Leishmaniasis" }
+      ]},
+      { name: "Helminths", items: [
+        { id: "parasito-nematodes", title: "Intestinal nematodes: pinworm, Ascaris, whipworm" },
+        { id: "parasito-hookworm-strongyloides", title: "Hookworms and strongyloidiasis" },
+        { id: "parasito-distomatosis", title: "Distomatoses (flukes)" },
+        { id: "parasito-bilharzia", title: "Schistosomiasis (bilharzia)" },
+        { id: "parasito-hydatidosis", title: "Hydatidosis (hydatid cyst)" }
+      ]},
+      { name: "Mycology", items: [
+        { id: "parasito-candidiasis", title: "Candidiasis" },
+        { id: "parasito-malassezioses", title: "Malassezioses (pityriasis versicolor)" },
+        { id: "parasito-cryptococcosis", title: "Cryptococcosis" },
+        { id: "parasito-aspergillosis", title: "Aspergillosis" },
+        { id: "parasito-pneumocystosis", title: "Pneumocystosis" }
+      ]}
+    ]},
   { id: "infectious", name: "Infectious Diseases", semester: "S4", status: "live",
     blurb: "Anti-infectives, HIV, meningitis, zoonoses, prolonged fever.",
     groups: [

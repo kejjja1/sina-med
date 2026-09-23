@@ -4,6 +4,9 @@ window.SINA = window.SINA || { subjects: [], lectures: {} };
 SINA.updated = "23 September 2026";
 SINA.updates = [
   { date: "24 September 2026", items: [
+    "Parasitology and Mycology is now live: all 18 lectures, from amoebiasis and malaria to hydatidosis, candidiasis and pneumocystosis, each with a summary, a labelled diagram, questions, flashcards, Go deeper and resources, and mind maps for the big topics (malaria, toxoplasmosis, leishmaniasis, schistosomiasis, hydatidosis, aspergillosis, candidiasis)."
+  ]},
+  { date: "24 September 2026", items: [
     "New: mind maps in the Visual tab. They open with just the main branches; tap a branch to expand it, or use Expand all. Added to all 13 Clinical Biochemistry lectures and to lectures that are mostly classifications (shock, acute kidney injury, diarrhoea, systemic toxicology, drug metabolism, drug interactions, antibiotics, antivirals, antifungals, HIV, meningitis, prolonged fever).",
     "Infectious Diseases is now complete (12 lectures): antibiotics, antivirals, antifungals, HIV and its complications, bacterial meningitis, cholera, foodborne outbreaks, leptospirosis, rickettsioses, rabies and prolonged fever."
   ]},
