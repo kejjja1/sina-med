@@ -5979,11 +5979,11 @@ SINA.lectures["anat3-eyeball-1"] = {
  ],
  "resources": [
   {
-   "title": "Layers of the eyeball",
-   "url": "https://www.kenhub.com/en/library/anatomy/the-eyeball",
-   "kind": "Article",
-   "why": "Walks through the fibrous, vascular and neural layers with labelled diagrams.",
-   "note": "Reviewed by title and description only."
+   "title": "Anatomy of the eyeball (video)",
+   "url": "https://youtu.be/7lBtlGvS1Gc",
+   "kind": "Video",
+   "why": "Video recommended by the class for revising the eyeball.",
+   "note": ""
   },
   {
    "title": "Glaucoma explained (video)",
@@ -5995,10 +5995,6 @@ SINA.lectures["anat3-eyeball-1"] = {
  ],
  "checks": [],
  "sources": [
-  {
-   "name": "Kenhub, The eyeball",
-   "url": "https://www.kenhub.com/en/library/anatomy/the-eyeball"
-  },
   {
    "name": "Duke, Histology of the eye and eyelid",
    "url": "https://histology.oit.duke.edu/NormalBody/EyeEar/Eye.html"
@@ -6848,6 +6844,13 @@ SINA.lectures["anat3-ocular-muscles"] = {
   }
  ],
  "resources": [
+  {
+   "title": "Anatomy of the eyeball (video)",
+   "url": "https://youtu.be/7lBtlGvS1Gc",
+   "kind": "Video",
+   "why": "Video recommended by the class for revising the eyeball.",
+   "note": ""
+  },
   {
    "title": "Pathways of the visual system",
    "url": "https://brainscape.com/flashcards/pathways-of-the-visual-system-9558323/packs/16374621",

@@ -299,20 +299,42 @@ SINA.subjects.push(
         { id: "genetics1-heredity", title: "Hereditary disease transmission" }
       ]}
     ]},
-  { id: "cellbio1", name: "Cell Biology", semester: "S1", program: "y1-anglo", status: "next", count: 4, blurb: "" },
+  { id: "cellbio1", name: "Cell Biology", semester: "S1", program: "y1-anglo", status: "live",
+    blurb: "Study methods, plasma membrane, cytoskeleton, cell cycle and nucleus.",
+    groups: [
+      { name: "Cell biology", items: [
+        { id: "cellbio1-methods", title: "Cell study methods: microscopy, histology and cell culture" },
+        { id: "cellbio1-membrane", title: "The plasma membrane: structure, exchanges and signalling" },
+        { id: "cellbio1-cytoskeleton", title: "The cytosol and the cytoskeleton" },
+        { id: "cellbio1-cycle-nucleus", title: "The cell cycle and the nucleus" }
+      ]}
+    ]},
   { id: "physics1", name: "Physics", semester: "S1", program: "y1-anglo", status: "planned", count: 12, blurb: "" },
-  { id: "biophys1", name: "Biophysics", semester: "S1", program: "y1-anglo", status: "planned", count: 7, blurb: "" },
+  { id: "biophys1", name: "Biophysics", semester: "S1", program: "y1-anglo", status: "live",
+    blurb: "Radioactivity, radiation and protection, optics of vision, hearing.",
+    groups: [
+      { name: "Ionising radiation", items: [
+        { id: "biophys1-radioactivity", title: "Radioactivity: general concepts" },
+        { id: "biophys1-interactions", title: "Radiation-matter interactions, detection and dosimetry" },
+        { id: "biophys1-radiobiology", title: "Radiobiology: biological effects of ionising radiation" },
+        { id: "biophys1-radioprotection", title: "Radiation protection and safety in the medical sector" }
+      ]},
+      { name: "Senses", items: [
+        { id: "biophys1-optics", title: "Geometrical optics applied to vision" },
+        { id: "biophys1-hearing", title: "Biophysics of hearing" }
+      ]}
+    ]},
   { id: "chem1", name: "Chemistry", semester: "S1", program: "y1-anglo", status: "live",
-    blurb: "General chemistry: atoms, bonds, solutions and redox.",
+    blurb: "General chemistry: atoms, periodic table, bonds, solutions.",
     groups: [
       { name: "General chemistry", items: [
         { id: "chem1-matter", title: "Structure of matter: the atom and its nucleus" },
         { id: "chem1-bohr", title: "Models of the atom: Rutherford, quantum theory and Bohr" },
         { id: "chem1-quantum", title: "Quantum mechanics, quantum numbers and atomic orbitals" },
-        { id: "chem1-periodic", title: "Electronic structure and the periodic table" },
+        { id: "chem1-configuration", title: "Atomic orbitals and electron configuration" },
+        { id: "chem1-periodic", title: "The periodic table" },
         { id: "chem1-bonds", title: "Chemical bonds" },
-        { id: "chem1-solutions", title: "Chemistry in solutions" },
-        { id: "chem1-redox", title: "Oxidation-reduction reactions" }
+        { id: "chem1-solutions", title: "Chemistry in solutions" }
       ]}
     ]},
   { id: "anat1", name: "Anatomy 1", semester: "S1", program: "y1-anglo", status: "planned", count: 10, blurb: "" },

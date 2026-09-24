@@ -4,6 +4,12 @@ window.SINA = window.SINA || { subjects: [], lectures: {} };
 SINA.updated = "23 September 2026";
 SINA.updates = [
   { date: "25 September 2026", items: [
+    "1st Year Anglo: Biophysics is complete (6 lectures: radioactivity, radiation-matter interactions and dosimetry, radiobiology, radiation protection, optics of vision, hearing)."
+  ]},
+  { date: "25 September 2026", items: [
+    "1st Year Anglo: Chemistry is complete (7 lectures: atom, Bohr model, quantum numbers, electron configuration, periodic table, chemical bonds, solutions and pH), and Cell Biology is complete (4 lectures: study methods, plasma membrane, cytoskeleton, cell cycle and nucleus)."
+  ]},
+  { date: "25 September 2026", items: [
     "1st Year Anglo: Genetics is complete (9 chapters, from nucleic acids to hereditary transmission), and Chemistry has started with the structure of the atom and the Rutherford and Bohr models."
   ]},
   { date: "25 September 2026", items: [
