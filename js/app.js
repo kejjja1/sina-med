@@ -105,6 +105,40 @@
   document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !progMenu.hidden) { openProg(false); progBtn.focus(); } });
   renderProgMenu();
 
+  /* ---------- first visit: ask which year the visitor is in ---------- */
+  function yearChooser() {
+    var box = document.createElement("div");
+    box.className = "yc-backdrop"; box.id = "year-chooser";
+    box.innerHTML = '<div class="yc" role="dialog" aria-modal="true" aria-labelledby="yc-title">' +
+      '<p class="yc-kicker">' + esc(T("welcome.kicker")) + '</p><h2 id="yc-title">' + esc(T("welcome.title")) + '</h2><p class="yc-sub">' + esc(T("welcome.sub")) + '</p>' +
+      '<div class="yc-grid">' + PROGS.map(function (p) {
+        var n = S.subjects.filter(function (x) { return (x.program || S.DEFAULT_PROGRAM) === p.id && x.groups; }).length;
+        return '<button type="button" class="yc-opt" data-year="' + p.id + '"><span class="yc-name">' + esc(progName(p.id)) + '</span>' +
+          '<span class="yc-meta">' + esc(n ? T("welcome.ready", { n: n }) : T("settings.soon")) + "</span></button>";
+      }).join("") + '</div><button type="button" class="yc-skip">' + esc(T("welcome.skip")) + "</button></div>";
+    document.body.appendChild(box);
+    var last = document.activeElement;
+    function close() { store.set("sina:yearAsked", "1"); box.remove(); document.removeEventListener("keydown", onKey, true); if (last && last.focus) last.focus(); }
+    function onKey(e) {
+      if (e.key === "Escape") { e.preventDefault(); close(); return; }
+      if (e.key === "Tab") {
+        var f = [].slice.call(box.querySelectorAll("button")), i = f.indexOf(document.activeElement);
+        e.preventDefault(); f[(i + (e.shiftKey ? -1 : 1) + f.length) % f.length].focus();
+      }
+    }
+    document.addEventListener("keydown", onKey, true);
+    box.querySelectorAll("[data-year]").forEach(function (b) {
+      b.addEventListener("click", function () { close(); setProgram(b.dataset.year, true); if (location.hash !== "#/" && location.hash !== "") location.hash = "#/"; else route(); });
+    });
+    box.querySelector(".yc-skip").addEventListener("click", close);
+    box.addEventListener("click", function (e) { if (e.target === box) close(); });
+    var first = box.querySelector('[data-year="' + PROG + '"]') || box.querySelector("[data-year]"); if (first) first.focus();
+  }
+  (function () {
+    var h = location.hash || "#/", deep = /^#\/(lecture|year|papers|apps|updates)\//.test(h + "/") && h !== "#/";
+    if (!store.get("sina:program", null) && !store.get("sina:yearAsked", null) && !deep) setTimeout(yearChooser, 0);
+  })();
+
   /* ---------- language (Settings) ---------- */
   var LANGS = S.languages || [{ id: "en", label: "English", available: true }];
   S.lang = store.get("sina:lang", "en");

@@ -252,6 +252,61 @@ SINA.subjects = [
   { id: "radio", name: "Radiology", semester: "S4", status: "planned", count: 0, blurb: "Past papers only for now." }
 ];
 
+/* ---------- 1st Year Anglo (Semester 1) ---------- */
+SINA.subjects.push(
+  { id: "term1", name: "Medical Terminology", semester: "S1", program: "y1-anglo", status: "live",
+    blurb: "Word parts, then the vocabulary of each body system.",
+    groups: [
+      { name: "Medical terminology", items: [
+        { id: "term1-intro", title: "Introduction to medical terminology" },
+        { id: "term1-cardio", title: "Cardiovascular system" },
+        { id: "term1-resp", title: "Respiratory system" },
+        { id: "term1-gi", title: "Digestive system" },
+        { id: "term1-endocrine", title: "Endocrine system" },
+        { id: "term1-nervous", title: "Nervous system" },
+        { id: "term1-immune", title: "Immune system" },
+        { id: "term1-repro", title: "Reproductive system" },
+        { id: "term1-msk", title: "Musculoskeletal system" },
+        { id: "term1-skin", title: "Integumentary system" }
+      ]}
+    ]},
+  { id: "pubhealth1", name: "Public Health", semester: "S1", program: "y1-anglo", status: "live",
+    blurb: "Health, determinants, prevention and promotion, indicators, epidemiology, biostatistics.",
+    groups: [
+      { name: "Public health", items: [
+        { id: "pubhealth1-intro", title: "Introduction to public health" },
+        { id: "pubhealth1-determinants", title: "Determinants of health" },
+        { id: "pubhealth1-approaches", title: "Public health approaches: prevention and health promotion" }
+      ]},
+      { name: "Epidemiology and biostatistics", items: [
+        { id: "pubhealth1-indicators", title: "Health indicators and measures of disease frequency" },
+        { id: "pubhealth1-epidemiology", title: "Introduction to epidemiology" },
+        { id: "pubhealth1-biostat", title: "Introduction to biostatistics" }
+      ]}
+    ]},
+  { id: "genetics1", name: "Genetics", semester: "S1", program: "y1-anglo", status: "live",
+    blurb: "From DNA structure to mutations and hereditary transmission.",
+    groups: [
+      { name: "Molecular genetics", items: [
+        { id: "genetics1-intro", title: "Introduction to molecular genetics: nucleic acids" },
+        { id: "genetics1-genome", title: "The human genome: DNA structure and organisation" },
+        { id: "genetics1-replication", title: "DNA replication" },
+        { id: "genetics1-transcription", title: "DNA transcription" },
+        { id: "genetics1-rna-processing", title: "Post-transcriptional RNA processing" },
+        { id: "genetics1-translation", title: "Gene expression: translation" },
+        { id: "genetics1-mutation", title: "Gene mutation" },
+        { id: "genetics1-chromosomal", title: "Chromosomal anomalies: detection and characterisation" },
+        { id: "genetics1-heredity", title: "Hereditary disease transmission" }
+      ]}
+    ]},
+  { id: "cellbio1", name: "Cell Biology", semester: "S1", program: "y1-anglo", status: "next", count: 4, blurb: "" },
+  { id: "physics1", name: "Physics", semester: "S1", program: "y1-anglo", status: "planned", count: 12, blurb: "" },
+  { id: "biophys1", name: "Biophysics", semester: "S1", program: "y1-anglo", status: "planned", count: 7, blurb: "" },
+  { id: "chem1", name: "Chemistry", semester: "S1", program: "y1-anglo", status: "planned", count: 4, blurb: "" },
+  { id: "anat1", name: "Anatomy 1", semester: "S1", program: "y1-anglo", status: "planned", count: 10, blurb: "" },
+  { id: "biochem1", name: "Biochemistry", semester: "S1", program: "y1-anglo", status: "planned", count: 4, blurb: "" }
+);
+
 /* Years and programs shown in the selector (top left). Subjects without a "program"
    field belong to DEFAULT_PROGRAM. To add 1st-year subjects, give them program: "y1-anglo" etc. */
 SINA.programs = [

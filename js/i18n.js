@@ -19,7 +19,10 @@ SINA.i18n = {
     "home.subjects": "Subjects", "home.semester": "Semester {n}",
     "home.empty.title": "{name} is on its way",
     "home.empty.body": "Subjects and lectures for this year are being prepared. In the meantime, you can switch year with the selector at the top left.",
-    "search.placeholder": "Search lectures and subjects"
+    "search.placeholder": "Search lectures and subjects",
+    "welcome.kicker": "Welcome to Sina", "welcome.title": "Which year are you in?",
+    "welcome.sub": "Pick your year to see its subjects and lectures. You can change it any time with the selector at the top left.",
+    "welcome.ready": "{n} subjects ready", "welcome.skip": "Not now"
   },
   fr: {}
 };

@@ -3,6 +3,13 @@
 window.SINA = window.SINA || { subjects: [], lectures: {} };
 SINA.updated = "23 September 2026";
 SINA.updates = [
+  { date: "25 September 2026", items: [
+    "1st Year Anglo: Medical Terminology is complete (10 lectures, all body systems), Public Health is live with 6 lectures (introduction, determinants, prevention and health promotion, health indicators, epidemiology, biostatistics), and Genetics has started (nucleic acids, the human genome, DNA replication).",
+    "New visitors are now asked which year they are in when they first open the site. You can change it any time with the selector at the top left."
+  ]},
+  { date: "24 September 2026", items: [
+    "1st Year Anglo has started: Medical Terminology is live with its first three lectures (introduction to word parts, cardiovascular and respiratory terms). The other Semester 1 subjects are listed and on their way."
+  ]},
   { date: "24 September 2026", items: [
     "New year selector at the top left: choose 1st Year Anglo or Franco, 2nd Year Anglo or Franco, or 3rd Year Anglo. Everything so far (Semesters 3 and 4) is under 2nd Year Anglo. The site remembers your choice. First-year content is on its way.",
     "Settings now has a Language section. English for now; French will follow."

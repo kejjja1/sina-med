@@ -527,3 +527,17 @@ body.noscroll { overflow: hidden; }
   .prog-btn { font-size: 0.78rem; padding: 0.3rem 0.55rem; max-width: 9.5rem; overflow: hidden; text-overflow: ellipsis; }
   .prog-menu { position: fixed; left: 0.6rem; right: 0.6rem; top: 3.6rem; min-width: 0; }
 }
+
+/* first-visit year chooser */
+.yc-backdrop { position: fixed; inset: 0; z-index: 200; display: flex; align-items: center; justify-content: center; padding: 1rem; background: rgba(15, 20, 25, 0.55); backdrop-filter: blur(3px); }
+.yc { width: 100%; max-width: 34rem; max-height: calc(100vh - 2rem); overflow: auto; background: var(--surface); color: var(--ink); border: 1px solid var(--line-strong); border-radius: 18px; box-shadow: 0 24px 60px rgba(0,0,0,0.25); padding: 1.6rem 1.5rem 1.2rem; }
+.yc-kicker { margin: 0; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); }
+.yc h2 { margin: 0.2rem 0 0.4rem; font-family: var(--serif); font-size: 1.6rem; }
+.yc-sub { margin: 0 0 1.1rem; color: var(--muted); font-size: 0.95rem; }
+.yc-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 0.6rem; }
+.yc-opt { display: flex; flex-direction: column; align-items: flex-start; gap: 0.2rem; text-align: left; font: inherit; color: var(--ink); background: var(--surface-2); border: 1.5px solid var(--line-strong); border-radius: 12px; padding: 0.8rem 0.9rem; cursor: pointer; transition: border-color 0.15s ease, transform 0.15s ease; }
+.yc-opt:hover, .yc-opt:focus-visible { border-color: var(--accent); transform: translateY(-1px); }
+.yc-name { font-weight: 700; font-size: 1.02rem; }
+.yc-meta { font-size: 0.8rem; color: var(--muted); }
+.yc-skip { display: block; margin: 1rem auto 0; font: inherit; font-size: 0.9rem; color: var(--muted); background: none; border: 0; text-decoration: underline; cursor: pointer; padding: 0.3rem 0.6rem; }
+@media (prefers-reduced-motion: reduce) { .yc-opt { transition: none; } }
