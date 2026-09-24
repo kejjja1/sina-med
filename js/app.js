@@ -10,6 +10,18 @@
     set: function (k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
   };
   function subjectById(id) { return S.subjects.filter(function (s) { return s.id === id; })[0]; }
+  var T = S.t || function (k) { return k; };
+  /* ---------- year / program ---------- */
+  var PROGS = S.programs || [{ id: "y3-anglo" }];
+  function progValid(id) { return PROGS.some(function (p) { return p.id === id; }); }
+  var PROG = store.get("sina:program", null);
+  if (!progValid(PROG)) PROG = S.DEFAULT_PROGRAM || PROGS[PROGS.length - 1].id;
+  function progName(id) { return T("program." + (id || PROG)); }
+  function progSubjects() { return S.subjects.filter(function (x) { return (x.program || S.DEFAULT_PROGRAM) === PROG; }); }
+  function progSemesters() {
+    var seen = []; progSubjects().forEach(function (x) { if (seen.indexOf(x.semester) < 0) seen.push(x.semester); });
+    return seen.sort();
+  }
   function readyCount(sub) {
     var n = 0;
     (sub.groups || []).forEach(function (g) { g.items.forEach(function (it) { if (S.lectures[it.id]) n++; }); });
@@ -45,12 +57,75 @@
     });
   });
   setMenu.addEventListener("keydown", function (e) {
-    var items = [].slice.call(setMenu.querySelectorAll("button")), k = items.indexOf(document.activeElement);
+    var items = [].slice.call(setMenu.querySelectorAll("button:not([disabled])")), k = items.indexOf(document.activeElement);
     if (e.key === "ArrowDown") { e.preventDefault(); items[(k + 1) % items.length].focus(); }
     else if (e.key === "ArrowUp") { e.preventDefault(); items[(k - 1 + items.length) % items.length].focus(); }
   });
   document.addEventListener("click", function (e) { if (!setMenu.hidden && !setMenu.contains(e.target)) openSettings(false); });
   document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !setMenu.hidden) { openSettings(false); setBtn.focus(); } });
+
+  /* ---------- year selector (top left): opens on hover or click ---------- */
+  var progBox = document.getElementById("prog"), progBtn = document.getElementById("prog-btn"), progMenu = document.getElementById("prog-menu"), progCur = document.getElementById("prog-cur"), progTimer;
+  function renderProgMenu() {
+    progCur.textContent = progName();
+    progMenu.innerHTML = '<p class="sm-title">' + esc(T("program.choose")) + "</p>" + PROGS.map(function (p) {
+      var n = S.subjects.filter(function (x) { return (x.program || S.DEFAULT_PROGRAM) === p.id && x.groups; }).length;
+      return '<button type="button" role="menuitemradio" data-prog="' + p.id + '" aria-checked="' + (p.id === PROG) + '"><span class="pm-name">' + esc(progName(p.id)) + '</span>' +
+        (n ? "" : '<span class="pm-soon">' + esc(T("settings.soon")) + "</span>") + '<span class="sm-tick" aria-hidden="true">&#10003;</span></button>';
+    }).join("");
+    progMenu.querySelectorAll("[data-prog]").forEach(function (b) {
+      b.addEventListener("click", function () { setProgram(b.dataset.prog); openProg(false); progBtn.focus(); });
+    });
+  }
+  function openProg(open) {
+    progMenu.hidden = !open; progBtn.setAttribute("aria-expanded", String(open));
+  }
+  function setProgram(id, quiet) {
+    if (!progValid(id)) return;
+    var changed = id !== PROG; PROG = id; store.set("sina:program", id);
+    renderProgMenu(); if (typeof renderDrawer === "function") renderDrawer();
+    if (changed && !quiet) {
+      var t = document.getElementById("toast") || document.body.appendChild(Object.assign(document.createElement("div"), { id: "toast", className: "toast", role: "status" }));
+      t.textContent = T("program.switched", { name: progName() }); t.classList.add("show"); setTimeout(function () { t.classList.remove("show"); }, 2200);
+    }
+    if (changed) { if (location.hash === "#/" || location.hash === "" ) route(); else location.hash = "#/"; }
+  }
+  progBtn.setAttribute("aria-label", T("program.label"));
+  progBtn.addEventListener("click", function (e) { e.stopPropagation(); openProg(progMenu.hidden); if (!progMenu.hidden) { var c = progMenu.querySelector('[aria-checked="true"]'); if (c) c.focus(); } });
+  if (window.matchMedia && matchMedia("(hover: hover)").matches) {
+    progBox.addEventListener("mouseenter", function () { clearTimeout(progTimer); openProg(true); });
+    progBox.addEventListener("mouseleave", function () { progTimer = setTimeout(function () { openProg(false); }, 180); });
+  }
+  progMenu.addEventListener("keydown", function (e) {
+    var items = [].slice.call(progMenu.querySelectorAll("button")), k = items.indexOf(document.activeElement);
+    if (e.key === "ArrowDown") { e.preventDefault(); items[(k + 1) % items.length].focus(); }
+    else if (e.key === "ArrowUp") { e.preventDefault(); items[(k - 1 + items.length) % items.length].focus(); }
+  });
+  document.addEventListener("click", function (e) { if (!progMenu.hidden && !progBox.contains(e.target)) openProg(false); });
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !progMenu.hidden) { openProg(false); progBtn.focus(); } });
+  renderProgMenu();
+
+  /* ---------- language (Settings) ---------- */
+  var LANGS = S.languages || [{ id: "en", label: "English", available: true }];
+  S.lang = store.get("sina:lang", "en");
+  if (!LANGS.some(function (l) { return l.id === S.lang && l.available; })) S.lang = "en";
+  document.documentElement.setAttribute("lang", S.lang);
+  function applyI18n() { document.querySelectorAll("[data-i18n]").forEach(function (el) { el.textContent = T(el.getAttribute("data-i18n")); }); var si = document.getElementById("search-input"); if (si) { si.placeholder = T("search.placeholder"); } }
+  var langBox = document.getElementById("lang-items");
+  if (langBox) {
+    langBox.innerHTML = LANGS.map(function (l) {
+      return '<button type="button" role="menuitemradio" data-lang="' + l.id + '" aria-checked="' + (l.id === S.lang) + '"' + (l.available ? "" : ' disabled aria-disabled="true"') + '><span class="sm-ico" aria-hidden="true">' + l.id.toUpperCase() + "</span>" + esc(l.label) +
+        (l.available ? "" : '<span class="pm-soon">' + esc(T("settings.soon")) + "</span>") + '<span class="sm-tick" aria-hidden="true">&#10003;</span></button>';
+    }).join("");
+    langBox.querySelectorAll("[data-lang]:not([disabled])").forEach(function (b) {
+      b.addEventListener("click", function () {
+        S.lang = b.dataset.lang; store.set("sina:lang", S.lang); document.documentElement.setAttribute("lang", S.lang);
+        langBox.querySelectorAll("[data-lang]").forEach(function (x) { x.setAttribute("aria-checked", String(x.dataset.lang === S.lang)); });
+        applyI18n(); renderProgMenu(); if (typeof renderDrawer === "function") renderDrawer(); route(); openSettings(false);
+      });
+    });
+  }
+  applyI18n();
 
   var sugBtn = document.getElementById("suggest-btn"), formUrl = (sugBtn.getAttribute("data-form") || "").trim();
   if (/^https?:\/\//.test(formUrl)) sugBtn.href = formUrl;
@@ -183,12 +258,13 @@
   }
   function renderDrawer() {
     accN = 0;
-    var h = '<div class="dhead"><span class="wordmark">Sina<span>.</span></span><button class="btn dclose" type="button">Close</button></div>' +
-      '<a class="dlink" href="#/">Home</a><a class="dlink" href="#/papers">Past papers</a><a class="dlink" href="#/apps">Useful apps</a>' +
-      '<a class="dlink" href="#/updates"><span>What\'s new</span>' + (newBadge() ? '<span class="badge">new</span>' : "") + "</a>";
-    ["S3", "S4"].forEach(function (sem) {
-      h += '<p class="dsem">Semester ' + sem.charAt(1) + "</p>";
-      S.subjects.filter(function (x) { return x.semester === sem; }).forEach(function (sub) {
+    var h = '<div class="dhead"><span class="wordmark">Sina<span>.</span></span><button class="btn dclose" type="button">' + esc(T("nav.close")) + '</button></div>' +
+      '<p class="dprog">' + esc(progName()) + '</p>' +
+      '<a class="dlink" href="#/">' + esc(T("nav.home")) + '</a><a class="dlink" href="#/papers">' + esc(T("nav.papers")) + '</a><a class="dlink" href="#/apps">' + esc(T("nav.apps")) + '</a>' +
+      '<a class="dlink" href="#/updates"><span>' + esc(T("nav.updates")) + '</span>' + (newBadge() ? '<span class="badge">new</span>' : "") + "</a>";
+    progSemesters().forEach(function (sem) {
+      h += '<p class="dsem">' + esc(T("home.semester", { n: sem.replace(/^S/, "") })) + "</p>";
+      progSubjects().filter(function (x) { return x.semester === sem; }).forEach(function (sub) {
         if (!sub.groups) { h += '<div class="dsoon"><span>' + esc(sub.name) + "</span><em>" + (sub.status === "next" ? "Up next" : "Planned") + "</em></div>"; return; }
         var chapters = sub.groups.map(function (g) {
           var n = g.items.filter(function (it) { return S.lectures[it.id]; }).length;
@@ -252,7 +328,7 @@
   /* ---------- search ---------- */
   function searchIndex() {
     var out = [];
-    S.subjects.forEach(function (sub) {
+    progSubjects().forEach(function (sub) {
       out.push({ kind: "Subject", title: sub.name, sub: sub.semester, href: sub.groups ? "#/subject/" + sub.id : null, hay: sub.name + " " + (sub.blurb || "") });
       (sub.groups || []).forEach(function (g) {
         g.items.forEach(function (it) {
@@ -360,9 +436,15 @@
     setView('<div class="wrap wide"><p class="crumbs"><a href="#/">Home</a> / Useful apps</p><h1>Useful apps and resources</h1><p class="meta">Apps and websites recommended for medical students. They open in a new tab.</p>' + appsHTML() + "</div>", "Useful apps");
   }
 
+  function firstLecture() {
+    var subs = progSubjects().filter(function (x) { return x.groups; });
+    for (var i = 0; i < subs.length; i++) for (var j = 0; j < subs[i].groups.length; j++) for (var k = 0; k < subs[i].groups[j].items.length; k++) { var id = subs[i].groups[j].items[k].id; if (S.lectures[id]) return id; }
+    return "";
+  }
   function homeView() {
-    var sems = { S3: [], S4: [] };
-    S.subjects.forEach(function (s) { sems[s.semester].push(s); });
+    var sems = {}, semList = progSemesters();
+    semList.forEach(function (k) { sems[k] = []; });
+    progSubjects().forEach(function (s) { sems[s.semester].push(s); });
     function row(s) {
       var tag, inner;
       if (s.groups) { tag = '<span class="tag live">' + readyCount(s) + " of " + totalCount(s) + " lectures ready</span>"; }
@@ -373,11 +455,12 @@
     }
     var html = '<div class="wrap wide"><section class="hero"><div><h1>Study each lecture, then test yourself on it.</h1>' +
       '<p class="lede">Summaries, key points, questions, flashcards and extra reading for every lecture of the promo. Each page is built from the lecture slides and checked against other references.</p>' +
-      '<div class="row"><a class="btn primary" href="#/lecture/anat3-orbit">Try the first lecture</a><button class="btn" type="button" id="browse-subjects">Browse subjects</button><a class="btn" href="#/papers">Past papers</a><a class="btn" href="#/apps">Useful apps</a></div>' +
+      '<div class="row">' + (progSubjects().some(function (x) { return x.groups; }) ? '<a class="btn primary" href="#/lecture/' + firstLecture() + '">Try the first lecture</a>' : "") + '<button class="btn" type="button" id="browse-subjects">Browse subjects</button><a class="btn" href="#/papers">Past papers</a><a class="btn" href="#/apps">Useful apps</a></div>' +
       (S.updated ? '<p class="meta" style="margin-top:1.4rem">Last updated ' + esc(S.updated) + '. <a href="#/updates">What\'s new' + (newBadge() ? ' <span class="badge">new</span>' : "") + "</a>.</p>" : "") + '</div>' +
       '</section>' +
-      '<h2 id="subjects">Subjects</h2><h3 class="sem-title">Semester 3</h3><ul class="subject-list">' + sems.S3.map(row).join("") + '</ul>' +
-      '<h3 class="sem-title">Semester 4</h3><ul class="subject-list">' + sems.S4.map(row).join("") + "</ul>" +
+      '<h2 id="subjects">' + esc(T("home.subjects")) + ' <span class="prog-tag">' + esc(progName()) + '</span></h2>' +
+      (semList.length ? semList.map(function (k) { return '<h3 class="sem-title">' + esc(T("home.semester", { n: k.replace(/^S/, "") })) + '</h3><ul class="subject-list">' + sems[k].map(row).join("") + "</ul>"; }).join("")
+        : '<div class="empty-prog"><h3>' + esc(T("home.empty.title", { name: progName() })) + '</h3><p>' + esc(T("home.empty.body")) + '</p></div>') +
       (appsHTML() ? '<h2 id="apps" style="margin-top:2.4rem">Useful apps and resources</h2><p class="meta">Recommended apps and websites for medical students.</p>' + appsHTML() : "") + "</div>";
     setView(html, "");
     var bb = document.getElementById("browse-subjects");
@@ -678,7 +761,7 @@
     var all = S.papers || [], sub = subjectId ? subjectById(subjectId) : null;
     var html = '<div class="wrap"><p class="crumbs"><a href="#/">Home</a> / Past papers</p><h1>Past papers' + (sub ? ": " + esc(sub.name) : "") + "</h1>";
     var any = false;
-    S.subjects.forEach(function (sb) {
+    (subjectId ? S.subjects : progSubjects()).forEach(function (sb) {
       if (subjectId && sb.id !== subjectId) return;
       var list = all.filter(function (x) { return x.subject === sb.id; });
       if (!list.length) return;
@@ -757,6 +840,7 @@
     if (!parts.length) return homeView();
     if (parts[0] === "updates") return updatesView();
     if (parts[0] === "apps") return appsView();
+    if (parts[0] === "year" && progValid(parts[1])) { setProgram(parts[1], true); location.replace("#/"); return; }
     if (parts[0] === "papers") return papersView(parts[1]);
     if (parts[0] === "paper") return paperView(parts[1]);
     if (parts[0] === "subject") return subjectView(parts[1]);

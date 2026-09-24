@@ -500,3 +500,30 @@ body.noscroll { overflow: hidden; }
 .mm-kids li::before { content: ""; position: absolute; left: -0.8rem; top: 0.95rem; width: 0.6rem; border-top: 2px solid var(--mmc); }
 .mm-sub > .mm-tog { font-weight: 600; font-size: 0.92rem; padding: 0.22rem 0.2rem; }
 @media (prefers-reduced-motion: reduce) { .mm-caret { transition: none; } }
+
+/* year / program selector (top left) */
+.prog { position: relative; margin-left: 0.6rem; }
+.prog-btn { display: inline-flex; align-items: center; gap: 0.4rem; font: inherit; font-weight: 700; font-size: 0.88rem; color: var(--ink); background: var(--surface-2); border: 1px solid var(--line-strong); border-radius: 999px; padding: 0.35rem 0.75rem; cursor: pointer; white-space: nowrap; }
+.prog-btn:hover, .prog-btn[aria-expanded="true"] { border-color: var(--accent); }
+.prog-caret { transition: transform 0.15s ease; }
+.prog-btn[aria-expanded="true"] .prog-caret { transform: rotate(180deg); }
+.prog-menu { position: absolute; left: 0; top: calc(100% + 0.4rem); z-index: 60; min-width: 15rem; background: var(--surface); border: 1px solid var(--line-strong); border-radius: 12px; box-shadow: 0 12px 32px rgba(0,0,0,0.16); padding: 0.4rem; }
+.prog-menu::before { content: ""; position: absolute; left: 0; right: 0; top: -0.5rem; height: 0.5rem; } /* keeps hover alive across the gap */
+.prog-menu button, #lang-items button { display: flex; align-items: center; gap: 0.55rem; width: 100%; text-align: left; font: inherit; font-size: 0.93rem; color: var(--ink); background: none; border: 0; border-radius: 8px; padding: 0.5rem 0.6rem; cursor: pointer; }
+.prog-menu button:hover, .prog-menu button:focus-visible { background: var(--surface-2); }
+.prog-menu .pm-name { flex: 1; font-weight: 600; }
+.pm-soon { margin-left: auto; font-size: 0.72rem; font-weight: 700; color: var(--muted); background: var(--surface-2); border-radius: 999px; padding: 0.05rem 0.5rem; }
+.prog-menu .sm-tick, #lang-items .sm-tick { visibility: hidden; color: var(--accent); font-weight: 700; }
+.prog-menu [aria-checked="true"] .sm-tick, #lang-items [aria-checked="true"] .sm-tick { visibility: visible; }
+.prog-menu [aria-checked="true"] .pm-name { color: var(--accent); }
+#lang-items button[disabled] { opacity: 0.55; cursor: not-allowed; }
+.dprog { margin: 0.2rem 0 0.6rem; padding: 0.35rem 0.7rem; border-radius: 8px; background: var(--accent-soft); color: var(--accent); font-weight: 700; font-size: 0.85rem; display: inline-block; }
+:root[data-theme="dark"] .dprog { color: var(--sage); }
+.prog-tag { font-family: var(--sans); font-size: 0.8rem; font-weight: 700; vertical-align: middle; margin-left: 0.4rem; padding: 0.15rem 0.6rem; border-radius: 999px; background: var(--surface-2); color: var(--muted); border: 1px solid var(--line); }
+.empty-prog { margin-top: 1rem; padding: 1.4rem 1.2rem; border: 1px dashed var(--line-strong); border-radius: 14px; background: var(--surface); }
+.empty-prog h3 { margin-top: 0; }
+@media (max-width: 40rem) {
+  .prog { margin-left: 0.3rem; }
+  .prog-btn { font-size: 0.78rem; padding: 0.3rem 0.55rem; max-width: 9.5rem; overflow: hidden; text-overflow: ellipsis; }
+  .prog-menu { position: fixed; left: 0.6rem; right: 0.6rem; top: 3.6rem; min-width: 0; }
+}

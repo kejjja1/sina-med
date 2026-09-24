@@ -24,6 +24,10 @@
       <div class="left">
         <button class="menu-btn" id="menu-btn" type="button" aria-label="Open menu" aria-controls="drawer" aria-expanded="false"><span></span><span></span><span></span></button>
         <a class="wordmark" href="#/" aria-label="Sina, home">Sina<span>.</span></a>
+        <div class="prog" id="prog">
+          <button class="prog-btn" id="prog-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="prog-menu"><span class="prog-cur" id="prog-cur"></span><svg class="prog-caret" viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <div class="prog-menu" id="prog-menu" role="menu" hidden></div>
+        </div>
       </div>
       <div class="search" id="search">
         <input id="search-input" type="search" placeholder="Search lectures and subjects" aria-label="Search lectures and subjects" autocomplete="off">
@@ -37,9 +41,11 @@
             <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
           </button>
           <div class="settings-menu" id="settings-menu" role="menu" aria-label="Settings" hidden>
-            <p class="sm-title">Appearance</p>
+            <p class="sm-title" data-i18n="settings.appearance">Appearance</p>
             <button type="button" role="menuitemradio" data-theme-choice="light" aria-checked="false"><span class="sm-ico" aria-hidden="true">&#9728;</span>Light mode<span class="sm-tick" aria-hidden="true">&#10003;</span></button>
             <button type="button" role="menuitemradio" data-theme-choice="dark" aria-checked="false"><span class="sm-ico" aria-hidden="true">&#9790;</span>Dark mode<span class="sm-tick" aria-hidden="true">&#10003;</span></button>
+            <p class="sm-title" data-i18n="settings.language">Language</p>
+            <div id="lang-items"></div>
           </div>
         </div>
       </div>
@@ -57,6 +63,7 @@
   <nav id="drawer" class="drawer" aria-label="Site menu"></nav>
   <div id="backdrop" class="backdrop"></div>
   <main id="app"><noscript><div class="wrap"><p>Sina needs JavaScript to show lectures.</p></div></noscript></main>
+  <script src="js/i18n.js"></script>
   <script src="js/data/index.js"></script>
   <script src="js/data/papers.js"></script>
   <script src="js/data/updates.js"></script>

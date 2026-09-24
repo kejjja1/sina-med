@@ -4,6 +4,10 @@ window.SINA = window.SINA || { subjects: [], lectures: {} };
 SINA.updated = "23 September 2026";
 SINA.updates = [
   { date: "24 September 2026", items: [
+    "New year selector at the top left: choose 1st Year Anglo or Franco, 2nd Year Anglo or Franco, or 3rd Year Anglo. Everything so far (Semesters 3 and 4) is under 2nd Year Anglo. The site remembers your choice. First-year content is on its way.",
+    "Settings now has a Language section. English for now; French will follow."
+  ]},
+  { date: "24 September 2026", items: [
     "Parasitology and Mycology is now live: all 18 lectures, from amoebiasis and malaria to hydatidosis, candidiasis and pneumocystosis, each with a summary, a labelled diagram, questions, flashcards, Go deeper and resources, and mind maps for the big topics (malaria, toxoplasmosis, leishmaniasis, schistosomiasis, hydatidosis, aspergillosis, candidiasis)."
   ]},
   { date: "24 September 2026", items: [

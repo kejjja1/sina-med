@@ -1,4 +1,5 @@
 window.SINA = window.SINA || { subjects: [], lectures: {} };
+SINA.lectures = SINA.lectures || {};
 
 SINA.subjects = [
   { id: "anat3", name: "Anatomy 3", semester: "S3", status: "live",
@@ -250,3 +251,13 @@ SINA.subjects = [
     ]},
   { id: "radio", name: "Radiology", semester: "S4", status: "planned", count: 0, blurb: "Past papers only for now." }
 ];
+
+/* Years and programs shown in the selector (top left). Subjects without a "program"
+   field belong to DEFAULT_PROGRAM. To add 1st-year subjects, give them program: "y1-anglo" etc. */
+SINA.programs = [
+  { id: "y1-anglo" }, { id: "y1-franco" },
+  { id: "y2-anglo" }, { id: "y2-franco" },
+  { id: "y3-anglo" }
+];
+SINA.DEFAULT_PROGRAM = "y2-anglo";
+SINA.subjects.forEach(function (s) { if (!s.program) s.program = SINA.DEFAULT_PROGRAM; });
