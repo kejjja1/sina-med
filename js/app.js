@@ -83,6 +83,7 @@
   function setProgram(id, quiet) {
     if (!progValid(id)) return;
     var changed = id !== PROG; PROG = id; store.set("sina:program", id);
+    if (changed || quiet) { try { track("year-" + id, "Year chosen: " + progName(id), true); } catch (e) {} }
     renderProgMenu(); if (typeof renderDrawer === "function") renderDrawer();
     if (changed && !quiet) {
       var t = document.getElementById("toast") || document.body.appendChild(Object.assign(document.createElement("div"), { id: "toast", className: "toast", role: "status" }));
@@ -868,8 +869,34 @@
   /* ---------- router ---------- */
   requestAnimationFrame(function () { requestAnimationFrame(function () { document.body.classList.remove("no-anim"); }); });
 
+  /* ---------- visitor statistics (GoatCounter) ---------- */
+  var gcLast = "", gcQueue = [];
+  function gcSend(item) {
+    if (window.goatcounter && typeof window.goatcounter.count === "function") { try { window.goatcounter.count(item); } catch (e) {} return true; }
+    return false;
+  }
+  function gcFlush(tries) {
+    while (gcQueue.length && gcSend(gcQueue[0])) gcQueue.shift();
+    if (gcQueue.length && tries < 40) setTimeout(function () { gcFlush(tries + 1); }, 250);
+  }
+  function track(path, title, isEvent) {
+    var item = { path: path, title: title || path, event: !!isEvent };
+    gcQueue.push(item); gcFlush(0);
+  }
+  function trackView() {
+    var path = "/" + location.hash.replace(/^#\/?/, "");
+    if (path === gcLast) return;
+    gcLast = path;
+    var parts = path.split("/").filter(Boolean), title = "Home";
+    if (parts[0] === "lecture" && S.lectures[parts[1]]) title = S.lectures[parts[1]].title + (parts[2] ? " (" + parts[2] + ")" : "");
+    else if (parts[0] === "subject") { var sb = subjectById(parts[1]); title = sb ? sb.name : path; }
+    else if (parts.length) title = parts[0].charAt(0).toUpperCase() + parts[0].slice(1);
+    track(path, title + " | " + progName(), false);
+  }
+
   function route() {
     var parts = location.hash.replace(/^#\/?/, "").split("/").filter(Boolean);
+    if (parts[0] !== "year") setTimeout(trackView, 0);
     if (isOpen()) closeDrawer();
     if (!parts.length) return homeView();
     if (parts[0] === "updates") return updatesView();
