@@ -302,7 +302,19 @@ SINA.subjects.push(
   { id: "cellbio1", name: "Cell Biology", semester: "S1", program: "y1-anglo", status: "next", count: 4, blurb: "" },
   { id: "physics1", name: "Physics", semester: "S1", program: "y1-anglo", status: "planned", count: 12, blurb: "" },
   { id: "biophys1", name: "Biophysics", semester: "S1", program: "y1-anglo", status: "planned", count: 7, blurb: "" },
-  { id: "chem1", name: "Chemistry", semester: "S1", program: "y1-anglo", status: "planned", count: 4, blurb: "" },
+  { id: "chem1", name: "Chemistry", semester: "S1", program: "y1-anglo", status: "live",
+    blurb: "General chemistry: atoms, bonds, solutions and redox.",
+    groups: [
+      { name: "General chemistry", items: [
+        { id: "chem1-matter", title: "Structure of matter: the atom and its nucleus" },
+        { id: "chem1-bohr", title: "Models of the atom: Rutherford, quantum theory and Bohr" },
+        { id: "chem1-quantum", title: "Quantum mechanics, quantum numbers and atomic orbitals" },
+        { id: "chem1-periodic", title: "Electronic structure and the periodic table" },
+        { id: "chem1-bonds", title: "Chemical bonds" },
+        { id: "chem1-solutions", title: "Chemistry in solutions" },
+        { id: "chem1-redox", title: "Oxidation-reduction reactions" }
+      ]}
+    ]},
   { id: "anat1", name: "Anatomy 1", semester: "S1", program: "y1-anglo", status: "planned", count: 10, blurb: "" },
   { id: "biochem1", name: "Biochemistry", semester: "S1", program: "y1-anglo", status: "planned", count: 4, blurb: "" }
 );

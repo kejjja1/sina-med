@@ -4,6 +4,9 @@ window.SINA = window.SINA || { subjects: [], lectures: {} };
 SINA.updated = "23 September 2026";
 SINA.updates = [
   { date: "25 September 2026", items: [
+    "1st Year Anglo: Genetics is complete (9 chapters, from nucleic acids to hereditary transmission), and Chemistry has started with the structure of the atom and the Rutherford and Bohr models."
+  ]},
+  { date: "25 September 2026", items: [
     "1st Year Anglo: Medical Terminology is complete (10 lectures, all body systems), Public Health is live with 6 lectures (introduction, determinants, prevention and health promotion, health indicators, epidemiology, biostatistics), and Genetics has started (nucleic acids, the human genome, DNA replication).",
     "New visitors are now asked which year they are in when they first open the site. You can change it any time with the selector at the top left."
   ]},
