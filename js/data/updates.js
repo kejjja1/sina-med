@@ -1,48 +1,29 @@
-/* What's new. Newest entry first. Add one block per update.
+/* What's new. Newest entry first. One block per day: add new lines to today's block if it already exists.
    date: what people see. items: short lines. */
 window.SINA = window.SINA || { subjects: [], lectures: {} };
-SINA.updated = "23 September 2026";
 SINA.updates = [
   { date: "25 September 2026", items: [
-    "1st Year Anglo: Anatomy 1 has started with the whole upper limb (8 lectures: skeleton, shoulder and axilla, scapular region, arm, cubital fold, forearm, hand muscles, hand vessels and nerves). The thorax is next."
-  ]},
-  { date: "25 September 2026", items: [
-    "1st Year Anglo: Biochemistry is complete (9 lectures: amino acids, proteins, enzymes, carbohydrates, lipids, nucleotides, and carbohydrate, lipid and amino acid metabolism)."
-  ]},
-  { date: "25 September 2026", items: [
-    "1st Year Anglo: Physics is complete (13 lectures: units, states of matter, water and solutions, gases, energetics, viscosity, migration, membranes, osmosis, fluid transfers, circulation, respiration, acid-base balance)."
-  ]},
-  { date: "25 September 2026", items: [
-    "1st Year Anglo: Biophysics is complete (6 lectures: radioactivity, radiation-matter interactions and dosimetry, radiobiology, radiation protection, optics of vision, hearing)."
-  ]},
-  { date: "25 September 2026", items: [
-    "1st Year Anglo: Chemistry is complete (7 lectures: atom, Bohr model, quantum numbers, electron configuration, periodic table, chemical bonds, solutions and pH), and Cell Biology is complete (4 lectures: study methods, plasma membrane, cytoskeleton, cell cycle and nucleus)."
-  ]},
-  { date: "25 September 2026", items: [
-    "1st Year Anglo: Genetics is complete (9 chapters, from nucleic acids to hereditary transmission), and Chemistry has started with the structure of the atom and the Rutherford and Bohr models."
-  ]},
-  { date: "25 September 2026", items: [
+    "1st Year Anglo: Anatomy 1 now covers the whole upper limb (8 lectures) and the thorax (7 lectures: overview, osteology, myology, walls and breast, heart, great vessels, lungs).",
+    "1st Year Anglo: Biochemistry is complete (9 lectures: amino acids, proteins, enzymes, carbohydrates, lipids, nucleotides, and carbohydrate, lipid and amino acid metabolism).",
+    "1st Year Anglo: Physics is complete (13 lectures: units, states of matter, water and solutions, gases, energetics, viscosity, migration, membranes, osmosis, fluid transfers, circulation, respiration, acid-base balance).",
+    "1st Year Anglo: Biophysics is complete (6 lectures: radioactivity, radiation-matter interactions and dosimetry, radiobiology, radiation protection, optics of vision, hearing).",
+    "1st Year Anglo: Chemistry is complete (7 lectures: atom, Bohr model, quantum numbers, electron configuration, periodic table, chemical bonds, solutions and pH), and Cell Biology is complete (4 lectures: study methods, plasma membrane, cytoskeleton, cell cycle and nucleus).",
+    "1st Year Anglo: Genetics is complete (9 chapters, from nucleic acids to hereditary transmission), and Chemistry has started with the structure of the atom and the Rutherford and Bohr models.",
     "1st Year Anglo: Medical Terminology is complete (10 lectures, all body systems), Public Health is live with 6 lectures (introduction, determinants, prevention and health promotion, health indicators, epidemiology, biostatistics), and Genetics has started (nucleic acids, the human genome, DNA replication).",
-    "New visitors are now asked which year they are in when they first open the site. You can change it any time with the selector at the top left."
+    "New visitors are now asked which year they are in when they first open the site. You can change it any time with the selector at the top left.",
+    "Semester 1 of 1st Year Anglo is complete, with the Introduction to anatomy added to Anatomy 1 (16 lectures).",
+    "Semester headings are now gold like the chapter titles, and What's new shows each day once."
   ]},
   { date: "24 September 2026", items: [
-    "1st Year Anglo has started: Medical Terminology is live with its first three lectures (introduction to word parts, cardiovascular and respiratory terms). The other Semester 1 subjects are listed and on their way."
-  ]},
-  { date: "24 September 2026", items: [
+    "1st Year Anglo has started: Medical Terminology is live with its first three lectures (introduction to word parts, cardiovascular and respiratory terms). The other Semester 1 subjects are listed and on their way.",
     "New year selector at the top left: choose 1st Year Anglo or Franco, 2nd Year Anglo or Franco, or 3rd Year Anglo. Everything so far (Semesters 3 and 4) is under 2nd Year Anglo. The site remembers your choice. First-year content is on its way.",
-    "Settings now has a Language section. English for now; French will follow."
-  ]},
-  { date: "24 September 2026", items: [
-    "Parasitology and Mycology is now live: all 18 lectures, from amoebiasis and malaria to hydatidosis, candidiasis and pneumocystosis, each with a summary, a labelled diagram, questions, flashcards, Go deeper and resources, and mind maps for the big topics (malaria, toxoplasmosis, leishmaniasis, schistosomiasis, hydatidosis, aspergillosis, candidiasis)."
-  ]},
-  { date: "24 September 2026", items: [
+    "Settings now has a Language section. English for now; French will follow.",
+    "Parasitology and Mycology is now live: all 18 lectures, from amoebiasis and malaria to hydatidosis, candidiasis and pneumocystosis, each with a summary, a labelled diagram, questions, flashcards, Go deeper and resources, and mind maps for the big topics (malaria, toxoplasmosis, leishmaniasis, schistosomiasis, hydatidosis, aspergillosis, candidiasis).",
     "New: mind maps in the Visual tab. They open with just the main branches; tap a branch to expand it, or use Expand all. Added to all 13 Clinical Biochemistry lectures and to lectures that are mostly classifications (shock, acute kidney injury, diarrhoea, systemic toxicology, drug metabolism, drug interactions, antibiotics, antivirals, antifungals, HIV, meningitis, prolonged fever).",
     "Infectious Diseases is now complete (12 lectures): antibiotics, antivirals, antifungals, HIV and its complications, bacterial meningitis, cholera, foodborne outbreaks, leptospirosis, rickettsioses, rabies and prolonged fever."
   ]},
   { date: "23 September 2026", items: [
-    "Semester 4 has started: Toxicology (all 4 lectures), Pharmacology (6 lectures: pharmacodynamics, biotransformation, clinical trials, pharmacovigilance, drug interactions, asthma and COPD drugs) and the first Infectious Diseases lecture (principles of antibiotic therapy). Each has a full summary, a labelled diagram with picture questions, questions, flashcards, Go deeper and resources."
-  ]},
-  { date: "23 September 2026", items: [
+    "Semester 4 has started: Toxicology (all 4 lectures), Pharmacology (6 lectures: pharmacodynamics, biotransformation, clinical trials, pharmacovigilance, drug interactions, asthma and COPD drugs) and the first Infectious Diseases lecture (principles of antibiotic therapy). Each has a full summary, a labelled diagram with picture questions, questions, flashcards, Go deeper and resources.",
     "The menu now opens as an overlay on every screen: it slides in over the page with a dimmed background, and the page and the menu button no longer move.",
     "First Aid (all 10 lectures), six Clinical Biochemistry lectures and four GI Semiology lectures are now full versions: longer summaries built from the slides, a labelled diagram with picture questions, many more questions and flashcards, Go deeper reading and trusted resources.",
     "Checked every S3 lecture against the Drive: all are on the site. Source links for ten Anatomy 3 lectures now open the current slide files, and the Semiology mock exam now opens the right file."
@@ -55,16 +36,12 @@ SINA.updates = [
     "Pathological Anatomy now sits in Semester 4.",
     "Chapter titles are now in gold to stand out from the lectures inside them.",
     "The Suggestion button now opens our suggestion form in a new tab.",
-    "Renamed Extraocular muscles and eye movement to Anatomy of the eyeball II, to match the lecture file, and linked it to the PDF."
-  ]},
-  { date: "22 September 2026", items: [
+    "Renamed Extraocular muscles and eye movement to Anatomy of the eyeball II, to match the lecture file, and linked it to the PDF.",
     "New Settings button (the cog, top right): choose light or dark mode from a small menu.",
     "New Suggestion button next to it: tell us what to fix or add.",
     "Reference pictures: 69 lectures now have a picture gallery on the Visual tab, with arrows, dots and swipe to move between pictures.",
     "Checked all of S3 for consistency: fixed the eye-muscle action grid in Ocular muscles (elevation and depression were swapped), a broken answer explanation and flashcard, a wording slip in Nasal cavity, and made question options more even in length so the answer is not given away by its length.",
-    "Lectures still in their short version now say so on the Go deeper and Resources tabs instead of showing an empty page."
-  ]},
-  { date: "22 September 2026", items: [
+    "Lectures still in their short version now say so on the Go deeper and Resources tabs instead of showing an empty page.",
     "Pathological Anatomy is here: all 9 lectures, from the introduction and lab techniques to cell injury, cell death, acute inflammation, vascular pathology and oncology, each with a labelled schematic, picture questions, tables, Go deeper reading and resources.",
     "History and Art of Medicine is here: all 7 lectures, from the history of physiology to surgery, plus the Art of Medicine on emotions, empathy and communication, built in the same full format.",
     "S3 is now complete on the site."
@@ -135,3 +112,5 @@ SINA.updates = [
     "Site created with the first lectures, questions, flashcards, 3D models and Go deeper reading."
   ]}
 ];
+/* "Last updated" always follows the newest entry above. */
+SINA.updated = SINA.updates.length ? SINA.updates[0].date : "";

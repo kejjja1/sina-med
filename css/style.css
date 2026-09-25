@@ -541,3 +541,14 @@ body.noscroll { overflow: hidden; }
 .yc-meta { font-size: 0.8rem; color: var(--muted); }
 .yc-skip { display: block; margin: 1rem auto 0; font: inherit; font-size: 0.9rem; color: var(--muted); background: none; border: 0; text-decoration: underline; cursor: pointer; padding: 0.3rem 0.6rem; }
 @media (prefers-reduced-motion: reduce) { .yc-opt { transition: none; } }
+
+/* semester headings: same gold as chapter titles, a little bolder and larger */
+.sem-title, .dsem {
+  color: var(--gold-mid);
+  background: linear-gradient(180deg, var(--gold-hi) 0%, var(--gold-mid) 55%, var(--gold-lo) 100%);
+  -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+  font-family: var(--serif); font-weight: 800; letter-spacing: 0.01em;
+}
+.sem-title { font-size: 1.45rem; padding-bottom: 0.35rem; border-bottom: 3px solid var(--gold-line); display: block; margin-top: 2.2rem; }
+.dsem { font-size: 1.05rem; text-transform: none; }
+@media (forced-colors: active) { .sem-title, .dsem { -webkit-text-fill-color: currentColor; background: none; } }

@@ -381,11 +381,10 @@ SINA.subjects.push(
         { id: "anat1-thorax-overview", title: "Thorax part 1: overview" },
         { id: "anat1-thorax-osteology", title: "Thorax part 2: osteology" },
         { id: "anat1-thorax-myology", title: "Thorax part 3: myology" },
-        { id: "anat1-thorax-walls", title: "Thorax part 4: thoracic walls" },
+        { id: "anat1-thorax-walls", title: "Thorax part 4: thoracic walls and breast" },
         { id: "anat1-heart", title: "Thorax part 5: the heart" },
-        { id: "anat1-aorta", title: "Thorax part 6: the aorta" },
-        { id: "anat1-thorax-veins", title: "Thorax part 7: veins and lymphatics" },
-        { id: "anat1-respiratory", title: "Thorax part 8: respiratory system" }
+        { id: "anat1-aorta", title: "Thorax parts 6-7: great vessels and superior mediastinum" },
+        { id: "anat1-respiratory", title: "Thorax part 8: lungs and respiratory system" }
       ]}
     ]},
   { id: "biochem1", name: "Biochemistry", semester: "S1", program: "y1-anglo", status: "live",
