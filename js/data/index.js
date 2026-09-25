@@ -406,6 +406,36 @@ SINA.subjects.push(
     ]},
 );
 
+SINA.subjects.push(
+  { id: "immuno1", name: "Immunology", semester: "S2", program: "y1-anglo", status: "live",
+    blurb: "Lymphoid organs, immune cells, antigens, antibodies, complement, innate and adaptive responses.",
+    groups: [
+      { name: "Lectures", items: [
+        { id: "immuno1-lymphoid", title: "Lymphoid organs and lymphocyte selection" },
+        { id: "immuno1-cells", title: "Hematopoiesis and cells of the immune system" },
+        { id: "immuno1-antigens", title: "Antigens" },
+        { id: "immuno1-immunoglobulins", title: "Immunoglobulins and antibody functions" },
+        { id: "immuno1-complement", title: "The complement system" },
+        { id: "immuno1-dynamics", title: "Dynamics of the immune response" },
+        { id: "immuno1-anti-infectious", title: "Anti-infectious immunity" }
+      ]},
+      { name: "Tutorials", items: [
+        { id: "immuno1-innate", title: "Innate immunity" },
+        { id: "immuno1-inflammation", title: "The inflammatory response" },
+        { id: "immuno1-phagocytosis", title: "Phagocytosis and microbicidal processes" },
+        { id: "immuno1-mhc", title: "MHC and antigen-presenting cells" },
+        { id: "immuno1-testing", title: "Immunological testing" }
+      ]}
+    ]},
+  { id: "anat2", name: "Anatomy 2", semester: "S2", program: "y1-anglo", status: "planned", count: 10, blurb: "" },
+  { id: "hemato1", name: "Hematology", semester: "S2", program: "y1-anglo", status: "planned", count: 8, blurb: "" },
+  { id: "embryo1", name: "Embryology", semester: "S2", program: "y1-anglo", status: "planned", count: 6, blurb: "" },
+  { id: "histo1", name: "Histology", semester: "S2", program: "y1-anglo", status: "planned", count: 6, blurb: "" },
+  { id: "bacterio1", name: "Bacteriology", semester: "S2", program: "y1-anglo", status: "planned", count: 8, blurb: "" },
+  { id: "physio1", name: "Physiology", semester: "S2", program: "y1-anglo", status: "planned", count: 8, blurb: "" },
+  { id: "viro1", name: "Virology", semester: "S2", program: "y1-anglo", status: "planned", count: 6, blurb: "" }
+);
+
 /* Years and programs shown in the selector (top left). Subjects without a "program"
    field belong to DEFAULT_PROGRAM. To add 1st-year subjects, give them program: "y1-anglo" etc. */
 SINA.programs = [
