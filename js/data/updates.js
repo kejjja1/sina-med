@@ -4,6 +4,9 @@ window.SINA = window.SINA || { subjects: [], lectures: {} };
 SINA.updated = "23 September 2026";
 SINA.updates = [
   { date: "25 September 2026", items: [
+    "1st Year Anglo: Physics is complete (13 lectures: units, states of matter, water and solutions, gases, energetics, viscosity, migration, membranes, osmosis, fluid transfers, circulation, respiration, acid-base balance)."
+  ]},
+  { date: "25 September 2026", items: [
     "1st Year Anglo: Biophysics is complete (6 lectures: radioactivity, radiation-matter interactions and dosimetry, radiobiology, radiation protection, optics of vision, hearing)."
   ]},
   { date: "25 September 2026", items: [

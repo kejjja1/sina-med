@@ -309,7 +309,31 @@ SINA.subjects.push(
         { id: "cellbio1-cycle-nucleus", title: "The cell cycle and the nucleus" }
       ]}
     ]},
-  { id: "physics1", name: "Physics", semester: "S1", program: "y1-anglo", status: "planned", count: 12, blurb: "" },
+  { id: "physics1", name: "Physics", semester: "S1", program: "y1-anglo", status: "live",
+    blurb: "Biophysics of the internal environment and major functions.",
+    groups: [
+      { name: "General", items: [
+        { id: "physics1-units", title: "Quantities, units and measurement uncertainties" }
+      ]},
+      { name: "States of matter and energetics", items: [
+        { id: "physics1-states", title: "Physical states of matter" },
+        { id: "physics1-water", title: "Biophysics of water and solutions" },
+        { id: "physics1-gases", title: "Biophysics of the gaseous state" },
+        { id: "physics1-energetics", title: "Energetics: work, potentials and chemical potential" }
+      ]},
+      { name: "Free displacements of matter", items: [
+        { id: "physics1-viscosity", title: "Viscosity applied to biological fluids" },
+        { id: "physics1-migration", title: "Migration movements" },
+        { id: "physics1-diffusion", title: "Membranes and simple elementary phenomena" }
+      ]},
+      { name: "Membranes and major functions", items: [
+        { id: "physics1-osmosis", title: "Osmotic phenomena" },
+        { id: "physics1-fluid-transfers", title: "Fluid transfers in the organism" },
+        { id: "physics1-circulation", title: "Biophysics of the blood circulation" },
+        { id: "physics1-respiration", title: "Biophysics of respiration" },
+        { id: "physics1-acid-base", title: "Acid-base balance" }
+      ]}
+    ]},
   { id: "biophys1", name: "Biophysics", semester: "S1", program: "y1-anglo", status: "live",
     blurb: "Radioactivity, radiation and protection, optics of vision, hearing.",
     groups: [
