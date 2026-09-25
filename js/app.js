@@ -295,22 +295,55 @@
     accN = 0;
     var h = '<div class="dhead"><span class="wordmark">Sina<span>.</span></span><button class="btn dclose" type="button">' + esc(T("nav.close")) + '</button></div>' +
       '<p class="dprog">' + esc(progName()) + '</p>' +
-      '<a class="dlink" href="#/">' + esc(T("nav.home")) + '</a><a class="dlink" href="#/papers">' + esc(T("nav.papers")) + '</a><a class="dlink" href="#/apps">' + esc(T("nav.apps")) + '</a>' +
-      '<a class="dlink" href="#/updates"><span>' + esc(T("nav.updates")) + '</span>' + (newBadge() ? '<span class="badge">new</span>' : "") + "</a>";
+      '<a class="dlink" href="#/">' + esc(T("nav.home")) + '</a>';
+
+    /* Category 0: Upcoming midterm lectures */
+    if (progMidterms().length) {
+      var midHTML = '<a class="dlink sub" href="#/midterm">All upcoming midterm lectures</a>' + progMidterms().map(function (m) {
+        return '<p class="dsem">' + esc(m.title) + "</p>" + m.groups.map(function (g) {
+          return accHTML(g.name, g.items.length + " lectures", '<ul class="dlist">' + g.items.map(function (id) {
+            return S.lectures[id] ? '<li><a href="#/lecture/' + id + '">' + esc(lectureTitle(id)) + '<span class="dtag">Midterm</span></a></li>' : '<li><span class="dsoon-item"><span>' + esc(lectureTitle(id)) + "</span><em>Coming</em></span></li>";
+          }).join("") + "</ul>", "chapter");
+        }).join("");
+      }).join("");
+      h += accHTML("Upcoming midterm lectures", "", midHTML, "cat");
+    }
+
+    /* Category 1: Browse subjects (semesters, subjects, chapters, lectures) */
+    var subjectsHTML = "";
     progSemesters().forEach(function (sem) {
-      h += '<p class="dsem">' + esc(T("home.semester", { n: sem.replace(/^S/, "") })) + "</p>";
+      subjectsHTML += '<p class="dsem">' + esc(T("home.semester", { n: sem.replace(/^S/, "") })) + "</p>";
       progSubjects().filter(function (x) { return x.semester === sem; }).forEach(function (sub) {
-        if (!sub.groups) { h += '<div class="dsoon"><span>' + esc(sub.name) + "</span><em>" + (sub.status === "next" ? "Up next" : "Planned") + "</em></div>"; return; }
+        if (!sub.groups) { subjectsHTML += '<div class="dsoon"><span>' + esc(sub.name) + "</span><em>" + (sub.status === "next" ? "Up next" : "Planned") + "</em></div>"; return; }
         var chapters = sub.groups.map(function (g) {
           var n = g.items.filter(function (it) { return S.lectures[it.id]; }).length;
           var lectures = '<ul class="dlist">' + g.items.map(function (it) {
-            return S.lectures[it.id] ? '<li><a href="#/lecture/' + it.id + '">' + esc(it.title) + "</a></li>" : '<li><span class="dsoon-item"><span>' + esc(it.title) + "</span><em>Coming</em></span></li>";
+            if (!S.lectures[it.id]) return '<li><span class="dsoon-item"><span>' + esc(it.title) + "</span><em>Coming</em></span></li>";
+            return '<li><a href="#/lecture/' + it.id + '">' + esc(it.title) + (onMidterm(it.id) ? '<span class="dtag">Midterm</span>' : "") + "</a></li>";
           }).join("") + "</ul>";
           return accHTML(g.name, n + " of " + g.items.length + " ready", lectures, "chapter");
-        }).join("") + '<a class="dlink sub" href="#/papers/' + sub.id + '">Past papers</a>';
-        h += accHTML(sub.name, "", chapters, "subject");
+        }).join("") + '<a class="dlink sub" href="#/subject/' + sub.id + '">Open the ' + esc(sub.name) + " page</a>";
+        subjectsHTML += accHTML(sub.name, "", chapters, "subject");
       });
     });
+    h += accHTML("Browse subjects", "", subjectsHTML, "cat");
+
+    /* Category 2: Past papers, by subject */
+    var withPapers = progSubjects().filter(function (sb) { return (S.papers || []).some(function (x) { return x.subject === sb.id; }); });
+    var hasOther = (S.papers || []).some(function (x) { return x.program === PROG && !subjectById(x.subject); });
+    var papersHTML = '<a class="dlink sub" href="#/papers">All past papers</a>' + withPapers.map(function (sb) {
+      var n = (S.papers || []).filter(function (x) { return x.subject === sb.id; }).length;
+      return '<a class="dlink sub" href="#/papers/' + sb.id + '"><span>' + esc(sb.name) + '</span><span class="pn">' + n + "</span></a>";
+    }).join("") + (hasOther ? '<a class="dlink sub" href="#/papers">Other modules</a>' : "");
+    h += accHTML("Past papers", "", papersHTML, "cat");
+
+    /* Category 3: Useful apps */
+    var appsList = '<a class="dlink sub" href="#/apps">All useful apps</a>' + (S.apps || []).map(function (r) {
+      return '<a class="dlink sub" href="' + esc(r.url) + '" target="_blank" rel="noopener"><span>' + esc(r.title) + '</span><span class="pn">' + esc(r.kind || "") + "</span></a>";
+    }).join("");
+    h += accHTML("Useful apps", "", appsList, "cat");
+
+    h += '<a class="dlink" href="#/updates"><span>' + esc(T("nav.updates")) + '</span>' + (newBadge() ? '<span class="badge">new</span>' : "") + "</a>";
     drawer.innerHTML = h;
     drawer.scrollTop = 0;
     drawer.querySelector(".dclose").addEventListener("click", function () {
@@ -490,18 +523,19 @@
     }
     var html = '<div class="wrap wide"><section class="hero"><div><h1>Study each lecture, then test yourself on it.</h1>' +
       '<p class="lede">Summaries, key points, questions, flashcards and extra reading for every lecture of the promo. Each page is built from the lecture slides and checked against other references.</p>' +
-      '<div class="row">' + (progSubjects().some(function (x) { return x.groups; }) ? '<a class="btn primary" href="#/lecture/' + firstLecture() + '">Try the first lecture</a>' : "") + (progMidterms().length ? '<a class="btn midbtn" href="#/midterm">Upcoming midterm lectures</a>' : "") + '<button class="btn" type="button" id="browse-subjects">Browse subjects</button><a class="btn" href="#/papers">Past papers</a><a class="btn" href="#/apps">Useful apps</a></div>' +
+      '<div class="row">' + (progSubjects().some(function (x) { return x.groups; }) ? '<a class="btn primary" href="#/lecture/' + firstLecture() + '">Try the first lecture</a>' : "") + (progMidterms().length ? '<a class="btn midbtn" href="#/midterm">Upcoming midterm lectures</a>' : "") + '<button class="btn" type="button" id="browse-subjects">Open the menu</button></div><p class="meta menuhint">' + (progMidterms().length ? "Upcoming midterm lectures, subjects" : "Subjects") + ', past papers and useful apps are in the menu.</p>' +
       (S.updated ? '<p class="meta" style="margin-top:1.4rem">Last updated ' + esc(S.updated) + '. <a href="#/updates">What\'s new' + (newBadge() ? ' <span class="badge">new</span>' : "") + "</a>.</p>" : "") + '</div>' +
       '</section>' +
       '<h2 id="subjects">' + esc(T("home.subjects")) + ' <span class="prog-tag">' + esc(progName()) + '</span></h2>' +
       (semList.length ? semList.map(function (k) { return '<h3 class="sem-title">' + esc(T("home.semester", { n: k.replace(/^S/, "") })) + '</h3><ul class="subject-list">' + sems[k].map(row).join("") + "</ul>"; }).join("")
         : '<div class="empty-prog"><h3>' + esc(T("home.empty.title", { name: progName() })) + '</h3><p>' + esc(T("home.empty.body")) + '</p></div>') +
-      (appsHTML() ? '<h2 id="apps" style="margin-top:2.4rem">Useful apps and resources</h2><p class="meta">Recommended apps and websites for medical students.</p>' + appsHTML() : "") + "</div>";
+"</div>";
     setView(html, "");
     var bb = document.getElementById("browse-subjects");
     if (bb) bb.addEventListener("click", function () {
-      var t = document.getElementById("subjects");
-      if (t) t.scrollIntoView({ behavior: "smooth", block: "start" });
+      openDrawer();
+      var cat = drawer.querySelector(".acc.cat");
+      if (cat && !cat.classList.contains("open")) cat.querySelector(".accbtn").click();
     });
   }
 
@@ -525,8 +559,8 @@
       m.groups.forEach(function (g) {
         html += '<h3 class="mid-group">' + esc(g.name) + '</h3><ul class="lec-list">' + g.items.map(function (id) {
           return S.lectures[id]
-            ? '<li class="mid"><a href="#/lecture/' + id + '"><span>' + esc(lectureTitle(id)) + '</span><span class="pill mid">On the midterm</span></a></li>'
-            : '<li class="mid"><span class="soon"><span>' + esc(lectureTitle(id)) + '</span><span class="pill muted">Coming</span></span></li>';
+            ? '<li><a href="#/lecture/' + id + '"><span>' + esc(lectureTitle(id)) + '</span><span class="pill mid">On the midterm</span></a></li>'
+            : '<li><span class="soon"><span>' + esc(lectureTitle(id)) + '</span><span class="pill muted">Coming</span></span></li>';
         }).join("") + "</ul>";
       });
       html += "</section>";
@@ -542,7 +576,7 @@
       html += '<h2 class="group-title">' + esc(g.name) + '</h2><ul class="lec-list">' + g.items.map(function (it) {
         return S.lectures[it.id]
           ? (onMidterm(it.id)
-            ? '<li class="mid"><a href="#/lecture/' + it.id + '"><span>' + esc(it.title) + '</span><span class="pill mid">On the midterm</span></a></li>'
+            ? '<li><a href="#/lecture/' + it.id + '"><span>' + esc(it.title) + '</span><span class="pill mid">On the midterm</span></a></li>'
             : '<li><a href="#/lecture/' + it.id + '"><span>' + esc(it.title) + '</span><span class="pill">Ready</span></a></li>')
           : '<li><span class="soon"><span>' + esc(it.title) + '</span><span class="pill muted">Coming</span></span></li>';
       }).join("") + "</ul>";

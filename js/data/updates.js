@@ -13,10 +13,12 @@ SINA.updates = [
     "New visitors are now asked which year they are in when they first open the site. You can change it any time with the selector at the top left.",
     "Semester 1 of 1st Year Anglo is complete, with the Introduction to anatomy added to Anatomy 1 (16 lectures).",
     "Semester headings are now gold like the chapter titles, and What's new shows each day once.",
-    "1st Year Anglo, Semester 2 has started: Immunology is live with its first 6 lectures (lymphoid organs, immune cells, antigens, immunoglobulins, complement, dynamics of the immune response). The other Semester 2 subjects are listed.",
+    "1st Year Anglo, Semester 2 has started: Immunology is complete: 7 lectures (lymphoid organs, immune cells, antigens, immunoglobulins, complement, dynamics of the immune response, anti-infectious immunity) and 5 tutorials (innate immunity, inflammation, phagocytosis, MHC and antigen-presenting cells, immunological testing). The other Semester 2 subjects are listed.",
     "1st Year Anglo Past papers are online: 46 entries (exams, retakes, midterms, mocks and corrections) filed by subject across both semesters, plus other modules and photographed exam pages.",
     "Every lecture's Source line now has View and Download buttons. Google Drive often cannot preview large PowerPoints; if the preview fails, Download opens the file directly.",
-    "New Upcoming midterm lectures button (2nd Year): lists the 7 lectures on the Anatomy 3 midterm, the 4 eye lectures and the first 3 face lectures. They are highlighted in blue and labelled On the midterm on the Anatomy 3 page."
+    "New Upcoming midterm lectures button (2nd Year): lists the 7 lectures on the Anatomy 3 midterm, the 4 eye lectures and the first 3 face lectures. On the Anatomy 3 page their label reads On the midterm in blue instead of Ready.",
+    "New menu layout: Browse subjects, Past papers and Useful apps are now categories in the side menu. Past papers lists each subject with its number of papers. The home page has an Open the menu button.",
+    "The menu is organised into four categories: Upcoming midterm lectures, Browse subjects, Past papers and Useful apps. It still opens as an overlay and never moves the page."
   ]},
   { date: "24 September 2026", items: [
     "1st Year Anglo has started: Medical Terminology is live with its first three lectures (introduction to word parts, cardiovascular and respiratory terms). The other Semester 1 subjects are listed and on their way.",

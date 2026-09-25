@@ -563,12 +563,22 @@ body.noscroll { overflow: hidden; }
 :root { --mid: #1d5fbf; --mid-soft: #e3edfb; --mid-line: #9dbbe8; }
 :root[data-theme="dark"] { --mid: #7fb0ff; --mid-soft: #16294a; --mid-line: #34558c; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --mid: #7fb0ff; --mid-soft: #16294a; --mid-line: #34558c; } }
-.lec-list li.mid > a, .lec-list li.mid > .soon { background: var(--mid-soft); box-shadow: inset 4px 0 0 var(--mid); padding-left: 0.8rem; padding-right: 0.6rem; border-radius: 6px; margin: 2px 0; }
-.lec-list li.mid > a span:first-child { color: var(--mid); font-weight: 700; }
-.lec-list li.mid > a:hover { background: var(--mid-soft); filter: brightness(0.97); }
 .pill.mid { background: var(--mid); color: #fff; }
 :root[data-theme="dark"] .pill.mid { color: #0b1628; }
 .btn.midbtn { border-color: var(--mid); color: var(--mid); font-weight: 700; }
 .btn.midbtn:hover, .btn.midbtn:focus-visible { background: var(--mid-soft); }
 .midlink { color: var(--mid); font-weight: 700; }
 .mid-group { margin: 1.2rem 0 0.4rem; color: var(--mid); font-size: 1.05rem; }
+
+/* Sidebar categories */
+.acc.cat { margin: 0.35rem 0; border-top: 1px solid var(--line); }
+.acc.cat > .accbtn { padding: 0.95rem 0.8rem; }
+.acc.cat > .accbtn .lbl { font-family: var(--serif); font-weight: 800; font-size: 1.12rem; }
+.acc.cat .dsem { margin-top: 0.9rem; }
+.dlink.sub .pn { font-size: 0.78rem; font-weight: 600; opacity: 0.7; }
+.menuhint { margin-top: 0.5rem; }
+
+/* midterm: only the label is blue, rows look like every other lecture */
+.dlist .dtag { display: inline-block; margin-left: 0.4rem; font-size: 0.7rem; font-weight: 700; padding: 0.05rem 0.45rem; border-radius: 999px; background: var(--mid); color: #fff; vertical-align: middle; white-space: nowrap; }
+:root[data-theme="dark"] .dlist .dtag { color: #0b1628; }
+.drawer .acc.cat > .accbtn .lbl { font-weight: 800; }

@@ -1,4 +1,4 @@
-/* immuno1: 6 lectures, merged for upload. Edit the source files, not this one. */
+/* immuno1: 12 lectures, merged for upload. Edit the source files, not this one. */
 window.SINA = window.SINA || {subjects:[], lectures:{}};
 SINA.lectures["immuno1-lymphoid"] = {
  "id": "immuno1-lymphoid",
@@ -3275,6 +3275,3172 @@ SINA.lectures["immuno1-dynamics"] = {
   {
    "name": "B-cell activation (NCBI Bookshelf, Janeway)",
    "url": "https://www.ncbi.nlm.nih.gov/books/NBK27142/"
+  }
+ ],
+ "verified": "22 Sep 2026"
+};
+window.SINA = window.SINA || {subjects:[], lectures:{}};
+SINA.lectures["immuno1-anti-infectious"] = {
+ "id": "immuno1-anti-infectious",
+ "subject": "immuno1",
+ "group": "Immunology",
+ "title": "Anti-infectious immunity",
+ "sourceFile": "ML8 Anti-infectious immunity (April 2026) (Immunology, Pr. F. Guessous)",
+ "sourceUrl": "https://drive.google.com/file/d/1A0wnhphRy3h3IfephoD082MBtS1IU0yh/view?usp=drivesdk",
+ "buildNote": "<strong>Built from the lecture slides.</strong> Slides that only show pictures are covered in outline. If your professor says something different, trust your professor.",
+ "summary": [
+  {
+   "id": "s0",
+   "title": "The big picture",
+   "html": "<p>Microbes enter by <strong>ingestion, injection, inhalation or sexual contact</strong>. Anti-infectious immunity works on three levels: <strong>preventing entry</strong>, <strong>eliminating</strong> the agent quickly and <strong>controlling its multiplication</strong>, through <strong>innate</strong> (immediate: barriers, PAMP-PRR recognition, phagocytes, inflammation, NK cells, granulocytes, mast cells) and <strong>adaptive</strong> immunity (late: CD4 and CD8 T cells, antibodies, memory). The first line is the <strong>epithelial barriers</strong>. Dendritic cells polarise naive CD4 T cells: <strong>Th1</strong> (IL-12, T-bet, STAT-4 → IFN-γ: intracellular pathogens), <strong>Th2</strong> (IL-4, GATA-3, STAT-6: extracellular pathogens, humoral), <strong>Th17</strong> (TGF-β + IL-6, RORγt, STAT-3 → IL-17: extracellular pathogens, fungi, inflammation) and <strong>Treg</strong> (TGF-β, FoxP3: immunosuppression).</p>"
+  },
+  {
+   "id": "s1",
+   "title": "Antiviral immunity",
+   "html": "<p>Viruses are <strong>obligate intracellular parasites</strong>. Weapons: <strong>type I interferons (IFN-α, β)</strong>, made by virus-infected cells, which put neighbouring cells into an <strong>antiviral state</strong> through <strong>PKR</strong> (blocks viral protein synthesis), <strong>2′5′-oligoadenylate synthetase</strong> (degrades viral RNA via RNase L) and <strong>Mx protein</strong> (blocks viral transcription), and promote apoptosis; <strong>NK cells</strong> and <strong>CD8 cytotoxic T cells</strong>, which kill infected cells; and <strong>neutralising antibodies</strong>, which stop attachment, entry and uncoating of free virus and, on infected cells, drive complement lysis, opsonisation and <strong>ADCC</strong>. Three IFN families: type I (α, β), type II (<strong>IFN-γ</strong>) and type III (IFN-λ: IL-28A, IL-28B, IL-29). Innate responses are fast but little diversified and without memory; adaptive responses are slow, highly specific, effective and remembered. Viruses have evasion strategies.</p>"
+  },
+  {
+   "id": "s2",
+   "title": "Antibacterial immunity",
+   "html": "<p>The response depends on whether bacteria are <strong>extracellular or intracellular</strong>, on their wall (Gram+, Gram−, mycobacteria), capsule, and toxins or enzymes. <strong>Phagocytes</strong> are the main defence. <strong>Extracellular bacteria</strong>: antibodies (neutralisation of toxins, <strong>opsonisation</strong>), complement and phagocytes. <strong>Intracellular bacteria</strong>: Th1 cells release <strong>IFN-γ, TNF, IL-2</strong> to activate macrophages, plus lysis of infected cells. Escape: <strong>capsules</strong> (Streptococcus pneumoniae) or polysaccharides (Neisseria gonorrhoeae) preventing attachment; enzymes blocking phagosome-lysosome fusion (<strong>Mycobacterium tuberculosis</strong>) or lysing the phagosome (<strong>Listeria monocytogenes</strong>); a very resistant wall (<strong>M. leprae</strong>); <strong>lipoarabinomannan</strong> of mycobacteria blocking the macrophage response to IFN-γ.</p>"
+  },
+  {
+   "id": "s3",
+   "title": "Antiparasitic and antifungal immunity",
+   "html": "<p><strong>Parasites</strong>: intracellular protozoa → <strong>Th1</strong>; extracellular protozoa → <strong>antibodies</strong>; helminths (trematodes, nematodes, cestodes) → <strong>Th2</strong>: IL-4 and IL-5 drive <strong>IgE</strong>, <strong>mast cell</strong> and <strong>eosinophil</strong> degranulation (<strong>major basic protein</strong>), ADCC, with <strong>hypereosinophilia</strong>. Escape: <strong>antigenic variation</strong> (Plasmodium), using host proteins such as ABO and HLA (<strong>Schistosoma</strong>), inhibiting the phagosome (Leishmania, Toxoplasma), immunosuppression (Plasmodium, S. mansoni). <strong>Fungi</strong>: wall glycans, polymannans, chitin and zymosan activate epithelial cells, neutrophils, macrophages, dendritic cells and the <strong>alternative complement pathway</strong>; <strong>Th17</strong> cells (IL-17) boost neutrophil antifungal activity and antimicrobial peptides. Summary: <strong>humoral immunity</strong> (antibodies, complement, phagocytes, eosinophils) handles <strong>extracellular</strong> pathogens; <strong>cellular immunity</strong> (CD8, NK, macrophages, CD4) handles <strong>intracellular</strong> ones. The response unfolds in three phases: innate, early induced, adaptive.</p>"
+  }
+ ],
+ "exam": [
+  "Routes: ingestion, injection, inhalation, sexual contact.",
+  "Levels: prevent entry, eliminate, control multiplication.",
+  "Th1 (IL-12, T-bet): intracellular. Th2 (IL-4, GATA-3): extracellular. Th17 (IL-6 + TGF-β, RORγt): fungi. Treg (FoxP3).",
+  "Antiviral: IFN-I (PKR, OAS, Mx), NK, CD8 CTL, neutralising Ab.",
+  "IFN types: I (α, β), II (γ), III (λ).",
+  "Extracellular bacteria: Ab, complement, phagocytes. Intracellular: Th1 IFN-γ activates macrophages.",
+  "Escape: capsule (pneumococcus), blocked fusion (TB), phagosome lysis (Listeria).",
+  "Helminths: Th2, IgE, eosinophils (MBP), mast cells.",
+  "Parasite escape: antigenic variation (Plasmodium), host proteins (Schistosoma).",
+  "Fungi: alternative complement, Th17/IL-17, neutrophils.",
+  "Extracellular → humoral; intracellular → cellular."
+ ],
+ "visual": {
+  "kind": "model",
+  "intro": "",
+  "figure": {
+   "viewBox": "0 0 760 420",
+   "alt": "Which arm of immunity fights which pathogen",
+   "caption": "Extracellular vs intracellular. Schematic drawn for this site.",
+   "base": "<defs><marker id=\"ah\" markerWidth=\"10\" markerHeight=\"8\" refX=\"9\" refY=\"4\" orient=\"auto\"><path d=\"M0,0 L10,4 L0,8 Z\" fill=\"#8a8a8a\"/></marker></defs>",
+   "parts": {
+    "vir": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2d7cf\" x=\"20\" y=\"40\" width=\"170\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Viruses: IFN-I, NK,",
+      "CD8 CTL, neutralising Ab"
+     ],
+     "lx": 105.0,
+     "ly": 68.0
+    },
+    "bext": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#cfe3f2\" x=\"200\" y=\"40\" width=\"170\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Extracellular bacteria:",
+      "Ab, complement, phagocytes"
+     ],
+     "lx": 285.0,
+     "ly": 68.0
+    },
+    "bint": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d7edd2\" x=\"380\" y=\"40\" width=\"170\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Intracellular bacteria:",
+      "Th1, IFN-γ → macrophages"
+     ],
+     "lx": 465.0,
+     "ly": 68.0
+    },
+    "fun": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2e2a8\" x=\"560\" y=\"40\" width=\"170\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Fungi: innate + Th17",
+      "(IL-17, neutrophils)"
+     ],
+     "lx": 645.0,
+     "ly": 68.0
+    },
+    "par": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#e3d5f0\" x=\"120\" y=\"170\" width=\"220\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Helminths: Th2 → IgE,",
+      "eosinophils, mast cells"
+     ],
+     "lx": 230.0,
+     "ly": 198.0
+    },
+    "pro": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f7d9b8\" x=\"420\" y=\"170\" width=\"220\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Protozoa: intracellular Th1,",
+      "extracellular antibodies"
+     ],
+     "lx": 530.0,
+     "ly": 198.0
+    }
+   },
+   "arrows": {
+    "vir": [
+     {
+      "t": [
+       20.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "bext": [
+     {
+      "t": [
+       200.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "bint": [
+     {
+      "t": [
+       380.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "fun": [
+     {
+      "t": [
+       560.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "par": [
+     {
+      "t": [
+       120.0,
+       178.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "pro": [
+     {
+      "t": [
+       420.0,
+       178.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ]
+   }
+  },
+  "mindmap": {
+   "root": "Anti-infectious immunity",
+   "branches": [
+    [
+     "Viruses",
+     [
+      "IFN-I: PKR, OAS, Mx",
+      "NK, CD8 CTL",
+      "Neutralising Ab"
+     ]
+    ],
+    [
+     "Bacteria",
+     [
+      "Extracellular: Ab, complement",
+      "Intracellular: Th1 → macrophages",
+      "Escape: capsule, TB, Listeria"
+     ]
+    ],
+    [
+     "Parasites",
+     [
+      "Helminths: Th2, IgE, eosinophils",
+      "Protozoa: Th1 / Ab",
+      "Escape: antigenic variation"
+     ]
+    ],
+    [
+     "Fungi",
+     [
+      "Alternative complement",
+      "Th17, IL-17, neutrophils"
+     ]
+    ],
+    [
+     "Th subsets",
+     [
+      "Th1 IL-12",
+      "Th2 IL-4",
+      "Th17 IL-6 + TGF-β",
+      "Treg FoxP3"
+     ]
+    ]
+   ]
+  }
+ },
+ "mcqs": [
+  {
+   "q": "Which is the first line of anti-infectious defence?",
+   "options": [
+    "Antibodies",
+    "CD8 T cells",
+    "Memory cells",
+    "Epithelial barriers"
+   ],
+   "answer": 3,
+   "why": "Skin and mucosae."
+  },
+  {
+   "q": "Th1 polarisation is driven by:",
+   "options": [
+    "IL-17",
+    "TGF-β alone",
+    "IL-12",
+    "IL-4"
+   ],
+   "answer": 2,
+   "why": "Transcription factor T-bet."
+  },
+  {
+   "q": "Th17 cells are especially important against:",
+   "options": [
+    "Fungi",
+    "Viruses",
+    "Tumours",
+    "Helminths"
+   ],
+   "answer": 0,
+   "why": "IL-17 recruits neutrophils."
+  },
+  {
+   "q": "Regulatory T cells express:",
+   "options": [
+    "GATA-3",
+    "T-bet",
+    "FoxP3",
+    "RORγt"
+   ],
+   "answer": 2,
+   "why": "Immunosuppression."
+  },
+  {
+   "q": "Type I interferons are:",
+   "options": [
+    "IFN-α and IFN-β",
+    "IL-28",
+    "IFN-γ",
+    "TNF"
+   ],
+   "answer": 0,
+   "why": "Antiviral state."
+  },
+  {
+   "q": "Which enzyme blocks viral protein synthesis in IFN-treated cells?",
+   "options": [
+    "Myeloperoxidase",
+    "PKR",
+    "Lysozyme",
+    "Catalase"
+   ],
+   "answer": 1,
+   "why": "Also OAS and Mx."
+  },
+  {
+   "q": "Which cells mainly kill virus-infected cells?",
+   "options": [
+    "Mast cells",
+    "B cells",
+    "NK cells and CD8 T cells",
+    "Neutrophils and eosinophils"
+   ],
+   "answer": 2,
+   "why": "Cytotoxicity."
+  },
+  {
+   "q": "Neutralising antibodies act on:",
+   "options": [
+    "Infected cell nuclei",
+    "MHC",
+    "Interferons",
+    "Free virus"
+   ],
+   "answer": 3,
+   "why": "Humoral response."
+  },
+  {
+   "q": "The main defence against bacteria is:",
+   "options": [
+    "NK cells only",
+    "Phagocytes",
+    "Eosinophils",
+    "IgE"
+   ],
+   "answer": 1,
+   "why": "Highly bactericidal."
+  },
+  {
+   "q": "Intracellular bacteria are controlled mainly by:",
+   "options": [
+    "Th1 cytokines",
+    "Complement only",
+    "Mast cells",
+    "IgE"
+   ],
+   "answer": 0,
+   "why": "IFN-γ, TNF."
+  },
+  {
+   "q": "Mycobacterium tuberculosis escapes by:",
+   "options": [
+    "Blocking phagosome-lysosome fusion",
+    "Lysing the phagosome",
+    "Antigenic variation",
+    "A capsule"
+   ],
+   "answer": 0,
+   "why": "Listeria lyses the phagosome."
+  },
+  {
+   "q": "Helminths trigger mainly a:",
+   "options": [
+    "Th1 response",
+    "Th17 response",
+    "CD8 response",
+    "Th2, IgE"
+   ],
+   "answer": 3,
+   "why": "Hypereosinophilia."
+  },
+  {
+   "q": "Plasmodium escapes immunity by:",
+   "options": [
+    "A thick wall",
+    "Using a capsule",
+    "Producing IgE",
+    "Antigenic variation"
+   ],
+   "answer": 3,
+   "why": "Also immunosuppression."
+  },
+  {
+   "q": "Fungal wall components activate which complement pathway?",
+   "options": [
+    "Alternative",
+    "Lectin only",
+    "Classical",
+    "None"
+   ],
+   "answer": 0,
+   "why": "Glycans, zymosan."
+  },
+  {
+   "q": "Extracellular pathogens are eliminated mainly by:",
+   "options": [
+    "NK cells only",
+    "Humoral immunity",
+    "Cellular immunity",
+    "CD8 T cells only"
+   ],
+   "answer": 1,
+   "why": "Antibodies, complement, phagocytes."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "vir",
+   "options": [
+    "Antifungal immunity",
+    "Intracellular bacteria",
+    "Extracellular bacteria",
+    "Antiviral immunity"
+   ],
+   "answer": 3,
+   "why": "The arrow points to: Antiviral immunity. Type I interferons create an antiviral state; NK and CD8 T cells kill infected cells; antibodies neutralise free virus."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "bext",
+   "options": [
+    "Antiviral immunity",
+    "Helminths",
+    "Extracellular bacteria",
+    "Antifungal immunity"
+   ],
+   "answer": 2,
+   "why": "The arrow points to: Extracellular bacteria. Antibodies neutralise toxins and opsonise; complement lyses; phagocytes destroy."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "bint",
+   "options": [
+    "Extracellular bacteria",
+    "Intracellular bacteria",
+    "Antifungal immunity",
+    "Helminths"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: Intracellular bacteria. Th1 cells secrete IFN-γ and TNF to activate macrophages; cytotoxic lysis of infected cells."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "fun",
+   "options": [
+    "Extracellular bacteria",
+    "Antifungal immunity",
+    "Helminths",
+    "Intracellular bacteria"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: Antifungal immunity. Wall glycans and mannans activate innate cells and the alternative complement pathway; Th17 IL-17 recruits neutrophils and antimicrobial peptides."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "par",
+   "options": [
+    "Helminths",
+    "Intracellular bacteria",
+    "Protozoa",
+    "Antifungal immunity"
+   ],
+   "answer": 0,
+   "why": "The arrow points to: Helminths. Th2 IL-4 and IL-5 drive IgE, mast cell and eosinophil degranulation (major basic protein), ADCC."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "pro",
+   "options": [
+    "Antiviral immunity",
+    "Intracellular bacteria",
+    "Protozoa",
+    "Antifungal immunity"
+   ],
+   "answer": 2,
+   "why": "The arrow points to: Protozoa. Intracellular protozoa need Th1; extracellular ones are handled by antibodies."
+  }
+ ],
+ "cards": [
+  {
+   "id": "x0",
+   "type": "text",
+   "front": "Three levels and two ways of anti-infectious immunity?",
+   "back": "Prevent entry, eliminate quickly, control multiplication; innate and adaptive."
+  },
+  {
+   "id": "x1",
+   "type": "text",
+   "front": "Th subsets and their triggers?",
+   "back": "Th1 (IL-12, T-bet, STAT-4): IFN-γ, intracellular. Th2 (IL-4, GATA-3, STAT-6): extracellular. Th17 (TGF-β + IL-6, RORγt, STAT-3): fungi, extracellular. Treg (TGF-β, FoxP3)."
+  },
+  {
+   "id": "x2",
+   "type": "text",
+   "front": "Antiviral mechanisms?",
+   "back": "IFN-I (PKR, OAS/RNase L, Mx), NK and CD8 cytotoxicity, neutralising antibodies, complement, ADCC."
+  },
+  {
+   "id": "x3",
+   "type": "text",
+   "front": "Three interferon types?",
+   "back": "Type I: IFN-α, β. Type II: IFN-γ. Type III: IFN-λ (IL-28A, IL-28B, IL-29)."
+  },
+  {
+   "id": "x4",
+   "type": "text",
+   "front": "Extracellular vs intracellular bacteria?",
+   "back": "Extracellular: antibodies, complement, phagocytes. Intracellular: Th1 IFN-γ/TNF-activated macrophages, cytotoxicity."
+  },
+  {
+   "id": "x5",
+   "type": "text",
+   "front": "Bacterial escape examples?",
+   "back": "Capsule (pneumococcus), polysaccharides (gonococcus), blocked fusion (M. tuberculosis), phagosome lysis (Listeria), resistant wall (M. leprae), lipoarabinomannan."
+  },
+  {
+   "id": "x6",
+   "type": "text",
+   "front": "Antiparasitic immunity?",
+   "back": "Intracellular protozoa: Th1. Extracellular protozoa: antibodies. Helminths: Th2, IgE, mast cells, eosinophils (MBP), ADCC."
+  },
+  {
+   "id": "x7",
+   "type": "text",
+   "front": "Antifungal immunity?",
+   "back": "Wall glycans activate innate cells and alternative complement; Th17 IL-17 boosts neutrophils and antimicrobial peptides."
+  },
+  {
+   "id": "img-vir",
+   "type": "image",
+   "target": "vir",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Antiviral immunity. Type I interferons create an antiviral state; NK and CD8 T cells kill infected cells; antibodies neutralise free virus."
+  },
+  {
+   "id": "img-bext",
+   "type": "image",
+   "target": "bext",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Extracellular bacteria. Antibodies neutralise toxins and opsonise; complement lyses; phagocytes destroy."
+  },
+  {
+   "id": "img-bint",
+   "type": "image",
+   "target": "bint",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Intracellular bacteria. Th1 cells secrete IFN-γ and TNF to activate macrophages; cytotoxic lysis of infected cells."
+  },
+  {
+   "id": "img-fun",
+   "type": "image",
+   "target": "fun",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Antifungal immunity. Wall glycans and mannans activate innate cells and the alternative complement pathway; Th17 IL-17 recruits neutrophils and antimicrobial peptides."
+  },
+  {
+   "id": "img-par",
+   "type": "image",
+   "target": "par",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Helminths. Th2 IL-4 and IL-5 drive IgE, mast cell and eosinophil degranulation (major basic protein), ADCC."
+  },
+  {
+   "id": "img-pro",
+   "type": "image",
+   "target": "pro",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Protozoa. Intracellular protozoa need Th1; extracellular ones are handled by antibodies."
+  }
+ ],
+ "deeper": [
+  {
+   "title": "Why helminth infections raise eosinophils",
+   "html": "<p>Worms are far too large to be phagocytosed. Instead, Th2 cells release IL-4, which switches B cells to IgE, and IL-5, which produces and activates eosinophils. IgE coats the worm, and eosinophils bind it through Fc receptors and release toxic granule proteins such as major basic protein onto its surface. That is why a blood count showing hypereosinophilia prompts a search for parasites.</p><p class='src'>Source: the lecture's anti-parasitic immunity slides.</p>"
+  }
+ ],
+ "resources": [
+  {
+   "title": "Immunity to infection (NCBI Bookshelf, Janeway)",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK27100/",
+   "kind": "Book",
+   "why": "Innate and adaptive responses to pathogens.",
+   "note": ""
+  },
+  {
+   "title": "Interferons (Immunopaedia)",
+   "url": "https://www.immunopaedia.org.za/",
+   "kind": "Website",
+   "why": "Antiviral interferon responses.",
+   "note": ""
+  }
+ ],
+ "checks": [],
+ "sources": [
+  {
+   "name": "Immunity to infection (NCBI Bookshelf, Janeway)",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK27100/"
+  },
+  {
+   "name": "Interferons (Immunopaedia)",
+   "url": "https://www.immunopaedia.org.za/"
+  }
+ ],
+ "verified": "22 Sep 2026"
+};
+window.SINA = window.SINA || {subjects:[], lectures:{}};
+SINA.lectures["immuno1-innate"] = {
+ "id": "immuno1-innate",
+ "subject": "immuno1",
+ "group": "Immunology",
+ "title": "Innate immunity",
+ "sourceFile": "T1 Innate immunity (March 2026) (Immunology tutorial, Pr. F. Guessous)",
+ "sourceUrl": "https://drive.google.com/file/d/1prKFyFt4Hlnzft20c1Mn3uGRKXDnVhmw/view?usp=drivesdk",
+ "buildNote": "<strong>Built from the lecture slides.</strong> Slides that only show pictures are covered in outline. If your professor says something different, trust your professor.",
+ "summary": [
+  {
+   "id": "s0",
+   "title": "The big picture",
+   "html": "<p>Innate immunity appeared about <strong>800 million years ago</strong> and is found throughout living organisms. It is a species-specific state of natural resistance: <strong>rapid (hours)</strong>, <strong>non-specific</strong>, with <strong>constant recognition</strong> that does not improve on re-exposure, unlike adaptive immunity (slow, days to weeks; specific repertoire; improves). It uses three mechanisms: <strong>barriers</strong>, <strong>non-specific chemical agents</strong> (complement, cytokines) and <strong>non-specific effector cells</strong> (neutrophils, macrophages, NK cells).</p>"
+  },
+  {
+   "id": "s1",
+   "title": "Barriers",
+   "html": "<p><strong>Mechanical</strong>: the <strong>skin</strong> delays entry, and its acidic surface (<strong>pH 3-5</strong>) inhibits growth; <strong>mucus</strong> (mucins) coats microbes and <strong>ciliated cells</strong> sweep them out (in <strong>cystic fibrosis</strong>, the CFTR defect dehydrates mucus, cilia cannot clear it, and bacterial colonisation and inflammation follow). <strong>Physiological</strong>: temperature, <strong>gastric acidity</strong>. <strong>Antimicrobial molecules</strong>: <strong>lysozyme</strong> (destroys the walls of Gram+ and Gram− bacteria; abundant in tears, saliva, nasal secretions), <strong>lactoferrin</strong> (chelates iron needed for bacterial growth), <strong>defensins</strong> ('natural antibiotics'), <strong>cathelicidins</strong> (e.g. LL-37), <strong>surfactant proteins SP-A and SP-D</strong> (primitive opsonins), and interferons. <strong>Antimicrobial peptides</strong>: 12-50 amino acids, mainly <strong>cationic</strong>, active on bacteria, fungi and viruses; they make pores in microbial membranes and interfere with DNA, RNA and protein synthesis. <strong>α-defensins</strong> come from neutrophils and intestinal <strong>Paneth cells</strong>; <strong>β-defensins</strong> from epithelia of skin and airways. <strong>Commensal flora</strong>: helps digestion (vitamins, fatty acids), competes with pathogens for nutrients and iron, blocks access to the epithelium, produces antibacterial substances (colicins) and matures the immune system.</p>"
+  },
+  {
+   "id": "s2",
+   "title": "Humoral and cellular components",
+   "html": "<p>The <strong>complement system</strong> (about 30 soluble and membrane proteins; 3 activation pathways; lysis, inflammation, opsonisation) and cytokines. Cells: phagocytes (neutrophils, monocytes/macrophages, dendritic cells), mast cells and <strong>innate-like lymphocytes</strong>: <strong>NK</strong>, <strong>NKT</strong>, <strong>γδ T</strong> and <strong>B1</strong> cells. <strong>NK cells</strong> (up to 15% of blood lymphocytes, no TCR or BCR) balance activating (KAR) and inhibitory (<strong>KIR</strong>, recognising MHC class I) receptors: they spare normal cells but kill cells showing <strong>missing self</strong> (lost MHC I, as in tumours or virus-infected cells), <strong>modified self</strong>, or foreign MHC I (alloreactivity); they act by natural cytotoxicity, ADCC and cytokines. Innate cells recognise conserved microbial patterns (<strong>PAMPs</strong>) with <strong>pattern recognition receptors (PRRs)</strong> such as Toll-like receptors, triggering phagocytosis and inflammation.</p>"
+  }
+ ],
+ "exam": [
+  "Innate immunity: ~800 million years old; rapid, non-specific, no improvement.",
+  "Three mechanisms: barriers, chemical agents, effector cells.",
+  "Skin pH 3-5; mucus and cilia (defective in cystic fibrosis).",
+  "Lysozyme: bacterial walls; lactoferrin: iron chelation.",
+  "AMPs: 12-50 aa, cationic, make pores.",
+  "α-defensins: neutrophils, Paneth cells; β-defensins: skin, airways.",
+  "Surfactant SP-A, SP-D: primitive opsonins.",
+  "Commensal flora: competition, colicins, immune maturation.",
+  "Innate-like lymphocytes: NK, NKT, γδ T, B1.",
+  "NK: KIR sees MHC I; kills 'missing self'.",
+  "PRRs (e.g. TLRs) recognise PAMPs."
+ ],
+ "visual": {
+  "kind": "model",
+  "intro": "",
+  "figure": {
+   "viewBox": "0 0 760 420",
+   "alt": "Layers of innate immunity",
+   "caption": "From barriers to cells. Schematic drawn for this site.",
+   "base": "<defs><marker id=\"ah\" markerWidth=\"10\" markerHeight=\"8\" refX=\"9\" refY=\"4\" orient=\"auto\"><path d=\"M0,0 L10,4 L0,8 Z\" fill=\"#8a8a8a\"/></marker></defs>",
+   "parts": {
+    "mech": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2d7cf\" x=\"20\" y=\"40\" width=\"170\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Physical: skin (pH 3-5),",
+      "mucus, cilia"
+     ],
+     "lx": 105.0,
+     "ly": 68.0
+    },
+    "phys": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#cfe3f2\" x=\"200\" y=\"40\" width=\"170\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Physiological: temperature,",
+      "gastric acid"
+     ],
+     "lx": 285.0,
+     "ly": 68.0
+    },
+    "chem": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d7edd2\" x=\"380\" y=\"40\" width=\"170\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Chemical: lysozyme, lactoferrin,",
+      "defensins, cathelicidins"
+     ],
+     "lx": 465.0,
+     "ly": 68.0
+    },
+    "micro": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2e2a8\" x=\"560\" y=\"40\" width=\"170\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Microbiological:",
+      "commensal flora"
+     ],
+     "lx": 645.0,
+     "ly": 68.0
+    },
+    "hum": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#e3d5f0\" x=\"120\" y=\"170\" width=\"220\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Humoral: complement,",
+      "cytokines (IFN)"
+     ],
+     "lx": 230.0,
+     "ly": 198.0
+    },
+    "cell": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f7d9b8\" x=\"420\" y=\"170\" width=\"220\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Cells: PMN, macrophages, NK,",
+      "NKT, γδ T, B1 (PRRs)"
+     ],
+     "lx": 530.0,
+     "ly": 198.0
+    }
+   },
+   "arrows": {
+    "mech": [
+     {
+      "t": [
+       20.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "phys": [
+     {
+      "t": [
+       200.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "chem": [
+     {
+      "t": [
+       380.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "micro": [
+     {
+      "t": [
+       560.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "hum": [
+     {
+      "t": [
+       120.0,
+       178.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "cell": [
+     {
+      "t": [
+       420.0,
+       178.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ]
+   }
+  }
+ },
+ "mcqs": [
+  {
+   "q": "Innate immunity appeared about:",
+   "options": [
+    "With mammals",
+    "80 years ago",
+    "800 million years ago",
+    "8 million years ago"
+   ],
+   "answer": 2,
+   "why": "Widespread in living organisms."
+  },
+  {
+   "q": "Compared with adaptive immunity, innate immunity is:",
+   "options": [
+    "Based on a receptor repertoire",
+    "Rapid and non-specific",
+    "Improved by re-exposure",
+    "Slow and specific"
+   ],
+   "answer": 1,
+   "why": "Hours, constant recognition."
+  },
+  {
+   "q": "The pH of the skin surface is about:",
+   "options": [
+    "3-5",
+    "9",
+    "1",
+    "7.4"
+   ],
+   "answer": 0,
+   "why": "Inhibits microbial growth."
+  },
+  {
+   "q": "In cystic fibrosis, airway defence fails because:",
+   "options": [
+    "Cilia are absent",
+    "Mucus not cleared",
+    "Skin is acidic",
+    "Lysozyme is absent"
+   ],
+   "answer": 1,
+   "why": "CFTR defect."
+  },
+  {
+   "q": "Lysozyme acts by:",
+   "options": [
+    "Chelating iron",
+    "Forming pores",
+    "Opsonising",
+    "Breaking walls"
+   ],
+   "answer": 3,
+   "why": "Gram+ and Gram− bacteria."
+  },
+  {
+   "q": "Lactoferrin inhibits bacteria by:",
+   "options": [
+    "Activating complement",
+    "Killing via ADCC",
+    "Chelating iron",
+    "Lysing walls"
+   ],
+   "answer": 2,
+   "why": "Iron is needed for growth."
+  },
+  {
+   "q": "Antimicrobial peptides are mainly:",
+   "options": [
+    "Cationic",
+    "Anionic",
+    "Antibodies",
+    "Lipids"
+   ],
+   "answer": 0,
+   "why": "They bind negative microbial membranes."
+  },
+  {
+   "q": "α-defensins are produced by:",
+   "options": [
+    "Hepatocytes",
+    "Red cells",
+    "Neutrophils and Paneth cells",
+    "Keratinocytes only"
+   ],
+   "answer": 2,
+   "why": "β-defensins: epithelia."
+  },
+  {
+   "q": "Which proteins act as primitive opsonins in the lung?",
+   "options": [
+    "Lactoferrin",
+    "Lysozyme",
+    "Defensins",
+    "SP-A and SP-D"
+   ],
+   "answer": 3,
+   "why": "Surfactant."
+  },
+  {
+   "q": "Which is NOT a role of commensal flora?",
+   "options": [
+    "Competing with pathogens",
+    "Producing antibodies",
+    "Maturing immunity",
+    "Producing colicins"
+   ],
+   "answer": 1,
+   "why": "Antibodies come from B cells."
+  },
+  {
+   "q": "NK cell inhibitory receptors (KIR) recognise:",
+   "options": [
+    "MHC class I",
+    "Complement",
+    "Antibodies",
+    "MHC class II"
+   ],
+   "answer": 0,
+   "why": "Missing self triggers killing."
+  },
+  {
+   "q": "Innate cells recognise microbes through:",
+   "options": [
+    "BCR",
+    "Antibodies",
+    "TCR",
+    "PRRs"
+   ],
+   "answer": 3,
+   "why": "PAMP recognition."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "mech",
+   "options": [
+    "Commensal flora",
+    "Mechanical barriers",
+    "Antimicrobial molecules",
+    "Physiological barriers"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: Mechanical barriers. Skin delays entry and its acidity inhibits growth; mucus traps microbes and cilia sweep them out."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "phys",
+   "options": [
+    "Humoral components",
+    "Commensal flora",
+    "Mechanical barriers",
+    "Physiological barriers"
+   ],
+   "answer": 3,
+   "why": "The arrow points to: Physiological barriers. Body temperature and gastric acidity kill or restrain microbes."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "chem",
+   "options": [
+    "Antimicrobial molecules",
+    "Physiological barriers",
+    "Humoral components",
+    "Commensal flora"
+   ],
+   "answer": 0,
+   "why": "The arrow points to: Antimicrobial molecules. Lysozyme breaks bacterial walls; lactoferrin chelates iron; cationic defensins and cathelicidins form pores; surfactant proteins act as opsonins."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "micro",
+   "options": [
+    "Antimicrobial molecules",
+    "Commensal flora",
+    "Humoral components",
+    "Physiological barriers"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: Commensal flora. Competes with pathogens, blocks the epithelium, makes antibacterial substances, helps digestion and immune maturation."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "hum",
+   "options": [
+    "Humoral components",
+    "Cells",
+    "Antimicrobial molecules",
+    "Commensal flora"
+   ],
+   "answer": 0,
+   "why": "The arrow points to: Humoral components. Complement (~30 proteins, three pathways) and cytokines such as interferons."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "cell",
+   "options": [
+    "Commensal flora",
+    "Antimicrobial molecules",
+    "Cells",
+    "Mechanical barriers"
+   ],
+   "answer": 2,
+   "why": "The arrow points to: Cells. Phagocytes and innate-like lymphocytes recognising conserved microbial patterns."
+  }
+ ],
+ "cards": [
+  {
+   "id": "x0",
+   "type": "text",
+   "front": "Innate vs adaptive immunity?",
+   "back": "Innate: rapid (hours), non-specific, constant. Adaptive: slow (days-weeks), specific repertoire, improves with exposure."
+  },
+  {
+   "id": "x1",
+   "type": "text",
+   "front": "Three mechanisms of innate immunity?",
+   "back": "Barriers, non-specific chemical agents (complement, cytokines), non-specific effector cells."
+  },
+  {
+   "id": "x2",
+   "type": "text",
+   "front": "Mechanical and physiological barriers?",
+   "back": "Skin (pH 3-5), mucus and cilia; temperature, gastric acidity."
+  },
+  {
+   "id": "x3",
+   "type": "text",
+   "front": "Antimicrobial molecules?",
+   "back": "Lysozyme (walls), lactoferrin (iron), defensins, cathelicidins (LL-37), surfactant SP-A/SP-D (opsonins), interferons."
+  },
+  {
+   "id": "x4",
+   "type": "text",
+   "front": "Antimicrobial peptides?",
+   "back": "12-50 aa, cationic; pores in membranes, interfere with DNA/RNA/protein synthesis; α-defensins (neutrophils, Paneth cells), β-defensins (epithelia)."
+  },
+  {
+   "id": "x5",
+   "type": "text",
+   "front": "Roles of commensal flora?",
+   "back": "Metabolism (vitamins, fatty acids), competition and colicins against pathogens, immune maturation."
+  },
+  {
+   "id": "x6",
+   "type": "text",
+   "front": "NK cell recognition?",
+   "back": "Balance of activating and inhibitory (KIR → MHC I) receptors; kill missing self, modified self, allogeneic cells."
+  },
+  {
+   "id": "img-mech",
+   "type": "image",
+   "target": "mech",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Mechanical barriers. Skin delays entry and its acidity inhibits growth; mucus traps microbes and cilia sweep them out."
+  },
+  {
+   "id": "img-phys",
+   "type": "image",
+   "target": "phys",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Physiological barriers. Body temperature and gastric acidity kill or restrain microbes."
+  },
+  {
+   "id": "img-chem",
+   "type": "image",
+   "target": "chem",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Antimicrobial molecules. Lysozyme breaks bacterial walls; lactoferrin chelates iron; cationic defensins and cathelicidins form pores; surfactant proteins act as opsonins."
+  },
+  {
+   "id": "img-micro",
+   "type": "image",
+   "target": "micro",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Commensal flora. Competes with pathogens, blocks the epithelium, makes antibacterial substances, helps digestion and immune maturation."
+  },
+  {
+   "id": "img-hum",
+   "type": "image",
+   "target": "hum",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Humoral components. Complement (~30 proteins, three pathways) and cytokines such as interferons."
+  },
+  {
+   "id": "img-cell",
+   "type": "image",
+   "target": "cell",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Cells. Phagocytes and innate-like lymphocytes recognising conserved microbial patterns."
+  }
+ ],
+ "deeper": [
+  {
+   "title": "Why antibiotics can cause C. difficile colitis",
+   "html": "<p>Commensal gut bacteria occupy space and nutrients and produce antibacterial substances, keeping pathogens in check. Broad-spectrum antibiotics wipe out much of this flora, removing that barrier; resistant Clostridioides difficile can then overgrow and release toxins, causing severe diarrhoea. It shows that the microbiota is part of innate defence.</p><p class='src'>Source: the tutorial's commensal flora slide.</p>"
+  }
+ ],
+ "resources": [
+  {
+   "title": "Innate immunity (NCBI Bookshelf, Janeway)",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK27090/",
+   "kind": "Book",
+   "why": "Barriers and innate recognition.",
+   "note": ""
+  },
+  {
+   "title": "Antimicrobial peptides (Immunopaedia)",
+   "url": "https://www.immunopaedia.org.za/",
+   "kind": "Website",
+   "why": "Innate defence molecules.",
+   "note": ""
+  }
+ ],
+ "checks": [],
+ "sources": [
+  {
+   "name": "Innate immunity (NCBI Bookshelf, Janeway)",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK27090/"
+  },
+  {
+   "name": "Antimicrobial peptides (Immunopaedia)",
+   "url": "https://www.immunopaedia.org.za/"
+  }
+ ],
+ "verified": "22 Sep 2026"
+};
+window.SINA = window.SINA || {subjects:[], lectures:{}};
+SINA.lectures["immuno1-inflammation"] = {
+ "id": "immuno1-inflammation",
+ "subject": "immuno1",
+ "group": "Immunology",
+ "title": "The inflammatory response",
+ "sourceFile": "T2 Inflammatory response (March 2026) (Immunology tutorial, Pr. F. Guessous)",
+ "sourceUrl": "https://drive.google.com/file/d/1ShkrTYL06ZOat0ozRoJrMqvhLf-WxHtp/view?usp=drivesdk",
+ "buildNote": "<strong>Built from the lecture slides.</strong> Slides that only show pictures are covered in outline. If your professor says something different, trust your professor.",
+ "summary": [
+  {
+   "id": "s0",
+   "title": "The big picture",
+   "html": "<p><strong>Inflammation</strong> is the response of living, vascularised tissue to aggression: a non-specific defence that contains the damage, heals the tissue and restores <strong>homeostasis</strong>. It concerns 25-30% of consulting or hospitalised patients, is a marker of disease progression and treatment effect, and can become severe (shock with <strong>multiple organ failure</strong> when generalised). <strong>Causes</strong>: physical (heat, cold, radiation), chemical (acids, alkalis, toxins), <strong>infection</strong>, <strong>immune reactions</strong> (allergy) and <strong>tissue necrosis</strong> (e.g. arterial occlusion).</p>"
+  },
+  {
+   "id": "s1",
+   "title": "Actors",
+   "html": "<p><strong>Cells</strong>: circulating (neutrophils, eosinophils, basophils, monocytes, platelets, lymphocytes) and resident (macrophages/histiocytes, <strong>mast cells</strong>, endothelial cells, fibroblasts, plasma cells). <strong>Mediators</strong>: cytokines and chemokines, <strong>histamine</strong>, the complement system, lipid mediators (prostaglandins, leukotrienes) and plasma mediators (<strong>kinins</strong>). <strong>Cytokines</strong> are small glycoproteins acting as intercellular messengers on specific receptors; they control the nature, intensity and duration of the response; main producers are <strong>Th cells</strong> and <strong>monocytes/macrophages</strong>; they act in <strong>autocrine, paracrine or endocrine</strong> fashion. Pro-inflammatory cytokines (IL-1, IL-6, TNF) have local effects and systemic ones (fever, acute-phase proteins).</p>"
+  },
+  {
+   "id": "s2",
+   "title": "Four phases",
+   "html": "<p><strong>1. Initiation</strong> (vascular phase): after a danger signal, <strong>platelets</strong> activated by vessel damage trigger coagulation (fibrin clot) and release chemotactic and vasoactive factors; endothelial cells express adhesion molecules; resident mast cells and macrophages activate; fibrinolysis (plasmin) follows. <strong>2. Amplification</strong>: recruitment of secondary effectors by the <strong>leukocyte extravasation cascade</strong>: <strong>rolling</strong> (selectins), <strong>adhesion</strong> (integrins and Ig superfamily), <strong>diapedesis</strong>, <strong>migration</strong>, guided by chemotactic factors (leukotrienes, prostaglandins, anaphylatoxins, cytokines) and targeted chemokines: <strong>IL-8 → neutrophils</strong>, <strong>MCP-1 → monocytes</strong>, <strong>eotaxin → eosinophils</strong>. <strong>3. Stabilisation</strong>: neutralisation of inflammatory factors. <strong>4. Resolution/repair</strong>: <strong>specialised pro-resolving lipid mediators</strong> stop excess inflammation, clear microbes and apoptotic cells and restore tissue integrity.</p>"
+  },
+  {
+   "id": "s3",
+   "title": "Acute inflammation",
+   "html": "<p>Four <strong>cardinal signs</strong>: <strong>redness</strong> and <strong>heat</strong> (vasodilation and permeability), <strong>swelling</strong> (plasma exudation, oedema), <strong>pain</strong> (pressure on nerve endings, kinins), plus a fifth, <strong>loss of function</strong>. Three phases: <strong>vascular</strong> (brief reflex vasoconstriction, then vasodilation, higher blood viscosity, leukocyte margination, adhesion and diapedesis, increased permeability, oedema, fibrin deposits), <strong>cellular</strong> (influx of neutrophils then monocytes/macrophages: phagocytosis, enzyme release, cleaning of the site) and <strong>resolution/repair</strong>. If it fails to resolve, it becomes <strong>chronic</strong>. Laboratory markers include <strong>CRP</strong>, <strong>ESR</strong>, fibrinogen and the white-cell count.</p>"
+  }
+ ],
+ "exam": [
+  "Inflammation: response of vascularised tissue to aggression; restores homeostasis.",
+  "Causes: physical, chemical, infection, immune reaction, necrosis.",
+  "Cells: circulating + resident (mast cells, macrophages, endothelium).",
+  "Mediators: cytokines, histamine, complement, lipid mediators, kinins.",
+  "Cytokines: autocrine, paracrine, endocrine; made mainly by Th and macrophages.",
+  "Phases: initiation, amplification, stabilisation, resolution.",
+  "Extravasation: rolling (selectins), adhesion (integrins), diapedesis, migration.",
+  "IL-8 → neutrophils; MCP-1 → monocytes; eotaxin → eosinophils.",
+  "Cardinal signs: redness, heat, swelling, pain, loss of function.",
+  "Acute phases: vascular, cellular, resolution."
+ ],
+ "visual": {
+  "kind": "model",
+  "intro": "",
+  "figure": {
+   "viewBox": "0 0 760 420",
+   "alt": "Leukocyte extravasation cascade",
+   "caption": "How neutrophils leave the blood. Schematic drawn for this site.",
+   "base": "<defs><marker id=\"ah\" markerWidth=\"10\" markerHeight=\"8\" refX=\"9\" refY=\"4\" orient=\"auto\"><path d=\"M0,0 L10,4 L0,8 Z\" fill=\"#8a8a8a\"/></marker></defs><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"190\" y1=\"70\" x2=\"200\" y2=\"70\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"370\" y1=\"70\" x2=\"380\" y2=\"70\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"550\" y1=\"70\" x2=\"560\" y2=\"70\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"510\" y1=\"200\" x2=\"560\" y2=\"70\"/>",
+   "parts": {
+    "roll": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2d7cf\" x=\"20\" y=\"40\" width=\"170\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "1. Rolling",
+      "(selectins)"
+     ],
+     "lx": 105.0,
+     "ly": 68.0
+    },
+    "adh": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#cfe3f2\" x=\"200\" y=\"40\" width=\"170\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "2. Firm adhesion",
+      "(integrins, Ig superfamily)"
+     ],
+     "lx": 285.0,
+     "ly": 68.0
+    },
+    "dia": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d7edd2\" x=\"380\" y=\"40\" width=\"170\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "3. Diapedesis",
+      "(trans-endothelial)"
+     ],
+     "lx": 465.0,
+     "ly": 68.0
+    },
+    "mig": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2e2a8\" x=\"560\" y=\"40\" width=\"170\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "4. Migration",
+      "(chemokines)"
+     ],
+     "lx": 645.0,
+     "ly": 68.0
+    },
+    "chem": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#e3d5f0\" x=\"250\" y=\"170\" width=\"260\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "IL-8 → neutrophils; MCP-1 →",
+      "monocytes; eotaxin → eosinophils"
+     ],
+     "lx": 380.0,
+     "ly": 198.0
+    }
+   },
+   "arrows": {
+    "roll": [
+     {
+      "t": [
+       20.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "adh": [
+     {
+      "t": [
+       200.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "dia": [
+     {
+      "t": [
+       380.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "mig": [
+     {
+      "t": [
+       560.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "chem": [
+     {
+      "t": [
+       250.0,
+       178.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ]
+   }
+  }
+ },
+ "mcqs": [
+  {
+   "q": "The ultimate goal of inflammation is to:",
+   "options": [
+    "Destroy the tissue",
+    "Produce antibodies",
+    "Cause fever",
+    "Restore homeostasis"
+   ],
+   "answer": 3,
+   "why": "Heal injured tissue."
+  },
+  {
+   "q": "Which is NOT a cause of inflammation?",
+   "options": [
+    "Heat",
+    "Tissue necrosis",
+    "Normal homeostasis",
+    "Bacterial toxins"
+   ],
+   "answer": 2,
+   "why": "Physical, chemical, infectious, immune, necrosis."
+  },
+  {
+   "q": "Which is a resident (tissue) inflammatory cell?",
+   "options": [
+    "Platelet",
+    "Mast cell",
+    "Neutrophil",
+    "Monocyte"
+   ],
+   "answer": 1,
+   "why": "Also macrophages, endothelial cells."
+  },
+  {
+   "q": "The main producers of cytokines are:",
+   "options": [
+    "Neurons",
+    "Red cells and platelets",
+    "Th cells and monocytes/macrophages",
+    "Hepatocytes only"
+   ],
+   "answer": 2,
+   "why": "Intercellular messengers."
+  },
+  {
+   "q": "A cytokine acting on the cell that produced it acts in:",
+   "options": [
+    "Autocrine",
+    "Endocrine",
+    "Exocrine",
+    "Paracrine"
+   ],
+   "answer": 0,
+   "why": "Paracrine: neighbours."
+  },
+  {
+   "q": "The first phase of the inflammatory response is:",
+   "options": [
+    "Amplification",
+    "Resolution",
+    "Stabilisation",
+    "Initiation"
+   ],
+   "answer": 3,
+   "why": "Vascular phase."
+  },
+  {
+   "q": "Leukocyte rolling depends on:",
+   "options": [
+    "Complement C9",
+    "Selectins",
+    "Integrins",
+    "Antibodies"
+   ],
+   "answer": 1,
+   "why": "Adhesion uses integrins."
+  },
+  {
+   "q": "The correct extravasation order is:",
+   "options": [
+    "Rolling, adhesion, diapedesis, migration",
+    "Diapedesis, rolling, adhesion, migration",
+    "Migration first",
+    "Adhesion, rolling, migration, diapedesis"
+   ],
+   "answer": 0,
+   "why": "Four steps."
+  },
+  {
+   "q": "IL-8 mainly attracts:",
+   "options": [
+    "Lymphocytes",
+    "Monocytes",
+    "Eosinophils",
+    "Neutrophils"
+   ],
+   "answer": 3,
+   "why": "MCP-1 attracts monocytes."
+  },
+  {
+   "q": "Eotaxin attracts:",
+   "options": [
+    "Eosinophils",
+    "Neutrophils",
+    "Platelets",
+    "Monocytes"
+   ],
+   "answer": 0,
+   "why": "Allergy."
+  },
+  {
+   "q": "Redness and heat result from:",
+   "options": [
+    "Vasodilation",
+    "Necrosis",
+    "Nerve pressure",
+    "Fibrosis"
+   ],
+   "answer": 0,
+   "why": "Swelling from exudation."
+  },
+  {
+   "q": "The 'fifth cardinal sign' is:",
+   "options": [
+    "Pallor",
+    "Loss of function",
+    "Fever",
+    "Itching"
+   ],
+   "answer": 1,
+   "why": "Added to the classic four."
+  },
+  {
+   "q": "In the cellular phase, which cells arrive first?",
+   "options": [
+    "Monocytes",
+    "Plasma cells",
+    "Lymphocytes",
+    "Neutrophils"
+   ],
+   "answer": 3,
+   "why": "Then monocytes/macrophages."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "roll",
+   "options": [
+    "Adhesion",
+    "Rolling",
+    "Migration",
+    "Diapedesis"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: Rolling. Selectins on activated endothelium slow leukocytes, which roll along the vessel wall."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "adh",
+   "options": [
+    "Rolling",
+    "Adhesion",
+    "Migration",
+    "Targeted chemokines"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: Adhesion. Leukocyte integrins bind Ig-superfamily adhesion molecules on endothelium; the cell flattens."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "dia",
+   "options": [
+    "Targeted chemokines",
+    "Adhesion",
+    "Diapedesis",
+    "Rolling"
+   ],
+   "answer": 2,
+   "why": "The arrow points to: Diapedesis. The leukocyte squeezes between endothelial cells into the tissue."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "mig",
+   "options": [
+    "Adhesion",
+    "Rolling",
+    "Migration",
+    "Diapedesis"
+   ],
+   "answer": 2,
+   "why": "The arrow points to: Migration. It crawls through the matrix toward the injury, guided by chemotactic factors."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "chem",
+   "options": [
+    "Migration",
+    "Diapedesis",
+    "Adhesion",
+    "Targeted chemokines"
+   ],
+   "answer": 3,
+   "why": "The arrow points to: Targeted chemokines. IL-8 (CXCL8) attracts neutrophils, MCP-1 monocytes, eotaxin eosinophils; leukotrienes, prostaglandins and anaphylatoxins also recruit."
+  }
+ ],
+ "cards": [
+  {
+   "id": "x0",
+   "type": "text",
+   "front": "Define inflammation.",
+   "back": "Response of living vascularised tissue to aggression; non-specific defence that heals and restores homeostasis."
+  },
+  {
+   "id": "x1",
+   "type": "text",
+   "front": "Causes of inflammation?",
+   "back": "Physical, chemical, infectious, immune (allergy), tissue necrosis."
+  },
+  {
+   "id": "x2",
+   "type": "text",
+   "front": "Actors of inflammation?",
+   "back": "Circulating and resident cells; mediators: cytokines, histamine, complement, lipid mediators, kinins."
+  },
+  {
+   "id": "x3",
+   "type": "text",
+   "front": "What are cytokines?",
+   "back": "Small glycoprotein messengers acting on receptors; autocrine, paracrine, endocrine; from Th cells and macrophages."
+  },
+  {
+   "id": "x4",
+   "type": "text",
+   "front": "Four phases of the inflammatory response?",
+   "back": "Initiation (vascular, platelets), amplification (recruitment), stabilisation, resolution/repair (pro-resolving mediators)."
+  },
+  {
+   "id": "x5",
+   "type": "text",
+   "front": "Leukocyte extravasation cascade?",
+   "back": "Rolling (selectins), adhesion (integrins/Ig superfamily), diapedesis, migration (chemokines)."
+  },
+  {
+   "id": "x6",
+   "type": "text",
+   "front": "Targeted chemokines?",
+   "back": "IL-8 → neutrophils; MCP-1 → monocytes; eotaxin → eosinophils."
+  },
+  {
+   "id": "x7",
+   "type": "text",
+   "front": "Cardinal signs and phases of acute inflammation?",
+   "back": "Redness, heat, swelling, pain, loss of function; vascular, cellular, resolution phases."
+  },
+  {
+   "id": "img-roll",
+   "type": "image",
+   "target": "roll",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Rolling. Selectins on activated endothelium slow leukocytes, which roll along the vessel wall."
+  },
+  {
+   "id": "img-adh",
+   "type": "image",
+   "target": "adh",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Adhesion. Leukocyte integrins bind Ig-superfamily adhesion molecules on endothelium; the cell flattens."
+  },
+  {
+   "id": "img-dia",
+   "type": "image",
+   "target": "dia",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Diapedesis. The leukocyte squeezes between endothelial cells into the tissue."
+  },
+  {
+   "id": "img-mig",
+   "type": "image",
+   "target": "mig",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Migration. It crawls through the matrix toward the injury, guided by chemotactic factors."
+  },
+  {
+   "id": "img-chem",
+   "type": "image",
+   "target": "chem",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Targeted chemokines. IL-8 (CXCL8) attracts neutrophils, MCP-1 monocytes, eotaxin eosinophils; leukotrienes, prostaglandins and anaphylatoxins also recruit."
+  }
+ ],
+ "deeper": [
+  {
+   "title": "Why aspirin-like drugs relieve inflammatory pain",
+   "html": "<p>Prostaglandins, lipid mediators made by cyclooxygenase enzymes, cause vasodilation and sensitise nerve endings, producing redness and pain, and act on the brain to cause fever. Non-steroidal anti-inflammatory drugs block cyclooxygenase, so fewer prostaglandins are made: pain, swelling and fever decrease, though the underlying cause remains.</p><p class='src'>Source: the tutorial's lipid mediators and cardinal signs slides.</p>"
+  }
+ ],
+ "resources": [
+  {
+   "title": "Inflammation (NCBI StatPearls: acute inflammation)",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK556083/",
+   "kind": "Book",
+   "why": "Vascular and cellular events.",
+   "note": ""
+  },
+  {
+   "title": "Leukocyte extravasation (Immunopaedia)",
+   "url": "https://www.immunopaedia.org.za/",
+   "kind": "Website",
+   "why": "Rolling, adhesion, diapedesis.",
+   "note": ""
+  }
+ ],
+ "checks": [],
+ "sources": [
+  {
+   "name": "Inflammation (NCBI StatPearls: acute inflammation)",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK556083/"
+  },
+  {
+   "name": "Leukocyte extravasation (Immunopaedia)",
+   "url": "https://www.immunopaedia.org.za/"
+  }
+ ],
+ "verified": "22 Sep 2026"
+};
+window.SINA = window.SINA || {subjects:[], lectures:{}};
+SINA.lectures["immuno1-phagocytosis"] = {
+ "id": "immuno1-phagocytosis",
+ "subject": "immuno1",
+ "group": "Immunology",
+ "title": "Phagocytosis and microbicidal processes",
+ "sourceFile": "T3 Phagocytosis and microbicidal processes (April 2026) (Immunology tutorial, Pr. F. Guessous)",
+ "sourceUrl": "https://drive.google.com/file/d/1uP1_I3yWvQ8c8jgBpwoXEEWFBfxatT92/view?usp=drivesdk",
+ "buildNote": "<strong>Built from the lecture slides.</strong> Slides that only show pictures are covered in outline. If your professor says something different, trust your professor.",
+ "summary": [
+  {
+   "id": "s0",
+   "title": "The big picture",
+   "html": "<p><strong>Phagocytosis</strong> is an innate defence in which phagocytes ingest and degrade particles <strong>larger than 0.5 µm</strong> (pathogens, debris, tumour and apoptotic cells). It is <strong>active</strong> (energy-consuming), can occur with or without <strong>opsonisation</strong>, and is much more efficient with it: an <strong>opsonin</strong> (IgG1 and IgG3, C3b) coats the target so that receptor-bearing phagocytes bind it. Phagocytes come from myeloid progenitors in the marrow, with no selection or education step.</p>"
+  },
+  {
+   "id": "s1",
+   "title": "Phagocytic cells",
+   "html": "<p><strong>Granulocytes</strong>: <strong>neutrophils</strong> (15 µm, 3-5 nuclear lobes; the first defence against invading pathogens, not antigen-specific; Fc receptors for IgG and complement receptors CR1 and CR3; secrete IL-8, IL-1, IL-12 and TNF-α to attract lymphocytes and dendritic cells); <strong>eosinophils and basophils</strong> mainly release mediators. <strong>Mononuclear phagocytes</strong>: <strong>monocytes</strong> (10-20 µm, 2-5% of leukocytes, horseshoe nucleus) leave the blood after about 8 hours and become <strong>macrophages</strong> (5-10 times larger, more lysosomes and enzymes, greater phagocytic capacity), which adopt features of their tissue. Macrophage functions: <strong>phagocytosis</strong> (scavenger of particles, pathogens, cells), <strong>modulation of the immune response</strong> (cytokines, chemokines, prostaglandins) and <strong>antigen presentation</strong> to T cells. Dendritic cells also phagocytose.</p>"
+  },
+  {
+   "id": "s2",
+   "title": "Steps and killing mechanisms",
+   "html": "<p>After tissue damage, histamine and kinins increase vessel diameter, flow and permeability. Steps: <strong>1. chemotaxis</strong> toward <strong>N-formyl peptides</strong> (bacterial), <strong>PAF</strong>, <strong>leukotriene B4</strong>, <strong>anaphylatoxins C3a, C4a, C5a</strong> and chemokines; <strong>2. capture</strong> via Fc receptors and C3b receptors; <strong>3. engulfment</strong> by actin polymerisation into a <strong>phagosome</strong>; <strong>4. destruction</strong> in the <strong>phagolysosome</strong>. <strong>Oxygen-dependent killing</strong>: the <strong>respiratory burst</strong>, in which <strong>NADPH oxidase</strong> transfers electrons to O₂ to make <strong>superoxide</strong>, then H₂O₂ and hydroxyl radicals (ROS), plus <strong>reactive nitrogen species</strong> (nitric oxide via NO synthase), toxic to microbes but also to host cells, which protect themselves with superoxide dismutase, catalase and glutathione peroxidase. <strong>Oxygen-independent killing</strong>: granule enzymes (proteases active at neutral pH), cationic antimicrobial proteins, lactoferrin.</p>"
+  },
+  {
+   "id": "s3",
+   "title": "NETosis",
+   "html": "<p>Activated neutrophils can disintegrate and release <strong>neutrophil extracellular traps (NETs)</strong>: fibres of <strong>DNA and histones</strong> carrying myeloperoxidase, elastase, gelatinase and lactoferrin, which <strong>trap and kill pathogens</strong>, a 'post-mortem' defence. It requires elastase activity and is induced by microbes, immune complexes and cytokines (IL-8, TNF, IFN) through ROS and RNS production.</p>"
+  }
+ ],
+ "exam": [
+  "Phagocytosis: ingestion of particles > 0.5 µm; active; enhanced by opsonins (IgG1/3, C3b).",
+  "Phagocytes: granulocytes (mainly neutrophils) and mononuclear cells (monocytes, macrophages, DCs).",
+  "Neutrophils: 3-5 lobes, first line; FcγR, CR1, CR3.",
+  "Monocytes → macrophages after ~8 h in blood.",
+  "Macrophages: phagocytosis, immune modulation, antigen presentation.",
+  "Steps: chemotaxis, capture, engulfment, destruction.",
+  "Chemoattractants: N-formyl peptides, PAF, LTB4, C3a/C5a, chemokines.",
+  "O₂-dependent: NADPH oxidase → ROS; NO synthase → RNS.",
+  "Host protection: SOD, catalase, glutathione peroxidase.",
+  "O₂-independent: enzymes, cationic proteins, lactoferrin.",
+  "NETs: DNA + histones + enzymes trap pathogens."
+ ],
+ "visual": {
+  "kind": "model",
+  "intro": "",
+  "figure": {
+   "viewBox": "0 0 760 420",
+   "alt": "Steps of phagocytosis",
+   "caption": "From attraction to destruction. Schematic drawn for this site.",
+   "base": "<defs><marker id=\"ah\" markerWidth=\"10\" markerHeight=\"8\" refX=\"9\" refY=\"4\" orient=\"auto\"><path d=\"M0,0 L10,4 L0,8 Z\" fill=\"#8a8a8a\"/></marker></defs><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"190\" y1=\"70\" x2=\"200\" y2=\"70\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"370\" y1=\"70\" x2=\"380\" y2=\"70\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"550\" y1=\"70\" x2=\"560\" y2=\"70\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"730\" y1=\"70\" x2=\"160\" y2=\"200\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"645\" y1=\"100\" x2=\"530\" y2=\"170\"/>",
+   "parts": {
+    "chem": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2d7cf\" x=\"20\" y=\"40\" width=\"170\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "1. Chemotaxis: fMLP, LTB4,",
+      "PAF, C5a, chemokines"
+     ],
+     "lx": 105.0,
+     "ly": 68.0
+    },
+    "cap": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#cfe3f2\" x=\"200\" y=\"40\" width=\"170\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "2. Capture: FcγR (IgG),",
+      "CR (C3b) → opsonisation"
+     ],
+     "lx": 285.0,
+     "ly": 68.0
+    },
+    "eng": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d7edd2\" x=\"380\" y=\"40\" width=\"170\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "3. Engulfment: actin →",
+      "phagosome"
+     ],
+     "lx": 465.0,
+     "ly": 68.0
+    },
+    "des": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2e2a8\" x=\"560\" y=\"40\" width=\"170\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "4. Destruction:",
+      "phagolysosome"
+     ],
+     "lx": 645.0,
+     "ly": 68.0
+    },
+    "o2": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#e3d5f0\" x=\"160\" y=\"170\" width=\"220\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "O₂-dependent: NADPH oxidase",
+      "→ ROS; NO synthase → RNS"
+     ],
+     "lx": 270.0,
+     "ly": 198.0
+    },
+    "no2": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f7d9b8\" x=\"420\" y=\"170\" width=\"220\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "O₂-independent: enzymes,",
+      "cationic proteins, lactoferrin"
+     ],
+     "lx": 530.0,
+     "ly": 198.0
+    }
+   },
+   "arrows": {
+    "chem": [
+     {
+      "t": [
+       20.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "cap": [
+     {
+      "t": [
+       200.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "eng": [
+     {
+      "t": [
+       380.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "des": [
+     {
+      "t": [
+       560.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "o2": [
+     {
+      "t": [
+       160.0,
+       178.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "no2": [
+     {
+      "t": [
+       420.0,
+       178.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ]
+   }
+  }
+ },
+ "mcqs": [
+  {
+   "q": "Phagocytosis concerns particles larger than about:",
+   "options": [
+    "5 mm",
+    "50 µm only",
+    "0.5 µm",
+    "0.05 µm"
+   ],
+   "answer": 2,
+   "why": "Pathogens, debris, dead cells."
+  },
+  {
+   "q": "Which antibodies are the best opsonins?",
+   "options": [
+    "IgM and IgE",
+    "IgA only",
+    "IgD",
+    "IgG1 and IgG3"
+   ],
+   "answer": 3,
+   "why": "Bind Fcγ receptors."
+  },
+  {
+   "q": "Opsonisation means:",
+   "options": [
+    "Killing by ROS",
+    "Presenting antigen",
+    "Releasing NETs",
+    "Coating a target"
+   ],
+   "answer": 3,
+   "why": "E.g. C3b, IgG."
+  },
+  {
+   "q": "Which granulocyte is the main phagocyte?",
+   "options": [
+    "Neutrophil",
+    "Basophil",
+    "Eosinophil",
+    "Mast cell"
+   ],
+   "answer": 0,
+   "why": "First line of defence."
+  },
+  {
+   "q": "After about how long in blood do monocytes enter tissues?",
+   "options": [
+    "8 weeks",
+    "8 days",
+    "8 hours",
+    "8 minutes"
+   ],
+   "answer": 2,
+   "why": "Then become macrophages."
+  },
+  {
+   "q": "Which is NOT a macrophage function?",
+   "options": [
+    "Antigen presentation",
+    "Cytokine secretion",
+    "Antibody production",
+    "Phagocytosis"
+   ],
+   "answer": 2,
+   "why": "Antibodies come from plasma cells."
+  },
+  {
+   "q": "Which is a bacterial chemoattractant?",
+   "options": [
+    "Catalase",
+    "N-formyl peptides",
+    "IgE",
+    "Lactoferrin"
+   ],
+   "answer": 1,
+   "why": "Also PAF, LTB4, C5a."
+  },
+  {
+   "q": "Engulfment depends on:",
+   "options": [
+    "Complement C9",
+    "Actin polymerisation",
+    "Microtubule loss",
+    "DNA release"
+   ],
+   "answer": 1,
+   "why": "Forms the phagosome."
+  },
+  {
+   "q": "The respiratory burst is driven by:",
+   "options": [
+    "NADPH oxidase",
+    "Lysozyme",
+    "Catalase",
+    "NO synthase"
+   ],
+   "answer": 0,
+   "why": "Produces superoxide."
+  },
+  {
+   "q": "Which enzyme protects host cells from ROS?",
+   "options": [
+    "Superoxide dismutase",
+    "Myeloperoxidase",
+    "NADPH oxidase",
+    "Elastase"
+   ],
+   "answer": 0,
+   "why": "Also catalase, glutathione peroxidase."
+  },
+  {
+   "q": "Nitric oxide belongs to:",
+   "options": [
+    "ROS",
+    "Reactive nitrogen species",
+    "Antimicrobial peptides",
+    "Opsonins"
+   ],
+   "answer": 1,
+   "why": "Made by NO synthase."
+  },
+  {
+   "q": "NETs are made of:",
+   "options": [
+    "Actin",
+    "Antibodies",
+    "Lipids and sugars",
+    "DNA and histones with enzymes"
+   ],
+   "answer": 3,
+   "why": "Released by neutrophils."
+  },
+  {
+   "q": "NETosis requires the activity of:",
+   "options": [
+    "Catalase",
+    "Elastase",
+    "Amylase",
+    "Lysozyme"
+   ],
+   "answer": 1,
+   "why": "'Post-mortem' defence."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "chem",
+   "options": [
+    "Chemotaxis",
+    "Destruction",
+    "Engulfment",
+    "Capture"
+   ],
+   "answer": 0,
+   "why": "The arrow points to: Chemotaxis. Phagocytes follow gradients of bacterial N-formyl peptides, PAF, leukotriene B4, anaphylatoxins (C3a, C5a) and chemokines."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "cap",
+   "options": [
+    "Destruction",
+    "Oxygen-dependent killing",
+    "Chemotaxis",
+    "Capture"
+   ],
+   "answer": 3,
+   "why": "The arrow points to: Capture. Receptors bind microbes directly or through opsonins: IgG (Fc receptors) and C3b (complement receptors)."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "eng",
+   "options": [
+    "Destruction",
+    "Capture",
+    "Engulfment",
+    "Oxygen-dependent killing"
+   ],
+   "answer": 2,
+   "why": "The arrow points to: Engulfment. Actin polymerisation extends pseudopods around the particle, forming a phagosome."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "des",
+   "options": [
+    "Oxygen-dependent killing",
+    "Destruction",
+    "Engulfment",
+    "Capture"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: Destruction. The phagosome fuses with lysosomes; debris is released by exocytosis."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "o2",
+   "options": [
+    "Oxygen-dependent killing",
+    "Oxygen-independent killing",
+    "Engulfment",
+    "Destruction"
+   ],
+   "answer": 0,
+   "why": "The arrow points to: Oxygen-dependent killing. Respiratory burst: NADPH oxidase makes superoxide, then H₂O₂ and hydroxyl radicals; nitric oxide synthase makes reactive nitrogen species."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "no2",
+   "options": [
+    "Destruction",
+    "Chemotaxis",
+    "Oxygen-independent killing",
+    "Engulfment"
+   ],
+   "answer": 2,
+   "why": "The arrow points to: Oxygen-independent killing. Granule enzymes (proteases active at neutral pH, lysozyme), cationic antimicrobial proteins, lactoferrin."
+  }
+ ],
+ "cards": [
+  {
+   "id": "x0",
+   "type": "text",
+   "front": "Define phagocytosis and opsonisation.",
+   "back": "Ingestion and degradation of particles > 0.5 µm by phagocytes; opsonins (IgG1/3, C3b) coat targets to enhance uptake."
+  },
+  {
+   "id": "x1",
+   "type": "text",
+   "front": "Types of phagocytes?",
+   "back": "Granulocytes (mainly neutrophils) and mononuclear phagocytes (monocytes, macrophages, dendritic cells)."
+  },
+  {
+   "id": "x2",
+   "type": "text",
+   "front": "Neutrophil features?",
+   "back": "15 µm, 3-5 lobes, first line; FcγR, CR1, CR3; secrete IL-8, IL-1, IL-12, TNF-α."
+  },
+  {
+   "id": "x3",
+   "type": "text",
+   "front": "Monocyte to macrophage?",
+   "back": "Monocytes (2-5% of WBC) leave blood after ~8 h; macrophages larger, more enzymes, tissue-specific."
+  },
+  {
+   "id": "x4",
+   "type": "text",
+   "front": "Three macrophage functions?",
+   "back": "Phagocytosis (scavenger), immune modulation (cytokines, prostaglandins), antigen presentation."
+  },
+  {
+   "id": "x5",
+   "type": "text",
+   "front": "Four steps of phagocytosis?",
+   "back": "Chemotaxis, capture, engulfment (actin, phagosome), destruction (phagolysosome)."
+  },
+  {
+   "id": "x6",
+   "type": "text",
+   "front": "Oxygen-dependent vs independent killing?",
+   "back": "Dependent: NADPH oxidase ROS, NO synthase RNS. Independent: granule enzymes, cationic proteins, lactoferrin."
+  },
+  {
+   "id": "x7",
+   "type": "text",
+   "front": "NETosis?",
+   "back": "Neutrophils release DNA-histone traps with myeloperoxidase, elastase, gelatinase, lactoferrin; requires elastase; induced by microbes, immune complexes, cytokines."
+  },
+  {
+   "id": "img-chem",
+   "type": "image",
+   "target": "chem",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Chemotaxis. Phagocytes follow gradients of bacterial N-formyl peptides, PAF, leukotriene B4, anaphylatoxins (C3a, C5a) and chemokines."
+  },
+  {
+   "id": "img-cap",
+   "type": "image",
+   "target": "cap",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Capture. Receptors bind microbes directly or through opsonins: IgG (Fc receptors) and C3b (complement receptors)."
+  },
+  {
+   "id": "img-eng",
+   "type": "image",
+   "target": "eng",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Engulfment. Actin polymerisation extends pseudopods around the particle, forming a phagosome."
+  },
+  {
+   "id": "img-des",
+   "type": "image",
+   "target": "des",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Destruction. The phagosome fuses with lysosomes; debris is released by exocytosis."
+  },
+  {
+   "id": "img-o2",
+   "type": "image",
+   "target": "o2",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Oxygen-dependent killing. Respiratory burst: NADPH oxidase makes superoxide, then H₂O₂ and hydroxyl radicals; nitric oxide synthase makes reactive nitrogen species."
+  },
+  {
+   "id": "img-no2",
+   "type": "image",
+   "target": "no2",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Oxygen-independent killing. Granule enzymes (proteases active at neutral pH, lysozyme), cationic antimicrobial proteins, lactoferrin."
+  }
+ ],
+ "deeper": [
+  {
+   "title": "Why a broken NADPH oxidase causes severe infections",
+   "html": "<p>In chronic granulomatous disease, a genetic defect of NADPH oxidase prevents the respiratory burst. Phagocytes still engulf bacteria and fungi but cannot make superoxide and its toxic products, so catalase-positive organisms such as Staphylococcus aureus and Aspergillus survive inside them. Patients suffer recurrent deep infections and granulomas, showing how central oxygen-dependent killing is.</p><p class='src'>Source: the tutorial's respiratory burst slides.</p>"
+  }
+ ],
+ "resources": [
+  {
+   "title": "Phagocytosis (Immunopaedia)",
+   "url": "https://www.immunopaedia.org.za/",
+   "kind": "Website",
+   "why": "Steps of phagocytosis and killing.",
+   "note": ""
+  },
+  {
+   "title": "Chronic granulomatous disease (NCBI StatPearls)",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK493171/",
+   "kind": "Book",
+   "why": "Clinical consequence of absent respiratory burst.",
+   "note": ""
+  }
+ ],
+ "checks": [],
+ "sources": [
+  {
+   "name": "Phagocytosis (Immunopaedia)",
+   "url": "https://www.immunopaedia.org.za/"
+  },
+  {
+   "name": "Chronic granulomatous disease (NCBI StatPearls)",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK493171/"
+  }
+ ],
+ "verified": "22 Sep 2026"
+};
+window.SINA = window.SINA || {subjects:[], lectures:{}};
+SINA.lectures["immuno1-mhc"] = {
+ "id": "immuno1-mhc",
+ "subject": "immuno1",
+ "group": "Immunology",
+ "title": "MHC and antigen-presenting cells",
+ "sourceFile": "T4 MHC and APC (April 2026) (Immunology tutorial, Pr. F. Guessous)",
+ "sourceUrl": "https://drive.google.com/file/d/1_nUq5GAb8ZuPIAqgeQMyxl23_zEN1s86/view?usp=drivesdk",
+ "buildNote": "<strong>Built from the lecture slides.</strong> Slides that only show pictures are covered in outline. If your professor says something different, trust your professor.",
+ "summary": [
+  {
+   "id": "s0",
+   "title": "The big picture",
+   "html": "<p>The <strong>major histocompatibility complex (MHC)</strong>, called <strong>HLA</strong> (human leukocyte antigen) in humans, was found through graft rejection: <strong>Snell and Gorer</strong> (1930s, mouse H2) and <strong>Jean Dausset</strong> (1958, HLA; Nobel Prize 1980). 'Complex': a region of <strong>more than 200 genes</strong>; 'major': highly <strong>polymorphic</strong>, creating differences between individuals; 'histocompatibility': responsible for <strong>graft rejection</strong>. Its molecules present antigen to T cells, and <strong>antigen-presenting cells (APCs)</strong> link innate and adaptive immunity.</p>"
+  },
+  {
+   "id": "s1",
+   "title": "MHC classes and structure",
+   "html": "<p><strong>Class I</strong>: on all <strong>nucleated cells</strong>; presents <strong>endogenous</strong> peptides to <strong>CD8</strong> T cells ('designates cells to destroy'); a heavy α chain (44 kDa) with <strong>β2-microglobulin</strong> (11.5 kDa); groove formed by α1 and α2 binds peptides of <strong>8-10 amino acids</strong>. <strong>Class II</strong>: mainly on <strong>APCs</strong>; presents <strong>exogenous</strong> peptides to <strong>CD4</strong> T cells ('designates cells to activate'); α (31-34 kDa) and β (26-29 kDa) chains; groove α1 + β1 binds peptides <strong>longer than 13 amino acids</strong>. <strong>Class III</strong>: other immune proteins (complement, inflammatory molecules). Features: the <strong>most polymorphic genes</strong> of the genome (over 8,000 alleles in 2017; HLA-A, -B, -C for class I; HLA-DR, -DP, -DQ for class II); <strong>codominant</strong> expression (both parental alleles expressed); inherited as <strong>haplotype blocks</strong>, one from each parent (Mendelian transmission).</p>"
+  },
+  {
+   "id": "s2",
+   "title": "Antigen-presenting cells",
+   "html": "<p><strong>Professional APCs</strong> include <strong>dendritic cells (DCs)</strong>, macrophages and B cells. DCs (myeloid/conventional and plasmacytoid subtypes) are <strong>sentinels</strong> concentrated in organs in contact with the outside (skin, lung, gut). Immature DCs <strong>capture</strong> antigen by phagocytosis (enhanced by opsonisation), pinocytosis (soluble antigen) and receptor-mediated endocytosis (mannose receptor, Fc receptors, Dectin), <strong>process</strong> it into peptides, then <strong>mature</strong> in response to danger signals and <strong>migrate</strong> to lymph nodes and spleen to present peptide-MHC to naive T cells. <strong>Exogenous</strong> antigen → endosome/lysosome → <strong>MHC II → CD4</strong>; <strong>endogenous</strong> antigen → <strong>proteasome</strong> → ER → <strong>MHC I → CD8</strong>.</p>"
+  },
+  {
+   "id": "s3",
+   "title": "T-cell activation",
+   "html": "<p>At least two signals are needed: <strong>signal 1</strong>, TCR recognition of peptide-MHC; <strong>signal 2</strong>, <strong>co-stimulation</strong>: <strong>B7 (CD80/CD86)</strong> on the APC with <strong>CD28</strong> on the T cell, and <strong>CD40</strong> on the APC with <strong>CD40L</strong> on the T cell. A <strong>single signal</strong> leads to inactivation or <strong>anergy</strong>. <strong>Signal 3</strong>, the cytokine environment (e.g. <strong>IL-12</strong>), polarises the response toward cellular or humoral immunity.</p>"
+  }
+ ],
+ "exam": [
+  "MHC = HLA in humans; >200 genes; highly polymorphic; graft rejection.",
+  "Dausset 1958 (HLA), Nobel 1980; Snell and Gorer (mouse H2).",
+  "Class I: all nucleated cells; endogenous peptides (8-10 aa) → CD8.",
+  "Class I structure: α chain + β2-microglobulin.",
+  "Class II: APCs; exogenous peptides (>13 aa) → CD4; α + β chains.",
+  "Class III: complement and inflammatory proteins.",
+  "HLA-A, B, C (I); DR, DP, DQ (II); codominant; haplotype inheritance.",
+  "DCs: sentinels in skin, lung, gut; capture, process, migrate, present.",
+  "Endogenous: proteasome → MHC I; exogenous: lysosome → MHC II.",
+  "Signal 1 TCR-MHC; signal 2 B7-CD28, CD40-CD40L; signal 3 IL-12.",
+  "One signal only → anergy."
+ ],
+ "visual": {
+  "kind": "model",
+  "intro": "",
+  "figure": {
+   "viewBox": "0 0 760 420",
+   "alt": "Two routes of antigen presentation",
+   "caption": "Where the antigen comes from decides which T cell responds. Schematic drawn for this site.",
+   "base": "<defs><marker id=\"ah\" markerWidth=\"10\" markerHeight=\"8\" refX=\"9\" refY=\"4\" orient=\"auto\"><path d=\"M0,0 L10,4 L0,8 Z\" fill=\"#8a8a8a\"/></marker></defs><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"220\" y1=\"67\" x2=\"270\" y2=\"67\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"470\" y1=\"67\" x2=\"520\" y2=\"67\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"220\" y1=\"197\" x2=\"270\" y2=\"197\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"470\" y1=\"197\" x2=\"520\" y2=\"197\"/>",
+   "parts": {
+    "endo": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2d7cf\" x=\"20\" y=\"40\" width=\"200\" height=\"55\" rx=\"10\"/>",
+     "label": [
+      "Endogenous antigen",
+      "(virus, tumour)"
+     ],
+     "lx": 120.0,
+     "ly": 65.5
+    },
+    "prot": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#cfe3f2\" x=\"270\" y=\"40\" width=\"200\" height=\"55\" rx=\"10\"/>",
+     "label": [
+      "Proteasome → ER",
+      "(peptides 8-10 aa)"
+     ],
+     "lx": 370.0,
+     "ly": 65.5
+    },
+    "m1": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d7edd2\" x=\"520\" y=\"40\" width=\"200\" height=\"55\" rx=\"10\"/>",
+     "label": [
+      "MHC I (all nucleated",
+      "cells) → CD8 T cell"
+     ],
+     "lx": 620.0,
+     "ly": 65.5
+    },
+    "exo": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2e2a8\" x=\"20\" y=\"170\" width=\"200\" height=\"55\" rx=\"10\"/>",
+     "label": [
+      "Exogenous antigen",
+      "(phagocytosed)"
+     ],
+     "lx": 120.0,
+     "ly": 195.5
+    },
+    "lys": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#e3d5f0\" x=\"270\" y=\"170\" width=\"200\" height=\"55\" rx=\"10\"/>",
+     "label": [
+      "Endosome/lysosome",
+      "(peptides > 13 aa)"
+     ],
+     "lx": 370.0,
+     "ly": 195.5
+    },
+    "m2": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f7d9b8\" x=\"520\" y=\"170\" width=\"200\" height=\"55\" rx=\"10\"/>",
+     "label": [
+      "MHC II (APCs)",
+      "→ CD4 T cell"
+     ],
+     "lx": 620.0,
+     "ly": 195.5
+    }
+   },
+   "arrows": {
+    "endo": [
+     {
+      "t": [
+       20.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "prot": [
+     {
+      "t": [
+       270.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "m1": [
+     {
+      "t": [
+       520.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "exo": [
+     {
+      "t": [
+       20.0,
+       178.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "lys": [
+     {
+      "t": [
+       270.0,
+       178.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "m2": [
+     {
+      "t": [
+       520.0,
+       178.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ]
+   }
+  }
+ },
+ "mcqs": [
+  {
+   "q": "In humans, the MHC is called:",
+   "options": [
+    "TCR",
+    "CD",
+    "HLA",
+    "H2"
+   ],
+   "answer": 2,
+   "why": "Human leukocyte antigen."
+  },
+  {
+   "q": "Who described the HLA system in humans?",
+   "options": [
+    "Pasteur",
+    "Snell",
+    "Jenner",
+    "Dausset"
+   ],
+   "answer": 3,
+   "why": "Nobel Prize 1980."
+  },
+  {
+   "q": "MHC class I is expressed on:",
+   "options": [
+    "B cells only",
+    "APCs only",
+    "Red blood cells",
+    "All nucleated cells"
+   ],
+   "answer": 3,
+   "why": "Presents to CD8."
+  },
+  {
+   "q": "MHC class II presents peptides to:",
+   "options": [
+    "CD4 T cells",
+    "CD8 T cells",
+    "NK cells",
+    "B cells"
+   ],
+   "answer": 0,
+   "why": "Mainly on APCs."
+  },
+  {
+   "q": "MHC class I associates with:",
+   "options": [
+    "Invariant light chain",
+    "CD3",
+    "β2-microglobulin",
+    "J chain"
+   ],
+   "answer": 2,
+   "why": "With a heavy α chain."
+  },
+  {
+   "q": "MHC class I binds peptides of about:",
+   "options": [
+    "100 amino acids",
+    "> 13 amino acids",
+    "8-10 amino acids",
+    "3 amino acids"
+   ],
+   "answer": 2,
+   "why": "Closed groove."
+  },
+  {
+   "q": "Which gene belongs to MHC class II?",
+   "options": [
+    "HLA-A",
+    "HLA-DR",
+    "HLA-C",
+    "HLA-B"
+   ],
+   "answer": 1,
+   "why": "Also DP, DQ."
+  },
+  {
+   "q": "MHC class III genes code for:",
+   "options": [
+    "TCR",
+    "Complement proteins",
+    "Antibodies",
+    "Insulin"
+   ],
+   "answer": 1,
+   "why": "Not antigen-presenting."
+  },
+  {
+   "q": "Codominance of HLA means:",
+   "options": [
+    "Both parental alleles are expressed",
+    "Genes are recessive",
+    "Only one allele is active",
+    "Only paternal alleles are expressed"
+   ],
+   "answer": 0,
+   "why": "Inherited as haplotypes."
+  },
+  {
+   "q": "Dendritic cells are especially abundant in:",
+   "options": [
+    "Skin, lung and gut",
+    "Brain",
+    "Kidney",
+    "Bone"
+   ],
+   "answer": 0,
+   "why": "Sentinels."
+  },
+  {
+   "q": "Endogenous antigens are processed by the:",
+   "options": [
+    "Golgi only",
+    "Proteasome",
+    "Lysosome",
+    "Nucleus"
+   ],
+   "answer": 1,
+   "why": "Loaded onto MHC I."
+  },
+  {
+   "q": "A classical co-stimulatory pair is:",
+   "options": [
+    "CD4-MHC II",
+    "C3b-CR1",
+    "IgG-FcR",
+    "B7 (CD80/86)-CD28"
+   ],
+   "answer": 3,
+   "why": "Signal 2."
+  },
+  {
+   "q": "A T cell receiving signal 1 without signal 2 becomes:",
+   "options": [
+    "A plasma cell",
+    "Anergic",
+    "A memory cell",
+    "Activated"
+   ],
+   "answer": 1,
+   "why": "Inactivation."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "endo",
+   "options": [
+    "Endogenous antigens",
+    "Class I pathway",
+    "Exogenous antigens",
+    "MHC class I"
+   ],
+   "answer": 0,
+   "why": "The arrow points to: Endogenous antigens. Proteins made inside the cell, such as viral or tumour proteins."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "prot",
+   "options": [
+    "Exogenous antigens",
+    "Class II pathway",
+    "Endogenous antigens",
+    "Class I pathway"
+   ],
+   "answer": 3,
+   "why": "The arrow points to: Class I pathway. Degraded by the proteasome; peptides of 8-10 amino acids loaded onto MHC I."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "m1",
+   "options": [
+    "Class I pathway",
+    "Exogenous antigens",
+    "MHC class I",
+    "Class II pathway"
+   ],
+   "answer": 2,
+   "why": "The arrow points to: MHC class I. On all nucleated cells; 'designates cells to destroy' to CD8 cytotoxic T cells."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "exo",
+   "options": [
+    "Class I pathway",
+    "Exogenous antigens",
+    "Class II pathway",
+    "MHC class I"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: Exogenous antigens. Captured by phagocytosis, pinocytosis or receptor-mediated endocytosis."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "lys",
+   "options": [
+    "Class II pathway",
+    "MHC class I",
+    "MHC class II",
+    "Exogenous antigens"
+   ],
+   "answer": 0,
+   "why": "The arrow points to: Class II pathway. Degraded in endosomes/lysosomes; peptides longer than 13 amino acids loaded onto MHC II."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "m2",
+   "options": [
+    "Exogenous antigens",
+    "Endogenous antigens",
+    "MHC class II",
+    "MHC class I"
+   ],
+   "answer": 2,
+   "why": "The arrow points to: MHC class II. Mainly on antigen-presenting cells; 'designates cells to activate' via CD4 helper T cells."
+  }
+ ],
+ "cards": [
+  {
+   "id": "x0",
+   "type": "text",
+   "front": "Define MHC/HLA.",
+   "back": "Region of >200 highly polymorphic genes whose products present antigen and cause graft rejection; HLA in humans."
+  },
+  {
+   "id": "x1",
+   "type": "text",
+   "front": "MHC class I?",
+   "back": "All nucleated cells; α chain + β2-microglobulin; endogenous peptides (8-10 aa) to CD8 T cells."
+  },
+  {
+   "id": "x2",
+   "type": "text",
+   "front": "MHC class II?",
+   "back": "Mainly APCs; α + β chains; exogenous peptides (>13 aa) to CD4 T cells."
+  },
+  {
+   "id": "x3",
+   "type": "text",
+   "front": "MHC class III?",
+   "back": "Complement and inflammation-related proteins."
+  },
+  {
+   "id": "x4",
+   "type": "text",
+   "front": "Characteristics of the HLA system?",
+   "back": "Most polymorphic genes; HLA-A/B/C (I), DR/DP/DQ (II); codominant; haplotype inheritance."
+  },
+  {
+   "id": "x5",
+   "type": "text",
+   "front": "Dendritic cell function?",
+   "back": "Sentinels in skin, lung, gut; capture (phagocytosis, pinocytosis, receptors), process, mature, migrate to lymphoid organs, present to naive T cells."
+  },
+  {
+   "id": "x6",
+   "type": "text",
+   "front": "Endogenous vs exogenous pathway?",
+   "back": "Endogenous: proteasome → ER → MHC I → CD8. Exogenous: endosome/lysosome → MHC II → CD4."
+  },
+  {
+   "id": "x7",
+   "type": "text",
+   "front": "Signals of T-cell activation?",
+   "back": "1: TCR + peptide-MHC. 2: B7-CD28, CD40-CD40L. 3: cytokines (IL-12). Signal 1 alone → anergy."
+  },
+  {
+   "id": "img-endo",
+   "type": "image",
+   "target": "endo",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Endogenous antigens. Proteins made inside the cell, such as viral or tumour proteins."
+  },
+  {
+   "id": "img-prot",
+   "type": "image",
+   "target": "prot",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Class I pathway. Degraded by the proteasome; peptides of 8-10 amino acids loaded onto MHC I."
+  },
+  {
+   "id": "img-m1",
+   "type": "image",
+   "target": "m1",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "MHC class I. On all nucleated cells; 'designates cells to destroy' to CD8 cytotoxic T cells."
+  },
+  {
+   "id": "img-exo",
+   "type": "image",
+   "target": "exo",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Exogenous antigens. Captured by phagocytosis, pinocytosis or receptor-mediated endocytosis."
+  },
+  {
+   "id": "img-lys",
+   "type": "image",
+   "target": "lys",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Class II pathway. Degraded in endosomes/lysosomes; peptides longer than 13 amino acids loaded onto MHC II."
+  },
+  {
+   "id": "img-m2",
+   "type": "image",
+   "target": "m2",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "MHC class II. Mainly on antigen-presenting cells; 'designates cells to activate' via CD4 helper T cells."
+  }
+ ],
+ "deeper": [
+  {
+   "title": "Why transplants need HLA matching",
+   "html": "<p>HLA genes are extremely polymorphic and codominant, so almost everyone displays a unique set. T cells react strongly against foreign HLA molecules on a graft and reject it. Siblings share both haplotypes with a 1-in-4 chance because haplotypes are inherited as blocks, which is why siblings are the first donors tested for bone marrow transplants, and why unrelated grafts need immunosuppression.</p><p class='src'>Source: the tutorial's MHC characteristics slides.</p>"
+  }
+ ],
+ "resources": [
+  {
+   "title": "MHC and antigen presentation (NCBI Bookshelf, Janeway)",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK27156/",
+   "kind": "Book",
+   "why": "Class I and II pathways.",
+   "note": ""
+  },
+  {
+   "title": "HLA (MedlinePlus Genetics)",
+   "url": "https://medlineplus.gov/genetics/gene/hla-a/",
+   "kind": "Website",
+   "why": "HLA genes and transplantation.",
+   "note": ""
+  }
+ ],
+ "checks": [],
+ "sources": [
+  {
+   "name": "MHC and antigen presentation (NCBI Bookshelf, Janeway)",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK27156/"
+  },
+  {
+   "name": "HLA (MedlinePlus Genetics)",
+   "url": "https://medlineplus.gov/genetics/gene/hla-a/"
+  }
+ ],
+ "verified": "22 Sep 2026"
+};
+window.SINA = window.SINA || {subjects:[], lectures:{}};
+SINA.lectures["immuno1-testing"] = {
+ "id": "immuno1-testing",
+ "subject": "immuno1",
+ "group": "Immunology",
+ "title": "Immunological testing: diagnostic techniques",
+ "sourceFile": "T5 Immuno-testing (March 2026) (Immunology tutorial, Pr. F. Guessous)",
+ "sourceUrl": "https://drive.google.com/file/d/1jI2AinY6quWBvo6DohZqQtQU_kJafTzj/view?usp=drivesdk",
+ "buildNote": "<strong>Built from the lecture slides.</strong> Slides that only show pictures are covered in outline. If your professor says something different, trust your professor.",
+ "summary": [
+  {
+   "id": "s0",
+   "title": "The big picture",
+   "html": "<p>Diagnostic immunology relies on the <strong>antigen-antibody reaction</strong>: a bimolecular association, like enzyme and substrate, between <strong>epitope and paratope</strong>, requiring perfect steric complementarity and held by <strong>non-covalent</strong> forces (ionic, hydrogen, hydrophobic, Van der Waals), forming an <strong>immune complex</strong>. Techniques are <strong>directly visible</strong> (precipitation, agglutination) or need <strong>labelling</strong> (fluorescence, enzymes, isotopes), which is far more sensitive (ng/mL to pg/mL).</p>"
+  },
+  {
+   "id": "s1",
+   "title": "Precipitation",
+   "html": "<p>With <strong>soluble</strong> antigen, complexes form a precipitate. In liquid, the largest precipitable complexes form in the <strong>equivalence zone</strong>; excess of either reagent makes smaller, less precipitable complexes (depends on pH, ionic strength, temperature). In gel (agar, agarose): <strong>simple immunodiffusion (Oudin)</strong>: antibody in the gel, a precipitation ring reveals the antigen; <strong>radial immunodiffusion (Mancini)</strong>: ring diameter measures antigen concentration against standards; <strong>double immunodiffusion (Ouchterlony)</strong>: antigen and antibodies diffuse toward each other and form precipitation lines; <strong>immunoelectrophoresis</strong>: serum proteins are separated by electrophoresis, then an antiserum is added in a trough, giving arcs (IgG, IgA, IgM, albumin) to compare with a control.</p>"
+  },
+  {
+   "id": "s2",
+   "title": "Agglutination",
+   "html": "<p>With antigen on a <strong>particle</strong> (bacteria, red cells, latex beads), antibodies link particles into visible clumps. <strong>Active (direct)</strong>: the antigen belongs to the particle, e.g. <strong>ABO blood grouping</strong> with anti-A and anti-B. <strong>Artificial</strong>: the <strong>Coombs (anti-globulin) test</strong>, used for <strong>autoimmune haemolytic anaemia</strong>, <strong>transfusion</strong> compatibility and <strong>feto-maternal incompatibility</strong> (haemolytic disease of the newborn).</p>"
+  },
+  {
+   "id": "s3",
+   "title": "Labelled techniques",
+   "html": "<p><strong>Immunofluorescence</strong>: antigen or antibody labelled with a fluorochrome, direct or indirect; takes under 3 hours; read with a <strong>fluorescence microscope</strong> or <strong>flow cytometer</strong>. <strong>Immunoenzymology (ELISA)</strong>: an enzyme label turns a colourless substrate into a coloured product read by <strong>optical density</strong>; formats: <strong>direct</strong> (detects antigen), <strong>indirect</strong> (detects antibody, e.g. anti-HIV) and <strong>sandwich</strong>. <strong>Western blot</strong>: viral proteins are denatured (SDS), separated by <strong>polyacrylamide gel electrophoresis</strong> by mass, transferred to a <strong>nitrocellulose</strong> membrane, incubated with patient serum, and bound antibodies revealed by an enzyme-linked secondary antibody and substrate. <strong>HIV testing</strong>: ELISA first, repeated if positive, then <strong>Western blot</strong> to confirm, because ELISA can give <strong>false positives</strong>. <strong>Radioimmunoassay (RIA)</strong>: isotope labels (¹²⁵I, ¹⁴C, ³H), rarely used now.</p>"
+  }
+ ],
+ "exam": [
+  "Ag-Ab binding: epitope-paratope, steric complementarity, non-covalent forces.",
+  "Visible: precipitation (soluble Ag), agglutination (particulate Ag).",
+  "Labelled: immunofluorescence, ELISA/Western blot, RIA; ng-pg/mL sensitivity.",
+  "Equivalence zone: maximal precipitation.",
+  "Oudin: simple immunodiffusion; Mancini: radial (quantitative); Ouchterlony: double.",
+  "Immunoelectrophoresis: electrophoresis + antiserum → arcs.",
+  "ABO grouping: direct agglutination.",
+  "Coombs test: autoimmune haemolysis, transfusion, haemolytic disease of the newborn.",
+  "ELISA: direct (Ag), indirect (Ab), sandwich.",
+  "HIV: ELISA ×2 then Western blot to confirm."
+ ],
+ "visual": {
+  "kind": "model",
+  "intro": "",
+  "figure": {
+   "viewBox": "0 0 760 420",
+   "alt": "Antigen-antibody reactions in the lab",
+   "caption": "Unlabelled (visible) vs labelled (sensitive) techniques. Schematic drawn for this site.",
+   "base": "<defs><marker id=\"ah\" markerWidth=\"10\" markerHeight=\"8\" refX=\"9\" refY=\"4\" orient=\"auto\"><path d=\"M0,0 L10,4 L0,8 Z\" fill=\"#8a8a8a\"/></marker></defs>",
+   "parts": {
+    "prec": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2d7cf\" x=\"20\" y=\"40\" width=\"230\" height=\"70\" rx=\"10\"/>",
+     "label": [
+      "Precipitation (soluble Ag):",
+      "liquid, gel (Oudin, Mancini,",
+      "Ouchterlony), immunoelectrophoresis"
+     ],
+     "lx": 135.0,
+     "ly": 65.0
+    },
+    "agg": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#cfe3f2\" x=\"270\" y=\"40\" width=\"220\" height=\"70\" rx=\"10\"/>",
+     "label": [
+      "Agglutination (particulate Ag):",
+      "ABO grouping, Coombs test"
+     ],
+     "lx": 380.0,
+     "ly": 73.0
+    },
+    "if": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d7edd2\" x=\"20\" y=\"170\" width=\"220\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Immunofluorescence",
+      "(microscope, flow cytometry)"
+     ],
+     "lx": 130.0,
+     "ly": 198.0
+    },
+    "el": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2e2a8\" x=\"270\" y=\"170\" width=\"220\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "ELISA, Western blot",
+      "(enzyme)"
+     ],
+     "lx": 380.0,
+     "ly": 198.0
+    },
+    "ria": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#e3d5f0\" x=\"520\" y=\"170\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Radioimmunoassay",
+      "(isotope, rarely used)"
+     ],
+     "lx": 620.0,
+     "ly": 198.0
+    }
+   },
+   "arrows": {
+    "prec": [
+     {
+      "t": [
+       20.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "agg": [
+     {
+      "t": [
+       270.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "if": [
+     {
+      "t": [
+       20.0,
+       178.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "el": [
+     {
+      "t": [
+       270.0,
+       178.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "ria": [
+     {
+      "t": [
+       520.0,
+       178.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ]
+   }
+  }
+ },
+ "mcqs": [
+  {
+   "q": "The antigen-antibody bond is:",
+   "options": [
+    "Covalent",
+    "A peptide bond",
+    "A disulfide bond",
+    "Non-covalent"
+   ],
+   "answer": 3,
+   "why": "Ionic, hydrogen, hydrophobic, Van der Waals."
+  },
+  {
+   "q": "With a soluble antigen, immune complexes form a:",
+   "options": [
+    "Gel",
+    "Agglutinate",
+    "Precipitate",
+    "Fluorescence"
+   ],
+   "answer": 2,
+   "why": "Particulate antigens agglutinate."
+  },
+  {
+   "q": "Maximal precipitation occurs in the:",
+   "options": [
+    "Antibody excess zone",
+    "Equivalence zone",
+    "Antigen excess zone",
+    "Absence of antigen"
+   ],
+   "answer": 1,
+   "why": "Largest complexes."
+  },
+  {
+   "q": "Which technique measures antigen concentration by ring diameter?",
+   "options": [
+    "Western blot",
+    "Ouchterlony",
+    "Mancini",
+    "Coombs"
+   ],
+   "answer": 2,
+   "why": "Compared with standards."
+  },
+  {
+   "q": "Double immunodiffusion is the:",
+   "options": [
+    "Ouchterlony technique",
+    "ELISA",
+    "Mancini technique",
+    "Oudin technique"
+   ],
+   "answer": 0,
+   "why": "Antigen and antibody diffuse toward each other."
+  },
+  {
+   "q": "ABO blood grouping is based on:",
+   "options": [
+    "RIA",
+    "Western blot",
+    "Precipitation",
+    "Direct agglutination"
+   ],
+   "answer": 3,
+   "why": "Anti-A and anti-B sera."
+  },
+  {
+   "q": "The Coombs test is used in:",
+   "options": [
+    "Measuring IgE",
+    "Haemolytic anaemias",
+    "Tuberculosis",
+    "HIV confirmation"
+   ],
+   "answer": 1,
+   "why": "Anti-globulin test."
+  },
+  {
+   "q": "Labelled techniques are:",
+   "options": [
+    "More sensitive (ng to pg/mL)",
+    "Less sensitive",
+    "Obsolete",
+    "Only visible by eye"
+   ],
+   "answer": 0,
+   "why": "Fluorescence, enzymes, isotopes."
+  },
+  {
+   "q": "Immunofluorescence is read with a:",
+   "options": [
+    "Naked eye",
+    "Spectrophotometer",
+    "Gamma counter",
+    "Fluorescence microscope"
+   ],
+   "answer": 3,
+   "why": "Under 3 hours."
+  },
+  {
+   "q": "In ELISA, the signal comes from:",
+   "options": [
+    "An enzyme label",
+    "A fluorochrome only",
+    "A radioactive isotope",
+    "Precipitation"
+   ],
+   "answer": 0,
+   "why": "Read as optical density."
+  },
+  {
+   "q": "Detecting anti-HIV antibodies uses which ELISA format?",
+   "options": [
+    "Indirect",
+    "None",
+    "Precipitation",
+    "Direct"
+   ],
+   "answer": 0,
+   "why": "Direct ELISA detects antigen."
+  },
+  {
+   "q": "In Western blot, proteins are transferred onto:",
+   "options": [
+    "Agar",
+    "Nitrocellulose membrane",
+    "Latex",
+    "Glass slide"
+   ],
+   "answer": 1,
+   "why": "After gel electrophoresis."
+  },
+  {
+   "q": "Why is a positive HIV ELISA confirmed by Western blot?",
+   "options": [
+    "ELISA detects only antigen",
+    "Western blot is cheaper",
+    "ELISA is too slow",
+    "ELISA can give false positives"
+   ],
+   "answer": 3,
+   "why": "Confirmation test."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "prec",
+   "options": [
+    "Immunofluorescence",
+    "Precipitation",
+    "Agglutination",
+    "Immunoenzymology"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: Precipitation. Soluble antigen and antibody form a visible precipitate, maximal in the equivalence zone; done in liquid or gel."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "agg",
+   "options": [
+    "Immunoenzymology",
+    "Agglutination",
+    "Precipitation",
+    "Radioimmunoassay"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: Agglutination. Antigens on particles (red cells, bacteria, latex) are linked into clumps; direct (ABO) or via anti-globulin (Coombs)."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "if",
+   "options": [
+    "Precipitation",
+    "Radioimmunoassay",
+    "Immunofluorescence",
+    "Agglutination"
+   ],
+   "answer": 2,
+   "why": "The arrow points to: Immunofluorescence. Fluorochrome-labelled antibody; read under a fluorescence microscope or by flow cytometry; under 3 hours."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "el",
+   "options": [
+    "Immunofluorescence",
+    "Agglutination",
+    "Immunoenzymology",
+    "Precipitation"
+   ],
+   "answer": 2,
+   "why": "The arrow points to: Immunoenzymology. Enzyme converts a colourless substrate into a coloured product read as optical density; includes ELISA and Western blot."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "ria",
+   "options": [
+    "Immunoenzymology",
+    "Immunofluorescence",
+    "Agglutination",
+    "Radioimmunoassay"
+   ],
+   "answer": 3,
+   "why": "The arrow points to: Radioimmunoassay. Radioactive isotope label; rarely used today."
+  }
+ ],
+ "cards": [
+  {
+   "id": "x0",
+   "type": "text",
+   "front": "Nature of the Ag-Ab reaction?",
+   "back": "Epitope-paratope binding with steric complementarity; non-covalent forces; forms an immune complex."
+  },
+  {
+   "id": "x1",
+   "type": "text",
+   "front": "Classification of Ag-Ab techniques?",
+   "back": "Directly visible: precipitation, agglutination. Labelled: immunofluorescence, immunoenzymology (ELISA, Western blot), radioimmunology."
+  },
+  {
+   "id": "x2",
+   "type": "text",
+   "front": "Precipitation techniques in gel?",
+   "back": "Oudin (simple), Mancini (radial, quantitative), Ouchterlony (double), immunoelectrophoresis."
+  },
+  {
+   "id": "x3",
+   "type": "text",
+   "front": "Agglutination examples?",
+   "back": "Direct: ABO grouping. Artificial: Coombs test (autoimmune haemolysis, transfusion, newborn haemolytic disease)."
+  },
+  {
+   "id": "x4",
+   "type": "text",
+   "front": "Immunofluorescence?",
+   "back": "Fluorochrome label; direct or indirect; fluorescence microscope or flow cytometry; < 3 h."
+  },
+  {
+   "id": "x5",
+   "type": "text",
+   "front": "ELISA formats?",
+   "back": "Direct (antigen), indirect (antibody, e.g. anti-HIV), sandwich; enzyme + substrate → optical density."
+  },
+  {
+   "id": "x6",
+   "type": "text",
+   "front": "Western blot steps?",
+   "back": "SDS denaturation, PAGE separation by mass, transfer to nitrocellulose, patient serum, enzyme-linked secondary antibody, substrate."
+  },
+  {
+   "id": "x7",
+   "type": "text",
+   "front": "HIV testing algorithm?",
+   "back": "ELISA, repeat ELISA if positive, then Western blot confirmation (ELISA false positives)."
+  },
+  {
+   "id": "img-prec",
+   "type": "image",
+   "target": "prec",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Precipitation. Soluble antigen and antibody form a visible precipitate, maximal in the equivalence zone; done in liquid or gel."
+  },
+  {
+   "id": "img-agg",
+   "type": "image",
+   "target": "agg",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Agglutination. Antigens on particles (red cells, bacteria, latex) are linked into clumps; direct (ABO) or via anti-globulin (Coombs)."
+  },
+  {
+   "id": "img-if",
+   "type": "image",
+   "target": "if",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Immunofluorescence. Fluorochrome-labelled antibody; read under a fluorescence microscope or by flow cytometry; under 3 hours."
+  },
+  {
+   "id": "img-el",
+   "type": "image",
+   "target": "el",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Immunoenzymology. Enzyme converts a colourless substrate into a coloured product read as optical density; includes ELISA and Western blot."
+  },
+  {
+   "id": "img-ria",
+   "type": "image",
+   "target": "ria",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Radioimmunoassay. Radioactive isotope label; rarely used today."
+  }
+ ],
+ "deeper": [
+  {
+   "title": "Why HIV screening uses two different tests",
+   "html": "<p>ELISA is chosen for screening because it is sensitive and cheap: it rarely misses an infected person, but some cross-reacting antibodies give false positives. Western blot is more specific: it shows which viral proteins the antibodies recognise, separated by size, so a true infection gives a characteristic pattern of bands. Combining a sensitive screen with a specific confirmation avoids wrongly telling someone they are infected.</p><p class='src'>Source: the tutorial's ELISA and Western blot slides.</p>"
+  }
+ ],
+ "resources": [
+  {
+   "title": "ELISA (NCBI StatPearls)",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK555922/",
+   "kind": "Book",
+   "why": "Principles and formats of ELISA.",
+   "note": ""
+  },
+  {
+   "title": "Coombs test (MedlinePlus)",
+   "url": "https://medlineplus.gov/ency/article/003344.htm",
+   "kind": "Article",
+   "why": "Direct and indirect antiglobulin tests.",
+   "note": ""
+  }
+ ],
+ "checks": [],
+ "sources": [
+  {
+   "name": "ELISA (NCBI StatPearls)",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK555922/"
+  },
+  {
+   "name": "Coombs test (MedlinePlus)",
+   "url": "https://medlineplus.gov/ency/article/003344.htm"
   }
  ],
  "verified": "22 Sep 2026"
