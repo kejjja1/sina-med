@@ -361,8 +361,50 @@ SINA.subjects.push(
         { id: "chem1-solutions", title: "Chemistry in solutions" }
       ]}
     ]},
-  { id: "anat1", name: "Anatomy 1", semester: "S1", program: "y1-anglo", status: "planned", count: 10, blurb: "" },
-  { id: "biochem1", name: "Biochemistry", semester: "S1", program: "y1-anglo", status: "planned", count: 4, blurb: "" }
+  { id: "anat1", name: "Anatomy 1", semester: "S1", program: "y1-anglo", status: "live",
+    blurb: "Introduction to anatomy, the upper limb and the thorax.",
+    groups: [
+      { name: "Introduction", items: [
+        { id: "anat1-intro", title: "Introduction to anatomy" }
+      ]},
+      { name: "Upper limb", items: [
+        { id: "anat1-upper-skeleton", title: "The skeleton of the upper limb" },
+        { id: "anat1-shoulder", title: "The shoulder: pectoral region and axilla" },
+        { id: "anat1-scapular", title: "The scapular region and deltoid" },
+        { id: "anat1-arm", title: "The arm: compartments and brachial canal" },
+        { id: "anat1-cubital-fold", title: "The cubital fold (antecubital fossa)" },
+        { id: "anat1-forearm", title: "Topographic anatomy of the forearm" },
+        { id: "anat1-hand-muscles", title: "Muscular compartments of the hand" },
+        { id: "anat1-hand-vessels-nerves", title: "Vascularisation and innervation of the hand" }
+      ]},
+      { name: "Thorax", items: [
+        { id: "anat1-thorax-overview", title: "Thorax part 1: overview" },
+        { id: "anat1-thorax-osteology", title: "Thorax part 2: osteology" },
+        { id: "anat1-thorax-myology", title: "Thorax part 3: myology" },
+        { id: "anat1-thorax-walls", title: "Thorax part 4: thoracic walls" },
+        { id: "anat1-heart", title: "Thorax part 5: the heart" },
+        { id: "anat1-aorta", title: "Thorax part 6: the aorta" },
+        { id: "anat1-thorax-veins", title: "Thorax part 7: veins and lymphatics" },
+        { id: "anat1-respiratory", title: "Thorax part 8: respiratory system" }
+      ]}
+    ]},
+  { id: "biochem1", name: "Biochemistry", semester: "S1", program: "y1-anglo", status: "live",
+    blurb: "Structural and metabolic biochemistry.",
+    groups: [
+      { name: "Structural biochemistry", items: [
+        { id: "biochem1-amino-acids", title: "Introduction to biochemistry and amino acids" },
+        { id: "biochem1-proteins", title: "Peptides and proteins" },
+        { id: "biochem1-enzymes", title: "Enzymes and coenzymes" },
+        { id: "biochem1-carbohydrates", title: "Carbohydrates: structure and classification" },
+        { id: "biochem1-lipids", title: "Lipids: structure, classes and lipoproteins" },
+        { id: "biochem1-nucleotides", title: "Nucleotides and nucleic acids" }
+      ]},
+      { name: "Metabolic biochemistry", items: [
+        { id: "biochem1-carb-metabolism", title: "Carbohydrate metabolism" },
+        { id: "biochem1-lipid-metabolism", title: "Lipid metabolism" },
+        { id: "biochem1-aa-metabolism", title: "Amino acid metabolism and the urea cycle" }
+      ]}
+    ]},
 );
 
 /* Years and programs shown in the selector (top left). Subjects without a "program"

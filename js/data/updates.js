@@ -4,6 +4,12 @@ window.SINA = window.SINA || { subjects: [], lectures: {} };
 SINA.updated = "23 September 2026";
 SINA.updates = [
   { date: "25 September 2026", items: [
+    "1st Year Anglo: Anatomy 1 has started with the whole upper limb (8 lectures: skeleton, shoulder and axilla, scapular region, arm, cubital fold, forearm, hand muscles, hand vessels and nerves). The thorax is next."
+  ]},
+  { date: "25 September 2026", items: [
+    "1st Year Anglo: Biochemistry is complete (9 lectures: amino acids, proteins, enzymes, carbohydrates, lipids, nucleotides, and carbohydrate, lipid and amino acid metabolism)."
+  ]},
+  { date: "25 September 2026", items: [
     "1st Year Anglo: Physics is complete (13 lectures: units, states of matter, water and solutions, gases, energetics, viscosity, migration, membranes, osmosis, fluid transfers, circulation, respiration, acid-base balance)."
   ]},
   { date: "25 September 2026", items: [
