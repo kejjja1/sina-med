@@ -490,7 +490,7 @@
     }
     var html = '<div class="wrap wide"><section class="hero"><div><h1>Study each lecture, then test yourself on it.</h1>' +
       '<p class="lede">Summaries, key points, questions, flashcards and extra reading for every lecture of the promo. Each page is built from the lecture slides and checked against other references.</p>' +
-      '<div class="row">' + (progSubjects().some(function (x) { return x.groups; }) ? '<a class="btn primary" href="#/lecture/' + firstLecture() + '">Try the first lecture</a>' : "") + '<button class="btn" type="button" id="browse-subjects">Browse subjects</button><a class="btn" href="#/papers">Past papers</a><a class="btn" href="#/apps">Useful apps</a></div>' +
+      '<div class="row">' + (progSubjects().some(function (x) { return x.groups; }) ? '<a class="btn primary" href="#/lecture/' + firstLecture() + '">Try the first lecture</a>' : "") + (progMidterms().length ? '<a class="btn midbtn" href="#/midterm">Upcoming midterm lectures</a>' : "") + '<button class="btn" type="button" id="browse-subjects">Browse subjects</button><a class="btn" href="#/papers">Past papers</a><a class="btn" href="#/apps">Useful apps</a></div>' +
       (S.updated ? '<p class="meta" style="margin-top:1.4rem">Last updated ' + esc(S.updated) + '. <a href="#/updates">What\'s new' + (newBadge() ? ' <span class="badge">new</span>' : "") + "</a>.</p>" : "") + '</div>' +
       '</section>' +
       '<h2 id="subjects">' + esc(T("home.subjects")) + ' <span class="prog-tag">' + esc(progName()) + '</span></h2>' +
@@ -505,15 +505,45 @@
     });
   }
 
+
+  /* Midterms */
+  function progMidterms() { return (S.midterms || []).filter(function (m) { return (m.program || S.DEFAULT_PROGRAM) === PROG; }); }
+  function onMidterm(id) { return (S.midterms || []).some(function (m) { return m.groups.some(function (g) { return g.items.indexOf(id) >= 0; }); }); }
+  function lectureTitle(id) {
+    var t = "";
+    S.subjects.forEach(function (s) { (s.groups || []).forEach(function (g) { g.items.forEach(function (it) { if (it.id === id) t = it.title; }); }); });
+    return t || (S.lectures[id] ? S.lectures[id].title : id);
+  }
+  function midtermView() {
+    var ms = progMidterms();
+    var html = '<div class="wrap"><p class="crumbs"><a href="#/">Home</a> / Upcoming midterm lectures</p><h1>Upcoming midterm lectures</h1>';
+    if (!ms.length) html += "<p>No midterm is listed for this year yet.</p>";
+    ms.forEach(function (m) {
+      var sb = subjectById(m.subject), n = 0;
+      m.groups.forEach(function (g) { n += g.items.length; });
+      html += '<section class="midterm"><h2 class="group-title">' + esc(m.title) + '</h2><p class="meta">' + n + " lectures" + (sb ? ' from <a href="#/subject/' + sb.id + '">' + esc(sb.name) + "</a>" : "") + ". Only these lectures are on this midterm.</p>";
+      m.groups.forEach(function (g) {
+        html += '<h3 class="mid-group">' + esc(g.name) + '</h3><ul class="lec-list">' + g.items.map(function (id) {
+          return S.lectures[id]
+            ? '<li class="mid"><a href="#/lecture/' + id + '"><span>' + esc(lectureTitle(id)) + '</span><span class="pill mid">On the midterm</span></a></li>'
+            : '<li class="mid"><span class="soon"><span>' + esc(lectureTitle(id)) + '</span><span class="pill muted">Coming</span></span></li>';
+        }).join("") + "</ul>";
+      });
+      html += "</section>";
+    });
+    setView(html + "</div>", "Upcoming midterm lectures");
+  }
   function subjectView(id) {
     var s = subjectById(id);
     if (!s || !s.groups) return notFound();
     var html = '<div class="wrap"><p class="crumbs"><a href="#/">Home</a> / ' + esc(s.name) + "</p><h1>" + esc(s.name) + "</h1>" +
-      '<p class="meta">' + readyCount(s) + " of " + totalCount(s) + " lectures ready. " + esc(s.blurb) + '</p><p><a href="#/papers/' + s.id + '">Past papers for ' + esc(s.name) + "</a></p>";
+      '<p class="meta">' + readyCount(s) + " of " + totalCount(s) + " lectures ready. " + esc(s.blurb) + '</p><p><a href="#/papers/' + s.id + '">Past papers for ' + esc(s.name) + "</a>" + (progMidterms().some(function (m) { return m.subject === s.id; }) ? ' &middot; <a class="midlink" href="#/midterm">Upcoming midterm lectures</a>' : "") + "</p>";
     s.groups.forEach(function (g) {
       html += '<h2 class="group-title">' + esc(g.name) + '</h2><ul class="lec-list">' + g.items.map(function (it) {
         return S.lectures[it.id]
-          ? '<li><a href="#/lecture/' + it.id + '"><span>' + esc(it.title) + '</span><span class="pill">Ready</span></a></li>'
+          ? (onMidterm(it.id)
+            ? '<li class="mid"><a href="#/lecture/' + it.id + '"><span>' + esc(it.title) + '</span><span class="pill mid">On the midterm</span></a></li>'
+            : '<li><a href="#/lecture/' + it.id + '"><span>' + esc(it.title) + '</span><span class="pill">Ready</span></a></li>')
           : '<li><span class="soon"><span>' + esc(it.title) + '</span><span class="pill muted">Coming</span></span></li>';
       }).join("") + "</ul>";
     });
@@ -538,7 +568,7 @@
     tab = tab || "summary";
     if (!TABS.some(function (t) { return t[0] === tab; })) tab = "summary";
     var html = '<div class="wrap"><p class="crumbs"><a href="#/">Home</a> / <a href="#/subject/' + sub.id + '">' + esc(sub.name) + "</a></p><h1>" + esc(lec.title) + "</h1>" +
-      '<p class="meta">Source: ' + (lec.sourceUrl ? '<a class="srclink" href="' + esc(lec.sourceUrl) + '" target="_blank" rel="noopener">' + esc(lec.sourceFile) + "</a>" : esc(lec.sourceFile)) + "</p>" +
+      sourceLine(lec) +
       '<div class="tabs" role="tablist" aria-label="Lecture sections">' + TABS.map(function (t) {
         return '<button class="tab" role="tab" id="tab-' + t[0] + '" aria-selected="' + (t[0] === tab) + '" data-tab="' + t[0] + '">' + t[1] + "</button>";
       }).join("") + '</div><div id="panel" role="tabpanel" aria-labelledby="tab-' + tab + '"></div>' + psaHTML() + "</div>";
@@ -563,6 +593,21 @@
   }
 
   /* ---------- reference pictures: a small carousel, broken pictures drop out ---------- */
+
+  /* Source slides: Drive preview can fail on big or heavy files (often PowerPoints),
+     so every Drive source also gets a direct download link. */
+  function driveId(u) { var m = /drive\.google\.com\/(?:file\/d\/|open\?id=)([\w-]{20,})/.exec(u || ""); return m ? m[1] : ""; }
+  function sourceLine(lec) {
+    if (!lec.sourceUrl) return '<p class="meta">Source: ' + esc(lec.sourceFile) + "</p>";
+    var id = driveId(lec.sourceUrl), ppt = /\.pptx?\b/i.test(lec.sourceFile || "");
+    var h = '<p class="meta srcline">Source: <a class="srclink" href="' + esc(lec.sourceUrl) + '" target="_blank" rel="noopener">' + esc(lec.sourceFile) + "</a>";
+    if (id) {
+      h += ' <span class="srcacts"><a class="srcbtn" href="' + esc(lec.sourceUrl) + '" target="_blank" rel="noopener">View ' + (ppt ? "PowerPoint" : "slides") + '</a>' +
+        '<a class="srcbtn" href="https://drive.google.com/uc?export=download&amp;id=' + esc(id) + '" target="_blank" rel="noopener">Download' + (ppt ? " .pptx" : "") + "</a></span>";
+      if (ppt) h += '<span class="srchint">Google Drive sometimes cannot preview large PowerPoints. If the preview does not load, use Download and open it in PowerPoint, Keynote or Google Slides.</span>';
+    }
+    return h + "</p>";
+  }
   function galleryImages(v) { return (v.images && v.images.length ? v.images : (v.image ? [v.image] : [])).filter(function (im) { return im && im.src; }); }
   function galleryHTML(v) {
     var ims = galleryImages(v); if (!ims.length) return "";
@@ -806,15 +851,27 @@
         return '<li><a href="#/paper/' + esc(x.id) + '"><span>' + esc(x.title) + (x.year ? " (" + esc(x.year) + ")" : "") + '</span><span class="pill">' + esc(tags || "Open") + "</span></a></li>";
       }).join("") + "</ul>";
     });
-    if (!any) html += "<p>Past papers will be added here soon.</p>";
-    else if (S.papersFolder && !subjectId) html += '<p class="src" style="margin-top:1.6rem">All the past papers are also in <a href="' + esc(S.papersFolder) + '" target="_blank" rel="noopener">this Google Drive folder</a>.</p>';
+    if (!subjectId) {
+      var others = all.filter(function (x) { return x.program === PROG && !subjectById(x.subject); });
+      var groups = [];
+      others.forEach(function (x) { if (groups.indexOf(x.subject) < 0) groups.push(x.subject); });
+      groups.forEach(function (g) {
+        any = true;
+        html += "<h2>" + esc((S.otherPaperGroups || {})[g] || "Other") + '</h2><ul class="lec-list">' + others.filter(function (x) { return x.subject === g; }).map(function (x) {
+          return '<li><a href="#/paper/' + esc(x.id) + '"><span>' + esc(x.title) + (x.year ? " (" + esc(x.year) + ")" : "") + '</span><span class="pill">Open</span></a></li>';
+        }).join("") + "</ul>";
+      });
+    }
+    var folder = (S.papersFolders || {})[PROG] || (PROG === S.DEFAULT_PROGRAM ? S.papersFolder : "");
+    if (!any) html += "<p>Past papers will be added here soon.</p>" + (folder ? '<p class="src">Meanwhile, see <a href="' + esc(folder) + '" target="_blank" rel="noopener">the Google Drive folder</a>.</p>' : "");
+    else if (folder && !subjectId) html += '<p class="src" style="margin-top:1.6rem">All the past papers are also in <a href="' + esc(folder) + '" target="_blank" rel="noopener">this Google Drive folder</a>.</p>';
     setView(html + "</div>", "Past papers");
   }
   function paperView(id) {
     var x = (S.papers || []).filter(function (q) { return q.id === id; })[0];
     if (!x) return notFound();
     var sb = subjectById(x.subject);
-    var html = '<div class="wrap"><p class="crumbs"><a href="#/">Home</a> / <a href="#/papers/' + x.subject + '">Past papers</a></p><h1>' + esc(x.title) + '</h1><p class="meta">' + esc(sb ? sb.name : "") + (x.year ? ", " + esc(x.year) : "") + (x.session ? ", " + esc(x.session) : "") + "</p>";
+    var html = '<div class="wrap"><p class="crumbs"><a href="#/">Home</a> / <a href="#/papers/' + x.subject + '">Past papers</a></p><h1>' + esc(x.title) + '</h1><p class="meta">' + esc(sb ? sb.name : ((S.otherPaperGroups || {})[x.subject] || "")) + (x.year ? ", " + esc(x.year) : "") + (x.session ? ", " + esc(x.session) : "") + "</p>";
     var links = x.links || (x.pdf ? [{ label: "Open the paper (PDF)", url: x.pdf }] : []);
     if (links.length) html += '<div class="row" style="margin:0 0 1.4rem">' + links.map(function (l, n) { return '<a class="btn' + (n === 0 ? " primary" : "") + '" href="' + esc(l.url) + '" target="_blank" rel="noopener">' + esc(l.label) + "</a>"; }).join("") + "</div>";
     if (x.note) html += '<p class="src">' + esc(x.note) + "</p>";
@@ -902,6 +959,7 @@
     if (parts[0] === "updates") return updatesView();
     if (parts[0] === "apps") return appsView();
     if (parts[0] === "year" && progValid(parts[1])) { setProgram(parts[1], true); location.replace("#/"); return; }
+    if (parts[0] === "midterm") return midtermView();
     if (parts[0] === "papers") return papersView(parts[1]);
     if (parts[0] === "paper") return paperView(parts[1]);
     if (parts[0] === "subject") return subjectView(parts[1]);

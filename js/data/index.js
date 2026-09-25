@@ -445,3 +445,13 @@ SINA.programs = [
 ];
 SINA.DEFAULT_PROGRAM = "y2-anglo";
 SINA.subjects.forEach(function (s) { if (!s.program) s.program = SINA.DEFAULT_PROGRAM; });
+
+/* Upcoming midterms: the lectures listed here get the blue "On the midterm" label
+   and appear on the "Upcoming midterm lectures" page for their year. */
+SINA.midterms = [
+  { id: "anat3-midterm", program: "y2-anglo", subject: "anat3", title: "Anatomy 3 midterm",
+    groups: [
+      { name: "The eye", items: ["anat3-orbital-appendages", "anat3-eyeball-1", "anat3-ocular-muscles", "anat3-ocular-clinical"] },
+      { name: "The face", items: ["anat3-face-osteology", "anat3-blood-supply", "anat3-facial-muscles"] }
+    ]}
+];
