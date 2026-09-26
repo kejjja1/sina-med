@@ -18,7 +18,11 @@ SINA.updates = [
     "Every lecture's Source line now has View and Download buttons. Google Drive often cannot preview large PowerPoints; if the preview fails, Download opens the file directly.",
     "New Upcoming midterm lectures button (2nd Year): lists the 7 lectures on the Anatomy 3 midterm, the 4 eye lectures and the first 3 face lectures. On the Anatomy 3 page their label reads On the midterm in blue instead of Ready.",
     "New menu layout: Browse subjects, Past papers and Useful apps are now categories in the side menu. Past papers lists each subject with its number of papers. The home page has an Open the menu button.",
-    "The menu is organised into four categories: Upcoming midterm lectures, Browse subjects, Past papers and Useful apps. It still opens as an overlay and never moves the page."
+    "The menu is organised into four categories: Upcoming midterm lectures, Browse subjects, Past papers and Useful apps. It still opens as an overlay and never moves the page.",
+    "The year menu now shows only 1st Year Anglo and 2nd Year Anglo; Franco and 3rd Year will return when there is content for them.",
+    "Anatomy 2 (1st Year, Semester 2) is complete with 12 lectures: abdominal wall and inguinal canal, oesophagus and stomach, small intestine, colon and appendix, liver, biliary system, pancreas, spleen, abdominal vessels, lymphatics and innervation, pelvic vessels and nerves, perineum and pelvic floor.",
+    "Anatomy 1: new lecture on the surface anatomy and joints of the upper limb (shoulder, elbow and wrist).",
+    "Hematology (1st Year, Semester 2) has started: introduction, haematopoiesis, red blood cells, iron metabolism, B9 and B12 metabolism, complete blood count, anaemias, white blood cells (parts I and II), introduction to haemostasis, primary haemostasis, coagulation."
   ]},
   { date: "24 September 2026", items: [
     "1st Year Anglo has started: Medical Terminology is live with its first three lectures (introduction to word parts, cardiovascular and respiratory terms). The other Semester 1 subjects are listed and on their way.",

@@ -375,7 +375,8 @@ SINA.subjects.push(
         { id: "anat1-cubital-fold", title: "The cubital fold (antecubital fossa)" },
         { id: "anat1-forearm", title: "Topographic anatomy of the forearm" },
         { id: "anat1-hand-muscles", title: "Muscular compartments of the hand" },
-        { id: "anat1-hand-vessels-nerves", title: "Vascularisation and innervation of the hand" }
+        { id: "anat1-hand-vessels-nerves", title: "Vascularisation and innervation of the hand" },
+        { id: "anat1-surface-joints", title: "Surface anatomy and joints of the upper limb" }
       ]},
       { name: "Thorax", items: [
         { id: "anat1-thorax-overview", title: "Thorax part 1: overview" },
@@ -427,8 +428,55 @@ SINA.subjects.push(
         { id: "immuno1-testing", title: "Immunological testing" }
       ]}
     ]},
-  { id: "anat2", name: "Anatomy 2", semester: "S2", program: "y1-anglo", status: "planned", count: 10, blurb: "" },
-  { id: "hemato1", name: "Hematology", semester: "S2", program: "y1-anglo", status: "planned", count: 8, blurb: "" },
+  { id: "anat2", name: "Anatomy 2", semester: "S2", program: "y1-anglo", status: "live",
+    blurb: "Abdomen and pelvis: wall, digestive organs, vessels, nerves, perineum.",
+    groups: [
+      { name: "Abdominal wall and digestive tract", items: [
+        { id: "anat2-abdominal-wall", title: "Abdominal wall and inguinal canal" },
+        { id: "anat2-stomach-oesophagus", title: "Oesophagus and stomach" },
+        { id: "anat2-small-intestine", title: "The small intestine" },
+        { id: "anat2-colon", title: "The colon and appendix" }
+      ]},
+      { name: "Liver, pancreas and spleen", items: [
+        { id: "anat2-liver", title: "The liver" },
+        { id: "anat2-biliary", title: "The biliary system" },
+        { id: "anat2-pancreas", title: "The pancreas" },
+        { id: "anat2-spleen", title: "The spleen" }
+      ]},
+      { name: "Vessels, nerves and pelvis", items: [
+        { id: "anat2-vessels", title: "Blood vessels of the abdomen" },
+        { id: "anat2-lymph-nerves", title: "Lymphatics and innervation of the abdomen" },
+        { id: "anat2-pelvic-vessels", title: "Pelvic vessels, lymphatics and autonomic nerves" },
+        { id: "anat2-perineum", title: "Perineum and pelvic floor" }
+      ]}
+    ]},
+  { id: "hemato1", name: "Hematology", semester: "S2", program: "y1-anglo", status: "live",
+    blurb: "Blood cells, haematopoiesis, anaemias, haemostasis and transfusion.",
+    groups: [
+      { name: "Blood cells and haematopoiesis", items: [
+        { id: "hemato1-intro", title: "Introduction to haematology" },
+        { id: "hemato1-haematopoiesis", title: "Haematopoiesis" },
+        { id: "hemato1-rbc", title: "Red blood cells and erythropoiesis" },
+        { id: "hemato1-iron", title: "Iron metabolism" },
+        { id: "hemato1-b9-b12", title: "Vitamin B9 and B12 metabolism" },
+        { id: "hemato1-cbc", title: "The complete blood count" },
+        { id: "hemato1-anaemias", title: "Anaemias" },
+        { id: "hemato1-wbc-1", title: "White blood cells, part I" },
+        { id: "hemato1-wbc-2", title: "White blood cells, part II" }
+      ]},
+      { name: "Haemostasis", items: [
+        { id: "hemato1-haemostasis", title: "Introduction to haemostasis" },
+        { id: "hemato1-primary", title: "Primary haemostasis" },
+        { id: "hemato1-coagulation", title: "Coagulation (secondary haemostasis)" },
+        { id: "hemato1-platelets", title: "Thrombocytopenia and thrombocytosis" },
+        { id: "hemato1-bleeding", title: "Approach to the bleeding patient" }
+      ]},
+      { name: "Clinical haematology", items: [
+        { id: "hemato1-transfusion", title: "Blood groups and transfusion" },
+        { id: "hemato1-splenomegaly", title: "Splenomegaly" },
+        { id: "hemato1-lymphadenopathy", title: "Lymphadenopathy" }
+      ]}
+    ]},
   { id: "embryo1", name: "Embryology", semester: "S2", program: "y1-anglo", status: "planned", count: 6, blurb: "" },
   { id: "histo1", name: "Histology", semester: "S2", program: "y1-anglo", status: "planned", count: 6, blurb: "" },
   { id: "bacterio1", name: "Bacteriology", semester: "S2", program: "y1-anglo", status: "planned", count: 8, blurb: "" },
@@ -439,10 +487,11 @@ SINA.subjects.push(
 /* Years and programs shown in the selector (top left). Subjects without a "program"
    field belong to DEFAULT_PROGRAM. To add 1st-year subjects, give them program: "y1-anglo" etc. */
 SINA.programs = [
-  { id: "y1-anglo" }, { id: "y1-franco" },
-  { id: "y2-anglo" }, { id: "y2-franco" },
-  { id: "y3-anglo" }
+  { id: "y1-anglo" },
+  { id: "y2-anglo" }
 ];
+/* 1st and 2nd Year Franco and 3rd Year Anglo were removed until there is content for them.
+   To bring one back, add it to the list above (its name is already in js/i18n.js). */
 SINA.DEFAULT_PROGRAM = "y2-anglo";
 SINA.subjects.forEach(function (s) { if (!s.program) s.program = SINA.DEFAULT_PROGRAM; });
 

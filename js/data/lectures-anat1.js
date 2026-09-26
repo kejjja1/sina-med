@@ -1,4 +1,4 @@
-/* anat1: 16 lectures, merged for upload. Edit the source files, not this one. */
+/* anat1: 17 lectures, merged for upload. Edit the source files, not this one. */
 window.SINA = window.SINA || {subjects:[], lectures:{}};
 SINA.lectures["anat1-upper-skeleton"] = {
  "id": "anat1-upper-skeleton",
@@ -7936,6 +7936,452 @@ SINA.lectures["anat1-intro"] = {
   {
    "name": "Anatomical planes (Kenhub)",
    "url": "https://www.kenhub.com/en/library/anatomy/anatomical-planes-and-directions"
+  }
+ ],
+ "verified": "22 Sep 2026"
+};
+window.SINA = window.SINA || {subjects:[], lectures:{}};
+SINA.lectures["anat1-surface-joints"] = {
+ "id": "anat1-surface-joints",
+ "subject": "anat1",
+ "group": "Upper limb",
+ "title": "Surface anatomy and joints of the upper limb",
+ "sourceFile": "Surface anatomy of the upper limb (English handout) (Anatomy 1, Pr. B. Zryouil)",
+ "sourceUrl": "https://drive.google.com/file/d/138lvYmGhp4_9Tpg0fHC37sMPiFLbqN6w/view?usp=drivesdk",
+ "buildNote": "<strong>Built from the lecture slides.</strong> Slides that only show pictures are covered in outline. If your professor says something different, trust your professor.",
+ "summary": [
+  {
+   "id": "s0",
+   "title": "The big picture",
+   "html": "<p>The upper limb has five topographical regions: <strong>shoulder, arm, elbow, forearm and hand</strong>. Surface anatomy lets you locate bones, muscles, pulses and veins by sight and touch, and recognise deformities after trauma. This handout also describes the three main joints. It is a machine translation from French; the terms below are corrected.</p>"
+  },
+  {
+   "id": "s1",
+   "title": "Surface anatomy",
+   "html": "<p><strong>Shoulder</strong>: the rounded 'stump' is the <strong>deltoid</strong>; above it the lateral clavicle and acromioclavicular joint. The clavicle separates the supraclavicular fossa from the pectoral region, which is divided from the deltoid by the <strong>deltopectoral groove</strong> (this disappears in shoulder dislocation). Behind, the <strong>spine of the scapula</strong> runs obliquely to the acromion, between the supraspinous and infraspinous fossae. Below (arm abducted), the <strong>axilla</strong> lies between the pectoralis major in front and latissimus dorsi behind. <strong>Elbow</strong>: in front, three projections (biceps in the middle, epicondylar muscle masses on each side) separated by the <strong>medial and lateral bicipital grooves</strong>; the <strong>brachial pulse</strong> is felt in the medial groove, and the thin skin shows the <strong>'M' venous network</strong>, the preferred site for injections and blood tests. Behind, the <strong>olecranon</strong> and the two <strong>epicondyles</strong> form an <strong>isosceles triangle with the elbow flexed at 90°</strong> and a <strong>straight line in extension</strong>; this relationship is altered in elbow dislocation. <strong>Wrist</strong>: in front, the tendons of flexor carpi ulnaris (medial), palmaris longus and flexor carpi radialis, and brachioradialis (lateral); the <strong>radial pulse</strong> is felt in the groove between <strong>FCR and brachioradialis</strong>; behind, the ulnar head is prominent. <strong>Hand</strong>: palm with a central hollow, the convex <strong>thenar</strong> eminence and the smaller <strong>hypothenar</strong> eminence; the digitopalmar crease lies 10-15 mm below the MCP joint, the PIP crease is double and the DIP crease single. On the back, the <strong>anatomical snuffbox</strong> at the base of the thumb is bounded by <strong>extensor pollicis longus</strong> medially and <strong>extensor pollicis brevis</strong> and <strong>abductor pollicis longus</strong> laterally.</p>"
+  },
+  {
+   "id": "s2",
+   "title": "Joints",
+   "html": "<p>A <strong>synovial joint</strong> has cartilage-covered surfaces, a capsule and ligaments, and a synovial membrane secreting synovial fluid (sometimes with fibrocartilage). <strong>Shoulder (scapulohumeral)</strong>: humeral head and glenoid cavity deepened by the <strong>glenoid labrum</strong>; a very lax capsule reinforced in front by the <strong>coracohumeral</strong> and <strong>superior, middle and inferior glenohumeral ligaments</strong>; <strong>three degrees of freedom</strong>: flexion (antepulsion, 180°) and extension (retropulsion, 50°), abduction (180°) and adduction, internal and external rotation, combined in circumduction. Little bony interlocking and great mobility explain frequent <strong>dislocations, mostly anterior</strong>; X-rays show bones and joint space but not capsule, ligaments or cartilage. <strong>Elbow</strong>: three joints in one capsule: <strong>humero-ulnar</strong> (trochlea and trochlear notch), <strong>humeroradial</strong> (capitulum and radial head) and <strong>proximal radio-ulnar</strong>, reinforced by the medial and lateral collateral ligaments; <strong>one degree of freedom</strong>: flexion (about 130°) and extension; it also takes part in <strong>pronation-supination</strong> (about 180° in total) with the radio-ulnar joints. <strong>Wrist (radiocarpal)</strong>: distal radius and the triangular fibrocartilage above the <strong>scaphoid, lunate and triquetrum</strong>; <strong>two degrees of freedom</strong>: flexion and extension (about 90° each) and radial (about 15°) and ulnar (about 45°) deviation.</p>"
+  }
+ ],
+ "exam": [
+  "Five regions: shoulder, arm, elbow, forearm, hand.",
+  "Deltopectoral groove disappears in shoulder dislocation.",
+  "Brachial pulse in the medial bicipital groove; 'M' veins for venepuncture.",
+  "Olecranon + epicondyles: triangle at 90° flexion, line in extension.",
+  "Radial pulse between FCR and brachioradialis tendons.",
+  "Snuffbox: EPL medial; EPB and APL lateral.",
+  "Shoulder: 3 degrees of freedom; lax capsule; anterior dislocations common.",
+  "Glenohumeral ligaments + coracohumeral ligament reinforce the front.",
+  "Elbow: humero-ulnar, humeroradial, proximal radio-ulnar; 1 degree (flexion-extension).",
+  "Wrist: radius + TFCC with scaphoid, lunate, triquetrum; 2 degrees."
+ ],
+ "visual": {
+  "kind": "model",
+  "intro": "",
+  "figure": {
+   "viewBox": "0 0 760 420",
+   "alt": "Upper limb joints and their freedom",
+   "caption": "Degrees of freedom and main ranges from the handout. Schematic drawn for this site.",
+   "base": "<defs><marker id=\"ah\" markerWidth=\"10\" markerHeight=\"8\" refX=\"9\" refY=\"4\" orient=\"auto\"><path d=\"M0,0 L10,4 L0,8 Z\" fill=\"#8a8a8a\"/></marker></defs>",
+   "parts": {
+    "sh": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2d7cf\" x=\"20\" y=\"40\" width=\"340\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Shoulder (3 degrees): flexion 180°,",
+      "extension 50°, abduction 180°, rotations"
+     ],
+     "lx": 190.0,
+     "ly": 68.0
+    },
+    "el": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#cfe3f2\" x=\"400\" y=\"40\" width=\"320\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Elbow (1 degree): flexion 130°;",
+      "pronation-supination 180°"
+     ],
+     "lx": 560.0,
+     "ly": 68.0
+    },
+    "wr": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d7edd2\" x=\"20\" y=\"170\" width=\"340\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Wrist (2 degrees): flexion 90°, extension 90°,",
+      "radial 15°, ulnar 45° deviation"
+     ],
+     "lx": 190.0,
+     "ly": 198.0
+    },
+    "sn": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2e2a8\" x=\"400\" y=\"170\" width=\"320\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Snuffbox: EPL (medial) vs EPB + APL",
+      "(lateral); radial pulse: FCR / BR"
+     ],
+     "lx": 560.0,
+     "ly": 198.0
+    }
+   },
+   "arrows": {
+    "sh": [
+     {
+      "t": [
+       20.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "el": [
+     {
+      "t": [
+       400.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "wr": [
+     {
+      "t": [
+       20.0,
+       178.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "sn": [
+     {
+      "t": [
+       400.0,
+       178.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ]
+   }
+  }
+ },
+ "mcqs": [
+  {
+   "q": "The rounded 'stump' of the shoulder is formed by the:",
+   "options": [
+    "Supraspinatus",
+    "Trapezius",
+    "Deltoid",
+    "Pectoralis major"
+   ],
+   "answer": 2,
+   "why": "Lies over the humeral head."
+  },
+  {
+   "q": "Which surface sign disappears in shoulder dislocation?",
+   "options": [
+    "Olecranon triangle",
+    "Radial pulse",
+    "Deltopectoral groove",
+    "Snuffbox"
+   ],
+   "answer": 2,
+   "why": "The rounded contour flattens."
+  },
+  {
+   "q": "The brachial pulse is felt in the:",
+   "options": [
+    "Olecranon fossa",
+    "Snuffbox",
+    "Lateral bicipital groove",
+    "Medial bicipital groove"
+   ],
+   "answer": 3,
+   "why": "At the elbow crease."
+  },
+  {
+   "q": "With the elbow flexed at 90°, the olecranon and epicondyles form a:",
+   "options": [
+    "Isosceles triangle",
+    "Square",
+    "Straight line",
+    "Circle"
+   ],
+   "answer": 0,
+   "why": "A straight line in extension."
+  },
+  {
+   "q": "The radial pulse is palpated between the tendons of:",
+   "options": [
+    "APL and EPB",
+    "FCR and brachioradialis",
+    "EPL and EPB",
+    "FCU and PL"
+   ],
+   "answer": 1,
+   "why": "Pulse groove."
+  },
+  {
+   "q": "The medial border of the anatomical snuffbox is the tendon of:",
+   "options": [
+    "Extensor pollicis longus",
+    "Extensor pollicis brevis",
+    "Abductor pollicis longus",
+    "Flexor carpi radialis"
+   ],
+   "answer": 0,
+   "why": "EPB and APL form the lateral border."
+  },
+  {
+   "q": "How many degrees of freedom does the shoulder have?",
+   "options": [
+    "4",
+    "1",
+    "2",
+    "3"
+   ],
+   "answer": 3,
+   "why": "Flexion-extension, abduction-adduction, rotations."
+  },
+  {
+   "q": "Why are shoulder dislocations frequent?",
+   "options": [
+    "Tight capsule",
+    "Shallow, mobile joint",
+    "Small humeral head",
+    "Absent ligaments"
+   ],
+   "answer": 1,
+   "why": "Mostly anterior."
+  },
+  {
+   "q": "The glenoid labrum is:",
+   "options": [
+    "A muscle",
+    "A ligament",
+    "A bursa",
+    "Fibrocartilage ring"
+   ],
+   "answer": 3,
+   "why": "Enlarges the socket."
+  },
+  {
+   "q": "The elbow's humero-ulnar joint links the trochlea to the:",
+   "options": [
+    "Olecranon fossa",
+    "Trochlear notch of the ulna",
+    "Capitulum",
+    "Radial head"
+   ],
+   "answer": 1,
+   "why": "Humeroradial: capitulum + radial head."
+  },
+  {
+   "q": "The elbow joint itself allows:",
+   "options": [
+    "Circumduction",
+    "Flexion and extension only",
+    "Abduction",
+    "Three degrees of freedom"
+   ],
+   "answer": 1,
+   "why": "Pronation-supination uses the radio-ulnar joints."
+  },
+  {
+   "q": "Which carpal bones articulate with the radius at the wrist?",
+   "options": [
+    "Scaphoid, lunate and triquetrum",
+    "Pisiform only",
+    "Capitate and hamate",
+    "Trapezium and trapezoid"
+   ],
+   "answer": 0,
+   "why": "With the triangular fibrocartilage."
+  },
+  {
+   "q": "Ulnar deviation of the wrist reaches about:",
+   "options": [
+    "90°",
+    "180°",
+    "15°",
+    "45°"
+   ],
+   "answer": 3,
+   "why": "Radial deviation about 15°."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "sh",
+   "options": [
+    "Surface landmarks",
+    "Elbow joint",
+    "Scapulohumeral joint",
+    "Radiocarpal joint"
+   ],
+   "answer": 2,
+   "why": "The arrow points to: Scapulohumeral joint. Humeral head and glenoid deepened by the labrum; lax capsule; coracohumeral and three glenohumeral ligaments in front; little bony interlocking, so dislocations (mostly anterior) are common."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "el",
+   "options": [
+    "Elbow joint",
+    "Scapulohumeral joint",
+    "Radiocarpal joint",
+    "Surface landmarks"
+   ],
+   "answer": 0,
+   "why": "The arrow points to: Elbow joint. Humero-ulnar (trochlea with trochlear notch), humeroradial (capitulum with radial head) and proximal radio-ulnar joints in one capsule with collateral ligaments."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "wr",
+   "options": [
+    "Elbow joint",
+    "Scapulohumeral joint",
+    "Radiocarpal joint",
+    "Surface landmarks"
+   ],
+   "answer": 2,
+   "why": "The arrow points to: Radiocarpal joint. Distal radius and triangular fibrocartilage with scaphoid, lunate and triquetrum."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "sn",
+   "options": [
+    "Surface landmarks",
+    "Radiocarpal joint",
+    "Elbow joint",
+    "Scapulohumeral joint"
+   ],
+   "answer": 0,
+   "why": "The arrow points to: Surface landmarks. The anatomical snuffbox is bounded by the extensor pollicis longus tendon medially and extensor pollicis brevis plus abductor pollicis longus laterally."
+  }
+ ],
+ "cards": [
+  {
+   "id": "x0",
+   "type": "text",
+   "front": "Five regions of the upper limb?",
+   "back": "Shoulder, arm, elbow, forearm, hand."
+  },
+  {
+   "id": "x1",
+   "type": "text",
+   "front": "Shoulder surface landmarks?",
+   "back": "Deltoid stump, lateral clavicle, acromioclavicular joint, deltopectoral groove (lost in dislocation), scapular spine and acromion, axilla."
+  },
+  {
+   "id": "x2",
+   "type": "text",
+   "front": "Elbow surface anatomy?",
+   "back": "Biceps and epicondylar masses, medial and lateral bicipital grooves, brachial pulse, 'M' veins; olecranon-epicondyle triangle in flexion, line in extension."
+  },
+  {
+   "id": "x3",
+   "type": "text",
+   "front": "Wrist and hand landmarks?",
+   "back": "Radial pulse between FCR and brachioradialis; thenar and hypothenar eminences; creases; anatomical snuffbox (EPL medial, EPB + APL lateral)."
+  },
+  {
+   "id": "x4",
+   "type": "text",
+   "front": "Components of a synovial joint?",
+   "back": "Cartilage-covered surfaces, capsule and ligaments, synovium secreting synovial fluid, sometimes fibrocartilage."
+  },
+  {
+   "id": "x5",
+   "type": "text",
+   "front": "Shoulder joint?",
+   "back": "Humeral head + glenoid with labrum; lax capsule; coracohumeral and glenohumeral ligaments; 3 degrees of freedom; frequent anterior dislocation."
+  },
+  {
+   "id": "x6",
+   "type": "text",
+   "front": "Elbow joint?",
+   "back": "Humero-ulnar, humeroradial, proximal radio-ulnar in one capsule; collateral ligaments; flexion-extension; participates in pronation-supination."
+  },
+  {
+   "id": "x7",
+   "type": "text",
+   "front": "Wrist joint?",
+   "back": "Radius + triangular fibrocartilage with scaphoid, lunate, triquetrum; flexion-extension and radial/ulnar deviation."
+  },
+  {
+   "id": "img-sh",
+   "type": "image",
+   "target": "sh",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Scapulohumeral joint. Humeral head and glenoid deepened by the labrum; lax capsule; coracohumeral and three glenohumeral ligaments in front; little bony interlocking, so dislocations (mostly anterior) are common."
+  },
+  {
+   "id": "img-el",
+   "type": "image",
+   "target": "el",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Elbow joint. Humero-ulnar (trochlea with trochlear notch), humeroradial (capitulum with radial head) and proximal radio-ulnar joints in one capsule with collateral ligaments."
+  },
+  {
+   "id": "img-wr",
+   "type": "image",
+   "target": "wr",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Radiocarpal joint. Distal radius and triangular fibrocartilage with scaphoid, lunate and triquetrum."
+  },
+  {
+   "id": "img-sn",
+   "type": "image",
+   "target": "sn",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Surface landmarks. The anatomical snuffbox is bounded by the extensor pollicis longus tendon medially and extensor pollicis brevis plus abductor pollicis longus laterally."
+  }
+ ],
+ "deeper": [
+  {
+   "title": "Why tenderness in the snuffbox matters",
+   "html": "<p>The scaphoid lies in the floor of the anatomical snuffbox. After a fall on the outstretched hand, pain when pressing there suggests a scaphoid fracture even if the first X-ray looks normal. Because the scaphoid's blood supply enters distally, a missed fracture can cut off its proximal part and lead to avascular necrosis, so the wrist is immobilised and imaged again.</p><p class='src'>Source: the handout's anatomical snuffbox description.</p>"
+  }
+ ],
+ "resources": [
+  {
+   "title": "Surface anatomy of the upper limb (Kenhub)",
+   "url": "https://www.kenhub.com/en/library/anatomy/surface-anatomy-of-the-upper-limb",
+   "kind": "Article",
+   "why": "Palpable landmarks and pulses.",
+   "note": ""
+  },
+  {
+   "title": "Shoulder joint (TeachMeAnatomy)",
+   "url": "https://teachmeanatomy.info/upper-limb/joints/shoulder/",
+   "kind": "Article",
+   "why": "Glenohumeral joint structure and movements.",
+   "note": ""
+  }
+ ],
+ "checks": [],
+ "sources": [
+  {
+   "name": "Surface anatomy of the upper limb (Kenhub)",
+   "url": "https://www.kenhub.com/en/library/anatomy/surface-anatomy-of-the-upper-limb"
+  },
+  {
+   "name": "Shoulder joint (TeachMeAnatomy)",
+   "url": "https://teachmeanatomy.info/upper-limb/joints/shoulder/"
   }
  ],
  "verified": "22 Sep 2026"
