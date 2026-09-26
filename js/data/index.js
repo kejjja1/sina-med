@@ -495,10 +495,97 @@ SINA.subjects.push(
         { id: "embryo1-git", title: "Development of the digestive system" }
       ]}
     ]},
-  { id: "histo1", name: "Histology", semester: "S2", program: "y1-anglo", status: "planned", count: 6, blurb: "" },
-  { id: "bacterio1", name: "Bacteriology", semester: "S2", program: "y1-anglo", status: "planned", count: 8, blurb: "" },
-  { id: "physio1", name: "Physiology", semester: "S2", program: "y1-anglo", status: "planned", count: 8, blurb: "" },
-  { id: "viro1", name: "Virology", semester: "S2", program: "y1-anglo", status: "planned", count: 6, blurb: "" }
+  { id: "histo1", name: "Histology", semester: "S2", program: "y1-anglo", status: "live",
+    blurb: "The four basic tissues, blood, and the histology of the digestive and urinary systems.",
+    groups: [
+      { name: "Basic tissues", items: [
+        { id: "histo1-intro", title: "Introduction to histology" },
+        { id: "histo1-epithelium", title: "Epithelial tissue" },
+        { id: "histo1-connective", title: "Connective tissue" },
+        { id: "histo1-cartilage", title: "Cartilage" },
+        { id: "histo1-bone", title: "Bone" },
+        { id: "histo1-blood", title: "Blood" },
+        { id: "histo1-muscle", title: "Muscle tissue" },
+        { id: "histo1-nervous", title: "Nervous tissue" }
+      ]},
+      { name: "Organ histology", items: [
+        { id: "histo1-git", title: "Histology of the digestive system" },
+        { id: "histo1-urinary", title: "Histology of the urinary system" }
+      ]}
+    ]},
+  { id: "bacterio1", name: "Bacteriology", semester: "S2", program: "y1-anglo", status: "live",
+    blurb: "Bacterial structure, genetics, pathogenesis and antibiotics, then the main respiratory and enteric pathogens.",
+    groups: [
+      { name: "Fundamental bacteriology", items: [
+        { id: "bacterio1-structure", title: "Bacterial structure, nutrition and metabolism" },
+        { id: "bacterio1-genetics", title: "Bacterial genetics" },
+        { id: "bacterio1-host", title: "Host-pathogen interactions" },
+        { id: "bacterio1-antibiotics", title: "Antibiotics" }
+      ]},
+      { name: "Systematic bacteriology", items: [
+        { id: "bacterio1-pyogenes", title: "Streptococcus pyogenes" },
+        { id: "bacterio1-pneumoniae", title: "Streptococcus pneumoniae" },
+        { id: "bacterio1-haemophilus", title: "Haemophilus influenzae type b" },
+        { id: "bacterio1-mycobacteria", title: "Mycobacteria and tuberculosis" },
+        { id: "bacterio1-chlamydia", title: "Chlamydia pneumoniae" },
+        { id: "bacterio1-bordetella", title: "Bordetella pertussis" },
+        { id: "bacterio1-mycoplasma", title: "Mycoplasma" },
+        { id: "bacterio1-enterobacteria-1", title: "Enterobacteriaceae I: E. coli and Klebsiella" },
+        { id: "bacterio1-enterobacteria-2", title: "Enterobacteriaceae II: Salmonella, Enterobacter and Proteus" }
+      ]}
+    ]},
+  { id: "physio1", name: "Physiology", semester: "S2", program: "y1-anglo", status: "live",
+    blurb: "Heart, circulation and lungs, the digestive system from mouth to microbiota, and the basics of endocrinology.",
+    groups: [
+      { name: "Cardiovascular and respiratory physiology", items: [
+        { id: "physio1-cardiovascular", title: "The cardiovascular system" },
+        { id: "physio1-heart", title: "Physiology of the heart" },
+        { id: "physio1-cardiac-cycle", title: "The cardiac cycle and cardiac output" },
+        { id: "physio1-ecg", title: "Electrocardiography (ECG)" },
+        { id: "physio1-respiratory", title: "Introduction to the respiratory system" },
+        { id: "physio1-lung-volumes", title: "Lung volumes and capacities" },
+        { id: "physio1-pulmonary-vascular", title: "Pulmonary vascular physiology" }
+      ]},
+      { name: "Digestive physiology", items: [
+        { id: "physio1-gi-intro", title: "Introduction to digestive physiology" },
+        { id: "physio1-oral", title: "Saliva, mastication and deglutition" },
+        { id: "physio1-gastric-motility", title: "Gastric motility" },
+        { id: "physio1-gastric-secretion", title: "Gastric secretion" },
+        { id: "physio1-pancreas", title: "Exocrine pancreas" },
+        { id: "physio1-small-intestine-motility", title: "Small intestine motility" },
+        { id: "physio1-absorption", title: "Intestinal absorption" },
+        { id: "physio1-colon-motility", title: "Colon motility" },
+        { id: "physio1-anorectal", title: "Anorectal motility" },
+        { id: "physio1-microbiota", title: "Intestinal microbiota" }
+      ]},
+      { name: "Endocrine physiology", items: [
+        { id: "physio1-endocrine-intro", title: "Introduction to endocrine physiology" },
+        { id: "physio1-hypothalamus-pituitary", title: "Hypothalamus and pituitary" },
+        { id: "physio1-thyroid", title: "Thyroid physiology" }
+      ]}
+    ]
+  },
+  { id: "viro1", name: "Virology", semester: "S2", program: "y1-anglo", status: "live",
+    blurb: "How viruses work and how we diagnose, prevent and treat them, then the main human viruses: influenza, measles, hepatitis, HIV, herpes, HPV, rabies and gastroenteritis.",
+    groups: [
+      { name: "General virology", items: [
+        { id: "viro1-intro", title: "Introduction to medical virology" },
+        { id: "viro1-diagnosis", title: "Laboratory diagnosis of viral infections" },
+        { id: "viro1-vaccines-antivirals", title: "Vaccines and antiviral therapy" }
+      ]},
+      { name: "Respiratory viruses", items: [
+        { id: "viro1-orthomyxo-paramyxo", title: "Influenza, measles, RSV and parainfluenza" }
+      ]},
+      { name: "Systemic and organ viruses", items: [
+        { id: "viro1-hepatitis", title: "Viral hepatitis" },
+        { id: "viro1-retroviruses", title: "Retroviruses: HIV and HTLV" },
+        { id: "viro1-herpesviruses", title: "Herpesviruses" },
+        { id: "viro1-hpv", title: "Human papillomavirus (HPV)" },
+        { id: "viro1-rabies", title: "Rabies" },
+        { id: "viro1-gastroenteritis", title: "Viral gastroenteritis" }
+      ]}
+    ]
+  }
 );
 
 /* Years and programs shown in the selector (top left). Subjects without a "program"

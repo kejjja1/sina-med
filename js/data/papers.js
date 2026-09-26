@@ -1380,6 +1380,19 @@ SINA.papers = SINA.papers.concat([
   ]
  },
  {
+  "id": "y1-viro-review",
+  "subject": "viro1",
+  "title": "Clinical virology review (study guide)",
+  "year": "Review",
+  "note": "A student-made summary of the whole virology course, shared in the class Drive.",
+  "links": [
+   {
+    "label": "Open the review (PDF)",
+    "url": "https://drive.google.com/file/d/1AqQVK_c39eF6ccTfCvUHD_Rz93WnJtvv/view?usp=drivesdk"
+   }
+  ]
+ },
+ {
   "id": "y1-viro-exam-ans",
   "subject": "viro1",
   "title": "Virology exam, with answers",

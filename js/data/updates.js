@@ -3,6 +3,11 @@
 window.SINA = window.SINA || { subjects: [], lectures: {} };
 SINA.updates = [
   { date: "26 September 2026", items: [
+    "Virology (1st Year Anglo, S2) is complete: 10 lectures from how viruses work, lab diagnosis, vaccines and antivirals to influenza and measles, viral hepatitis, HIV, herpesviruses, HPV, rabies and viral gastroenteritis.",
+    "The clinical virology review is now in Past papers.",
+    "Physiology (1st Year Anglo, S2) is complete: 20 lectures covering the heart and lungs, the whole digestive system from saliva to microbiota, and the basics of endocrinology (hormones, hypothalamus and pituitary, thyroid).",
+    "Bacteriology (1st Year, Semester 2) is complete with 13 lectures: structure and metabolism, genetics, host-pathogen interactions, antibiotics, then S. pyogenes, S. pneumoniae, Haemophilus, mycobacteria, Chlamydia pneumoniae, Bordetella, Mycoplasma and the Enterobacteriaceae (two parts).",
+    "Histology (1st Year, Semester 2) is complete with 10 lectures: introduction and microscopy, epithelium, connective tissue, cartilage, bone, blood, muscle, nervous tissue, and the histology of the digestive and urinary systems.",
     "Embryology (1st Year, Semester 2) is complete with 8 lectures: gametogenesis, fertilisation to implantation, gastrulation and neurulation, folding and organogenesis, the placenta, fetal membranes and fetal assessment, the fetal period, and development of the digestive system.",
     "Past papers: two Embryology and Histology mock tests added under Embryology.",
     "Hematology (1st Year, Semester 2) is complete with 17 lectures: the last five are thrombocytopenia and thrombocytosis, approach to the bleeding patient (including von Willebrand disease), blood groups and transfusion, splenomegaly, and lymphadenopathy.",
