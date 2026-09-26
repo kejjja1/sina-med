@@ -1,4 +1,4 @@
-/* hemato1: 12 lectures, merged for upload. Edit the source files, not this one. */
+/* hemato1: 17 lectures, merged for upload. Edit the source files, not this one. */
 window.SINA = window.SINA || {subjects:[], lectures:{}};
 SINA.lectures["hemato1-intro"] = {
  "id": "hemato1-intro",
@@ -5886,4 +5886,2627 @@ SINA.lectures["hemato1-coagulation"] = {
   }
  ],
  "verified": "22 Sep 2026"
+};
+window.SINA = window.SINA || {subjects:[], lectures:{}};
+SINA.lectures["hemato1-platelets"] = {
+ "id": "hemato1-platelets",
+ "subject": "hemato1",
+ "group": "Haemostasis",
+ "title": "Thrombocytopenia and thrombocytosis",
+ "sourceFile": "Clinical approach to thrombocytopenia and thrombocytosis (2025-26) (Hematology, Pr. N. Khoubila)",
+ "sourceUrl": "https://drive.google.com/file/d/1DnPIATh6qaqTQVOqRHtCpIWUm7msLWwf/view?usp=drivesdk",
+ "buildNote": "<strong>Built from the lecture slides.</strong> Slides that only show pictures are covered in outline. If your professor says something different, trust your professor.",
+ "summary": [
+  {
+   "id": "s0",
+   "title": "Thrombocytopenia: definition and signs",
+   "html": "<p><strong>Thrombocytopenia</strong>: platelets <strong>&lt; 150,000/µL</strong>, one of the most common haematological abnormalities, often asymptomatic above 50,000 and sometimes the first sign of infection, drug toxicity, autoimmunity or marrow disease. Bleeding thresholds: <strong>&gt; 50,000</strong> usually no spontaneous bleeding (minor procedures safe); <strong>20,000-50,000</strong> bleeding with trauma or procedures; <strong>&lt; 20,000</strong> spontaneous mucosal bleeding; <strong>&lt; 10,000</strong> life-threatening bleeding (GI, intracranial); platelet function and coagulation also matter. Signs: a <strong>mucocutaneous pattern</strong>: <strong>petechiae</strong> (lower legs), ecchymoses out of proportion to trauma, epistaxis, gum bleeding, menorrhagia, GI bleeding (melaena, haematemesis), haematuria and, rarely, <strong>intracranial haemorrhage</strong> (emergency). <strong>Joint and deep tissue bleeding</strong> suggests a coagulation factor deficiency instead.</p>"
+  },
+  {
+   "id": "s1",
+   "title": "Mechanisms and evaluation",
+   "html": "<p>Three mechanisms, possibly combined: <strong>decreased production</strong> (aplastic anaemia, myelodysplasia, chemotherapy, alcohol, some antibiotics, HIV, EBV, B12 or folate deficiency), <strong>increased destruction</strong> (immune: <strong>immune thrombocytopenia (ITP)</strong>; drugs: quinine, heparin, antibiotics; non-immune: sepsis, <strong>DIC</strong>, where widespread clotting consumes platelets and factors, causing thrombosis and bleeding together) and <strong>sequestration</strong> (hypersplenism). Steps: history (onset, drugs, recent viral illness 2-4 weeks earlier, family history, alcohol, HIV risk; always or recently low?), examination (bleeding sites, lymph nodes, spleen, liver, neurological signs), <strong>CBC + smear</strong>, then targeted tests. <strong>Rule out pseudo-thrombocytopenia first</strong>: EDTA can make platelets clump, falsely lowering the count; the smear shows clumps and a citrate-tube recount is normal. Patterns: isolated thrombocytopenia → ITP or inherited disorder; <strong>pancytopenia</strong> → marrow failure, leukaemia, severe infection, B12/folate deficiency; with neutrophilia → infection; with lymphocytosis → viral infection or lymphoid malignancy. Smear: giant platelets (Bernard-Soulier), clumps (artefact), <strong>schistocytes</strong> (DIC, microangiopathy), blasts (leukaemia), reactive lymphocytes (virus). Further tests as guided: cultures, HIV and viral serology, B12/folate, anti-platelet antibodies, ANA, liver tests; marrow if unclear.</p>"
+  },
+  {
+   "id": "s2",
+   "title": "Management of thrombocytopenia",
+   "html": "<p><strong>Treat the cause</strong>: antibiotics or antivirals, stop the offending drug, <strong>corticosteroids (prednisone) first-line for ITP</strong>, B12 or folate replacement; monitor counts. <strong>Platelet transfusion</strong> is temporary (random-donor, apheresis or HLA-matched products) and may be ineffective or harmful in ITP. Thresholds: <strong>&lt; 10,000</strong> prophylaxis in stable patients; <strong>&lt; 20,000</strong> with bleeding, fever, infection or coagulopathy; <strong>&lt; 50,000</strong> before minor procedures or with active bleeding; <strong>&lt; 75,000</strong> before general surgery; <strong>&lt; 100,000</strong> before neurosurgery or eye surgery.</p>"
+  },
+  {
+   "id": "s3",
+   "title": "Thrombocytosis",
+   "html": "<p>Platelets <strong>&gt; 400,000/µL</strong>, usually found incidentally. <strong>Reactive (&gt; 80%)</strong>, temporary and benign: infection or inflammation, <strong>iron deficiency</strong>, surgery, trauma, <strong>splenectomy</strong>, haemolysis, bleeding. <strong>Clonal/primary (&lt; 20%)</strong>, a stem-cell disorder (myeloproliferative neoplasm): suspect if persistent &gt; 3 months without cause, with thrombosis or microvascular symptoms, splenomegaly, or raised haematocrit or WBC. Work-up: CBC and smear (microcytosis → iron deficiency; <strong>Howell-Jolly bodies</strong> → post-splenectomy), then <strong>ferritin and CRP</strong>; if unexplained and persistent, refer to haematology. Complications (mainly clonal): <strong>thrombosis</strong> (stroke, TIA, MI, DVT; microvascular headache, visual changes, tingling) and paradoxical <strong>bleeding</strong> at extreme counts. Management: reactive → treat the cause, <strong>no antiplatelet therapy</strong> even if very high; clonal → <strong>low-dose aspirin</strong> and cytoreduction in high-risk patients.</p>"
+  }
+ ],
+ "exam": [
+  "Thrombocytopenia < 150,000/µL; often asymptomatic > 50,000.",
+  "< 20,000 spontaneous mucosal bleeding; < 10,000 life-threatening.",
+  "Mucocutaneous bleeding = platelet disorder; joints/deep = factor deficiency.",
+  "Mechanisms: ↓ production, ↑ destruction (ITP, drugs, DIC), sequestration.",
+  "Always exclude EDTA pseudo-thrombocytopenia (smear, citrate tube).",
+  "Isolated → ITP; pancytopenia → marrow failure, leukaemia, B12/folate.",
+  "Treat the cause; prednisone first-line for ITP.",
+  "Transfuse: < 10k prophylaxis, < 20k with risk, < 50k minor procedure, < 75k surgery, < 100k neuro/eye.",
+  "Thrombocytosis > 400,000: reactive > 80% (infection, iron deficiency, splenectomy) vs clonal < 20%.",
+  "Clonal: thrombosis, paradoxical bleeding; aspirin ± cytoreduction."
+ ],
+ "visual": {
+  "kind": "model",
+  "intro": "",
+  "figure": {
+   "viewBox": "0 0 760 420",
+   "alt": "Platelet count and bleeding risk",
+   "caption": "Thresholds from the lecture (per µL). Schematic drawn for this site.",
+   "base": "<defs><marker id=\"ah\" markerWidth=\"10\" markerHeight=\"8\" refX=\"9\" refY=\"4\" orient=\"auto\"><path d=\"M0,0 L10,4 L0,8 Z\" fill=\"#8a8a8a\"/></marker></defs><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"185\" y1=\"70\" x2=\"200\" y2=\"70\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"370\" y1=\"70\" x2=\"385\" y2=\"70\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"555\" y1=\"70\" x2=\"570\" y2=\"70\"/>",
+   "parts": {
+    "a": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2d7cf\" x=\"15\" y=\"40\" width=\"170\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "> 50,000:",
+      "rarely bleeds"
+     ],
+     "lx": 100.0,
+     "ly": 68.0
+    },
+    "b": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#cfe3f2\" x=\"200\" y=\"40\" width=\"170\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "20,000-50,000:",
+      "trauma, procedures"
+     ],
+     "lx": 285.0,
+     "ly": 68.0
+    },
+    "c": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d7edd2\" x=\"385\" y=\"40\" width=\"170\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "< 20,000:",
+      "mucosal bleeding"
+     ],
+     "lx": 470.0,
+     "ly": 68.0
+    },
+    "d": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2e2a8\" x=\"570\" y=\"40\" width=\"175\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "< 10,000: GI and",
+      "brain bleeding risk"
+     ],
+     "lx": 657.5,
+     "ly": 68.0
+    },
+    "mech": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#e3d5f0\" x=\"120\" y=\"170\" width=\"520\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Mechanisms: ↓ production | ↑ destruction (ITP, drugs, DIC)",
+      "| sequestration (hypersplenism)"
+     ],
+     "lx": 380.0,
+     "ly": 198.0
+    }
+   },
+   "arrows": {
+    "a": [
+     {
+      "t": [
+       15.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "b": [
+     {
+      "t": [
+       200.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "c": [
+     {
+      "t": [
+       385.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "d": [
+     {
+      "t": [
+       570.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "mech": [
+     {
+      "t": [
+       120.0,
+       178.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ]
+   }
+  }
+ },
+ "mcqs": [
+  {
+   "q": "Thrombocytopenia is a platelet count below:",
+   "options": [
+    "100,000/µL",
+    "150,000/µL",
+    "200,000/µL",
+    "50,000/µL"
+   ],
+   "answer": 1,
+   "why": "Often asymptomatic above 50,000."
+  },
+  {
+   "q": "Life-threatening spontaneous bleeding risk appears below:",
+   "options": [
+    "100,000/µL",
+    "50,000/µL",
+    "10,000/µL",
+    "150,000/µL"
+   ],
+   "answer": 2,
+   "why": "GI or intracranial."
+  },
+  {
+   "q": "Which bleeding pattern is typical of platelet disorders?",
+   "options": [
+    "Haemarthrosis",
+    "Mucocutaneous (petechiae, epistaxis, gums)",
+    "Deep muscle haematoma",
+    "Delayed bleeding after surgery only"
+   ],
+   "answer": 1,
+   "why": "Joints suggest factor deficiency."
+  },
+  {
+   "q": "Which is a mechanism of increased platelet destruction?",
+   "options": [
+    "Aplastic anaemia",
+    "Immune thrombocytopenia (ITP)",
+    "Hypersplenism",
+    "B12 deficiency"
+   ],
+   "answer": 1,
+   "why": "Antibodies destroy platelets."
+  },
+  {
+   "q": "Hypersplenism causes thrombocytopenia by:",
+   "options": [
+    "Decreased production",
+    "Sequestration",
+    "Antibodies",
+    "Dilution"
+   ],
+   "answer": 1,
+   "why": "Platelets trapped in the spleen."
+  },
+  {
+   "q": "DIC causes:",
+   "options": [
+    "Isolated thrombosis without bleeding",
+    "Simultaneous thrombosis and bleeding",
+    "Thrombocytosis",
+    "Isolated anaemia without thrombosis"
+   ],
+   "answer": 1,
+   "why": "Consumption of platelets and factors."
+  },
+  {
+   "q": "What must be ruled out first in low platelets?",
+   "options": [
+    "Immune thrombocytopenia (ITP)",
+    "Pseudo-thrombocytopenia (EDTA clumping)",
+    "Acute leukaemia with marrow failure",
+    "DIC"
+   ],
+   "answer": 1,
+   "why": "Smear + citrate tube."
+  },
+  {
+   "q": "Pancytopenia with thrombocytopenia suggests:",
+   "options": [
+    "ITP",
+    "Marrow failure or leukaemia",
+    "Pseudo-thrombocytopenia",
+    "Iron deficiency"
+   ],
+   "answer": 1,
+   "why": "Also B12/folate deficiency."
+  },
+  {
+   "q": "Schistocytes on the smear suggest:",
+   "options": [
+    "Bernard-Soulier (giant platelets)",
+    "A microangiopathic process such as DIC",
+    "Iron deficiency with reactive platelets",
+    "Viral marrow suppression"
+   ],
+   "answer": 1,
+   "why": "Fragmented red cells."
+  },
+  {
+   "q": "First-line treatment of ITP is:",
+   "options": [
+    "Platelet transfusion",
+    "Corticosteroids (prednisone)",
+    "Splenectomy",
+    "Iron"
+   ],
+   "answer": 1,
+   "why": "Transfusion may be ineffective."
+  },
+  {
+   "q": "The platelet transfusion threshold before neurosurgery is:",
+   "options": [
+    "< 20,000",
+    "< 50,000",
+    "< 100,000",
+    "< 10,000"
+   ],
+   "answer": 2,
+   "why": "Also eye surgery."
+  },
+  {
+   "q": "Prophylactic platelet transfusion in a stable patient is given below:",
+   "options": [
+    "10,000/µL",
+    "50,000/µL",
+    "100,000/µL",
+    "150,000/µL"
+   ],
+   "answer": 0,
+   "why": "< 20,000 if fever or bleeding."
+  },
+  {
+   "q": "Most thrombocytosis is:",
+   "options": [
+    "Clonal",
+    "Reactive",
+    "Congenital",
+    "Artefactual"
+   ],
+   "answer": 1,
+   "why": "More than 80%."
+  },
+  {
+   "q": "Howell-Jolly bodies on the smear point to:",
+   "options": [
+    "Iron deficiency",
+    "Previous splenectomy",
+    "Leukaemia",
+    "ITP"
+   ],
+   "answer": 1,
+   "why": "Reactive thrombocytosis."
+  },
+  {
+   "q": "Reactive thrombocytosis is managed by:",
+   "options": [
+    "Aspirin in every patient",
+    "Treating the cause, no antiplatelet",
+    "Cytoreduction with hydroxyurea",
+    "Urgent splenectomy"
+   ],
+   "answer": 1,
+   "why": "Even if very high."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "a",
+   "options": [
+    "Below 10,000/µL",
+    "20,000-50,000/µL",
+    "Below 20,000/µL",
+    "Above 50,000/µL"
+   ],
+   "answer": 3,
+   "why": "The arrow points to: Above 50,000/µL. Minor surgery generally safe."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "b",
+   "options": [
+    "Below 20,000/µL",
+    "Below 10,000/µL",
+    "20,000-50,000/µL",
+    "Above 50,000/µL"
+   ],
+   "answer": 2,
+   "why": "The arrow points to: 20,000-50,000/µL. Risk with trauma or invasive procedures."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "c",
+   "options": [
+    "Below 10,000/µL",
+    "Above 50,000/µL",
+    "Three mechanisms",
+    "Below 20,000/µL"
+   ],
+   "answer": 3,
+   "why": "The arrow points to: Below 20,000/µL. Epistaxis, gum bleeding, menorrhagia."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "d",
+   "options": [
+    "20,000-50,000/µL",
+    "Above 50,000/µL",
+    "Below 20,000/µL",
+    "Below 10,000/µL"
+   ],
+   "answer": 3,
+   "why": "The arrow points to: Below 10,000/µL. Risk of gastrointestinal and intracranial haemorrhage; prophylactic transfusion in stable patients."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "mech",
+   "options": [
+    "Three mechanisms",
+    "Below 20,000/µL",
+    "Above 50,000/µL",
+    "20,000-50,000/µL"
+   ],
+   "answer": 0,
+   "why": "The arrow points to: Three mechanisms. Often combined; the rest of the blood count and the smear point to the cause."
+  }
+ ],
+ "cards": [
+  {
+   "id": "x0",
+   "type": "text",
+   "front": "Define thrombocytopenia and bleeding thresholds.",
+   "back": "< 150,000/µL; > 50,000 usually safe; 20-50k bleeding with trauma; < 20k spontaneous mucosal; < 10k life-threatening."
+  },
+  {
+   "id": "x1",
+   "type": "text",
+   "front": "Clinical signs?",
+   "back": "Petechiae, ecchymoses, epistaxis, gum bleeding, menorrhagia, GI bleeding, haematuria, intracranial haemorrhage; mucocutaneous pattern."
+  },
+  {
+   "id": "x2",
+   "type": "text",
+   "front": "Three mechanisms and causes?",
+   "back": "↓ production (aplasia, MDS, drugs, HIV, EBV, B12/folate), ↑ destruction (ITP, quinine, heparin, sepsis, DIC), sequestration (hypersplenism)."
+  },
+  {
+   "id": "x3",
+   "type": "text",
+   "front": "Pseudo-thrombocytopenia?",
+   "back": "EDTA-induced clumping; smear shows clumps; citrate-tube recount normal; rule out first."
+  },
+  {
+   "id": "x4",
+   "type": "text",
+   "front": "CBC and smear clues?",
+   "back": "Isolated → ITP; pancytopenia → marrow failure/leukaemia; schistocytes → DIC; giant platelets → Bernard-Soulier; blasts → leukaemia."
+  },
+  {
+   "id": "x5",
+   "type": "text",
+   "front": "Management of thrombocytopenia?",
+   "back": "Treat the cause; prednisone for ITP; transfusion thresholds < 10k, < 20k, < 50k, < 75k, < 100k."
+  },
+  {
+   "id": "x6",
+   "type": "text",
+   "front": "Reactive vs clonal thrombocytosis?",
+   "back": "Reactive (> 80%): infection, inflammation, iron deficiency, splenectomy, surgery. Clonal (< 20%): persistent, thrombosis, splenomegaly, raised Hct/WBC."
+  },
+  {
+   "id": "x7",
+   "type": "text",
+   "front": "Work-up and management of thrombocytosis?",
+   "back": "CBC + smear, ferritin + CRP, refer if persistent; reactive → treat cause, no aspirin; clonal → low-dose aspirin ± cytoreduction."
+  },
+  {
+   "id": "img-a",
+   "type": "image",
+   "target": "a",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Above 50,000/µL. Minor surgery generally safe."
+  },
+  {
+   "id": "img-b",
+   "type": "image",
+   "target": "b",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "20,000-50,000/µL. Risk with trauma or invasive procedures."
+  },
+  {
+   "id": "img-c",
+   "type": "image",
+   "target": "c",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Below 20,000/µL. Epistaxis, gum bleeding, menorrhagia."
+  },
+  {
+   "id": "img-d",
+   "type": "image",
+   "target": "d",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Below 10,000/µL. Risk of gastrointestinal and intracranial haemorrhage; prophylactic transfusion in stable patients."
+  },
+  {
+   "id": "img-mech",
+   "type": "image",
+   "target": "mech",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Three mechanisms. Often combined; the rest of the blood count and the smear point to the cause."
+  }
+ ],
+ "deeper": [
+  {
+   "title": "Why platelet transfusion can fail in ITP",
+   "html": "<p>In immune thrombocytopenia, antibodies coat platelets and macrophages in the spleen destroy them within hours. Transfused platelets carry the same targets and are destroyed just as fast, so the count barely rises. Treatment therefore aims at the immune attack (corticosteroids first), keeping transfusions for life-threatening bleeding.</p><p class='src'>Source: the lecture's management slides.</p>"
+  }
+ ],
+ "resources": [
+  {
+   "title": "Thrombocytopenia (NHLBI)",
+   "url": "https://www.nhlbi.nih.gov/health/thrombocytopenia",
+   "kind": "Website",
+   "why": "Causes and treatment.",
+   "note": ""
+  },
+  {
+   "title": "Immune thrombocytopenia (NCBI StatPearls)",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK562282/",
+   "kind": "Book",
+   "why": "ITP diagnosis and management.",
+   "note": ""
+  }
+ ],
+ "checks": [],
+ "sources": [
+  {
+   "name": "Thrombocytopenia (NHLBI)",
+   "url": "https://www.nhlbi.nih.gov/health/thrombocytopenia"
+  },
+  {
+   "name": "Immune thrombocytopenia (NCBI StatPearls)",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK562282/"
+  }
+ ],
+ "verified": "26 Sep 2026"
+};
+window.SINA = window.SINA || {subjects:[], lectures:{}};
+SINA.lectures["hemato1-bleeding"] = {
+ "id": "hemato1-bleeding",
+ "subject": "hemato1",
+ "group": "Haemostasis",
+ "title": "Approach to the bleeding patient",
+ "sourceFile": "Approach to bleeding patient (2025-26) (Hematology, Pr. N. Khoubila)",
+ "sourceUrl": "https://drive.google.com/file/d/1vojbUy_768lo6eGBVDKMjL0mqfWToYkc/view?usp=drivesdk",
+ "buildNote": "<strong>Built from the lecture slides.</strong> Slides that only show pictures are covered in outline. If your professor says something different, trust your professor.",
+ "summary": [
+  {
+   "id": "s0",
+   "title": "The big picture",
+   "html": "<p>Bleeding disorders are the <strong>second most common reason for haematology consultation</strong> after anaemia and are often underdiagnosed, because bleeding histories are subjective and symptoms may be taken as normal. A systematic approach, rooted in physiology and semiology, combines <strong>history</strong>, <strong>examination</strong> and <strong>laboratory screening</strong>.</p>"
+  },
+  {
+   "id": "s1",
+   "title": "History and examination",
+   "html": "<p>A detailed history is the <strong>best predictor</strong> of a bleeding disorder. <strong>Type and site</strong>: skin and mucosa (petechiae, purpura, bruises, epistaxis, gum bleeding, menorrhagia, haematuria) suggest a <strong>primary haemostasis</strong> defect; <strong>deep tissue, joint and muscle</strong> bleeding suggests a <strong>coagulation factor</strong> defect. Spontaneous or after trauma? <strong>Duration</strong>: lifelong (childhood epistaxis, umbilical stump bleeding, bleeding after circumcision) suggests an inherited disorder. Past surgery and tooth extractions, transfusions, wound healing. <strong>Drugs</strong>: aspirin and NSAIDs impair primary haemostasis and should be avoided before surgery or testing. <strong>Family history</strong>, including consanguinity. Patients may under- or overstate bleeding; inherited disorders are common in women with menorrhagia. <strong>Bleeding scores</strong> such as the <strong>ISTH Bleeding Assessment Tool (BAT)</strong> (and a paediatric version) standardise the evaluation. Remember the four W's: <strong>who</strong> (age, sex, family), <strong>when</strong> (onset, drugs, surgery, trauma), <strong>where</strong> (sites), <strong>what</strong> (type). Examination assesses sites and severity and decides whether bleeding is local or systemic, vascular, platelet or coagulation-related, inherited or acquired, with about <strong>90% accuracy</strong> together with the history; look for secondary causes (lymph nodes, spleen, liver, thyroid, cirrhosis).</p>"
+  },
+  {
+   "id": "s2",
+   "title": "Laboratory testing and treatment",
+   "html": "<p>Testing is guided by the clinical picture, with attention to pre-analytical errors and close work with the laboratory. <strong>First line</strong>: CBC, bleeding time or <strong>PFA-100</strong>, <strong>PT</strong>, <strong>aPTT</strong>, <strong>fibrinogen</strong>. <strong>Second line</strong>: <strong>VWF antigen and activity</strong>, platelet aggregometry, factors <strong>VIII and IX</strong> then others, <strong>mixing studies</strong>. <strong>Third line</strong>: inhibitors, α2-antiplasmin, PAI-1. <strong>Treatment</strong>: general measures (hepatitis A and B vaccination, gynaecological evaluation for menorrhagia, avoid aspirin and NSAIDs); local measures (direct pressure; stepwise plan for nosebleeds up to cautery); indirect therapies: <strong>tranexamic acid</strong> (antifibrinolytic: blocks plasminogen → plasmin; useful in haemophilia A, VWD and anticoagulant bleeding) and hormonal treatment of menorrhagia (pill, levonorgestrel IUD, endometrial ablation); <strong>replacement therapy</strong> for the specific deficiency following guidelines.</p>"
+  },
+  {
+   "id": "s3",
+   "title": "Clinical application: von Willebrand disease",
+   "html": "<p>The most common inherited bleeding disorder, about <strong>1 in 1,000</strong> people, causing mucosal, surgical and traumatic bleeding, due to deficient or abnormal <strong>VWF</strong> (needed for platelet adhesion and to maintain factor VIII levels). <strong>Type 1</strong>: reduced VWF, the most common; <strong>type 2</strong>: dysfunctional VWF (four subtypes); <strong>type 3</strong>: absent VWF, rare and most severe. Diagnosis: personal and family history, ISTH-BAT, CBC and coagulation tests, then <strong>VWF antigen</strong>, platelet-dependent <strong>VWF activity</strong> and <strong>factor VIII activity</strong>. Management: education (bleeding risk, surgery and pregnancy planning, avoid antiplatelet drugs), <strong>tranexamic acid</strong>, <strong>desmopressin</strong>, VWF or FVIII-VWF concentrates, and prophylaxis for recurrent bleeding.</p>"
+  }
+ ],
+ "exam": [
+  "Bleeding disorders: 2nd most common haematology consultation.",
+  "History is the best predictor; examination + history ~90% accurate.",
+  "Mucocutaneous bleeding → primary haemostasis; joints/muscles → coagulation factor.",
+  "Lifelong bleeding (umbilical stump, circumcision) → inherited.",
+  "Aspirin and NSAIDs impair primary haemostasis.",
+  "ISTH-BAT standardises bleeding scores; four W's: who, when, where, what.",
+  "1st line: CBC, PFA-100/bleeding time, PT, aPTT, fibrinogen.",
+  "2nd line: VWF, aggregometry, FVIII/FIX, mixing studies; 3rd: inhibitors, α2-antiplasmin, PAI-1.",
+  "Tranexamic acid blocks plasminogen → plasmin.",
+  "VWD: ~1/1,000; type 1 most common, type 3 most severe; tranexamic acid, desmopressin, concentrates."
+ ],
+ "visual": {
+  "kind": "model",
+  "intro": "",
+  "figure": {
+   "viewBox": "0 0 760 420",
+   "alt": "Primary vs secondary haemostatic bleeding",
+   "caption": "The bleeding pattern points to the defect. Schematic drawn for this site.",
+   "base": "<defs><marker id=\"ah\" markerWidth=\"10\" markerHeight=\"8\" refX=\"9\" refY=\"4\" orient=\"auto\"><path d=\"M0,0 L10,4 L0,8 Z\" fill=\"#8a8a8a\"/></marker></defs><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"250\" y1=\"210\" x2=\"270\" y2=\"210\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"500\" y1=\"210\" x2=\"520\" y2=\"210\"/>",
+   "parts": {
+    "p": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2d7cf\" x=\"20\" y=\"40\" width=\"340\" height=\"70\" rx=\"10\"/>",
+     "label": [
+      "Primary (platelets, VWF): petechiae,",
+      "ecchymoses, epistaxis, gum bleeding"
+     ],
+     "lx": 190.0,
+     "ly": 73.0
+    },
+    "s": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#cfe3f2\" x=\"400\" y=\"40\" width=\"340\" height=\"70\" rx=\"10\"/>",
+     "label": [
+      "Secondary (coagulation): haematomas,",
+      "haemarthrosis, muscle and CNS bleeding"
+     ],
+     "lx": 570.0,
+     "ly": 73.0
+    },
+    "t1": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d7edd2\" x=\"20\" y=\"180\" width=\"230\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "1st line: CBC, PFA-100,",
+      "PT, aPTT, fibrinogen"
+     ],
+     "lx": 135.0,
+     "ly": 208.0
+    },
+    "t2": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2e2a8\" x=\"270\" y=\"180\" width=\"230\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "2nd line: VWF tests,",
+      "aggregation, VIII, IX"
+     ],
+     "lx": 385.0,
+     "ly": 208.0
+    },
+    "t3": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#e3d5f0\" x=\"520\" y=\"180\" width=\"220\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "3rd line: inhibitors,",
+      "α2-antiplasmin, PAI-1"
+     ],
+     "lx": 630.0,
+     "ly": 208.0
+    }
+   },
+   "arrows": {
+    "p": [
+     {
+      "t": [
+       20.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "s": [
+     {
+      "t": [
+       400.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "t1": [
+     {
+      "t": [
+       20.0,
+       188.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "t2": [
+     {
+      "t": [
+       270.0,
+       188.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "t3": [
+     {
+      "t": [
+       520.0,
+       188.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ]
+   }
+  }
+ },
+ "mcqs": [
+  {
+   "q": "Bleeding disorders rank as which cause of haematology consultation?",
+   "options": [
+    "First (ahead of anaemia)",
+    "Second (after anaemia)",
+    "Third (after leukaemia)",
+    "Rare (under 1%)"
+   ],
+   "answer": 1,
+   "why": "Often underdiagnosed."
+  },
+  {
+   "q": "The best predictor of a bleeding disorder is:",
+   "options": [
+    "Platelet count",
+    "A detailed history",
+    "PT",
+    "Bleeding time"
+   ],
+   "answer": 1,
+   "why": "Guides the laboratory work-up."
+  },
+  {
+   "q": "Haemarthrosis suggests:",
+   "options": [
+    "Primary haemostasis defect",
+    "Coagulation factor defect",
+    "Vascular defect only",
+    "Normal bleeding"
+   ],
+   "answer": 1,
+   "why": "Deep tissue bleeding."
+  },
+  {
+   "q": "Petechiae and gum bleeding suggest:",
+   "options": [
+    "Coagulation factor defect",
+    "Primary haemostasis defect",
+    "Fibrinolysis defect",
+    "Liver disease only"
+   ],
+   "answer": 1,
+   "why": "Platelets or VWF."
+  },
+  {
+   "q": "Bleeding after circumcision or from the umbilical stump suggests:",
+   "options": [
+    "Acquired disorder",
+    "Inherited disorder",
+    "Drug effect",
+    "Normal finding"
+   ],
+   "answer": 1,
+   "why": "Lifelong symptoms."
+  },
+  {
+   "q": "The ISTH-BAT is:",
+   "options": [
+    "A laboratory test",
+    "A bleeding assessment tool (score)",
+    "A drug",
+    "A coagulation factor"
+   ],
+   "answer": 1,
+   "why": "Standardises bleeding history."
+  },
+  {
+   "q": "History and examination together detect a haemostatic disorder with about:",
+   "options": [
+    "50% accuracy",
+    "90% accuracy",
+    "100% accuracy",
+    "20% accuracy"
+   ],
+   "answer": 1,
+   "why": "Before any test."
+  },
+  {
+   "q": "Which is a first-line screening test?",
+   "options": [
+    "Mixing study",
+    "VWF antigen",
+    "aPTT",
+    "PAI-1 activity"
+   ],
+   "answer": 2,
+   "why": "Also CBC, PT, fibrinogen, PFA-100."
+  },
+  {
+   "q": "Tranexamic acid works by:",
+   "options": [
+    "Replacing missing factor VIII",
+    "Blocking plasminogen activation",
+    "Raising the platelet count",
+    "Blocking vitamin K recycling"
+   ],
+   "answer": 1,
+   "why": "Antifibrinolytic."
+  },
+  {
+   "q": "Von Willebrand disease affects about:",
+   "options": [
+    "1 in 10",
+    "1 in 1,000",
+    "1 in 1 million",
+    "1 in 100,000"
+   ],
+   "answer": 1,
+   "why": "Most common inherited bleeding disorder."
+  },
+  {
+   "q": "The most common type of VWD is:",
+   "options": [
+    "Type 1",
+    "Type 2",
+    "Type 3",
+    "Type 4"
+   ],
+   "answer": 0,
+   "why": "Reduced VWF."
+  },
+  {
+   "q": "The most severe VWD type is:",
+   "options": [
+    "Type 1",
+    "Type 2A",
+    "Type 3",
+    "Type 2N"
+   ],
+   "answer": 2,
+   "why": "Absent VWF."
+  },
+  {
+   "q": "Which drugs should VWD patients avoid?",
+   "options": [
+    "Paracetamol (acetaminophen)",
+    "Antiplatelet agents (aspirin, NSAIDs)",
+    "Tranexamic acid (antifibrinolytic)",
+    "Desmopressin (DDAVP)"
+   ],
+   "answer": 1,
+   "why": "They worsen bleeding."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "p",
+   "options": [
+    "Primary haemostasis defect",
+    "Second-line tests",
+    "First-line tests",
+    "Third-line tests"
+   ],
+   "answer": 0,
+   "why": "The arrow points to: Primary haemostasis defect. Mucocutaneous bleeding: think thrombocytopenia, platelet function disorder or von Willebrand disease."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "s",
+   "options": [
+    "First-line tests",
+    "Secondary haemostasis defect",
+    "Third-line tests",
+    "Primary haemostasis defect"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: Secondary haemostasis defect. Deep bleeding into joints, muscles and body cavities: think coagulation factor deficiency such as haemophilia."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "t1",
+   "options": [
+    "Secondary haemostasis defect",
+    "Second-line tests",
+    "First-line tests",
+    "Third-line tests"
+   ],
+   "answer": 2,
+   "why": "The arrow points to: First-line tests. Screening panel guided by the history; beware pre-analytical errors."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "t2",
+   "options": [
+    "Primary haemostasis defect",
+    "Second-line tests",
+    "Third-line tests",
+    "First-line tests"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: Second-line tests. Specific tests for von Willebrand disease, platelet function and factor levels, plus mixing studies."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "t3",
+   "options": [
+    "Third-line tests",
+    "Second-line tests",
+    "Primary haemostasis defect",
+    "Secondary haemostasis defect"
+   ],
+   "answer": 0,
+   "why": "The arrow points to: Third-line tests. Specialised assays for inhibitors and fibrinolysis."
+  }
+ ],
+ "cards": [
+  {
+   "id": "x0",
+   "type": "text",
+   "front": "Why are bleeding disorders underdiagnosed?",
+   "back": "Subjective histories and symptoms taken as normal; they are the second most common haematology consultation."
+  },
+  {
+   "id": "x1",
+   "type": "text",
+   "front": "Key history elements?",
+   "back": "Type and site, spontaneous vs traumatic, duration (lifelong vs recent), surgery/extractions, transfusions, drugs (aspirin, NSAIDs), family history, consanguinity."
+  },
+  {
+   "id": "x2",
+   "type": "text",
+   "front": "Primary vs secondary bleeding pattern?",
+   "back": "Primary: petechiae, ecchymoses, epistaxis, gums, haematuria, melaena. Secondary: haematomas, haemarthrosis, muscle, cavity and CNS bleeding."
+  },
+  {
+   "id": "x3",
+   "type": "text",
+   "front": "Bleeding scores?",
+   "back": "ISTH Bleeding Assessment Tool (paediatric version too) standardises and objectifies bleeding history."
+  },
+  {
+   "id": "x4",
+   "type": "text",
+   "front": "First, second and third-line tests?",
+   "back": "1st: CBC, PFA-100/bleeding time, PT, aPTT, fibrinogen. 2nd: VWF antigen/activity, aggregometry, FVIII/FIX, mixing. 3rd: inhibitors, α2-antiplasmin, PAI-1."
+  },
+  {
+   "id": "x5",
+   "type": "text",
+   "front": "Treatment principles?",
+   "back": "General (vaccination, avoid NSAIDs, gynaecological evaluation), local pressure, tranexamic acid, hormonal therapy, replacement of the missing factor."
+  },
+  {
+   "id": "x6",
+   "type": "text",
+   "front": "Von Willebrand disease types?",
+   "back": "Type 1 reduced VWF (most common), type 2 dysfunctional (4 subtypes), type 3 absent (rare, severe)."
+  },
+  {
+   "id": "x7",
+   "type": "text",
+   "front": "VWD diagnosis and treatment?",
+   "back": "History, ISTH-BAT, CBC, coagulation, VWF antigen, VWF activity, FVIII; education, tranexamic acid, desmopressin, VWF/FVIII-VWF concentrates, prophylaxis."
+  },
+  {
+   "id": "img-p",
+   "type": "image",
+   "target": "p",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Primary haemostasis defect. Mucocutaneous bleeding: think thrombocytopenia, platelet function disorder or von Willebrand disease."
+  },
+  {
+   "id": "img-s",
+   "type": "image",
+   "target": "s",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Secondary haemostasis defect. Deep bleeding into joints, muscles and body cavities: think coagulation factor deficiency such as haemophilia."
+  },
+  {
+   "id": "img-t1",
+   "type": "image",
+   "target": "t1",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "First-line tests. Screening panel guided by the history; beware pre-analytical errors."
+  },
+  {
+   "id": "img-t2",
+   "type": "image",
+   "target": "t2",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Second-line tests. Specific tests for von Willebrand disease, platelet function and factor levels, plus mixing studies."
+  },
+  {
+   "id": "img-t3",
+   "type": "image",
+   "target": "t3",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Third-line tests. Specialised assays for inhibitors and fibrinolysis."
+  }
+ ],
+ "deeper": [
+  {
+   "title": "Why heavy periods can reveal a bleeding disorder",
+   "html": "<p>Menstruation is a recurring haemostatic challenge, so women with mild von Willebrand disease or platelet disorders often first present with heavy periods and iron deficiency anaemia rather than dramatic bleeding. Asking about menorrhagia, and screening women with it for a bleeding disorder, uncovers many cases that would otherwise be missed until surgery or childbirth.</p><p class='src'>Source: the lecture's personal and family history slides.</p>"
+  }
+ ],
+ "resources": [
+  {
+   "title": "Bleeding disorders (NHLBI)",
+   "url": "https://www.nhlbi.nih.gov/health-topics/von-willebrand-disease",
+   "kind": "Website",
+   "why": "Causes, diagnosis and treatment.",
+   "note": ""
+  },
+  {
+   "title": "Von Willebrand disease for health professionals (NHLBI)",
+   "url": "https://www.nhlbi.nih.gov/health-topics/von-willebrand-disease/health-professional-information",
+   "kind": "Website",
+   "why": "Types, diagnosis and management.",
+   "note": ""
+  }
+ ],
+ "checks": [],
+ "sources": [
+  {
+   "name": "Bleeding disorders (NHLBI)",
+   "url": "https://www.nhlbi.nih.gov/health-topics/von-willebrand-disease"
+  },
+  {
+   "name": "Von Willebrand disease for health professionals (NHLBI)",
+   "url": "https://www.nhlbi.nih.gov/health-topics/von-willebrand-disease/health-professional-information"
+  }
+ ],
+ "verified": "26 Sep 2026"
+};
+window.SINA = window.SINA || {subjects:[], lectures:{}};
+SINA.lectures["hemato1-transfusion"] = {
+ "id": "hemato1-transfusion",
+ "subject": "hemato1",
+ "group": "Clinical haematology",
+ "title": "Blood groups and transfusion",
+ "sourceFile": "Transfusion medicine: blood groups and blood components (2025-26) (Hematology, Pr. A. Madani)",
+ "sourceUrl": "https://drive.google.com/file/d/1vUGxSjckwE-WTiLK8mgd-K_2I27Zn2I7/view?usp=drivesdk",
+ "buildNote": "<strong>Built from the lecture slides.</strong> Slides that only show pictures are covered in outline. If your professor says something different, trust your professor.",
+ "summary": [
+  {
+   "id": "s0",
+   "title": "Blood groups: definitions",
+   "html": "<p>A <strong>blood group</strong> is an inherited classification based on the presence or absence of <strong>antigens on the red cell surface</strong>. These antigens are carbohydrates attached to proteins or lipids (glycoproteins, glycolipids) and are recognised by specific antibodies. There are about <strong>40 systems and 370 antigens</strong>, each system independent of the others; the three that must be respected in transfusion are <strong>ABO, Rhesus (RH) and Kell (KEL)</strong>.</p><p>Antibodies can be <strong>natural</strong> (present without exposure to foreign red cells, IgM) and <strong>regular</strong> (always present when the antigen is absent), or <strong>immune</strong>: they appear after immunisation by transfusion or pregnancy and are IgG.</p>"
+  },
+  {
+   "id": "s1",
+   "title": "The ABO system (ISBT 001)",
+   "html": "<p>Two antigens give four groups: <strong>A</strong> (antigen A, anti-B in plasma), <strong>B</strong> (antigen B, anti-A), <strong>AB</strong> (both antigens, no antibody) and <strong>O</strong> (neither antigen, anti-A and anti-B). Genes on <strong>chromosome 9</strong>: A and B are <strong>co-dominant</strong>, O is recessive. Gene H adds fucose to a precursor (substance H = the 'O antigen'); gene A adds N-acetylgalactosamine, gene B adds galactose.</p><p>ABO antigens are also <strong>tissue antigens</strong> (platelets, white cells, endothelium, secretions) and exist on bacteria and plants, which explains why anti-A and anti-B are natural. These IgM antibodies appear <strong>3-4 months after birth</strong> and cause agglutination. Frequencies in the lecture: A 45%, O 43%, B 9%, AB 3%.</p>"
+  },
+  {
+   "id": "s2",
+   "title": "Rhesus and Kell",
+   "html": "<p><strong>Rhesus (ISBT 004)</strong> is the second most important system; its antigens are red-cell specific and highly immunogenic, especially <strong>D</strong>. D present = <strong>Rh positive (85%)</strong>; absent = Rh negative (15%). RhCE carries the antithetic pairs <strong>C/c and E/e</strong>. Anti-D is <strong>not natural</strong>: it is an <strong>immune IgG</strong> made by a D-negative person after D-positive red cells (transfusion or pregnancy) and <strong>crosses the placenta</strong>, causing <strong>haemolytic disease of the newborn</strong> in a later D-positive fetus; this is why it is prevented.</p><p><strong>Kell (ISBT 006)</strong>, first described in 1946 (Mrs Kelleher), has 36 antigens; the main pairs are K/k, Kpa/Kpb and Jsa/Jsb. <strong>K is the most immunogenic antigen after ABO and D.</strong></p>"
+  },
+  {
+   "id": "s3",
+   "title": "Blood typing",
+   "html": "<p><strong>Rules</strong>: strict patient identification, one patient sampled at a time, label the tube at once; <strong>two typings</strong> on two different samples (by two technicians, with different reagents).</p><p><strong>ABO typing needs two tests</strong>: the <strong>Beth-Vincent</strong> test (patient red cells + test sera anti-A, anti-B: finds the antigens) and the <strong>Simonin</strong> test (patient plasma + test red cells A and B: finds the antibodies). The group is given only when both agree. Rhesus (D, C, E, c, e) and Kell (K, k) are typed by agglutination with test sera; minor systems (Duffy, Kidd, MNS, Lewis) for chronically transfused patients. Molecular (genetic) typing is also possible.</p>"
+  },
+  {
+   "id": "s4",
+   "title": "Transfusion compatibility rules",
+   "html": "<p>Always transfuse red cells of the <strong>same group</strong>. In a life-threatening emergency, <strong>never give an antigen the recipient lacks</strong> (it would meet the corresponding antibody). So <strong>O is the universal red cell donor</strong> and <strong>AB the universal recipient</strong>. Rh-negative recipients receive only Rh-negative red cells; Rh-positive recipients can receive either. The same logic applies to C, E, c, e and K: a K-negative patient receives only K-negative red cells.</p>"
+  },
+  {
+   "id": "s5",
+   "title": "Blood donation and blood components",
+   "html": "<p>Donation is voluntary, <strong>anonymous and unpaid</strong>. Steps: reception, a legally required <strong>medical interview</strong> (protects donor and recipient), collection of <strong>400-500 mL</strong>, snack. Contraindications include weight &lt; 50 kg, age &lt; 18 or &gt; 65, anaemia, pregnancy (donation 6 months after delivery), recent surgery (&lt; 3 months), chronic disease, infections, risky behaviour, tattoos or piercings; maximum 5 donations a year for men and 3 for women. Every donation is typed (ABO, RhD, RH/Kell phenotype) and tested for <strong>syphilis, hepatitis B and C and HIV</strong>.</p><p>Centrifugation separates components: <strong>red cell concentrate</strong> (42 days, +4 °C; anaemia), <strong>platelet concentrate</strong> (5 days, 22 °C with agitation; 6-8 pooled for an adult) or a single-donor <strong>apheresis</strong> unit (≈ 5 pooled concentrates, fewer viral and alloimmunisation risks), and <strong>fresh frozen plasma</strong> (1 year, -30 °C; coagulation factors). Transformations: <strong>leukoreduction</strong> (&gt; 99% of white cells removed by filtration: prevents febrile reactions, HLA alloimmunisation, CMV), <strong>irradiation</strong> (25-45 Gy, prevents transfusion-associated GVHD), paediatric splitting, <strong>washing</strong> (severe allergy, IgA deficiency with anti-IgA). Qualifications: extended phenotype, <strong>CMV-negative</strong>, HLA or HPA compatible. Plasma can be pathogen-reduced (solvent-detergent, UVA) or 'secured' by quarantine and re-testing the donor after 6 months.</p>"
+  }
+ ],
+ "exam": [
+  "Blood group: inherited red cell surface antigens (glycoproteins or glycolipids).",
+  "About 40 systems; ABO, Rh and Kell matter most for transfusion.",
+  "ABO antibodies: natural and regular IgM; appear at 3-4 months.",
+  "Group A: anti-B; B: anti-A; AB: none; O: anti-A + anti-B.",
+  "ABO genes on chromosome 9; A and B co-dominant, O recessive.",
+  "Rh D positive 85%; anti-D is immune IgG, crosses the placenta (HDN).",
+  "K: most immunogenic after ABO and D.",
+  "ABO typing: Beth-Vincent (antigens) + Simonin (antibodies); two typings.",
+  "Never give an antigen the recipient lacks; O universal donor, AB universal recipient.",
+  "RBC 42 days +4 °C; platelets 5 days 22 °C; FFP 1 year -30 °C.",
+  "Leukoreduction: febrile reactions, HLA, CMV. Irradiation: TA-GVHD. Washing: IgA deficiency."
+ ],
+ "visual": {
+  "kind": "model",
+  "intro": "",
+  "figure": {
+   "viewBox": "0 0 760 420",
+   "alt": "Whole blood to blood components",
+   "caption": "Centrifugation separates one donation into components. Schematic drawn for this site.",
+   "base": "<defs><marker id=\"ah\" markerWidth=\"10\" markerHeight=\"8\" refX=\"9\" refY=\"4\" orient=\"auto\"><path d=\"M0,0 L10,4 L0,8 Z\" fill=\"#8a8a8a\"/></marker></defs><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"220\" y1=\"70\" x2=\"300\" y2=\"70\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"205\" y1=\"100\" x2=\"315\" y2=\"150\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"500\" y1=\"180\" x2=\"540\" y2=\"140\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"485\" y1=\"210\" x2=\"555\" y2=\"220\"/>",
+   "parts": {
+    "wb": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2d7cf\" x=\"20\" y=\"40\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Whole blood donation",
+      "400-500 mL"
+     ],
+     "lx": 120.0,
+     "ly": 68.0
+    },
+    "rbc": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#cfe3f2\" x=\"300\" y=\"40\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Red cell concentrate",
+      "42 days at +4 °C"
+     ],
+     "lx": 400.0,
+     "ly": 68.0
+    },
+    "prp": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d7edd2\" x=\"300\" y=\"150\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Platelet-rich plasma",
+      "(soft spin)"
+     ],
+     "lx": 400.0,
+     "ly": 178.0
+    },
+    "plt": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2e2a8\" x=\"540\" y=\"110\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Platelet concentrate",
+      "5 days at 22 °C, shaken"
+     ],
+     "lx": 640.0,
+     "ly": 138.0
+    },
+    "ffp": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#e3d5f0\" x=\"540\" y=\"220\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Fresh frozen plasma",
+      "1 year at -30 °C"
+     ],
+     "lx": 640.0,
+     "ly": 248.0
+    }
+   },
+   "arrows": {
+    "wb": [
+     {
+      "t": [
+       20.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "rbc": [
+     {
+      "t": [
+       300.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "prp": [
+     {
+      "t": [
+       300.0,
+       158.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "plt": [
+     {
+      "t": [
+       540.0,
+       118.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "ffp": [
+     {
+      "t": [
+       540.0,
+       228.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ]
+   }
+  }
+ },
+ "mcqs": [
+  {
+   "q": "A person of group A has in plasma:",
+   "options": [
+    "Anti-A",
+    "Anti-B",
+    "Anti-A and anti-B",
+    "No ABO antibody"
+   ],
+   "answer": 1,
+   "why": "Regular antibody against the absent antigen."
+  },
+  {
+   "q": "ABO natural antibodies are mainly of class:",
+   "options": [
+    "IgG",
+    "IgM",
+    "IgA",
+    "IgE"
+   ],
+   "answer": 1,
+   "why": "They agglutinate; they do not cross the placenta."
+  },
+  {
+   "q": "Anti-D antibodies are:",
+   "options": [
+    "Natural IgM",
+    "Immune IgG",
+    "Natural IgG",
+    "Immune IgA"
+   ],
+   "answer": 1,
+   "why": "Made after exposure to D-positive cells."
+  },
+  {
+   "q": "The universal red cell donor is group:",
+   "options": [
+    "A",
+    "B",
+    "AB",
+    "O"
+   ],
+   "answer": 3,
+   "why": "O red cells carry neither A nor B."
+  },
+  {
+   "q": "The universal recipient is group:",
+   "options": [
+    "O",
+    "A",
+    "AB",
+    "B"
+   ],
+   "answer": 2,
+   "why": "AB plasma has no anti-A or anti-B."
+  },
+  {
+   "q": "The Beth-Vincent test identifies:",
+   "options": [
+    "Plasma antibodies",
+    "Red cell antigens",
+    "HLA antigens",
+    "Irregular antibodies"
+   ],
+   "answer": 1,
+   "why": "Patient red cells against anti-A and anti-B sera."
+  },
+  {
+   "q": "The Simonin test uses:",
+   "options": [
+    "Patient red cells + test sera",
+    "Patient plasma + test red cells A and B",
+    "Donor plasma + patient cells",
+    "Anti-human globulin only"
+   ],
+   "answer": 1,
+   "why": "It finds the plasma antibodies."
+  },
+  {
+   "q": "ABO genes are located on chromosome:",
+   "options": [
+    "1",
+    "6",
+    "9",
+    "19"
+   ],
+   "answer": 2,
+   "why": "9q34."
+  },
+  {
+   "q": "The Kell antigen K is:",
+   "options": [
+    "Weakly immunogenic, rarely relevant",
+    "The most immunogenic after ABO and D",
+    "Expressed only on platelets",
+    "A natural IgM antibody in all people"
+   ],
+   "answer": 1,
+   "why": "K-negative patients get K-negative cells."
+  },
+  {
+   "q": "Proportion of Rh D positive people in the lecture:",
+   "options": [
+    "15%",
+    "50%",
+    "85%",
+    "99%"
+   ],
+   "answer": 2,
+   "why": "15% are D negative."
+  },
+  {
+   "q": "Red cell concentrates are stored:",
+   "options": [
+    "5 days at 22 °C",
+    "42 days at +4 °C",
+    "1 year at -30 °C",
+    "7 days at -20 °C"
+   ],
+   "answer": 1,
+   "why": "Platelets 5 days, plasma 1 year."
+  },
+  {
+   "q": "Platelet concentrates are stored:",
+   "options": [
+    "At +4 °C for 42 days",
+    "At 22 °C with agitation for 5 days",
+    "Frozen at -30 °C",
+    "At 37 °C"
+   ],
+   "answer": 1,
+   "why": "Cold damages platelets."
+  },
+  {
+   "q": "Irradiation of blood components prevents:",
+   "options": [
+    "Febrile reactions",
+    "Transfusion-associated GVHD",
+    "Iron overload",
+    "Haemolysis"
+   ],
+   "answer": 1,
+   "why": "25-45 Gy inactivates donor lymphocytes."
+  },
+  {
+   "q": "Washed red cells are indicated for:",
+   "options": [
+    "Anaemia of any cause in adults",
+    "IgA-deficient patients with anti-IgA",
+    "Neonatal jaundice needing phototherapy",
+    "Iron deficiency before surgery"
+   ],
+   "answer": 1,
+   "why": "Removes plasma proteins."
+  },
+  {
+   "q": "A Rh-negative recipient should receive red cells that are:",
+   "options": [
+    "Rh positive",
+    "Rh negative",
+    "Either",
+    "Group O only"
+   ],
+   "answer": 1,
+   "why": "Avoid immunisation to D."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "wb",
+   "options": [
+    "Fresh frozen plasma",
+    "Platelet concentrate",
+    "Whole blood donation",
+    "Platelet-rich plasma"
+   ],
+   "answer": 2,
+   "why": "The arrow points to: Whole blood donation. 400-500 mL collected from a healthy, unpaid, anonymous volunteer after the medical pre-donation interview."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "rbc",
+   "options": [
+    "Platelet concentrate",
+    "Fresh frozen plasma",
+    "Red cell concentrate",
+    "Whole blood donation"
+   ],
+   "answer": 2,
+   "why": "The arrow points to: Red cell concentrate. 150-200 mL, about 55 g of haemoglobin, haematocrit 65-80%, stored 42 days at +4 °C; used for anaemia."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "prp",
+   "options": [
+    "Red cell concentrate",
+    "Platelet-rich plasma",
+    "Whole blood donation",
+    "Fresh frozen plasma"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: Platelet-rich plasma. The supernatant after a soft spin; a hard spin then separates platelets from plasma."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "plt",
+   "options": [
+    "Red cell concentrate",
+    "Fresh frozen plasma",
+    "Platelet-rich plasma",
+    "Platelet concentrate"
+   ],
+   "answer": 3,
+   "why": "The arrow points to: Platelet concentrate. About 40 mL and 5.5 × 10^10 platelets, stored 5 days at 22 °C with gentle agitation; an adult needs 6-8 pooled units."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "ffp",
+   "options": [
+    "Platelet concentrate",
+    "Fresh frozen plasma",
+    "Platelet-rich plasma",
+    "Red cell concentrate"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: Fresh frozen plasma. 200-250 mL with fibrinogen and clotting factors, stored 1 year at -30 °C; used when coagulation factors are needed."
+  }
+ ],
+ "cards": [
+  {
+   "id": "x0",
+   "type": "text",
+   "front": "What defines a blood group?",
+   "back": "Inherited presence or absence of antigens (glycoproteins or glycolipids) on the red cell surface, recognised by antibodies."
+  },
+  {
+   "id": "x1",
+   "type": "text",
+   "front": "Natural, regular and immune antibodies?",
+   "back": "Natural: without exposure (IgM). Regular: always present when the antigen is absent (ABO). Immune: after transfusion or pregnancy (IgG, e.g. anti-D)."
+  },
+  {
+   "id": "x2",
+   "type": "text",
+   "front": "ABO groups and antibodies?",
+   "back": "A: anti-B. B: anti-A. AB: none. O: anti-A + anti-B. Frequencies A 45%, O 43%, B 9%, AB 3%."
+  },
+  {
+   "id": "x3",
+   "type": "text",
+   "front": "How are ABO antigens made?",
+   "back": "H gene adds fucose (substance H); A gene adds N-acetylgalactosamine; B gene adds galactose; O makes no enzyme."
+  },
+  {
+   "id": "x4",
+   "type": "text",
+   "front": "Why does anti-D matter in pregnancy?",
+   "back": "IgG anti-D in a D-negative mother crosses the placenta and destroys D-positive fetal red cells: haemolytic disease of the newborn."
+  },
+  {
+   "id": "x5",
+   "type": "text",
+   "front": "Rules of ABO typing?",
+   "back": "Strict identification; two typings on two samples; Beth-Vincent (antigens) and Simonin (antibodies) must agree."
+  },
+  {
+   "id": "x6",
+   "type": "text",
+   "front": "Compatibility rule in an emergency?",
+   "back": "Never give an antigen the recipient lacks: O red cells, Rh-negative for Rh-negative recipients, K-negative for K-negative."
+  },
+  {
+   "id": "x7",
+   "type": "text",
+   "front": "Transformations and their indications?",
+   "back": "Leukoreduced: febrile reactions, HLA, CMV. Irradiated: TA-GVHD. Washed: allergy, IgA deficiency. Paediatric split: 50-100 mL."
+  },
+  {
+   "id": "img-wb",
+   "type": "image",
+   "target": "wb",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Whole blood donation. 400-500 mL collected from a healthy, unpaid, anonymous volunteer after the medical pre-donation interview."
+  },
+  {
+   "id": "img-rbc",
+   "type": "image",
+   "target": "rbc",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Red cell concentrate. 150-200 mL, about 55 g of haemoglobin, haematocrit 65-80%, stored 42 days at +4 °C; used for anaemia."
+  },
+  {
+   "id": "img-prp",
+   "type": "image",
+   "target": "prp",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Platelet-rich plasma. The supernatant after a soft spin; a hard spin then separates platelets from plasma."
+  },
+  {
+   "id": "img-plt",
+   "type": "image",
+   "target": "plt",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Platelet concentrate. About 40 mL and 5.5 × 10^10 platelets, stored 5 days at 22 °C with gentle agitation; an adult needs 6-8 pooled units."
+  },
+  {
+   "id": "img-ffp",
+   "type": "image",
+   "target": "ffp",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Fresh frozen plasma. 200-250 mL with fibrinogen and clotting factors, stored 1 year at -30 °C; used when coagulation factors are needed."
+  }
+ ],
+ "deeper": [
+  {
+   "title": "Why O plasma is not universal",
+   "html": "<p>The 'universal donor' rule applies to <strong>red cells</strong>: O red cells lack A and B, so the recipient's antibodies have nothing to attack. For <strong>plasma</strong> the logic reverses, because what is transfused is the donor's antibodies. O plasma contains anti-A and anti-B and could haemolyse an A, B or AB recipient's cells, whereas <strong>AB plasma</strong>, with no ABO antibodies, is the universal plasma. Same principle, applied to whatever the component carries.</p><p class='src'>Source: the lecture's compatibility rules, extended to plasma.</p>"
+  }
+ ],
+ "resources": [
+  {
+   "title": "The ABO blood group (NCBI Bookshelf)",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK2267/",
+   "kind": "Book",
+   "why": "ABO antigens and antibodies.",
+   "note": ""
+  },
+  {
+   "title": "The Rh blood group (NCBI Bookshelf)",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK2269/",
+   "kind": "Book",
+   "why": "D antigen and haemolytic disease.",
+   "note": ""
+  },
+  {
+   "title": "Blood transfusion (NHLBI)",
+   "url": "https://www.nhlbi.nih.gov/health/blood-transfusion",
+   "kind": "Website",
+   "why": "Components, safety and risks.",
+   "note": ""
+  }
+ ],
+ "checks": [],
+ "sources": [
+  {
+   "name": "The ABO blood group (NCBI Bookshelf)",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK2267/"
+  },
+  {
+   "name": "The Rh blood group (NCBI Bookshelf)",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK2269/"
+  },
+  {
+   "name": "Blood transfusion (NHLBI)",
+   "url": "https://www.nhlbi.nih.gov/health/blood-transfusion"
+  }
+ ],
+ "verified": "26 Sep 2026"
+};
+window.SINA = window.SINA || {subjects:[], lectures:{}};
+SINA.lectures["hemato1-splenomegaly"] = {
+ "id": "hemato1-splenomegaly",
+ "subject": "hemato1",
+ "group": "Clinical haematology",
+ "title": "Splenomegaly",
+ "sourceFile": "Approach to the patient with splenomegaly (2025-26) (Hematology, Pr. A. Madani)",
+ "sourceUrl": "https://drive.google.com/file/d/1BGmfSWswWC2J0hp1ABtZZl9WzO92F0Ey/view?usp=drivesdk",
+ "buildNote": "<strong>Built from the lecture slides.</strong> Slides that only show pictures are covered in outline. If your professor says something different, trust your professor.",
+ "summary": [
+  {
+   "id": "s0",
+   "title": "Definition and the normal spleen",
+   "html": "<p><strong>Splenomegaly</strong> is enlargement of the spleen beyond its normal size, seen in many different diseases. Three fundamentals: a <strong>normal spleen is not palpable</strong>; a splenomegaly is palpable; so a palpable spleen is <strong>always pathological</strong> and needs a reasoned search for the cause.</p><p>Normal spleen: about <strong>12 cm long, 7 cm wide, under 250 g</strong>, along the <strong>9th-11th left ribs</strong>, with <strong>notches</strong> on its anterior edge, moving down on inspiration. Functions: <strong>immune</strong> (processes antigens, major site of IgM production, opsonises bacteria and fungi), <strong>filter</strong> (macrophages remove old red cells and platelets), <strong>pooling</strong> (30-40% of platelets), <strong>iron recycling</strong> from haemoglobin, and <strong>haematopoiesis</strong> in the fetus.</p>"
+  },
+  {
+   "id": "s1",
+   "title": "Hypersplenism",
+   "html": "<p>A large spleen can cause <strong>hypersplenism</strong>: (1) <strong>mild cytopenias</strong>, alone or combined: normochromic normocytic <strong>regenerative anaemia</strong>, thrombocytopenia, leucopenia affecting all white cells (the differential is preserved), usually without clinical signs; (2) a <strong>hypercellular bone marrow</strong> reacting to the peripheral loss; (3) the splenomegaly itself; (4) <strong>correction of the cytopenias after splenectomy</strong>. The lecture's example: Hb 10 g/dL, MCV 88 fL, reticulocytes 5%, WBC 2,800/mm³, platelets 120,000/mm³.</p>"
+  },
+  {
+   "id": "s2",
+   "title": "Symptoms, signs and differential diagnosis",
+   "html": "<p>Often <strong>asymptomatic</strong>; otherwise heaviness or pain in the <strong>left upper quadrant</strong>, <strong>early satiety</strong> with a massive spleen, dyspepsia. Rarely, complications: <strong>rupture, infarct, subcapsular haematoma</strong> (ultrasound or CT).</p><p>On examination, two signs identify the spleen: <strong>it moves with respiration</strong> and has a <strong>notched anterior edge</strong>. If the examination is difficult (ascites, obesity): ultrasound or CT. <strong>Differential diagnosis</strong> of a left upper quadrant mass: enlarged <strong>left kidney</strong>, tumour of the <strong>tail of the pancreas</strong>, of the <strong>left colic angle</strong> or of the <strong>stomach's left edge</strong>.</p>"
+  },
+  {
+   "id": "s3",
+   "title": "Mechanisms and step-wise approach",
+   "html": "<p>Three mechanisms: <strong>hyperplasia or hypertrophy</strong> (reticulo-endothelial or immune), <strong>congestion</strong> (abnormal portal flow) and <strong>infiltration</strong> (abnormal cells, lymphoma).</p><p>Approach: <strong>history</strong> (Mediterranean origin or consanguinity → thalassaemia; tropical travel → malaria; fever → infection; liver disease or ascites → congestion; anaemia and jaundice → haemoglobinopathy; lymph nodes → lymphoma), <strong>examination</strong>, then <strong>CBC with blood film</strong> and <strong>abdominal ultrasound</strong>, which together explain about <strong>90%</strong> of splenomegalies. Film clues: regenerative anaemia with abnormal red cell shapes (haemoglobinopathy, spherocytosis), reactive lymphocytes (infectious mononucleosis), neutrophilia (bacterial infection, myeloproliferative neoplasm), <strong>blasts</strong> (acute leukaemia), lymphocytosis (CLL). Ultrasound clues: wide portal vein with ascites (portal hypertension), abdominal nodes (lymphoma), splenic tumours.</p>"
+  },
+  {
+   "id": "s4",
+   "title": "Aetiologies",
+   "html": "<p><strong>Infections</strong>: viral (infectious mononucleosis, CMV, HIV), bacterial (endocarditis, septicaemia, typhoid, brucellosis), parasitic (<strong>malaria, kala-azar</strong>, trypanosomiasis). <strong>Congestive</strong>: intrahepatic portal hypertension (<strong>cirrhosis</strong>), extrahepatic (portal thrombosis, venous malformation, Budd-Chiari), right heart failure. <strong>Hyperplastic</strong>: extramedullary haematopoiesis (myelofibrosis, marrow damage, thalassaemia major) and haemolytic anaemias (thalassaemia, sickle cell disease, spherocytosis, autoimmune haemolysis). <strong>Infiltrative</strong>: malignant (AML, <strong>CML</strong>, myelofibrosis, ALL, CLL, lymphoma; primary splenic cancer such as angiosarcoma and metastases are rare) and non-malignant (Gaucher, Niemann-Pick, amyloidosis, cysts, haemangioma). <strong>Immune dysregulation</strong>: Felty's syndrome, lupus, sarcoidosis.</p><p class='src'>Note: the slide also lists immune thrombocytopenia here; in practice ITP classically has <em>no</em> palpable spleen, and a big spleen should make you look for another cause.</p>"
+  }
+ ],
+ "exam": [
+  "Normal spleen: not palpable; 12 × 7 cm, < 250 g, 9th-11th left ribs.",
+  "Palpable spleen = always pathological.",
+  "Spleen roles: IgM, filter, pools 30-40% of platelets, iron recycling, fetal haematopoiesis.",
+  "Hypersplenism: mild cytopenias + rich marrow + big spleen, corrected by splenectomy.",
+  "Signs: moves with respiration, notched anterior edge.",
+  "Differential: left kidney, pancreatic tail, left colic angle, stomach tumours.",
+  "Mechanisms: hyperplasia, congestion, infiltration.",
+  "CBC + film + abdominal ultrasound explain ~90% of cases.",
+  "Infections: mononucleosis, endocarditis, typhoid, brucellosis, malaria, kala-azar.",
+  "Congestion: cirrhosis, portal thrombosis, Budd-Chiari, right heart failure.",
+  "Infiltration: CML, myelofibrosis, CLL, lymphoma; Gaucher, amyloidosis."
+ ],
+ "visual": {
+  "kind": "model",
+  "intro": "",
+  "figure": {
+   "viewBox": "0 0 760 420",
+   "alt": "Three mechanisms of splenomegaly",
+   "caption": "Each mechanism with typical causes from the lecture. Schematic drawn for this site.",
+   "base": "<defs><marker id=\"ah\" markerWidth=\"10\" markerHeight=\"8\" refX=\"9\" refY=\"4\" orient=\"auto\"><path d=\"M0,0 L10,4 L0,8 Z\" fill=\"#8a8a8a\"/></marker></defs><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"275\" y1=\"90\" x2=\"235\" y2=\"170\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"382.5\" y1=\"90\" x2=\"382.5\" y2=\"170\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"485\" y1=\"90\" x2=\"530\" y2=\"170\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"382.5\" y1=\"240\" x2=\"382.5\" y2=\"300\"/>",
+   "parts": {
+    "smg": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2d7cf\" x=\"260\" y=\"30\" width=\"240\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Splenomegaly: palpable",
+      "spleen = pathological"
+     ],
+     "lx": 380.0,
+     "ly": 58.0
+    },
+    "hyp": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#cfe3f2\" x=\"15\" y=\"170\" width=\"235\" height=\"70\" rx=\"10\"/>",
+     "label": [
+      "Hyperplasia: infection,",
+      "haemolysis, immunity"
+     ],
+     "lx": 132.5,
+     "ly": 203.0
+    },
+    "cong": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d7edd2\" x=\"265\" y=\"170\" width=\"235\" height=\"70\" rx=\"10\"/>",
+     "label": [
+      "Congestion: cirrhosis,",
+      "portal clot, heart failure"
+     ],
+     "lx": 382.5,
+     "ly": 203.0
+    },
+    "inf": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2e2a8\" x=\"515\" y=\"170\" width=\"235\" height=\"70\" rx=\"10\"/>",
+     "label": [
+      "Infiltration: leukaemia,",
+      "lymphoma, Gaucher"
+     ],
+     "lx": 632.5,
+     "ly": 203.0
+    },
+    "hs": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#e3d5f0\" x=\"230\" y=\"300\" width=\"300\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Hypersplenism: mild cytopenias, rich",
+      "marrow, corrected by splenectomy"
+     ],
+     "lx": 380.0,
+     "ly": 328.0
+    }
+   },
+   "arrows": {
+    "smg": [
+     {
+      "t": [
+       260.0,
+       38.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "hyp": [
+     {
+      "t": [
+       15.0,
+       178.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "cong": [
+     {
+      "t": [
+       265.0,
+       178.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "inf": [
+     {
+      "t": [
+       515.0,
+       178.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "hs": [
+     {
+      "t": [
+       230.0,
+       308.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ]
+   }
+  }
+ },
+ "mcqs": [
+  {
+   "q": "A normal adult spleen is:",
+   "options": [
+    "Palpable in thin people",
+    "Not palpable",
+    "Palpable on expiration",
+    "Palpable below the umbilicus"
+   ],
+   "answer": 1,
+   "why": "A palpable spleen is abnormal."
+  },
+  {
+   "q": "Normal spleen weight is below about:",
+   "options": [
+    "100 g",
+    "250 g",
+    "500 g",
+    "1 kg"
+   ],
+   "answer": 1,
+   "why": "Around 12 × 7 cm."
+  },
+  {
+   "q": "The spleen lies along the left ribs:",
+   "options": [
+    "5th-7th",
+    "9th-11th",
+    "11th-12th",
+    "7th-9th"
+   ],
+   "answer": 1,
+   "why": "Behind the stomach."
+  },
+  {
+   "q": "Two examination signs that identify the spleen:",
+   "options": [
+    "Ballottement and dullness",
+    "Moves with respiration and notched edge",
+    "Pulsatile and fixed",
+    "Bimanual contact and resonance"
+   ],
+   "answer": 1,
+   "why": "Kidneys ballot; the spleen has notches."
+  },
+  {
+   "q": "Which proportion of platelets is pooled in the spleen?",
+   "options": [
+    "5%",
+    "10-15%",
+    "30-40%",
+    "80%"
+   ],
+   "answer": 2,
+   "why": "Hence thrombocytopenia with a big spleen."
+  },
+  {
+   "q": "Hypersplenism anaemia is typically:",
+   "options": [
+    "Microcytic, aregenerative",
+    "Normocytic and regenerative",
+    "Macrocytic, megaloblastic",
+    "Sideroblastic, iron-loaded"
+   ],
+   "answer": 1,
+   "why": "Destruction and pooling."
+  },
+  {
+   "q": "In hypersplenism the bone marrow is:",
+   "options": [
+    "Aplastic",
+    "Hypercellular",
+    "Fibrotic",
+    "Infiltrated by blasts"
+   ],
+   "answer": 1,
+   "why": "It compensates for peripheral loss."
+  },
+  {
+   "q": "Which is NOT a differential diagnosis of a left upper quadrant mass?",
+   "options": [
+    "Enlarged left kidney",
+    "Tumour of the pancreatic tail",
+    "Enlarged gallbladder",
+    "Tumour of the left colic angle"
+   ],
+   "answer": 2,
+   "why": "The gallbladder is on the right."
+  },
+  {
+   "q": "CBC with film plus abdominal ultrasound explain about:",
+   "options": [
+    "20% of splenomegalies",
+    "50%",
+    "90%",
+    "100%"
+   ],
+   "answer": 2,
+   "why": "First-line work-up."
+  },
+  {
+   "q": "Mediterranean origin and consanguinity suggest:",
+   "options": [
+    "Malaria",
+    "Thalassaemia",
+    "Lymphoma",
+    "Cirrhosis"
+   ],
+   "answer": 1,
+   "why": "Haemoglobinopathy."
+  },
+  {
+   "q": "A widened portal vein with ascites on ultrasound suggests:",
+   "options": [
+    "Lymphoma",
+    "Portal hypertension",
+    "Spherocytosis",
+    "Endocarditis"
+   ],
+   "answer": 1,
+   "why": "Congestive splenomegaly."
+  },
+  {
+   "q": "Reactive lymphocytes on the film point to:",
+   "options": [
+    "CML",
+    "Infectious mononucleosis",
+    "Thalassaemia",
+    "Budd-Chiari"
+   ],
+   "answer": 1,
+   "why": "EBV."
+  },
+  {
+   "q": "Budd-Chiari syndrome causes splenomegaly by:",
+   "options": [
+    "Infiltration",
+    "Congestion",
+    "Hyperplasia",
+    "Extramedullary haematopoiesis"
+   ],
+   "answer": 1,
+   "why": "Hepatic vein obstruction."
+  },
+  {
+   "q": "Gaucher disease is a cause of:",
+   "options": [
+    "Congestive splenomegaly from portal flow",
+    "Non-malignant infiltrative splenomegaly",
+    "Infectious splenomegaly from bacteria",
+    "Immune splenomegaly from autoantibodies"
+   ],
+   "answer": 1,
+   "why": "Storage disease."
+  },
+  {
+   "q": "Felty's syndrome associates splenomegaly with:",
+   "options": [
+    "Lupus with nephritis",
+    "Rheumatoid arthritis and neutropenia",
+    "Chronic malaria infection",
+    "Alcoholic cirrhosis"
+   ],
+   "answer": 1,
+   "why": "Immune dysregulation."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "smg",
+   "options": [
+    "Congestion",
+    "Splenomegaly",
+    "Hyperplasia or hypertrophy",
+    "Hypersplenism"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: Splenomegaly. Enlargement beyond normal size (about 12 × 7 cm, < 250 g); a normal spleen is not palpable, so a palpable spleen always needs a cause."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "hyp",
+   "options": [
+    "Hyperplasia or hypertrophy",
+    "Congestion",
+    "Hypersplenism",
+    "Splenomegaly"
+   ],
+   "answer": 0,
+   "why": "The arrow points to: Hyperplasia or hypertrophy. Reticulo-endothelial work (haemolytic anaemias), immune stimulation (infections, autoimmune disease) or extramedullary haematopoiesis."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "cong",
+   "options": [
+    "Splenomegaly",
+    "Hypersplenism",
+    "Congestion",
+    "Infiltration"
+   ],
+   "answer": 2,
+   "why": "The arrow points to: Congestion. Raised pressure in the portal or splenic vein: cirrhosis, portal or hepatic vein thrombosis (Budd-Chiari), right heart failure."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "inf",
+   "options": [
+    "Hyperplasia or hypertrophy",
+    "Hypersplenism",
+    "Congestion",
+    "Infiltration"
+   ],
+   "answer": 3,
+   "why": "The arrow points to: Infiltration. Malignant cells (leukaemias, lymphomas, myeloproliferative neoplasms) or non-malignant material (Gaucher, Niemann-Pick, amyloidosis)."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "hs",
+   "options": [
+    "Splenomegaly",
+    "Hypersplenism",
+    "Congestion",
+    "Hyperplasia or hypertrophy"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: Hypersplenism. Consequence of any big spleen: pooling and destruction give mild cytopenias with a hypercellular marrow, reversed by splenectomy."
+  }
+ ],
+ "cards": [
+  {
+   "id": "x0",
+   "type": "text",
+   "front": "Three fundamentals of splenomegaly?",
+   "back": "Normal spleen not palpable; splenomegaly is palpable; a palpable spleen is always pathological and needs a cause."
+  },
+  {
+   "id": "x1",
+   "type": "text",
+   "front": "Normal spleen?",
+   "back": "About 12 × 7 cm, under 250 g, along the 9th-11th left ribs, notched anterior edge, moves with inspiration."
+  },
+  {
+   "id": "x2",
+   "type": "text",
+   "front": "Functions of the spleen?",
+   "back": "Immune (IgM, opsonisation), filter (old cells), pooling (30-40% platelets), iron recycling, fetal haematopoiesis."
+  },
+  {
+   "id": "x3",
+   "type": "text",
+   "front": "Hypersplenism?",
+   "back": "Mild cytopenias (regenerative normocytic anaemia, thrombocytopenia, leucopenia), hypercellular marrow, splenomegaly, corrected by splenectomy."
+  },
+  {
+   "id": "x4",
+   "type": "text",
+   "front": "Differential diagnosis?",
+   "back": "Enlarged left kidney; tumours of the pancreatic tail, left colic angle or stomach's left edge."
+  },
+  {
+   "id": "x5",
+   "type": "text",
+   "front": "First-line work-up?",
+   "back": "History and examination, then CBC with blood film and abdominal ultrasound (~90% of causes)."
+  },
+  {
+   "id": "x6",
+   "type": "text",
+   "front": "Main infectious causes?",
+   "back": "Mononucleosis, CMV, HIV; endocarditis, septicaemia, typhoid, brucellosis; malaria, kala-azar, trypanosomiasis."
+  },
+  {
+   "id": "x7",
+   "type": "text",
+   "front": "Congestive and infiltrative causes?",
+   "back": "Congestive: cirrhosis, portal thrombosis, Budd-Chiari, right heart failure. Infiltrative: CML, myelofibrosis, CLL, lymphoma, Gaucher, amyloidosis."
+  },
+  {
+   "id": "img-smg",
+   "type": "image",
+   "target": "smg",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Splenomegaly. Enlargement beyond normal size (about 12 × 7 cm, < 250 g); a normal spleen is not palpable, so a palpable spleen always needs a cause."
+  },
+  {
+   "id": "img-hyp",
+   "type": "image",
+   "target": "hyp",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Hyperplasia or hypertrophy. Reticulo-endothelial work (haemolytic anaemias), immune stimulation (infections, autoimmune disease) or extramedullary haematopoiesis."
+  },
+  {
+   "id": "img-cong",
+   "type": "image",
+   "target": "cong",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Congestion. Raised pressure in the portal or splenic vein: cirrhosis, portal or hepatic vein thrombosis (Budd-Chiari), right heart failure."
+  },
+  {
+   "id": "img-inf",
+   "type": "image",
+   "target": "inf",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Infiltration. Malignant cells (leukaemias, lymphomas, myeloproliferative neoplasms) or non-malignant material (Gaucher, Niemann-Pick, amyloidosis)."
+  },
+  {
+   "id": "img-hs",
+   "type": "image",
+   "target": "hs",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Hypersplenism. Consequence of any big spleen: pooling and destruction give mild cytopenias with a hypercellular marrow, reversed by splenectomy."
+  }
+ ],
+ "deeper": [
+  {
+   "title": "Why splenectomy patients need vaccines",
+   "html": "<p>The spleen is where IgM is made against capsular polysaccharides and where opsonised bacteria are cleared. Without it (splenectomy for hypersplenism, trauma or ITP), patients are at lifelong risk of <strong>overwhelming post-splenectomy infection</strong> by encapsulated bacteria: <em>Streptococcus pneumoniae</em>, <em>Haemophilus influenzae</em> type b and <em>Neisseria meningitidis</em>. That is why they are vaccinated against all three, ideally at least two weeks before an elective splenectomy, and taught to seek care urgently for any fever.</p><p class='src'>Source: the lecture's immune functions of the spleen; standard post-splenectomy guidance.</p>"
+  }
+ ],
+ "resources": [
+  {
+   "title": "Splenomegaly (NCBI StatPearls)",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK430907/",
+   "kind": "Book",
+   "why": "Causes, examination and work-up.",
+   "note": ""
+  },
+  {
+   "title": "Splenomegaly and hypersplenism (Patient.info)",
+   "url": "https://patient.info/doctor/history-examination/splenomegaly-and-hypersplenism",
+   "kind": "Website",
+   "why": "Examination and causes.",
+   "note": ""
+  }
+ ],
+ "checks": [],
+ "sources": [
+  {
+   "name": "Splenomegaly (NCBI StatPearls)",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK430907/"
+  },
+  {
+   "name": "Splenomegaly and hypersplenism (Patient.info)",
+   "url": "https://patient.info/doctor/history-examination/splenomegaly-and-hypersplenism"
+  }
+ ],
+ "verified": "26 Sep 2026"
+};
+window.SINA = window.SINA || {subjects:[], lectures:{}};
+SINA.lectures["hemato1-lymphadenopathy"] = {
+ "id": "hemato1-lymphadenopathy",
+ "subject": "hemato1",
+ "group": "Clinical haematology",
+ "title": "Lymphadenopathy",
+ "sourceFile": "Approach to the patient with lymphadenopathy (2025-26) (Hematology, Pr. A. Madani)",
+ "sourceUrl": "https://drive.google.com/file/d/1GQnWMDCoEmUYsUXbCpFHnol9qCoj1vOe/view?usp=drivesdk",
+ "buildNote": "<strong>Built from the lecture slides.</strong> Slides that only show pictures are covered in outline. If your professor says something different, trust your professor.",
+ "summary": [
+  {
+   "id": "s0",
+   "title": "Definition and fundamentals",
+   "html": "<p><strong>Lymphadenopathy</strong> (ADP) is enlargement of lymph nodes whatever the cause, usually <strong>over 1 cm</strong>. It is <strong>localized</strong> (one node area or two adjacent areas; about <strong>three quarters</strong> of cases in primary care) or <strong>generalized</strong> (two or more non-contiguous areas; about a quarter). It can reveal many benign or malignant diseases.</p><p>Fundamentals: normal nodes are <strong>not palpable</strong> (nor in newborns); only cervical, axillary and inguinal areas (plus supraclavicular, epitrochlear, popliteal) are clinically accessible; soft flat <strong>submandibular nodes &lt; 1 cm</strong> and <strong>inguinal nodes up to 2 cm</strong> can be normal; <strong>fewer than 1%</strong> are malignant in primary care. <strong>Lymphadenitis</strong> means an infected or inflamed node: tender, painful, warm.</p>"
+  },
+  {
+   "id": "s1",
+   "title": "Nodes, territories and mechanisms",
+   "html": "<p>There are about <strong>600 nodes</strong>, kidney-shaped secondary lymphoid organs. Accessible: cervical, supraclavicular, axillary, inguinal, popliteal, epitrochlear. Not accessible: mediastinal, abdominal, pelvic. Always examine the territory a node drains, and the nodes draining any lesion: <strong>cervical</strong> → head, neck, thyroid, scalp; <strong>axillary</strong> → upper limb, breast; <strong>inguinal</strong> → lower limb, external genitalia, anal region, lower abdomen; <strong>supraclavicular</strong> → thorax and abdomen (stomach, pancreas, ovary, testis, kidney).</p><p>Four mechanisms of enlargement: <strong>lymphocyte proliferation</strong> against an antigen (infection), <strong>macrophage accumulation</strong> (inflammatory diseases), <strong>malignant lymphocyte proliferation</strong> (lymphoma), <strong>metastatic colonisation</strong> by non-lymphoid cancer cells.</p>"
+  },
+  {
+   "id": "s2",
+   "title": "Clinical approach",
+   "html": "<p>Peripheral nodes are noticed by the patient or found incidentally. <strong>Deep nodes</strong> reveal themselves by <strong>compression</strong>: in the mediastinum, <strong>superior vena cava syndrome</strong> (swelling of face and neck, distended neck and chest veins, cough, dyspnoea, orthopnoea); in the abdomen, leg swelling, pain, jaundice, urinary obstruction.</p><p>History: origin, medications, <strong>pain, fever, night sweats, weight loss</strong>. Five key points: <strong>age</strong> (children: mostly infection; adults: also cancer and autoimmune disease), <strong>size</strong> (&gt; 2 cm must be investigated), <strong>quality</strong> (painful with redness and warmth → infection; hard → possibly malignant; fixed → cancer or surrounding inflammation such as tuberculosis; <strong>fistulising → tuberculosis</strong>), <strong>time course</strong>, and <strong>localized vs generalized</strong>.</p><p><strong>Differential diagnosis</strong> by site: cervical (thyroglossal duct cyst, hyoid bone, pulsatile carotid aneurysm, soft lipoma, thyroid nodule moving with swallowing), axillary (lipoma, folliculitis), inguinal (<strong>hernia</strong>).</p>"
+  },
+  {
+   "id": "s3",
+   "title": "Investigations and biopsy",
+   "html": "<p><strong>CBC</strong>: reactive lymphocytes (infectious mononucleosis), mature lymphocytosis (CLL), hyperleucocytosis with blasts (acute leukaemia). <strong>ESR, CRP</strong>. <strong>Serology</strong>: EBV, CMV, HIV. <strong>Imaging</strong>: chest X-ray or CT (hilar and mediastinal nodes), abdominal ultrasound or CT.</p><p><strong>When to biopsy</strong>: a <strong>hard, irregular or fixed</strong> node; size <strong>&gt; 3 cm</strong>; persistence <strong>&gt; 4-6 weeks</strong>; or <strong>no diagnosis after 4 weeks</strong> of investigation.</p>"
+  },
+  {
+   "id": "s4",
+   "title": "Aetiologies",
+   "html": "<p><strong>Localized, inflammatory</strong> (soft, painful): infection in the drained area: submandibular with <strong>tonsillitis or dental abscess</strong>, axillary with breast or upper-limb abscess, inguinal with lower-limb, anal or genital infection (syphilitic chancre). <strong>Always consider tuberculosis</strong>, wherever the node; some cancers look inflammatory (inflammatory breast cancer).</p><p><strong>Localized, non-inflammatory</strong>: think cancer: cervical (head and neck, thyroid, scalp), <strong>right supraclavicular → lung and mediastinum</strong>, <strong>left supraclavicular → abdomen</strong>, inguinal (external genitalia, anus); always look at the skin for <strong>melanoma</strong>.</p><p><strong>Generalized</strong> (CBC, ESR, CRP, imaging needed): with an infectious or inflammatory context: <strong>infectious mononucleosis, toxoplasmosis, HIV</strong>, drugs (<strong>phenytoin, carbamazepine</strong>), autoimmune diseases; without one: <strong>haematological malignancies</strong> (lymphomas, acute or chronic leukaemias). Most nodes are benign, but <strong>do not miss a cancer</strong>.</p>"
+  }
+ ],
+ "exam": [
+  "Lymphadenopathy: node > 1 cm; inguinal up to 2 cm and soft submandibular < 1 cm may be normal.",
+  "Localized (1 area or 2 adjacent, ~3/4) vs generalized (≥ 2 non-contiguous, ~1/4).",
+  "< 1% malignant in primary care; lymphadenitis = tender, warm node.",
+  "Drainage: cervical head/neck; axillary arm/breast; inguinal leg/genitals/anus; supraclavicular thorax/abdomen.",
+  "Mechanisms: lymphocyte proliferation, macrophages, lymphoma, metastasis.",
+  "Mediastinal nodes → superior vena cava syndrome.",
+  "Key points: age, size, quality, time course, localized vs generalized.",
+  "Fistulising node → tuberculosis; hard or fixed → cancer.",
+  "Biopsy: hard/fixed, > 3 cm, > 4-6 weeks, or no diagnosis after 4 weeks.",
+  "Right supraclavicular: lung, mediastinum; left: abdomen.",
+  "Generalized: mononucleosis, toxoplasmosis, HIV, phenytoin, carbamazepine, lupus; lymphoma, leukaemia."
+ ],
+ "visual": {
+  "kind": "model",
+  "intro": "",
+  "figure": {
+   "viewBox": "0 0 760 420",
+   "alt": "Localized or generalized lymphadenopathy",
+   "caption": "Two branches of the clinical approach, with biopsy triggers. Schematic drawn for this site.",
+   "base": "<defs><marker id=\"ah\" markerWidth=\"10\" markerHeight=\"8\" refX=\"9\" refY=\"4\" orient=\"auto\"><path d=\"M0,0 L10,4 L0,8 Z\" fill=\"#8a8a8a\"/></marker></defs><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"280\" y1=\"90\" x2=\"280\" y2=\"150\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"480\" y1=\"90\" x2=\"480\" y2=\"150\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"130\" y1=\"215\" x2=\"130\" y2=\"290\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"285\" y1=\"215\" x2=\"285\" y2=\"290\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"630\" y1=\"215\" x2=\"630\" y2=\"290\"/>",
+   "parts": {
+    "adp": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2d7cf\" x=\"260\" y=\"30\" width=\"240\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Lymphadenopathy: node > 1 cm",
+      "(inguinal > 2 cm)"
+     ],
+     "lx": 380.0,
+     "ly": 58.0
+    },
+    "loc": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#cfe3f2\" x=\"20\" y=\"150\" width=\"280\" height=\"65\" rx=\"10\"/>",
+     "label": [
+      "Localized: 1 area or 2 adjacent",
+      "→ examine the drained territory"
+     ],
+     "lx": 160.0,
+     "ly": 180.5
+    },
+    "gen": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d7edd2\" x=\"460\" y=\"150\" width=\"280\" height=\"65\" rx=\"10\"/>",
+     "label": [
+      "Generalized: ≥ 2 non-contiguous",
+      "areas → systemic disease"
+     ],
+     "lx": 600.0,
+     "ly": 180.5
+    },
+    "inflam": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2e2a8\" x=\"20\" y=\"290\" width=\"220\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Soft, painful: infection,",
+      "inflammation, tuberculosis"
+     ],
+     "lx": 130.0,
+     "ly": 318.0
+    },
+    "bx": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#e3d5f0\" x=\"270\" y=\"290\" width=\"230\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Biopsy: hard, fixed, > 3 cm,",
+      "> 4-6 weeks, no diagnosis"
+     ],
+     "lx": 385.0,
+     "ly": 318.0
+    },
+    "sys": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f7d9b8\" x=\"520\" y=\"290\" width=\"230\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "EBV, HIV, drugs, lupus;",
+      "lymphoma, leukaemia"
+     ],
+     "lx": 635.0,
+     "ly": 318.0
+    }
+   },
+   "arrows": {
+    "adp": [
+     {
+      "t": [
+       260.0,
+       38.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "loc": [
+     {
+      "t": [
+       20.0,
+       158.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "gen": [
+     {
+      "t": [
+       460.0,
+       158.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "inflam": [
+     {
+      "t": [
+       20.0,
+       298.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "bx": [
+     {
+      "t": [
+       270.0,
+       298.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "sys": [
+     {
+      "t": [
+       520.0,
+       298.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ]
+   }
+  }
+ },
+ "mcqs": [
+  {
+   "q": "A lymphadenopathy is usually defined as a node larger than:",
+   "options": [
+    "0.5 cm",
+    "1 cm",
+    "3 cm",
+    "5 cm"
+   ],
+   "answer": 1,
+   "why": "Inguinal nodes up to 2 cm can be normal."
+  },
+  {
+   "q": "Generalized lymphadenopathy means:",
+   "options": [
+    "One area",
+    "Two adjacent areas",
+    "Two or more non-contiguous areas",
+    "Any node over 2 cm"
+   ],
+   "answer": 2,
+   "why": "Suggests a systemic cause."
+  },
+  {
+   "q": "In primary care, the proportion of malignant nodes is:",
+   "options": [
+    "< 1%",
+    "10%",
+    "25%",
+    "50%"
+   ],
+   "answer": 0,
+   "why": "Most are benign."
+  },
+  {
+   "q": "Axillary nodes drain the:",
+   "options": [
+    "Head and neck",
+    "Upper limb and breast",
+    "Lower limb",
+    "Stomach"
+   ],
+   "answer": 1,
+   "why": "Examine the breast."
+  },
+  {
+   "q": "A left supraclavicular node points first to a cancer of the:",
+   "options": [
+    "Lung",
+    "Abdomen",
+    "Thyroid",
+    "Scalp"
+   ],
+   "answer": 1,
+   "why": "Right side: lung, mediastinum."
+  },
+  {
+   "q": "A fistulising node suggests:",
+   "options": [
+    "Lymphoma",
+    "Tuberculosis",
+    "Mononucleosis",
+    "Melanoma"
+   ],
+   "answer": 1,
+   "why": "Caseation drains to the skin."
+  },
+  {
+   "q": "Mediastinal nodes can cause:",
+   "options": [
+    "Budd-Chiari syndrome",
+    "Superior vena cava syndrome",
+    "Portal hypertension",
+    "Horner syndrome only"
+   ],
+   "answer": 1,
+   "why": "Face and neck swelling, distended veins."
+  },
+  {
+   "q": "Which is a biopsy criterion?",
+   "options": [
+    "Soft painful node",
+    "Node > 3 cm",
+    "Node < 1 cm",
+    "Node that shrinks in 1 week"
+   ],
+   "answer": 1,
+   "why": "Also hard, fixed, > 4-6 weeks."
+  },
+  {
+   "q": "A neck swelling that moves up on swallowing is likely:",
+   "options": [
+    "A lymph node",
+    "A thyroid nodule",
+    "A lipoma",
+    "A carotid aneurysm"
+   ],
+   "answer": 1,
+   "why": "Thyroid follows the larynx."
+  },
+  {
+   "q": "An inguinal swelling to differentiate from a node:",
+   "options": [
+    "Lipoma only",
+    "Inguinal hernia",
+    "Thyroglossal cyst",
+    "Folliculitis"
+   ],
+   "answer": 1,
+   "why": "Cough impulse, reducibility."
+  },
+  {
+   "q": "Drugs that can cause generalized lymphadenopathy:",
+   "options": [
+    "Paracetamol, aspirin",
+    "Phenytoin, carbamazepine",
+    "Insulin, metformin",
+    "Iron, folate"
+   ],
+   "answer": 1,
+   "why": "Anticonvulsant pseudolymphoma."
+  },
+  {
+   "q": "Reactive lymphocytes on the CBC with nodes suggest:",
+   "options": [
+    "CLL",
+    "Infectious mononucleosis",
+    "Acute leukaemia",
+    "Tuberculosis"
+   ],
+   "answer": 1,
+   "why": "EBV."
+  },
+  {
+   "q": "In children, lymphadenopathy is mostly:",
+   "options": [
+    "Malignant",
+    "Infectious",
+    "Autoimmune",
+    "Drug-induced"
+   ],
+   "answer": 1,
+   "why": "In adults, widen the search."
+  },
+  {
+   "q": "Metastatic colonisation of a node is by:",
+   "options": [
+    "Lymphoma cells",
+    "Non-lymphoid cancer cells",
+    "Macrophages",
+    "Reactive B cells"
+   ],
+   "answer": 1,
+   "why": "Loco-regional cancer."
+  },
+  {
+   "q": "Whatever the site of an unexplained node, always examine the skin for:",
+   "options": [
+    "Psoriasis",
+    "Melanoma",
+    "Vitiligo",
+    "Eczema"
+   ],
+   "answer": 1,
+   "why": "Melanoma spreads to regional nodes."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "adp",
+   "options": [
+    "Lymphadenopathy",
+    "Localized lymphadenopathy",
+    "Systemic causes",
+    "Biopsy triggers"
+   ],
+   "answer": 0,
+   "why": "The arrow points to: Lymphadenopathy. Enlargement of a lymph node whatever the cause, usually above 1 cm; soft flat submandibular nodes < 1 cm and inguinal nodes up to 2 cm can be normal."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "loc",
+   "options": [
+    "Biopsy triggers",
+    "Localized lymphadenopathy",
+    "Systemic causes",
+    "Lymphadenopathy"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: Localized lymphadenopathy. One node area or two adjacent areas (about three quarters of cases in primary care); look at the organs the area drains."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "gen",
+   "options": [
+    "Inflammatory node",
+    "Systemic causes",
+    "Localized lymphadenopathy",
+    "Generalized lymphadenopathy"
+   ],
+   "answer": 3,
+   "why": "The arrow points to: Generalized lymphadenopathy. Two or more non-contiguous areas (about a quarter of cases); suggests a systemic disease and usually needs CBC, ESR, CRP and imaging."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "inflam",
+   "options": [
+    "Inflammatory node",
+    "Systemic causes",
+    "Localized lymphadenopathy",
+    "Generalized lymphadenopathy"
+   ],
+   "answer": 0,
+   "why": "The arrow points to: Inflammatory node. Tender, warm, soft node with an infection in the drained area (tonsillitis, abscess, genital infection); always think of tuberculosis."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "bx",
+   "options": [
+    "Generalized lymphadenopathy",
+    "Lymphadenopathy",
+    "Biopsy triggers",
+    "Systemic causes"
+   ],
+   "answer": 2,
+   "why": "The arrow points to: Biopsy triggers. Hard, irregular or fixed node, size above 3 cm, persistence beyond 4-6 weeks, or no diagnosis after 4 weeks of work-up."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "sys",
+   "options": [
+    "Inflammatory node",
+    "Localized lymphadenopathy",
+    "Lymphadenopathy",
+    "Systemic causes"
+   ],
+   "answer": 3,
+   "why": "The arrow points to: Systemic causes. With an infectious or inflammatory context: mononucleosis, toxoplasmosis, HIV, drugs, autoimmune disease; without one: lymphomas and leukaemias."
+  }
+ ],
+ "cards": [
+  {
+   "id": "x0",
+   "type": "text",
+   "front": "Define lymphadenopathy and its two forms.",
+   "back": "Node enlargement (> 1 cm) of any cause; localized = 1 area or 2 adjacent; generalized = ≥ 2 non-contiguous areas."
+  },
+  {
+   "id": "x1",
+   "type": "text",
+   "front": "Which nodes can be normal?",
+   "back": "Soft flat submandibular nodes < 1 cm and inguinal nodes up to 2 cm; normal nodes elsewhere are not palpable."
+  },
+  {
+   "id": "x2",
+   "type": "text",
+   "front": "Drainage territories?",
+   "back": "Cervical: head, neck, thyroid, scalp. Axillary: arm, breast. Inguinal: leg, genitals, anus, lower abdomen. Supraclavicular: thorax, abdomen."
+  },
+  {
+   "id": "x3",
+   "type": "text",
+   "front": "Four mechanisms of node enlargement?",
+   "back": "Reactive lymphocyte proliferation, macrophage accumulation, lymphoma, metastasis of a non-lymphoid cancer."
+  },
+  {
+   "id": "x4",
+   "type": "text",
+   "front": "Five key clinical points?",
+   "back": "Age, size, quality (tender, hard, fixed, fistulising), time course, localized vs generalized."
+  },
+  {
+   "id": "x5",
+   "type": "text",
+   "front": "When to biopsy?",
+   "back": "Hard, irregular or fixed node; > 3 cm; persisting > 4-6 weeks; or no diagnosis after 4 weeks of work-up."
+  },
+  {
+   "id": "x6",
+   "type": "text",
+   "front": "Supraclavicular nodes?",
+   "back": "Right: lung and mediastinum. Left: abdominal cancers (stomach, pancreas, testis, ovary, kidney)."
+  },
+  {
+   "id": "x7",
+   "type": "text",
+   "front": "Causes of generalized lymphadenopathy?",
+   "back": "Mononucleosis, toxoplasmosis, HIV, phenytoin or carbamazepine, autoimmune disease; lymphomas and leukaemias."
+  },
+  {
+   "id": "img-adp",
+   "type": "image",
+   "target": "adp",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Lymphadenopathy. Enlargement of a lymph node whatever the cause, usually above 1 cm; soft flat submandibular nodes < 1 cm and inguinal nodes up to 2 cm can be normal."
+  },
+  {
+   "id": "img-loc",
+   "type": "image",
+   "target": "loc",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Localized lymphadenopathy. One node area or two adjacent areas (about three quarters of cases in primary care); look at the organs the area drains."
+  },
+  {
+   "id": "img-gen",
+   "type": "image",
+   "target": "gen",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Generalized lymphadenopathy. Two or more non-contiguous areas (about a quarter of cases); suggests a systemic disease and usually needs CBC, ESR, CRP and imaging."
+  },
+  {
+   "id": "img-inflam",
+   "type": "image",
+   "target": "inflam",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Inflammatory node. Tender, warm, soft node with an infection in the drained area (tonsillitis, abscess, genital infection); always think of tuberculosis."
+  },
+  {
+   "id": "img-bx",
+   "type": "image",
+   "target": "bx",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Biopsy triggers. Hard, irregular or fixed node, size above 3 cm, persistence beyond 4-6 weeks, or no diagnosis after 4 weeks of work-up."
+  },
+  {
+   "id": "img-sys",
+   "type": "image",
+   "target": "sys",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Systemic causes. With an infectious or inflammatory context: mononucleosis, toxoplasmosis, HIV, drugs, autoimmune disease; without one: lymphomas and leukaemias."
+  }
+ ],
+ "deeper": [
+  {
+   "title": "Why a left supraclavicular node points to the abdomen",
+   "html": "<p>Lymph from the abdomen and lower body ascends in the <strong>thoracic duct</strong>, which empties into the <strong>left</strong> venous angle, where the left subclavian and internal jugular veins meet, just behind the left supraclavicular nodes. Cancer cells travelling up the duct can lodge there, so an enlarged left supraclavicular node (Virchow's node, Troisier's sign) may be the first sign of a gastric, pancreatic, testicular or ovarian cancer. The right side drains the right thorax and lung through the right lymphatic duct, which is why right-sided nodes point to the chest.</p><p class='src'>Source: the lecture's drainage table; the anatomy of the thoracic duct from Anatomy 1.</p>"
+  }
+ ],
+ "resources": [
+  {
+   "title": "Lymphadenopathy (NCBI StatPearls)",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK513250/",
+   "kind": "Book",
+   "why": "Evaluation and causes.",
+   "note": ""
+  },
+  {
+   "title": "Swollen glands (NHS)",
+   "url": "https://www.nhs.uk/conditions/swollen-glands/",
+   "kind": "Website",
+   "why": "When a swollen node needs checking.",
+   "note": ""
+  }
+ ],
+ "checks": [],
+ "sources": [
+  {
+   "name": "Lymphadenopathy (NCBI StatPearls)",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK513250/"
+  },
+  {
+   "name": "Swollen glands (NHS)",
+   "url": "https://www.nhs.uk/conditions/swollen-glands/"
+  }
+ ],
+ "verified": "26 Sep 2026"
 };

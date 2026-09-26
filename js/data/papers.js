@@ -1247,6 +1247,45 @@ SINA.papers = SINA.papers.concat([
   ]
  },
  {
+  "id": "y1-embryo-histo-mock",
+  "subject": "embryo1",
+  "title": "Embryology and histology mock test",
+  "year": "Mock",
+  "note": "Covers both subjects of the module.",
+  "links": [
+   {
+    "label": "Open the mock test (PDF)",
+    "url": "https://drive.google.com/file/d/1grUwvsyXrNCyDNaMVR4FUKdh9GJmO6TT/view?usp=sharing"
+   }
+  ]
+ },
+ {
+  "id": "y1-embryo-histo-mock-2",
+  "subject": "embryo1",
+  "title": "Embryology and histology mock exam (scanned)",
+  "year": "Mock",
+  "note": "A large scanned PDF; it may take a moment to open.",
+  "links": [
+   {
+    "label": "Open the mock exam (PDF)",
+    "url": "https://drive.google.com/file/d/1fUhxXFBtBQOhbnHGe1bJby1i97xTfVIu/view?usp=sharing"
+   }
+  ]
+ },
+ {
+  "id": "y1-hemato-immuno-mock",
+  "subject": "hemato1",
+  "title": "Hematology and Immunology mock test",
+  "year": "Mock",
+  "note": "Covers both subjects of the module.",
+  "links": [
+   {
+    "label": "Open the mock test (PDF)",
+    "url": "https://drive.google.com/file/d/1NwZc4Hsf9-ngObkH2qZHcXM8RL1yLc1a/view?usp=sharing"
+   }
+  ]
+ },
+ {
   "id": "y1-bact-exam-ans",
   "subject": "bacterio1",
   "title": "Bacteriology exam, with answers",

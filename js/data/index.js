@@ -477,7 +477,24 @@ SINA.subjects.push(
         { id: "hemato1-lymphadenopathy", title: "Lymphadenopathy" }
       ]}
     ]},
-  { id: "embryo1", name: "Embryology", semester: "S2", program: "y1-anglo", status: "planned", count: 6, blurb: "" },
+  { id: "embryo1", name: "Embryology", semester: "S2", program: "y1-anglo", status: "live",
+    blurb: "From gametes to the fetus: early development, placenta and membranes, and the digestive system.",
+    groups: [
+      { name: "Early development", items: [
+        { id: "embryo1-gametogenesis", title: "Gametogenesis" },
+        { id: "embryo1-implantation", title: "Fertilisation to implantation" },
+        { id: "embryo1-gastrulation", title: "Gastrulation and neurulation" },
+        { id: "embryo1-folding", title: "Folding, somites and organogenesis" }
+      ]},
+      { name: "Placenta, membranes and fetal period", items: [
+        { id: "embryo1-placenta", title: "The placenta" },
+        { id: "embryo1-membranes", title: "Fetal membranes and fetal assessment" },
+        { id: "embryo1-fetal-period", title: "The fetal period" }
+      ]},
+      { name: "Systems development", items: [
+        { id: "embryo1-git", title: "Development of the digestive system" }
+      ]}
+    ]},
   { id: "histo1", name: "Histology", semester: "S2", program: "y1-anglo", status: "planned", count: 6, blurb: "" },
   { id: "bacterio1", name: "Bacteriology", semester: "S2", program: "y1-anglo", status: "planned", count: 8, blurb: "" },
   { id: "physio1", name: "Physiology", semester: "S2", program: "y1-anglo", status: "planned", count: 8, blurb: "" },

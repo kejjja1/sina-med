@@ -2,6 +2,12 @@
    date: what people see. items: short lines. */
 window.SINA = window.SINA || { subjects: [], lectures: {} };
 SINA.updates = [
+  { date: "26 September 2026", items: [
+    "Embryology (1st Year, Semester 2) is complete with 8 lectures: gametogenesis, fertilisation to implantation, gastrulation and neurulation, folding and organogenesis, the placenta, fetal membranes and fetal assessment, the fetal period, and development of the digestive system.",
+    "Past papers: two Embryology and Histology mock tests added under Embryology.",
+    "Hematology (1st Year, Semester 2) is complete with 17 lectures: the last five are thrombocytopenia and thrombocytosis, approach to the bleeding patient (including von Willebrand disease), blood groups and transfusion, splenomegaly, and lymphadenopathy.",
+    "Past papers: the Hematology and Immunology mock test is now listed under Hematology."
+  ]},
   { date: "25 September 2026", items: [
     "1st Year Anglo: Anatomy 1 now covers the whole upper limb (8 lectures) and the thorax (7 lectures: overview, osteology, myology, walls and breast, heart, great vessels, lungs).",
     "1st Year Anglo: Biochemistry is complete (9 lectures: amino acids, proteins, enzymes, carbohydrates, lipids, nucleotides, and carbohydrate, lipid and amino acid metabolism).",
