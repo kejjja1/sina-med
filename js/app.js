@@ -617,10 +617,10 @@
   }
 
   function highYieldPanel(p, lec) {
-    var HYT = { must: "Must know", trap: "Exam trap", clinic: "Clinical", mnemo: "Memory aid" };
-    var order = ["must", "trap", "clinic", "mnemo"];
+    var HYT = { note: "Note", clinic: "Clinical", mnemo: "Memory aid" };
+    var order = ["note", "clinic", "mnemo"];
     var counts = {}; lec.highYield.forEach(function (x) { counts[x.t] = (counts[x.t] || 0) + 1; });
-    var h = '<p class="hy-intro">The facts exam questions on this lecture most often hinge on. Use it for last-minute revision; the Summary tab has the full explanation.</p>' +
+    var h = '<p class="hy-intro">Quick notes to help you revise this lecture: key facts, clinical links and a few memory aids. Nothing here is extra to learn by heart; the Summary tab has the full explanation.</p>' +
       '<div class="hy-filter" role="group" aria-label="Show">' +
       '<button class="chip hy-f" data-f="all" aria-pressed="true">All (' + lec.highYield.length + ')</button>' +
       order.filter(function (t) { return counts[t]; }).map(function (t) {

@@ -591,11 +591,9 @@ body.noscroll { overflow: hidden; }
 .hy-dot { width: 0.6rem; height: 0.6rem; border-radius: 50%; border: 1px solid var(--gold-line); display: inline-block; }
 .hy-list { list-style: none; padding: 0; margin: 0; }
 .hy-list li { padding: 0.75rem 0.9rem; margin-bottom: 0.6rem; line-height: 1.55; border: 1px solid var(--line); border-left: 4px solid var(--gold-line); border-radius: var(--radius); }
-.hy-list li[data-t="trap"] { border-left-color: color-mix(in srgb, #c0392b 70%, transparent); }
 .hy-list li[data-t="clinic"] { border-left-color: var(--sage, #6b8f71); }
 .hy-list li[data-t="mnemo"] { border-left-color: color-mix(in srgb, #7e57c2 70%, transparent); }
 .hy-tag { display: inline-block; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.02em; text-transform: uppercase; padding: 0.05rem 0.5rem; border-radius: 999px; margin-right: 0.35rem; border: 1px solid var(--gold-line); color: var(--ink); vertical-align: 1px; white-space: nowrap; }
-.hy-trap { background: color-mix(in srgb, #c0392b 16%, transparent); border-color: color-mix(in srgb, #c0392b 55%, transparent); }
 .hy-clinic { background: color-mix(in srgb, var(--sage, #6b8f71) 22%, transparent); border-color: var(--sage, #6b8f71); }
 .hy-mnemo { background: color-mix(in srgb, #7e57c2 16%, transparent); border-color: color-mix(in srgb, #7e57c2 55%, transparent); }
-.hy-must { background: color-mix(in srgb, var(--gold-line) 25%, transparent); }
+.hy-note { background: color-mix(in srgb, var(--gold-line) 25%, transparent); }

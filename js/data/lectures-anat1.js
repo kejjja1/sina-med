@@ -593,11 +593,11 @@ SINA.lectures["anat1-upper-skeleton"] = {
    "html": "<strong>Rotator cuff 'SITS'</strong>: Supraspinatus, Infraspinatus, Teres minor on the <strong>greater tubercle</strong> (top to bottom); Subscapularis on the <strong>lesser tubercle</strong>."
   },
   {
-   "t": "must",
+   "t": "note",
    "html": "<strong>Supraglenoid tubercle</strong> = long head of <strong>biceps</strong>; <strong>infraglenoid</strong> = long head of <strong>triceps</strong>. <strong>Coracoid</strong> = pectoralis minor, coracobrachialis, short head of biceps."
   },
   {
-   "t": "must",
+   "t": "note",
    "html": "Humerus: <strong>capitulum ↔ radius</strong>, <strong>trochlea ↔ ulna</strong>; <strong>medial epicondyle = flexors</strong>, lateral = extensors. <strong>Radial groove</strong> carries the radial nerve and profunda brachii."
   },
   {
@@ -605,11 +605,11 @@ SINA.lectures["anat1-upper-skeleton"] = {
    "html": "<strong>Nerves at risk with humeral fractures</strong>: surgical neck → <strong>axillary</strong>; mid-shaft (radial groove) → <strong>radial</strong> (wrist drop); medial epicondyle → <strong>ulnar</strong>; supracondylar → <strong>median</strong> and brachial artery."
   },
   {
-   "t": "trap",
+   "t": "note",
    "html": "The <strong>clavicle</strong> is the only long bone lying horizontally and the most commonly fractured; the fracture is usually at the junction of the middle and lateral thirds. <strong>Radial tuberosity</strong> = biceps; <strong>radial styloid</strong> = brachioradialis."
   },
   {
-   "t": "must",
+   "t": "note",
    "html": "Hand bones: <strong>8 carpals, 5 metacarpals, 14 phalanges</strong> (the thumb has only two)."
   }
  ]
@@ -1106,15 +1106,15 @@ SINA.lectures["anat1-shoulder"] = {
  "verified": "22 Sep 2026",
  "highYield": [
   {
-   "t": "must",
+   "t": "note",
    "html": "<strong>Axilla walls</strong>: anterior = pectoralis major and minor, subclavius, clavipectoral fascia; posterior = subscapularis, teres major, latissimus; medial = <strong>serratus anterior</strong>; lateral = coracobrachialis and short head of biceps (bicipital groove)."
   },
   {
-   "t": "must",
+   "t": "note",
    "html": "<strong>Axillary artery</strong> runs from the <strong>outer border of rib 1</strong> to the lower border of <strong>teres major</strong> (the lecture uses pectoralis major, at about the same level), where it becomes the brachial artery. Pectoralis minor divides it into 3 parts."
   },
   {
-   "t": "must",
+   "t": "note",
    "html": "<strong>Cords and their nerves</strong>: lateral → <strong>musculocutaneous</strong> + lateral root of median; medial → medial root of median + <strong>ulnar</strong>; posterior → <strong>axillary + radial</strong>."
   },
   {
@@ -1126,7 +1126,7 @@ SINA.lectures["anat1-shoulder"] = {
    "html": "<strong>Axillary nodes</strong> drain most of the breast (~75%): the key staging site in <strong>breast cancer</strong>; clearance risks lymphoedema of the arm."
   },
   {
-   "t": "must",
+   "t": "note",
    "html": "<strong>Clavipectoral fascia</strong> is pierced by the <strong>cephalic vein</strong> (joining the axillary vein) and the thoracoacromial artery. The <strong>musculocutaneous nerve pierces coracobrachialis</strong>."
   }
  ]
@@ -1630,15 +1630,15 @@ SINA.lectures["anat1-scapular"] = {
  "verified": "22 Sep 2026",
  "highYield": [
   {
-   "t": "must",
+   "t": "note",
    "html": "<strong>Nerves</strong>: trapezius = <strong>CN XI</strong>; latissimus = thoracodorsal; supra- and infraspinatus = <strong>suprascapular</strong>; teres minor and deltoid = <strong>axillary</strong>; teres major = lower subscapular; rhomboids and levator = <strong>dorsal scapular</strong>."
   },
   {
-   "t": "must",
+   "t": "note",
    "html": "<strong>Abduction</strong>: first 15° by <strong>supraspinatus</strong>, then <strong>deltoid</strong> to 90°, above that <strong>trapezius + serratus anterior</strong> rotate the scapula."
   },
   {
-   "t": "must",
+   "t": "note",
    "html": "<strong>Quadrangular space</strong> (teres minor, teres major, long head of triceps, humerus) = <strong>axillary nerve + posterior circumflex humeral artery</strong>. <strong>Triangular interval</strong> below teres major = <strong>radial nerve</strong> (+ profunda brachii)."
   },
   {
@@ -1650,7 +1650,7 @@ SINA.lectures["anat1-scapular"] = {
    "html": "<strong>Accessory nerve (XI) injury</strong> in the posterior triangle: cannot shrug the shoulder; the scapula droops."
   },
   {
-   "t": "trap",
+   "t": "note",
    "html": "Latissimus dorsi and teres major both <strong>adduct and medially rotate</strong> (the 'swimmer's' muscles); infraspinatus and teres minor <strong>laterally rotate</strong>."
   }
  ]
@@ -2095,15 +2095,15 @@ SINA.lectures["anat1-arm"] = {
  "verified": "22 Sep 2026",
  "highYield": [
   {
-   "t": "must",
+   "t": "note",
    "html": "<strong>Anterior compartment</strong> (biceps, brachialis, coracobrachialis) = <strong>musculocutaneous nerve</strong>. <strong>Posterior</strong> (triceps) = <strong>radial nerve</strong>."
   },
   {
-   "t": "must",
+   "t": "note",
    "html": "<strong>Biceps</strong> flexes the elbow and is the most powerful <strong>supinator</strong> (radial tuberosity). <strong>Brachialis</strong> is the pure elbow flexor (coronoid process)."
   },
   {
-   "t": "must",
+   "t": "note",
    "html": "<strong>Brachial canal</strong>: brachial artery with two veins, <strong>median nerve</strong> (crosses the artery lateral → medial) and <strong>ulnar nerve</strong> (leaves it to pass behind the medial septum)."
   },
   {
@@ -2111,7 +2111,7 @@ SINA.lectures["anat1-arm"] = {
    "html": "<strong>Radial nerve in the spiral groove</strong> (mid-shaft fracture, 'Saturday night palsy'): <strong>wrist drop</strong>, but triceps is usually spared because its branches leave above the groove."
   },
   {
-   "t": "trap",
+   "t": "note",
    "html": "The <strong>brachial artery</strong> can be compressed against the humerus for tourniquet/BP cuff; it divides into radial and ulnar about <strong>2 cm below the elbow crease</strong>, at the neck of the radius."
   }
  ]
@@ -2556,11 +2556,11 @@ SINA.lectures["anat1-cubital-fold"] = {
    "html": "Medial bicipital groove, lateral to medial: <strong>'TAN'</strong> = biceps <strong>T</strong>endon, brachial <strong>A</strong>rtery, median <strong>N</strong>erve (the tendon is the lateral landmark)."
   },
   {
-   "t": "must",
+   "t": "note",
    "html": "<strong>Medial epicondylar muscles</strong> (lateral → medial): <strong>PT, FCR, PL, FCU</strong>. Lateral: brachioradialis, ECRL, ECRB."
   },
   {
-   "t": "must",
+   "t": "note",
    "html": "<strong>Lateral bicipital groove</strong> = <strong>radial nerve</strong>, splitting into a superficial sensory branch and a deep motor branch that pierces <strong>supinator</strong> (posterior interosseous nerve)."
   },
   {
@@ -3042,15 +3042,15 @@ SINA.lectures["anat1-forearm"] = {
  "verified": "22 Sep 2026",
  "highYield": [
   {
-   "t": "must",
+   "t": "note",
    "html": "<strong>Median nerve</strong> supplies all anterior forearm muscles <strong>except FCU and the medial half of FDP</strong> (ulnar). The <strong>radial nerve</strong> (deep branch) supplies all posterior and lateral muscles."
   },
   {
-   "t": "must",
+   "t": "note",
    "html": "<strong>FDS → middle phalanges</strong> (PIP flexion); <strong>FDP → distal phalanges</strong> (DIP flexion); FPL → distal phalanx of the thumb. FDS tendons split to let FDP pass."
   },
   {
-   "t": "must",
+   "t": "note",
    "html": "Wrist extensors insert on metacarpal bases: <strong>ECRL → 2nd</strong>, <strong>ECRB → 3rd</strong>, <strong>ECU → 5th</strong>; FCR → 2nd; FCU → pisiform."
   },
   {
@@ -3062,7 +3062,7 @@ SINA.lectures["anat1-forearm"] = {
    "html": "<strong>Anterior interosseous nerve</strong> (median) injury: cannot make the 'OK' sign (FPL and lateral FDP weak); no sensory loss."
   },
   {
-   "t": "trap",
+   "t": "note",
    "html": "Pronators: <strong>pronator teres</strong> and <strong>pronator quadratus</strong> (median). Supinators: <strong>supinator</strong> (radial) and <strong>biceps</strong> (musculocutaneous). Brachioradialis flexes the elbow in mid-prone position."
   }
  ]
@@ -3481,7 +3481,7 @@ SINA.lectures["anat1-hand-muscles"] = {
    "html": "<strong>PAD and DAB</strong>: Palmar interossei ADduct, Dorsal interossei ABduct (relative to the middle finger). All interossei = <strong>deep ulnar</strong>."
   },
   {
-   "t": "trap",
+   "t": "note",
    "html": "<strong>Adductor pollicis</strong> is a thumb muscle but is supplied by the <strong>ulnar</strong> nerve (Froment's sign tests it: the patient flexes the thumb IP joint to grip paper)."
   },
   {
@@ -3489,7 +3489,7 @@ SINA.lectures["anat1-hand-muscles"] = {
    "html": "<strong>Ulnar nerve lesion at the wrist → claw hand</strong> (4th-5th fingers extended at MCP, flexed at IP) and hypothenar/interosseous wasting. <strong>Median lesion at the wrist</strong> → thenar wasting, loss of opposition ('ape hand')."
   },
   {
-   "t": "must",
+   "t": "note",
    "html": "Three compartments: <strong>thenar</strong> (APB, FPB, OP; adductor pollicis deep), <strong>hypothenar</strong> (palmaris brevis, ADM, FDM, ODM: all ulnar), <strong>central</strong> (long flexor tendons, lumbricals, interossei)."
   }
  ]
@@ -3970,7 +3970,7 @@ SINA.lectures["anat1-hand-vessels-nerves"] = {
  "verified": "22 Sep 2026",
  "highYield": [
   {
-   "t": "must",
+   "t": "note",
    "html": "<strong>Carpal tunnel</strong> = carpal bones + flexor retinaculum; contains the <strong>median nerve</strong> and 9 flexor tendons (FDS ×4, FDP ×4, FPL). <strong>Guyon's canal</strong> = ulnar nerve and artery, beside the pisiform."
   },
   {
@@ -3978,11 +3978,11 @@ SINA.lectures["anat1-hand-vessels-nerves"] = {
    "html": "<strong>Carpal tunnel syndrome</strong>: tingling in thumb, index, middle and half the ring finger, worse at night; thenar wasting. The <strong>palm is spared</strong> because the palmar cutaneous branch passes <strong>over</strong> the retinaculum."
   },
   {
-   "t": "must",
+   "t": "note",
    "html": "<strong>Superficial palmar arch</strong> = mainly <strong>ulnar</strong> artery (in front of the tendons, level with the extended thumb). <strong>Deep arch</strong> = mainly <strong>radial</strong> artery (behind the tendons, more proximal)."
   },
   {
-   "t": "must",
+   "t": "note",
    "html": "<strong>Radial artery</strong> path: pulse groove → floor of the <strong>anatomical snuffbox</strong> → first web space (between the heads of the first dorsal interosseous) → deep arch."
   },
   {
@@ -3990,7 +3990,7 @@ SINA.lectures["anat1-hand-vessels-nerves"] = {
    "html": "<strong>Allen's test</strong> checks that the ulnar artery alone can supply the hand before radial artery cannulation or harvest."
   },
   {
-   "t": "must",
+   "t": "note",
    "html": "<strong>Sensory map</strong>: median = palmar thumb, index, middle, lateral half of ring; ulnar = medial half of ring + little finger; radial = dorsum of the first web space."
   }
  ]
@@ -4471,11 +4471,11 @@ SINA.lectures["anat1-thorax-overview"] = {
  "verified": "22 Sep 2026",
  "highYield": [
   {
-   "t": "must",
+   "t": "note",
    "html": "<strong>Sternal angle (of Louis)</strong> = <strong>2nd rib</strong> = <strong>T4/T5</strong> disc: start and end of the aortic arch, tracheal bifurcation, superior/inferior mediastinum border. Count ribs from here."
   },
   {
-   "t": "must",
+   "t": "note",
    "html": "<strong>Mediastinum</strong>: superior (above the T4/T5 plane) and inferior, the latter split by the pericardium into <strong>anterior, middle (heart)</strong> and <strong>posterior</strong>."
   },
   {
@@ -4491,7 +4491,7 @@ SINA.lectures["anat1-thorax-overview"] = {
    "html": "<strong>Costodiaphragmatic recess</strong> is the lowest part of the pleural cavity: <strong>pleural effusions</strong> collect there first (blunted costophrenic angle on X-ray)."
   },
   {
-   "t": "trap",
+   "t": "note",
    "html": "The <strong>right dome</strong> of the diaphragm is <strong>higher</strong> (liver), reaching about rib 5. The <strong>inferior aperture</strong> is closed by the diaphragm; the superior aperture is open to the neck."
   }
  ]
@@ -5011,11 +5011,11 @@ SINA.lectures["anat1-thorax-osteology"] = {
  "verified": "22 Sep 2026",
  "highYield": [
   {
-   "t": "must",
+   "t": "note",
    "html": "<strong>True ribs 1-7</strong> (own cartilage to sternum); <strong>false 8-10</strong> (join the cartilage above); <strong>floating 11-12</strong>."
   },
   {
-   "t": "must",
+   "t": "note",
    "html": "<strong>VAN</strong> in the costal groove, top to bottom: <strong>Vein, Artery, Nerve</strong>; the nerve is the least protected."
   },
   {
@@ -5027,11 +5027,11 @@ SINA.lectures["anat1-thorax-osteology"] = {
    "html": "Rib fractures occur just <strong>anterior to the angle</strong> (weakest point) and may tear the pleura → <strong>pneumothorax</strong>. Lower rib fractures can injure the liver or spleen."
   },
   {
-   "t": "must",
+   "t": "note",
    "html": "<strong>Rib 1</strong>: scalene tubercle (anterior scalene); <strong>subclavian vein in front</strong>, <strong>subclavian artery behind</strong> it. Xiphoid at T9."
   },
   {
-   "t": "trap",
+   "t": "note",
    "html": "Ribs slope <strong>down and forward</strong>: rib 2 meets T2 posteriorly but the sternal angle is level with T4/T5, so one axial CT slice cuts several ribs."
   }
  ]
@@ -5505,7 +5505,7 @@ SINA.lectures["anat1-thorax-myology"] = {
  "verified": "22 Sep 2026",
  "highYield": [
   {
-   "t": "must",
+   "t": "note",
    "html": "<strong>Diaphragm</strong> = main inspiratory muscle; contraction <strong>flattens</strong> it. <strong>Phrenic nerve C3-C5</strong> ('C3, 4, 5 keeps the diaphragm alive'): motor + sensory to the central part."
   },
   {
@@ -5513,19 +5513,19 @@ SINA.lectures["anat1-thorax-myology"] = {
    "html": "<strong>Referred shoulder-tip pain</strong> from diaphragmatic irritation (e.g. subphrenic abscess, ruptured spleen, gallbladder) travels via C3-C5, the same segments as the skin over the shoulder."
   },
   {
-   "t": "must",
+   "t": "note",
    "html": "<strong>External intercostals</strong> (down and forward, 'hands in pockets') raise the ribs → <strong>inspiration</strong>. <strong>Internal intercostals</strong> lower them → forced <strong>expiration</strong>."
   },
   {
-   "t": "must",
+   "t": "note",
    "html": "The <strong>neurovascular bundle</strong> runs between the <strong>internal and innermost</strong> intercostals (2nd and 3rd layers)."
   },
   {
-   "t": "must",
+   "t": "note",
    "html": "<strong>Diaphragm openings</strong>: caval T8 (central tendon, with the right phrenic nerve), oesophageal T10 (vagal trunks), aortic T12 (behind the median arcuate ligament, with the thoracic duct and azygos)."
   },
   {
-   "t": "trap",
+   "t": "note",
    "html": "The <strong>right crus</strong> is longer (L1-L3) than the left (L1-L2), and its fibres encircle the oesophageal hiatus. Accessory inspiratory muscles: SCM, scalenes, pectorals."
   }
  ]
@@ -6056,7 +6056,7 @@ SINA.lectures["anat1-thorax-walls"] = {
  "verified": "22 Sep 2026",
  "highYield": [
   {
-   "t": "must",
+   "t": "note",
    "html": "<strong>Internal thoracic artery</strong> (from subclavian) runs just lateral to the sternum; ends as <strong>musculophrenic</strong> and <strong>superior epigastric</strong> arteries (which anastomose with the inferior epigastric in the rectus sheath)."
   },
   {
@@ -6064,11 +6064,11 @@ SINA.lectures["anat1-thorax-walls"] = {
    "html": "The <strong>internal thoracic (mammary) artery</strong> is the preferred graft for <strong>coronary bypass</strong> (usually to the LAD)."
   },
   {
-   "t": "must",
+   "t": "note",
    "html": "<strong>Posterior intercostal arteries</strong>: first two from the supreme intercostal (costocervical trunk), rest from the <strong>aorta</strong>. Veins: lower ones → <strong>azygos</strong> → SVC."
   },
   {
-   "t": "must",
+   "t": "note",
    "html": "<strong>Breast</strong>: ribs 2-6, sternum to midaxillary line, on pectoralis major/serratus anterior; <strong>axillary tail</strong> reaches the axilla. Lymph: ~75% <strong>axillary</strong>, medial part <strong>parasternal</strong>."
   },
   {
@@ -6076,7 +6076,7 @@ SINA.lectures["anat1-thorax-walls"] = {
    "html": "Cancer invading the <strong>suspensory (Cooper's) ligaments</strong> causes skin dimpling; blocked lymphatics cause <strong>peau d'orange</strong>. Fixation to pectoralis major suggests deep invasion (retromammary space lost)."
   },
   {
-   "t": "must",
+   "t": "note",
    "html": "<strong>Intercostal nerves</strong> = ventral rami T1-T11 (T12 = subcostal). Dermatomes: <strong>T4 nipple</strong>, <strong>T10 umbilicus</strong>."
   }
  ]
@@ -6696,7 +6696,7 @@ SINA.lectures["anat1-heart"] = {
  "verified": "22 Sep 2026",
  "highYield": [
   {
-   "t": "must",
+   "t": "note",
    "html": "<strong>Borders</strong>: right = <strong>right atrium</strong> (+ SVC, IVC); left = <strong>left ventricle</strong> (+ left auricle); inferior = <strong>right ventricle</strong>. <strong>Base</strong> (posterior) = <strong>left atrium</strong>. Anterior surface = mostly <strong>right ventricle</strong>."
   },
   {
@@ -6704,7 +6704,7 @@ SINA.lectures["anat1-heart"] = {
    "html": "The <strong>left atrium touches the oesophagus</strong>: an enlarged LA (mitral stenosis) can cause dysphagia, and <strong>transoesophageal echo</strong> views it best."
   },
   {
-   "t": "must",
+   "t": "note",
    "html": "<strong>Coronaries</strong>: LCA → <strong>LAD</strong> (anterior LV and septum, apex) + <strong>circumflex</strong>; RCA → right heart, <strong>SA node (~60%) and AV node (~80%)</strong>, and usually the <strong>posterior descending artery</strong> (right dominance)."
   },
   {
@@ -6712,11 +6712,11 @@ SINA.lectures["anat1-heart"] = {
    "html": "<strong>LAD occlusion</strong> ('widow-maker') → anterior MI; <strong>RCA occlusion</strong> → inferior MI, often with bradycardia or heart block (nodal arteries)."
   },
   {
-   "t": "must",
+   "t": "note",
    "html": "<strong>Pericardium</strong>: fibrous + serous (parietal and visceral = epicardium). <strong>Transverse sinus</strong> lies behind the aorta and pulmonary trunk (surgeons pass a clamp through it); <strong>oblique sinus</strong> behind the LA."
   },
   {
-   "t": "must",
+   "t": "note",
    "html": "<strong>Right ventricle</strong>: trabeculae carneae, papillary muscles + chordae, <strong>moderator band</strong> (carries the right bundle branch). <strong>Conduction</strong>: SA → AV → His → bundle branches → Purkinje."
   },
   {
@@ -7248,15 +7248,15 @@ SINA.lectures["anat1-aorta"] = {
  "verified": "22 Sep 2026",
  "highYield": [
   {
-   "t": "must",
+   "t": "note",
    "html": "<strong>Arch branches</strong>: brachiocephalic trunk (→ right subclavian + right common carotid), <strong>left common carotid</strong>, <strong>left subclavian</strong>. The arch starts and ends at the <strong>sternal angle</strong> level."
   },
   {
-   "t": "must",
+   "t": "note",
    "html": "<strong>Superior mediastinum</strong>, front to back: <strong>thymus → brachiocephalic veins/SVC → arch and branches → trachea → oesophagus + thoracic duct</strong>; with phrenic, vagus and left recurrent laryngeal nerves."
   },
   {
-   "t": "must",
+   "t": "note",
    "html": "<strong>Coronary arteries</strong> arise from the right and left <strong>aortic sinuses</strong> just above the valve. Pulmonary trunk divides at T5-T6."
   },
   {
@@ -7264,7 +7264,7 @@ SINA.lectures["anat1-aorta"] = {
    "html": "The <strong>left recurrent laryngeal nerve</strong> hooks under the <strong>aortic arch</strong> (ligamentum arteriosum): aortic aneurysm or lung cancer at the left hilum → <strong>hoarseness</strong>."
   },
   {
-   "t": "trap",
+   "t": "note",
    "html": "The <strong>left brachiocephalic vein</strong> is long and crosses <strong>behind the manubrium</strong>; right and left join behind the <strong>1st right costal cartilage</strong> to form the SVC, which receives the <strong>azygos</strong> vein."
   },
   {
@@ -7750,7 +7750,7 @@ SINA.lectures["anat1-respiratory"] = {
  "verified": "22 Sep 2026",
  "highYield": [
   {
-   "t": "must",
+   "t": "note",
    "html": "<strong>Right lung = 3 lobes</strong> (oblique + horizontal fissures); <strong>left lung = 2 lobes</strong> (oblique fissure), with the <strong>cardiac notch</strong> and <strong>lingula</strong>."
   },
   {
@@ -7758,19 +7758,19 @@ SINA.lectures["anat1-respiratory"] = {
    "html": "The <strong>right main bronchus</strong> is <strong>shorter, wider and more vertical</strong> → inhaled foreign bodies and aspirated material usually go to the <strong>right</strong> lung."
   },
   {
-   "t": "must",
+   "t": "note",
    "html": "Trachea bifurcates at <strong>T4/T5</strong> (sternal angle); right main bronchus → 3 lobar bronchi, left → 2; then segmental (bronchopulmonary segments are the surgical units)."
   },
   {
-   "t": "must",
+   "t": "note",
    "html": "<strong>Two circulations</strong>: pulmonary arteries carry <strong>deoxygenated</strong> blood for gas exchange; <strong>bronchial arteries</strong> (from the aorta) nourish lung tissue."
   },
   {
-   "t": "must",
+   "t": "note",
    "html": "<strong>Hilum</strong> contents: main bronchus, pulmonary artery, 2 pulmonary veins, bronchial vessels, nerves, lymphatics. On the left the <strong>artery is highest</strong>; on the right the <strong>bronchus</strong> is often highest (eparterial bronchus)."
   },
   {
-   "t": "trap",
+   "t": "note",
    "html": "<strong>Parasympathetic (vagus) → bronchoconstriction</strong>; sympathetic → bronchodilation (the basis of β₂-agonist inhalers in asthma)."
   }
  ]
@@ -8327,27 +8327,27 @@ SINA.lectures["anat1-intro"] = {
  "verified": "22 Sep 2026",
  "highYield": [
   {
-   "t": "must",
+   "t": "note",
    "html": "<strong>Anatomical position</strong>: standing, feet forward, <strong>palms facing forward, thumbs out</strong>. Every directional term assumes this position, whatever the patient is doing."
   },
   {
-   "t": "must",
+   "t": "note",
    "html": "<strong>Planes</strong>: sagittal (median = equal halves), frontal/coronal, transverse (axial CT/MRI slices). <strong>Axes</strong>: left-right → flexion/extension; anteroposterior → abduction/adduction; vertical → rotation."
   },
   {
-   "t": "trap",
+   "t": "note",
    "html": "<strong>Proximal/distal</strong> are used <strong>only for limbs</strong>; on the trunk say superior/inferior. The hand's reference axis is the <strong>3rd finger</strong>, the foot's the <strong>2nd toe</strong> (for abduction/adduction of digits)."
   },
   {
-   "t": "must",
+   "t": "note",
    "html": "<strong>Supine</strong> = face up; <strong>prone</strong> = face down. <strong>Pronation</strong> turns the palm backward; <strong>supination</strong> forward ('holding soup')."
   },
   {
-   "t": "must",
+   "t": "note",
    "html": "Imaging: air and fat are <strong>radiolucent</strong>; bone, calcium stones and metal are <strong>radiopaque</strong>. CT = X-ray slices; MRI = magnetic fields, best for soft tissue."
   },
   {
-   "t": "must",
+   "t": "note",
    "html": "<strong>Elbow = hinge</strong> (1 axis); <strong>shoulder = ball-and-socket</strong> (3 axes); pronation/supination happen at the <strong>radio-ulnar joints</strong>, not the elbow proper."
   }
  ]
@@ -8799,11 +8799,11 @@ SINA.lectures["anat1-surface-joints"] = {
  "verified": "22 Sep 2026",
  "highYield": [
   {
-   "t": "must",
+   "t": "note",
    "html": "<strong>Pulses</strong>: brachial in the <strong>medial bicipital groove</strong>; radial between the <strong>FCR and brachioradialis</strong> tendons."
   },
   {
-   "t": "must",
+   "t": "note",
    "html": "<strong>Anatomical snuffbox</strong>: EPL medially; EPB and APL laterally. Floor = <strong>scaphoid</strong>, with the radial artery crossing it."
   },
   {
@@ -8819,11 +8819,11 @@ SINA.lectures["anat1-surface-joints"] = {
    "html": "<strong>Elbow triangle</strong>: olecranon + two epicondyles form an isosceles triangle at 90° flexion and a straight line in extension. The relationship is <strong>lost in dislocation</strong> and <strong>kept in a supracondylar fracture</strong>."
   },
   {
-   "t": "must",
+   "t": "note",
    "html": "Degrees of freedom: <strong>shoulder 3</strong>, <strong>elbow 1</strong> (+ pronation/supination with radio-ulnar joints), <strong>wrist 2</strong> (flexion-extension, radial and ulnar deviation; ulnar deviation is larger)."
   },
   {
-   "t": "must",
+   "t": "note",
    "html": "<strong>Cubital 'M' veins</strong> (cephalic, basilic, median cubital) are the usual site for venepuncture."
   }
  ]
