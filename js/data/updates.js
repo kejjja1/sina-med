@@ -3,6 +3,7 @@
 window.SINA = window.SINA || { subjects: [], lectures: {} };
 SINA.updates = [
   { date: "27 September 2026", items: [
+    "Useful apps: the Gizmo card now links to Saad's Gizmo profile, with lots of ready-made 1st year flashcard decks.",
     "Useful apps: added YPT (Yeolpumta), a study-group timer that locks your other apps while you study. Use the invite link on its card to join the promo's group.",
     "Every anatomy lecture (Anatomy 1, 2 and 3) now has a High yield tab: quick revision notes, clinical links and memory aids, with filters so you can show one type at a time.",
     "Three AnatomyZone videos added to the eye lectures for the Anatomy 3 midterm: Orbit, Extraocular muscles and Eyeball anatomy."
