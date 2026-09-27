@@ -593,37 +593,54 @@
     var x = root.querySelector(".psa-close");
     if (x) x.addEventListener("click", function () { store.set("sina:psaDismissed", true); x.closest(".psa").remove(); });
   }
-  var TABS = [["summary", "Summary"], ["visual", "Visual"], ["questions", "Questions"], ["cards", "Flashcards"], ["deeper", "Go deeper"], ["resources", "Resources"]];
+  var TABS = [["summary", "Summary"], ["highyield", "High yield"], ["visual", "Visual"], ["questions", "Questions"], ["cards", "Flashcards"], ["deeper", "Go deeper"], ["resources", "Resources"]];
 
   function lectureView(id, tab) {
     var lec = S.lectures[id];
     if (!lec) return notFound();
     var sub = subjectById(lec.subject);
     tab = tab || "summary";
-    if (!TABS.some(function (t) { return t[0] === tab; })) tab = "summary";
+    var tabs = TABS.filter(function (t) { return t[0] !== "highyield" || (lec.highYield && lec.highYield.length); });
+    if (!tabs.some(function (t) { return t[0] === tab; })) tab = "summary";
     var html = '<div class="wrap"><p class="crumbs"><a href="#/">Home</a> / <a href="#/subject/' + sub.id + '">' + esc(sub.name) + "</a></p><h1>" + esc(lec.title) + "</h1>" +
       sourceLine(lec) +
-      '<div class="tabs" role="tablist" aria-label="Lecture sections">' + TABS.map(function (t) {
+      '<div class="tabs" role="tablist" aria-label="Lecture sections">' + tabs.map(function (t) {
         return '<button class="tab" role="tab" id="tab-' + t[0] + '" aria-selected="' + (t[0] === tab) + '" data-tab="' + t[0] + '">' + t[1] + "</button>";
       }).join("") + '</div><div id="panel" role="tabpanel" aria-labelledby="tab-' + tab + '"></div>' + psaHTML() + "</div>";
     setView(html, lec.title);
     var panel = document.getElementById("panel");
-    ({ summary: summaryPanel, visual: visualPanel, questions: questionsPanel, cards: cardsPanel, deeper: deeperPanel, resources: resourcesPanel })[tab](panel, lec);
+    ({ summary: summaryPanel, highyield: highYieldPanel, visual: visualPanel, questions: questionsPanel, cards: cardsPanel, deeper: deeperPanel, resources: resourcesPanel })[tab](panel, lec);
     app.querySelectorAll(".tab").forEach(function (b) {
       b.addEventListener("click", function () { location.hash = "#/lecture/" + id + "/" + b.dataset.tab; });
     });
     wirePSA(app);
   }
 
+  function highYieldPanel(p, lec) {
+    var HYT = { must: "Must know", trap: "Exam trap", clinic: "Clinical", mnemo: "Memory aid" };
+    var order = ["must", "trap", "clinic", "mnemo"];
+    var counts = {}; lec.highYield.forEach(function (x) { counts[x.t] = (counts[x.t] || 0) + 1; });
+    var h = '<p class="hy-intro">The facts exam questions on this lecture most often hinge on. Use it for last-minute revision; the Summary tab has the full explanation.</p>' +
+      '<div class="hy-filter" role="group" aria-label="Show">' +
+      '<button class="chip hy-f" data-f="all" aria-pressed="true">All (' + lec.highYield.length + ')</button>' +
+      order.filter(function (t) { return counts[t]; }).map(function (t) {
+        return '<button class="chip hy-f" data-f="' + t + '" aria-pressed="false"><span class="hy-dot hy-' + t + '"></span>' + HYT[t] + " (" + counts[t] + ")</button>";
+      }).join("") + "</div>" +
+      '<ul class="hy-list">' + lec.highYield.map(function (x) {
+        return '<li data-t="' + esc(x.t) + '"><span class="hy-tag hy-' + esc(x.t) + '">' + esc(HYT[x.t] || x.t) + "</span> " + x.html + "</li>";
+      }).join("") + "</ul>";
+    p.innerHTML = h;
+    p.querySelectorAll(".hy-f").forEach(function (b) {
+      b.addEventListener("click", function () {
+        var f = b.dataset.f;
+        p.querySelectorAll(".hy-f").forEach(function (o) { o.setAttribute("aria-pressed", String(o === b)); });
+        p.querySelectorAll(".hy-list li").forEach(function (li) { li.hidden = !(f === "all" || li.dataset.t === f); });
+      });
+    });
+  }
+
   function summaryPanel(p, lec) {
     var h = '<div class="note">' + lec.buildNote + "</div>";
-    if (lec.highYield && lec.highYield.length) {
-      var HYT = { must: "Must know", trap: "Exam trap", clinic: "Clinical", mnemo: "Memory aid" };
-      h += '<section class="hy" aria-labelledby="hy-h"><h2 id="hy-h" class="hy-title">High yield</h2>' +
-        '<p class="hy-intro">What exam questions on this lecture most often hinge on. Read this first, then the full summary below.</p><ul class="hy-list">' +
-        lec.highYield.map(function (x) { return '<li><span class="hy-tag hy-' + esc(x.t) + '">' + esc(HYT[x.t] || x.t) + "</span> " + x.html + "</li>"; }).join("") +
-        "</ul></section>";
-    }
     lec.summary.forEach(function (s) { h += "<h2>" + esc(s.title) + "</h2>" + s.html; });
     h += "<h2>Key points</h2><ul class='exam-list'>" + lec.exam.map(function (e) { return "<li>" + esc(e) + "</li>"; }).join("") + "</ul>";
     h += (lec.sources && lec.sources.length)

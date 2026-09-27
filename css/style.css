@@ -583,13 +583,17 @@ body.noscroll { overflow: hidden; }
 :root[data-theme="dark"] .dlist .dtag { color: #0b1628; }
 .drawer .acc.cat > .accbtn .lbl { font-weight: 800; }
 
-/* high-yield box at the top of the summary tab */
-.hy { border: 1px solid var(--gold-line); border-left: 5px solid var(--gold-line); border-radius: var(--radius); padding: 0.9rem 1.1rem 0.6rem; margin: 0 0 1.8rem; background: color-mix(in srgb, var(--gold-line) 9%, transparent); }
-.hy-title { margin: 0 0 0.3rem; font-family: var(--serif); color: var(--gold-mid); }
-.hy-intro { margin: 0 0 0.7rem; font-size: 0.92rem; color: var(--muted, inherit); }
+/* High yield tab */
+.hy-intro { margin: 0.4rem 0 0.9rem; color: var(--muted); }
+.hy-filter { display: flex; flex-wrap: wrap; gap: 0.45rem; margin-bottom: 1rem; }
+.hy-f { cursor: pointer; border: 1px solid var(--line); background: transparent; color: var(--ink); font: inherit; font-size: 0.85rem; font-weight: 700; padding: 0.3rem 0.75rem; border-radius: 999px; display: inline-flex; align-items: center; gap: 0.35rem; }
+.hy-f[aria-pressed="true"] { border-color: var(--gold-line); background: color-mix(in srgb, var(--gold-line) 22%, transparent); }
+.hy-dot { width: 0.6rem; height: 0.6rem; border-radius: 50%; border: 1px solid var(--gold-line); display: inline-block; }
 .hy-list { list-style: none; padding: 0; margin: 0; }
-.hy-list li { padding: 0.45rem 0; border-top: 1px dashed var(--line); line-height: 1.5; }
-.hy-list li:first-child { border-top: 0; }
+.hy-list li { padding: 0.75rem 0.9rem; margin-bottom: 0.6rem; line-height: 1.55; border: 1px solid var(--line); border-left: 4px solid var(--gold-line); border-radius: var(--radius); }
+.hy-list li[data-t="trap"] { border-left-color: color-mix(in srgb, #c0392b 70%, transparent); }
+.hy-list li[data-t="clinic"] { border-left-color: var(--sage, #6b8f71); }
+.hy-list li[data-t="mnemo"] { border-left-color: color-mix(in srgb, #7e57c2 70%, transparent); }
 .hy-tag { display: inline-block; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.02em; text-transform: uppercase; padding: 0.05rem 0.5rem; border-radius: 999px; margin-right: 0.35rem; border: 1px solid var(--gold-line); color: var(--ink); vertical-align: 1px; white-space: nowrap; }
 .hy-trap { background: color-mix(in srgb, #c0392b 16%, transparent); border-color: color-mix(in srgb, #c0392b 55%, transparent); }
 .hy-clinic { background: color-mix(in srgb, var(--sage, #6b8f71) 22%, transparent); border-color: var(--sage, #6b8f71); }
