@@ -582,3 +582,16 @@ body.noscroll { overflow: hidden; }
 .dlist .dtag { display: inline-block; margin-left: 0.4rem; font-size: 0.7rem; font-weight: 700; padding: 0.05rem 0.45rem; border-radius: 999px; background: var(--mid); color: #fff; vertical-align: middle; white-space: nowrap; }
 :root[data-theme="dark"] .dlist .dtag { color: #0b1628; }
 .drawer .acc.cat > .accbtn .lbl { font-weight: 800; }
+
+/* high-yield box at the top of the summary tab */
+.hy { border: 1px solid var(--gold-line); border-left: 5px solid var(--gold-line); border-radius: var(--radius); padding: 0.9rem 1.1rem 0.6rem; margin: 0 0 1.8rem; background: color-mix(in srgb, var(--gold-line) 9%, transparent); }
+.hy-title { margin: 0 0 0.3rem; font-family: var(--serif); color: var(--gold-mid); }
+.hy-intro { margin: 0 0 0.7rem; font-size: 0.92rem; color: var(--muted, inherit); }
+.hy-list { list-style: none; padding: 0; margin: 0; }
+.hy-list li { padding: 0.45rem 0; border-top: 1px dashed var(--line); line-height: 1.5; }
+.hy-list li:first-child { border-top: 0; }
+.hy-tag { display: inline-block; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.02em; text-transform: uppercase; padding: 0.05rem 0.5rem; border-radius: 999px; margin-right: 0.35rem; border: 1px solid var(--gold-line); color: var(--ink); vertical-align: 1px; white-space: nowrap; }
+.hy-trap { background: color-mix(in srgb, #c0392b 16%, transparent); border-color: color-mix(in srgb, #c0392b 55%, transparent); }
+.hy-clinic { background: color-mix(in srgb, var(--sage, #6b8f71) 22%, transparent); border-color: var(--sage, #6b8f71); }
+.hy-mnemo { background: color-mix(in srgb, #7e57c2 16%, transparent); border-color: color-mix(in srgb, #7e57c2 55%, transparent); }
+.hy-must { background: color-mix(in srgb, var(--gold-line) 25%, transparent); }

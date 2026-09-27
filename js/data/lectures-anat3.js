@@ -583,6 +583,20 @@ SINA.lectures["anat3-orbit"] = {
  ],
  "resources": [
   {
+   "title": "Orbit | Eye Anatomy (AnatomyZone video)",
+   "url": "https://www.youtube.com/watch?v=HKEA4p5k66U",
+   "kind": "Video",
+   "why": "Walks through the bones, walls, fissures and foramina of the orbit on a 3D skull.",
+   "note": ""
+  },
+  {
+   "title": "Extraocular Muscles | Eye Anatomy (AnatomyZone video)",
+   "url": "https://www.youtube.com/watch?v=f_rb6FMVHPk",
+   "kind": "Video",
+   "why": "Each extraocular muscle's origin, insertion, action and nerve, shown in 3D.",
+   "note": ""
+  },
+  {
    "title": "Bones of the orbit (video tutorial)",
    "url": "https://www.youtube.com/watch?v=JYE9-Pq-Yc0",
    "kind": "Video",
@@ -742,7 +756,45 @@ SINA.lectures["anat3-orbit"] = {
    "url": "https://www.osmosis.org/learn/Anatomy_of_the_orbit"
   }
  ],
- "verified": "19 Sep 2026"
+ "verified": "19 Sep 2026",
+ "highYield": [
+  {
+   "t": "must",
+   "html": "<strong>Seven bones</strong>: 3 cranial (frontal, sphenoid, ethmoid) + 4 facial (zygomatic, lacrimal, maxilla, palatine). Know which bones build <strong>each wall</strong>: roof = frontal + lesser wing; floor = maxilla + zygomatic + palatine; medial = maxilla + lacrimal + ethmoid + sphenoid; lateral = zygomatic + greater wing."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Strongest wall = lateral</strong>. <strong>Thinnest = medial</strong> (lamina papyracea of the ethmoid). <strong>Commonest blowout = floor</strong> (roof of the maxillary sinus)."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Optic canal</strong> carries only two things: <strong>CN II and the ophthalmic artery</strong>. Everything else of note goes through the fissures."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Superior orbital fissure</strong>: inside the tendinous ring = <strong>CN III (both divisions), nasociliary, CN VI</strong>; outside the ring = <strong>lacrimal, frontal, CN IV, superior ophthalmic vein</strong>. <strong>Inferior orbital fissure</strong> = V2 branches (infraorbital, zygomatic) and infraorbital vessels."
+  },
+  {
+   "t": "mnemo",
+   "html": "<strong>LR6 SO4</strong>: lateral rectus = CN VI, superior oblique = CN IV, all other orbital muscles (including levator palpebrae) = CN III. Outside the ring, <strong>'LFT'</strong> (lacrimal, frontal, trochlear) plus the superior ophthalmic vein."
+  },
+  {
+   "t": "trap",
+   "html": "<strong>Inferior oblique</strong> is the only extraocular muscle that does <strong>not</strong> arise at the apex: it comes from the front of the orbital floor (maxilla). The superior oblique arises from the sphenoid body, not the ring."
+  },
+  {
+   "t": "trap",
+   "html": "Orbital axis ≠ visual axis: orbital axes diverge (about 45° apart, ~22.5° each from the midline); <strong>visual axes are parallel</strong>. Medial walls are parallel; lateral walls are at about 90°."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Floor blowout</strong>: fat and <strong>inferior rectus</strong> herniate into the maxillary sinus → diplopia on upgaze, and numb cheek/upper lip from the <strong>infraorbital nerve</strong> in the floor. <strong>Ethmoid sinusitis</strong> spreads through the thin lamina papyracea → <strong>orbital cellulitis</strong>."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Superior orbital fissure syndrome</strong>: III, IV, VI and V1 hit together → ophthalmoplegia, ptosis, fixed dilated pupil and forehead numbness. Add CN II loss and it becomes an <strong>orbital apex syndrome</strong>."
+  }
+ ]
 };
 window.SINA = window.SINA || {subjects:[], lectures:{}};
 SINA.lectures["anat3-face-osteology"] = {
@@ -2053,7 +2105,49 @@ SINA.lectures["anat3-face-osteology"] = {
    "url": "https://commons.wikimedia.org/wiki/File:Gray190.png"
   }
  ],
- "verified": "19 Sep 2026"
+ "verified": "19 Sep 2026",
+ "highYield": [
+  {
+   "t": "must",
+   "html": "<strong>22 skull bones = 8 cranial + 14 facial</strong>. Unpaired facial bones: <strong>mandible and vomer</strong>. The mandible is the only mobile skull bone."
+  },
+  {
+   "t": "mnemo",
+   "html": "Sphenoid foramina for the trigeminal: <strong>'Standing Room Only'</strong>: <strong>S</strong>uperior orbital fissure = V1, foramen <strong>R</strong>otundum = V2, foramen <strong>O</strong>vale = V3. Foramen <strong>spinosum</strong> = middle meningeal artery."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Ethmoid</strong>: cribriform plate (CN I), crista galli (falx cerebri), perpendicular plate (upper <strong>septum</strong>), labyrinths with <strong>superior and middle conchae</strong> and the lamina papyracea."
+  },
+  {
+   "t": "trap",
+   "html": "The <strong>inferior nasal concha is a separate bone</strong>; superior and middle conchae belong to the <strong>ethmoid</strong>. Bony septum = perpendicular plate of ethmoid + <strong>vomer</strong>."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Cranial fossae</strong>: anterior (cribriform); middle (optic canal, SOF, rotundum, ovale, spinosum, lacerum, carotid canal); posterior (internal acoustic meatus, jugular foramen, hypoglossal canal, foramen magnum)."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Pterion</strong> (frontal + parietal + temporal + greater wing of sphenoid) is the thinnest spot, over the <strong>anterior branch of the middle meningeal artery</strong> → blow to the temple → <strong>extradural haematoma</strong> (lucid interval)."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Mandible</strong>: <strong>mandibular foramen</strong> (inner ramus) = inferior alveolar nerve (dental block site); <strong>mental foramen</strong> (below premolars) = mental nerve. Coronoid process = temporalis; condylar process = TMJ."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Sinus drainage</strong>: frontal, maxillary and anterior ethmoid → <strong>middle meatus</strong>; posterior ethmoid → superior meatus; sphenoid → sphenoethmoidal recess. The maxillary sinus is the <strong>largest</strong>."
+  },
+  {
+   "t": "clinic",
+   "html": "The <strong>maxillary sinus</strong> ostium is high on its medial wall, so it drains poorly (sinusitis); its floor lies near the upper molar roots (toothache ↔ sinus pain)."
+  },
+  {
+   "t": "trap",
+   "html": "<strong>Atlanto-occipital = 'yes'</strong> (nodding); <strong>atlanto-axial = 'no'</strong> (rotation)."
+  }
+ ]
 };
 window.SINA = window.SINA || {subjects:[], lectures:{}};
 SINA.lectures["anat3-facial-muscles"] = {
@@ -2996,7 +3090,49 @@ SINA.lectures["anat3-facial-muscles"] = {
    "url": "https://brainscape.com/flashcards/muscles-of-mastication-acting-on-the-man-968400/packs/1775953"
   }
  ],
- "verified": "19 Sep 2026"
+ "verified": "19 Sep 2026",
+ "highYield": [
+  {
+   "t": "must",
+   "html": "<strong>Facial expression = CN VII</strong> (subcutaneous, insert into skin). <strong>Mastication = V3</strong> (attached to bone). <strong>Levator palpebrae = CN III</strong>, the odd one out."
+  },
+  {
+   "t": "mnemo",
+   "html": "Facial nerve branches: <strong>'To Zanzibar By Motor Car'</strong>: Temporal, Zygomatic, Buccal, Marginal mandibular, Cervical (platysma)."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Orbicularis oculi</strong>: palpebral part = gentle, involuntary blink; orbital part = forced, voluntary closure. <strong>Orbicularis oris</strong> closes the lips; <strong>buccinator</strong> keeps food between the teeth (cheek muscle, VII not V)."
+  },
+  {
+   "t": "trap",
+   "html": "<strong>Buccinator</strong> is a muscle of facial expression (CN VII) even though it helps chewing; the <strong>buccal nerve of V3</strong> only carries <strong>sensation</strong> from the cheek."
+  },
+  {
+   "t": "must",
+   "html": "Muscles of mastication: <strong>temporalis</strong> (coronoid; posterior fibres retract), <strong>masseter</strong> (angle; elevates), <strong>medial pterygoid</strong> (medial ramus; elevates), <strong>lateral pterygoid</strong> (neck and disc; protrudes)."
+  },
+  {
+   "t": "trap",
+   "html": "<strong>Lateral pterygoid</strong> is the only muscle of mastication that helps <strong>open</strong> the mouth (by pulling the condyle and disc forward); the other three <strong>close</strong> it. Opening is otherwise mostly gravity plus digastric and geniohyoid/mylohyoid."
+  },
+  {
+   "t": "must",
+   "html": "<strong>TMJ</strong>: synovial joint with an <strong>articular disc</strong> making two cavities; surfaces covered by <strong>fibrocartilage</strong>. Upper cavity = gliding (protrusion/retraction); lower = hinge (elevation/depression). Lateral ligament prevents <strong>posterior</strong> dislocation."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>TMJ dislocation</strong> is <strong>anterior</strong> (yawning, big bite): the condyle slips in front of the articular eminence and the mouth stays open."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Bell's palsy</strong> (lower motor neuron, CN VII): the <strong>whole half-face</strong> is paralysed, forehead included, eye won't close. <strong>Stroke</strong> (upper motor neuron): <strong>forehead is spared</strong> because the upper face gets input from both hemispheres."
+  },
+  {
+   "t": "mnemo",
+   "html": "<strong>Corrugator</strong> = frowning; <strong>procerus</strong> = wrinkles across the nasal bridge; <strong>mentalis</strong> = pouting; <strong>zygomaticus major</strong> = smiling; <strong>risorius</strong> = pulls the angle sideways."
+  }
+ ]
 };
 window.SINA = window.SINA || {subjects:[], lectures:{}};
 SINA.lectures["anat3-blood-supply"] = {
@@ -3991,7 +4127,45 @@ SINA.lectures["anat3-blood-supply"] = {
    "url": "https://radiopaedia.org/articles/63577"
   }
  ],
- "verified": "20 Sep 2026"
+ "verified": "20 Sep 2026",
+ "highYield": [
+  {
+   "t": "must",
+   "html": "<strong>Carotid bifurcation</strong>: upper border of the thyroid cartilage, <strong>C3-C4</strong>, in the carotid triangle. The ECA starts <strong>anteromedial</strong> to the ICA and ends <strong>lateral</strong> to it. The <strong>ICA has no branches in the neck</strong>; the ECA has eight."
+  },
+  {
+   "t": "mnemo",
+   "html": "ECA branches: <strong>'Some Anatomists Like Freaking Out Poor Medical Students'</strong>: Superior thyroid, Ascending pharyngeal, Lingual, Facial, Occipital, Posterior auricular, Maxillary, Superficial temporal."
+  },
+  {
+   "t": "must",
+   "html": "The ECA <strong>ends in the parotid gland</strong>, behind the neck of the mandible, as the <strong>superficial temporal</strong> and <strong>maxillary</strong> arteries. Smallest branch = <strong>ascending pharyngeal</strong>."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Facial artery</strong> crosses the mandible at the <strong>anterior border of the masseter</strong> (pulse point), runs tortuously to the angle of the mouth and ends as the <strong>angular artery</strong>."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Maxillary artery</strong>: 3 parts by the <strong>lateral pterygoid</strong>; key branch = <strong>middle meningeal</strong> through the <strong>foramen spinosum</strong>."
+  },
+  {
+   "t": "trap",
+   "html": "<strong>Retromandibular vein</strong> = superficial temporal + maxillary veins; <strong>anterior division → facial vein</strong> (→ common facial → IJV); <strong>posterior division + posterior auricular → external jugular</strong>. In the parotid, from superficial to deep: <strong>facial nerve → retromandibular vein → ECA</strong>."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Danger triangle of the face</strong>: the facial vein connects to the <strong>cavernous sinus</strong> via the ophthalmic veins and the pterygoid plexus (deep facial vein) → squeezing a spot near the nose can seed cavernous sinus thrombosis."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Lymph</strong>: upper face and lateral lids → <strong>preauricular/parotid</strong>; cheeks, upper lip, lateral nose → <strong>submandibular</strong>; <strong>lower lip centre, chin, tongue tip → submental</strong>; all then to the deep cervical chain."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Superficial temporal artery</strong> in front of the tragus is a pulse point and the biopsy site for <strong>giant cell (temporal) arteritis</strong>."
+  }
+ ]
 };
 window.SINA = window.SINA || {subjects:[], lectures:{}};
 SINA.lectures["anat3-orbital-appendages"] = {
@@ -4844,6 +5018,13 @@ SINA.lectures["anat3-orbital-appendages"] = {
  ],
  "resources": [
   {
+   "title": "Orbit | Eye Anatomy (AnatomyZone video)",
+   "url": "https://www.youtube.com/watch?v=HKEA4p5k66U",
+   "kind": "Video",
+   "why": "Walks through the bones, walls, fissures and foramina of the orbit on a 3D skull.",
+   "note": ""
+  },
+  {
    "title": "Histology of the eye and eyelid",
    "url": "https://histology.oit.duke.edu/NormalBody/EyeEar/Eye.html",
    "kind": "Reference",
@@ -4888,7 +5069,49 @@ SINA.lectures["anat3-orbital-appendages"] = {
    "url": "https://brainscape.com/flashcards/eye-anatomy-8993615/packs/15449051"
   }
  ],
- "verified": "20 Sep 2026"
+ "verified": "20 Sep 2026",
+ "highYield": [
+  {
+   "t": "must",
+   "html": "<strong>Eyelid layers (5)</strong> from outside in: skin and cilia → loose connective/adipose tissue → muscle (orbicularis oculi, levator) → <strong>tarsal plate</strong> → palpebral conjunctiva."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Levator palpebrae superioris = CN III</strong>; its smooth deep part, the <strong>superior tarsal (Müller's) muscle = sympathetic</strong>. Closing the eye = orbicularis oculi = <strong>CN VII</strong>."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Tear film, 3 layers</strong>: oil (<strong>meibomian</strong> glands) → water (<strong>lacrimal</strong> gland) → mucin (conjunctival <strong>goblet cells</strong>)."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Tear drainage</strong>: lacrimal gland → superior conjunctival fornix → across the cornea → <strong>puncta</strong> → canaliculi → <strong>lacrimal sac</strong> → nasolacrimal duct → <strong>inferior meatus</strong>."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Lacrimal gland nerves</strong>: secretomotor parasympathetic = <strong>CN VII → greater petrosal → nerve of pterygoid canal → pterygopalatine ganglion</strong> → V2 → zygomatic → lacrimal nerve. Sympathetic (deep petrosal) <strong>inhibits</strong>. Sensory = lacrimal nerve (V1)."
+  },
+  {
+   "t": "trap",
+   "html": "The <strong>lacrimal nerve (V1) is sensory</strong>; it only hitchhikes the parasympathetic fibres at the end. The parasympathetics come from <strong>CN VII</strong>, not V."
+  },
+  {
+   "t": "trap",
+   "html": "<strong>Glands of Zeis = sebaceous</strong>; <strong>glands of Moll = modified apocrine sweat glands</strong>; <strong>meibomian (tarsal) glands</strong> make the oil layer. Don't swap them."
+  },
+  {
+   "t": "trap",
+   "html": "The <strong>ciliary ganglion</strong> is a parasympathetic ganglion for <strong>CN III</strong> (pupil and ciliary muscle), <strong>not</strong> for the lacrimal gland. Lacrimal secretion relays in the <strong>pterygopalatine</strong> ganglion."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Ptosis</strong>: complete ptosis → CN III palsy (levator); mild ptosis with a small pupil → <strong>Horner syndrome</strong> (loss of sympathetic tarsal muscle). The <strong>orbital septum</strong> separates preseptal (lid) from orbital cellulitis."
+  },
+  {
+   "t": "clinic",
+   "html": "A lesion of CN VII <strong>before</strong> the greater petrosal branch (at or above the geniculate ganglion) gives a <strong>dry eye</strong> as well as facial palsy; a lesion at the stylomastoid foramen does not."
+  }
+ ]
 };
 window.SINA = window.SINA || {subjects:[], lectures:{}};
 SINA.lectures["anat3-eyeball-1"] = {
@@ -5979,10 +6202,10 @@ SINA.lectures["anat3-eyeball-1"] = {
  ],
  "resources": [
   {
-   "title": "Anatomy of the eyeball (video)",
-   "url": "https://youtu.be/7lBtlGvS1Gc",
+   "title": "Eyeball Anatomy (AnatomyZone video)",
+   "url": "https://www.youtube.com/watch?v=7lBtlGvS1Gc",
    "kind": "Video",
-   "why": "Video recommended by the class for revising the eyeball.",
+   "why": "The three layers of the eyeball, the chambers and the refractive media in 3D.",
    "note": ""
   },
   {
@@ -6004,7 +6227,49 @@ SINA.lectures["anat3-eyeball-1"] = {
    "url": "https://brainscape.com/flashcards/ocular-anatomy-9005131/packs/15403870"
   }
  ],
- "verified": "20 Sep 2026"
+ "verified": "20 Sep 2026",
+ "highYield": [
+  {
+   "t": "must",
+   "html": "<strong>Three coats</strong>: fibrous (cornea 1/6 + sclera 5/6), vascular = <strong>uvea</strong> (iris, ciliary body, choroid), neural (retina)."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Cornea</strong>: avascular, highly sensitive (<strong>V1</strong>), fed by tears and aqueous. It does the <strong>most refraction</strong>, more than the lens."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Aqueous pathway</strong>: ciliary processes → posterior chamber → <strong>pupil</strong> → anterior chamber → angle → <strong>trabecular meshwork → Schlemm's canal</strong> (50-75%, pressure-sensitive) or <strong>uveoscleral</strong> route (pressure-independent)."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Refractive media, in order</strong>: cornea → aqueous → lens → vitreous."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Accommodation (near)</strong>: CN III parasympathetic → <strong>ciliary muscle contracts</strong> → zonules <strong>slacken</strong> → lens <strong>rounds up</strong> (thicker, more power). Far vision = ciliary muscle relaxed, zonules taut, lens flat."
+  },
+  {
+   "t": "trap",
+   "html": "Contracting the ciliary muscle makes the zonules <strong>relax</strong>, not tighten. Most students get the direction backwards."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Retina landmarks</strong>: optic disc = <strong>blind spot</strong> (no photoreceptors); macula = cones, no vessels; <strong>fovea = only cones</strong>, sharpest vision. Rods ≈ 120 million (dim light, rhodopsin); cones ≈ 6 million (colour, 3 types)."
+  },
+  {
+   "t": "trap",
+   "html": "Photoreceptors and bipolar cells make <strong>graded potentials</strong>; only <strong>ganglion cells fire action potentials</strong>, and their axons form the optic nerve."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Glaucoma</strong> = outflow failure → raised pressure → optic nerve damage. <strong>Cataract</strong> = cloudy lens. <strong>Presbyopia</strong> = stiff lens with age, loss of near accommodation. <strong>Scleral icterus</strong> = jaundice seen in the sclera."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Miosis</strong> = sphincter pupillae (parasympathetic, CN III); <strong>mydriasis</strong> = dilator pupillae (sympathetic). Anticholinergic drops dilate; they can precipitate angle-closure glaucoma."
+  }
+ ]
 };
 window.SINA = window.SINA || {subjects:[], lectures:{}};
 SINA.lectures["anat3-ocular-muscles"] = {
@@ -6845,10 +7110,17 @@ SINA.lectures["anat3-ocular-muscles"] = {
  ],
  "resources": [
   {
-   "title": "Anatomy of the eyeball (video)",
-   "url": "https://youtu.be/7lBtlGvS1Gc",
+   "title": "Extraocular Muscles | Eye Anatomy (AnatomyZone video)",
+   "url": "https://www.youtube.com/watch?v=f_rb6FMVHPk",
    "kind": "Video",
-   "why": "Video recommended by the class for revising the eyeball.",
+   "why": "Each extraocular muscle's origin, insertion, action and nerve, shown in 3D.",
+   "note": ""
+  },
+  {
+   "title": "Eyeball Anatomy (AnatomyZone video)",
+   "url": "https://www.youtube.com/watch?v=7lBtlGvS1Gc",
+   "kind": "Video",
+   "why": "The three layers of the eyeball, the chambers and the refractive media in 3D.",
    "note": ""
   },
   {
@@ -6899,7 +7171,41 @@ SINA.lectures["anat3-ocular-muscles"] = {
    "url": "https://brainscape.com/flashcards/quesmed-eyes-16202446/packs/21594200"
   }
  ],
- "verified": "20 Sep 2026"
+ "verified": "20 Sep 2026",
+ "highYield": [
+  {
+   "t": "must",
+   "html": "Innervation: <strong>LR6 SO4, rest 3</strong>. Recti arise from the <strong>common tendinous ring</strong>; SO from the sphenoid body (tendon through the <strong>trochlea</strong>); IO from the orbital floor."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Actions</strong>: SR = elevation, adduction, intorsion. IR = depression, adduction, extorsion. <strong>SO = depression, abduction, intorsion</strong>. <strong>IO = elevation, abduction, extorsion</strong>. MR = adduction; LR = abduction."
+  },
+  {
+   "t": "mnemo",
+   "html": "<strong>'Superiors intort, inferiors extort'</strong>; <strong>'recti adduct, obliques abduct'</strong>; the obliques move the eye <strong>vertically opposite to their name</strong> (SO looks down, IO looks up)."
+  },
+  {
+   "t": "trap",
+   "html": "<strong>Anatomical action ≠ clinical test position.</strong> To isolate the obliques, adduct first: <strong>SO is tested looking down and in</strong>, IO up and in. To isolate SR and IR, abduct first: SR up and out, IR down and out."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Visual pathway</strong>: retina → optic nerve → <strong>chiasm</strong> (nasal fibres cross) → optic tract → <strong>lateral geniculate nucleus</strong> → optic radiation → <strong>primary visual cortex</strong> (occipital, area 17)."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Lesion map</strong>: optic nerve → blind eye. <strong>Chiasm → bitemporal hemianopia</strong>. Optic tract or radiation → <strong>contralateral homonymous hemianopia</strong> (same half-field lost in both eyes)."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>CN III palsy</strong>: eye 'down and out', ptosis, dilated pupil (compressive lesions such as a posterior communicating aneurysm hit the pupil early). <strong>CN IV palsy</strong>: vertical diplopia worse looking down (stairs, reading), head tilted away from the lesion. <strong>CN VI palsy</strong>: cannot abduct, eye turns in (esotropia)."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Pupillary light reflex</strong> is bilateral (pretectum → both Edinger-Westphal nuclei), so light in one eye constricts both. A blind eye from an optic nerve lesion still constricts <strong>consensually</strong> when the good eye is lit."
+  }
+ ]
 };
 window.SINA = window.SINA || {subjects:[], lectures:{}};
 SINA.lectures["anat3-eye-innervation"] = {
@@ -7742,6 +8048,13 @@ SINA.lectures["anat3-eye-innervation"] = {
  ],
  "resources": [
   {
+   "title": "Extraocular Muscles | Eye Anatomy (AnatomyZone video)",
+   "url": "https://www.youtube.com/watch?v=f_rb6FMVHPk",
+   "kind": "Video",
+   "why": "Each extraocular muscle's origin, insertion, action and nerve, shown in 3D.",
+   "note": ""
+  },
+  {
    "title": "Quesmed: eyes",
    "url": "https://brainscape.com/flashcards/quesmed-eyes-16202446/packs/21594200",
    "kind": "Flashcards",
@@ -7771,7 +8084,45 @@ SINA.lectures["anat3-eye-innervation"] = {
    "url": "https://brainscape.com/flashcards/pathways-of-the-visual-system-9558323/packs/16374621"
   }
  ],
- "verified": "20 Sep 2026"
+ "verified": "20 Sep 2026",
+ "highYield": [
+  {
+   "t": "mnemo",
+   "html": "Cranial nerve types: <strong>sensory 1, 2, 8</strong>; <strong>motor 3, 4, 6, 11, 12</strong>; <strong>mixed 5, 7, 9, 10</strong>; <strong>parasympathetic 3, 7, 9, 10</strong> ('1973')."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Light reflex</strong>: afferent = <strong>CN II</strong> → pretectal nuclei → <strong>both Edinger-Westphal</strong> nuclei; efferent = <strong>CN III</strong> → ciliary ganglion → short ciliary nerves → sphincter pupillae. Direct + consensual."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Accommodation reflex (near triad)</strong>: lens thickens + pupil constricts + <strong>convergence</strong>. Afferent goes all the way to the <strong>visual cortex</strong>; efferent = CN III (parasympathetic to ciliary and sphincter muscles, somatic to medial recti)."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Corneal reflex</strong>: afferent <strong>V1</strong> (nasociliary) → spinal nucleus of V → both facial nuclei → efferent <strong>CN VII</strong> → orbicularis oculi. Touch one cornea → both eyes blink."
+  },
+  {
+   "t": "trap",
+   "html": "In the corneal reflex, the <strong>side that fails to blink tells you which nerve</strong> is hit: no blink on either side when one cornea is touched = that side's <strong>V1</strong>; only one eye fails to blink whichever side is touched = that side's <strong>VII</strong>."
+  },
+  {
+   "t": "trap",
+   "html": "<strong>Ciliary ganglion</strong>: only the <strong>parasympathetic</strong> fibres (from CN III) synapse there; sympathetic and sensory fibres just <strong>pass through</strong>. Its output = short ciliary nerves."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Abducens nucleus</strong> has motor neurons (ipsilateral LR) and <strong>interneurons crossing in the MLF</strong> to the opposite CN III nucleus (contralateral MR): this produces <strong>conjugate horizontal gaze</strong>."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>MLF lesion = internuclear ophthalmoplegia</strong>: on attempted lateral gaze, the eye on the lesion side fails to adduct and the other eye shows nystagmus; convergence is preserved. Classic in young adults with <strong>multiple sclerosis</strong>."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Relative afferent pupillary defect</strong> (swinging-light test): swinging the light to the eye with a damaged optic nerve makes <strong>both pupils dilate</strong>, because less light signal gets in."
+  }
+ ]
 };
 window.SINA = window.SINA || {subjects:[], lectures:{}};
 SINA.lectures["anat3-ocular-clinical"] = {
@@ -8693,6 +9044,20 @@ SINA.lectures["anat3-ocular-clinical"] = {
  ],
  "resources": [
   {
+   "title": "Orbit | Eye Anatomy (AnatomyZone video)",
+   "url": "https://www.youtube.com/watch?v=HKEA4p5k66U",
+   "kind": "Video",
+   "why": "Walks through the bones, walls, fissures and foramina of the orbit on a 3D skull.",
+   "note": ""
+  },
+  {
+   "title": "Eyeball Anatomy (AnatomyZone video)",
+   "url": "https://www.youtube.com/watch?v=7lBtlGvS1Gc",
+   "kind": "Video",
+   "why": "The three layers of the eyeball, the chambers and the refractive media in 3D.",
+   "note": ""
+  },
+  {
    "title": "The bony orbit",
    "url": "https://teachmeanatomy.info/head/organs/eye/bony-orbit",
    "kind": "Article",
@@ -8722,7 +9087,49 @@ SINA.lectures["anat3-ocular-clinical"] = {
    "url": "https://brainscape.com/flashcards/quesmed-eyes-16202446/packs/21594200"
   }
  ],
- "verified": "20 Sep 2026"
+ "verified": "20 Sep 2026",
+ "highYield": [
+  {
+   "t": "must",
+   "html": "<strong>Ophthalmic artery</strong> = first branch of the <strong>internal</strong> carotid, enters via the <strong>optic canal</strong>. Its <strong>central retinal artery</strong> enters the optic nerve ~13 mm behind the globe and is an <strong>end artery</strong>."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Superior ophthalmic vein</strong> (main drainage) → superior orbital fissure → <strong>cavernous sinus</strong>. Vortex veins drain the choroid."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Central retinal artery occlusion</strong>: sudden, painless loss of vision in one eye; pale retina with a <strong>cherry-red spot</strong> at the fovea."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Danger zone</strong>: facial infection → facial/angular vein → ophthalmic veins → <strong>cavernous sinus thrombosis</strong> (proptosis, ophthalmoplegia of III, IV, VI, V1 numbness)."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Strabismus</strong>: eso = in, exo = out, hyper = up, hypo = down. <strong>Myopia</strong>: image in front of the retina (long eye) → concave lens. <strong>Hyperopia</strong>: image behind the retina (short eye) → convex lens."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Blowout fractures</strong>: floor most common (inferior rectus trapped), then medial wall (medial rectus into ethmoid cells); roof fractures can leak <strong>CSF</strong>; the lateral wall rarely breaks."
+  },
+  {
+   "t": "trap",
+   "html": "<strong>Chalazion</strong> = blocked <strong>meibomian</strong> gland inside the lid (painless lump). <strong>Stye</strong> = infected gland at the <strong>lid margin</strong> (painful). <strong>Conjunctivitis</strong> = outer layer; <strong>uveitis</strong> = middle layer."
+  },
+  {
+   "t": "trap",
+   "html": "<strong>Pituitary tumour → bitemporal hemianopia</strong> (crossing nasal fibres carry the temporal fields). Not homonymous, not monocular."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Papilloedema</strong> = swollen optic disc from <strong>raised intracranial pressure</strong> (the optic nerve sheath continues the subarachnoid space). <strong>Retinal detachment</strong>: flashes, floaters, a curtain over vision: an emergency."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Glaucoma</strong>: open-angle = slow, painless, peripheral field loss first; <strong>closed-angle</strong> = sudden red painful eye, halos, fixed mid-dilated pupil: an emergency."
+  }
+ ]
 };
 window.SINA = window.SINA || {subjects:[], lectures:{}};
 SINA.lectures["anat3-sinuses"] = {
@@ -9743,7 +10150,37 @@ SINA.lectures["anat3-sinuses"] = {
    "url": "https://statpearls.com/as/eyes/26627/"
   }
  ],
- "verified": "20 Sep 2026"
+ "verified": "20 Sep 2026",
+ "highYield": [
+  {
+   "t": "must",
+   "html": "<strong>Where each sinus opens</strong>: maxillary, frontal, anterior and middle ethmoidal → <strong>middle meatus</strong>; posterior ethmoidal → <strong>superior meatus</strong>; sphenoid → <strong>sphenoethmoidal recess</strong>. Nasolacrimal duct → <strong>inferior meatus</strong>."
+  },
+  {
+   "t": "mnemo",
+   "html": "The <strong>middle meatus is the busy one</strong>: everything except the posterior ethmoid cells and the sphenoid drains there (hiatus semilunaris, ethmoidal infundibulum, bulla)."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Maxillary sinus</strong> = largest; roof = orbital floor, floor = alveolar process (molar roots), base = lateral nasal wall. Nerve = <strong>V2</strong>. Frontal sinus = <strong>V1</strong>."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Sphenoid sinus relations</strong>: above = <strong>pituitary</strong> (sella) and <strong>optic chiasm</strong>; laterally = <strong>cavernous sinus</strong> with the ICA and CN III, IV, V1, V2, VI. Basis of <strong>trans-sphenoidal</strong> pituitary surgery."
+  },
+  {
+   "t": "trap",
+   "html": "Sinuses are <strong>rudimentary or absent at birth</strong> (maxillary and ethmoid are present early; frontal develops by ~7-8 years), enlarging at 6-7 years and after puberty. A frontal sinusitis in a toddler is unlikely."
+  },
+  {
+   "t": "trap",
+   "html": "Sphenoid opening: this lecture says <strong>sphenoethmoidal recess</strong>; the nasal cavity lecture lists it with the superior meatus region. The recess lies <strong>above the superior concha</strong>; give 'sphenoethmoidal recess' unless your professor says otherwise."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Maxillary sinusitis</strong> drains badly (ostium high on the medial wall) and can mimic <strong>upper toothache</strong> (shared V2 supply). <strong>Ethmoid</strong> infection can spread to the orbit through the lamina papyracea."
+  }
+ ]
 };
 window.SINA = window.SINA || {subjects:[], lectures:{}};
 SINA.lectures["anat3-oral-cavity"] = {
@@ -10842,7 +11279,49 @@ SINA.lectures["anat3-oral-cavity"] = {
    "url": "https://www.kenhub.com/en/library/anatomy/the-palatine-bone"
   }
  ],
- "verified": "20 Sep 2026"
+ "verified": "20 Sep 2026",
+ "highYield": [
+  {
+   "t": "must",
+   "html": "<strong>Tongue nerves</strong>: anterior 2/3 = <strong>lingual (V3)</strong> for touch + <strong>chorda tympani (VII)</strong> for taste; posterior 1/3 = <strong>IX</strong> for both; base/epiglottis area = <strong>X</strong> (internal laryngeal)."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Motor to the tongue = XII</strong>, for every muscle <strong>except palatoglossus (X)</strong>. <strong>Genioglossus protrudes</strong>; styloglossus and hyoglossus retract."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Hypoglossal palsy</strong>: the protruded tongue <strong>deviates towards the paralysed side</strong> (the healthy genioglossus pushes it over)."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Palate muscles</strong>: all on the <strong>pharyngeal plexus (X)</strong> except <strong>tensor veli palatini (V3)</strong>. The palatine aponeurosis is the expanded tendon of tensor veli palatini."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Vagus lesion</strong>: the uvula deviates <strong>away from</strong> the paralysed side (the healthy levator pulls it over)."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Salivary ducts</strong>: <strong>parotid (Stensen)</strong> opens opposite the <strong>upper 2nd molar</strong>; <strong>submandibular (Wharton)</strong> on the sublingual papilla beside the frenulum; <strong>sublingual</strong> via many small ducts (Rivinus) on the sublingual fold."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Salivary secretomotor pathways</strong>: parotid = <strong>IX → lesser petrosal → otic ganglion → auriculotemporal (V3)</strong>. Submandibular and sublingual = <strong>VII → chorda tympani → lingual → submandibular ganglion</strong>."
+  },
+  {
+   "t": "trap",
+   "html": "Gland type: <strong>parotid = purely serous</strong> (largest); submandibular = mixed, <strong>mostly serous</strong>; sublingual = mixed, <strong>mostly mucous</strong> (smallest). The <strong>facial nerve passes through the parotid</strong> but does <strong>not</strong> supply it."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Foramen caecum</strong> at the apex of the sulcus terminalis = origin of the <strong>thyroglossal duct</strong> (thyroglossal cysts, lingual thyroid). Posterior third has no papillae but the <strong>lingual tonsil</strong>."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Tongue lymph</strong>: tip → submental (both sides); anterior 2/3 → submandibular; posterior 1/3 → deep cervical (jugulodigastric). Tumours near the midline can spread bilaterally."
+  }
+ ]
 };
 window.SINA = window.SINA || {subjects:[], lectures:{}};
 SINA.lectures["anat3-nasal-cavity"] = {
@@ -11998,7 +12477,41 @@ SINA.lectures["anat3-nasal-cavity"] = {
    "url": "https://teachmeanatomy.info/head/organs/the-nose/paranasal-sinuses"
   }
  ],
- "verified": "20 Sep 2026"
+ "verified": "20 Sep 2026",
+ "highYield": [
+  {
+   "t": "must",
+   "html": "<strong>Septum</strong> = perpendicular plate of ethmoid + <strong>vomer</strong> + septal cartilage. <strong>Floor</strong> = palatine process of maxilla (front 2/3) + horizontal plate of palatine (back 1/3)."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Conchae</strong>: superior and middle belong to the <strong>ethmoid</strong>; the <strong>inferior concha is a separate bone</strong>. Meatus contents: superior = posterior ethmoid cells (+ sphenopalatine foramen); middle = frontal, maxillary, anterior ethmoid; inferior = <strong>nasolacrimal duct</strong>."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Blood supply from both carotids</strong>: ICA via ophthalmic → anterior and posterior ethmoidal; ECA via maxillary → <strong>sphenopalatine</strong> and greater palatine, and via facial → superior labial."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Little's area (Kiesselbach's plexus)</strong>, anteroinferior septum: anterior ethmoidal + sphenopalatine + greater palatine + superior labial meet → <strong>commonest site of epistaxis</strong> (nose picking). Severe posterior bleeds come from the <strong>sphenopalatine</strong> artery."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Nerves</strong>: smell = <strong>CN I</strong> through the cribriform plate (roof, upper septum, superior concha); general sensation = <strong>V1</strong> (anterior ethmoidal) and <strong>V2</strong> (nasopalatine, sphenopalatine branches)."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Cribriform plate fracture</strong>: CSF rhinorrhoea and anosmia. <strong>Allergic rhinitis</strong>: swollen mucosa over the inferior concha; Vidian nerve section reduces severe rhinorrhoea."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Nose functions</strong>: warm, humidify, filter (mucociliary clearance), smell, resonance, reflexes. <strong>Choanae</strong> open into the nasopharynx and are separated by the <strong>vomer</strong>."
+  },
+  {
+   "t": "trap",
+   "html": "Embryology: nasal cavities come from the <strong>nasal placodes</strong>; the <strong>oronasal membrane</strong> first separates nose and mouth; the palate completes the separation. Failure = cleft palate / choanal atresia."
+  }
+ ]
 };
 window.SINA = window.SINA || {subjects:[], lectures:{}};
 SINA.lectures["anat3-larynx"] = {
@@ -13176,7 +13689,49 @@ SINA.lectures["anat3-larynx"] = {
    "url": "https://radiopaedia.org/articles/larynx"
   }
  ],
- "verified": "20 Sep 2026"
+ "verified": "20 Sep 2026",
+ "highYield": [
+  {
+   "t": "must",
+   "html": "<strong>9 cartilages</strong>: unpaired thyroid, cricoid, epiglottis; paired arytenoid, corniculate, cuneiform. <strong>Cricoid</strong> = the only <strong>complete ring</strong>, at <strong>C6</strong>."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Posterior cricoarytenoid = the ONLY abductor</strong> ('safety muscle'): paralysis of both → airway closes."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Cricothyroid</strong> = the only muscle on the <strong>outside</strong>, the only one on the <strong>external laryngeal nerve</strong>, and the main <strong>tensor</strong> (pitch). All other intrinsic muscles = <strong>recurrent laryngeal nerve</strong>."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Sensation</strong>: above the vocal folds = <strong>internal laryngeal</strong> (pierces the thyrohyoid membrane with the superior laryngeal artery); below = <strong>recurrent laryngeal</strong>."
+  },
+  {
+   "t": "trap",
+   "html": "<strong>Transverse (inter)arytenoid</strong> is the only <strong>unpaired</strong> intrinsic muscle. Tensors = cricothyroid and vocalis; relaxer = thyroarytenoid; adductors = lateral cricoarytenoid, transverse arytenoid."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Unilateral recurrent laryngeal palsy</strong> (thyroidectomy, left-sided aortic or lung lesions): hoarse voice, cord paramedian. <strong>Bilateral</strong>: stridor, airway emergency. <strong>External laryngeal injury</strong> (superior thyroid artery ligation): weak, monotone voice, can't reach high notes."
+  },
+  {
+   "t": "trap",
+   "html": "The <strong>left recurrent</strong> nerve loops under the <strong>aortic arch</strong> (long course → more often damaged by chest disease); the right loops under the <strong>subclavian artery</strong>."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Compartments</strong>: vestibule (above false cords) → <strong>ventricle</strong> → glottis (true cords) → infraglottic cavity. The <strong>glottis is the narrowest part</strong> in adults. Vocal cords have <strong>stratified squamous</strong> epithelium and <strong>no lymphatics</strong>."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>No lymphatics at the cords</strong> → glottic cancer spreads late (good prognosis); supraglottic cancer spreads early. <strong>Vocal nodules</strong> sit at the junction of the anterior 1/3 and posterior 2/3 of the cords."
+  },
+  {
+   "t": "clinic",
+   "html": "Emergency airway: <strong>cricothyroidotomy</strong> goes through the <strong>cricothyroid membrane</strong> (between thyroid and cricoid), a superficial, relatively avascular spot."
+  }
+ ]
 };
 window.SINA = window.SINA || {subjects:[], lectures:{}};
 SINA.lectures["anat3-pharynx"] = {
@@ -14257,7 +14812,45 @@ SINA.lectures["anat3-pharynx"] = {
    "url": "https://radiopaedia.org/articles/pharynx"
   }
  ],
- "verified": "20 Sep 2026"
+ "verified": "20 Sep 2026",
+ "highYield": [
+  {
+   "t": "must",
+   "html": "Pharynx runs from the <strong>skull base to C6</strong> (lower border of cricoid), 12-14 cm, and continues as the oesophagus. Three parts: <strong>naso-, oro-, laryngopharynx</strong>."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Motor rule</strong>: every pharyngeal and palatal muscle is on the <strong>vagus</strong> (pharyngeal plexus) <strong>except stylopharyngeus (IX)</strong> and <strong>tensor veli palatini (V3)</strong>."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Constrictors</strong> (superior, middle, inferior) overlap like stacked flowerpots and insert on the <strong>median raphe</strong>. <strong>Inferior constrictor</strong> = thyropharyngeus + <strong>cricopharyngeus</strong> (upper oesophageal sphincter)."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Killian's dehiscence</strong>, the weak spot between thyropharyngeus and cricopharyngeus, is where a <strong>Zenker's (pharyngeal pouch) diverticulum</strong> forms: regurgitation of old food, halitosis."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Nasopharynx</strong>: pharyngeal tonsil (adenoids), opening of the <strong>auditory tube</strong>, torus tubarius. <strong>Oropharynx</strong>: palatine tonsils between the palatoglossal and palatopharyngeal arches. <strong>Laryngopharynx</strong>: laryngeal inlet and <strong>piriform fossae</strong>."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Fish bones</strong> lodge in the <strong>piriform fossa</strong>; the internal laryngeal nerve runs under its mucosa and can be injured. Enlarged <strong>adenoids</strong> block the auditory tube → otitis media with effusion, mouth breathing."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Sensation</strong>: nasopharynx = V2; oropharynx = <strong>IX</strong> (afferent limb of the <strong>gag reflex</strong>, efferent = X); laryngopharynx = X."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Swallowing</strong>: oral phase <strong>voluntary</strong>; pharyngeal and oesophageal phases <strong>involuntary</strong>. The soft palate and Passavant's ridge seal the nasopharynx; the aryepiglottic folds close the laryngeal inlet; <strong>cricopharyngeus relaxes</strong> to let the bolus into the oesophagus."
+  },
+  {
+   "t": "trap",
+   "html": "The three longitudinal muscles (stylopharyngeus, palatopharyngeus, salpingopharyngeus) all insert on the <strong>posterior border of the thyroid lamina</strong> and <strong>elevate</strong> the pharynx and larynx."
+  }
+ ]
 };
 window.SINA = window.SINA || {subjects:[], lectures:{}};
 SINA.lectures["anat3-thyroid"] = {
@@ -15336,7 +15929,45 @@ SINA.lectures["anat3-thyroid"] = {
    "url": "https://radiopaedia.org/articles/thyroid-gland"
   }
  ],
- "verified": "20 Sep 2026"
+ "verified": "20 Sep 2026",
+ "highYield": [
+  {
+   "t": "must",
+   "html": "Two lobes + isthmus. <strong>Isthmus over tracheal rings 2-4</strong>. Level C5-T1. <strong>Pyramidal lobe</strong> (inconstant) = remnant of the thyroglossal duct."
+  },
+  {
+   "t": "must",
+   "html": "Two capsules: <strong>true capsule</strong> (gland's own stroma) and <strong>false capsule</strong> (pretracheal fascia), which thickens as the <strong>ligament of Berry</strong> to the cricoid. That is why a thyroid lump <strong>moves up on swallowing</strong>."
+  },
+  {
+   "t": "trap",
+   "html": "The <strong>venous plexus lies deep to the true capsule</strong>, so the true capsule is removed <strong>with</strong> the gland (the opposite of the prostate)."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Arteries</strong>: <strong>superior thyroid</strong> = first branch of the <strong>external carotid</strong>; <strong>inferior thyroid</strong> = <strong>thyrocervical trunk</strong> (subclavian). <strong>Veins</strong>: superior and middle → internal jugular; <strong>inferior → left brachiocephalic</strong>."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Surgical pairs</strong>: the <strong>external laryngeal nerve</strong> runs with the <strong>superior thyroid artery</strong> (ligate close to the gland); the <strong>recurrent laryngeal nerve</strong> is related to the <strong>inferior thyroid artery</strong> (ligate away from the gland)."
+  },
+  {
+   "t": "trap",
+   "html": "Right recurrent nerve passes <strong>in front of</strong> the inferior thyroid artery branches; left passes <strong>behind</strong> them (this lecture's description). Anatomy here is variable, which is exactly why the nerve is at risk."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Parathyroids</strong> sit on the <strong>posteromedial border</strong> of each lobe. Removing them in thyroidectomy → <strong>hypocalcaemia</strong> (tingling, tetany, Chvostek and Trousseau signs)."
+  },
+  {
+   "t": "must",
+   "html": "Hormones: <strong>follicular cells → T3/T4</strong>; <strong>C cells → calcitonin (lowers Ca²⁺)</strong>; <strong>parathyroid → PTH (raises Ca²⁺, lowers phosphate)</strong>."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Strap (infrahyoid) muscles</strong>: sternohyoid, sternothyroid (deep to sternohyoid), thyrohyoid, omohyoid; supplied by <strong>C1-C3</strong> (ansa cervicalis). They lie in front of the gland; tracheostomy goes through the midline between them."
+  }
+ ]
 };
 window.SINA = window.SINA || {subjects:[], lectures:{}};
 SINA.lectures["anat3-neck-triangles"] = {
@@ -16345,7 +16976,37 @@ SINA.lectures["anat3-neck-triangles"] = {
    "url": "https://teachmeanatomy.info/neck/areas/anterior-triangle/"
   }
  ],
- "verified": "20 Sep 2026"
+ "verified": "20 Sep 2026",
+ "highYield": [
+  {
+   "t": "must",
+   "html": "<strong>SCM splits the neck</strong>: anterior triangle (SCM, midline, mandible) and posterior triangle (SCM, trapezius, clavicle)."
+  },
+  {
+   "t": "must",
+   "html": "Anterior triangle subdivisions: <strong>carotid, submandibular, muscular</strong> (paired) + <strong>submental</strong> (unpaired). Posterior: <strong>occipital</strong> and <strong>subclavian (omoclavicular)</strong>."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Carotid triangle</strong>: superior belly of omohyoid, posterior belly of digastric (+ stylohyoid), SCM. Holds the <strong>carotid bifurcation</strong>, IJV and vagus."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Farabeuf's triangle</strong>: <strong>IJV</strong> (posterior), <strong>common facial vein</strong> (anteroinferior), <strong>hypoglossal nerve</strong> (superior). Contents: <strong>carotid bifurcation</strong> + jugulodigastric node. Used to find the carotid fork."
+  },
+  {
+   "t": "mnemo",
+   "html": "The three 'forgotten' triangles sit in the <strong>submandibular triangle</strong> and all share the <strong>hypoglossal nerve</strong> or digastric: <strong>Lesser's</strong> and <strong>Pirogoff's</strong> (XII above, digastric tendon below, mylohyoid behind) and <strong>Béclard's</strong> (greater horn of hyoid, posterior digastric, hyoglossus)."
+  },
+  {
+   "t": "trap",
+   "html": "<strong>Béclard's triangle</strong> contains the <strong>lingual artery</strong> (posterior to hyoglossus) and XII; the <strong>lingual artery runs deep to hyoglossus</strong> while the <strong>hypoglossal nerve lies superficial</strong> to it."
+  },
+  {
+   "t": "clinic",
+   "html": "Practical uses: find the common carotid (Farabeuf), <strong>ligate the lingual artery</strong> (Béclard/Pirogoff) in tongue bleeding, and protect XII in submandibular gland surgery."
+  }
+ ]
 };
 window.SINA = window.SINA || {subjects:[], lectures:{}};
 SINA.lectures["anat3-ear-1"] = {
@@ -17540,7 +18201,41 @@ SINA.lectures["anat3-ear-1"] = {
    "url": "https://www.kenhub.com/en/library/anatomy/the-ear"
   }
  ],
- "verified": "21 Sep 2026"
+ "verified": "21 Sep 2026",
+ "highYield": [
+  {
+   "t": "must",
+   "html": "<strong>External canal</strong>: 25 mm, S-shaped; outer 1/3 cartilaginous (hair, wax), inner 2/3 bony. <strong>Pull the pinna up, back and out</strong> in adults to see the drum."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Tympanic cavity walls and their neighbours</strong>: roof (<strong>tegmen</strong>) → middle cranial fossa; floor → <strong>jugular bulb</strong>; anterior → <strong>internal carotid</strong> + auditory tube; posterior → <strong>mastoid antrum</strong> (aditus) and facial canal; medial → promontory, oval and round windows; lateral → drum."
+  },
+  {
+   "t": "clinic",
+   "html": "Middle ear infection can spread: up through the tegmen → <strong>meningitis/temporal lobe abscess</strong>; back → <strong>mastoiditis</strong>; and the <strong>facial nerve</strong> in its canal on the medial/posterior wall can be paralysed."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Tympanic membrane</strong>: 3 layers (skin, fibrous, mucosa). <strong>Pars flaccida</strong> (above the lateral process of the malleus) <strong>lacks the fibrous layer</strong>. Cone of light points antero-inferiorly."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Ossicles</strong>: malleus → incus → <strong>stapes</strong> (smallest bone in the body; footplate in the <strong>oval window</strong>). The lever and area ratio overcome the <strong>air-to-fluid impedance mismatch</strong>."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Auditory (Eustachian) tube</strong>: 31-38 mm, bony posterolateral part + cartilaginous anteromedial part, opening into the <strong>nasopharynx</strong>; equalises pressure (opens on swallowing and yawning)."
+  },
+  {
+   "t": "trap",
+   "html": "Children's tubes are <strong>shorter, wider and more horizontal</strong> → more otitis media. Tympanic plexus = <strong>Jacobson's nerve (IX)</strong> + carotid sympathetics; IX also carries the parotid secretomotor fibres onward (lesser petrosal)."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Acoustic (stapedius) reflex</strong> damps loud sound; <strong>stapedius is supplied by VII</strong>, so facial palsy can cause <strong>hyperacusis</strong>. Tensor tympani = V3."
+  }
+ ]
 };
 window.SINA = window.SINA || {subjects:[], lectures:{}};
 SINA.lectures["anat3-ear-2"] = {
@@ -18675,7 +19370,49 @@ SINA.lectures["anat3-ear-2"] = {
    "url": "https://radiopaedia.org/articles/inner-ear"
   }
  ],
- "verified": "21 Sep 2026"
+ "verified": "21 Sep 2026",
+ "highYield": [
+  {
+   "t": "must",
+   "html": "<strong>Bony labyrinth</strong> (cochlea, vestibule, semicircular canals) contains <strong>perilymph</strong>; <strong>membranous labyrinth</strong> (cochlear duct, utricle, saccule, ducts) contains <strong>endolymph</strong>."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Front hears, back balances</strong>: cochlear duct → <strong>organ of Corti</strong> (hearing); utricle and saccule → <strong>maculae</strong> (static balance, linear acceleration); ampullae → <strong>cristae</strong> (kinetic balance, rotation)."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Cochlea</strong>: 2¾ turns around the <strong>modiolus</strong>; scala vestibuli (from the oval window) and scala tympani (to the round window) meet at the <strong>helicotrema</strong>; the cochlear duct (scala media) lies between them."
+  },
+  {
+   "t": "trap",
+   "html": "<strong>Oval window</strong> = stapes footplate (into scala vestibuli). <strong>Round window</strong> = secondary tympanic membrane (end of scala tympani). The <strong>basal turn</strong> forms the <strong>promontory</strong> on the medial wall of the middle ear."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Tonotopy</strong>: high frequencies peak at the <strong>base</strong> (narrow, stiff basilar membrane), low frequencies at the <strong>apex</strong>."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Inner hair cells</strong> carry 90-95% of afferent fibres (true receptors); <strong>outer hair cells</strong> are contractile amplifiers that sharpen tuning."
+  },
+  {
+   "t": "must",
+   "html": "Three semicircular canals at right angles open into the vestibule by <strong>5 openings</strong> (anterior and posterior share the <strong>crus commune</strong>). Nerves: <strong>superior vestibular</strong> = utricle + anterior and lateral ampullae; <strong>inferior</strong> = saccule + posterior ampulla."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Auditory pathway</strong>: cochlear nuclei → superior olive → lateral lemniscus → <strong>inferior colliculus</strong> → <strong>medial geniculate</strong> → auditory cortex (<strong>transverse temporal gyri of Heschl</strong>). Bilateral, mainly contralateral."
+  },
+  {
+   "t": "clinic",
+   "html": "Because the pathway is bilateral above the cochlear nuclei, a <strong>unilateral cortical lesion does not cause deafness</strong> in one ear; one-sided deafness points to the ear, VIII or cochlear nuclei (e.g. acoustic neuroma in the internal acoustic meatus)."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Labyrinthine artery</strong> (usually from <strong>AICA</strong>) is an end artery: its occlusion gives sudden deafness and vertigo."
+  }
+ ]
 };
 window.SINA = window.SINA || {subjects:[], lectures:{}};
 SINA.lectures["anat3-spinal-cord"] = {
@@ -19713,7 +20450,45 @@ SINA.lectures["anat3-spinal-cord"] = {
    "url": "https://radiopaedia.org/articles/spinal-cord"
   }
  ],
- "verified": "21 Sep 2026"
+ "verified": "21 Sep 2026",
+ "highYield": [
+  {
+   "t": "must",
+   "html": "<strong>Cord ends at L1/L2</strong> in adults (conus medullaris); at <strong>L3 at birth</strong>. Below it: the <strong>cauda equina</strong> in the lumbar cistern. Filum terminale anchors it to the coccyx."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Lumbar puncture below L3</strong> (usually L3/L4 or L4/L5, at the level of the iliac crests = <strong>L4</strong>): the needle meets floating roots, not cord. In infants go lower still."
+  },
+  {
+   "t": "must",
+   "html": "<strong>31 pairs</strong> of spinal nerves: <strong>8 C, 12 T, 5 L, 5 S, 1 Co</strong>. Enlargements: <strong>cervical C4-T1</strong> (upper limbs) and <strong>lumbar L1-S3</strong> (lower limbs)."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Grey matter butterfly</strong>: dorsal horn = sensory; ventral horn = motor; <strong>lateral horn = autonomic</strong> (sympathetic T1-L2, parasympathetic S2-S4)."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Embryology</strong>: alar plate → sensory (dorsal); basal plate → motor (ventral), divided by the <strong>sulcus limitans</strong>. Mantle layer → grey; marginal layer → white. <strong>Dorsal root ganglia come from neural crest</strong>."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Tracts</strong>: dorsal columns = fine touch, vibration, proprioception (ipsilateral in the cord); spinothalamic = pain and temperature (crosses within 1-2 segments); corticospinal = voluntary movement."
+  },
+  {
+   "t": "trap",
+   "html": "<strong>Anterior median fissure is deep</strong>; the posterior median sulcus is shallow. The <strong>epidural space</strong> (fat, venous plexus) lies outside the dura; <strong>CSF is in the subarachnoid space</strong>. Denticulate ligaments = pia to dura."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Cord compression</strong> is a neurosurgical emergency: segmental signs at the level, upper motor neuron signs below. <strong>Cauda equina syndrome</strong>: saddle anaesthesia, bladder/bowel dysfunction, lower motor neuron leg weakness."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Anterior spinal artery</strong> supplies the front two thirds: its occlusion spares the dorsal columns (touch and position sense preserved) but causes paralysis and loss of pain/temperature below the lesion."
+  }
+ ]
 };
 window.SINA = window.SINA || {subjects:[], lectures:{}};
 SINA.lectures["anat3-brainstem"] = {
@@ -20872,7 +21647,49 @@ SINA.lectures["anat3-brainstem"] = {
    "url": "https://radiopaedia.org/articles/brainstem"
   }
  ],
- "verified": "21 Sep 2026"
+ "verified": "21 Sep 2026",
+ "highYield": [
+  {
+   "t": "must",
+   "html": "<strong>Midbrain</strong> (mesencephalon, smallest) → <strong>pons</strong> (metencephalon, largest) → <strong>medulla</strong> (myelencephalon). The <strong>thalamus is NOT brainstem</strong>."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Nerve exits</strong>: III between the cerebral peduncles; <strong>IV dorsally</strong> below the inferior colliculi (the only dorsal one); V lateral pons; <strong>VI, VII, VIII at the pontomedullary junction</strong> (medial to lateral); <strong>XII between pyramid and olive</strong>; IX, X, XI behind the olive."
+  },
+  {
+   "t": "mnemo",
+   "html": "<strong>2-2-4-4</strong>: 2 nerves above the brainstem (I, II), 2 in the midbrain (III, IV), 4 in the pons (V-VIII), 4 in the medulla (IX-XII)."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Cerebellar peduncles</strong>: superior → midbrain; middle → pons (largest); inferior → medulla."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Pyramids</strong> = corticospinal tracts; <strong>75-90% decussate in the lower medulla</strong>. Olive = inferior olivary nucleus."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Facial colliculus</strong> (floor of the 4th ventricle) = facial fibres looping round the <strong>abducens nucleus</strong>. A lesion there → ipsilateral VI and VII palsy."
+  },
+  {
+   "t": "must",
+   "html": "<strong>4th ventricle</strong>: floor = rhomboid fossa; CSF exits via <strong>Magendie</strong> (median) and <strong>Luschka</strong> (lateral). Aqueduct runs through the midbrain."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Alternating (crossed) syndrome</strong> = ipsilateral cranial nerve palsy + <strong>contralateral hemiplegia</strong>: the nerve tells you the level (III → midbrain, VI/VII → pons, XII → medulla)."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Cerebellopontine angle</strong> (VII, VIII by the foramen of Luschka): an <strong>acoustic neuroma</strong> gives unilateral deafness, tinnitus, then facial and trigeminal signs."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Reticular formation</strong>: consciousness and arousal, sleep-wake, <strong>cardiovascular and respiratory centres (medulla)</strong>, pain modulation. Blood supply = <strong>basilar</strong> (+ vertebral) system."
+  }
+ ]
 };
 window.SINA = window.SINA || {subjects:[], lectures:{}};
 SINA.lectures["anat3-cerebrum"] = {
@@ -22009,7 +22826,45 @@ SINA.lectures["anat3-cerebrum"] = {
    "url": "https://radiopaedia.org/articles/cerebral-hemisphere"
   }
  ],
- "verified": "21 Sep 2026"
+ "verified": "21 Sep 2026",
+ "highYield": [
+  {
+   "t": "must",
+   "html": "<strong>Central sulcus (Rolando)</strong>: frontal vs parietal. <strong>Lateral sulcus (Sylvius)</strong>: temporal below, <strong>insula</strong> hidden inside. <strong>Calcarine sulcus</strong>: primary visual cortex."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Precentral gyrus = primary motor (area 4)</strong>; <strong>postcentral = primary sensory</strong>. <strong>Broca</strong> = inferior frontal gyrus (speech production); <strong>Wernicke</strong> = posterior superior temporal (comprehension), dominant (usually <strong>left</strong>) hemisphere."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Broca aphasia</strong>: non-fluent, effortful speech, comprehension intact. <strong>Wernicke aphasia</strong>: fluent but meaningless speech, poor comprehension."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Internal capsule</strong> lies between <strong>thalamus + caudate (medial)</strong> and <strong>lentiform nucleus (lateral)</strong>. <strong>Lentiform = putamen + globus pallidus</strong>; <strong>striatum = caudate + putamen</strong>."
+  },
+  {
+   "t": "clinic",
+   "html": "A small <strong>internal capsule</strong> stroke (lenticulostriate arteries) gives a dense <strong>contralateral hemiplegia</strong> of face, arm and leg because the fibres are packed tightly there."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Corpus callosum</strong>: rostrum, genu, body, splenium; ~200 million fibres. <strong>Fornix</strong>: hippocampus → mammillary bodies (memory circuit)."
+  },
+  {
+   "t": "trap",
+   "html": "<strong>Falx cerebri</strong> separates the hemispheres; <strong>tentorium cerebelli</strong> separates cerebrum from cerebellum (supra- vs infratentorial). The <strong>foramen of Monro</strong> joins lateral and third ventricles."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Basal ganglia need dopamine</strong> from the substantia nigra: loss → <strong>Parkinson's disease</strong> (tremor, rigidity, bradykinesia); the <strong>subthalamic nucleus</strong> is a deep brain stimulation target."
+  },
+  {
+   "t": "must",
+   "html": "Lobe functions: frontal = personality, planning, motor, Broca; parietal = sensation, spatial sense; temporal = hearing, memory, Wernicke; occipital = vision; insula = taste and visceral sensation."
+  }
+ ]
 };
 window.SINA = window.SINA || {subjects:[], lectures:{}};
 SINA.lectures["anat3-diencephalon"] = {
@@ -23048,7 +23903,41 @@ SINA.lectures["anat3-diencephalon"] = {
    "url": "https://radiopaedia.org/articles/hypothalamus"
   }
  ],
- "verified": "21 Sep 2026"
+ "verified": "21 Sep 2026",
+ "highYield": [
+  {
+   "t": "must",
+   "html": "Four parts around the <strong>third ventricle</strong>: thalamus (relay), hypothalamus (homeostasis, pituitary), epithalamus (<strong>pineal</strong>, habenula), subthalamus (motor)."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Thalamus</strong> = gateway to the cortex: relays <strong>every sense except smell</strong>. <strong>LGB = vision</strong> (to occipital cortex); <strong>MGB = hearing</strong> (to temporal cortex). Mnemonic: <strong>L</strong>ateral = <strong>L</strong>ight, <strong>M</strong>edial = <strong>M</strong>usic."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Hypothalamus</strong> forms the <strong>floor</strong> of the third ventricle and connects to the pituitary by the infundibulum. It controls hunger, thirst, temperature, circadian rhythm, the autonomic system and the pituitary."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Pineal gland</strong> (epithalamus), between the superior colliculi: <strong>melatonin</strong> in darkness → circadian rhythm."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Subthalamic nucleus lesion → contralateral hemiballismus</strong> (wild flinging of a limb), because its excitatory (glutamate) drive to the internal pallidus, which brakes the thalamus, is lost."
+  },
+  {
+   "t": "clinic",
+   "html": "A <strong>pineal tumour</strong> compresses the tectum (<strong>Parinaud syndrome</strong>: loss of upward gaze) and the aqueduct (hydrocephalus)."
+  },
+  {
+   "t": "trap",
+   "html": "The <strong>thalamus forms the lateral wall</strong> of the third ventricle; the <strong>hypothalamus the floor</strong>. The <strong>pons is not</strong> part of the diencephalon. Thalamus blood = <strong>posterior cerebral artery</strong>."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Thalamic stroke</strong>: contralateral loss of all sensation and sometimes a severe burning <strong>thalamic pain syndrome</strong> (Dejerine-Roussy)."
+  }
+ ]
 };
 window.SINA = window.SINA || {subjects:[], lectures:{}};
 SINA.lectures["anat3-descending-tracts"] = {
@@ -24108,7 +24997,45 @@ SINA.lectures["anat3-descending-tracts"] = {
    "url": "https://radiopaedia.org/articles/corticospinal-tract"
   }
  ],
- "verified": "21 Sep 2026"
+ "verified": "21 Sep 2026",
+ "highYield": [
+  {
+   "t": "must",
+   "html": "<strong>Pyramidal = 2 neurons</strong>: upper motor neuron (Betz cells, layer V of <strong>area 4</strong>) → lower motor neuron (ventral horn or cranial nerve motor nucleus)."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Corticospinal route</strong>: precentral gyrus → <strong>posterior limb of the internal capsule</strong> → middle of the cerebral peduncle → pons → pyramid → <strong>~90% cross in the lower medulla</strong> (lateral CST, limbs); the rest stay ipsilateral (anterior CST, trunk)."
+  },
+  {
+   "t": "trap",
+   "html": "<strong>Corticobulbar</strong> fibres pass through the <strong>genu</strong> of the internal capsule (not the posterior limb) and cross gradually to the cranial nerve nuclei."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Homunculus</strong>: area size follows <strong>precision</strong>, not muscle bulk → hand, face and tongue are huge."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Extrapyramidal tracts</strong>: vestibulospinal (anti-gravity: arm flexors, leg extensors), reticulospinal (medial facilitates, lateral inhibits), rubrospinal and tectospinal. <strong>Only rubrospinal and tectospinal cross</strong>."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>UMN vs LMN</strong>: UMN lesion = weakness, <strong>spasticity, hyperreflexia, Babinski</strong>, little wasting. LMN lesion = weakness, <strong>flaccidity, hyporeflexia, wasting, fasciculations</strong>."
+  },
+  {
+   "t": "clinic",
+   "html": "A lesion <strong>above the decussation</strong> (cortex, capsule, brainstem) weakens the <strong>opposite</strong> side; a lesion in the <strong>cord</strong> weakens the <strong>same</strong> side below the level."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Dopamine</strong> from the substantia nigra pars compacta smooths movement; its loss (<strong>Parkinson's</strong>) leaves relative acetylcholine excess → tremor and rigidity; anticholinergics help."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Alpha</strong> motor neurons → skeletal muscle; <strong>gamma</strong> → muscle spindles. Medial ventral horn = proximal/axial muscles; lateral = distal limb muscles."
+  }
+ ]
 };
 window.SINA = window.SINA || {subjects:[], lectures:{}};
 SINA.lectures["anat3-pns"] = {
@@ -25177,5 +26104,47 @@ SINA.lectures["anat3-pns"] = {
    "url": "https://radiopaedia.org/articles/sciatic-nerve"
   }
  ],
- "verified": "21 Sep 2026"
+ "verified": "21 Sep 2026",
+ "highYield": [
+  {
+   "t": "must",
+   "html": "<strong>Nerve types</strong>: sensory I, II, VIII; motor III, IV, VI, XI, XII; mixed V, VII, IX, X; parasympathetic III, VII, IX, X."
+  },
+  {
+   "t": "mnemo",
+   "html": "<strong>'Standing Room Only'</strong>: V1 → Superior orbital fissure, V2 → foramen Rotundum, V3 → foramen Ovale. Trigeminal ganglion sits in <strong>Meckel's cave</strong>."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Visual field lesions</strong>: optic nerve = ipsilateral blindness; chiasm = <strong>bitemporal</strong> hemianopia; optic tract or occipital cortex = <strong>contralateral homonymous</strong> hemianopia (macular sparing after a posterior cerebral artery stroke)."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Facial nerve</strong>: <strong>UMN lesion spares the forehead</strong> (bilateral cortical input to the upper face); <strong>LMN lesion (Bell's palsy)</strong> paralyses the whole half-face. The labyrinthine segment is the narrowest part of the canal."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Plexuses</strong>: cervical (phrenic nerve, <strong>C3-C5</strong> keeps the diaphragm alive), brachial (radial, axillary, ulnar, median), lumbar (femoral), sacral (<strong>sciatic L4-S3</strong>, below piriformis, splits into tibial and common fibular)."
+  },
+  {
+   "t": "trap",
+   "html": "The lecture lists cervical C1-C5 and brachial C4-T1. Most textbooks give <strong>cervical C1-C4</strong> and <strong>brachial C5-T1</strong> (C4 joins only in a 'prefixed' plexus). Know your professor's version and the textbook one."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Somatic motor = 1 neuron</strong> (ACh on nicotinic receptors). <strong>Autonomic = 2 neurons</strong>: sympathetic <strong>thoracolumbar T1-L2</strong> (short pre, long post, noradrenaline); parasympathetic <strong>craniosacral</strong> (long pre, short post, ACh)."
+  },
+  {
+   "t": "trap",
+   "html": "<strong>Sweat glands</strong> are sympathetic but use <strong>acetylcholine</strong> postganglionically; the <strong>adrenal medulla</strong> receives preganglionic fibres directly."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Horner syndrome</strong> (sympathetic chain lesion): <strong>ptosis, miosis, anhidrosis</strong> on the same side (e.g. apical lung tumour)."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Patellar reflex</strong> is monosynaptic (<strong>L3-L4</strong>): it tests one segment's sensory and motor integrity."
+  }
+ ]
 };

@@ -496,7 +496,41 @@ SINA.lectures["anat2-abdominal-wall"] = {
    "url": "https://teachmeanatomy.info/abdomen/areas/inguinal-canal/"
   }
  ],
- "verified": "22 Sep 2026"
+ "verified": "22 Sep 2026",
+ "highYield": [
+  {
+   "t": "must",
+   "html": "<strong>Rule of 3</strong>: skin, Camper's (fatty), Scarpa's (membranous) → external oblique, internal oblique, transversus → transversalis fascia, extraperitoneal fat, peritoneum."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Inguinal canal</strong> (~4 cm): <strong>deep ring</strong> in transversalis fascia (lateral to the inferior epigastric vessels) → <strong>superficial ring</strong> in the external oblique aponeurosis (above the pubic tubercle). Contents: spermatic cord / round ligament + <strong>ilio-inguinal nerve</strong>."
+  },
+  {
+   "t": "mnemo",
+   "html": "Canal walls <strong>'MALT'</strong> from above round: roof = <strong>M</strong>uscles (IO, TA arches); anterior = <strong>A</strong>poneurosis of EO; floor = <strong>L</strong>igament (inguinal); posterior = <strong>T</strong>ransversalis fascia (+ conjoint tendon)."
+  },
+  {
+   "t": "trap",
+   "html": "<strong>Indirect</strong> hernia: through the deep ring, <strong>lateral</strong> to the inferior epigastric vessels (can reach the scrotum; common in young males). <strong>Direct</strong>: through the posterior wall, <strong>medial</strong> to them, in <strong>Hesselbach's triangle</strong> (older men)."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Arcuate line</strong>: below it all aponeuroses pass <strong>in front of</strong> rectus; only transversalis fascia lies behind it."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Umbilical remnants</strong>: umbilical vein → <strong>ligamentum teres</strong>; urachus → <strong>median</strong> umbilical ligament; umbilical arteries → <strong>medial</strong> umbilical ligaments."
+  },
+  {
+   "t": "clinic",
+   "html": "Skin lymph: <strong>above the umbilicus → axillary</strong> nodes, <strong>below → superficial inguinal</strong>. Weak spots: umbilicus, linea semilunaris (Spigelian), incisions."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Iliopsoas</strong> on the posterior wall: an inflamed retrocaecal appendix or psoas abscess gives pain on hip extension (<strong>psoas sign</strong>)."
+  }
+ ]
 };
 window.SINA = window.SINA || {subjects:[], lectures:{}};
 SINA.lectures["anat2-stomach-oesophagus"] = {
@@ -1048,7 +1082,41 @@ SINA.lectures["anat2-stomach-oesophagus"] = {
    "url": "https://teachmeanatomy.info/abdomen/gi-tract/stomach/"
   }
  ],
- "verified": "22 Sep 2026"
+ "verified": "22 Sep 2026",
+ "highYield": [
+  {
+   "t": "must",
+   "html": "<strong>Oesophagus</strong>: 25 cm, <strong>C6 → T11</strong>, through the diaphragm at <strong>T10</strong>. Muscle: upper 1/3 skeletal, middle mixed, lower 1/3 smooth. <strong>No serosa</strong> (adventitia)."
+  },
+  {
+   "t": "mnemo",
+   "html": "Oesophageal <strong>constrictions</strong> at about 15, 25 and 40 cm from the incisors: <strong>cricopharyngeus</strong>, <strong>aortic arch/left main bronchus</strong>, <strong>diaphragm</strong>. Swallowed objects lodge there."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Left gastric vein ↔ oesophageal (azygos) veins</strong> = portosystemic anastomosis: in portal hypertension → <strong>oesophageal varices</strong>, a cause of massive haematemesis."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Gastric arteries (all from the coeliac trunk)</strong>: lesser curvature = <strong>left gastric</strong> (coeliac) + <strong>right gastric</strong> (hepatic); greater curvature = <strong>left gastroepiploic</strong> (splenic) + <strong>right gastroepiploic</strong> (gastroduodenal); fundus = <strong>short gastrics</strong> (splenic)."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Lesser omentum</strong> = hepatogastric + <strong>hepatoduodenal</strong> ligaments; the latter carries the <strong>portal triad</strong> and forms the front of the <strong>epiploic foramen (Winslow)</strong> into the lesser sac."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Posterior duodenal ulcer</strong> erodes the <strong>gastroduodenal artery</strong> → major bleed; posterior gastric ulcer → splenic artery or pancreas. <strong>Pringle manoeuvre</strong> = clamping the hepatoduodenal ligament."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Vagus</strong> stimulates acid and motility; <strong>sympathetic</strong> (coeliac plexus) inhibits. Stomach is intraperitoneal; the <strong>lesser sac</strong> lies behind it, in front of the pancreas."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>GERD</strong> = LES failure; <strong>achalasia</strong> = LES fails to relax (loss of myenteric neurons)."
+  }
+ ]
 };
 window.SINA = window.SINA || {subjects:[], lectures:{}};
 SINA.lectures["anat2-small-intestine"] = {
@@ -1477,7 +1545,33 @@ SINA.lectures["anat2-small-intestine"] = {
    "url": "https://teachmeanatomy.info/abdomen/gi-tract/duodenum/"
   }
  ],
- "verified": "22 Sep 2026"
+ "verified": "22 Sep 2026",
+ "highYield": [
+  {
+   "t": "must",
+   "html": "<strong>Duodenum</strong>: 4 parts; <strong>only D1 (cap) is intraperitoneal</strong>, the rest retroperitoneal. <strong>D2</strong> = major papilla (bile + pancreatic ducts); <strong>D3</strong> crossed by the <strong>SMA/SMV</strong>; <strong>D4</strong> → duodenojejunal flexure (<strong>ligament of Treitz</strong>)."
+  },
+  {
+   "t": "must",
+   "html": "The <strong>major papilla</strong> marks the <strong>foregut/midgut junction</strong>: above it supply is <strong>coeliac</strong> (superior pancreaticoduodenal via GDA), below it <strong>SMA</strong> (inferior pancreaticoduodenal)."
+  },
+  {
+   "t": "trap",
+   "html": "<strong>Jejunum vs ileum</strong>: jejunum = wider, thicker, redder, tall plicae, <strong>long vasa recta, few arcades</strong>; ileum = narrower, <strong>Peyer's patches</strong>, <strong>short vasa recta, many arcades</strong>, more mesenteric fat."
+  },
+  {
+   "t": "must",
+   "html": "Glands: <strong>Brunner's</strong> (submucosa of the <strong>duodenum</strong>, alkaline mucus); <strong>Paneth cells</strong> (crypts, antimicrobial); Peyer's patches (<strong>ileum</strong>). Lengths: duodenum 25 cm, jejunum 2/5, ileum 3/5 of the rest."
+  },
+  {
+   "t": "clinic",
+   "html": "The <strong>ligament of Treitz</strong> divides upper from lower GI bleeding. The <strong>terminal ileum</strong> absorbs B12 and bile salts: resection or Crohn's disease there → B12 deficiency and fat malabsorption."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>SMA syndrome</strong>: D3 squeezed between the SMA and aorta (after rapid weight loss) → proximal obstruction. <strong>Mesenteric ischaemia</strong>: pain out of proportion to the findings."
+  }
+ ]
 };
 window.SINA = window.SINA || {subjects:[], lectures:{}};
 SINA.lectures["anat2-colon"] = {
@@ -2027,7 +2121,41 @@ SINA.lectures["anat2-colon"] = {
    "url": "https://www.nhs.uk/conditions/appendicitis/"
   }
  ],
- "verified": "22 Sep 2026"
+ "verified": "22 Sep 2026",
+ "highYield": [
+  {
+   "t": "must",
+   "html": "Colon hallmarks: <strong>taeniae coli</strong> (3 bands), <strong>haustra</strong>, <strong>epiploic appendices</strong>. The small intestine has none of them."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Appendix base</strong> is where the <strong>three taeniae converge</strong> (surgical landmark). <strong>McBurney's point</strong>: one third of the way from the ASIS to the umbilicus. The tip position varies (retrocaecal most often), so pain location varies."
+  },
+  {
+   "t": "clinic",
+   "html": "Appendicitis pain starts <strong>periumbilical</strong> (visceral, T10, midgut) then moves to the <strong>right iliac fossa</strong> when the parietal peritoneum is irritated."
+  },
+  {
+   "t": "must",
+   "html": "<strong>SMA (midgut)</strong>: ileocolic, right colic, middle colic. <strong>IMA (hindgut)</strong>: left colic, sigmoid, superior rectal. The <strong>marginal artery</strong> links them."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Watershed areas</strong> (splenic flexure, rectosigmoid) sit between two arterial territories: most vulnerable in <strong>ischaemic colitis</strong>."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Intraperitoneal</strong>: caecum (mostly), transverse and sigmoid colon (mobile on a mesocolon). <strong>Retroperitoneal</strong>: ascending and descending colon."
+  },
+  {
+   "t": "trap",
+   "html": "The <strong>sigmoid mesocolon root</strong> lies over the <strong>left ureter</strong>: identify the ureter in sigmoid surgery. Sigmoid mobility → <strong>volvulus</strong>."
+  },
+  {
+   "t": "clinic",
+   "html": "Lymph follows the arteries (epicolic → paracolic → intermediate → main), so cancer surgery removes the colon <strong>with its mesentery and vascular pedicle</strong>."
+  }
+ ]
 };
 window.SINA = window.SINA || {subjects:[], lectures:{}};
 SINA.lectures["anat2-liver"] = {
@@ -2567,7 +2695,41 @@ SINA.lectures["anat2-liver"] = {
    "url": "https://radiopaedia.org/articles/couinaud-classification-of-hepatic-segments"
   }
  ],
- "verified": "22 Sep 2026"
+ "verified": "22 Sep 2026",
+ "highYield": [
+  {
+   "t": "must",
+   "html": "<strong>Double inflow</strong> (portal vein ~75%, hepatic artery ~25%) and <strong>double outflow</strong> (hepatic veins → IVC; bile ducts)."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Ligament remnants</strong>: <strong>ligamentum teres</strong> = umbilical vein; <strong>ligamentum venosum</strong> = ductus venosus. The falciform ligament carries the teres in its free edge."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Caudate lobe</strong> (between IVC and ligamentum venosum) = <strong>segment 1</strong>, drains directly into the IVC. <strong>Quadrate lobe</strong> (between gallbladder and teres) is part of the functional <strong>left</strong> liver (segment 4)."
+  },
+  {
+   "t": "trap",
+   "html": "<strong>Anatomical vs functional</strong>: anatomically the falciform ligament divides right and left lobes; functionally the dividing plane is the <strong>middle hepatic vein</strong> (Cantlie's line, gallbladder to IVC). Couinaud: 8 segments."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Bare area</strong> (between the coronary ligament layers) touches the diaphragm directly. <strong>Hepatorenal pouch (Morison's)</strong> is the lowest part of the upper abdominal cavity when lying supine: fluid collects there."
+  },
+  {
+   "t": "mnemo",
+   "html": "<strong>Portosystemic anastomoses</strong>: <strong>oesophageal</strong> (varices), <strong>paraumbilical</strong> (caput medusae), <strong>rectal</strong> (anorectal varices), <strong>retroperitoneal</strong>."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Pringle manoeuvre</strong> (clamping the hepatoduodenal ligament) stops portal and arterial inflow; bleeding that continues comes from the <strong>hepatic veins/IVC</strong>. Liver biopsy in the right mid-axillary line risks pneumothorax."
+  },
+  {
+   "t": "clinic",
+   "html": "Glisson's capsule pain is carried by lower intercostal and <strong>phrenic</strong> fibres → right upper quadrant and <strong>right shoulder</strong> pain."
+  }
+ ]
 };
 window.SINA = window.SINA || {subjects:[], lectures:{}};
 SINA.lectures["anat2-biliary"] = {
@@ -3089,7 +3251,37 @@ SINA.lectures["anat2-biliary"] = {
    "url": "https://radiopaedia.org/articles/hepatocystic-triangle"
   }
  ],
- "verified": "22 Sep 2026"
+ "verified": "22 Sep 2026",
+ "highYield": [
+  {
+   "t": "must",
+   "html": "<strong>Right + left hepatic ducts → common hepatic duct</strong>; + <strong>cystic duct → common bile duct</strong> → behind D1 → through the pancreatic head → joins the pancreatic duct at the <strong>ampulla of Vater</strong> → <strong>major papilla (D2)</strong>, controlled by the <strong>sphincter of Oddi</strong>."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Calot's (hepatocystic) triangle</strong>: cystic duct, common hepatic duct, inferior border of the liver; contains the <strong>cystic artery</strong> (usually from the right hepatic). Obtain the <strong>critical view of safety</strong> before clipping."
+  },
+  {
+   "t": "clinic",
+   "html": "Cholecystectomy danger: mistaking the <strong>common bile duct</strong> for the cystic duct, or the <strong>right hepatic artery</strong> for the cystic artery; biliary and arterial variants are common."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Biliary colic/cholecystitis</strong>: RUQ pain referred to the <strong>right shoulder</strong> (phrenic) and inferior angle of the scapula. A stone in the CBD → obstructive jaundice; at the ampulla → gallstone <strong>pancreatitis</strong>."
+  },
+  {
+   "t": "must",
+   "html": "Gallbladder: fundus, body, neck; lies under <strong>segments 4b-5</strong>; the cystic duct has the <strong>spiral valve of Heister</strong>. The fundus projects at the tip of the 9th right costal cartilage (Murphy's sign)."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Bile</strong>: 600-1000 mL/day; <strong>enterohepatic circulation</strong>: bile salts reabsorbed in the <strong>terminal ileum</strong> → portal vein → liver. CCK contracts the gallbladder; vagus promotes release."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Painless jaundice with a palpable gallbladder</strong> (Courvoisier) suggests a tumour of the <strong>pancreatic head</strong> or ampulla rather than stones."
+  }
+ ]
 };
 window.SINA = window.SINA || {subjects:[], lectures:{}};
 SINA.lectures["anat2-pancreas"] = {
@@ -3617,7 +3809,37 @@ SINA.lectures["anat2-pancreas"] = {
    "url": "https://radiopaedia.org/articles/pancreas-divisum"
   }
  ],
- "verified": "22 Sep 2026"
+ "verified": "22 Sep 2026",
+ "highYield": [
+  {
+   "t": "must",
+   "html": "Retroperitoneal, <strong>L1-L2</strong>. Parts: <strong>head</strong> (in the duodenal C), <strong>uncinate process</strong> (behind SMA/SMV), <strong>neck</strong> (in front of the portal vein), <strong>body</strong> (over aorta, L2), <strong>tail</strong> (in the splenorenal ligament, reaching the splenic hilum; the only intraperitoneal part)."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Portal vein</strong> forms <strong>behind the neck</strong> from the <strong>SMV + splenic vein</strong>."
+  },
+  {
+   "t": "must",
+   "html": "Ducts: <strong>main (Wirsung)</strong> + CBD → ampulla of Vater → <strong>major papilla</strong>; <strong>accessory (Santorini)</strong> → <strong>minor papilla</strong>."
+  },
+  {
+   "t": "trap",
+   "html": "<strong>Annular pancreas</strong> (ventral bud ring around D2) → duodenal obstruction; <strong>pancreas divisum</strong> (buds' ducts don't fuse) → most juice drains through the minor papilla: the commonest variant."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Double supply</strong>: head from <strong>superior</strong> (GDA, coeliac) and <strong>inferior</strong> (SMA) pancreaticoduodenal arcades; body and tail from the <strong>splenic artery</strong>. That is why the head and duodenum are removed together (Whipple)."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Head tumour</strong> compresses the CBD → <strong>painless obstructive jaundice</strong>; <strong>body/tail tumour</strong> → back pain, late presentation. Pancreatic pain radiates to the <strong>back</strong>."
+  },
+  {
+   "t": "clinic",
+   "html": "Splenic vein runs <strong>behind</strong> the pancreas: pancreatitis or tumour → <strong>splenic vein thrombosis</strong> → isolated gastric varices."
+  }
+ ]
 };
 window.SINA = window.SINA || {subjects:[], lectures:{}};
 SINA.lectures["anat2-spleen"] = {
@@ -4121,7 +4343,33 @@ SINA.lectures["anat2-spleen"] = {
    "url": "https://www.nhs.uk/conditions/spleen-problems-and-spleen-removal/"
   }
  ],
- "verified": "22 Sep 2026"
+ "verified": "22 Sep 2026",
+ "highYield": [
+  {
+   "t": "mnemo",
+   "html": "<strong>1, 3, 5, 7, 9, 11</strong>: about 1 × 3 × 5 inches, ~7 oz (150-200 g), lies under <strong>ribs 9 to 11</strong> (long axis along rib 10)."
+  },
+  {
+   "t": "must",
+   "html": "Intraperitoneal (except the hilum), in the left hypochondrium; <strong>not normally palpable</strong>. When enlarged it grows <strong>down and towards the right iliac fossa</strong>, with a palpable <strong>notch</strong> on its anterior border."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Gastrosplenic ligament</strong> = short gastric + left gastroepiploic vessels; <strong>splenorenal ligament</strong> = splenic vessels + <strong>tail of the pancreas</strong>."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Left lower rib fractures</strong> can rupture the spleen → haemorrhage and <strong>Kehr's sign</strong> (left shoulder pain via the phrenic nerve). The pancreatic tail is at risk during splenectomy."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Splenic artery</strong> = largest coeliac branch, <strong>tortuous</strong>, along the upper border of the pancreas; divides into <strong>segmental</strong> branches (partial splenectomy possible). <strong>Splenic vein + SMV → portal vein</strong>."
+  },
+  {
+   "t": "clinic",
+   "html": "After <strong>splenectomy</strong>: lifelong risk of overwhelming infection by <strong>encapsulated bacteria</strong> (pneumococcus, <em>H. influenzae</em> b, meningococcus): vaccinate."
+  }
+ ]
 };
 window.SINA = window.SINA || {subjects:[], lectures:{}};
 SINA.lectures["anat2-vessels"] = {
@@ -4660,7 +4908,37 @@ SINA.lectures["anat2-vessels"] = {
    "url": "https://teachmeanatomy.info/abdomen/vasculature/hepatic-portal-system/"
   }
  ],
- "verified": "22 Sep 2026"
+ "verified": "22 Sep 2026",
+ "highYield": [
+  {
+   "t": "must",
+   "html": "<strong>Abdominal aorta</strong>: enters at <strong>T12</strong>, bifurcates at <strong>L4</strong> (umbilicus level). Gut arteries: <strong>coeliac T12 (foregut)</strong>, <strong>SMA L1 (midgut)</strong>, <strong>IMA L3 (hindgut)</strong>. Renals ~L1-L2."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Coeliac trunk</strong> = left gastric, common hepatic (→ GDA, proper hepatic, right gastric), splenic. <strong>SMA</strong> = inferior pancreaticoduodenal, jejunal/ileal, ileocolic, right and middle colic. <strong>IMA</strong> = left colic, sigmoid, superior rectal."
+  },
+  {
+   "t": "must",
+   "html": "<strong>IVC</strong>: forms at <strong>L5</strong>, right of the aorta, pierces the central tendon at <strong>T8</strong>. It receives <strong>no gut or spleen blood</strong> (that goes via the portal vein)."
+  },
+  {
+   "t": "trap",
+   "html": "<strong>Left gonadal vein → left renal vein</strong>; right gonadal → IVC directly. So a left renal tumour or vein obstruction can cause a <strong>left varicocele</strong>."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Nutcracker</strong>: the left renal vein runs between the <strong>SMA and aorta</strong> and can be compressed there."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Portal vein</strong> = SMV + splenic vein (IMV usually joins the splenic). Portosystemic sites: oesophageal, paraumbilical, rectal, retroperitoneal. <strong>TIPS</strong> decompresses portal hypertension."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Abdominal aortic aneurysm</strong>: usually <strong>infrarenal</strong>; pulsatile mass above the umbilicus; repaired open or by stent graft."
+  }
+ ]
 };
 window.SINA = window.SINA || {subjects:[], lectures:{}};
 SINA.lectures["anat2-lymph-nerves"] = {
@@ -5158,7 +5436,41 @@ SINA.lectures["anat2-lymph-nerves"] = {
    "url": "https://www.kenhub.com/en/library/anatomy/abdominal-autonomic-plexuses"
   }
  ],
- "verified": "22 Sep 2026"
+ "verified": "22 Sep 2026",
+ "highYield": [
+  {
+   "t": "must",
+   "html": "<strong>Visceral lymph follows the arteries</strong> (foregut → coeliac, midgut → SMA, hindgut → IMA nodes); <strong>parietal lymph follows the veins</strong>."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Cisterna chyli</strong> at <strong>L1-L2</strong> → <strong>thoracic duct</strong> (through the aortic hiatus, T12) → <strong>left subclavian/internal jugular junction</strong>."
+  },
+  {
+   "t": "clinic",
+   "html": "Lymphatic injury in surgery → <strong>chylous ascites</strong> (milky fluid). Gastric cancer can spread up the thoracic duct to the <strong>left supraclavicular node (Virchow's, Troisier's sign)</strong>."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Splanchnic nerves</strong>: greater (<strong>T5-T9</strong>) → coeliac; lesser (<strong>T10-T11</strong>) → superior mesenteric; least (<strong>T12</strong>) → aorticorenal; lumbar (L1-L2) → inferior mesenteric."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Parasympathetic</strong>: <strong>vagus</strong> as far as the <strong>distal third of the transverse colon</strong> (midgut/hindgut boundary); beyond it <strong>pelvic splanchnics S2-S4</strong>."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Referred visceral pain</strong> follows the sympathetic level: foregut → <strong>epigastrium</strong>, midgut → <strong>umbilicus</strong>, hindgut → <strong>suprapubic</strong> region."
+  },
+  {
+   "t": "must",
+   "html": "Wall nerves: <strong>T7-T11</strong> thoracoabdominal, T12 subcostal, <strong>L1 iliohypogastric and ilio-inguinal</strong> (the latter through the inguinal canal), <strong>L1-L2 genitofemoral</strong> (cremaster: genital branch)."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Cremasteric reflex</strong> (stroke the inner thigh → testis rises): afferent femoral branch, efferent genital branch of genitofemoral (L1-L2)."
+  }
+ ]
 };
 window.SINA = window.SINA || {subjects:[], lectures:{}};
 SINA.lectures["anat2-pelvic-vessels"] = {
@@ -5634,7 +5946,41 @@ SINA.lectures["anat2-pelvic-vessels"] = {
    "url": "https://www.kenhub.com/en/library/anatomy/pelvic-splanchnic-nerves"
   }
  ],
- "verified": "22 Sep 2026"
+ "verified": "22 Sep 2026",
+ "highYield": [
+  {
+   "t": "must",
+   "html": "<strong>Aorta bifurcates at L4</strong>; common iliac divides at the <strong>sacroiliac joint (L5/S1)</strong> into external iliac (→ femoral) and internal iliac (pelvis, perineum, gluteal region)."
+  },
+  {
+   "t": "mnemo",
+   "html": "<strong>'Water under the bridge'</strong>: the <strong>ureter</strong> (water) passes <strong>under</strong> the <strong>uterine artery</strong> (bridge) near the cervix; the main site of ureteric injury in hysterectomy."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Internal iliac</strong>: posterior division = <strong>iliolumbar, lateral sacral, superior gluteal</strong> (parietal only). Anterior = vesicals, uterine/vaginal, middle rectal, obturator, <strong>internal pudendal</strong>, inferior gluteal."
+  },
+  {
+   "t": "trap",
+   "html": "<strong>Internal pudendal artery</strong> leaves the pelvis through the <strong>greater</strong> sciatic foramen, hooks round the ischial spine and enters the perineum through the <strong>lesser</strong> sciatic foramen (the pudendal nerve takes the same route)."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Rectal veins</strong>: superior → IMV → <strong>portal</strong>; middle and inferior → internal iliac → <strong>systemic</strong>: a portosystemic anastomosis. <strong>Left common iliac vein</strong> is compressed by the right common iliac artery → left-sided DVT (May-Thurner)."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Sympathetic (T10-L2)</strong> via the hypogastric plexuses = <strong>storage and ejaculation</strong>. <strong>Parasympathetic S2-S4 (nervi erigentes)</strong> = <strong>voiding, defecation, erection</strong> ('point and shoot')."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Lesion above S2 → spastic (reflex) bladder</strong>; <strong>lesion of S2-S4/cauda equina → flaccid bladder</strong> with overflow incontinence. Rectal or pelvic surgery can damage the plexuses → retention and erectile dysfunction."
+  },
+  {
+   "t": "must",
+   "html": "Nodes: <strong>obturator</strong> (prostate, cervix staging), internal and external iliac, presacral → common iliac → para-aortic."
+  }
+ ]
 };
 window.SINA = window.SINA || {subjects:[], lectures:{}};
 SINA.lectures["anat2-perineum"] = {
@@ -6044,5 +6390,35 @@ SINA.lectures["anat2-perineum"] = {
    "url": "https://www.nhs.uk/conditions/pelvic-organ-prolapse/"
   }
  ],
- "verified": "22 Sep 2026"
+ "verified": "22 Sep 2026",
+ "highYield": [
+  {
+   "t": "must",
+   "html": "<strong>Pelvic diaphragm</strong> = <strong>levator ani</strong> (puborectalis, pubococcygeus, iliococcygeus) + coccygeus; supplied by S3-S4 and the pudendal nerve."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Perineum</strong> (diamond): a line between the ischial tuberosities divides it into the anterior <strong>urogenital</strong> and posterior <strong>anal</strong> triangles."
+  },
+  {
+   "t": "must",
+   "html": "<strong>Superficial perineal space</strong>: ischiocavernosus, bulbospongiosus, superficial transverse perineal + erectile tissue + greater vestibular glands. <strong>Deep space</strong>: external urethral sphincter, deep transverse perineal, bulbourethral glands (male)."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Puborectalis</strong> sling maintains the <strong>anorectal angle</strong>: key for faecal continence."
+  },
+  {
+   "t": "clinic",
+   "html": "The <strong>perineal body</strong> is the central anchor of the perineal muscles; tearing it in childbirth (or an episiotomy that extends) weakens support → <strong>prolapse</strong> and incontinence."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Ischioanal fossae</strong> (fat-filled, either side of the anal canal) can harbour abscesses that spread around the back (horseshoe abscess)."
+  },
+  {
+   "t": "trap",
+   "html": "<strong>Internal anal sphincter</strong> = smooth, involuntary (autonomic); <strong>external anal sphincter</strong> = skeletal, voluntary (<strong>pudendal nerve</strong>, inferior rectal branch)."
+  }
+ ]
 };

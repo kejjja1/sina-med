@@ -2,6 +2,10 @@
    date: what people see. items: short lines. */
 window.SINA = window.SINA || { subjects: [], lectures: {} };
 SINA.updates = [
+  { date: "27 September 2026", items: [
+    "Every anatomy lecture (Anatomy 1, 2 and 3) now opens its Summary tab with a High yield box: the must-know facts, classic exam traps, clinical links and memory aids, tagged so you can scan them fast.",
+    "Three AnatomyZone videos added to the eye lectures for the Anatomy 3 midterm: Orbit, Extraocular muscles and Eyeball anatomy."
+  ]},
   { date: "26 September 2026", items: [
     "Virology (1st Year Anglo, S2) is complete: 10 lectures from how viruses work, lab diagnosis, vaccines and antivirals to influenza and measles, viral hepatitis, HIV, herpesviruses, HPV, rabies and viral gastroenteritis.",
     "The clinical virology review is now in Past papers.",

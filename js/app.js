@@ -617,6 +617,13 @@
 
   function summaryPanel(p, lec) {
     var h = '<div class="note">' + lec.buildNote + "</div>";
+    if (lec.highYield && lec.highYield.length) {
+      var HYT = { must: "Must know", trap: "Exam trap", clinic: "Clinical", mnemo: "Memory aid" };
+      h += '<section class="hy" aria-labelledby="hy-h"><h2 id="hy-h" class="hy-title">High yield</h2>' +
+        '<p class="hy-intro">What exam questions on this lecture most often hinge on. Read this first, then the full summary below.</p><ul class="hy-list">' +
+        lec.highYield.map(function (x) { return '<li><span class="hy-tag hy-' + esc(x.t) + '">' + esc(HYT[x.t] || x.t) + "</span> " + x.html + "</li>"; }).join("") +
+        "</ul></section>";
+    }
     lec.summary.forEach(function (s) { h += "<h2>" + esc(s.title) + "</h2>" + s.html; });
     h += "<h2>Key points</h2><ul class='exam-list'>" + lec.exam.map(function (e) { return "<li>" + esc(e) + "</li>"; }).join("") + "</ul>";
     h += (lec.sources && lec.sources.length)
