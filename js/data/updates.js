@@ -3,6 +3,7 @@
 window.SINA = window.SINA || { subjects: [], lectures: {} };
 SINA.updates = [
   { date: "27 September 2026", items: [
+    "Useful apps: added YPT (Yeolpumta), a study-group timer that locks your other apps while you study. Use the invite link on its card to join the promo's group.",
     "Every anatomy lecture (Anatomy 1, 2 and 3) now opens its Summary tab with a High yield box: the must-know facts, classic exam traps, clinical links and memory aids, tagged so you can scan them fast.",
     "Three AnatomyZone videos added to the eye lectures for the Anatomy 3 midterm: Orbit, Extraocular muscles and Eyeball anatomy."
   ]},

@@ -32,6 +32,12 @@ SINA.channels["anat3-neuro"] = [
 
 /* Useful apps and resources, shown on the home page and at #/apps. */
 SINA.usefulApps = [
+  { name: "YPT (Yeolpumta)", domain: "yeolpumta.com", kind: "Study group and focus timer",
+    desc: "A study timer you share with a group. Start a session and YPT times your studying by subject; turn on focus mode and it blocks your other apps until you stop, so you can't drift off to social media. Everyone in the group sees who is studying right now and how many hours each person has done today, so you keep each other going. Join the promo's group with the invite link below, then install the app if you don't have it yet.",
+    platforms: ["iOS", "Android"],
+    links: [{ label: "Join our study group", url: "https://link.yeolpumta.com/P3R5cGU9Z3JvdXBJbnZpdGUmaWQ9NzUzMzMwMQ==" },
+            { label: "App Store", url: "https://apps.apple.com/app/id1441909643" },
+            { label: "Google Play", url: "https://play.google.com/store/apps/details?id=com.pallo.passiontimerscoped" }] },
   { name: "Gizmo", domain: "gizmo.ai", kind: "AI flashcards and quizzes",
     desc: "Turns your notes, PDFs and slides into flashcards and quizzes, then schedules reviews with spaced repetition.",
     platforms: ["Web", "iOS", "Android"],
