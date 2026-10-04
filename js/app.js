@@ -555,7 +555,7 @@
     ms.forEach(function (m) {
       var sb = subjectById(m.subject), n = 0;
       m.groups.forEach(function (g) { n += g.items.length; });
-      html += '<section class="midterm"><h2 class="group-title">' + esc(m.title) + '</h2><p class="meta">' + n + " lectures" + (sb ? ' from <a href="#/subject/' + sb.id + '">' + esc(sb.name) + "</a>" : "") + ". Only these lectures are on this midterm.</p>";
+      html += '<section class="midterm"><h2 class="group-title">' + esc(m.title) + '</h2><p class="meta">' + n + " lectures" + (sb ? ' from <a href="#/subject/' + sb.id + '">' + esc(sb.name) + "</a>" : "") + ". Only these lectures are on this midterm.</p>" + (m.practice ? '<p><a class="btn primary" href="' + esc(m.practice.url) + '">' + esc(m.practice.label) + "</a></p>" : "");
       m.groups.forEach(function (g) {
         html += '<h3 class="mid-group">' + esc(g.name) + '</h3><ul class="lec-list">' + g.items.map(function (id) {
           return S.lectures[id]

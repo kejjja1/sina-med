@@ -2,6 +2,9 @@
    date: what people see. items: short lines. */
 window.SINA = window.SINA || { subjects: [], lectures: {} };
 SINA.updates = [
+  { date: "4 October 2026", items: [
+    "Anatomy 3 midterm: 390 practice MCQs on the face, mouth, sinuses, orbit and eye, one correct answer each (as on the real exam). Do them as quizzes in Past papers > Anatomy 3, one topic at a time, or download the three PDFs with an answer key. There's a button on the Upcoming midterm lectures page too."
+  ]},
   { date: "27 September 2026", items: [
     "Useful apps: the Gizmo card now links to Saad's Gizmo profile, with lots of ready-made 1st year flashcard decks.",
     "Useful apps: added YPT (Yeolpumta), a study-group timer that locks your other apps while you study. Use the invite link on its card to join the promo's group.",
