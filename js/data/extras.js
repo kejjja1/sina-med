@@ -12,7 +12,7 @@ SINA.apps = [
 
 SINA.channels = {
   anat3: [
-    { title: "Ninja Nerd", url: "https://www.youtube.com/@NinjaNerdOfficial", why: "Long whiteboard lectures on anatomy and physiology. The closest thing to a second lecture." },
+    { title: "Ninja Nerd", url: "https://www.youtube.com/channel/UC6QYFutt9cluQ3uSM963_KQ", why: "Long whiteboard lectures on anatomy and physiology. The closest thing to a second lecture." },
     { title: "Kenhub - Learn Human Anatomy", url: "https://www.youtube.com/@Kenhub", why: "Short, clean anatomy tutorials that match the structure of most exam questions." },
     { title: "AnatomyZone", url: "https://www.youtube.com/@AnatomyZone", why: "3D anatomy tutorials, very good for the orbit, the skull and the muscles of mastication." },
     { title: "Sam Webster (Anatomy)", url: "https://www.youtube.com/@samwebster", why: "A medical anatomist's channel, strong on head, neck and neuroanatomy." },
@@ -25,7 +25,7 @@ SINA.channels["anat3-neuro"] = [
   { title: "Eccles Health Sciences Library (Neuroanatomy)", url: "https://www.youtube.com/@EcclesHealthSciLibrary", why: "The classic University of Utah neuroanatomy series: brainstem, tracts and cranial nerves." },
   { title: "UBC Medicine - Educational Media", url: "https://www.youtube.com/@UBCMedicine", why: "Neuroanatomy walkthroughs on real specimens, from the University of British Columbia." },
   { title: "Neuroanatomy with Dr. Wolfe", url: "https://www.youtube.com/@neuroanatomy", why: "Systematic neuroanatomy lectures, good for the spinal cord and descending tracts." },
-  { title: "Ninja Nerd", url: "https://www.youtube.com/@NinjaNerdOfficial", why: "Its neurology and neuroanatomy playlists cover the tracts in detail." }
+  { title: "Ninja Nerd", url: "https://www.youtube.com/channel/UC6QYFutt9cluQ3uSM963_KQ", why: "Its neurology and neuroanatomy playlists cover the tracts in detail." }
 ];
 
 ["anat3-spinal-cord","anat3-brainstem","anat3-cerebrum","anat3-diencephalon","anat3-descending-tracts","anat3-pns"].forEach(function (id) { SINA.channels[id] = SINA.channels["anat3-neuro"]; });
@@ -74,13 +74,33 @@ SINA.usmle = {
         links: [{ label: "Watch on YouTube", url: "https://www.youtube.com/@DirtyMedicine" }] },
       { name: "Ninja Nerd", domain: "youtube.com", kind: "YouTube channel", cost: "Free",
         desc: "Long, whiteboard-style lectures that explain the physiology and pathology from the ground up. Use it when a topic doesn't make sense yet.",
-        links: [{ label: "Watch on YouTube", url: "https://www.youtube.com/@NinjaNerdOfficial" }] },
+        links: [{ label: "Watch on YouTube", url: "https://www.youtube.com/channel/UC6QYFutt9cluQ3uSM963_KQ" }] },
       { name: "Divine Intervention", domain: "divineinterventionpodcasts.com", kind: "Podcast", cost: "Free",
         desc: "Hundreds of free podcast episodes reviewing high-yield Step 1 topics and question strategy. Good for commuting or the gym.",
         links: [{ label: "Open the podcast", url: "https://divineinterventionpodcasts.com/" }] },
-      { name: "r/step1", domain: "reddit.com", kind: "Student community", cost: "Free",
-        desc: "Study schedules, score reports and honest reviews of every resource from students who just took the exam.",
-        links: [{ label: "Open r/step1", url: "https://www.reddit.com/r/step1/" }] }
+      { name: "Armando Hasudungan", domain: "youtube.com", kind: "YouTube channel", cost: "Free",
+        desc: "Hand-drawn explanations of physiology, pathology, immunology and haematology. Good if you remember things better as pictures.",
+        links: [{ label: "Watch on YouTube", url: "https://www.youtube.com/@armandohasudungan" }] },
+      { name: "MedCram", domain: "medcram.com", kind: "Video lectures", cost: "Free",
+        desc: "Clear 'explained clearly' lectures by Dr. Roger Seheult, strong on cardiopulmonary, renal and acid-base physiology. Hours of videos are free on YouTube and on their site.",
+        links: [{ label: "Watch on YouTube", url: "https://www.youtube.com/c/medcram" }] },
+      { name: "Osmosis", domain: "osmosis.org", kind: "Animated videos", cost: "Free",
+        desc: "Short animated videos on almost every Step 1 disease and drug, free on YouTube. A quick way to get the big picture before going into detail. Their full platform is paid.",
+        links: [{ label: "Find on YouTube", url: "https://www.youtube.com/results?search_query=osmosis+from+elsevier" }] }
+    ]},
+    { title: "Free questions, flashcards and reading", items: [
+      { name: "MedAll Step 1 question bank", domain: "medall.org", kind: "Question bank", cost: "Free",
+        desc: "Over 3,500 board-style Step 1 questions that MedAll currently offers for free (you register with an account). Useful extra practice before or alongside a paid bank; MedAll says it may not stay free forever.",
+        links: [{ label: "Open MedAll", url: "https://medall.org/question-banks/usmle-step1" }] },
+      { name: "AnkiWeb shared decks", domain: "ankiweb.net", kind: "Anki decks", cost: "Free",
+        desc: "Anki's own library of free decks made by students, searchable by subject (pharmacology, microbiology, biochemistry and more). Check the ratings and the last update date before downloading.",
+        links: [{ label: "Browse shared decks", url: "https://ankiweb.net/shared/decks" }] },
+      { name: "StatPearls", domain: "ncbi.nlm.nih.gov", kind: "Medical reference", cost: "Free",
+        desc: "Thousands of free, peer-reviewed review articles hosted by the US National Library of Medicine. Search any disease or drug when a question explanation isn't enough.",
+        links: [{ label: "Open StatPearls", url: "https://www.ncbi.nlm.nih.gov/books/NBK430685/" }] },
+      { name: "TeachMe series", domain: "teachmeanatomy.info", kind: "Anatomy and physiology articles", cost: "Free",
+        desc: "Free, clearly illustrated articles on anatomy and physiology with clinical relevance boxes. Also useful for our own anatomy exams.",
+        links: [{ label: "TeachMeAnatomy", url: "https://teachmeanatomy.info/" }, { label: "TeachMePhysiology", url: "https://teachmephysiology.com/" }] }
     ]},
     { title: "The main paid resources (worth knowing about)", items: [
       { name: "UWorld Step 1", domain: "uworld.com", kind: "Question bank", cost: "Paid",
@@ -93,7 +113,7 @@ SINA.usmle = {
         desc: "Practice exams written by the people who write Step 1. Used near the end of preparation to predict your score.",
         links: [{ label: "NBME self-assessments", url: "https://www.nbme.org/examinees/self-assessments" }] },
       { name: "Pathoma", domain: "pathoma.com", kind: "Pathology videos and book", cost: "Paid",
-        desc: "Short, very high-yield pathology course with a companion book. The first chapters are often available as a free sample.",
+        desc: "Short, very high-yield pathology course with a companion book. A limited free version exists; the full PathomaPro is paid.",
         links: [{ label: "Pathoma", url: "https://www.pathoma.com/" }] },
       { name: "Boards and Beyond", domain: "boardsbeyond.com", kind: "Video lectures", cost: "Paid",
         desc: "Clear video lectures covering the whole of Step 1 system by system; a good main 'textbook' while you do questions.",

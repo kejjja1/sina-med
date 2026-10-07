@@ -3,6 +3,7 @@
 window.SINA = window.SINA || { subjects: [], lectures: {} };
 SINA.updates = [
   { date: "7 October 2026", items: [
+    "USMLE prep: added free videos (Armando Hasudungan, MedCram, Osmosis) and a new section with a free Step 1 question bank (MedAll), free Anki decks, StatPearls and the TeachMe anatomy and physiology sites.",
     "New USMLE prep page (button on the home page, in the menu and in the year selector): official Step 1 materials, Mehlman Medical's free PDFs and self-assessments, free video channels and podcasts, the main paid resources explained, and a shared Google Drive folder of high-yield PDFs."
   ]},
   { date: "4 October 2026", items: [
