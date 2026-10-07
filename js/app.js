@@ -72,7 +72,8 @@
       var n = S.subjects.filter(function (x) { return (x.program || S.DEFAULT_PROGRAM) === p.id && x.groups; }).length;
       return '<button type="button" role="menuitemradio" data-prog="' + p.id + '" aria-checked="' + (p.id === PROG) + '"><span class="pm-name">' + esc(progName(p.id)) + '</span>' +
         (n ? "" : '<span class="pm-soon">' + esc(T("settings.soon")) + "</span>") + '<span class="sm-tick" aria-hidden="true">&#10003;</span></button>';
-    }).join("");
+    }).join("") + (S.usmle ? '<a class="pm-usmle" role="menuitem" href="#/usmle"><span class="pm-name">USMLE prep</span><span class="pm-soon">Step 1</span></a>' : "");
+    var pu = progMenu.querySelector(".pm-usmle"); if (pu) pu.addEventListener("click", function () { openProg(false); });
     progMenu.querySelectorAll("[data-prog]").forEach(function (b) {
       b.addEventListener("click", function () { setProgram(b.dataset.prog); openProg(false); progBtn.focus(); });
     });
@@ -116,7 +117,7 @@
         var n = S.subjects.filter(function (x) { return (x.program || S.DEFAULT_PROGRAM) === p.id && x.groups; }).length;
         return '<button type="button" class="yc-opt" data-year="' + p.id + '"><span class="yc-name">' + esc(progName(p.id)) + '</span>' +
           '<span class="yc-meta">' + esc(n ? T("welcome.ready", { n: n }) : T("settings.soon")) + "</span></button>";
-      }).join("") + '</div><button type="button" class="yc-skip">' + esc(T("welcome.skip")) + "</button></div>";
+      }).join("") + '</div>' + (S.usmle ? '<a class="yc-usmle" href="#/usmle">Preparing for the USMLE? Open USMLE prep</a>' : "") + '<button type="button" class="yc-skip">' + esc(T("welcome.skip")) + "</button></div>";
     document.body.appendChild(box);
     var last = document.activeElement;
     function close() { store.set("sina:yearAsked", "1"); box.remove(); document.removeEventListener("keydown", onKey, true); if (last && last.focus) last.focus(); }
@@ -132,11 +133,12 @@
       b.addEventListener("click", function () { close(); setProgram(b.dataset.year, true); if (location.hash !== "#/" && location.hash !== "") location.hash = "#/"; else route(); });
     });
     box.querySelector(".yc-skip").addEventListener("click", close);
+    var yu = box.querySelector(".yc-usmle"); if (yu) yu.addEventListener("click", close);
     box.addEventListener("click", function (e) { if (e.target === box) close(); });
     var first = box.querySelector('[data-year="' + PROG + '"]') || box.querySelector("[data-year]"); if (first) first.focus();
   }
   (function () {
-    var h = location.hash || "#/", deep = /^#\/(lecture|year|papers|apps|updates)\//.test(h + "/") && h !== "#/";
+    var h = location.hash || "#/", deep = /^#\/(lecture|year|papers|apps|updates|usmle)\//.test(h + "/") && h !== "#/";
     if (!store.get("sina:program", null) && !store.get("sina:yearAsked", null) && !deep) setTimeout(yearChooser, 0);
   })();
 
@@ -342,6 +344,7 @@
       return '<a class="dlink sub" href="' + esc(r.url) + '" target="_blank" rel="noopener"><span>' + esc(r.title) + '</span><span class="pn">' + esc(r.kind || "") + "</span></a>";
     }).join("");
     h += accHTML("Useful apps", "", appsList, "cat");
+    if (S.usmle) h += '<a class="dlink" href="#/usmle"><span>USMLE prep</span><span class="pn">Step 1</span></a>';
 
     h += '<a class="dlink" href="#/updates"><span>' + esc(T("nav.updates")) + '</span>' + (newBadge() ? '<span class="badge">new</span>' : "") + "</a>";
     drawer.innerHTML = h;
@@ -504,6 +507,27 @@
     setView('<div class="wrap wide"><p class="crumbs"><a href="#/">Home</a> / Useful apps</p><h1>Useful apps and resources</h1><p class="meta">Apps and websites recommended for medical students. They open in a new tab.</p>' + appsHTML() + "</div>", "Useful apps");
   }
 
+  /* ---------- USMLE prep ---------- */
+  function usmleView() {
+    var U = S.usmle || { sections: [] };
+    var COST = { "Free": "free", "Free trial": "trial", "Paid": "paid" };
+    var html = '<div class="wrap wide"><p class="crumbs"><a href="#/">Home</a> / USMLE prep</p><h1>USMLE Step 1 prep</h1>' +
+      '<p class="lede">Resources for students preparing for the USMLE Step 1 alongside the medical school curriculum. Start with the free ones; the paid ones are listed so you know what people mean when they mention them.</p>';
+    if (U.drive) html += '<div class="usmle-drive"><div><h2>Shared PDF folder</h2><p>High-yield PDFs and documents collected for the promo, all in one Google Drive folder. New files are added regularly.</p></div><a class="btn primary" href="' + esc(U.drive) + '" target="_blank" rel="noopener">Open the Drive folder</a></div>';
+    U.sections.forEach(function (sec) {
+      html += "<h2>" + esc(sec.title) + '</h2><ul class="apps-grid">' + sec.items.map(function (a) {
+        return '<li class="app-card"><div class="app-top"><span class="app-icon" aria-hidden="true"><span class="mono">' + esc(a.name.charAt(0)) + '</span>' +
+          (a.domain ? '<img alt="" loading="lazy" src="https://www.google.com/s2/favicons?domain=' + esc(a.domain) + '&sz=64" onerror="this.remove()">' : "") + "</span>" +
+          '<span class="app-head"><span class="app-name">' + esc(a.name) + '</span><span class="app-kind">' + esc(a.kind || "") + "</span></span></div>" +
+          '<div class="app-plat"><span class="chip cost-' + (COST[a.cost] || "paid") + '">' + esc(a.cost) + "</span></div>" +
+          '<p class="app-desc">' + esc(a.desc) + "</p>" +
+          '<div class="app-actions">' + a.links.map(function (l, n) { return '<a class="btn' + (n === 0 ? " primary" : "") + '" href="' + esc(l.url) + '" target="_blank" rel="noopener">' + esc(l.label) + "</a>"; }).join("") + "</div></li>";
+      }).join("") + "</ul>";
+    });
+    html += '<p class="src" style="margin-top:1.6rem">Links open the official sites in a new tab. Suggestions for this page are welcome through the feedback form.</p>';
+    setView(html + "</div>", "USMLE prep");
+  }
+
   function firstLecture() {
     var subs = progSubjects().filter(function (x) { return x.groups; });
     for (var i = 0; i < subs.length; i++) for (var j = 0; j < subs[i].groups.length; j++) for (var k = 0; k < subs[i].groups[j].items.length; k++) { var id = subs[i].groups[j].items[k].id; if (S.lectures[id]) return id; }
@@ -523,7 +547,7 @@
     }
     var html = '<div class="wrap wide"><section class="hero"><div><h1>Study each lecture, then test yourself on it.</h1>' +
       '<p class="lede">Summaries, key points, questions, flashcards and extra reading for every lecture of the promo. Each page is built from the lecture slides and checked against other references.</p>' +
-      '<div class="row">' + (progSubjects().some(function (x) { return x.groups; }) ? '<a class="btn primary" href="#/lecture/' + firstLecture() + '">Try the first lecture</a>' : "") + (progMidterms().length ? '<a class="btn midbtn" href="#/midterm">Upcoming midterm lectures</a>' : "") + '<button class="btn" type="button" id="browse-subjects">Open the menu</button></div><p class="meta menuhint">' + (progMidterms().length ? "Upcoming midterm lectures, subjects" : "Subjects") + ', past papers and useful apps are in the menu.</p>' +
+      '<div class="row">' + (progSubjects().some(function (x) { return x.groups; }) ? '<a class="btn primary" href="#/lecture/' + firstLecture() + '">Try the first lecture</a>' : "") + (progMidterms().length ? '<a class="btn midbtn" href="#/midterm">Upcoming midterm lectures</a>' : "") + '<button class="btn" type="button" id="browse-subjects">Open the menu</button>' + (S.usmle ? '<a class="btn usmlebtn" href="#/usmle">USMLE prep</a>' : "") + '</div><p class="meta menuhint">' + (progMidterms().length ? "Upcoming midterm lectures, subjects" : "Subjects") + ', past papers and useful apps are in the menu.</p>' +
       (S.updated ? '<p class="meta" style="margin-top:1.4rem">Last updated ' + esc(S.updated) + '. <a href="#/updates">What\'s new' + (newBadge() ? ' <span class="badge">new</span>' : "") + "</a>.</p>" : "") + '</div>' +
       '</section>' +
       '<h2 id="subjects">' + esc(T("home.subjects")) + ' <span class="prog-tag">' + esc(progName()) + '</span></h2>' +
@@ -1016,6 +1040,7 @@
     if (!parts.length) return homeView();
     if (parts[0] === "updates") return updatesView();
     if (parts[0] === "apps") return appsView();
+    if (parts[0] === "usmle") return usmleView();
     if (parts[0] === "year" && progValid(parts[1])) { setProgram(parts[1], true); location.replace("#/"); return; }
     if (parts[0] === "midterm") return midtermView();
     if (parts[0] === "papers") return papersView(parts[1]);

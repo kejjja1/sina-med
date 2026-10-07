@@ -2,6 +2,9 @@
    date: what people see. items: short lines. */
 window.SINA = window.SINA || { subjects: [], lectures: {} };
 SINA.updates = [
+  { date: "7 October 2026", items: [
+    "New USMLE prep page (button on the home page, in the menu and in the year selector): official Step 1 materials, Mehlman Medical's free PDFs and self-assessments, free video channels and podcasts, the main paid resources explained, and a shared Google Drive folder of high-yield PDFs."
+  ]},
   { date: "4 October 2026", items: [
     "Anatomy 3 midterm: 390 practice MCQs on the face, mouth, sinuses, orbit and eye, one correct answer each (as on the real exam). Do them as quizzes in Past papers > Anatomy 3, one topic at a time, or download the three PDFs with an answer key. There's a button on the Upcoming midterm lectures page too."
   ]},
