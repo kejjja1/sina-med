@@ -2,6 +2,10 @@
    date: what people see. items: short lines. */
 window.SINA = window.SINA || { subjects: [], lectures: {} };
 SINA.updates = [
+  { date: "8 October 2026", items: [
+    "Past papers: 15 new papers added. Anatomy: the 2023-2024 midterm (now also an interactive quiz), Prof. Hajij's midterm Q&A, and six neuroanatomy practice tests (Fliyou, Rghioui). Physiology: the cardiovascular and respiratory retake (February 2023), Prof. Covasa and Tuan's midterm Q&A and a neurophysiology quiz. Semiology: a cardio, respiratory, digestive and endocrine mock and a respiratory retake. Clinical biochemistry: the 2023-2024 final and Prof. Kamal's midterm Q&A.",
+    "Anatomy: three new Sina mock midterms written in the style of the real paper (24 questions each, one answer per question), as quizzes and PDFs, at the top of Past papers > Anatomy 3."
+  ]},
   { date: "7 October 2026", items: [
     "USMLE prep: added free videos (Armando Hasudungan, MedCram, Osmosis) and a new section with a free Step 1 question bank (MedAll), free Anki decks, StatPearls and the TeachMe anatomy and physiology sites.",
     "New USMLE prep page (button on the home page, in the menu and in the year selector): official Step 1 materials, Mehlman Medical's free PDFs and self-assessments, free video channels and podcasts, the main paid resources explained, and a shared Google Drive folder of high-yield PDFs."
