@@ -3,6 +3,7 @@
 window.SINA = window.SINA || { subjects: [], lectures: {} };
 SINA.updates = [
   { date: "8 October 2026", items: [
+    "Upcoming midterm lectures: 'Vascular supply and applied anatomy of the eye' is no longer on the Anatomy 3 midterm list (the lecture itself is still in the subject).",
     "Past papers: 15 new papers added. Anatomy: the 2023-2024 midterm (now also an interactive quiz), Prof. Hajij's midterm Q&A, and six neuroanatomy practice tests (Fliyou, Rghioui). Physiology: the cardiovascular and respiratory retake (February 2023), Prof. Covasa and Tuan's midterm Q&A and a neurophysiology quiz. Semiology: a cardio, respiratory, digestive and endocrine mock and a respiratory retake. Clinical biochemistry: the 2023-2024 final and Prof. Kamal's midterm Q&A.",
     "Anatomy: three new Sina mock midterms written in the style of the real paper (24 questions each, one answer per question), as quizzes and PDFs, at the top of Past papers > Anatomy 3."
   ]},

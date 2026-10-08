@@ -605,7 +605,7 @@ SINA.midterms = [
   { id: "anat3-midterm", program: "y2-anglo", subject: "anat3", title: "Anatomy 3 midterm",
     practice: { label: "390 practice MCQs for this midterm (quizzes and PDFs)", url: "#/papers/anat3" },
     groups: [
-      { name: "The eye", items: ["anat3-orbital-appendages", "anat3-eyeball-1", "anat3-ocular-muscles", "anat3-ocular-clinical"] },
+      { name: "The eye", items: ["anat3-orbital-appendages", "anat3-eyeball-1", "anat3-ocular-muscles"] },
       { name: "The face", items: ["anat3-face-osteology", "anat3-blood-supply", "anat3-facial-muscles"] }
     ]}
 ];
