@@ -44,11 +44,13 @@ SINA.subjects = [
       { name: "Neurophysiology", items: [
         { id: "physio-intro-neuro", title: "Introduction to neurophysiology" },
         { id: "physio-neurons", title: "Neurons and electrical communication" },
+        { id: "physio-chemical", title: "Synapses and chemical communication" },
         { id: "physio-myotatic", title: "The myotatic reflexes" },
         { id: "physio-pain", title: "Physiology of pain" },
         { id: "physio-stress", title: "Physiology of stress" }
       ]},
       { name: "Muscle", items: [
+        { id: "physio-muscle-1", title: "Muscle physiology, part I: skeletal muscle structure" },
         { id: "physio-muscle-2", title: "Muscle physiology, part II" }
       ]},
       { name: "Special senses", items: [
@@ -602,10 +604,10 @@ SINA.subjects.forEach(function (s) { if (!s.program) s.program = SINA.DEFAULT_PR
 /* Upcoming midterms: the lectures listed here get the blue "On the midterm" label
    and appear on the "Upcoming midterm lectures" page for their year. */
 SINA.midterms = [
-  { id: "anat3-midterm", program: "y2-anglo", subject: "anat3", title: "Anatomy 3 midterm",
-    practice: { label: "390 practice MCQs for this midterm (quizzes and PDFs)", url: "#/papers/anat3" },
+  { id: "physio-midterm", program: "y2-anglo", subject: "physio", title: "Neurophysiology midterm",
+    practice: { label: "Practice midterms for this exam (quizzes, question PDFs and corrections)", url: "#/papers/physio" },
     groups: [
-      { name: "The eye", items: ["anat3-orbital-appendages", "anat3-eyeball-1", "anat3-ocular-muscles"] },
-      { name: "The face", items: ["anat3-face-osteology", "anat3-blood-supply", "anat3-facial-muscles"] }
+      { name: "Neurophysiology", items: ["physio-intro-neuro", "physio-neurons", "physio-chemical"] },
+      { name: "Muscle", items: ["physio-muscle-1"] }
     ]}
 ];

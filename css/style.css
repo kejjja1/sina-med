@@ -610,3 +610,18 @@ body.noscroll { overflow: hidden; }
 .prog-menu .pm-usmle { display: flex; align-items: center; gap: 0.55rem; margin-top: 0.3rem; padding: 0.55rem 0.6rem 0.45rem; border-top: 1px solid var(--line); border-radius: 0 0 8px 8px; color: var(--ink); text-decoration: none; font-size: 0.93rem; }
 .prog-menu .pm-usmle:hover, .prog-menu .pm-usmle:focus-visible { background: var(--surface-2); }
 .yc-usmle { display: block; margin: 0.9rem auto 0; text-align: center; font-size: 0.92rem; font-weight: 600; color: var(--accent); }
+
+/* past papers: quiz and correction side by side */
+.lec-list li.paper-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.4rem 1rem; padding: 0.35rem 0.2rem; }
+.lec-list li.paper-row > a { padding: 0.35rem 0; flex: 1 1 16rem; }
+.lec-list li.paper-row > a:hover { background: none; text-decoration: underline; }
+.paper-btns { display: flex; gap: 0.4rem; flex-wrap: wrap; }
+.lec-list .paper-btns a.btn { display: inline-block; padding: 0.35rem 0.75rem; font-size: 0.85rem; font-weight: 600; text-decoration: none; }
+.lec-list .paper-btns a.btn.primary { color: var(--accent-ink); }
+.lec-list .paper-btns a.btn:hover { background: var(--surface-2); }
+.lec-list .paper-btns a.btn.primary:hover { background: var(--accent); }
+/* quiz: review of wrong answers */
+.rev-h { margin-top: 1.6rem; }
+.rev-item { border-top: 1px solid var(--line); padding-top: 0.8rem; margin-top: 0.8rem; }
+.opt.static { cursor: default; }
+.rev-tag { margin-left: auto; font-size: 0.78rem; font-weight: 700; white-space: nowrap; padding-left: 0.6rem; }

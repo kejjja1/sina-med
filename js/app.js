@@ -798,7 +798,7 @@
   }
 
   function questionsPanel(p, lec) {
-    var qs = lec.mcqs, i = 0, score = 0, key = "sina:best:" + lec.id, LET = "abcdefgh";
+    var all = lec.mcqs, qs = all, i = 0, score = 0, wrong = [], key = "sina:best:" + lec.id, LET = "abcdefgh";
     function keyText(q) {
       var ans = q.answers || [q.answer];
       return ans.map(function (n) { return LET[n] + ". " + q.options[n]; }).join(" and ");
@@ -810,9 +810,32 @@
     }
     function render() {
       if (i >= qs.length) {
-        var best = store.get(key, 0); if (score > best) { best = score; store.set(key, best); }
-        p.innerHTML = '<div class="score">' + score + " / " + qs.length + "</div><p>Best score on this device: " + best + " / " + qs.length + '.</p><div class="row"><button class="btn primary" id="again">Try again</button></div>';
-        p.querySelector("#again").onclick = function () { i = 0; score = 0; render(); };
+        var full = qs === all, best = store.get(key, 0);
+        if (full && score > best) { best = score; store.set(key, best); }
+        var missed = wrong.slice();
+        p.innerHTML = '<div class="score">' + score + " / " + qs.length + "</div>" +
+          (full ? "<p>Best score on this device: " + best + " / " + all.length + ".</p>" : "<p>Retry of the questions you missed.</p>") +
+          '<div class="row">' + (missed.length ? '<button class="btn primary" id="rev">Show only my wrong answers (' + missed.length + ')</button><button class="btn" id="retry">Retry only these</button>' : '<p class="src">No wrong answers. Well done.</p>') +
+          '<button class="btn" id="again">' + (full ? "Try again" : "Back to the full quiz") + '</button></div><div id="review"></div>';
+        p.querySelector("#again").onclick = function () { qs = all; i = 0; score = 0; wrong = []; render(); };
+        if (missed.length) {
+          p.querySelector("#retry").onclick = function () { qs = missed.map(function (w) { return w.q; }); i = 0; score = 0; wrong = []; render(); };
+          p.querySelector("#rev").onclick = function () {
+            var box = p.querySelector("#review");
+            if (box.innerHTML) { box.innerHTML = ""; this.textContent = "Show only my wrong answers (" + missed.length + ")"; return; }
+            this.textContent = "Hide my wrong answers";
+            box.innerHTML = '<h2 class="rev-h">Your wrong answers</h2>' + missed.map(function (w) {
+              var q = w.q, ans = q.answers || [q.answer];
+              return '<div class="rev-item"><p class="qhead">Question ' + w.n + '</p><p class="qtext">' + esc(q.q) + "</p>" +
+                q.options.map(function (o, n) {
+                  var cls = ans.indexOf(n) > -1 ? " correct" : (w.chosen.indexOf(n) > -1 ? " wrong" : "");
+                  var tag = ans.indexOf(n) > -1 ? '<span class="rev-tag">Correct answer</span>' : (w.chosen.indexOf(n) > -1 ? '<span class="rev-tag">Your answer</span>' : "");
+                  return '<div class="opt static' + cls + '"><span class="letter">' + LET[n].toUpperCase() + "</span><span>" + esc(o) + "</span>" + tag + "</div>";
+                }).join("") + (q.why ? '<div class="why">' + esc(q.why) + "</div>" : "") + "</div>";
+            }).join("");
+            box.scrollIntoView({ behavior: "smooth", block: "start" });
+          };
+        }
         return;
       }
       var q = qs[i], multi = !!(q.answers && q.answers.length > 1);
@@ -825,7 +848,7 @@
       function finish(chosen) {
         var ans = q.answers || [q.answer];
         var ok = chosen.length === ans.length && chosen.every(function (n) { return ans.indexOf(n) > -1; });
-        if (ok) score++;
+        if (ok) score++; else wrong.push({ q: q, n: i + 1, chosen: chosen });
         opts.forEach(function (x) {
           var n = +x.dataset.n; x.disabled = true;
           if (ans.indexOf(n) > -1) x.classList.add("correct"); else if (chosen.indexOf(n) > -1) x.classList.add("wrong");
@@ -930,6 +953,12 @@
       any = true;
       html += "<h2>" + esc(sb.name) + '</h2><ul class="lec-list">' + list.map(function (x) {
         var tags = [x.questions ? "Quiz" : "", (x.pdf || x.links) ? "PDF" : ""].filter(Boolean).join(" and ");
+        var quick = (x.links || []).filter(function (l) { return l.short; });
+        if (quick.length) {
+          return '<li class="paper-row"><a href="#/paper/' + esc(x.id) + '"><span>' + esc(x.title) + (x.year ? " (" + esc(x.year) + ")" : "") + "</span></a>" +
+            '<span class="paper-btns">' + (x.questions ? '<a class="btn small primary" href="#/paper/' + esc(x.id) + '">Online quiz</a>' : "") +
+            quick.map(function (l) { return '<a class="btn small" href="' + esc(l.url) + '" target="_blank" rel="noopener">' + esc(l.short) + "</a>"; }).join("") + "</span></li>";
+        }
         return '<li><a href="#/paper/' + esc(x.id) + '"><span>' + esc(x.title) + (x.year ? " (" + esc(x.year) + ")" : "") + '</span><span class="pill">' + esc(tags || "Open") + "</span></a></li>";
       }).join("") + "</ul>";
     });

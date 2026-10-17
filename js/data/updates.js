@@ -2,6 +2,14 @@
    date: what people see. items: short lines. */
 window.SINA = window.SINA || { subjects: [], lectures: {} };
 SINA.updates = [
+  { date: "17 October 2026", items: [
+    "The upcoming midterm is now the Neurophysiology midterm: introduction to neurophysiology, electrical communication, chemical communication and muscle physiology part I.",
+    "New lecture pages: Synapses and chemical communication, and Muscle physiology part I (skeletal muscle structure).",
+    "Two neurophysiology practice midterms (25 questions each, A to E), with question and correction PDFs in the same layout as the faculty papers.",
+    "Added Prof. Covasa's extra questions (as a quiz) and the muscle workshop questions to Physiology past papers.",
+    "After any quiz you can now show only your wrong answers, with the right answer and why, and retry just those.",
+    "In the past papers list, practice quizzes now have their questions and correction PDFs side by side."
+  ]},
   { date: "8 October 2026", items: [
     "Upcoming midterm lectures: 'Vascular supply and applied anatomy of the eye' is no longer on the Anatomy 3 midterm list (the lecture itself is still in the subject).",
     "Past papers: 15 new papers added. Anatomy: the 2023-2024 midterm (now also an interactive quiz), Prof. Hajij's midterm Q&A, and six neuroanatomy practice tests (Fliyou, Rghioui). Physiology: the cardiovascular and respiratory retake (February 2023), Prof. Covasa and Tuan's midterm Q&A and a neurophysiology quiz. Semiology: a cardio, respiratory, digestive and endocrine mock and a respiratory retake. Clinical biochemistry: the 2023-2024 final and Prof. Kamal's midterm Q&A.",

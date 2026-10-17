@@ -1,4 +1,4 @@
-/* physio: 10 lectures, merged for upload. Edit the source files, not this one. */
+/* physio: 12 lectures, merged for upload. Edit the source files, not this one. */
 window.SINA = window.SINA || {subjects:[], lectures:{}};
 SINA.lectures["physio-intro-neuro"] = {
  "id": "physio-intro-neuro",
@@ -8737,4 +8737,1496 @@ SINA.lectures["physio-renal-gfr"] = {
   }
  ],
  "verified": "22 Sep 2026"
+};
+window.SINA = window.SINA || {subjects:[], lectures:{}};
+SINA.lectures["physio-chemical"] = {
+ "id": "physio-chemical",
+ "subject": "physio",
+ "group": "Neurophysiology",
+ "title": "Synapses and chemical communication",
+ "sourceFile": "Covasa Lecture 3 Synapses. Chemical communication.pdf (Neurophysiology, Prof. Mihai Covasa, 2025-2026)",
+ "sourceUrl": "https://drive.google.com/file/d/1sz9QE16g494FYEQNT_C9xoUT8O0MNMBk/view?usp=drivesdk",
+ "buildNote": "<strong>Built from the lecture slides.</strong> Slides that only show pictures are covered in outline. If your professor says something different, trust your professor.",
+ "summary": [
+  {
+   "id": "s0",
+   "title": "The big picture",
+   "html": "<p>Neurons talk in two languages. Along the axon the signal is <strong>electrical</strong>; across the gap between two cells it becomes <strong>chemical</strong>, because current cannot cross the synaptic cleft. Every neuron-to-neuron message is therefore <strong>electrical → chemical → electrical</strong>: an action potential in the presynaptic cell, a neurotransmitter crossing the cleft, and a graded (or action) potential in the postsynaptic cell.</p><p>The second half of the lecture turns to <strong>sensory physiology</strong>: how receptors turn stimuli into electrical signals, how the nervous system codes intensity and location, and how responses adapt.</p>"
+  },
+  {
+   "id": "s1",
+   "title": "What the lecture asks you to do",
+   "html": "<ul><li>Describe the structure of a synapse and how information crosses it.</li><li>Describe neurotransmitter release, including the role of calcium.</li><li>Compare excitatory and inhibitory neurotransmitters and give the main examples in the CNS.</li><li>Describe how neurotransmitter is cleared from the synapse.</li><li>Explain temporal and spatial summation of synaptic potentials.</li><li>Outline the differences between chemical and electrical synapses.</li></ul>"
+  },
+  {
+   "id": "s2",
+   "title": "Synapse structure",
+   "html": "<p>A <strong>synapse</strong> is a connection point between a neuron and another neuron, a muscle (<strong>neuromuscular</strong> synapse), a gland (<strong>neuroglandular</strong> synapse) or another cell.</p><table><tr><th>Part</th><th>What it holds</th></tr><tr><td><strong>Presynaptic neuron</strong> (sends the signal)</td><td>Axon terminal with <strong>synaptic vesicles</strong> full of <strong>neurotransmitter</strong>, and voltage-gated Ca²⁺ channels in its membrane</td></tr><tr><td><strong>Synaptic cleft</strong></td><td>The space between terminal and postsynaptic cell: electrical signals cannot pass, chemicals can</td></tr><tr><td><strong>Postsynaptic cell</strong> (receives the signal)</td><td><strong>Neurotransmitter receptors</strong> and <strong>ion channels</strong> in its membrane</td></tr></table><p><strong>Chemical versus electrical synapses</strong> (standard comparison): electrical synapses join cells through <strong>gap junctions</strong>, are almost instantaneous and can pass current both ways; chemical synapses are <strong>one-way</strong>, have a short <strong>synaptic delay</strong>, and can amplify, inhibit and be modulated, which is why most CNS synapses are chemical.</p>"
+  },
+  {
+   "id": "s3",
+   "title": "Six events at the synapse",
+   "html": "<ol><li><strong>Action potential</strong> reaches the presynaptic terminal (purely electrical conduction).</li><li><strong>Ca²⁺ entry</strong>: voltage-gated Ca²⁺ channels open and Ca²⁺ enters the terminal.</li><li><strong>Neurotransmitter release</strong>: Ca²⁺ triggers exocytosis of synaptic vesicles.</li><li><strong>Receptor activation</strong>: the transmitter diffuses across the cleft and binds postsynaptic receptors.</li><li><strong>Ions enter</strong>: receptor binding opens ion channels in the postsynaptic membrane.</li><li><strong>Graded potential</strong> at the postsynaptic dendrite, which can lead to an action potential.</li></ol><p>Steps 1 to 3 are presynaptic; 4 to 6 are postsynaptic. Calcium is the link between the electrical and the chemical step: block the Ca²⁺ channels and release stops even though the action potential arrives normally.</p>"
+  },
+  {
+   "id": "s4",
+   "title": "EPSPs, IPSPs and summation",
+   "html": "<p>The graded potential caused by a synapse is a <strong>postsynaptic potential (PSP)</strong>.</p><table><tr><th></th><th>EPSP</th><th>IPSP</th></tr><tr><td>Ions</td><td>Positive ions in (e.g. Na⁺)</td><td>Negative ions in (e.g. Cl⁻)</td></tr><tr><td>Effect</td><td>Depolarizes, towards threshold</td><td>Hyperpolarizes, away from threshold</td></tr><tr><td>Result</td><td>Can lead to action potentials</td><td>Reduces the number of action potentials</td></tr></table><p>Which channel opens depends on <strong>both the transmitter and the receptor type</strong>. Numbers to know: resting potential <strong>-70 mV</strong>, threshold <strong>-50 to -55 mV</strong>, each PSP about <strong>±10 mV</strong>. So a <strong>single EPSP cannot fire an action potential</strong>; EPSPs must add up. The <strong>axon hillock</strong> keeps score of all the graded potentials arriving at the dendrites.</p><ul><li><strong>Temporal summation</strong>: <em>one</em> presynaptic neuron fires repeatedly in quick succession at the <em>same</em> location, so its EPSPs stack up in time.</li><li><strong>Spatial summation</strong>: <em>several</em> presynaptic neurons stimulate the postsynaptic cell <em>at the same time</em> at different locations.</li><li>An EPSP and an IPSP arriving together can <strong>cancel</strong> each other out.</li></ul><p><strong>Convergence</strong>: one cell is influenced by many others (thousands of inputs). <strong>Divergence</strong>: one cell branches to influence many others.</p>"
+  },
+  {
+   "id": "s5",
+   "title": "Neurotransmitters",
+   "html": "<p>In general one neuron releases one type of transmitter, but any neuron can respond to several.</p><table><tr><th>Transmitter</th><th>Where / role</th></tr><tr><td>Acetylcholine</td><td>Neuromuscular junctions, autonomic nervous system</td></tr><tr><td><strong>Glutamate</strong></td><td>The <strong>main excitatory</strong> transmitter in the brain</td></tr><tr><td><strong>GABA</strong></td><td>The <strong>main inhibitory</strong> transmitter in the brain (glycine is also inhibitory)</td></tr><tr><td>Noradrenaline</td><td>Autonomic nervous system; learning, emotion, behaviour</td></tr><tr><td>Dopamine, serotonin</td><td>Learning, emotion, behavioural pathways</td></tr></table><p><strong>By chemical structure</strong>: acetylcholine; <strong>biogenic amines</strong> (catecholamines, serotonin); <strong>amino acids</strong> (glutamate, glycine, GABA); <strong>peptides</strong> (endorphins, substance P); other messengers (ATP, dissolved gases such as NO).</p><p><strong>By function</strong>: excitatory (glutamate) or inhibitory (GABA, glycine). Some transmitters can be <strong>both</strong>, depending on the receptor: acetylcholine is excitatory at the neuromuscular junction (<strong>nicotinic</strong> receptor) and inhibitory in cardiac muscle (<strong>muscarinic</strong> receptor).</p><p><strong>Receptor mechanisms</strong>:</p><ul><li><strong>Direct</strong> (the receptor is an ion channel): rapid responses, <strong>fast synapses</strong>. Examples: ACh, amino acids.</li><li><strong>Indirect</strong> (second messengers): G protein → adenylate cyclase → cAMP → enzyme activation, changes in permeability, gene expression. Long-lasting, <strong>slow synapses</strong>. Examples: biogenic amines, peptides, dissolved gases.</li></ul><p>The effect on the membrane depends on <strong>how much</strong> transmitter is released and <strong>how long</strong> it stays bound.</p>"
+  },
+  {
+   "id": "s6",
+   "title": "Ending the signal, drugs and disease",
+   "html": "<p>A graded potential lasts as long as the transmitter is bound, so it must be removed:</p><ol><li><strong>Active transport</strong> (reuptake) back into the presynaptic terminal or into nearby glia.</li><li><strong>Enzymes</strong> in the cleft break it down, e.g. <strong>acetylcholinesterase</strong>.</li><li><strong>Diffusion</strong> away from the cleft.</li></ol><p>Acetylcholine: <strong>AChE</strong> splits ACh into <strong>acetate + choline</strong>; choline is actively taken back into the terminal and <strong>ChAT</strong> (choline acetyltransferase) rebuilds ACh from <strong>choline + acetyl CoA</strong>.</p><p>Drugs can alter synthesis, storage or release, the transmitter-receptor interaction, reuptake or destruction, or replace a missing transmitter. Lecture examples: <strong>SSRIs</strong> block serotonin reuptake, keeping serotonin longer in the synapse (depression). <strong>Tetanus toxin</strong> prevents GABA release from inhibitory neurons, causing uncontrolled spasms and lockjaw (too much excitation).</p>"
+  },
+  {
+   "id": "s7",
+   "title": "Sensory receptors and transduction",
+   "html": "<p><strong>Perception</strong> is the conscious interpretation of the world, created by patterns of brain activity; it is limited by our receptor types (we do not sense magnetic fields or UV), our sensitivity (only certain sound frequencies) and central filtering (attention). The cerebral cortex handles both <strong>sensation</strong> (awareness of the stimulus) and <strong>perception</strong> (its interpretation).</p><p>The <strong>afferent</strong> division carries information to the CNS: <strong>somatic</strong> afferents (skin, skeletal muscle, joints), <strong>special sense</strong> afferents (eye, ear, taste, smell) and <strong>visceral</strong> afferents (organs of the body cavities, <strong>not consciously perceived</strong>).</p><p>A receptor is either (1) the <strong>specialised ending of the afferent neuron</strong> itself or (2) a <strong>separate receptor cell</strong> that releases transmitter onto the afferent neuron. <strong>Transduction</strong> converts stimulus energy (light, heat, sound) into electrical energy: the <strong>receptor potential</strong>, a depolarizing graded potential with <strong>no refractory period</strong> that can summate. Its trigger zone is on the <strong>dendrite</strong>, not the axon hillock.</p><p>Receptor types: photoreceptors (light), mechanoreceptors (stretch, touch, sound, blood pressure), thermoreceptors, osmoreceptors (solute concentration), chemoreceptors (taste, smell) and nociceptors (tissue damage). Each receptor has an <strong>adequate stimulus</strong> but may respond weakly to others: pressing on the eye makes you 'see' light.</p><p><strong>Intensity</strong> is coded by the <strong>number of receptors</strong> stimulated and the <strong>frequency of action potentials</strong> (a stronger stimulus gives a larger receptor potential and more action potentials per second).</p>"
+  },
+  {
+   "id": "s8",
+   "title": "Adaptation, habituation and sensitization",
+   "html": "<table><tr><th></th><th>Tonic receptors</th><th>Phasic receptors</th></tr><tr><td>Adaptation</td><td>Slow or none</td><td>Rapid</td></tr><tr><td>Firing</td><td>Continuous while the stimulus lasts</td><td>Bursts at the start (and end) of the stimulus</td></tr><tr><td>Use</td><td>Maintenance information: posture, balance</td><td>Signalling change</td></tr><tr><td>Examples</td><td><strong>Proprioceptors</strong>, muscle stretch receptors</td><td><strong>Touch</strong> (a ring or watch is soon not felt), temperature, <strong>smell</strong></td></tr></table><ul><li><strong>Receptor adaptation</strong>: less depolarization to a sustained or repeated stimulus, so fewer action potentials (a smell 'goes away').</li><li><strong>Habituation</strong>: neurons reduce their response to repeated stimuli by depressing synaptic activity, e.g. through changes in <strong>presynaptic voltage-gated Ca²⁺ channels</strong>.</li><li><strong>Sensitization</strong>: a strong or noxious stimulus increases responsiveness. Mechanism: <strong>serotonin → cAMP cascade → K⁺ channels blocked → presynaptic action potential prolonged</strong> → more Ca²⁺ enters → more transmitter released.</li></ul>"
+  },
+  {
+   "id": "s9",
+   "title": "Sensory pathways and discrimination",
+   "html": "<ul><li><strong>First-order neuron</strong>: from the receptor to the dorsal horn of the spinal cord or the medullary nuclei.</li><li><strong>Second-order neuron</strong>: in the spinal cord or medulla; crosses to the other side and projects to the thalamus.</li><li><strong>Third-order neuron</strong>: from the <strong>thalamus</strong> to the cortex, where sensations are perceived in the <strong>primary somatic sensory cortex</strong>.</li></ul><p><strong>Where they cross</strong>: pain, temperature and coarse touch cross in the <strong>spinal cord</strong>; fine touch, vibration and proprioception cross in the <strong>medulla</strong>. So a cord lesion on one side removes pain and temperature on the <em>opposite</em> side below it.</p><p><strong>Labeled lines</strong>: information of one type from one place travels together and builds sensory 'maps' in the CNS. The cortical area given to a region matches its sensitivity (the sensory homunculus). <strong>Receptive fields</strong>: small and dense in sensitive areas (fingertips: two points felt as two), large in less sensitive ones (lower leg: two points felt as one). <strong>Lateral inhibition</strong> sharpens contrast: the field nearest the stimulus is most active and its neighbours are suppressed.</p>"
+  },
+  {
+   "id": "s10",
+   "title": "The special senses at a glance",
+   "html": "<table><tr><th>Sense</th><th>Receptors</th><th>Pathway</th></tr><tr><td>Smell</td><td>Olfactory receptors in the olfactory epithelium</td><td>Olfactory bulb, CN I, limbic system and hypothalamus, olfactory cortex</td></tr><tr><td>Taste</td><td>Gustatory receptors in taste buds</td><td>CN VII, IX, X → medulla → thalamus → gustatory cortex</td></tr><tr><td>Hearing</td><td>Hair cells of the cochlea</td><td>CN VIII → medullary olives, inferior colliculus → thalamus → auditory cortex</td></tr><tr><td>Balance</td><td>Hair cells of the semicircular canals and vestibule</td><td>CN VIII → vestibular nuclei (pons, medulla), cerebellum, cortex</td></tr><tr><td>Vision</td><td>Photoreceptors</td><td>Optic nerve, chiasm (some fibres cross), optic tract → thalamus → visual cortex; also hypothalamus, superior colliculus, pineal gland (day/night)</td></tr></table>"
+  }
+ ],
+ "exam": [
+  "Neuron-to-neuron signalling is electrical → chemical → electrical.",
+  "Ca²⁺ entry through presynaptic voltage-gated channels triggers exocytosis.",
+  "Six events: AP, Ca²⁺ entry, release, receptor binding, ions enter, graded potential.",
+  "EPSP: positive ions in (Na⁺). IPSP: negative ions in (Cl⁻), hyperpolarizes.",
+  "Rest -70 mV, threshold -50 to -55 mV, PSP about ±10 mV: one EPSP is not enough.",
+  "Temporal summation: one neuron, rapid firing. Spatial: many neurons at once.",
+  "Glutamate main excitatory; GABA (and glycine) main inhibitory.",
+  "ACh: nicotinic excitatory at the NMJ; muscarinic inhibitory in the heart.",
+  "Direct (ionotropic) = fast; indirect (second messenger, cAMP) = slow, long-lasting.",
+  "Signal ends by reuptake, enzymes (AChE: acetate + choline) and diffusion.",
+  "SSRIs block serotonin reuptake; tetanus toxin blocks GABA release.",
+  "Tonic receptors adapt slowly (proprioceptors); phasic adapt fast (touch, smell).",
+  "Sensitization: serotonin → cAMP → K⁺ channels blocked → longer AP → more release.",
+  "Pain and temperature cross in the cord; fine touch and vibration in the medulla."
+ ],
+ "visual": {
+  "kind": "model",
+  "intro": "",
+  "figure": {
+   "viewBox": "0 0 760 420",
+   "alt": "Events at a chemical synapse",
+   "caption": "From presynaptic action potential to postsynaptic potential, and how the signal is switched off. Schematic drawn for this site.",
+   "base": "<defs><marker id=\"ah\" markerWidth=\"10\" markerHeight=\"8\" refX=\"9\" refY=\"4\" orient=\"auto\"><path d=\"M0,0 L10,4 L0,8 Z\" fill=\"#8a8a8a\"/></marker></defs><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"235\" y1=\"70\" x2=\"275\" y2=\"70\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"495\" y1=\"70\" x2=\"535\" y2=\"70\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"640\" y1=\"100\" x2=\"640\" y2=\"180\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"535\" y1=\"210\" x2=\"495\" y2=\"210\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"275\" y1=\"210\" x2=\"235\" y2=\"210\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"125\" y1=\"240\" x2=\"125\" y2=\"320\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"640\" y1=\"240\" x2=\"640\" y2=\"320\"/>",
+   "parts": {
+    "ap": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2d7cf\" x=\"15\" y=\"40\" width=\"220\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "1. Action potential",
+      "reaches the terminal"
+     ],
+     "lx": 125.0,
+     "ly": 68.0
+    },
+    "ca": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#cfe3f2\" x=\"275\" y=\"40\" width=\"220\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "2. Voltage-gated Ca²⁺",
+      "channels open"
+     ],
+     "lx": 385.0,
+     "ly": 68.0
+    },
+    "rel": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d7edd2\" x=\"535\" y=\"40\" width=\"210\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "3. Exocytosis of",
+      "neurotransmitter"
+     ],
+     "lx": 640.0,
+     "ly": 68.0
+    },
+    "bind": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2e2a8\" x=\"535\" y=\"180\" width=\"210\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "4. NT binds",
+      "postsynaptic receptor"
+     ],
+     "lx": 640.0,
+     "ly": 208.0
+    },
+    "ion": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#e3d5f0\" x=\"275\" y=\"180\" width=\"220\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "5. Ion channels open,",
+      "ions move"
+     ],
+     "lx": 385.0,
+     "ly": 208.0
+    },
+    "psp": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f7d9b8\" x=\"15\" y=\"180\" width=\"220\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "6. Graded potential:",
+      "EPSP or IPSP"
+     ],
+     "lx": 125.0,
+     "ly": 208.0
+    },
+    "hill": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d9ecec\" x=\"15\" y=\"320\" width=\"220\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Axon hillock sums",
+      "inputs vs threshold"
+     ],
+     "lx": 125.0,
+     "ly": 348.0
+    },
+    "off": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2d7cf\" x=\"535\" y=\"320\" width=\"210\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Signal ends: reuptake,",
+      "enzymes, diffusion"
+     ],
+     "lx": 640.0,
+     "ly": 348.0
+    }
+   },
+   "arrows": {
+    "ap": [
+     {
+      "t": [
+       15.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "ca": [
+     {
+      "t": [
+       275.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "rel": [
+     {
+      "t": [
+       535.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "bind": [
+     {
+      "t": [
+       535.0,
+       188.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "ion": [
+     {
+      "t": [
+       275.0,
+       188.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "psp": [
+     {
+      "t": [
+       15.0,
+       188.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "hill": [
+     {
+      "t": [
+       15.0,
+       328.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "off": [
+     {
+      "t": [
+       535.0,
+       328.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ]
+   }
+  }
+ },
+ "mcqs": [
+  {
+   "q": "What crosses the synaptic cleft between two neurons?",
+   "options": [
+    "The action potential itself",
+    "A chemical neurotransmitter",
+    "Ca²⁺ ions from the presynaptic cell",
+    "Electrical current through the cleft"
+   ],
+   "answer": 1,
+   "why": "Current cannot flow across the cleft, so a chemical intermediate is needed."
+  },
+  {
+   "q": "What is the direct trigger for neurotransmitter exocytosis?",
+   "options": [
+    "Na⁺ entry into the terminal",
+    "Ca²⁺ entry into the terminal",
+    "K⁺ exit from the terminal",
+    "Binding of transmitter to its receptor"
+   ],
+   "answer": 1,
+   "why": "Voltage-gated Ca²⁺ channels open when the AP arrives."
+  },
+  {
+   "q": "An IPSP is typically produced by:",
+   "options": [
+    "Na⁺ entering the postsynaptic cell",
+    "Cl⁻ entering the postsynaptic cell",
+    "Ca²⁺ entering the presynaptic terminal",
+    "K⁺ channels being blocked"
+   ],
+   "answer": 1,
+   "why": "Negative ions in hyperpolarize."
+  },
+  {
+   "q": "Why can a single EPSP not fire an action potential?",
+   "options": [
+    "EPSPs are hyperpolarizing",
+    "It is only about 10 mV, while threshold is 15-20 mV above rest",
+    "EPSPs occur only at the axon hillock",
+    "Postsynaptic cells lack voltage-gated channels"
+   ],
+   "answer": 1,
+   "why": "-70 to -50/-55 mV needs summation."
+  },
+  {
+   "q": "Temporal summation occurs when:",
+   "options": [
+    "Several presynaptic neurons fire at the same time",
+    "One presynaptic neuron fires repeatedly in quick succession",
+    "An EPSP and an IPSP cancel out",
+    "The postsynaptic neuron fires repeatedly"
+   ],
+   "answer": 1,
+   "why": "Same location, closer timing."
+  },
+  {
+   "q": "The main excitatory neurotransmitter of the brain is:",
+   "options": [
+    "GABA",
+    "Glycine",
+    "Glutamate",
+    "Serotonin"
+   ],
+   "answer": 2,
+   "why": ""
+  },
+  {
+   "q": "Acetylcholine is inhibitory in cardiac muscle because it acts on:",
+   "options": [
+    "Nicotinic receptors",
+    "Muscarinic receptors",
+    "GABA receptors",
+    "Adrenergic receptors"
+   ],
+   "answer": 1,
+   "why": "The receptor decides the effect."
+  },
+  {
+   "q": "Indirect (second-messenger) receptors are characterised by:",
+   "options": [
+    "Fast, brief responses",
+    "Slow, long-lasting responses",
+    "Opening an ion channel directly",
+    "Use only by amino acid transmitters"
+   ],
+   "answer": 1,
+   "why": "G protein, adenylate cyclase, cAMP."
+  },
+  {
+   "q": "Acetylcholinesterase splits acetylcholine into:",
+   "options": [
+    "Choline and acetyl CoA",
+    "Acetate and choline",
+    "Acetate and glutamate",
+    "Choline and GABA"
+   ],
+   "answer": 1,
+   "why": "Choline is recycled; ChAT rebuilds ACh."
+  },
+  {
+   "q": "SSRIs act by:",
+   "options": [
+    "Blocking serotonin receptors",
+    "Preventing serotonin reuptake",
+    "Destroying serotonin in the cleft",
+    "Blocking Ca²⁺ entry"
+   ],
+   "answer": 1,
+   "why": ""
+  },
+  {
+   "q": "Tetanus toxin causes spasms by:",
+   "options": [
+    "Blocking nicotinic ACh receptors at the end plate",
+    "Preventing GABA release from inhibitory neurons",
+    "Increasing acetylcholinesterase activity in the cleft",
+    "Blocking voltage-gated K⁺ channels in motor axons"
+   ],
+   "answer": 1,
+   "why": "Loss of inhibition."
+  },
+  {
+   "q": "Which receptor is tonic (slowly adapting)?",
+   "options": [
+    "Touch receptor under a watch strap",
+    "Olfactory receptor",
+    "Muscle proprioceptor",
+    "Temperature receptor"
+   ],
+   "answer": 2,
+   "why": "Posture needs continuous information."
+  },
+  {
+   "q": "In sensitization, serotonin increases transmitter release by:",
+   "options": [
+    "Opening more K⁺ channels, shortening the action potential",
+    "Blocking K⁺ channels via cAMP, prolonging the action potential",
+    "Blocking presynaptic Ca²⁺ channels via cGMP",
+    "Increasing acetylcholinesterase in the synaptic cleft"
+   ],
+   "answer": 1,
+   "why": ""
+  },
+  {
+   "q": "Where do pain and temperature fibres cross the midline?",
+   "options": [
+    "Medulla",
+    "Spinal cord",
+    "Thalamus",
+    "Cortex"
+   ],
+   "answer": 1,
+   "why": "Fine touch and vibration cross in the medulla."
+  },
+  {
+   "q": "Stimulus intensity is coded by:",
+   "options": [
+    "Larger action potential amplitude in the afferent",
+    "Number of receptors and action potential frequency",
+    "Which ion carries the receptor potential",
+    "Faster conduction velocity of the afferent axon"
+   ],
+   "answer": 1,
+   "why": "Action potentials are all-or-none."
+  },
+  {
+   "q": "Receptor potentials differ from action potentials because they:",
+   "options": [
+    "Are all-or-none and always the same size",
+    "Have no refractory period and can summate",
+    "Are always hyperpolarizing in direction",
+    "Travel long distances without decrement"
+   ],
+   "answer": 1,
+   "why": ""
+  },
+  {
+   "q": "Two-point discrimination is best in areas with:",
+   "options": [
+    "Large receptive fields",
+    "Small, dense receptive fields",
+    "No lateral inhibition",
+    "Only tonic receptors"
+   ],
+   "answer": 1,
+   "why": "Fingertips."
+  },
+  {
+   "q": "Which afferents are not consciously perceived?",
+   "options": [
+    "Somatic",
+    "Visceral",
+    "Special sense",
+    "Proprioceptive"
+   ],
+   "answer": 1,
+   "why": "From organs of the body cavities."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "ap",
+   "options": [
+    "Ending the signal",
+    "Receptor activation",
+    "Presynaptic action potential",
+    "Neurotransmitter release"
+   ],
+   "answer": 2,
+   "why": "The arrow points to: Presynaptic action potential. Arrives at the axon terminal purely by electrical conduction along the axon."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "ca",
+   "options": [
+    "Calcium entry",
+    "Receptor activation",
+    "Axon hillock",
+    "Postsynaptic potential"
+   ],
+   "answer": 0,
+   "why": "The arrow points to: Calcium entry. Depolarization of the terminal opens voltage-gated Ca²⁺ channels; Ca²⁺ entry is the trigger for release."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "rel",
+   "options": [
+    "Axon hillock",
+    "Neurotransmitter release",
+    "Postsynaptic potential",
+    "Postsynaptic ion channels"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: Neurotransmitter release. Ca²⁺ causes synaptic vesicles to fuse with the presynaptic membrane and release their transmitter by exocytosis."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "bind",
+   "options": [
+    "Ending the signal",
+    "Receptor activation",
+    "Neurotransmitter release",
+    "Postsynaptic ion channels"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: Receptor activation. Transmitter diffuses across the cleft and binds receptors on the postsynaptic membrane."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "ion",
+   "options": [
+    "Postsynaptic potential",
+    "Receptor activation",
+    "Postsynaptic ion channels",
+    "Presynaptic action potential"
+   ],
+   "answer": 2,
+   "why": "The arrow points to: Postsynaptic ion channels. Binding opens channels: Na⁺ in gives excitation, Cl⁻ in gives inhibition."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "psp",
+   "options": [
+    "Postsynaptic potential",
+    "Calcium entry",
+    "Presynaptic action potential",
+    "Neurotransmitter release"
+   ],
+   "answer": 0,
+   "why": "The arrow points to: Postsynaptic potential. A graded potential of about ±10 mV: EPSP (depolarizing) or IPSP (hyperpolarizing)."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "hill",
+   "options": [
+    "Neurotransmitter release",
+    "Postsynaptic potential",
+    "Axon hillock",
+    "Receptor activation"
+   ],
+   "answer": 2,
+   "why": "The arrow points to: Axon hillock. Keeps score of all EPSPs and IPSPs; an action potential fires only if the sum reaches threshold (-50 to -55 mV)."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "off",
+   "options": [
+    "Neurotransmitter release",
+    "Receptor activation",
+    "Ending the signal",
+    "Postsynaptic ion channels"
+   ],
+   "answer": 2,
+   "why": "The arrow points to: Ending the signal. Active reuptake into the terminal or glia, enzymatic breakdown (acetylcholinesterase) and diffusion out of the cleft."
+  }
+ ],
+ "cards": [
+  {
+   "id": "x0",
+   "type": "text",
+   "front": "Six events at a synapse?",
+   "back": "AP reaches terminal → Ca²⁺ entry → transmitter exocytosis → receptor binding → ion channels open → graded potential (PSP)."
+  },
+  {
+   "id": "x1",
+   "type": "text",
+   "front": "EPSP vs IPSP?",
+   "back": "EPSP: positive ions in (Na⁺), depolarizes. IPSP: negative ions in (Cl⁻), hyperpolarizes."
+  },
+  {
+   "id": "x2",
+   "type": "text",
+   "front": "Key voltages?",
+   "back": "Rest -70 mV; threshold -50 to -55 mV; each PSP about ±10 mV."
+  },
+  {
+   "id": "x3",
+   "type": "text",
+   "front": "Temporal vs spatial summation?",
+   "back": "Temporal: one neuron, repeated rapid firing. Spatial: many neurons, same time, different sites."
+  },
+  {
+   "id": "x4",
+   "type": "text",
+   "front": "Main excitatory and inhibitory transmitters?",
+   "back": "Glutamate; GABA (and glycine)."
+  },
+  {
+   "id": "x5",
+   "type": "text",
+   "front": "Classes by structure?",
+   "back": "ACh; biogenic amines (catecholamines, serotonin); amino acids (glutamate, glycine, GABA); peptides (endorphins, substance P); ATP and gases (NO)."
+  },
+  {
+   "id": "x6",
+   "type": "text",
+   "front": "Direct vs indirect receptors?",
+   "back": "Direct = ion channel, fast (ACh, amino acids). Indirect = second messenger, slow and long-lasting (amines, peptides, gases)."
+  },
+  {
+   "id": "x7",
+   "type": "text",
+   "front": "Three ways to end the signal?",
+   "back": "Reuptake (active transport), enzymes (AChE), diffusion."
+  },
+  {
+   "id": "x8",
+   "type": "text",
+   "front": "ACh recycling?",
+   "back": "AChE: ACh → acetate + choline. Choline taken back; ChAT: choline + acetyl CoA → ACh."
+  },
+  {
+   "id": "x9",
+   "type": "text",
+   "front": "Tonic vs phasic receptors?",
+   "back": "Tonic: slow/no adaptation, continuous firing (proprioceptors). Phasic: fast adaptation, bursts (touch, smell, temperature)."
+  },
+  {
+   "id": "x10",
+   "type": "text",
+   "front": "Sensitization mechanism?",
+   "back": "Serotonin → cAMP → K⁺ channels blocked → longer presynaptic AP → more Ca²⁺ → more release."
+  },
+  {
+   "id": "x11",
+   "type": "text",
+   "front": "Three orders of sensory neurons?",
+   "back": "1st: receptor to dorsal horn/medulla. 2nd: crosses, to thalamus. 3rd: thalamus to cortex."
+  },
+  {
+   "id": "img-ap",
+   "type": "image",
+   "target": "ap",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Presynaptic action potential. Arrives at the axon terminal purely by electrical conduction along the axon."
+  },
+  {
+   "id": "img-ca",
+   "type": "image",
+   "target": "ca",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Calcium entry. Depolarization of the terminal opens voltage-gated Ca²⁺ channels; Ca²⁺ entry is the trigger for release."
+  },
+  {
+   "id": "img-rel",
+   "type": "image",
+   "target": "rel",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Neurotransmitter release. Ca²⁺ causes synaptic vesicles to fuse with the presynaptic membrane and release their transmitter by exocytosis."
+  },
+  {
+   "id": "img-bind",
+   "type": "image",
+   "target": "bind",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Receptor activation. Transmitter diffuses across the cleft and binds receptors on the postsynaptic membrane."
+  },
+  {
+   "id": "img-ion",
+   "type": "image",
+   "target": "ion",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Postsynaptic ion channels. Binding opens channels: Na⁺ in gives excitation, Cl⁻ in gives inhibition."
+  },
+  {
+   "id": "img-psp",
+   "type": "image",
+   "target": "psp",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Postsynaptic potential. A graded potential of about ±10 mV: EPSP (depolarizing) or IPSP (hyperpolarizing)."
+  },
+  {
+   "id": "img-hill",
+   "type": "image",
+   "target": "hill",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Axon hillock. Keeps score of all EPSPs and IPSPs; an action potential fires only if the sum reaches threshold (-50 to -55 mV)."
+  },
+  {
+   "id": "img-off",
+   "type": "image",
+   "target": "off",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Ending the signal. Active reuptake into the terminal or glia, enzymatic breakdown (acetylcholinesterase) and diffusion out of the cleft."
+  }
+ ],
+ "deeper": [
+  {
+   "title": "Electrical versus chemical synapses",
+   "html": "<p>Electrical synapses link cells through gap junctions, so current flows straight from one cell to the next with almost no delay and in both directions. That suits cells that must fire together, such as cardiac muscle and some smooth muscle. Chemical synapses are slower (a fraction of a millisecond of synaptic delay) and one-way, but the transmitter step lets the signal be amplified, inhibited, summed and changed by drugs. That flexibility is why almost all CNS signalling, and all of pharmacology at the synapse, is chemical.</p><p class='src'>Standard comparison, added to cover the lecture's learning objective.</p>"
+  },
+  {
+   "title": "Why one EPSP is never enough",
+   "html": "<p>The lecture's numbers make the point: a neuron rests at -70 mV, fires at about -50 to -55 mV, and a single PSP moves it by about 10 mV. A neuron is therefore a counter, not a relay. It adds the EPSPs and IPSPs arriving from thousands of synapses (convergence) at the axon hillock, and fires only when excitation wins. This is what lets the nervous system make decisions rather than just pass messages on.</p><p class='src'>Source: the lecture's summation slides.</p>"
+  },
+  {
+   "title": "Sensitization and pain",
+   "html": "<p>The sensitization mechanism in the lecture is the cellular basis of why a burned or bruised area hurts more on the next touch. Serotonin released after the injury blocks presynaptic K⁺ channels through cAMP, so each action potential lasts longer, lets in more Ca²⁺ and releases more transmitter. The same input now produces a bigger output.</p><p class='src'>Source: the lecture's neuron sensitization slide.</p>"
+  }
+ ],
+ "resources": [
+  {
+   "title": "Synaptic transmission (TeachMePhysiology)",
+   "url": "https://teachmephysiology.com/nervous-system/synapses/synaptic-transmission/",
+   "kind": "Article",
+   "why": "The steps of chemical transmission, with diagrams.",
+   "note": ""
+  },
+  {
+   "title": "Communication between neurons (OpenStax A&P 2e)",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/12-5-communication-between-neurons",
+   "kind": "Book",
+   "why": "Synapses, EPSPs, IPSPs, summation and neurotransmitter classes.",
+   "note": ""
+  }
+ ],
+ "checks": [],
+ "sources": [
+  {
+   "name": "Synaptic transmission (TeachMePhysiology)",
+   "url": "https://teachmephysiology.com/nervous-system/synapses/synaptic-transmission/"
+  },
+  {
+   "name": "Communication between neurons (OpenStax A&P 2e)",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/12-5-communication-between-neurons"
+  }
+ ],
+ "verified": "17 Oct 2026"
+};
+window.SINA = window.SINA || {subjects:[], lectures:{}};
+SINA.lectures["physio-muscle-1"] = {
+ "id": "physio-muscle-1",
+ "subject": "physio",
+ "group": "Muscle",
+ "title": "Muscle physiology, part I: skeletal muscle structure",
+ "sourceFile": "CovasaMusclePhysiology-pages-1.pdf (Neuromuscular Physiology, Prof. Mihai Covasa, 2025-2026)",
+ "sourceUrl": "https://drive.google.com/file/d/14jvF2hqBv4Zc0cYgPAFBjMDTW36MGrvK/view?usp=drivesdk",
+ "buildNote": "<strong>Built from the lecture slides.</strong> Slides that only show pictures are covered in outline. If your professor says something different, trust your professor.",
+ "summary": [
+  {
+   "id": "s0",
+   "title": "The big picture",
+   "html": "<p>Muscle turns chemical energy (ATP) into force. This lecture builds the machine: three muscle types, the layers from whole muscle down to the sarcomere, the proteins that make the filaments, and the <strong>sliding filament</strong> idea that explains contraction. Part II (on the site) then follows the signal from nerve to muscle and looks at force, energy, fatigue and disease.</p><p>One rule to keep: muscle can only <strong>pull</strong>. It produces force by shortening, never by pushing or lengthening.</p>"
+  },
+  {
+   "id": "s1",
+   "title": "Three types of muscle",
+   "html": "<table><tr><th></th><th>Skeletal</th><th>Smooth</th><th>Cardiac</th></tr><tr><td>Where</td><td>Attached to bones</td><td>Walls of hollow organs, vessels, eye, glands, skin</td><td>Heart only</td></tr><tr><td>Nuclei</td><td><strong>Many, peripheral</strong></td><td>One, central</td><td>One, central</td></tr><tr><td>Striations</td><td>Yes</td><td><strong>No</strong> (no sarcomeres)</td><td>Yes</td></tr><tr><td>Control</td><td>Voluntary (and reflexes); somatic nerves</td><td>Involuntary; autonomic and hormones</td><td>Involuntary; pacemaker, autonomic, adrenaline</td></tr><tr><td>Junction</td><td>Neuromuscular junction (specific)</td><td>Varicosities (diffuse)</td><td>Varicosities (diffuse)</td></tr><tr><td>Ca²⁺ source</td><td><strong>SR</strong></td><td>SR and ECF</td><td>SR and ECF</td></tr><tr><td>Ca²⁺-binding protein</td><td><strong>Troponin</strong></td><td><strong>Calmodulin</strong></td><td>Troponin</td></tr><tr><td>Gap junctions</td><td>No</td><td>Yes (single-unit)</td><td>Yes (intercalated discs)</td></tr><tr><td>Myosin ATPase</td><td><strong>Fastest</strong></td><td><strong>Slowest</strong></td><td>Intermediate</td></tr><tr><td>Recruitment</td><td>Yes</td><td>Multi-unit only</td><td>No</td></tr></table><p>Skeletal fibres form when <strong>100 or more myoblasts</strong> (mesodermal cells) fuse during development.</p>"
+  },
+  {
+   "id": "s2",
+   "title": "Properties and functions",
+   "html": "<ul><li><strong>Contractility</strong>: shortens with force as filaments slide; it does <strong>not</strong> produce force by lengthening or pushing.</li><li><strong>Conductivity</strong>: propagates action potentials along the sarcolemma, like an axon.</li><li><strong>Excitability</strong>: responds to a stimulus (neurotransmitter) by changing membrane potential.</li><li><strong>Extensibility</strong>: can be stretched.</li><li><strong>Elasticity</strong>: recoils to resting length.</li></ul><p>Functions: movement (bones, speech, breathing, swallowing), posture and joint stability, respiration, <strong>heat production</strong>, holding organs in place, controlling flow through organs and vessels, and the heartbeat. A little less than half of body mass is skeletal muscle.</p>"
+  },
+  {
+   "id": "s3",
+   "title": "Inside a muscle fibre",
+   "html": "<table><tr><th>Term</th><th>Meaning</th></tr><tr><td>Muscle fibre</td><td>One muscle cell (multinucleate)</td></tr><tr><td>Sarcolemma</td><td>Plasma membrane; a change in its potential starts contraction</td></tr><tr><td>Sarcoplasm</td><td>Cytoplasm</td></tr><tr><td>Sarcoplasmic reticulum (SR)</td><td>Endoplasmic reticulum around each myofibril; its <strong>terminal cisternae</strong> concentrate Ca²⁺ with pumps and release it to start contraction</td></tr><tr><td>T-tubules</td><td>Infoldings of the sarcolemma that carry the action potential deep into the fibre, so the whole fibre contracts at once</td></tr><tr><td><strong>Triad</strong></td><td><strong>One T-tubule + two terminal cisternae</strong></td></tr><tr><td>Myofibrils</td><td>Lengthwise bundles of myofilaments: <strong>thin (actin)</strong> and <strong>thick (myosin)</strong></td></tr></table><p>The number of fibres is <strong>fixed at birth</strong>: training enlarges fibres (<strong>hypertrophy</strong>), it does not add new ones. A fibre can hold about 100,000 sarcomeres end to end.</p>"
+  },
+  {
+   "id": "s4",
+   "title": "Muscle proteins and myosin",
+   "html": "<ul><li><strong>Contractile</strong>: actin and myosin, which produce movement.</li><li><strong>Regulatory</strong>: tropomyosin and troponin, which control contraction through Ca²⁺ binding.</li><li><strong>Structural</strong>: titin (spans half a sarcomere; structural, signalling and mechanical roles), nebulin, CapZ.</li></ul><p>The body has three <strong>motor proteins</strong>: <strong>myosin</strong> (with actin: all muscle contraction), <strong>kinesins</strong> (walk organelles along microtubules) and <strong>dyneins</strong> (bend cilia and flagella).</p><p><strong>Myosin</strong> is a <strong>hexamer: 2 heavy chains + 4 light chains</strong>. The <strong>head</strong> (S1 fragment) holds all the motor function: an N-terminal catalytic domain with the <strong>nucleotide (ATP) binding site</strong> and the actin-binding site. The <strong>neck</strong> acts as a <strong>lever arm</strong>: small changes at the ATP site swing it to move the end 5 to 10 nm, the <strong>power stroke</strong>. The tails coil together (two α-helices) and pack into the thick filament. Myosin II is a <strong>plus-end</strong> actin motor.</p>"
+  },
+  {
+   "id": "s5",
+   "title": "The sarcomere",
+   "html": "<table><tr><th>Region</th><th>Name means</th><th>Contains</th></tr><tr><td><strong>Z disc</strong></td><td>'Zwischen', between</td><td>Boundary between sarcomeres; thin filaments anchored here (CapZ)</td></tr><tr><td><strong>I band</strong></td><td>Isotropic (light)</td><td>Thin filaments only</td></tr><tr><td><strong>A band</strong></td><td>Anisotropic (dark)</td><td>The full length of the thick filaments (with overlapping thin ones)</td></tr><tr><td><strong>H zone</strong></td><td>'Helles', clear</td><td>Thick filaments only, no overlap</td></tr><tr><td><strong>M line</strong></td><td>'Mittel', middle</td><td>Centre of the sarcomere, links thick filaments</td></tr></table><p>Filaments are 1 to 2 µm long; thin filaments about <strong>8 nm</strong> wide, thick about <strong>16 nm</strong>; about <strong>2 thin filaments per thick filament</strong>. The overlap pattern creates the striations.</p><p><strong>Membrane proteins</strong>: sarcolemma: voltage-gated Na⁺ channels (propagate APs), the <strong>DHP receptor</strong> (a voltage-gated Ca²⁺ channel in the T-tubule) and the Na⁺/K⁺ ATPase. SR: <strong>ryanodine receptors</strong> (Ca²⁺ channels gated by the DHP receptors) and the <strong>SR Ca²⁺ ATPase</strong> (SERCA, removes Ca²⁺ from the sarcoplasm).</p>"
+  },
+  {
+   "id": "s6",
+   "title": "Sliding filaments and types of contraction",
+   "html": "<ul><li>Thin (actin) filaments <strong>slide over</strong> thick (myosin) filaments towards the M line, shortening the sarcomere from Z disc to Z disc.</li><li><strong>Actin and myosin do not change length.</strong> The <strong>A band stays the same</strong>; the <strong>I band and H zone shorten</strong> (and can disappear at full contraction).</li><li>ATP hydrolysis powers the myosin head to <strong>detach and re-cock</strong>; each cycle pulls actin a step.</li><li>During relaxation sarcomeres lengthen again.</li><li><strong>Elastic components</strong> (titin, endomysium, perimysium, epimysium, tendons) stretch first and then transfer the tension to the bone.</li></ul><p><strong>Isotonic</strong> contraction: the muscle <strong>shortens</strong> (load moves). <strong>Isometric</strong> contraction: myosin heads rotate and generate tension, but the thin filaments cannot slide because the opposing load is too great, so the muscle does <strong>not shorten</strong>.</p><p>Smooth muscle has <strong>no sarcomeres</strong>, which is one reason it is slow; excitation-contraction coupling is mechanical in skeletal muscle and chemical (second messengers) in smooth muscle.</p>"
+  }
+ ],
+ "exam": [
+  "Muscle only pulls: force by shortening, never by pushing.",
+  "Skeletal: multinucleate, peripheral nuclei, striated, voluntary, Ca²⁺ from SR, troponin.",
+  "Smooth: one central nucleus, no sarcomeres, calmodulin, slowest myosin ATPase.",
+  "Cardiac: striated, involuntary, intercalated discs with gap junctions, pacemaker.",
+  "Five properties: contractility, conductivity, excitability, extensibility, elasticity.",
+  "Triad = one T-tubule + two terminal cisternae of the SR.",
+  "Fibre number fixed at birth; training causes hypertrophy.",
+  "Myosin hexamer: 2 heavy + 4 light chains; head has the ATP and actin sites.",
+  "Z (between), I (isotropic, thin only), A (anisotropic, thick length), H (helles, thick only), M (middle).",
+  "Thin 8 nm, thick 16 nm, about 2 thin per thick.",
+  "DHP receptor (T-tubule Ca²⁺ channel) gates the ryanodine receptor (SR); SERCA pumps Ca²⁺ back.",
+  "Sliding: filaments keep their length; A band constant; I band and H zone shorten.",
+  "Isotonic shortens; isometric develops tension without shortening."
+ ],
+ "visual": {
+  "kind": "model",
+  "intro": "",
+  "figure": {
+   "viewBox": "0 0 760 420",
+   "alt": "From whole muscle to filaments",
+   "caption": "The structural hierarchy of skeletal muscle and the proteins of the sarcomere. Schematic drawn for this site.",
+   "base": "<defs><marker id=\"ah\" markerWidth=\"10\" markerHeight=\"8\" refX=\"9\" refY=\"4\" orient=\"auto\"><path d=\"M0,0 L10,4 L0,8 Z\" fill=\"#8a8a8a\"/></marker></defs><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"185\" y1=\"70\" x2=\"205\" y2=\"70\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"375\" y1=\"70\" x2=\"395\" y2=\"70\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"565\" y1=\"70\" x2=\"585\" y2=\"70\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"665\" y1=\"100\" x2=\"665\" y2=\"180\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"585\" y1=\"210\" x2=\"565\" y2=\"210\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"395\" y1=\"210\" x2=\"380\" y2=\"210\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"205\" y1=\"210\" x2=\"185\" y2=\"210\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"480\" y1=\"100\" x2=\"480\" y2=\"320\"/>",
+   "parts": {
+    "musc": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2d7cf\" x=\"15\" y=\"40\" width=\"170\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Whole muscle",
+      "(epimysium)"
+     ],
+     "lx": 100.0,
+     "ly": 68.0
+    },
+    "fasc": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#cfe3f2\" x=\"205\" y=\"40\" width=\"170\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Fascicle",
+      "(perimysium)"
+     ],
+     "lx": 290.0,
+     "ly": 68.0
+    },
+    "fib": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d7edd2\" x=\"395\" y=\"40\" width=\"170\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Muscle fibre = cell",
+      "(endomysium)"
+     ],
+     "lx": 480.0,
+     "ly": 68.0
+    },
+    "myof": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2e2a8\" x=\"585\" y=\"40\" width=\"160\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Myofibril",
+      ""
+     ],
+     "lx": 665.0,
+     "ly": 68.0
+    },
+    "sarc": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#e3d5f0\" x=\"585\" y=\"180\" width=\"160\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Sarcomere",
+      "Z disc to Z disc"
+     ],
+     "lx": 665.0,
+     "ly": 208.0
+    },
+    "thick": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f7d9b8\" x=\"395\" y=\"180\" width=\"170\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Thick filament:",
+      "myosin (16 nm)"
+     ],
+     "lx": 480.0,
+     "ly": 208.0
+    },
+    "thin": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d9ecec\" x=\"205\" y=\"180\" width=\"175\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Thin: actin,",
+      "tropomyosin, troponin"
+     ],
+     "lx": 292.5,
+     "ly": 208.0
+    },
+    "titin": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2d7cf\" x=\"15\" y=\"180\" width=\"170\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Titin, nebulin,",
+      "CapZ (structural)"
+     ],
+     "lx": 100.0,
+     "ly": 208.0
+    },
+    "triad": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#cfe3f2\" x=\"395\" y=\"320\" width=\"170\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Triad: T-tubule +",
+      "2 terminal cisternae"
+     ],
+     "lx": 480.0,
+     "ly": 348.0
+    }
+   },
+   "arrows": {
+    "musc": [
+     {
+      "t": [
+       15.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "fasc": [
+     {
+      "t": [
+       205.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "fib": [
+     {
+      "t": [
+       395.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "myof": [
+     {
+      "t": [
+       585.0,
+       48.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "sarc": [
+     {
+      "t": [
+       585.0,
+       188.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "thick": [
+     {
+      "t": [
+       395.0,
+       188.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "thin": [
+     {
+      "t": [
+       205.0,
+       188.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "titin": [
+     {
+      "t": [
+       15.0,
+       188.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "triad": [
+     {
+      "t": [
+       395.0,
+       328.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ]
+   }
+  }
+ },
+ "mcqs": [
+  {
+   "q": "Which statement about skeletal muscle fibres is correct?",
+   "options": [
+    "They have one central nucleus",
+    "They are multinucleate with peripheral nuclei",
+    "They are joined by gap junctions",
+    "They lack sarcomeres"
+   ],
+   "answer": 1,
+   "why": "Formed by fusion of 100+ myoblasts."
+  },
+  {
+   "q": "Which Ca²⁺-binding regulatory protein is used by smooth muscle?",
+   "options": [
+    "Troponin",
+    "Calmodulin",
+    "Tropomyosin",
+    "Titin"
+   ],
+   "answer": 1,
+   "why": "Skeletal and cardiac use troponin."
+  },
+  {
+   "q": "Which muscle type has the fastest myosin ATPase?",
+   "options": [
+    "Smooth",
+    "Cardiac",
+    "Skeletal",
+    "All are equal"
+   ],
+   "answer": 2,
+   "why": "Smooth is slowest, cardiac intermediate."
+  },
+  {
+   "q": "The source of Ca²⁺ for skeletal muscle contraction is:",
+   "options": [
+    "Extracellular fluid only",
+    "The sarcoplasmic reticulum",
+    "Mitochondria",
+    "The nucleus"
+   ],
+   "answer": 1,
+   "why": "Smooth and cardiac also use ECF."
+  },
+  {
+   "q": "A triad is formed by:",
+   "options": [
+    "Two T-tubules and one cisterna",
+    "One T-tubule and two terminal cisternae",
+    "Three myofibrils",
+    "Actin, myosin and titin"
+   ],
+   "answer": 1,
+   "why": ""
+  },
+  {
+   "q": "Strength training increases muscle size mainly by:",
+   "options": [
+    "Adding new muscle fibres",
+    "Enlarging existing fibres (hypertrophy)",
+    "Converting smooth to skeletal muscle",
+    "Increasing the number of motor neurons"
+   ],
+   "answer": 1,
+   "why": "Fibre number is fixed at birth."
+  },
+  {
+   "q": "Myosin is a hexamer made of:",
+   "options": [
+    "2 heavy and 4 light chains",
+    "4 heavy and 2 light chains",
+    "6 identical chains",
+    "3 heavy and 3 light chains"
+   ],
+   "answer": 0,
+   "why": ""
+  },
+  {
+   "q": "Which part of myosin holds the ATP-binding site?",
+   "options": [
+    "The tail",
+    "The head (S1, catalytic domain)",
+    "The light chains only",
+    "The coiled coil"
+   ],
+   "answer": 1,
+   "why": ""
+  },
+  {
+   "q": "Which band contains only thin filaments?",
+   "options": [
+    "A band",
+    "H zone",
+    "I band",
+    "M line"
+   ],
+   "answer": 2,
+   "why": "I = isotropic, light."
+  },
+  {
+   "q": "During contraction, which region keeps the same length?",
+   "options": [
+    "I band",
+    "H zone",
+    "A band",
+    "Sarcomere"
+   ],
+   "answer": 2,
+   "why": "It equals the thick filament length."
+  },
+  {
+   "q": "Thick filaments are made of:",
+   "options": [
+    "Actin",
+    "Myosin",
+    "Titin",
+    "Troponin"
+   ],
+   "answer": 1,
+   "why": "About 250 myosin II molecules."
+  },
+  {
+   "q": "The DHP receptor is:",
+   "options": [
+    "A Ca²⁺ pump in the SR membrane",
+    "A voltage-gated Ca²⁺ channel in the T-tubule",
+    "The nicotinic ACh receptor of the end plate",
+    "A K⁺ leak channel of the sarcolemma"
+   ],
+   "answer": 1,
+   "why": "It gates the ryanodine receptor."
+  },
+  {
+   "q": "Which protein pumps Ca²⁺ back into the SR?",
+   "options": [
+    "Ryanodine receptor",
+    "SR Ca²⁺ ATPase (SERCA)",
+    "Na⁺/K⁺ ATPase",
+    "Calmodulin"
+   ],
+   "answer": 1,
+   "why": ""
+  },
+  {
+   "q": "In an isometric contraction:",
+   "options": [
+    "The muscle shortens",
+    "Tension develops without shortening",
+    "Filaments change length",
+    "No cross-bridges form"
+   ],
+   "answer": 1,
+   "why": ""
+  },
+  {
+   "q": "Which is a structural (not contractile) protein?",
+   "options": [
+    "Actin",
+    "Myosin",
+    "Titin",
+    "Troponin"
+   ],
+   "answer": 2,
+   "why": "Troponin is regulatory."
+  },
+  {
+   "q": "The motor protein that bends cilia and flagella is:",
+   "options": [
+    "Myosin",
+    "Kinesin",
+    "Dynein",
+    "Actin"
+   ],
+   "answer": 2,
+   "why": "Kinesins move organelles."
+  },
+  {
+   "q": "Which property describes recoil to resting length?",
+   "options": [
+    "Extensibility",
+    "Elasticity",
+    "Conductivity",
+    "Contractility"
+   ],
+   "answer": 1,
+   "why": ""
+  },
+  {
+   "q": "Smooth muscle is slow partly because it:",
+   "options": [
+    "Has more sarcomeres",
+    "Lacks sarcomeres",
+    "Uses troponin",
+    "Has no actin"
+   ],
+   "answer": 1,
+   "why": ""
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "musc",
+   "options": [
+    "Structural proteins",
+    "Whole muscle",
+    "Muscle fibre",
+    "Myofibril"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: Whole muscle. Attached to bone by tendons; wrapped in epimysium."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "fasc",
+   "options": [
+    "Structural proteins",
+    "Fascicle",
+    "Sarcomere",
+    "Whole muscle"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: Fascicle. A bundle of muscle fibres wrapped in perimysium."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "fib",
+   "options": [
+    "Sarcomere",
+    "Fascicle",
+    "Muscle fibre",
+    "Thick filament"
+   ],
+   "answer": 2,
+   "why": "The arrow points to: Muscle fibre. One multinucleate cell formed by fusion of 100 or more myoblasts; its number is fixed at birth."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "myof",
+   "options": [
+    "Thick filament",
+    "Myofibril",
+    "Structural proteins",
+    "Fascicle"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: Myofibril. Lengthwise subdivision of the fibre, made of myofilaments in repeating sarcomeres."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "sarc",
+   "options": [
+    "Thick filament",
+    "Muscle fibre",
+    "Sarcomere",
+    "Whole muscle"
+   ],
+   "answer": 2,
+   "why": "The arrow points to: Sarcomere. The functional unit, from one Z disc to the next; it shortens during contraction."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "thick",
+   "options": [
+    "Fascicle",
+    "Sarcomere",
+    "Thin filament",
+    "Thick filament"
+   ],
+   "answer": 3,
+   "why": "The arrow points to: Thick filament. About 250 myosin II molecules; about 16 nm wide."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "thin",
+   "options": [
+    "Muscle fibre",
+    "Triad",
+    "Thick filament",
+    "Thin filament"
+   ],
+   "answer": 3,
+   "why": "The arrow points to: Thin filament. Actin polymer with the regulatory proteins tropomyosin and troponin; about 8 nm wide."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "titin",
+   "options": [
+    "Sarcomere",
+    "Fascicle",
+    "Myofibril",
+    "Structural proteins"
+   ],
+   "answer": 3,
+   "why": "The arrow points to: Structural proteins. Titin is elastic and anchors myosin to the Z disc; nebulin is non-elastic along actin; CapZ caps actin at the Z disc."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "triad",
+   "options": [
+    "Thin filament",
+    "Myofibril",
+    "Triad",
+    "Sarcomere"
+   ],
+   "answer": 2,
+   "why": "The arrow points to: Triad. One T-tubule between two terminal cisternae of the sarcoplasmic reticulum, which store and release Ca²⁺."
+  }
+ ],
+ "cards": [
+  {
+   "id": "x0",
+   "type": "text",
+   "front": "Skeletal vs smooth vs cardiac: nuclei and striations?",
+   "back": "Skeletal: many peripheral nuclei, striated. Smooth: one central nucleus, not striated. Cardiac: one central nucleus, striated, intercalated discs."
+  },
+  {
+   "id": "x1",
+   "type": "text",
+   "front": "Ca²⁺ source and binding protein by muscle type?",
+   "back": "Skeletal: SR, troponin. Smooth: SR + ECF, calmodulin. Cardiac: SR + ECF, troponin."
+  },
+  {
+   "id": "x2",
+   "type": "text",
+   "front": "Five properties of muscle?",
+   "back": "Contractility, conductivity, excitability, extensibility, elasticity."
+  },
+  {
+   "id": "x3",
+   "type": "text",
+   "front": "What is a triad?",
+   "back": "One T-tubule flanked by two terminal cisternae of the SR."
+  },
+  {
+   "id": "x4",
+   "type": "text",
+   "front": "Three classes of muscle protein?",
+   "back": "Contractile (actin, myosin), regulatory (tropomyosin, troponin), structural (titin, nebulin, CapZ)."
+  },
+  {
+   "id": "x5",
+   "type": "text",
+   "front": "Three motor proteins?",
+   "back": "Myosin (muscle), kinesin (organelles on microtubules), dynein (cilia, flagella)."
+  },
+  {
+   "id": "x6",
+   "type": "text",
+   "front": "Myosin structure?",
+   "back": "Hexamer: 2 heavy + 4 light chains. Head (S1) has the ATP and actin sites; neck is the lever arm (5-10 nm stroke)."
+  },
+  {
+   "id": "x7",
+   "type": "text",
+   "front": "Sarcomere band names?",
+   "back": "Z = zwischen (between), I = isotropic, A = anisotropic, H = helles (clear), M = mittel (middle)."
+  },
+  {
+   "id": "x8",
+   "type": "text",
+   "front": "What shortens in contraction?",
+   "back": "Sarcomere, I band, H zone. A band and filament lengths stay the same."
+  },
+  {
+   "id": "x9",
+   "type": "text",
+   "front": "DHP vs ryanodine receptor?",
+   "back": "DHP: voltage-gated Ca²⁺ channel in the T-tubule. Ryanodine: Ca²⁺ release channel of the SR, gated by DHP."
+  },
+  {
+   "id": "x10",
+   "type": "text",
+   "front": "Isotonic vs isometric?",
+   "back": "Isotonic: shortens, load moves. Isometric: tension without shortening."
+  },
+  {
+   "id": "img-musc",
+   "type": "image",
+   "target": "musc",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Whole muscle. Attached to bone by tendons; wrapped in epimysium."
+  },
+  {
+   "id": "img-fasc",
+   "type": "image",
+   "target": "fasc",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Fascicle. A bundle of muscle fibres wrapped in perimysium."
+  },
+  {
+   "id": "img-fib",
+   "type": "image",
+   "target": "fib",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Muscle fibre. One multinucleate cell formed by fusion of 100 or more myoblasts; its number is fixed at birth."
+  },
+  {
+   "id": "img-myof",
+   "type": "image",
+   "target": "myof",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Myofibril. Lengthwise subdivision of the fibre, made of myofilaments in repeating sarcomeres."
+  },
+  {
+   "id": "img-sarc",
+   "type": "image",
+   "target": "sarc",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Sarcomere. The functional unit, from one Z disc to the next; it shortens during contraction."
+  },
+  {
+   "id": "img-thick",
+   "type": "image",
+   "target": "thick",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Thick filament. About 250 myosin II molecules; about 16 nm wide."
+  },
+  {
+   "id": "img-thin",
+   "type": "image",
+   "target": "thin",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Thin filament. Actin polymer with the regulatory proteins tropomyosin and troponin; about 8 nm wide."
+  },
+  {
+   "id": "img-titin",
+   "type": "image",
+   "target": "titin",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Structural proteins. Titin is elastic and anchors myosin to the Z disc; nebulin is non-elastic along actin; CapZ caps actin at the Z disc."
+  },
+  {
+   "id": "img-triad",
+   "type": "image",
+   "target": "triad",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Triad. One T-tubule between two terminal cisternae of the sarcoplasmic reticulum, which store and release Ca²⁺."
+  }
+ ],
+ "deeper": [
+  {
+   "title": "Why the A band never changes",
+   "html": "<p>The A band is defined by the thick filaments, and myosin filaments do not change length. When the muscle contracts, the thin filaments slide in from both sides, so the light zones that contain only one type of filament (the I band with actin only, the H zone with myosin only) get smaller, while the dark A band stays exactly as wide. Ask yourself which filament defines each band and the answer to any 'what shortens' question follows.</p><p class='src'>Source: the lecture's sliding filament slides.</p>"
+  },
+  {
+   "title": "Calcium tells you the muscle type",
+   "html": "<p>Skeletal muscle keeps all its trigger Ca²⁺ in the SR and reads it with troponin, which makes it fast and tightly controlled by nerves. Smooth muscle also uses extracellular Ca²⁺ and reads it with calmodulin through a slower enzyme cascade, which suits slow, sustained tone in vessel and gut walls. Cardiac muscle sits in between. Most comparison questions in this lecture can be answered from this one difference.</p><p class='src'>Source: the lecture's comparison table of skeletal, smooth and cardiac muscle.</p>"
+  }
+ ],
+ "resources": [
+  {
+   "title": "Skeletal muscle (OpenStax A&P 2e)",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/10-2-skeletal-muscle",
+   "kind": "Book",
+   "why": "Structure of the fibre, sarcomere and the triad.",
+   "note": ""
+  },
+  {
+   "title": "Muscle fibre contraction and relaxation (OpenStax A&P 2e)",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/10-3-muscle-fiber-contraction-and-relaxation",
+   "kind": "Book",
+   "why": "Sliding filaments, cross-bridge cycle and excitation-contraction coupling.",
+   "note": ""
+  }
+ ],
+ "checks": [],
+ "sources": [
+  {
+   "name": "Skeletal muscle (OpenStax A&P 2e)",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/10-2-skeletal-muscle"
+  },
+  {
+   "name": "Muscle fibre contraction and relaxation (OpenStax A&P 2e)",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/10-3-muscle-fiber-contraction-and-relaxation"
+  }
+ ],
+ "verified": "17 Oct 2026"
 };
