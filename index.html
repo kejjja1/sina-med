@@ -36,6 +36,7 @@
         <div class="search-results" id="search-results" hidden></div>
       </div>
       <div class="hdr-actions">
+        <button class="search-toggle" id="search-toggle" type="button" aria-label="Search" aria-controls="search" aria-expanded="false"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="m16 16 4.5 4.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></button>
         <!-- Paste the Google Form link inside data-form="https://forms.gle/F8G5jWpr6S1NoMmdA" below. -->
         <a class="pill-btn" id="suggest-btn" href="#" data-form="https://forms.gle/F8G5jWpr6S1NoMmdA" target="_blank" rel="noopener" aria-label="Send a suggestion"><span class="qmark" aria-hidden="true">?</span><span class="plbl">Suggestion</span></a>
         <div class="settings">
@@ -46,6 +47,7 @@
             <p class="sm-title" data-i18n="settings.appearance">Appearance</p>
             <button type="button" role="menuitemradio" data-theme-choice="light" aria-checked="false"><span class="sm-ico" aria-hidden="true">&#9728;</span>Light mode<span class="sm-tick" aria-hidden="true">&#10003;</span></button>
             <button type="button" role="menuitemradio" data-theme-choice="dark" aria-checked="false"><span class="sm-ico" aria-hidden="true">&#9790;</span>Dark mode<span class="sm-tick" aria-hidden="true">&#10003;</span></button>
+            <a class="sm-suggest" role="menuitem" href="https://forms.gle/F8G5jWpr6S1NoMmdA" target="_blank" rel="noopener"><span class="sm-ico" aria-hidden="true">?</span>Send a suggestion</a>
             <p class="sm-title" data-i18n="settings.language">Language</p>
             <div id="lang-items"></div>
           </div>

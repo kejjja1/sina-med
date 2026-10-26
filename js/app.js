@@ -417,12 +417,10 @@
   }
   var IDX = null, sBox = document.getElementById("search"), sInput = document.getElementById("search-input"), sRes = document.getElementById("search-results");
   function hideSearch() { sRes.hidden = true; sBox.classList.remove("open"); }
-  function runSearch() {
-    var q = sInput.value.trim().toLowerCase();
-    if (q.length < 2) { hideSearch(); return; }
+  function searchHits(q) {
+    q = q.toLowerCase();
     if (!IDX) IDX = searchIndex();
-    var words = q.split(/\s+/);
-    var scored = [];
+    var words = q.split(/\s+/), scored = [];
     IDX.forEach(function (r) {
       var title = r.title.toLowerCase(), hay = r.hay.toLowerCase();
       var inTitle = words.every(function (w) { return title.indexOf(w) > -1; });
@@ -434,19 +432,36 @@
       scored.push({ r: r, score: score });
     });
     scored.sort(function (a, b) { return a.score - b.score; });
-    var hits = scored.slice(0, 20).map(function (x) { return x.r; });
-    sRes.innerHTML = hits.length
+    return scored.slice(0, 20).map(function (x) { return x.r; });
+  }
+  function hitsHTML(hits) {
+    return hits.length
       ? hits.map(function (r) {
           var inner = '<span class="sk">' + esc(r.kind) + '</span><span class="st">' + esc(r.title) + '</span><span class="ss">' + esc(r.sub) + "</span>";
           return r.href ? '<a href="' + r.href + '">' + inner + "</a>" : '<span class="dim">' + inner + "</span>";
         }).join("")
       : '<p class="none">Nothing matches that yet.</p>';
-    sRes.hidden = false; sBox.classList.add("open");
-    sRes.querySelectorAll("a").forEach(function (a) { a.addEventListener("click", function () { sInput.value = ""; hideSearch(); }); });
   }
+  function runSearch() {
+    var q = sInput.value.trim();
+    if (q.length < 2) { hideSearch(); return; }
+    sRes.innerHTML = hitsHTML(searchHits(q));
+    sRes.hidden = false; sBox.classList.add("open");
+    sRes.querySelectorAll("a").forEach(function (a) { a.addEventListener("click", function () { sInput.value = ""; hideSearch(); closePhoneSearch(); }); });
+  }
+  /* On phones the header search is a magnifier button that opens a full-width bar. */
+  var sToggle = document.getElementById("search-toggle");
+  function closePhoneSearch() { document.body.classList.remove("search-open"); if (sToggle) sToggle.setAttribute("aria-expanded", "false"); }
+  if (sToggle) sToggle.addEventListener("click", function (e) {
+    e.stopPropagation();
+    var on = !document.body.classList.contains("search-open");
+    document.body.classList.toggle("search-open", on); sToggle.setAttribute("aria-expanded", String(on));
+    if (on) sInput.focus(); else hideSearch();
+  });
+  sInput.addEventListener("keydown", function (e) { if (e.key === "Escape") { hideSearch(); closePhoneSearch(); sInput.blur(); } });
   sInput.addEventListener("input", runSearch);
   sInput.addEventListener("focus", runSearch);
-  document.addEventListener("click", function (e) { if (!sBox.contains(e.target)) hideSearch(); });
+  document.addEventListener("click", function (e) { if (!sBox.contains(e.target) && e.target !== sToggle) { hideSearch(); closePhoneSearch(); } });
 
   /* ---------- generic labelled figure (schematic, drawn for this site) ---------- */
   function figArrow(a) {
@@ -538,29 +553,37 @@
     semList.forEach(function (k) { sems[k] = []; });
     progSubjects().forEach(function (s) { sems[s.semester].push(s); });
     function row(s) {
-      var tag, inner;
-      if (s.groups) { tag = '<span class="tag live">' + readyCount(s) + " of " + totalCount(s) + " lectures ready</span>"; }
-      else if (s.status === "next") { tag = '<span class="tag">Up next, ' + s.count + " lectures</span>"; }
-      else { tag = '<span class="tag">' + s.count + " lectures, planned</span>"; }
+      var tag, inner, n = totalCount(s), r = s.groups ? readyCount(s) : 0;
+      if (s.groups) tag = '<span class="tag live">' + (r === n ? n + " lectures" : r + " of " + n + " ready") + "</span>";
+      else if (s.status === "next") tag = '<span class="tag">Up next</span>';
+      else tag = '<span class="tag">Planned</span>';
       inner = '<span><span class="name">' + esc(s.name) + '</span>' + (s.blurb ? '<span class="desc">' + esc(s.blurb) + "</span>" : "") + "</span>" + tag;
       return s.groups ? '<li><a href="#/subject/' + s.id + '">' + inner + "</a></li>" : '<li><span class="static planned">' + inner + "</span></li>";
     }
-    var html = '<div class="wrap wide"><section class="hero"><div><h1>Study each lecture, then test yourself on it.</h1>' +
-      '<p class="lede">Summaries, key points, questions, flashcards and extra reading for every lecture of the promo. Each page is built from the lecture slides and checked against other references.</p>' +
-      '<div class="row">' + (progSubjects().some(function (x) { return x.groups; }) ? '<a class="btn primary" href="#/lecture/' + firstLecture() + '">Try the first lecture</a>' : "") + (progMidterms().length ? '<a class="btn midbtn" href="#/midterm">Upcoming midterm lectures</a>' : "") + '<button class="btn" type="button" id="browse-subjects">Open the menu</button>' + (S.usmle ? '<a class="btn usmlebtn" href="#/usmle">USMLE prep</a>' : "") + '</div><p class="meta menuhint">' + (progMidterms().length ? "Upcoming midterm lectures, subjects" : "Subjects") + ', past papers and useful apps are in the menu.</p>' +
-      (S.updated ? '<p class="meta" style="margin-top:1.4rem">Last updated ' + esc(S.updated) + '. <a href="#/updates">What\'s new' + (newBadge() ? ' <span class="badge">new</span>' : "") + "</a>.</p>" : "") + '</div>' +
-      '</section>' +
+    var mids = progMidterms(), midHTML = "";
+    mids.forEach(function (m) {
+      var n = 0; m.groups.forEach(function (g) { n += g.items.length; });
+      midHTML += '<div class="mid-card"><p class="mid-eyebrow">Upcoming</p><h2>' + esc(m.title) + '</h2><p class="meta">' + n + ' lectures on this exam.</p><div class="row">' +
+        '<a class="btn primary" href="#/midterm">Revise the lectures</a><a class="btn" href="#/subject/' + m.subject + '/questions/midterm">Practice questions</a>' +
+        (m.practice ? '<a class="btn" href="#/subject/' + m.subject + '/papers">Practice papers</a>' : "") + "</div></div>";
+    });
+    var html = '<div class="wrap wide"><section class="hero slim"><h1>Study each lecture, then test yourself on it.</h1>' +
+      '<div class="home-search"><input id="home-search" type="search" placeholder="Search a lecture, subject or past paper" aria-label="Search lectures, subjects and past papers" autocomplete="off"><div class="home-results" id="home-results" hidden></div></div>' +
+      midHTML +
+      '<p class="meta home-links">' + (S.usmle ? '<a href="#/usmle">USMLE prep</a> &middot; ' : "") + '<a href="#/apps">Useful apps</a>' +
+      (S.updated ? ' &middot; <a href="#/updates">What\'s new' + (newBadge() ? ' <span class="badge">new</span>' : "") + "</a>" : "") + "</p></section>" +
       '<h2 id="subjects">' + esc(T("home.subjects")) + ' <span class="prog-tag">' + esc(progName()) + '</span></h2>' +
       (semList.length ? semList.map(function (k) { return '<h3 class="sem-title">' + esc(T("home.semester", { n: k.replace(/^S/, "") })) + '</h3><ul class="subject-list">' + sems[k].map(row).join("") + "</ul>"; }).join("")
         : '<div class="empty-prog"><h3>' + esc(T("home.empty.title", { name: progName() })) + '</h3><p>' + esc(T("home.empty.body")) + '</p></div>') +
-"</div>";
+      "</div>";
     setView(html, "");
-    var bb = document.getElementById("browse-subjects");
-    if (bb) bb.addEventListener("click", function () {
-      openDrawer();
-      var cat = drawer.querySelector(".acc.cat");
-      if (cat && !cat.classList.contains("open")) cat.querySelector(".accbtn").click();
-    });
+    var hi = document.getElementById("home-search"), hr = document.getElementById("home-results");
+    function hs() {
+      var q = hi.value.trim();
+      if (q.length < 2) { hr.hidden = true; return; }
+      hr.innerHTML = hitsHTML(searchHits(q)); hr.hidden = false;
+    }
+    hi.addEventListener("input", hs);
   }
 
 
@@ -591,21 +614,181 @@
     });
     setView(html + "</div>", "Upcoming midterm lectures");
   }
-  function subjectView(id) {
+  /* ---------- class page: Lectures, Questions, Visual, High yield, Resources, Past papers ---------- */
+  function subLectures(s) {
+    var out = [];
+    (s.groups || []).forEach(function (g) { g.items.forEach(function (it) { if (S.lectures[it.id]) out.push({ id: it.id, title: it.title, group: g.name }); }); });
+    return out;
+  }
+  function subSections(s) {
+    var L = subLectures(s).map(function (x) { return S.lectures[x.id]; });
+    var secs = [["lectures", "Lectures"], ["questions", "Questions"]];
+    if (L.some(function (l) { return l.visual && (l.visual.figure || l.visual.regions || l.visual.mindmap || l.visual.model3d || galleryImages(l.visual).length); })) secs.push(["visual", "Visual"]);
+    if (L.some(function (l) { return l.highYield && l.highYield.length; })) secs.push(["highyield", "High yield"]);
+    if (L.some(function (l) { return l.resources && l.resources.length; })) secs.push(["resources", "Resources"]);
+    if ((S.papers || []).some(function (x) { return x.subject === s.id; })) secs.push(["papers", "Past papers"]);
+    return secs;
+  }
+  function subjectMid(s) { return progMidterms().filter(function (m) { return m.subject === s.id; })[0]; }
+  function wireTabs(root) {
+    var cur = root.querySelector('.tab[aria-selected="true"]');
+    if (cur && cur.scrollIntoView) { var t = cur.parentNode; t.scrollLeft = cur.offsetLeft - (t.clientWidth - cur.clientWidth) / 2; }
+  }
+  function subjectView(id, sec, arg) {
     var s = subjectById(id);
     if (!s || !s.groups) return notFound();
+    var secs = subSections(s);
+    if (!secs.some(function (x) { return x[0] === sec; })) sec = "lectures";
+    var n = totalCount(s), r = readyCount(s);
     var html = '<div class="wrap"><p class="crumbs"><a href="#/">Home</a> / ' + esc(s.name) + "</p><h1>" + esc(s.name) + "</h1>" +
-      '<p class="meta">' + readyCount(s) + " of " + totalCount(s) + " lectures ready. " + esc(s.blurb) + '</p><p><a href="#/papers/' + s.id + '">Past papers for ' + esc(s.name) + "</a>" + (progMidterms().some(function (m) { return m.subject === s.id; }) ? ' &middot; <a class="midlink" href="#/midterm">Upcoming midterm lectures</a>' : "") + "</p>";
+      '<p class="meta">' + (r === n ? n + " lectures" : r + " of " + n + " lectures ready") + (s.blurb ? ". " + esc(s.blurb) : "") + "</p>" +
+      '<nav class="tabs sticky" aria-label="' + esc(s.name) + ' sections">' + secs.map(function (t) {
+        return '<a class="tab" href="#/subject/' + s.id + (t[0] === "lectures" ? "" : "/" + t[0]) + '" aria-selected="' + (t[0] === sec) + '"' + (t[0] === sec ? ' aria-current="page"' : "") + ">" + t[1] + "</a>";
+      }).join("") + '</nav><div id="panel"></div></div>';
+    setView(html, s.name + (sec !== "lectures" ? " | " + secs.filter(function (x) { return x[0] === sec; })[0][1] : ""));
+    wireTabs(app);
+    var p = document.getElementById("panel");
+    ({ lectures: subLecturesPanel, questions: subQuestionsPanel, visual: subVisualPanel, highyield: subHighYieldPanel, resources: subResourcesPanel, papers: subPapersPanel })[sec](p, s, arg);
+  }
+  function subLecturesPanel(p, s) {
+    var mid = subjectMid(s), h = mid ? '<p class="mid-note"><span class="pill mid">Midterm</span> marks the lectures on the ' + esc(mid.title) + '. <a href="#/subject/' + s.id + '/questions/midterm">Practise just those</a>.</p>' : "";
     s.groups.forEach(function (g) {
-      html += '<h2 class="group-title">' + esc(g.name) + '</h2><ul class="lec-list">' + g.items.map(function (it) {
+      h += '<h2 class="group-title">' + esc(g.name) + '</h2><ul class="lec-list">' + g.items.map(function (it) {
         return S.lectures[it.id]
-          ? (onMidterm(it.id)
-            ? '<li><a href="#/lecture/' + it.id + '"><span>' + esc(it.title) + '</span><span class="pill mid">On the midterm</span></a></li>'
-            : '<li><a href="#/lecture/' + it.id + '"><span>' + esc(it.title) + '</span><span class="pill">Ready</span></a></li>')
+          ? '<li><a href="#/lecture/' + it.id + '"><span>' + esc(it.title) + "</span>" + (onMidterm(it.id) ? '<span class="pill mid">Midterm</span>' : "") + "</a></li>"
           : '<li><span class="soon"><span>' + esc(it.title) + '</span><span class="pill muted">Coming</span></span></li>';
       }).join("") + "</ul>";
     });
-    setView(html + "</div>", s.name);
+    p.innerHTML = h;
+  }
+  /* Lecture picker shared by Visual (one lecture) */
+  function lecSelect(s, cur, filter) {
+    return '<label class="pick"><span>Lecture</span><select id="lec-pick">' + s.groups.map(function (g) {
+      var its = g.items.filter(function (it) { return S.lectures[it.id] && (!filter || filter(S.lectures[it.id])); });
+      return its.length ? '<optgroup label="' + esc(g.name) + '">' + its.map(function (it) { return '<option value="' + it.id + '"' + (it.id === cur ? " selected" : "") + ">" + esc(it.title) + "</option>"; }).join("") + "</optgroup>" : "";
+    }).join("") + "</select></label>";
+  }
+  function subQuestionsPanel(p, s, arg) {
+    var mid = subjectMid(s), lecs = subLectures(s), key = "sina:pick:" + s.id;
+    var picked = arg === "midterm" && mid ? [].concat.apply([], mid.groups.map(function (g) { return g.items; }))
+      : (arg && S.lectures[arg] ? [arg] : store.get(key, []));
+    picked = picked.filter(function (id) { return S.lectures[id] && S.lectures[id].subject === s.id; });
+    var count = store.get("sina:qcount", "20");
+    function nQ(ids) { return ids.reduce(function (a, id) { return a + (S.lectures[id].mcqs || []).length; }, 0); }
+    function picker() {
+      var h = '<p class="lede-s">Choose one or more lectures, then start. Questions from all the chosen lectures are mixed into one quiz.</p>' +
+        '<div class="chips quick" role="group" aria-label="Quick choices"><button type="button" data-q="all">All lectures</button>' + (mid ? '<button type="button" data-q="mid">Midterm lectures</button>' : "") + '<button type="button" data-q="none">Clear</button></div>';
+      s.groups.forEach(function (g, gi) {
+        var its = g.items.filter(function (it) { return S.lectures[it.id]; });
+        if (!its.length) return;
+        h += '<fieldset class="pick-group"><legend><label><input type="checkbox" class="gchk" data-g="' + gi + '"> ' + esc(g.name) + "</label></legend>" + its.map(function (it) {
+          return '<label class="pick-row"><input type="checkbox" class="lchk" data-g="' + gi + '" value="' + it.id + '"' + (picked.indexOf(it.id) > -1 ? " checked" : "") + "><span>" + esc(it.title) + '</span><span class="qn">' + (S.lectures[it.id].mcqs || []).length + "</span></label>";
+        }).join("") + "</fieldset>";
+      });
+      h += '<div class="start-bar"><label class="pick"><span>Questions</span><select id="qcount">' + ["10", "20", "40", "all"].map(function (v) { return '<option value="' + v + '"' + (v === count ? " selected" : "") + ">" + (v === "all" ? "All" : v) + "</option>"; }).join("") + "</select></label>" +
+        '<button class="btn primary" id="qstart" type="button">Start</button><span class="qsel" id="qsel"></span></div>';
+      p.innerHTML = h;
+      var boxes = p.querySelectorAll(".lchk");
+      function sync() {
+        picked = []; boxes.forEach(function (b) { if (b.checked) picked.push(b.value); });
+        p.querySelectorAll(".gchk").forEach(function (g) {
+          var mine = [].filter.call(boxes, function (b) { return b.dataset.g === g.dataset.g; }), on = mine.filter(function (b) { return b.checked; }).length;
+          g.checked = on === mine.length && on > 0; g.indeterminate = on > 0 && on < mine.length;
+        });
+        var n = nQ(picked);
+        p.querySelector("#qsel").textContent = picked.length ? picked.length + " lecture" + (picked.length > 1 ? "s" : "") + ", " + n + " questions" : "No lecture chosen";
+        p.querySelector("#qstart").disabled = !picked.length;
+      }
+      boxes.forEach(function (b) { b.addEventListener("change", sync); });
+      p.querySelectorAll(".gchk").forEach(function (g) { g.addEventListener("change", function () { boxes.forEach(function (b) { if (b.dataset.g === g.dataset.g) b.checked = g.checked; }); sync(); }); });
+      p.querySelectorAll(".quick button").forEach(function (b) {
+        b.addEventListener("click", function () {
+          var ids = b.dataset.q === "all" ? lecs.map(function (x) { return x.id; }) : b.dataset.q === "mid" ? [].concat.apply([], mid.groups.map(function (g) { return g.items; })) : [];
+          boxes.forEach(function (x) { x.checked = ids.indexOf(x.value) > -1; }); sync();
+        });
+      });
+      p.querySelector("#qcount").addEventListener("change", function () { count = this.value; store.set("sina:qcount", count); });
+      p.querySelector("#qstart").addEventListener("click", start);
+      sync();
+    }
+    function start() {
+      store.set(key, picked);
+      var pool = [];
+      picked.forEach(function (id) {
+        var L = S.lectures[id], fig = L.visual && L.visual.figure;
+        (L.mcqs || []).forEach(function (q) {
+          if (q.target && !fig) return;
+          var c = {}; for (var k in q) c[k] = q[k];
+          c._fig = fig; c._from = picked.length > 1 ? lectureTitle(id) : ""; pool.push(c);
+        });
+      });
+      pool = shuffle(pool);
+      if (count !== "all") pool = pool.slice(0, +count);
+      p.innerHTML = '<div class="quiz-top"><button class="btn small-btn" id="qback" type="button">&larr; Change lectures</button><span class="meta">' + esc(picked.length === 1 ? lectureTitle(picked[0]) : picked.length + " lectures mixed") + '</span></div><div id="quiz"></div>';
+      p.querySelector("#qback").addEventListener("click", picker);
+      questionsPanel(p.querySelector("#quiz"), { id: "mix:" + picked.slice().sort().join("+") + ":" + count, mcqs: pool });
+      window.scrollTo(0, 0);
+    }
+    picker();
+  }
+  function subVisualPanel(p, s, arg) {
+    var has = function (l) { return l.visual && (l.visual.figure || l.visual.regions || l.visual.mindmap || l.visual.model3d || galleryImages(l.visual).length); };
+    var ids = subLectures(s).map(function (x) { return x.id; }).filter(function (id) { return has(S.lectures[id]); });
+    var cur = ids.indexOf(arg) > -1 ? arg : ids[0];
+    p.innerHTML = lecSelect(s, cur, has) + '<div id="vis"></div>';
+    p.querySelector("#lec-pick").addEventListener("change", function () { location.replace("#/subject/" + s.id + "/visual/" + this.value); });
+    visualPanel(p.querySelector("#vis"), S.lectures[cur]);
+  }
+  /* Collapsible list, one row per lecture: used by High yield and Resources */
+  function perLecture(p, s, arg, intro, test, render, countLabel) {
+    var lecs = subLectures(s).filter(function (x) { return test(S.lectures[x.id]); });
+    var h = intro + '<div class="row exp"><button class="btn small-btn" type="button" data-x="1">Expand all</button><button class="btn small-btn" type="button" data-x="0">Collapse all</button></div>', lastG = "";
+    lecs.forEach(function (x) {
+      if (x.group !== lastG) { h += '<h2 class="group-title">' + esc(x.group) + "</h2>"; lastG = x.group; }
+      h += '<details class="lec-acc" id="acc-' + x.id + '"' + (x.id === arg ? " open" : "") + '><summary><span>' + esc(x.title) + '</span><span class="qn">' + countLabel(S.lectures[x.id]) + '</span></summary><div class="acc-body" data-id="' + x.id + '"></div></details>';
+    });
+    p.innerHTML = h;
+    function fill(d) { var b = d.querySelector(".acc-body"); if (!b.dataset.done) { b.dataset.done = "1"; render(b, S.lectures[b.dataset.id]); } }
+    p.querySelectorAll(".lec-acc").forEach(function (d) { if (d.open) fill(d); d.addEventListener("toggle", function () { if (d.open) fill(d); }); });
+    p.querySelectorAll(".exp button").forEach(function (b) { b.addEventListener("click", function () { p.querySelectorAll(".lec-acc").forEach(function (d) { d.open = b.dataset.x === "1"; }); }); });
+    if (arg) { var t = document.getElementById("acc-" + arg); if (t) setTimeout(function () { t.scrollIntoView({ block: "start" }); }, 30); }
+  }
+  function subHighYieldPanel(p, s, arg) {
+    perLecture(p, s, arg, '<p class="lede-s">Quick revision notes for each lecture: key facts, clinical links and memory aids. Open a lecture to see its notes.</p>',
+      function (l) { return l.highYield && l.highYield.length; },
+      function (b, l) { highYieldPanel(b, l, true); },
+      function (l) { return l.highYield.length + " notes"; });
+  }
+  function resCard(r, kind) {
+    return '<li class="rcard"><a class="rlink" href="' + esc(r.url) + '" target="_blank" rel="noopener"><span class="rthumb" data-host="' + esc(hostOf(r.url)) + '"><img loading="lazy" alt="" src="' + esc(previewSrc(r)) + '"><span class="rkind">' + esc(kind || r.kind) + '</span></span>' +
+      '<span class="rbody"><span class="t">' + esc(r.title) + '</span><span class="w">' + esc(r.why) + '</span><span class="dom">' + esc(hostOf(r.url)) + "</span>" + (r.note ? '<span class="n">' + esc(r.note) + "</span>" : "") + "</span></a></li>";
+  }
+  function wireThumbs(root) {
+    root.querySelectorAll(".rthumb img").forEach(function (img) {
+      if (img.dataset.w) return; img.dataset.w = "1";
+      img.addEventListener("error", function () {
+        var box = img.parentNode; img.remove(); box.classList.add("nofoto");
+        var f = document.createElement("span"); f.className = "rfallback"; f.textContent = box.dataset.host; box.insertBefore(f, box.firstChild);
+      });
+    });
+  }
+  function subResourcesPanel(p, s, arg) {
+    perLecture(p, s, arg, '<p class="lede-s">Videos, websites and books chosen for each lecture. Open a lecture to see its links; they open in a new tab.</p>',
+      function (l) { return l.resources && l.resources.length; },
+      function (b, l) { b.innerHTML = '<ul class="rgrid">' + l.resources.map(function (r) { return resCard(r); }).join("") + "</ul>"; wireThumbs(b); },
+      function (l) { return l.resources.length + " links"; });
+    var chans = [], seen = {};
+    [s.id].concat(subLectures(s).map(function (x) { return x.id; })).forEach(function (k) {
+      ((S.channels && S.channels[k]) || []).forEach(function (r) { if (!seen[r.url]) { seen[r.url] = 1; chans.push(r); } });
+    });
+    var extra = "";
+    if (chans.length) extra += '<details class="lec-acc"><summary><span>Channels worth following</span><span class="qn">' + chans.length + '</span></summary><div class="acc-body"><ul class="rgrid">' + chans.map(function (r) { return resCard(r, "Channel"); }).join("") + "</ul></div></details>";
+    if (S.apps && S.apps.length) extra += '<details class="lec-acc"><summary><span>Apps and practice sites</span><span class="qn">' + S.apps.length + '</span></summary><div class="acc-body"><ul class="rgrid">' + S.apps.map(function (r) { return resCard(r); }).join("") + "</ul></div></details>";
+    if (extra) { p.insertAdjacentHTML("beforeend", '<h2 class="group-title">For the whole class</h2>' + extra); wireThumbs(p); }
+  }
+  function subPapersPanel(p, s) {
+    var list = (S.papers || []).filter(function (x) { return x.subject === s.id; });
+    p.innerHTML = '<ul class="lec-list">' + list.map(paperRow).join("") + "</ul>";
   }
 
   function psaHTML() {
@@ -617,34 +800,66 @@
     var x = root.querySelector(".psa-close");
     if (x) x.addEventListener("click", function () { store.set("sina:psaDismissed", true); x.closest(".psa").remove(); });
   }
-  var TABS = [["summary", "Summary"], ["highyield", "High yield"], ["visual", "Visual"], ["questions", "Questions"], ["cards", "Flashcards"], ["deeper", "Go deeper"], ["resources", "Resources"]];
+  var TABS = [["summary", "Summary"], ["cards", "Flashcards"], ["deeper", "Go deeper"]];
+  var MOVED = { questions: "questions", visual: "visual", highyield: "highyield", resources: "resources" };
 
   function lectureView(id, tab) {
     var lec = S.lectures[id];
     if (!lec) return notFound();
     var sub = subjectById(lec.subject);
+    if (MOVED[tab]) { location.replace("#/subject/" + sub.id + "/" + MOVED[tab] + "/" + id); return; }
     tab = tab || "summary";
-    var tabs = TABS.filter(function (t) { return t[0] !== "highyield" || (lec.highYield && lec.highYield.length); });
-    if (!tabs.some(function (t) { return t[0] === tab; })) tab = "summary";
-    var html = '<div class="wrap"><p class="crumbs"><a href="#/">Home</a> / <a href="#/subject/' + sub.id + '">' + esc(sub.name) + "</a></p><h1>" + esc(lec.title) + "</h1>" +
-      sourceLine(lec) +
-      '<div class="tabs" role="tablist" aria-label="Lecture sections">' + tabs.map(function (t) {
+    if (!TABS.some(function (t) { return t[0] === tab; })) tab = "summary";
+    var secs = subSections(sub).map(function (x) { return x[0]; });
+    var did = driveId(lec.sourceUrl), ppt = /\.pptx?\b/i.test(lec.sourceFile || ""), who = lecturer(lec);
+    var more = [];
+    if (did) more.push('<a role="menuitem" href="https://drive.google.com/uc?export=download&amp;id=' + esc(did) + '" target="_blank" rel="noopener">' + ICON.dl + "Download lecture" + (ppt ? " (PowerPoint)" : "") + "</a>");
+    more.push('<a role="menuitem" href="#/subject/' + sub.id + "/questions/" + id + '">' + ICON.q + "Practice questions</a>");
+    if (secs.indexOf("visual") > -1 && lec.visual) more.push('<a role="menuitem" href="#/subject/' + sub.id + "/visual/" + id + '">' + ICON.v + "Visual</a>");
+    if (lec.highYield && lec.highYield.length) more.push('<a role="menuitem" href="#/subject/' + sub.id + "/highyield/" + id + '">' + ICON.hy + "High yield notes</a>");
+    if (lec.resources && lec.resources.length) more.push('<a role="menuitem" href="#/subject/' + sub.id + "/resources/" + id + '">' + ICON.r + "Videos and websites</a>");
+    var html = '<div class="wrap"><p class="crumbs"><a href="#/">Home</a> / <a href="#/subject/' + sub.id + '">' + esc(sub.name) + "</a></p>" +
+      '<div class="lec-head"><h1>' + esc(lec.title) + '</h1><div class="more"><button class="more-btn" id="more-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Lecture options">' + ICON.dots + '</button><div class="more-menu" id="more-menu" role="menu" hidden>' + more.join("") + "</div></div></div>" +
+      '<p class="meta lec-meta">' + [who ? esc(who) : "", onMidterm(id) ? '<span class="pill mid">Midterm</span>' : ""].filter(Boolean).join(" &middot; ") + "</p>" +
+      '<div class="tabs sticky" role="tablist" aria-label="Lecture sections">' + TABS.map(function (t) {
         return '<button class="tab" role="tab" id="tab-' + t[0] + '" aria-selected="' + (t[0] === tab) + '" data-tab="' + t[0] + '">' + t[1] + "</button>";
-      }).join("") + '</div><div id="panel" role="tabpanel" aria-labelledby="tab-' + tab + '"></div>' + psaHTML() + "</div>";
+      }).join("") + '</div><div id="panel" role="tabpanel" aria-labelledby="tab-' + tab + '"></div>' + prevNextHTML(sub, id) + psaHTML() + "</div>";
     setView(html, lec.title);
+    wireTabs(app);
     var panel = document.getElementById("panel");
-    ({ summary: summaryPanel, highyield: highYieldPanel, visual: visualPanel, questions: questionsPanel, cards: cardsPanel, deeper: deeperPanel, resources: resourcesPanel })[tab](panel, lec);
+    ({ summary: summaryPanel, cards: cardsPanel, deeper: deeperPanel })[tab](panel, lec);
     app.querySelectorAll(".tab").forEach(function (b) {
-      b.addEventListener("click", function () { location.hash = "#/lecture/" + id + "/" + b.dataset.tab; });
+      b.addEventListener("click", function () { location.hash = "#/lecture/" + id + (b.dataset.tab === "summary" ? "" : "/" + b.dataset.tab); });
     });
+    var mb = document.getElementById("more-btn"), mm = document.getElementById("more-menu");
+    function openMore(on) { mm.hidden = !on; mb.setAttribute("aria-expanded", String(on)); if (on) { var f = mm.querySelector("a"); if (f) f.focus(); } }
+    mb.addEventListener("click", function (e) { e.stopPropagation(); openMore(mm.hidden); });
+    mm.addEventListener("keydown", function (e) { if (e.key === "Escape") { openMore(false); mb.focus(); } });
+    document.addEventListener("click", function off(e) { if (!mm.contains(e.target)) { mm.hidden = true; mb.setAttribute("aria-expanded", "false"); } if (!document.body.contains(mm)) document.removeEventListener("click", off); });
     wirePSA(app);
   }
+  var ICON = {
+    dots: '<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><circle cx="5" cy="12" r="2" fill="currentColor"/><circle cx="12" cy="12" r="2" fill="currentColor"/><circle cx="19" cy="12" r="2" fill="currentColor"/></svg>',
+    dl: '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 4v11m0 0-4-4m4 4 4-4M5 20h14"/></svg>',
+    q: '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 11l3 3L21 5M20 12v7a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h11"/></svg>',
+    v: '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 5h16v14H4zM4 15l5-5 4 4 3-3 4 4"/></svg>',
+    hy: '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg>',
+    r: '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg>'
+  };
+  function prevNextHTML(sub, id) {
+    var L = subLectures(sub), i = L.map(function (x) { return x.id; }).indexOf(id);
+    if (i < 0) return "";
+    var pv = L[i - 1], nx = L[i + 1];
+    return '<nav class="prevnext" aria-label="Other lectures">' +
+      (pv ? '<a class="pn prev" href="#/lecture/' + pv.id + '"><span class="pn-k">&larr; Previous</span><span class="pn-t">' + esc(pv.title) + "</span></a>" : "<span></span>") +
+      (nx ? '<a class="pn next" href="#/lecture/' + nx.id + '"><span class="pn-k">Next &rarr;</span><span class="pn-t">' + esc(nx.title) + "</span></a>" : "<span></span>") + "</nav>";
+  }
 
-  function highYieldPanel(p, lec) {
+  function highYieldPanel(p, lec, noIntro) {
     var HYT = { note: "Note", clinic: "Clinical", mnemo: "Memory aid" };
     var order = ["note", "clinic", "mnemo"];
     var counts = {}; lec.highYield.forEach(function (x) { counts[x.t] = (counts[x.t] || 0) + 1; });
-    var h = '<p class="hy-intro">Quick notes to help you revise this lecture: key facts, clinical links and a few memory aids. Nothing here is extra to learn by heart; the Summary tab has the full explanation.</p>' +
+    var h = (noIntro ? "" : '<p class="hy-intro">Quick notes to help you revise this lecture: key facts, clinical links and a few memory aids. Nothing here is extra to learn by heart; the Summary tab has the full explanation.</p>') +
       '<div class="hy-filter" role="group" aria-label="Show">' +
       '<button class="chip hy-f" data-f="all" aria-pressed="true">All (' + lec.highYield.length + ')</button>' +
       order.filter(function (t) { return counts[t]; }).map(function (t) {
@@ -664,15 +879,20 @@
   }
 
   function summaryPanel(p, lec) {
-    var h = '<div class="note">' + lec.buildNote + "</div>";
-    lec.summary.forEach(function (s) { h += "<h2>" + esc(s.title) + "</h2>" + s.html; });
-    h += "<h2>Key points</h2><ul class='exam-list'>" + lec.exam.map(function (e) { return "<li>" + esc(e) + "</li>"; }).join("") + "</ul>";
+    var h = '<p class="buildnote">' + ICON.info + "Built from the lecture slides. If your professor says otherwise, trust your professor.</p>";
+    if (lec.summary.length > 3) h += '<details class="toc"><summary>On this page</summary><ol>' + lec.summary.map(function (s, i) { return '<li><button type="button" data-to="sec-' + i + '">' + esc(s.title) + "</button></li>"; }).join("") + '<li><button type="button" data-to="sec-key">Key points</button></li></ol></details>';
+    lec.summary.forEach(function (s, i) { h += '<h2 id="sec-' + i + '">' + esc(s.title) + "</h2>" + s.html; });
+    h += "<h2 id='sec-key'>Key points</h2><ul class='exam-list'>" + lec.exam.map(function (e) { return "<li>" + esc(e) + "</li>"; }).join("") + "</ul>";
     h += (lec.sources && lec.sources.length)
       ? '<div class="foot"><p>Facts on this page were checked against these references (last check ' + esc(lec.verified) + "). Student flashcard sets were used only as a secondary consistency check.</p><ul class='sources'>" + lec.sources.map(function (s) { return '<li><a href="' + esc(s.url) + '" target="_blank" rel="noopener">' + esc(s.name) + "</a></li>"; }).join("") + "</ul></div>"
       : '<div class="foot"><p>Built from the lecture slides (last check ' + esc(lec.verified) + "). Outside references will be added with the full version.</p></div>";
     p.innerHTML = h;
+    p.querySelectorAll(".toc button").forEach(function (b) {
+      b.addEventListener("click", function () { var t = document.getElementById(b.dataset.to); if (t) { t.scrollIntoView({ behavior: "smooth", block: "start" }); b.closest("details").open = false; } });
+    });
     wireMedia(p);
   }
+  ICON.info = '<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 11v6M12 7.5v.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>';
 
   /* ---------- reference pictures: a small carousel, broken pictures drop out ---------- */
 
@@ -856,10 +1076,11 @@
         return;
       }
       var q = qs[i], multi = !!(q.answers && q.answers.length > 1);
-      var pic = (q.target && lec.visual && lec.visual.figure)
-        ? '<div class="diagram-box qfig">' + figureSVG(lec.visual.figure, { mode: "quiz", target: q.target, uid: "q" + i }) + "</div>"
+      var qfig = q._fig || (lec.visual && lec.visual.figure);
+      var pic = (q.target && qfig)
+        ? '<div class="diagram-box qfig">' + figureSVG(qfig, { mode: "quiz", target: q.target, uid: "q" + i }) + "</div>"
         : "";
-      p.innerHTML = '<p class="qhead">Question ' + (i + 1) + " of " + qs.length + (multi ? ", choose all correct answers" : "") + '</p><div class="bar-track"><div class="bar-fill" style="width:' + (i / qs.length * 100) + '%"></div></div><p class="qtext">' + esc(q.q) + "</p>" + pic +
+      p.innerHTML = '<p class="qhead">Question ' + (i + 1) + " of " + qs.length + (multi ? ", choose all correct answers" : "") + (q._from ? '<span class="qfrom">' + esc(q._from) + "</span>" : "") + '</p><div class="bar-track"><div class="bar-fill" style="width:' + (i / qs.length * 100) + '%"></div></div><p class="qtext">' + esc(q.q) + "</p>" + pic +
         q.options.map(function (o, n) { return '<button class="opt" data-n="' + n + '" aria-pressed="false"><span class="letter">' + LET[n].toUpperCase() + "</span><span>" + esc(o) + "</span></button>"; }).join("") + (multi ? '<button class="btn primary" id="chk" type="button">Check my answer</button>' : "") + '<div id="fb"></div>';
       var opts = p.querySelectorAll(".opt");
       function finish(chosen) {
@@ -959,47 +1180,45 @@
   }
 
   /* ---------- past papers ---------- */
+  function paperRow(x) {
+    var quick = (x.links || []).filter(function (l) { return l.short; });
+    if (quick.length) {
+      return '<li class="paper-row"><a href="#/paper/' + esc(x.id) + '"><span>' + esc(x.title) + (x.year ? " (" + esc(x.year) + ")" : "") + "</span></a>" +
+        '<span class="paper-btns">' + (x.questions ? '<a class="btn small primary" href="#/paper/' + esc(x.id) + '">Online quiz</a>' : "") +
+        quick.map(function (l) { return '<a class="btn small" href="' + esc(l.url) + '" target="_blank" rel="noopener">' + esc(l.short) + "</a>"; }).join("") + "</span></li>";
+    }
+    var tags = [x.questions ? "Quiz" : "", (x.pdf || x.links) ? "PDF" : ""].filter(Boolean).join(" and ");
+    return '<li><a href="#/paper/' + esc(x.id) + '"><span>' + esc(x.title) + (x.year ? " (" + esc(x.year) + ")" : "") + '</span><span class="pill">' + esc(tags || "Open") + "</span></a></li>";
+  }
   function papersView(subjectId) {
-    var all = S.papers || [], sub = subjectId ? subjectById(subjectId) : null;
-    var html = '<div class="wrap"><p class="crumbs"><a href="#/">Home</a> / Past papers</p><h1>Past papers' + (sub ? ": " + esc(sub.name) : "") + "</h1>";
+    var sb0 = subjectId && subjectById(subjectId);
+    if (sb0 && sb0.groups) { location.replace("#/subject/" + subjectId + "/papers"); return; }
+    var all = S.papers || [];
+    var html = '<div class="wrap"><p class="crumbs"><a href="#/">Home</a> / Past papers</p><h1>Past papers</h1>';
     var any = false;
-    (subjectId ? S.subjects : progSubjects()).forEach(function (sb) {
-      if (subjectId && sb.id !== subjectId) return;
+    progSubjects().forEach(function (sb) {
       var list = all.filter(function (x) { return x.subject === sb.id; });
       if (!list.length) return;
       any = true;
-      html += "<h2>" + esc(sb.name) + '</h2><ul class="lec-list">' + list.map(function (x) {
-        var tags = [x.questions ? "Quiz" : "", (x.pdf || x.links) ? "PDF" : ""].filter(Boolean).join(" and ");
-        var quick = (x.links || []).filter(function (l) { return l.short; });
-        if (quick.length) {
-          return '<li class="paper-row"><a href="#/paper/' + esc(x.id) + '"><span>' + esc(x.title) + (x.year ? " (" + esc(x.year) + ")" : "") + "</span></a>" +
-            '<span class="paper-btns">' + (x.questions ? '<a class="btn small primary" href="#/paper/' + esc(x.id) + '">Online quiz</a>' : "") +
-            quick.map(function (l) { return '<a class="btn small" href="' + esc(l.url) + '" target="_blank" rel="noopener">' + esc(l.short) + "</a>"; }).join("") + "</span></li>";
-        }
-        return '<li><a href="#/paper/' + esc(x.id) + '"><span>' + esc(x.title) + (x.year ? " (" + esc(x.year) + ")" : "") + '</span><span class="pill">' + esc(tags || "Open") + "</span></a></li>";
-      }).join("") + "</ul>";
+      html += "<h2>" + (sb.groups ? '<a class="h-link" href="#/subject/' + sb.id + '/papers">' + esc(sb.name) + "</a>" : esc(sb.name)) + '</h2><ul class="lec-list">' + list.map(paperRow).join("") + "</ul>";
     });
-    if (!subjectId) {
-      var others = all.filter(function (x) { return x.program === PROG && !subjectById(x.subject); });
-      var groups = [];
-      others.forEach(function (x) { if (groups.indexOf(x.subject) < 0) groups.push(x.subject); });
-      groups.forEach(function (g) {
-        any = true;
-        html += "<h2>" + esc((S.otherPaperGroups || {})[g] || "Other") + '</h2><ul class="lec-list">' + others.filter(function (x) { return x.subject === g; }).map(function (x) {
-          return '<li><a href="#/paper/' + esc(x.id) + '"><span>' + esc(x.title) + (x.year ? " (" + esc(x.year) + ")" : "") + '</span><span class="pill">Open</span></a></li>';
-        }).join("") + "</ul>";
-      });
-    }
+    var others = all.filter(function (x) { return x.program === PROG && !subjectById(x.subject); });
+    var groups = [];
+    others.forEach(function (x) { if (groups.indexOf(x.subject) < 0) groups.push(x.subject); });
+    groups.forEach(function (g) {
+      any = true;
+      html += "<h2>" + esc((S.otherPaperGroups || {})[g] || "Other") + '</h2><ul class="lec-list">' + others.filter(function (x) { return x.subject === g; }).map(paperRow).join("") + "</ul>";
+    });
     var folder = (S.papersFolders || {})[PROG] || (PROG === S.DEFAULT_PROGRAM ? S.papersFolder : "");
     if (!any) html += "<p>Past papers will be added here soon.</p>" + (folder ? '<p class="src">Meanwhile, see <a href="' + esc(folder) + '" target="_blank" rel="noopener">the Google Drive folder</a>.</p>' : "");
-    else if (folder && !subjectId) html += '<p class="src" style="margin-top:1.6rem">All the past papers are also in <a href="' + esc(folder) + '" target="_blank" rel="noopener">this Google Drive folder</a>.</p>';
+    else if (folder) html += '<p class="src" style="margin-top:1.6rem">All the past papers are also in <a href="' + esc(folder) + '" target="_blank" rel="noopener">this Google Drive folder</a>.</p>';
     setView(html + "</div>", "Past papers");
   }
   function paperView(id) {
     var x = (S.papers || []).filter(function (q) { return q.id === id; })[0];
     if (!x) return notFound();
     var sb = subjectById(x.subject);
-    var html = '<div class="wrap"><p class="crumbs"><a href="#/">Home</a> / <a href="#/papers/' + x.subject + '">Past papers</a></p><h1>' + esc(x.title) + '</h1><p class="meta">' + esc(sb ? sb.name : ((S.otherPaperGroups || {})[x.subject] || "")) + (x.year ? ", " + esc(x.year) : "") + (x.session ? ", " + esc(x.session) : "") + "</p>";
+    var html = '<div class="wrap"><p class="crumbs"><a href="#/">Home</a> / <a href="' + (sb && sb.groups ? "#/subject/" + x.subject + "/papers" : "#/papers") + '">Past papers</a></p><h1>' + esc(x.title) + '</h1><p class="meta">' + esc(sb ? sb.name : ((S.otherPaperGroups || {})[x.subject] || "")) + (x.year ? ", " + esc(x.year) : "") + (x.session ? ", " + esc(x.session) : "") + "</p>";
     var links = x.links || (x.pdf ? [{ label: "Open the paper (PDF)", url: x.pdf }] : []);
     if (links.length) html += '<div class="row" style="margin:0 0 1.4rem">' + links.map(function (l, n) { return '<a class="btn' + (n === 0 ? " primary" : "") + '" href="' + esc(l.url) + '" target="_blank" rel="noopener">' + esc(l.label) + "</a>"; }).join("") + "</div>";
     if (x.note) html += '<p class="src">' + esc(x.note) + "</p>";
@@ -1051,6 +1270,19 @@
 
   applyLayout();
 
+  /* sticky tabs sit right under the header, whatever its height */
+  var hdrEl = document.querySelector(".site-header");
+  function setHdr() { if (hdrEl) document.documentElement.style.setProperty("--hdr", hdrEl.offsetHeight + "px"); }
+  setHdr(); window.addEventListener("resize", setHdr);
+
+  /* ---------- back to top (long pages) ---------- */
+  var toTop = document.createElement("button");
+  toTop.className = "to-top"; toTop.type = "button"; toTop.setAttribute("aria-label", "Back to top"); toTop.hidden = true;
+  toTop.innerHTML = '<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 19V5m0 0-6 6m6-6 6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+  document.body.appendChild(toTop);
+  toTop.addEventListener("click", function () { window.scrollTo({ top: 0, behavior: "smooth" }); });
+  window.addEventListener("scroll", function () { toTop.hidden = window.scrollY < 900; }, { passive: true });
+
   /* ---------- router ---------- */
   requestAnimationFrame(function () { requestAnimationFrame(function () { document.body.classList.remove("no-anim"); }); });
 
@@ -1083,6 +1315,7 @@
     var parts = location.hash.replace(/^#\/?/, "").split("/").filter(Boolean);
     if (parts[0] !== "year") setTimeout(trackView, 0);
     if (isOpen()) closeDrawer();
+    closePhoneSearch();
     if (!parts.length) return homeView();
     if (parts[0] === "updates") return updatesView();
     if (parts[0] === "apps") return appsView();
@@ -1091,7 +1324,7 @@
     if (parts[0] === "midterm") return midtermView();
     if (parts[0] === "papers") return papersView(parts[1]);
     if (parts[0] === "paper") return paperView(parts[1]);
-    if (parts[0] === "subject") return subjectView(parts[1]);
+    if (parts[0] === "subject") return subjectView(parts[1], parts[2], parts[3]);
     if (parts[0] === "lecture") return lectureView(parts[1], parts[2]);
     notFound();
   }

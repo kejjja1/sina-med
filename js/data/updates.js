@@ -2,6 +2,12 @@
    date: what people see. items: short lines. */
 window.SINA = window.SINA || { subjects: [], lectures: {} };
 SINA.updates = [
+  { date: "26 October 2026", items: [
+    "New layout: lecture pages now have just Summary, Flashcards and Go deeper, with a small ⋯ menu for Download lecture, practice questions, visuals and links.",
+    "Each class now has its own sections: Lectures, Questions, Visual, High yield, Resources and Past papers.",
+    "Questions: tick one or several lectures (or just the midterm ones) and get one mixed quiz.",
+    "Easier to move around: Previous and Next lecture buttons, an 'On this page' list on summaries, a back-to-top button, a search button on phones and a simpler home page."
+  ]},
   { date: "25 October 2026", items: [
     "New lecture: Anatomy of the ventricles and CSF (Anatomy 3, Neuroanatomy), with questions that show the lecture slide behind each answer.",
     "Fixed the Electrical communication (Physiology) lecture link, which pointed to a deleted Drive file.",
