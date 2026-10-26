@@ -625,3 +625,15 @@ body.noscroll { overflow: hidden; }
 .rev-item { border-top: 1px solid var(--line); padding-top: 0.8rem; margin-top: 0.8rem; }
 .opt.static { cursor: default; }
 .rev-tag { margin-left: auto; font-size: 0.78rem; font-weight: 700; white-space: nowrap; padding-left: 0.6rem; }
+/* quiz: lecture slide behind the answer */
+.slide-ref { margin: 0.2rem 0 1rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+.slide-ref summary { font: inherit; cursor: pointer; padding: 0.6rem 0.9rem; font-weight: 700; color: var(--accent); }
+.slide-ref summary span { font-weight: 500; color: var(--muted); }
+.slide-ref figure { margin: 0; padding: 0 0.9rem 0.9rem; }
+.slide-ref img { display: block; width: 100%; height: auto; border-radius: 6px; border: 1px solid var(--line); background: #fff; }
+.slide-ref figcaption { font-size: 0.82rem; color: var(--muted); margin-top: 0.35rem; }
+/* lecture page: one download button */
+.srcline { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 0.8rem; margin: 0.3rem 0 1rem; }
+.dlbtn { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.45rem 0.9rem; border-radius: 8px; background: var(--accent); color: var(--accent-ink); font-weight: 700; font-size: 0.92rem; text-decoration: none; }
+.dlbtn:hover, .dlbtn:focus-visible { filter: brightness(1.08); }
+.srcwho { font-size: 0.88rem; color: var(--muted); }

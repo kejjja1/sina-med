@@ -2,13 +2,19 @@
    date: what people see. items: short lines. */
 window.SINA = window.SINA || { subjects: [], lectures: {} };
 SINA.updates = [
+  { date: "25 October 2026", items: [
+    "New lecture: Anatomy of the ventricles and CSF (Anatomy 3, Neuroanatomy), with questions that show the lecture slide behind each answer.",
+    "Fixed the Electrical communication (Physiology) lecture link, which pointed to a deleted Drive file.",
+    "Simpler lecture pages: each lecture now has a single Download lecture button with the professor's name beside it."
+  ]},
   { date: "17 October 2026", items: [
     "The upcoming midterm is now the Neurophysiology midterm: introduction to neurophysiology, electrical communication, chemical communication and muscle physiology part I.",
     "New lecture pages: Synapses and chemical communication, and Muscle physiology part I (skeletal muscle structure).",
     "Two neurophysiology practice midterms (25 questions each, A to E), with question and correction PDFs in the same layout as the faculty papers.",
     "Added Prof. Covasa's extra questions (as a quiz) and the muscle workshop questions to Physiology past papers.",
     "After any quiz you can now show only your wrong answers, with the right answer and why, and retry just those.",
-    "In the past papers list, practice quizzes now have their questions and correction PDFs side by side."
+    "In the past papers list, practice quizzes now have their questions and correction PDFs side by side.",
+    "Practice quiz explanations can now show the exact lecture slide behind the answer (\"See the slide\"). Done for both neurophysiology practice midterms and every new quiz from now on."
   ]},
   { date: "8 October 2026", items: [
     "Upcoming midterm lectures: 'Vascular supply and applied anatomy of the eye' is no longer on the Anatomy 3 midterm list (the lecture itself is still in the subject).",

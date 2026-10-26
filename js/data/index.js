@@ -34,6 +34,7 @@ SINA.subjects = [
         { id: "anat3-brainstem", title: "Anatomy of the brainstem" },
         { id: "anat3-cerebrum", title: "Anatomy of the cerebrum" },
         { id: "anat3-diencephalon", title: "Anatomy of the diencephalon" },
+        { id: "anat3-ventricles", title: "Anatomy of the ventricles and CSF" },
         { id: "anat3-descending-tracts", title: "Anatomy of the descending tracts" },
         { id: "anat3-pns", title: "The peripheral nervous system" }
       ]}

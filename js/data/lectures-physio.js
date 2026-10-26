@@ -998,7 +998,7 @@ SINA.lectures["physio-neurons"] = {
  "group": "Neurophysiology",
  "title": "Neurons and electrical communication",
  "sourceFile": "Covasa Lecture 2 Neurons. Electrical communication.pdf (Neurophysiology, Prof. Mihai Covasa, 2025-2026)",
- "sourceUrl": "https://drive.google.com/file/d/1xR4ZprZNYs4VgeX3B3wLpM4LUfBBiQ5T/view?usp=drivesdk",
+ "sourceUrl": "https://drive.google.com/file/d/13jUO5Nca4Xdmu7s5NavTO_AlLOy6v75k/view?usp=drivesdk",
  "buildNote": "<strong>Built from the lecture slides.</strong> This page follows Prof. Covasa's lecture: nervous system cells and the structure of the neuron, ion channels, the resting membrane potential, graded and action potentials, and conduction velocity. Every fact was cross-checked against at least two references, listed at the bottom. If your professor says something different, trust your professor.",
  "summary": [
   {

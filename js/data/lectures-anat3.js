@@ -1,4 +1,4 @@
-/* anat3: 24 lectures, merged for upload. Edit the source files, not this one. */
+/* anat3: 25 lectures, merged for upload. Edit the source files, not this one. */
 window.SINA = window.SINA || {subjects:[], lectures:{}};
 SINA.lectures["anat3-orbit"] = {
  "id": "anat3-orbit",
@@ -26145,6 +26145,1060 @@ SINA.lectures["anat3-pns"] = {
   {
    "t": "clinic",
    "html": "<strong>Patellar reflex</strong> is monosynaptic (<strong>L3-L4</strong>): it tests one segment's sensory and motor integrity."
+  }
+ ]
+};
+window.SINA = window.SINA || {subjects:[], lectures:{}};
+SINA.lectures["anat3-ventricles"] = {
+ "id": "anat3-ventricles",
+ "subject": "anat3",
+ "group": "Neuroanatomy",
+ "title": "Anatomy of the ventricles and CSF",
+ "sourceFile": "7. anatomy of ventricules and cerebrospinal fluid.pdf (Anatomy 3, Neuroanatomy lecture 8, Prof. F. Fliyou, 2026-2027)",
+ "sourceUrl": "https://drive.google.com/file/d/15QIcPEAzd1bkD_FjRxOmQqEzlEEtkyON/view?usp=drivesdk",
+ "buildNote": "<strong>Built from the lecture slides.</strong> Slides that only show pictures are covered in outline. If your professor says something different, trust your professor.",
+ "summary": [
+  {
+   "id": "s0",
+   "title": "The big picture",
+   "html": "<p>The brain is hollow. Inside it is a connected set of cavities, the <strong>ventricles</strong>, filled with <strong>cerebrospinal fluid (CSF)</strong>. The same fluid also surrounds the brain and spinal cord in the <strong>subarachnoid space</strong>.</p><p>Learn it as a one-way pipe: <strong>made</strong> by the choroid plexus, <strong>flows</strong> lateral ventricles → foramina of Monro → third ventricle → aqueduct → fourth ventricle → foramina of Magendie and Luschka → subarachnoid space, and is <strong>absorbed</strong> by the arachnoid granulations into the venous sinuses. Block the pipe anywhere and the ventricles upstream swell: <strong>hydrocephalus</strong>.</p>"
+  },
+  {
+   "id": "s1",
+   "title": "What the lecture asks you to do",
+   "html": "<ul><li>Describe the anatomy and location of the cerebral ventricles.</li><li>Identify the main landmarks (walls) of each ventricle.</li><li>Explain how the ventricles connect with the subarachnoid space.</li><li>Describe CSF production, circulation, absorption and functions.</li><li>Explain the basic mechanisms of hydrocephalus and its consequences.</li><li>Recognise the anatomy behind lumbar puncture and ventricular drainage.</li></ul>"
+  },
+  {
+   "id": "s2",
+   "title": "The ventricular system",
+   "html": "<p>Four ventricles in a communicating network inside the brain parenchyma: <strong>2 lateral ventricles</strong>, the <strong>third ventricle</strong>, the <strong>cerebral aqueduct</strong> and the <strong>fourth ventricle</strong>.</p><p><strong>Embryology</strong>: the cavity of the neural tube becomes the ventricles as the brain vesicles form. By the <strong>sixth week</strong>:</p><table><tr><th>Brain vesicle</th><th>Cavity</th></tr><tr><td>Cerebral hemispheres</td><td>Lateral ventricles</td></tr><tr><td>Diencephalon</td><td>Third ventricle (joined to the lateral ventricles by the foramina of Monro)</td></tr><tr><td>Mesencephalon (midbrain)</td><td>Cerebral aqueduct, which stays a narrow channel</td></tr><tr><td>Hindbrain</td><td>Fourth ventricle</td></tr></table>"
+  },
+  {
+   "id": "s3",
+   "title": "Lateral ventricles",
+   "html": "<p>Paired, <strong>C-shaped</strong> CSF spaces in the cerebral hemispheres, each joined to the third ventricle by the <strong>interventricular foramen of Monro</strong>. Each has <strong>three horns</strong> (frontal, temporal, occipital), a <strong>body</strong> and an <strong>atrium</strong> where they meet.</p><table><tr><th>Part</th><th>Roof</th><th>Floor</th><th>Medial wall</th><th>Lateral wall</th></tr><tr><td><strong>Frontal (anterior) horn</strong>: in the frontal lobe, in front of the foramen of Monro</td><td>Genu of the corpus callosum (also the anterior wall)</td><td>Rostrum of the corpus callosum</td><td><strong>Septum pellucidum</strong>; columns of the fornix below</td><td><strong>Head of the caudate nucleus</strong></td></tr><tr><td><strong>Body</strong>: from the foramen of Monro back to the atrium</td><td>Body of the corpus callosum</td><td>Thalamus</td><td>Septum pellucidum (above) and body of the fornix (below)</td><td>Caudate nucleus and thalamus</td></tr><tr><td><strong>Atrium</strong>: triangular, joins body, temporal and occipital horns</td><td>Body and splenium of the corpus callosum; tapetum</td><td>Collateral trigone (continuation of the collateral eminence)</td><td><strong>Calcar avis</strong> (from the calcarine fissure) and bulb of the corpus callosum (forceps major)</td><td>Tapetum</td></tr><tr><td><strong>Temporal (inferior) horn</strong>: the <strong>longest and largest</strong>; ends at the <strong>amygdala</strong></td><td>Thalamus, tail of the caudate, tapetum</td><td>Collateral eminence and <strong>hippocampus</strong></td><td>Choroidal fissure runs along it</td><td>Tapetum (separates it from the optic radiations)</td></tr><tr><td><strong>Occipital (posterior) horn</strong>: curves back from the atrium; size varies</td><td>Tapetum</td><td>Collateral trigone</td><td>Bulb of the corpus callosum and calcar avis</td><td>Tapetum (separates it from the optic radiations)</td></tr></table><p>The <strong>tapetum</strong> is a sheet of crossing fibres from the splenium of the corpus callosum. The striothalamic sulcus separates the caudate tail from the thalamus.</p>"
+  },
+  {
+   "id": "s4",
+   "title": "Third ventricle",
+   "html": "<p>A <strong>median cleft between the two thalami</strong>. It opens into the lateral ventricles by the foramina of Monro and into the fourth ventricle by the <strong>aqueduct of Sylvius</strong>, just below the posterior commissure. Choroid plexus lies along its roof.</p><table><tr><th>Wall</th><th>Formed by</th></tr><tr><td>Lateral walls</td><td><strong>Thalami</strong>; the <strong>hypothalamic sulcus</strong> separates them from the hypothalamus (in front) and subthalamus (behind)</td></tr><tr><td>Anterior wall (top to bottom)</td><td>Columns of the fornix, <strong>anterior commissure</strong>, <strong>lamina terminalis</strong></td></tr><tr><td>Posterior wall (top to bottom)</td><td>Habenular commissure, <strong>pineal gland</strong>, <strong>posterior commissure</strong></td></tr><tr><td>Roof</td><td>Choroidal fissure and bodies of the fornix</td></tr><tr><td>Floor (front to back)</td><td><strong>Optic chiasm</strong>, <strong>infundibulum</strong> of the pituitary, <strong>tuber cinereum</strong>, <strong>mammillary bodies</strong></td></tr></table><p>The tuber cinereum is the part of the hypothalamus in the floor between the optic chiasm and the mammillary bodies.</p>"
+  },
+  {
+   "id": "s5",
+   "title": "Cerebral aqueduct and fourth ventricle",
+   "html": "<p><strong>Cerebral aqueduct (of Sylvius)</strong>: a narrow channel through the <strong>midbrain</strong>, joining the third to the fourth ventricle. It normally has <strong>no choroid plexus</strong> and is a <strong>common site of obstruction in non-communicating hydrocephalus</strong>.</p><p><strong>Fourth ventricle</strong>: a broad, <strong>tent-shaped</strong> cavity <strong>behind the brainstem and in front of the cerebellum</strong>.</p><ul><li><strong>Roof</strong> (dorsal): superior and inferior medullary vela, over the cerebellum. Choroid plexus lies along the roof on the tela choroidea and can protrude through the foramina of Luschka.</li><li><strong>Floor</strong> (ventral): the <strong>rhomboid fossa</strong>, a diamond-shaped depression on the back of the pons and upper half of the medulla.</li><li><strong>Side walls</strong>: the vela and the cerebellar peduncles.</li><li><strong>Obex</strong>: the most caudal tip.</li></ul><p><strong>Floor landmarks</strong>: the <strong>median sulcus</strong> divides the floor into right and left halves; the <strong>sulcus limitans</strong> divides each half. <strong>Motor</strong> nuclei lie <strong>medial</strong> to the sulcus limitans (the <strong>medial eminence</strong>); <strong>sensory</strong> nuclei lie <strong>lateral</strong> (the <strong>vestibular area</strong>).</p><p><strong>Exits</strong>: CSF enters from the aqueduct and leaves through the <strong>median aperture of Magendie</strong> into the <strong>cisterna magna</strong>, the two <strong>lateral apertures of Luschka</strong> into the <strong>cerebellopontine cisterns</strong>, or down through the obex into the <strong>central canal</strong> of the spinal cord.</p>"
+  },
+  {
+   "id": "s6",
+   "title": "The choroid plexus",
+   "html": "<ul><li>A network of capillaries lined by specialised (ependymal) cells.</li><li>Lines all the ventricles <strong>except the frontal and occipital horns</strong> of the lateral ventricles and the <strong>cerebral aqueduct</strong>.</li><li>The <strong>main source of CSF</strong>, about <strong>500 mL a day</strong>.</li><li>Forms the <strong>blood-CSF barrier</strong>.</li></ul>"
+  },
+  {
+   "id": "s7",
+   "title": "Meninges and cisterns",
+   "html": "<table><tr><th>Layer</th><th>Key facts</th></tr><tr><td><strong>Dura mater</strong> (outer, against the skull)</td><td>Tough, fibrous, does not stretch. Divides the cranial cavity with the <strong>falx cerebri</strong> and <strong>tentorium cerebelli</strong>. The <strong>dural venous sinuses</strong> lie between its two layers and drain into the <strong>internal jugular veins</strong>.</td></tr><tr><td><strong>Arachnoid mater</strong> (middle)</td><td><strong>Avascular</strong>. Its projections into the dura, the <strong>arachnoid granulations (of Pacchioni)</strong>, return CSF to the venous sinuses.</td></tr><tr><td><strong>Pia mater</strong> (inner)</td><td>Very thin, stuck to the brain and cord; the <strong>only layer that follows the gyri and fissures</strong>.</td></tr></table><p><strong>Spaces</strong>: epidural (skull to dura), subdural (dura to arachnoid), <strong>subarachnoid</strong> (arachnoid to pia, <strong>filled with CSF</strong>).</p><p><strong>Cisterns</strong> are places where the subarachnoid space widens. They are connected, so keeping them open is essential for CSF flow, and some carry vessels and cranial nerves. Lecture list: cisterna magna, Sylvian, cerebellomedullary, lamina terminalis, velum interpositum, suprasellar (chiasmatic), carotid, perimesencephalic, superior cerebellar, prepontine, cerebellopontine and premedullary cisterns.</p>"
+  },
+  {
+   "id": "s8",
+   "title": "CSF: production, flow, absorption, functions",
+   "html": "<table><tr><th></th><th>Lecture values</th></tr><tr><td>Nature</td><td>Clear, colourless <strong>ultrafiltrate of plasma</strong>; <strong>low in protein</strong>; few white cells; contains glucose and electrolytes</td></tr><tr><td>Volume</td><td>About <strong>150 mL</strong> in the adult: <strong>125 mL</strong> in the subarachnoid spaces, <strong>25 mL</strong> in the ventricles</td></tr><tr><td>Production</td><td><strong>400 to 600 mL a day</strong> (about 500), mostly by the choroid plexus; renewed several times a day (the lecture says 4 to 5 times in 24 hours)</td></tr><tr><td>Flow</td><td>One way, rostral to caudal: lateral ventricles → foramina of Monro → third ventricle → aqueduct → fourth ventricle → Magendie (and Luschka) → subarachnoid space at the base of the brain</td></tr><tr><td>Absorption</td><td><strong>Arachnoid villi and granulations</strong> into the dural venous sinuses, mainly the <strong>superior sagittal sinus</strong>, and around spinal nerve roots. Meningeal lymphatics and perivascular routes also help.</td></tr></table><p><strong>Functions</strong>: mechanical protection (cushion), <strong>buoyancy</strong> (lowers the brain's effective weight), chemical stability (removes waste, keeps homeostasis) and carrying nutrients and neuroactive substances. Slower CSF turnover may help metabolites build up in ageing and neurodegeneration. Because its composition is tightly controlled, changes in it help diagnosis.</p>"
+  },
+  {
+   "id": "s9",
+   "title": "Clinical applications",
+   "html": "<p><strong>Hydrocephalus</strong> is abnormal enlargement of the ventricles from disturbed CSF dynamics. Mechanisms: <strong>obstruction</strong> of flow, <strong>impaired absorption</strong> and, rarely, <strong>overproduction</strong> (for example a <strong>choroid plexus papilloma</strong>).</p><table><tr><th>Type</th><th>Cause</th></tr><tr><td><strong>Communicating</strong></td><td>Poor absorption, or too much CSF produced; the pathway is open</td></tr><tr><td><strong>Non-communicating (obstructive)</strong></td><td>Flow blocked in a passage between ventricles, often the aqueduct</td></tr></table><p><strong>Treatment</strong>: a <strong>shunt</strong> that drains CSF elsewhere, usually the peritoneal cavity (<strong>ventriculoperitoneal shunt</strong>), or <strong>endoscopic third ventriculostomy (ETV)</strong>, which opens the <strong>floor of the third ventricle</strong> so CSF reaches the <strong>interpeduncular cistern</strong> and bypasses a block below.</p><p>Other conditions: a mass raising intracranial pressure <strong>effaces the cisterns</strong>; subarachnoid haemorrhage fills cisterns with blood; meningitis infects the meninges and CSF.</p><p><strong>Lumbar puncture</strong>: the cord ends at about <strong>L1-L2</strong> in adults but the lumbar subarachnoid space continues below it, so the needle goes in at <strong>L3-L4 or L4-L5</strong>.</p>"
+  }
+ ],
+ "exam": [
+  "Ventricles: 2 lateral, third, cerebral aqueduct, fourth.",
+  "Lateral ↔ third: foramina of Monro. Third ↔ fourth: aqueduct of Sylvius (midbrain).",
+  "Fourth → subarachnoid space: Magendie (median, to cisterna magna) and Luschka (2 lateral, to cerebellopontine cisterns).",
+  "Lateral ventricle: frontal, temporal, occipital horns, body, atrium; C-shaped.",
+  "Frontal horn: septum pellucidum medially, head of caudate laterally, genu of corpus callosum in front.",
+  "Temporal horn: longest and largest, ends at the amygdala, hippocampus in the floor.",
+  "Third ventricle: between the thalami; floor = optic chiasm, infundibulum, tuber cinereum, mammillary bodies.",
+  "Fourth ventricle: behind the brainstem, in front of the cerebellum; floor = rhomboid fossa.",
+  "Sulcus limitans: motor nuclei medial, sensory lateral.",
+  "No choroid plexus in the frontal and occipital horns or the aqueduct.",
+  "CSF: about 150 mL in total (125 subarachnoid, 25 ventricles); about 500 mL made a day.",
+  "Absorption: arachnoid granulations (Pacchioni) into the superior sagittal sinus.",
+  "Pia is the only meningeal layer that follows the gyri.",
+  "Hydrocephalus: communicating (absorption or production) versus non-communicating (obstruction, often the aqueduct).",
+  "ETV opens the floor of the third ventricle into the interpeduncular cistern.",
+  "Lumbar puncture at L3-L4 or L4-L5; the cord ends at L1-L2."
+ ],
+ "visual": {
+  "kind": "model",
+  "intro": "",
+  "figure": {
+   "viewBox": "0 0 760 420",
+   "alt": "The pathway of cerebrospinal fluid",
+   "caption": "CSF is made by the choroid plexus and flows one way, from the lateral ventricles to the venous sinuses. Schematic drawn for this site.",
+   "base": "<defs><marker id=\"ah\" markerWidth=\"10\" markerHeight=\"8\" refX=\"9\" refY=\"4\" orient=\"auto\"><path d=\"M0,0 L10,4 L0,8 Z\" fill=\"#8a8a8a\"/></marker></defs><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"185\" y1=\"60\" x2=\"205\" y2=\"60\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"365\" y1=\"60\" x2=\"385\" y2=\"60\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"545\" y1=\"60\" x2=\"565\" y2=\"60\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"650\" y1=\"90\" x2=\"650\" y2=\"170\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"565\" y1=\"200\" x2=\"545\" y2=\"200\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"385\" y1=\"200\" x2=\"365\" y2=\"200\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"195\" y1=\"200\" x2=\"175\" y2=\"200\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"95\" y1=\"230\" x2=\"95\" y2=\"320\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"215\" y1=\"350\" x2=\"245\" y2=\"350\"/>",
+   "parts": {
+    "cp": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2d7cf\" x=\"15\" y=\"30\" width=\"170\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Choroid plexus",
+      "(makes CSF)"
+     ],
+     "lx": 100.0,
+     "ly": 58.0
+    },
+    "lat": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#cfe3f2\" x=\"205\" y=\"30\" width=\"160\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Lateral",
+      "ventricles"
+     ],
+     "lx": 285.0,
+     "ly": 58.0
+    },
+    "monro": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d7edd2\" x=\"385\" y=\"30\" width=\"160\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Foramina",
+      "of Monro"
+     ],
+     "lx": 465.0,
+     "ly": 58.0
+    },
+    "third": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2e2a8\" x=\"565\" y=\"30\" width=\"170\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Third",
+      "ventricle"
+     ],
+     "lx": 650.0,
+     "ly": 58.0
+    },
+    "aq": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#e3d5f0\" x=\"565\" y=\"170\" width=\"170\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Cerebral aqueduct",
+      "(of Sylvius)"
+     ],
+     "lx": 650.0,
+     "ly": 198.0
+    },
+    "fourth": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f7d9b8\" x=\"385\" y=\"170\" width=\"160\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Fourth",
+      "ventricle"
+     ],
+     "lx": 465.0,
+     "ly": 198.0
+    },
+    "apert": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d9ecec\" x=\"195\" y=\"170\" width=\"170\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Magendie (1) and",
+      "Luschka (2)"
+     ],
+     "lx": 280.0,
+     "ly": 198.0
+    },
+    "sas": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2d7cf\" x=\"15\" y=\"170\" width=\"160\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Subarachnoid space",
+      "and cisterns"
+     ],
+     "lx": 95.0,
+     "ly": 198.0
+    },
+    "gran": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#cfe3f2\" x=\"15\" y=\"320\" width=\"200\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Arachnoid granulations",
+      "(Pacchioni)"
+     ],
+     "lx": 115.0,
+     "ly": 348.0
+    },
+    "sss": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d7edd2\" x=\"245\" y=\"320\" width=\"170\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Superior sagittal",
+      "sinus → IJV"
+     ],
+     "lx": 330.0,
+     "ly": 348.0
+    }
+   },
+   "arrows": {
+    "cp": [
+     {
+      "t": [
+       15.0,
+       38.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "lat": [
+     {
+      "t": [
+       205.0,
+       38.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "monro": [
+     {
+      "t": [
+       385.0,
+       38.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "third": [
+     {
+      "t": [
+       565.0,
+       38.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "aq": [
+     {
+      "t": [
+       565.0,
+       178.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "fourth": [
+     {
+      "t": [
+       385.0,
+       178.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "apert": [
+     {
+      "t": [
+       195.0,
+       178.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "sas": [
+     {
+      "t": [
+       15.0,
+       178.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "gran": [
+     {
+      "t": [
+       15.0,
+       328.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "sss": [
+     {
+      "t": [
+       245.0,
+       328.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ]
+   }
+  }
+ },
+ "mcqs": [
+  {
+   "q": "Which structure connects the lateral ventricles to the third ventricle?",
+   "options": [
+    "Cerebral aqueduct",
+    "Foramen of Monro",
+    "Foramen of Luschka",
+    "Foramen of Magendie"
+   ],
+   "answer": 1,
+   "why": "The interventricular foramina of Monro.",
+   "slides": [
+    {
+     "src": "files/slides/anat3-ventricles/11.jpg",
+     "lec": "Ventricles and CSF",
+     "n": 11
+    }
+   ]
+  },
+  {
+   "q": "The third ventricle lies:",
+   "options": [
+    "Between the cerebral hemispheres",
+    "Behind the cerebellum",
+    "Inside the midbrain",
+    "Between the two thalami"
+   ],
+   "answer": 3,
+   "why": "A median cleft in the diencephalon.",
+   "slides": [
+    {
+     "src": "files/slides/anat3-ventricles/24.jpg",
+     "lec": "Ventricles and CSF",
+     "n": 24
+    }
+   ]
+  },
+  {
+   "q": "The fourth ventricle opens into the subarachnoid space through:",
+   "options": [
+    "The paired foramina of Monro",
+    "The central canal of the spinal cord",
+    "The aqueduct of Sylvius in the midbrain",
+    "The foramina of Luschka and Magendie"
+   ],
+   "answer": 3,
+   "why": "One median (Magendie) and two lateral (Luschka) apertures.",
+   "slides": [
+    {
+     "src": "files/slides/anat3-ventricles/34.jpg",
+     "lec": "Ventricles and CSF",
+     "n": 34
+    }
+   ]
+  },
+  {
+   "q": "The cerebral aqueduct connects:",
+   "options": [
+    "The lateral ventricles and the third ventricle",
+    "The fourth ventricle and the subarachnoid space",
+    "The third and fourth ventricles",
+    "The lateral ventricle and the subarachnoid space"
+   ],
+   "answer": 2,
+   "why": "It runs through the midbrain.",
+   "slides": [
+    {
+     "src": "files/slides/anat3-ventricles/28.jpg",
+     "lec": "Ventricles and CSF",
+     "n": 28
+    }
+   ]
+  },
+  {
+   "q": "CSF is absorbed mainly through:",
+   "options": [
+    "The choroid plexus",
+    "The central canal",
+    "The ependyma of the aqueduct",
+    "The arachnoid villi and granulations"
+   ],
+   "answer": 3,
+   "why": "Into the dural venous sinuses, mainly the superior sagittal sinus.",
+   "slides": [
+    {
+     "src": "files/slides/anat3-ventricles/49.jpg",
+     "lec": "Ventricles and CSF",
+     "n": 49
+    }
+   ]
+  },
+  {
+   "q": "Which part of the lateral ventricle is the longest and largest?",
+   "options": [
+    "The frontal horn",
+    "The body",
+    "The temporal horn",
+    "The occipital horn"
+   ],
+   "answer": 2,
+   "why": "It ends at the amygdala.",
+   "slides": [
+    {
+     "src": "files/slides/anat3-ventricles/19.jpg",
+     "lec": "Ventricles and CSF",
+     "n": 19
+    }
+   ]
+  },
+  {
+   "q": "The medial wall of the frontal horn is formed by:",
+   "options": [
+    "The tapetum",
+    "The head of the caudate nucleus",
+    "The thalamus",
+    "The septum pellucidum"
+   ],
+   "answer": 3,
+   "why": "The head of the caudate forms the lateral wall.",
+   "slides": [
+    {
+     "src": "files/slides/anat3-ventricles/13.jpg",
+     "lec": "Ventricles and CSF",
+     "n": 13
+    }
+   ]
+  },
+  {
+   "q": "From front to back, the floor of the third ventricle is formed by:",
+   "options": [
+    "Mammillary bodies, tuber cinereum, infundibulum, optic chiasm",
+    "Infundibulum, optic chiasm, mammillary bodies, tuber cinereum",
+    "Lamina terminalis, pineal gland, posterior commissure, habenula",
+    "Optic chiasm, infundibulum, tuber cinereum, mammillary bodies"
+   ],
+   "answer": 3,
+   "why": "",
+   "slides": [
+    {
+     "src": "files/slides/anat3-ventricles/26.jpg",
+     "lec": "Ventricles and CSF",
+     "n": 26
+    }
+   ]
+  },
+  {
+   "q": "The floor of the fourth ventricle is called:",
+   "options": [
+    "The tela choroidea",
+    "The medullary velum",
+    "The rhomboid fossa",
+    "The obex"
+   ],
+   "answer": 2,
+   "why": "Diamond-shaped, on the back of the pons and upper medulla.",
+   "slides": [
+    {
+     "src": "files/slides/anat3-ventricles/30.jpg",
+     "lec": "Ventricles and CSF",
+     "n": 30
+    }
+   ]
+  },
+  {
+   "q": "In the floor of the fourth ventricle, motor nuclei lie:",
+   "options": [
+    "Medial to the sulcus limitans",
+    "Lateral to the sulcus limitans",
+    "In the vestibular area",
+    "In the roof"
+   ],
+   "answer": 0,
+   "why": "Medial eminence = motor; vestibular area = sensory.",
+   "slides": [
+    {
+     "src": "files/slides/anat3-ventricles/32.jpg",
+     "lec": "Ventricles and CSF",
+     "n": 32
+    }
+   ]
+  },
+  {
+   "q": "Choroid plexus is normally absent from:",
+   "options": [
+    "The body of the lateral ventricle",
+    "The cerebral aqueduct",
+    "The third ventricle",
+    "The fourth ventricle"
+   ],
+   "answer": 1,
+   "why": "Also absent from the frontal and occipital horns.",
+   "slides": [
+    {
+     "src": "files/slides/anat3-ventricles/36.jpg",
+     "lec": "Ventricles and CSF",
+     "n": 36
+    }
+   ]
+  },
+  {
+   "q": "The total volume of CSF in an adult is about:",
+   "options": [
+    "15 mL",
+    "150 mL",
+    "500 mL",
+    "1500 mL"
+   ],
+   "answer": 1,
+   "why": "About 125 mL subarachnoid and 25 mL ventricular; about 500 mL is made each day.",
+   "slides": [
+    {
+     "src": "files/slides/anat3-ventricles/45.jpg",
+     "lec": "Ventricles and CSF",
+     "n": 45
+    }
+   ]
+  },
+  {
+   "q": "Which meningeal layer is the only one to follow the gyri and fissures?",
+   "options": [
+    "Pia mater",
+    "Arachnoid mater",
+    "Dura mater",
+    "Ependyma"
+   ],
+   "answer": 0,
+   "why": "",
+   "slides": [
+    {
+     "src": "files/slides/anat3-ventricles/43.jpg",
+     "lec": "Ventricles and CSF",
+     "n": 43
+    }
+   ]
+  },
+  {
+   "q": "CSF is found in the:",
+   "options": [
+    "Subarachnoid space",
+    "Subdural space",
+    "Epidural space",
+    "Space between the two layers of dura"
+   ],
+   "answer": 0,
+   "why": "The dural venous sinuses lie between the dural layers.",
+   "slides": [
+    {
+     "src": "files/slides/anat3-ventricles/39.jpg",
+     "lec": "Ventricles and CSF",
+     "n": 39
+    }
+   ]
+  },
+  {
+   "q": "The tapetum separates the temporal and occipital horns from:",
+   "options": [
+    "The hippocampus",
+    "The optic radiations",
+    "The caudate nucleus",
+    "The amygdala"
+   ],
+   "answer": 1,
+   "why": "It forms their lateral wall.",
+   "slides": [
+    {
+     "src": "files/slides/anat3-ventricles/22.jpg",
+     "lec": "Ventricles and CSF",
+     "n": 22
+    },
+    {
+     "src": "files/slides/anat3-ventricles/23.jpg",
+     "lec": "Ventricles and CSF",
+     "n": 23
+    }
+   ]
+  },
+  {
+   "q": "A tumour blocks the cerebral aqueduct. This causes:",
+   "options": [
+    "Communicating hydrocephalus with all four ventricles dilated",
+    "Dilation of the fourth ventricle only",
+    "Non-communicating hydrocephalus with the lateral and third ventricles dilated",
+    "No change because CSF exits through Luschka"
+   ],
+   "answer": 2,
+   "why": "Ventricles upstream of the block dilate; the fourth is downstream.",
+   "slides": [
+    {
+     "src": "files/slides/anat3-ventricles/28.jpg",
+     "lec": "Ventricles and CSF",
+     "n": 28
+    },
+    {
+     "src": "files/slides/anat3-ventricles/54.jpg",
+     "lec": "Ventricles and CSF",
+     "n": 54
+    }
+   ]
+  },
+  {
+   "q": "Communicating hydrocephalus is caused by:",
+   "options": [
+    "Obstruction of the cerebral aqueduct by a tumour",
+    "Inadequate absorption or overproduction of CSF",
+    "Stenosis of one interventricular foramen of Monro",
+    "Blockage of the median aperture of Magendie"
+   ],
+   "answer": 1,
+   "why": "The pathway between ventricles stays open.",
+   "slides": [
+    {
+     "src": "files/slides/anat3-ventricles/54.jpg",
+     "lec": "Ventricles and CSF",
+     "n": 54
+    }
+   ]
+  },
+  {
+   "q": "Endoscopic third ventriculostomy creates an opening:",
+   "options": [
+    "In the floor of the third ventricle to the interpeduncular cistern",
+    "In the septum pellucidum",
+    "Between the fourth ventricle and the cisterna magna",
+    "From the lateral ventricle to the peritoneum"
+   ],
+   "answer": 0,
+   "why": "The lateral ventricle to peritoneum route is a shunt, not ETV.",
+   "slides": [
+    {
+     "src": "files/slides/anat3-ventricles/56.jpg",
+     "lec": "Ventricles and CSF",
+     "n": 56
+    },
+    {
+     "src": "files/slides/anat3-ventricles/57.jpg",
+     "lec": "Ventricles and CSF",
+     "n": 57
+    }
+   ]
+  },
+  {
+   "q": "In adults, lumbar puncture is usually done at:",
+   "options": [
+    "L3-L4 or L4-L5",
+    "T12-L1 or L1-L2",
+    "T11-T12 or T12-L1",
+    "S1-S2 or S2-S3"
+   ],
+   "answer": 0,
+   "why": "The cord ends at about L1-L2.",
+   "slides": [
+    {
+     "src": "files/slides/anat3-ventricles/60.jpg",
+     "lec": "Ventricles and CSF",
+     "n": 60
+    }
+   ]
+  },
+  {
+   "q": "A rare cause of hydrocephalus by overproduction of CSF is:",
+   "options": [
+    "Aqueductal stenosis",
+    "Subarachnoid haemorrhage",
+    "Choroid plexus papilloma",
+    "Meningitis scarring the granulations"
+   ],
+   "answer": 2,
+   "why": "The others impair flow or absorption.",
+   "slides": [
+    {
+     "src": "files/slides/anat3-ventricles/53.jpg",
+     "lec": "Ventricles and CSF",
+     "n": 53
+    }
+   ]
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "cp",
+   "options": [
+    "Superior sagittal sinus",
+    "Choroid plexus",
+    "Third ventricle",
+    "Cerebral aqueduct"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: Choroid plexus. Capillary network lined by ependymal cells; makes most of the CSF (about 500 mL a day) and forms the blood-CSF barrier."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "lat",
+   "options": [
+    "Foramina of Monro",
+    "Cerebral aqueduct",
+    "Superior sagittal sinus",
+    "Lateral ventricles"
+   ],
+   "answer": 3,
+   "why": "The arrow points to: Lateral ventricles. Paired C-shaped cavities in the hemispheres: frontal, temporal and occipital horns, body and atrium."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "monro",
+   "options": [
+    "Lateral ventricles",
+    "Fourth ventricle",
+    "Foramina of Monro",
+    "Superior sagittal sinus"
+   ],
+   "answer": 2,
+   "why": "The arrow points to: Foramina of Monro. The interventricular foramina joining each lateral ventricle to the third ventricle."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "third",
+   "options": [
+    "Foramina of Monro",
+    "Superior sagittal sinus",
+    "Arachnoid granulations",
+    "Third ventricle"
+   ],
+   "answer": 3,
+   "why": "The arrow points to: Third ventricle. Median cleft between the two thalami, in the diencephalon."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "aq",
+   "options": [
+    "Cerebral aqueduct",
+    "Superior sagittal sinus",
+    "Subarachnoid space",
+    "Foramina of Monro"
+   ],
+   "answer": 0,
+   "why": "The arrow points to: Cerebral aqueduct. Narrow channel through the midbrain, no choroid plexus; a common site of obstruction."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "fourth",
+   "options": [
+    "Choroid plexus",
+    "Fourth ventricle",
+    "Superior sagittal sinus",
+    "Foramina of Monro"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: Fourth ventricle. Tent-shaped cavity behind the pons and medulla, in front of the cerebellum."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "apert",
+   "options": [
+    "Magendie and Luschka",
+    "Third ventricle",
+    "Choroid plexus",
+    "Cerebral aqueduct"
+   ],
+   "answer": 0,
+   "why": "The arrow points to: Magendie and Luschka. The median aperture (Magendie, to the cisterna magna) and two lateral apertures (Luschka, to the cerebellopontine cisterns)."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "sas",
+   "options": [
+    "Arachnoid granulations",
+    "Foramina of Monro",
+    "Lateral ventricles",
+    "Subarachnoid space"
+   ],
+   "answer": 3,
+   "why": "The arrow points to: Subarachnoid space. Between arachnoid and pia; holds most of the CSF and widens into cisterns."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "gran",
+   "options": [
+    "Arachnoid granulations",
+    "Foramina of Monro",
+    "Cerebral aqueduct",
+    "Third ventricle"
+   ],
+   "answer": 0,
+   "why": "The arrow points to: Arachnoid granulations. Arachnoid projections into the dural sinuses (of Pacchioni) through which CSF returns to the blood."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "sss",
+   "options": [
+    "Magendie and Luschka",
+    "Superior sagittal sinus",
+    "Fourth ventricle",
+    "Foramina of Monro"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: Superior sagittal sinus. Dural venous sinus receiving CSF; the sinuses drain into the internal jugular veins."
+  }
+ ],
+ "cards": [
+  {
+   "id": "x0",
+   "type": "text",
+   "front": "Name the parts of the ventricular system in order of CSF flow.",
+   "back": "Lateral ventricles → foramina of Monro → third ventricle → cerebral aqueduct → fourth ventricle → foramina of Magendie and Luschka → subarachnoid space."
+  },
+  {
+   "id": "x1",
+   "type": "text",
+   "front": "Where does CSF leave the fourth ventricle, and into which cisterns?",
+   "back": "Median aperture of Magendie → cisterna magna; two lateral apertures of Luschka → cerebellopontine cisterns; also the central canal through the obex."
+  },
+  {
+   "id": "x2",
+   "type": "text",
+   "front": "Parts of the lateral ventricle?",
+   "back": "Frontal, temporal and occipital horns, body and atrium."
+  },
+  {
+   "id": "x3",
+   "type": "text",
+   "front": "Walls of the frontal horn?",
+   "back": "Medial: septum pellucidum (fornix columns below). Lateral: head of caudate. Roof and front: genu of corpus callosum. Floor: rostrum."
+  },
+  {
+   "id": "x4",
+   "type": "text",
+   "front": "Temporal horn: size, end and floor?",
+   "back": "Longest and largest; ends at the amygdala; floor = collateral eminence and hippocampus."
+  },
+  {
+   "id": "x5",
+   "type": "text",
+   "front": "Floor of the third ventricle, front to back?",
+   "back": "Optic chiasm, infundibulum, tuber cinereum, mammillary bodies."
+  },
+  {
+   "id": "x6",
+   "type": "text",
+   "front": "Anterior and posterior walls of the third ventricle?",
+   "back": "Anterior: fornix columns, anterior commissure, lamina terminalis. Posterior: habenular commissure, pineal gland, posterior commissure."
+  },
+  {
+   "id": "x7",
+   "type": "text",
+   "front": "Fourth ventricle: roof, floor, caudal tip?",
+   "back": "Roof: superior and inferior medullary vela. Floor: rhomboid fossa. Caudal tip: obex."
+  },
+  {
+   "id": "x8",
+   "type": "text",
+   "front": "What does the sulcus limitans separate?",
+   "back": "Motor nuclei (medial, medial eminence) from sensory nuclei (lateral, vestibular area)."
+  },
+  {
+   "id": "x9",
+   "type": "text",
+   "front": "Where is there no choroid plexus?",
+   "back": "Frontal and occipital horns, and the cerebral aqueduct."
+  },
+  {
+   "id": "x10",
+   "type": "text",
+   "front": "CSF volume and daily production?",
+   "back": "About 150 mL (125 subarachnoid, 25 ventricular); about 500 mL a day (400-600)."
+  },
+  {
+   "id": "x11",
+   "type": "text",
+   "front": "Communicating versus non-communicating hydrocephalus?",
+   "back": "Communicating: poor absorption or overproduction, pathway open. Non-communicating: obstruction between ventricles, often at the aqueduct."
+  },
+  {
+   "id": "x12",
+   "type": "text",
+   "front": "Two surgical treatments of hydrocephalus?",
+   "back": "Ventriculoperitoneal shunt; endoscopic third ventriculostomy (floor of third ventricle → interpeduncular cistern)."
+  },
+  {
+   "id": "x13",
+   "type": "text",
+   "front": "Why lumbar puncture at L3-L4 or L4-L5?",
+   "back": "The adult cord ends at about L1-L2, but the subarachnoid space continues below."
+  },
+  {
+   "id": "img-cp",
+   "type": "image",
+   "target": "cp",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Choroid plexus. Capillary network lined by ependymal cells; makes most of the CSF (about 500 mL a day) and forms the blood-CSF barrier."
+  },
+  {
+   "id": "img-lat",
+   "type": "image",
+   "target": "lat",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Lateral ventricles. Paired C-shaped cavities in the hemispheres: frontal, temporal and occipital horns, body and atrium."
+  },
+  {
+   "id": "img-monro",
+   "type": "image",
+   "target": "monro",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Foramina of Monro. The interventricular foramina joining each lateral ventricle to the third ventricle."
+  },
+  {
+   "id": "img-third",
+   "type": "image",
+   "target": "third",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Third ventricle. Median cleft between the two thalami, in the diencephalon."
+  },
+  {
+   "id": "img-aq",
+   "type": "image",
+   "target": "aq",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Cerebral aqueduct. Narrow channel through the midbrain, no choroid plexus; a common site of obstruction."
+  },
+  {
+   "id": "img-fourth",
+   "type": "image",
+   "target": "fourth",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Fourth ventricle. Tent-shaped cavity behind the pons and medulla, in front of the cerebellum."
+  },
+  {
+   "id": "img-apert",
+   "type": "image",
+   "target": "apert",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Magendie and Luschka. The median aperture (Magendie, to the cisterna magna) and two lateral apertures (Luschka, to the cerebellopontine cisterns)."
+  },
+  {
+   "id": "img-sas",
+   "type": "image",
+   "target": "sas",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Subarachnoid space. Between arachnoid and pia; holds most of the CSF and widens into cisterns."
+  },
+  {
+   "id": "img-gran",
+   "type": "image",
+   "target": "gran",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Arachnoid granulations. Arachnoid projections into the dural sinuses (of Pacchioni) through which CSF returns to the blood."
+  },
+  {
+   "id": "img-sss",
+   "type": "image",
+   "target": "sss",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Superior sagittal sinus. Dural venous sinus receiving CSF; the sinuses drain into the internal jugular veins."
+  }
+ ],
+ "deeper": [
+  {
+   "title": "Work out hydrocephalus from the block",
+   "html": "<p>Every hydrocephalus question becomes easy if you draw the pipe. Everything <em>upstream</em> of a block swells; everything downstream stays normal. A block at one foramen of Monro dilates one lateral ventricle. A block at the aqueduct dilates both lateral ventricles and the third, with a normal fourth ventricle. A block at the fourth ventricle outlets dilates all four. If all four are large and nothing is blocked, the problem is absorption (or production): communicating hydrocephalus.</p><p>This also explains ETV: a hole in the floor of the third ventricle lets CSF skip an aqueduct block, so it only works when the obstruction is below the third ventricle.</p><p class='src'>Source: the lecture's hydrocephalus and ETV slides; Kenhub, Ventricles of the brain.</p>"
+  },
+  {
+   "title": "Why CSF is renewed several times a day",
+   "html": "<p>About 500 mL is made each day but only about 150 mL is present at any moment, so the whole volume turns over several times a day. That steady flow is what washes waste out of the brain, and it is also why any obstruction quickly raises pressure: production does not stop when drainage does.</p><p class='src'>Source: the lecture's CSF physiology slides; Radiopaedia, Cerebrospinal fluid.</p>"
+  }
+ ],
+ "resources": [
+  {
+   "title": "The ventricles of the brain (TeachMeAnatomy)",
+   "url": "https://teachmeanatomy.info/neuroanatomy/vessels/ventricles/",
+   "kind": "Website",
+   "why": "Lateral, third and fourth ventricles, CSF production and hydrocephalus, with diagrams.",
+   "note": ""
+  },
+  {
+   "title": "Ventricles of the brain (Kenhub)",
+   "url": "https://www.kenhub.com/en/library/anatomy/ventricular-system-of-the-brain",
+   "kind": "Website",
+   "why": "All four ventricles, the foramina, the choroid plexus and the full CSF pathway.",
+   "note": ""
+  },
+  {
+   "title": "Cerebrospinal fluid (Radiopaedia)",
+   "url": "https://radiopaedia.org/articles/cerebrospinal-fluid-1",
+   "kind": "Website",
+   "why": "CSF volume, production and absorption, with imaging context.",
+   "note": ""
+  }
+ ],
+ "checks": [],
+ "sources": [
+  {
+   "name": "The ventricles of the brain (TeachMeAnatomy)",
+   "url": "https://teachmeanatomy.info/neuroanatomy/vessels/ventricles/"
+  },
+  {
+   "name": "Ventricles of the brain (Kenhub)",
+   "url": "https://www.kenhub.com/en/library/anatomy/ventricular-system-of-the-brain"
+  },
+  {
+   "name": "Cerebrospinal fluid (Radiopaedia)",
+   "url": "https://radiopaedia.org/articles/cerebrospinal-fluid-1"
+  }
+ ],
+ "verified": "25 Oct 2026",
+ "highYield": [
+  {
+   "t": "note",
+   "html": "<strong>The pipe</strong>: choroid plexus → lateral ventricles → <strong>Monro</strong> → third → <strong>aqueduct (Sylvius)</strong> → fourth → <strong>Magendie</strong> (cisterna magna) and <strong>Luschka</strong> (cerebellopontine cisterns) → subarachnoid space → <strong>arachnoid granulations</strong> → superior sagittal sinus."
+  },
+  {
+   "t": "mnemo",
+   "html": "<strong>M</strong>agendie = <strong>M</strong>edian, <strong>L</strong>uschka = <strong>L</strong>ateral (two of them)."
+  },
+  {
+   "t": "note",
+   "html": "<strong>Third ventricle floor, front to back</strong>: optic chiasm, infundibulum, tuber cinereum, mammillary bodies. <strong>Anterior wall</strong>: fornix columns, anterior commissure, lamina terminalis. <strong>Posterior wall</strong>: habenular commissure, pineal, posterior commissure."
+  },
+  {
+   "t": "note",
+   "html": "<strong>Lateral ventricle</strong>: frontal horn has the <strong>septum pellucidum</strong> medially and <strong>head of caudate</strong> laterally; the <strong>temporal horn</strong> is the longest and largest, ends at the <strong>amygdala</strong>, with the <strong>hippocampus</strong> in its floor; the <strong>tapetum</strong> separates the temporal and occipital horns from the optic radiations."
+  },
+  {
+   "t": "note",
+   "html": "<strong>Fourth ventricle</strong>: behind the brainstem, in front of the cerebellum; floor = <strong>rhomboid fossa</strong>; <strong>sulcus limitans</strong>: motor medial, sensory lateral; caudal tip = <strong>obex</strong>."
+  },
+  {
+   "t": "note",
+   "html": "<strong>No choroid plexus</strong> in the frontal and occipital horns or the aqueduct. CSF: about <strong>150 mL</strong> present (125 subarachnoid, 25 ventricular), about <strong>500 mL made a day</strong>."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Hydrocephalus</strong>: everything upstream of a block dilates. Aqueduct block = lateral and third ventricles large, fourth normal (<strong>non-communicating</strong>). All four large with no block = absorption problem (<strong>communicating</strong>). Rare overproduction: <strong>choroid plexus papilloma</strong>."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Treatment</strong>: ventriculoperitoneal <strong>shunt</strong>, or <strong>ETV</strong> (floor of the third ventricle → interpeduncular cistern; only bypasses blocks below the third ventricle)."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Lumbar puncture</strong> at <strong>L3-L4 or L4-L5</strong>: the adult cord ends at about <strong>L1-L2</strong>, but the subarachnoid space continues below."
   }
  ]
 };

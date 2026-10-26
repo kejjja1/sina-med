@@ -679,16 +679,21 @@
   /* Source slides: Drive preview can fail on big or heavy files (often PowerPoints),
      so every Drive source also gets a direct download link. */
   function driveId(u) { var m = /drive\.google\.com\/(?:file\/d\/|open\?id=)([\w-]{20,})/.exec(u || ""); return m ? m[1] : ""; }
+  /* One "Download lecture" button instead of the long source line. The professor's name
+     (taken from the source note) sits beside it in small text. */
+  function lecturer(lec) {
+    var m = /\(([^()]*)\)\s*$/.exec(lec.sourceFile || "");
+    if (!m) return "";
+    var p = m[1].split(/,\s*/).filter(function (x) { return /^(Prof|Pr|Dr)\b/.test(x); });
+    return p.join(", ");
+  }
   function sourceLine(lec) {
-    if (!lec.sourceUrl) return '<p class="meta">Source: ' + esc(lec.sourceFile) + "</p>";
+    var who = lecturer(lec);
     var id = driveId(lec.sourceUrl), ppt = /\.pptx?\b/i.test(lec.sourceFile || "");
-    var h = '<p class="meta srcline">Source: <a class="srclink" href="' + esc(lec.sourceUrl) + '" target="_blank" rel="noopener">' + esc(lec.sourceFile) + "</a>";
-    if (id) {
-      h += ' <span class="srcacts"><a class="srcbtn" href="' + esc(lec.sourceUrl) + '" target="_blank" rel="noopener">View ' + (ppt ? "PowerPoint" : "slides") + '</a>' +
-        '<a class="srcbtn" href="https://drive.google.com/uc?export=download&amp;id=' + esc(id) + '" target="_blank" rel="noopener">Download' + (ppt ? " .pptx" : "") + "</a></span>";
-      if (ppt) h += '<span class="srchint">Google Drive sometimes cannot preview large PowerPoints. If the preview does not load, use Download and open it in PowerPoint, Keynote or Google Slides.</span>';
-    }
-    return h + "</p>";
+    if (!id) return who ? '<p class="meta">' + esc(who) + "</p>" : "";
+    return '<p class="srcline"><a class="dlbtn" href="https://drive.google.com/uc?export=download&amp;id=' + esc(id) + '" target="_blank" rel="noopener" title="' + esc(lec.sourceFile || "") + '">' +
+      '<svg aria-hidden="true" viewBox="0 0 24 24" width="16" height="16"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 4v11m0 0-4-4m4 4 4-4M5 20h14"/></svg>' +
+      "Download lecture" + (ppt ? " (PowerPoint)" : "") + "</a>" + (who ? '<span class="srcwho">' + esc(who) + "</span>" : "") + "</p>";
   }
   function galleryImages(v) { return (v.images && v.images.length ? v.images : (v.image ? [v.image] : [])).filter(function (im) { return im && im.src; }); }
   function galleryHTML(v) {
@@ -797,6 +802,18 @@
     wireMedia(p);
   }
 
+  /* Lecture slide(s) that prove an answer: collapsed until opened, then click to see full size. */
+  function slidesHTML(q) {
+    if (!q.slides || !q.slides.length) return "";
+    var groups = [];
+    q.slides.forEach(function (s) { var g = groups.filter(function (x) { return x.lec === s.lec; })[0]; if (g) g.n.push(s.n); else groups.push({ lec: s.lec, n: [s.n] }); });
+    var lbl = groups.map(function (g) { return g.lec + ", slide" + (g.n.length > 1 ? "s " : " ") + g.n.join(" and "); }).join("; ");
+    return '<details class="slide-ref"><summary>See the slide' + (q.slides.length > 1 ? "s" : "") + " that explain" + (q.slides.length > 1 ? "" : "s") + " this <span>(" + esc(lbl) + ")</span></summary>" +
+      q.slides.map(function (s) {
+        return '<figure><a href="' + esc(s.src) + '" target="_blank" rel="noopener" title="Open full size"><img loading="lazy" src="' + esc(s.src) + '" alt="Lecture slide: ' + esc(s.lec) + ", slide " + s.n + '"></a><figcaption>' + esc(s.lec) + ", slide " + s.n + ". Tap to open full size.</figcaption></figure>";
+      }).join("") + "</details>";
+  }
+
   function questionsPanel(p, lec) {
     var all = lec.mcqs, qs = all, i = 0, score = 0, wrong = [], key = "sina:best:" + lec.id, LET = "abcdefgh";
     function keyText(q) {
@@ -806,7 +823,7 @@
     function feedback(q, ok) {
       var head = ok ? "Correct." : "Not quite.";
       var body = q.why ? " " + esc(q.why) : "";
-      return '<div class="why"><strong>' + head + "</strong> Correct answer: " + esc(keyText(q)) + "." + body + '</div><button class="btn primary" id="nx">' + (i + 1 < qs.length ? "Next question" : "See score") + "</button>";
+      return '<div class="why"><strong>' + head + "</strong> Correct answer: " + esc(keyText(q)) + "." + body + "</div>" + slidesHTML(q) + '<button class="btn primary" id="nx">' + (i + 1 < qs.length ? "Next question" : "See score") + "</button>";
     }
     function render() {
       if (i >= qs.length) {
@@ -831,7 +848,7 @@
                   var cls = ans.indexOf(n) > -1 ? " correct" : (w.chosen.indexOf(n) > -1 ? " wrong" : "");
                   var tag = ans.indexOf(n) > -1 ? '<span class="rev-tag">Correct answer</span>' : (w.chosen.indexOf(n) > -1 ? '<span class="rev-tag">Your answer</span>' : "");
                   return '<div class="opt static' + cls + '"><span class="letter">' + LET[n].toUpperCase() + "</span><span>" + esc(o) + "</span>" + tag + "</div>";
-                }).join("") + (q.why ? '<div class="why">' + esc(q.why) + "</div>" : "") + "</div>";
+                }).join("") + (q.why ? '<div class="why">' + esc(q.why) + "</div>" : "") + slidesHTML(q) + "</div>";
             }).join("");
             box.scrollIntoView({ behavior: "smooth", block: "start" });
           };
