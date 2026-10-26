@@ -563,9 +563,9 @@
     var mids = progMidterms(), midHTML = "";
     mids.forEach(function (m) {
       var n = 0; m.groups.forEach(function (g) { n += g.items.length; });
-      midHTML += '<div class="mid-card"><p class="mid-eyebrow">Upcoming</p><h2>' + esc(m.title) + '</h2><p class="meta">' + n + ' lectures on this exam.</p><div class="row">' +
-        '<a class="btn primary" href="#/midterm">Revise the lectures</a><a class="btn" href="#/subject/' + m.subject + '/questions/midterm">Practice questions</a>' +
-        (m.practice ? '<a class="btn" href="#/subject/' + m.subject + '/papers">Practice papers</a>' : "") + "</div></div>";
+      midHTML += '<div class="mid-card"><p class="mid-eyebrow">Upcoming</p><h2>' + esc(m.title) + '</h2><p class="meta">' + (n === 1 ? "1 lecture" : n + " lectures") + ' on this exam.</p><div class="row">' +
+        (n === 1 ? '<a class="btn primary" href="#/lecture/' + m.groups[0].items[0] + '">Revise the lecture</a>' : '<a class="btn primary" href="#/midterm">Revise the lectures</a>') + '<a class="btn" href="#/subject/' + m.subject + '/questions/midterm">Practice questions</a>' +
+        ((S.papers || []).some(function (x) { return x.subject === m.subject; }) ? '<a class="btn" href="#/subject/' + m.subject + '/papers">Practice papers</a>' : "") + "</div></div>";
     });
     var html = '<div class="wrap wide"><section class="hero slim"><h1>Study each lecture, then test yourself on it.</h1>' +
       '<div class="home-search"><input id="home-search" type="search" placeholder="Search a lecture, subject or past paper" aria-label="Search lectures, subjects and past papers" autocomplete="off"><div class="home-results" id="home-results" hidden></div></div>' +
@@ -602,7 +602,7 @@
     ms.forEach(function (m) {
       var sb = subjectById(m.subject), n = 0;
       m.groups.forEach(function (g) { n += g.items.length; });
-      html += '<section class="midterm"><h2 class="group-title">' + esc(m.title) + '</h2><p class="meta">' + n + " lectures" + (sb ? ' from <a href="#/subject/' + sb.id + '">' + esc(sb.name) + "</a>" : "") + ". Only these lectures are on this midterm.</p>" + (m.practice ? '<p><a class="btn primary" href="' + esc(m.practice.url) + '">' + esc(m.practice.label) + "</a></p>" : "");
+      html += '<section class="midterm"><h2 class="group-title">' + esc(m.title) + '</h2><p class="meta">' + (n === 1 ? "1 lecture" : n + " lectures") + (sb ? ' from <a href="#/subject/' + sb.id + '">' + esc(sb.name) + "</a>" : "") + (n === 1 ? ". Only this lecture is on this midterm.</p>" : ". Only these lectures are on this midterm.</p>") + (m.practice ? '<p><a class="btn primary" href="' + esc(m.practice.url) + '">' + esc(m.practice.label) + "</a></p>" : "");
       m.groups.forEach(function (g) {
         html += '<h3 class="mid-group">' + esc(g.name) + '</h3><ul class="lec-list">' + g.items.map(function (id) {
           return S.lectures[id]
@@ -681,9 +681,9 @@
       s.groups.forEach(function (g, gi) {
         var its = g.items.filter(function (it) { return S.lectures[it.id]; });
         if (!its.length) return;
-        h += '<fieldset class="pick-group"><legend><label><input type="checkbox" class="gchk" data-g="' + gi + '"> ' + esc(g.name) + "</label></legend>" + its.map(function (it) {
+        h += '<div class="pick-group" role="group" aria-label="' + esc(g.name) + '"><label class="pick-row pick-head"><input type="checkbox" class="gchk" data-g="' + gi + '"><span>' + esc(g.name) + '</span><span class="qn">' + its.length + " lecture" + (its.length > 1 ? "s" : "") + "</span></label>" + its.map(function (it) {
           return '<label class="pick-row"><input type="checkbox" class="lchk" data-g="' + gi + '" value="' + it.id + '"' + (picked.indexOf(it.id) > -1 ? " checked" : "") + "><span>" + esc(it.title) + '</span><span class="qn">' + (S.lectures[it.id].mcqs || []).length + "</span></label>";
-        }).join("") + "</fieldset>";
+        }).join("") + "</div>";
       });
       h += '<div class="start-bar"><label class="pick"><span>Questions</span><select id="qcount">' + ["10", "20", "40", "all"].map(function (v) { return '<option value="' + v + '"' + (v === count ? " selected" : "") + ">" + (v === "all" ? "All" : v) + "</option>"; }).join("") + "</select></label>" +
         '<button class="btn primary" id="qstart" type="button">Start</button><span class="qsel" id="qsel"></span></div>';
@@ -1027,10 +1027,11 @@
     if (!q.slides || !q.slides.length) return "";
     var groups = [];
     q.slides.forEach(function (s) { var g = groups.filter(function (x) { return x.lec === s.lec; })[0]; if (g) g.n.push(s.n); else groups.push({ lec: s.lec, n: [s.n] }); });
-    var lbl = groups.map(function (g) { return g.lec + ", slide" + (g.n.length > 1 ? "s " : " ") + g.n.join(" and "); }).join("; ");
-    return '<details class="slide-ref"><summary>See the slide' + (q.slides.length > 1 ? "s" : "") + " that explain" + (q.slides.length > 1 ? "" : "s") + " this <span>(" + esc(lbl) + ")</span></summary>" +
+    var unit = q.slides[0].unit || "slide";
+    var lbl = groups.map(function (g) { return g.lec + ", " + unit + (g.n.length > 1 ? "s " : " ") + g.n.join(" and "); }).join("; ");
+    return '<details class="slide-ref"><summary>See the ' + unit + (q.slides.length > 1 ? "s" : "") + " that explain" + (q.slides.length > 1 ? "" : "s") + " this <span>(" + esc(lbl) + ")</span></summary>" +
       q.slides.map(function (s) {
-        return '<figure><a href="' + esc(s.src) + '" target="_blank" rel="noopener" title="Open full size"><img loading="lazy" src="' + esc(s.src) + '" alt="Lecture slide: ' + esc(s.lec) + ", slide " + s.n + '"></a><figcaption>' + esc(s.lec) + ", slide " + s.n + ". Tap to open full size.</figcaption></figure>";
+        return '<figure><a href="' + esc(s.src) + '" target="_blank" rel="noopener" title="Open full size"><img loading="lazy" src="' + esc(s.src) + '" alt="' + esc(s.lec) + ", " + unit + " " + s.n + '"></a><figcaption>' + esc(s.lec) + ", " + unit + " " + s.n + ". Tap to open full size.</figcaption></figure>";
       }).join("") + "</details>";
   }
 

@@ -162,6 +162,9 @@ SINA.subjects = [
   { id: "history", name: "History and Art of Medicine", semester: "S3", status: "live",
     blurb: "How medicine became what it is, and the human side of care.",
     groups: [
+      { name: "Booklet 2026-2027", items: [
+        { id: "history-booklet", title: "History of medicine booklet: why study it, anatomy and physiology" }
+      ]},
       { name: "History of medicine", items: [
         { id: "history-physiology", title: "History of physiology" },
         { id: "history-pathology", title: "History of pathology" },
@@ -605,10 +608,8 @@ SINA.subjects.forEach(function (s) { if (!s.program) s.program = SINA.DEFAULT_PR
 /* Upcoming midterms: the lectures listed here get the blue "On the midterm" label
    and appear on the "Upcoming midterm lectures" page for their year. */
 SINA.midterms = [
-  { id: "physio-midterm", program: "y2-anglo", subject: "physio", title: "Neurophysiology midterm",
-    practice: { label: "Practice midterms for this exam (quizzes, question PDFs and corrections)", url: "#/papers/physio" },
+  { id: "history-midterm", program: "y2-anglo", subject: "history", title: "History of Medicine midterm",
     groups: [
-      { name: "Neurophysiology", items: ["physio-intro-neuro", "physio-neurons", "physio-chemical"] },
-      { name: "Muscle", items: ["physio-muscle-1"] }
+      { name: "Booklet 2026-2027", items: ["history-booklet"] }
     ]}
 ];

@@ -3,6 +3,8 @@
 window.SINA = window.SINA || { subjects: [], lectures: {} };
 SINA.updates = [
   { date: "26 October 2026", items: [
+    "Fixed the lecture checkboxes in the Questions section so they line up.",
+    "The upcoming midterm is now the History of Medicine midterm, with a new page for the 2026-2027 booklet (why study the history of medicine, history of anatomy, history of physiology).",
     "New layout: lecture pages now have just Summary, Flashcards and Go deeper, with a small ⋯ menu for Download lecture, practice questions, visuals and links.",
     "Each class now has its own sections: Lectures, Questions, Visual, High yield, Resources and Past papers.",
     "Questions: tick one or several lectures (or just the midterm ones) and get one mixed quiz.",

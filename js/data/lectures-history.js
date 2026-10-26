@@ -1,4 +1,4 @@
-/* history: 7 lectures, merged for upload. Edit the source files, not this one. */
+/* history: 8 lectures, merged for upload. Edit the source files, not this one. */
 window.SINA = window.SINA || {subjects:[], lectures:{}};
 SINA.lectures["history-physiology"] = {
  "id": "history-physiology",
@@ -6606,4 +6606,1198 @@ SINA.lectures["history-medical-art"] = {
   }
  ],
  "verified": "22 Sep 2026"
+};
+window.SINA = window.SINA || {subjects:[], lectures:{}};
+SINA.lectures["history-booklet"] = {
+ "id": "history-booklet",
+ "subject": "history",
+ "group": "Booklet 2026-2027",
+ "title": "History of medicine booklet: why study it, anatomy and physiology",
+ "sourceFile": "booklet History of Med.pdf (History of Medicine S3, Pr. Maryam Fourtassi, 2026-2027)",
+ "sourceUrl": "https://drive.google.com/file/d/1xnmrU1Yb6sgPXC4eRxeyW7-AIn7b8et0/view?usp=drivesdk",
+ "buildNote": "<strong>Built from the lecture slides.</strong> Slides that only show pictures are covered in outline. If your professor says something different, trust your professor.",
+ "summary": [
+  {
+   "id": "s0",
+   "title": "The big picture",
+   "html": "<p>The booklet has three chapters for now: <strong>why study the history of medicine</strong>, the <strong>history of anatomy</strong> and the <strong>history of physiology</strong>. The same idea runs through all three: medical knowledge is produced inside a particular culture, with the methods available at the time, and what one generation takes for granted, the next may find mistaken.</p><p>The professor says it herself: the point is not to memorise a list of dates and names, but to understand how medicine became what it is. Still, the people, the turning points and the lessons drawn from them are what questions are built on.</p>"
+  },
+  {
+   "id": "s1",
+   "title": "Why study the history of medicine?",
+   "html": "<p><strong>The central paradox</strong>: the questions medicine asks (pain, fear, uncertainty, suffering, the wish to heal) have stayed the same, while the explanations and methods have changed profoundly. Medicine is shaped by science, but also by philosophy, religion, culture, politics, economics and how society is organised.</p><p><strong>Three ways of explaining illness</strong> (they often coexisted rather than following one another):</p><ul><li><strong>Balance and harmony</strong>: health as equilibrium; in Greek medicine, the four humours.</li><li><strong>Faith and divine will</strong>: illness as a test, punishment or spiritual event; religious institutions also gave care and shelter.</li><li><strong>Evidence and technology</strong>: experiment, dissection, microscopy, laboratory tests and imaging.</li></ul><p><strong>Will future generations laugh at us?</strong> Past practices were sometimes based on wrong theories or kept by authority and tradition. Studying this should give <strong>intellectual humility</strong>, not a rejection of modern medicine: our knowledge stays open to revision.</p><p><strong>Is medical progress always progress for patients?</strong> Four dimensions do not move at the same pace:</p><table><tr><th>Progress</th><th>The question</th></tr><tr><td>Scientific</td><td>Do we understand the body and disease more accurately?</td></tr><tr><td>Therapeutic</td><td>Can we prevent or treat illness more effectively?</td></tr><tr><td>Ethical</td><td>Are patients treated with more respect and protection?</td></tr><tr><td>Social</td><td>Do the benefits reach the people who need them?</td></tr></table><p><strong>What history teaches future physicians</strong>: <strong>humility</strong> (knowledge is provisional), <strong>critical thinking</strong> (neither age nor novelty proves value), <strong>contextual understanding</strong> (illness is not only biological), <strong>ethical awareness</strong> (consent, dignity, protection from harm) and <strong>perspective</strong> (today's debates have historical roots).</p>"
+  },
+  {
+   "id": "s2",
+   "title": "Anatomy: from Egypt to the Middle Ages",
+   "html": "<p><strong>Anatomy</strong> comes from the Greek <em>anatome</em>, dissection. Interest in it has followed a <strong>wave-like curve</strong>, shaped by beliefs, science, practical needs and the chance to examine bodies. Structural changes do not always explain illness, and disease can occur without visible anatomical change.</p><table><tr><th>Period</th><th>Key points</th></tr><tr><td><strong>Ancient Egypt</strong></td><td>Sophisticated <strong>embalming</strong> gave practical knowledge of the organs, but for religious and funerary purposes, not systematic science. Practical knowledge does not necessarily lead to scientific understanding.</td></tr><tr><td><strong>Ancient Greece</strong></td><td>Sculpture reached great precision in <strong>surface anatomy</strong>, but human dissection was generally <strong>forbidden or restricted</strong>, so knowledge came from external observation, clinical experience and animal dissection. Greek medicine stressed clinical observation and the <strong>four humours</strong>; Hippocratic treatises on fractures and dislocations show practical skill.</td></tr><tr><td><strong>Roman period: Galen</strong></td><td>Physician to <strong>gladiators</strong>; learned through observation and experiments, mainly on <strong>animals</strong>. Added to knowledge of muscles and nerves. Used <strong>teleological reasoning</strong> (structures exist for a purpose). His writings dominated teaching for centuries, but animal-based errors were repeated. Lesson: a source's reputation can outweigh the evidence.</td></tr><tr><td><strong>Medieval Europe</strong></td><td>Christian beliefs (the body linked to sin, bodily resurrection) limited dissection, though it did occur in teaching and examinations, sometimes on <strong>executed criminals</strong>. <strong>Galen</strong> stayed the main reference.</td></tr></table>"
+  },
+  {
+   "id": "s3",
+   "title": "Anatomy: Renaissance to today",
+   "html": "<p><strong>Renaissance</strong>: the 14th-century plague epidemics challenged old explanations of disease (but did not directly cause the revival of dissection). Dissection became more common and <strong>art and science converged</strong>: <strong>Andreas Vesalius</strong>, <em>De humani corporis fabrica</em> (<strong>1543</strong>), revolutionised anatomical teaching; <strong>Leonardo da Vinci</strong>'s <strong>Vitruvian Man</strong> explored the body's proportions. Later, <strong>sensualism</strong> (knowledge comes from the senses) encouraged collections of <strong>anatomical wax models</strong>, as in <strong>La Specola</strong> museum in Florence.</p><p>The paradox of early modern medicine: the body could be studied with great precision, yet this did not make treatment better. Practitioners often ignored anatomy, focused on symptoms, and lesions could usually only be found after death.</p><p><strong>18th and 19th centuries: from art to clinical science</strong></p><ul><li><strong>Percussion</strong> (<strong>Leopold Auenbrugger, 1761</strong>) and <strong>auscultation</strong> (popularised by <strong>René Laennec</strong>) let doctors detect lesions in the living body, e.g. linking breathlessness to a pleural effusion. Disease came to be understood in anatomical terms.</li><li>Anatomy became a medical discipline: university chairs, dissection central to training, though public opposition remained.</li><li><strong>The body trade</strong>: legal bodies (executed criminals) were too few, so <strong>resurrectionists</strong> robbed graves (hence <strong>mortsafes</strong>). <strong>Burke and Hare</strong> murdered people in Edinburgh to sell bodies to the anatomist <strong>Robert Knox</strong>. This led to the <strong>British Anatomy Act of 1832</strong>, giving legal access to unclaimed bodies and regulating dissection. Japan legislated on body donation in <strong>1983</strong>.</li><li>From stolen bodies to <strong>donation</strong>, seen as a social contribution; better preservation of bodies.</li><li><strong>Gray's Anatomy</strong> (first published <strong>1858</strong>, illustrations by <strong>Henry Vandyke Carter</strong>) standardised anatomical knowledge.</li><li>Late 19th century: women in some <strong>Irish</strong> medical schools had to dissect in <strong>separate rooms</strong> (modesty), which limited their access: education shaped by gender norms.</li></ul><p><strong>Today</strong>: medicine stresses function over structure; cadavers or digital simulation? Dissection also has a symbolic role, a <strong>rite of passage</strong> into the profession and respect for the dignity of the dead.</p><p><strong>Lessons</strong>: knowledge depends on the methods available; authority must stay open to scrutiny; progress is cumulative but not automatic; anatomy is also the history of how humans learned to look at themselves.</p>"
+  },
+  {
+   "id": "s4",
+   "title": "Physiology: the three debates",
+   "html": "<p><strong>Physiology</strong> (Greek <em>physis</em>, nature, and <em>logos</em>, study) is the study of the functions of living organisms: what is life, and how does it work? It breaks functions into smaller processes (digestion: intake, mastication, swallowing, digestion, absorption, metabolism, elimination).</p><table><tr><th>Debate</th><th>One side</th><th>The other side</th></tr><tr><td>The nature of life</td><td><strong>Vitalism</strong>: a vital force that physics and chemistry cannot fully explain (sometimes linked to the soul)</td><td><strong>Mechanism</strong>: functions explained by physical and chemical processes</td></tr><tr><td>The purpose of life</td><td><strong>Teleology</strong>: explains structures by their purpose (why does it exist?)</td><td><strong>Empiricism</strong>: knowledge from observation and experience (how does it actually work?)</td></tr><tr><td>The method</td><td><strong>Speculation</strong>: reasoning and reflection without testing</td><td><strong>Experimentation</strong>: manipulating conditions, testing hypotheses, measuring outcomes</td></tr></table><p>These were not mutually exclusive; physiologists mixed them in different proportions.</p>"
+  },
+  {
+   "id": "s5",
+   "title": "Physiology: Antiquity and the Middle Ages",
+   "html": "<p><strong>The four humours</strong> (Hippocratic tradition): health = balance, illness = imbalance in quantity, distribution or quality. Treatment restored balance by diet, exercise, bathing and, if judged necessary, purging or bloodletting. It lasted <strong>more than 2,000 years</strong> because it was a coherent system when experiment was limited.</p><table><tr><th>Humour</th><th>Element</th><th>Quality</th></tr><tr><td>Blood</td><td>Air</td><td>Warmth</td></tr><tr><td>Phlegm</td><td>Water</td><td>Coldness</td></tr><tr><td>Yellow bile</td><td>Fire</td><td>Dryness</td></tr><tr><td>Black bile</td><td>Earth</td><td>Coldness</td></tr></table><p><strong>Galen of Pergamon</strong>: anatomy plus a <strong>teleological</strong> view (every organ has a purpose). Three spirits (<em>pneuma</em>):</p><table><tr><th>Spirit</th><th>Organ</th><th>Functions</th></tr><tr><td>Natural</td><td><strong>Liver</strong></td><td>Nutrition, growth, vegetative functions</td></tr><tr><td>Vital</td><td><strong>Heart</strong></td><td>Vitality, heat, maintaining life</td></tr><tr><td>Animal</td><td><strong>Brain</strong></td><td>Sensation, movement, higher nervous functions</td></tr></table><p>Galen thought blood was <strong>made in the liver</strong> from food and <strong>consumed</strong> by the organs (no closed circuit), and passed from right to left heart through <strong>invisible pores in the interventricular septum</strong>.</p><p><strong>Middle Ages</strong>: Galen's spirits fitted religious ideas of the soul, so his authority stayed strong. <strong>Ibn al-Nafis</strong> (13th century, Syrian physician) correctly described <strong>pulmonary circulation</strong> (right heart → lungs → left heart through the pulmonary vessels), but was little known in Europe. <strong>Michael Servetus</strong> (Spanish theologian and physician) described it in a theological work in <strong>1553</strong> and was burned for heresy in <strong>Geneva</strong> that year, mainly for his religious views.</p>"
+  },
+  {
+   "id": "s6",
+   "title": "Physiology: early modern period",
+   "html": "<table><tr><th>Who</th><th>Contribution</th></tr><tr><td><strong>William Harvey</strong> (1578-1657), English</td><td>Showed that blood <strong>circulates continuously</strong>. Quantitative argument: the heart pumps far more blood than the liver could make; also ligature experiments on veins. The heart as a <strong>mechanical pump</strong>. Turning point: claims tested by experiment and calculation, not authority.</td></tr><tr><td><strong>René Descartes</strong> (1596-1650), French</td><td><strong>Mechanism</strong>: the body as a machine (a sick man as an inaccurate clock). <strong>Mind-body dualism</strong>: <em>res cogitans</em> (thinking mind) and <em>res extensa</em> (material body). The soul acts on the body through the <strong>pineal gland</strong>. Animal spirits travel in nerves; he explained heart movement by <strong>heat and expansion of blood</strong>, unlike Harvey's pump.</td></tr><tr><td><strong>Iatrochemistry</strong>; <strong>John Mayow</strong> (1641-1679), English</td><td>Life as chemistry. Candles and small animals in closed vessels: both depend on a limited part of air, anticipating oxygen. <strong>Lavoisier</strong> later established oxygen's role in combustion and respiration.</td></tr><tr><td><strong>Luigi Galvani</strong> (1737-1798), Italian</td><td>Electrical stimulation contracts <strong>frog muscles</strong>: <strong>animal electricity</strong>, the start of <strong>bioelectricity</strong>.</td></tr></table>"
+  },
+  {
+   "id": "s7",
+   "title": "Physiology: 19th and 20th centuries",
+   "html": "<p><strong>Auguste Comte</strong> (1798-1857), <strong>positivism</strong>: knowledge from observable facts. Thought passes through three stages: <strong>theological</strong> (supernatural), <strong>metaphysical</strong> (abstract forces), <strong>positive</strong> (laws from observation). Physiology moved from asking ultimate causes to how and when processes occur.</p><ul><li><strong>Charles Bell</strong> and <strong>François Magendie</strong>: <strong>Bell-Magendie law</strong> (sensory roots carry information to the cord, motor roots carry commands to muscles). Magendie founded the <em>Journal de physiologie expérimentale et pathologique</em> in <strong>1821</strong>.</li><li><strong>Claude Bernard</strong> (1813-1878): founder of modern experimental physiology. Method: observe, hypothesise, identify the structure, test by experiment. <strong>Milieu intérieur</strong> (internal environment), the basis of later <strong>homeostasis</strong>.</li><li><strong>William Beaumont</strong> (1785-1853), US army surgeon, studied digestion through the <strong>gastric fistula</strong> of <strong>Alexis St Martin</strong> (gunshot, <strong>1822</strong>): digestion is <strong>chemical</strong> (gastric juice), not only mechanical.</li></ul><p><strong>20th century</strong>: physiology central to medicine. First <strong>Nobel Prize</strong> in Physiology or Medicine, <strong>1901</strong>, <strong>Emil von Behring</strong> (serum therapy against diphtheria).</p><p><strong>Ethics</strong>: animal and human experiments, sometimes on prisoners, soldiers or vulnerable groups without consent. <strong>Nazi</strong> experiments led to the <strong>Nuremberg Code (1947)</strong>: <strong>voluntary consent</strong> is essential. <strong>Declaration of Helsinki</strong>, first adopted <strong>1964</strong>. <strong>PETA</strong> founded <strong>1980</strong>. Progress is now judged also by how knowledge is obtained.</p><p><strong>Neuroscience</strong>: <strong>Paul Broca</strong> (<strong>1861</strong>) linked loss of speech production to damage in the <strong>left frontal lobe</strong>; <strong>Wilder Penfield</strong> stimulated the cortex during surgery and drew <strong>cortical maps</strong>. How brain activity becomes conscious experience is still debated.</p><p><strong>Lessons</strong>: knowledge evolves; methods transform knowledge; mechanism versus vitalism remains a key debate; progress raises ethical questions.</p>"
+  }
+ ],
+ "exam": [
+  "Medicine: same human questions, changing explanations and methods.",
+  "Three frameworks: balance and harmony, faith and divine will, evidence and technology (they coexisted).",
+  "Four kinds of progress: scientific, therapeutic, ethical, social.",
+  "Anatomy = Greek anatome, dissection; interest rose and fell in waves.",
+  "Egypt: embalming, practical not scientific. Greece: surface anatomy, little human dissection.",
+  "Galen: gladiators, animal dissection, teleology; his errors lasted centuries.",
+  "Vesalius, De humani corporis fabrica, 1543. Leonardo: Vitruvian Man.",
+  "Percussion: Auenbrugger 1761. Auscultation: Laennec.",
+  "Burke and Hare → British Anatomy Act 1832. Gray's Anatomy 1858 (Carter's drawings).",
+  "Physiology = physis + logos. Debates: vitalism/mechanism, teleology/empiricism, speculation/experiment.",
+  "Humours: blood-air-warm, phlegm-water-cold, yellow bile-fire-dry, black bile-earth-cold.",
+  "Galen's spirits: natural-liver, vital-heart, animal-brain; blood made in the liver, septal pores.",
+  "Pulmonary circulation: Ibn al-Nafis (13th c.), Servetus (1553, burned in Geneva).",
+  "Harvey: circulation, heart as pump. Descartes: dualism, pineal gland.",
+  "Mayow: part of air for combustion and life. Galvani: frog muscle, animal electricity.",
+  "Comte: theological, metaphysical, positive stages. Bell-Magendie law. Magendie's journal 1821.",
+  "Claude Bernard: experimental method, milieu intérieur. Beaumont and St Martin: digestion is chemical.",
+  "First Nobel 1901 (von Behring). Nuremberg Code 1947, Helsinki 1964, PETA 1980.",
+  "Broca 1861 (left frontal lobe, speech). Penfield: cortical maps."
+ ],
+ "visual": {
+  "kind": "model",
+  "intro": "",
+  "figure": {
+   "viewBox": "0 0 760 420",
+   "alt": "A timeline of anatomy and physiology",
+   "caption": "Key people and turning points from the booklet, in order. Schematic drawn for this site.",
+   "base": "<defs><marker id=\"ah\" markerWidth=\"10\" markerHeight=\"8\" refX=\"9\" refY=\"4\" orient=\"auto\"><path d=\"M0,0 L10,4 L0,8 Z\" fill=\"#8a8a8a\"/></marker></defs><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"185\" y1=\"60\" x2=\"205\" y2=\"60\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"375\" y1=\"60\" x2=\"395\" y2=\"60\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"565\" y1=\"60\" x2=\"585\" y2=\"60\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"665\" y1=\"90\" x2=\"665\" y2=\"170\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"585\" y1=\"200\" x2=\"565\" y2=\"200\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"395\" y1=\"200\" x2=\"375\" y2=\"200\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"205\" y1=\"200\" x2=\"185\" y2=\"200\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"100\" y1=\"230\" x2=\"100\" y2=\"310\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"185\" y1=\"340\" x2=\"205\" y2=\"340\"/><line stroke=\"#8a8a8a\" stroke-width=\"2\" marker-end=\"url(#ah)\" x1=\"375\" y1=\"340\" x2=\"395\" y2=\"340\"/>",
+   "parts": {
+    "egypt": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2d7cf\" x=\"15\" y=\"30\" width=\"170\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Ancient Egypt:",
+      "embalming"
+     ],
+     "lx": 100.0,
+     "ly": 58.0
+    },
+    "greece": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#cfe3f2\" x=\"205\" y=\"30\" width=\"170\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Greece: four",
+      "humours"
+     ],
+     "lx": 290.0,
+     "ly": 58.0
+    },
+    "galen": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d7edd2\" x=\"395\" y=\"30\" width=\"170\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Galen (Rome):",
+      "authority, spirits"
+     ],
+     "lx": 480.0,
+     "ly": 58.0
+    },
+    "nafis": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2e2a8\" x=\"585\" y=\"30\" width=\"160\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Ibn al-Nafis:",
+      "pulmonary circ."
+     ],
+     "lx": 665.0,
+     "ly": 58.0
+    },
+    "vesal": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#e3d5f0\" x=\"585\" y=\"170\" width=\"160\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Vesalius:",
+      "Fabrica, 1543"
+     ],
+     "lx": 665.0,
+     "ly": 198.0
+    },
+    "harvey": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f7d9b8\" x=\"395\" y=\"170\" width=\"170\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Harvey: blood",
+      "circulates"
+     ],
+     "lx": 480.0,
+     "ly": 198.0
+    },
+    "desc": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d9ecec\" x=\"205\" y=\"170\" width=\"170\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Descartes: body",
+      "as a machine"
+     ],
+     "lx": 290.0,
+     "ly": 198.0
+    },
+    "galv": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2d7cf\" x=\"15\" y=\"170\" width=\"170\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Galvani: animal",
+      "electricity"
+     ],
+     "lx": 100.0,
+     "ly": 198.0
+    },
+    "bell": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#cfe3f2\" x=\"15\" y=\"310\" width=\"170\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Bell-Magendie",
+      "law"
+     ],
+     "lx": 100.0,
+     "ly": 338.0
+    },
+    "bern": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#d7edd2\" x=\"205\" y=\"310\" width=\"170\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Claude Bernard:",
+      "milieu intérieur"
+     ],
+     "lx": 290.0,
+     "ly": 338.0
+    },
+    "nur": {
+     "shape": "<rect class=\"sh\" stroke=\"#8a8a8a\" fill=\"#f2e2a8\" x=\"395\" y=\"310\" width=\"170\" height=\"60\" rx=\"10\"/>",
+     "label": [
+      "Nuremberg Code",
+      "1947"
+     ],
+     "lx": 480.0,
+     "ly": 338.0
+    }
+   },
+   "arrows": {
+    "egypt": [
+     {
+      "t": [
+       15.0,
+       38.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "greece": [
+     {
+      "t": [
+       205.0,
+       38.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "galen": [
+     {
+      "t": [
+       395.0,
+       38.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "nafis": [
+     {
+      "t": [
+       585.0,
+       38.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "vesal": [
+     {
+      "t": [
+       585.0,
+       178.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "harvey": [
+     {
+      "t": [
+       395.0,
+       178.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "desc": [
+     {
+      "t": [
+       205.0,
+       178.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "galv": [
+     {
+      "t": [
+       15.0,
+       178.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "bell": [
+     {
+      "t": [
+       15.0,
+       318.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "bern": [
+     {
+      "t": [
+       205.0,
+       318.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ],
+    "nur": [
+     {
+      "t": [
+       395.0,
+       318.0
+      ],
+      "d": [
+       -70,
+       -60
+      ],
+      "gap": 6
+     }
+    ]
+   }
+  }
+ },
+ "mcqs": [
+  {
+   "q": "The word anatomy comes from the Greek anatome, which means:",
+   "options": [
+    "Structure",
+    "Dissection",
+    "Form of the body",
+    "Study of nature"
+   ],
+   "answer": 1,
+   "why": "",
+   "slides": [
+    {
+     "src": "files/slides/history-booklet/07.jpg",
+     "lec": "History booklet",
+     "n": 7,
+     "unit": "page"
+    }
+   ]
+  },
+  {
+   "q": "Ancient Egyptian knowledge of the organs came mainly from:",
+   "options": [
+    "Systematic dissection for teaching",
+    "Surgery on the wounded",
+    "Animal experiments",
+    "Embalming practices"
+   ],
+   "answer": 3,
+   "why": "It served religious and funerary purposes.",
+   "slides": [
+    {
+     "src": "files/slides/history-booklet/08.jpg",
+     "lec": "History booklet",
+     "n": 8,
+     "unit": "page"
+    }
+   ]
+  },
+  {
+   "q": "In ancient Greece, knowledge of internal anatomy was limited mainly because:",
+   "options": [
+    "Sculptors refused to study the body",
+    "Human dissection was generally forbidden or restricted",
+    "Galen had already described everything",
+    "Embalming destroyed the organs"
+   ],
+   "answer": 1,
+   "why": "",
+   "slides": [
+    {
+     "src": "files/slides/history-booklet/08.jpg",
+     "lec": "History booklet",
+     "n": 8,
+     "unit": "page"
+    }
+   ]
+  },
+  {
+   "q": "Galen's anatomical errors arose mainly because he:",
+   "options": [
+    "Dissected only executed criminals",
+    "Copied Egyptian texts",
+    "Refused to dissect at all",
+    "Relied largely on animal dissection"
+   ],
+   "answer": 3,
+   "why": "He was physician to gladiators and worked mostly on animals.",
+   "slides": [
+    {
+     "src": "files/slides/history-booklet/09.jpg",
+     "lec": "History booklet",
+     "n": 9,
+     "unit": "page"
+    }
+   ]
+  },
+  {
+   "q": "Explaining body structures by the purpose they serve is called:",
+   "options": [
+    "Empiricism",
+    "Positivism",
+    "Sensualism",
+    "Teleological reasoning"
+   ],
+   "answer": 3,
+   "why": "",
+   "slides": [
+    {
+     "src": "files/slides/history-booklet/09.jpg",
+     "lec": "History booklet",
+     "n": 9,
+     "unit": "page"
+    }
+   ]
+  },
+  {
+   "q": "Which work, published in 1543, revolutionised anatomical teaching?",
+   "options": [
+    "De humani corporis fabrica",
+    "Gray's Anatomy",
+    "The Vitruvian Man",
+    "De Motu Cordis"
+   ],
+   "answer": 0,
+   "why": "Andreas Vesalius.",
+   "slides": [
+    {
+     "src": "files/slides/history-booklet/10.jpg",
+     "lec": "History booklet",
+     "n": 10,
+     "unit": "page"
+    }
+   ]
+  },
+  {
+   "q": "Percussion of the chest was introduced in 1761 by:",
+   "options": [
+    "Leopold Auenbrugger",
+    "René Laennec",
+    "William Harvey",
+    "Claude Bernard"
+   ],
+   "answer": 0,
+   "why": "Laennec popularised auscultation.",
+   "slides": [
+    {
+     "src": "files/slides/history-booklet/11.jpg",
+     "lec": "History booklet",
+     "n": 11,
+     "unit": "page"
+    }
+   ]
+  },
+  {
+   "q": "Burke and Hare murdered people in Edinburgh to sell their bodies to:",
+   "options": [
+    "Andreas Vesalius",
+    "François Magendie",
+    "Henry Vandyke Carter",
+    "Robert Knox"
+   ],
+   "answer": 3,
+   "why": "The scandal contributed to the Anatomy Act of 1832.",
+   "slides": [
+    {
+     "src": "files/slides/history-booklet/11.jpg",
+     "lec": "History booklet",
+     "n": 11,
+     "unit": "page"
+    }
+   ]
+  },
+  {
+   "q": "The British Anatomy Act of 1832:",
+   "options": [
+    "Gave legal access to unclaimed bodies and regulated dissection",
+    "Banned all human dissection in British universities",
+    "Made body donation compulsory for executed criminals",
+    "Allowed resurrectionists to supply medical schools legally"
+   ],
+   "answer": 0,
+   "why": "",
+   "slides": [
+    {
+     "src": "files/slides/history-booklet/12.jpg",
+     "lec": "History booklet",
+     "n": 12,
+     "unit": "page"
+    }
+   ]
+  },
+  {
+   "q": "Gray's Anatomy, first published in 1858, was illustrated by:",
+   "options": [
+    "Leonardo da Vinci",
+    "Robert Knox",
+    "Andreas Vesalius",
+    "Henry Vandyke Carter"
+   ],
+   "answer": 3,
+   "why": "",
+   "slides": [
+    {
+     "src": "files/slides/history-booklet/12.jpg",
+     "lec": "History booklet",
+     "n": 12,
+     "unit": "page"
+    }
+   ]
+  },
+  {
+   "q": "Physiology is derived from the Greek physis and logos, meaning:",
+   "options": [
+    "Body and structure",
+    "Nature and study",
+    "Life and force",
+    "Function and organ"
+   ],
+   "answer": 1,
+   "why": "",
+   "slides": [
+    {
+     "src": "files/slides/history-booklet/15.jpg",
+     "lec": "History booklet",
+     "n": 15,
+     "unit": "page"
+    }
+   ]
+  },
+  {
+   "q": "The view that living organisms have a life force that physics and chemistry cannot fully explain is:",
+   "options": [
+    "Mechanism",
+    "Empiricism",
+    "Vitalism",
+    "Positivism"
+   ],
+   "answer": 2,
+   "why": "",
+   "slides": [
+    {
+     "src": "files/slides/history-booklet/15.jpg",
+     "lec": "History booklet",
+     "n": 15,
+     "unit": "page"
+    }
+   ]
+  },
+  {
+   "q": "In the theory of the four humours, yellow bile is associated with:",
+   "options": [
+    "Fire and dryness",
+    "Water and coldness",
+    "Air and warmth",
+    "Earth and coldness"
+   ],
+   "answer": 0,
+   "why": "",
+   "slides": [
+    {
+     "src": "files/slides/history-booklet/16.jpg",
+     "lec": "History booklet",
+     "n": 16,
+     "unit": "page"
+    }
+   ]
+  },
+  {
+   "q": "According to Galen, the vital spirit was linked to:",
+   "options": [
+    "The liver",
+    "The heart",
+    "The brain",
+    "The lungs"
+   ],
+   "answer": 1,
+   "why": "Natural: liver. Animal: brain.",
+   "slides": [
+    {
+     "src": "files/slides/history-booklet/17.jpg",
+     "lec": "History booklet",
+     "n": 17,
+     "unit": "page"
+    }
+   ]
+  },
+  {
+   "q": "Galen believed blood passed from the right to the left side of the heart through:",
+   "options": [
+    "The lungs, where it mixed with air",
+    "The pulmonary veins and pulmonary artery",
+    "Invisible pores in the interventricular septum",
+    "The aorta and the vena cava"
+   ],
+   "answer": 2,
+   "why": "",
+   "slides": [
+    {
+     "src": "files/slides/history-booklet/17.jpg",
+     "lec": "History booklet",
+     "n": 17,
+     "unit": "page"
+    }
+   ]
+  },
+  {
+   "q": "Who correctly described pulmonary circulation in the thirteenth century?",
+   "options": [
+    "Michael Servetus",
+    "Galen",
+    "William Harvey",
+    "Ibn al-Nafis"
+   ],
+   "answer": 3,
+   "why": "Servetus described it later, in 1553.",
+   "slides": [
+    {
+     "src": "files/slides/history-booklet/18.jpg",
+     "lec": "History booklet",
+     "n": 18,
+     "unit": "page"
+    }
+   ]
+  },
+  {
+   "q": "William Harvey challenged Galen's model mainly by showing that:",
+   "options": [
+    "The heart pumps far more blood than the liver could make",
+    "The liver makes new blood continuously from food",
+    "Blood passes through pores in the cardiac septum",
+    "Arteries carry air rather than blood to the tissues"
+   ],
+   "answer": 0,
+   "why": "A quantitative argument, plus ligature experiments.",
+   "slides": [
+    {
+     "src": "files/slides/history-booklet/19.jpg",
+     "lec": "History booklet",
+     "n": 19,
+     "unit": "page"
+    }
+   ]
+  },
+  {
+   "q": "According to Descartes, the soul interacts with the body through:",
+   "options": [
+    "The heart",
+    "The pineal gland",
+    "The liver",
+    "The spinal cord"
+   ],
+   "answer": 1,
+   "why": "Mind-body dualism: res cogitans and res extensa.",
+   "slides": [
+    {
+     "src": "files/slides/history-booklet/19.jpg",
+     "lec": "History booklet",
+     "n": 19,
+     "unit": "page"
+    }
+   ]
+  },
+  {
+   "q": "Luigi Galvani's experiments on frog muscles opened the field of:",
+   "options": [
+    "Iatrochemistry",
+    "Homeostasis",
+    "Bioelectricity",
+    "Positivism"
+   ],
+   "answer": 2,
+   "why": "",
+   "slides": [
+    {
+     "src": "files/slides/history-booklet/20.jpg",
+     "lec": "History booklet",
+     "n": 20,
+     "unit": "page"
+    }
+   ]
+  },
+  {
+   "q": "In Comte's positivism, the stage that seeks laws through observation is the:",
+   "options": [
+    "Theological stage",
+    "Metaphysical stage",
+    "Positive stage",
+    "Experimental stage"
+   ],
+   "answer": 2,
+   "why": "",
+   "slides": [
+    {
+     "src": "files/slides/history-booklet/21.jpg",
+     "lec": "History booklet",
+     "n": 21,
+     "unit": "page"
+    }
+   ]
+  },
+  {
+   "q": "The Bell-Magendie law distinguishes:",
+   "options": [
+    "Sensory and motor nerve roots",
+    "Sympathetic and parasympathetic nerves",
+    "Cranial and spinal nerves",
+    "Grey and white matter"
+   ],
+   "answer": 0,
+   "why": "",
+   "slides": [
+    {
+     "src": "files/slides/history-booklet/21.jpg",
+     "lec": "History booklet",
+     "n": 21,
+     "unit": "page"
+    }
+   ]
+  },
+  {
+   "q": "The concept of the milieu intérieur, basis of homeostasis, was introduced by:",
+   "options": [
+    "François Magendie",
+    "Auguste Comte",
+    "Claude Bernard",
+    "William Beaumont"
+   ],
+   "answer": 2,
+   "why": "",
+   "slides": [
+    {
+     "src": "files/slides/history-booklet/22.jpg",
+     "lec": "History booklet",
+     "n": 22,
+     "unit": "page"
+    }
+   ]
+  },
+  {
+   "q": "William Beaumont used Alexis St Martin's gastric fistula to show that digestion is:",
+   "options": [
+    "Mainly chemical, through gastric juice",
+    "Purely mechanical",
+    "Controlled by animal spirits",
+    "Done by the liver"
+   ],
+   "answer": 0,
+   "why": "",
+   "slides": [
+    {
+     "src": "files/slides/history-booklet/22.jpg",
+     "lec": "History booklet",
+     "n": 22,
+     "unit": "page"
+    }
+   ]
+  },
+  {
+   "q": "The Nuremberg Code of 1947 established as an essential principle:",
+   "options": [
+    "Animal welfare",
+    "Voluntary consent",
+    "Publication of results",
+    "Free access to care"
+   ],
+   "answer": 1,
+   "why": "Helsinki (1964) developed the guidance further.",
+   "slides": [
+    {
+     "src": "files/slides/history-booklet/23.jpg",
+     "lec": "History booklet",
+     "n": 23,
+     "unit": "page"
+    }
+   ]
+  },
+  {
+   "q": "In 1861, Paul Broca linked impaired speech production to damage in the:",
+   "options": [
+    "Right parietal lobe",
+    "Occipital lobe",
+    "Left frontal lobe",
+    "Cerebellum"
+   ],
+   "answer": 2,
+   "why": "",
+   "slides": [
+    {
+     "src": "files/slides/history-booklet/23.jpg",
+     "lec": "History booklet",
+     "n": 23,
+     "unit": "page"
+    }
+   ]
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "egypt",
+   "options": [
+    "Andreas Vesalius",
+    "William Harvey",
+    "Claude Bernard",
+    "Ancient Egypt"
+   ],
+   "answer": 3,
+   "why": "The arrow points to: Ancient Egypt. Embalming gave practical knowledge of the organs, but for religious and funerary purposes, not anatomical science."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "greece",
+   "options": [
+    "Ancient Greece",
+    "Nuremberg Code",
+    "Ibn al-Nafis",
+    "René Descartes"
+   ],
+   "answer": 0,
+   "why": "The arrow points to: Ancient Greece. Surface anatomy in sculpture, little human dissection; the Hippocratic theory of the four humours."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "galen",
+   "options": [
+    "Galen",
+    "Claude Bernard",
+    "Ibn al-Nafis",
+    "William Harvey"
+   ],
+   "answer": 0,
+   "why": "The arrow points to: Galen. Roman-era physician to gladiators; animal dissection, teleology, three spirits; his authority lasted for centuries."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "nafis",
+   "options": [
+    "Ibn al-Nafis",
+    "Nuremberg Code",
+    "Ancient Greece",
+    "Luigi Galvani"
+   ],
+   "answer": 0,
+   "why": "The arrow points to: Ibn al-Nafis. 13th-century Syrian physician who correctly described pulmonary circulation."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "vesal",
+   "options": [
+    "Nuremberg Code",
+    "Ibn al-Nafis",
+    "Andreas Vesalius",
+    "Ancient Greece"
+   ],
+   "answer": 2,
+   "why": "The arrow points to: Andreas Vesalius. De humani corporis fabrica (1543) revolutionised anatomical teaching."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "harvey",
+   "options": [
+    "Claude Bernard",
+    "William Harvey",
+    "Ancient Greece",
+    "René Descartes"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: William Harvey. Showed by experiment and calculation that blood circulates; the heart is a pump."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "desc",
+   "options": [
+    "Ibn al-Nafis",
+    "René Descartes",
+    "Bell-Magendie law",
+    "Luigi Galvani"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: René Descartes. Mechanism and mind-body dualism; the soul meets the body at the pineal gland."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "galv",
+   "options": [
+    "Andreas Vesalius",
+    "Bell-Magendie law",
+    "Luigi Galvani",
+    "William Harvey"
+   ],
+   "answer": 2,
+   "why": "The arrow points to: Luigi Galvani. Electrical stimulation contracts frog muscle: the start of bioelectricity."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "bell",
+   "options": [
+    "Nuremberg Code",
+    "Luigi Galvani",
+    "Bell-Magendie law",
+    "René Descartes"
+   ],
+   "answer": 2,
+   "why": "The arrow points to: Bell-Magendie law. Sensory roots carry information to the cord; motor roots carry commands to muscles."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "bern",
+   "options": [
+    "Ancient Egypt",
+    "Claude Bernard",
+    "Ibn al-Nafis",
+    "Andreas Vesalius"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: Claude Bernard. Founder of experimental physiology; the internal environment, basis of homeostasis."
+  },
+  {
+   "q": "Which element is at the arrow?",
+   "target": "nur",
+   "options": [
+    "Galen",
+    "Nuremberg Code",
+    "Ancient Greece",
+    "Bell-Magendie law"
+   ],
+   "answer": 1,
+   "why": "The arrow points to: Nuremberg Code. 1947: voluntary consent becomes essential in human experimentation."
+  }
+ ],
+ "cards": [
+  {
+   "id": "x0",
+   "type": "text",
+   "front": "Why study the history of medicine?",
+   "back": "Humility, critical thinking, contextual understanding, ethical awareness and perspective; not to memorise dates."
+  },
+  {
+   "id": "x1",
+   "type": "text",
+   "front": "Four dimensions of progress?",
+   "back": "Scientific, therapeutic, ethical, social; they do not advance at the same pace."
+  },
+  {
+   "id": "x2",
+   "type": "text",
+   "front": "Three frameworks for illness?",
+   "back": "Balance and harmony; faith and divine will; evidence and technology. They often coexisted."
+  },
+  {
+   "id": "x3",
+   "type": "text",
+   "front": "Galen: who, how, what idea?",
+   "back": "Physician to gladiators; mostly animal dissection; teleology; three spirits; authority for centuries."
+  },
+  {
+   "id": "x4",
+   "type": "text",
+   "front": "Vesalius?",
+   "back": "De humani corporis fabrica, 1543: revolutionised anatomical teaching."
+  },
+  {
+   "id": "x5",
+   "type": "text",
+   "front": "Auenbrugger and Laennec?",
+   "back": "Percussion (1761) and auscultation: seeing inside the living body."
+  },
+  {
+   "id": "x6",
+   "type": "text",
+   "front": "Burke and Hare?",
+   "back": "Murders in Edinburgh to sell bodies to Robert Knox → British Anatomy Act 1832."
+  },
+  {
+   "id": "x7",
+   "type": "text",
+   "front": "The four humours and their elements?",
+   "back": "Blood-air-warmth; phlegm-water-coldness; yellow bile-fire-dryness; black bile-earth-coldness."
+  },
+  {
+   "id": "x8",
+   "type": "text",
+   "front": "Galen's three spirits?",
+   "back": "Natural (liver, nutrition), vital (heart, heat and life), animal (brain, sensation and movement)."
+  },
+  {
+   "id": "x9",
+   "type": "text",
+   "front": "Who described pulmonary circulation before Harvey?",
+   "back": "Ibn al-Nafis (13th century); Michael Servetus (1553, burned in Geneva)."
+  },
+  {
+   "id": "x10",
+   "type": "text",
+   "front": "Harvey versus Descartes on the heart?",
+   "back": "Harvey: a pump driving continuous circulation. Descartes: movement by heat and expansion of blood."
+  },
+  {
+   "id": "x11",
+   "type": "text",
+   "front": "Comte's three stages?",
+   "back": "Theological, metaphysical, positive."
+  },
+  {
+   "id": "x12",
+   "type": "text",
+   "front": "Claude Bernard?",
+   "back": "Experimental method (observe, hypothesise, identify, test); milieu intérieur → homeostasis."
+  },
+  {
+   "id": "x13",
+   "type": "text",
+   "front": "Research ethics milestones?",
+   "back": "Nuremberg Code 1947 (voluntary consent), Declaration of Helsinki 1964, PETA 1980."
+  },
+  {
+   "id": "x14",
+   "type": "text",
+   "front": "Broca and Penfield?",
+   "back": "Broca 1861: left frontal lobe and speech. Penfield: cortical maps by stimulation during surgery."
+  },
+  {
+   "id": "img-egypt",
+   "type": "image",
+   "target": "egypt",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Ancient Egypt. Embalming gave practical knowledge of the organs, but for religious and funerary purposes, not anatomical science."
+  },
+  {
+   "id": "img-greece",
+   "type": "image",
+   "target": "greece",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Ancient Greece. Surface anatomy in sculpture, little human dissection; the Hippocratic theory of the four humours."
+  },
+  {
+   "id": "img-galen",
+   "type": "image",
+   "target": "galen",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Galen. Roman-era physician to gladiators; animal dissection, teleology, three spirits; his authority lasted for centuries."
+  },
+  {
+   "id": "img-nafis",
+   "type": "image",
+   "target": "nafis",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Ibn al-Nafis. 13th-century Syrian physician who correctly described pulmonary circulation."
+  },
+  {
+   "id": "img-vesal",
+   "type": "image",
+   "target": "vesal",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Andreas Vesalius. De humani corporis fabrica (1543) revolutionised anatomical teaching."
+  },
+  {
+   "id": "img-harvey",
+   "type": "image",
+   "target": "harvey",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "William Harvey. Showed by experiment and calculation that blood circulates; the heart is a pump."
+  },
+  {
+   "id": "img-desc",
+   "type": "image",
+   "target": "desc",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "René Descartes. Mechanism and mind-body dualism; the soul meets the body at the pineal gland."
+  },
+  {
+   "id": "img-galv",
+   "type": "image",
+   "target": "galv",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Luigi Galvani. Electrical stimulation contracts frog muscle: the start of bioelectricity."
+  },
+  {
+   "id": "img-bell",
+   "type": "image",
+   "target": "bell",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Bell-Magendie law. Sensory roots carry information to the cord; motor roots carry commands to muscles."
+  },
+  {
+   "id": "img-bern",
+   "type": "image",
+   "target": "bern",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Claude Bernard. Founder of experimental physiology; the internal environment, basis of homeostasis."
+  },
+  {
+   "id": "img-nur",
+   "type": "image",
+   "target": "nur",
+   "front": "What is at the arrow, and why does it matter?",
+   "back": "Nuremberg Code. 1947: voluntary consent becomes essential in human experimentation."
+  }
+ ],
+ "deeper": [
+  {
+   "title": "Why Galen lasted so long",
+   "html": "<p>Galen's system explained nutrition, life and movement in one coherent scheme, his writings were copied and taught for centuries, and his idea of life-sustaining spirits fitted religious ideas of the soul. Human dissection was rare, so few people could check him. That is why the booklet uses him to show how a source's reputation can become stronger than the evidence, and why Harvey's quantitative argument mattered so much: it replaced authority with a test anyone could repeat.</p><p class='src'>Source: the booklet's chapters on anatomy and physiology; Ribatti, William Harvey and the discovery of the circulation of the blood.</p>"
+  },
+  {
+   "title": "From milieu intérieur to homeostasis",
+   "html": "<p>Claude Bernard noticed that living organisms keep their internal conditions steady even when the outside world changes. He called the fluid that bathes the cells the milieu intérieur. Later physiologists turned this idea into homeostasis: the active regulation of temperature, glucose and body-fluid composition that you study in physiology today.</p><p class='src'>Source: the booklet; Wikipedia, Internal environment.</p>"
+  }
+ ],
+ "resources": [
+  {
+   "title": "William Harvey and the discovery of the circulation of the blood (Ribatti, 2009)",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2776239/",
+   "kind": "Article",
+   "why": "How Harvey's experiments and calculations overturned Galen's model.",
+   "note": ""
+  },
+  {
+   "title": "Vesalius' De humani corporis fabrica (Biodiversity Heritage Library)",
+   "url": "https://blog.biodiversitylibrary.org/2015/10/eerie-anatomy-vesalius-de-humani-corporis-fabrica",
+   "kind": "Article",
+   "why": "The 1543 Fabrica and its famous illustrations.",
+   "note": ""
+  },
+  {
+   "title": "Internal environment (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Internal_environment",
+   "kind": "Website",
+   "why": "Claude Bernard's milieu intérieur and how it led to homeostasis.",
+   "note": ""
+  }
+ ],
+ "checks": [],
+ "sources": [
+  {
+   "name": "William Harvey and the discovery of the circulation of the blood (Ribatti, 2009)",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2776239/"
+  },
+  {
+   "name": "Vesalius' De humani corporis fabrica (Biodiversity Heritage Library)",
+   "url": "https://blog.biodiversitylibrary.org/2015/10/eerie-anatomy-vesalius-de-humani-corporis-fabrica"
+  },
+  {
+   "name": "Internal environment (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Internal_environment"
+  }
+ ],
+ "verified": "26 Oct 2026",
+ "highYield": [
+  {
+   "t": "note",
+   "html": "<strong>Anatomy timeline</strong>: Egypt (embalming) → Greece (surface anatomy, little dissection) → <strong>Galen</strong> (animal dissection, teleology) → Middle Ages (Galen rules) → <strong>Vesalius 1543</strong> → <strong>Auenbrugger 1761</strong> (percussion), <strong>Laennec</strong> (auscultation) → <strong>Anatomy Act 1832</strong> → <strong>Gray's 1858</strong>."
+  },
+  {
+   "t": "mnemo",
+   "html": "<strong>Galen's spirits, from the bottom up: L-H-B</strong>: Liver = Natural, Heart = Vital, Brain = Animal."
+  },
+  {
+   "t": "note",
+   "html": "<strong>Humours</strong>: blood-air-warm, phlegm-water-cold, yellow bile-fire-dry, black bile-earth-cold. Lasted <strong>2,000+ years</strong>."
+  },
+  {
+   "t": "note",
+   "html": "<strong>Pulmonary circulation before Harvey</strong>: <strong>Ibn al-Nafis</strong> (13th century) and <strong>Servetus</strong> (1553, burned in Geneva for his religious views). Galen's version: <strong>pores in the septum</strong>."
+  },
+  {
+   "t": "note",
+   "html": "<strong>Harvey</strong>: circulation, heart = pump, quantitative argument. <strong>Descartes</strong>: dualism (<em>res cogitans</em> / <em>res extensa</em>), <strong>pineal gland</strong>, heart moved by heat."
+  },
+  {
+   "t": "mnemo",
+   "html": "<strong>Comte's stages, T-M-P</strong>: Theological → Metaphysical → Positive."
+  },
+  {
+   "t": "note",
+   "html": "<strong>19th century</strong>: <strong>Bell-Magendie</strong> (sensory vs motor roots), Magendie's journal <strong>1821</strong>, <strong>Claude Bernard</strong> (milieu intérieur), <strong>Beaumont</strong> + St Martin (digestion is chemical, 1822)."
+  },
+  {
+   "t": "clinic",
+   "html": "<strong>Ethics</strong>: Nazi experiments → <strong>Nuremberg Code 1947</strong> (voluntary consent); <strong>Helsinki 1964</strong>; <strong>PETA 1980</strong>. Burke and Hare → regulated dissection."
+  },
+  {
+   "t": "note",
+   "html": "<strong>Firsts</strong>: first Nobel in Physiology or Medicine <strong>1901</strong>, von Behring (diphtheria serum). <strong>Broca 1861</strong>: left frontal lobe, speech. <strong>Penfield</strong>: cortical maps."
+  }
+ ]
 };

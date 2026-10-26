@@ -757,3 +757,11 @@ h2[id^="sec-"] { scroll-margin-top: 7.5rem; }
 .settings-menu a.sm-suggest, :root[data-theme="dark"] .settings-menu a.sm-suggest { align-items: center; gap: 0.6rem; padding: 0.55rem 0.6rem; border-radius: 8px; color: var(--ink); font-size: 0.92rem; font-weight: 600; text-decoration: none; }
 .settings-menu a.sm-suggest:hover { background: var(--surface-2); }
 @media (max-width: 40rem) { .tab { padding: 0.6rem 0.65rem; } }
+/* lecture picker: header row and lecture rows share one grid so every box lines up */
+.pick-group { padding: 0 0.9rem; }
+.pick-row { display: grid; grid-template-columns: 1.15rem 1fr auto; column-gap: 0.75rem; align-items: center; padding: 0.6rem 0; border-top: 1px solid var(--line); }
+.pick-row:first-child { border-top: 0; }
+.pick-row input { margin: 0; }
+.pick-head { font-weight: 700; border-bottom: 1px solid var(--line-strong); }
+.pick-head + .pick-row { border-top: 0; }
+.pick-row .qn { text-align: right; min-width: 1.6rem; }
