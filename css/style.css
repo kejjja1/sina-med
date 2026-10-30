@@ -765,3 +765,15 @@ h2[id^="sec-"] { scroll-margin-top: 7.5rem; }
 .pick-head { font-weight: 700; border-bottom: 1px solid var(--line-strong); }
 .pick-head + .pick-row { border-top: 0; }
 .pick-row .qn { text-align: right; min-width: 1.6rem; }
+/* per-option explanations and source tag */
+.opt.has-note, .opt { flex-wrap: nowrap; }
+.opt .onote { display: block; margin: 0.35rem 0 0; font-size: 0.86rem; font-weight: 500; color: var(--ink); opacity: 0.85; }
+.qsrc { display: inline-block; margin-left: 0.5rem; padding: 0.05rem 0.5rem; border-radius: 999px; background: var(--accent-soft); color: var(--ink); font-size: 0.75rem; font-weight: 700; }
+
+/* option layout: letter column + text column (note sits under the text) */
+.opt { display: grid; grid-template-columns: 1.4rem 1fr; column-gap: 0.6rem; align-items: start; }
+.opt > .onote { grid-column: 2; }
+.opt.picked { border-color: var(--accent); border-width: 2px; background: color-mix(in srgb, var(--accent) 10%, var(--surface)); }
+.opt.picked .letter { color: var(--accent-ink); background: var(--accent); border-radius: 50%; width: 1.4rem; height: 1.4rem; display: inline-grid; place-items: center; font-size: 0.85rem; }
+.opt.correct .letter, .opt.wrong .letter { background: none; color: inherit; }
+.pdf-links { font-size: 0.9rem; margin: 0.2rem 0 1rem; }
