@@ -100,6 +100,7 @@ SINA.subjects = [
     groups: [
       { name: "Basics and hormones", items: [
         { id: "biochem-preanalytical", title: "Preanalytical phase of biochemical analyses" },
+        { id: "biochem-thyroid", title: "Thyroid hormones" },
         { id: "biochem-adrenal-medulla", title: "Adrenal medulla hormones" },
         { id: "biochem-insulin", title: "Insulin" },
         { id: "biochem-steroids", title: "Steroid hormones" }
@@ -608,8 +609,8 @@ SINA.subjects.forEach(function (s) { if (!s.program) s.program = SINA.DEFAULT_PR
 /* Upcoming midterms: the lectures listed here get the blue "On the midterm" label
    and appear on the "Upcoming midterm lectures" page for their year. */
 SINA.midterms = [
-  { id: "history-midterm", program: "y2-anglo", subject: "history", title: "History of Medicine midterm",
+  { id: "biochem-midterm", program: "y2-anglo", subject: "biochem", title: "Clinical Biochemistry midterm",
     groups: [
-      { name: "Booklet 2026-2027", items: ["history-booklet"] }
+      { name: "Basics and hormones", items: ["biochem-preanalytical", "biochem-thyroid", "biochem-adrenal-medulla", "biochem-insulin", "biochem-steroids"] }
     ]}
 ];

@@ -337,11 +337,6 @@
       var n = (S.papers || []).filter(function (x) { return x.subject === sb.id; }).length;
       return '<a class="dlink sub" href="#/papers/' + sb.id + '"><span>' + esc(sb.name) + '</span><span class="pn">' + n + "</span></a>";
     }).join("") + (hasOther ? '<a class="dlink sub" href="#/papers">Other modules</a>' : "");
-    var practiceSubs = progSubjects().filter(function (sb) { return practiceCount(sb).lec || practiceCount(sb).papers; });
-    if (practiceSubs.length) h += accHTML("Practice questions", "", '<a class="dlink sub" href="#/practice">Choose a subject</a>' + practiceSubs.map(function (sb) {
-      var c = practiceCount(sb);
-      return '<a class="dlink sub" href="#/practice/' + sb.id + '"><span>' + esc(sb.name) + '</span><span class="pn">' + c.lec + "</span></a>";
-    }).join(""), "cat");
     h += accHTML("Past papers", "", papersHTML, "cat");
 
     /* Category 3: Useful apps */
@@ -569,13 +564,13 @@
     mids.forEach(function (m) {
       var n = 0; m.groups.forEach(function (g) { n += g.items.length; });
       midHTML += '<div class="mid-card"><p class="mid-eyebrow">Upcoming</p><h2>' + esc(m.title) + '</h2><p class="meta">' + (n === 1 ? "1 lecture" : n + " lectures") + ' on this exam.</p><div class="row">' +
-        (n === 1 ? '<a class="btn primary" href="#/lecture/' + m.groups[0].items[0] + '">Revise the lecture</a>' : '<a class="btn primary" href="#/midterm">Revise the lectures</a>') + '<a class="btn" href="#/practice/' + m.subject + '/lectures/midterm">Practice questions</a>' +
-        ((S.papers || []).some(function (x) { return x.subject === m.subject; }) ? '<a class="btn" href="#/practice/' + m.subject + '/papers">Past papers as quizzes</a>' : "") + "</div></div>";
+        (n === 1 ? '<a class="btn primary" href="#/lecture/' + m.groups[0].items[0] + '">Revise the lecture</a>' : '<a class="btn primary" href="#/midterm">Revise the lectures</a>') + '<a class="btn" href="#/subject/' + m.subject + '/questions/midterm">Practice questions</a>' +
+        ((S.papers || []).some(function (x) { return x.subject === m.subject; }) ? '<a class="btn" href="#/subject/' + m.subject + '/papers">Practice papers</a>' : "") + "</div></div>";
     });
     var html = '<div class="wrap wide"><section class="hero slim"><h1>Study each lecture, then test yourself on it.</h1>' +
       '<div class="home-search"><input id="home-search" type="search" placeholder="Search a lecture, subject or past paper" aria-label="Search lectures, subjects and past papers" autocomplete="off"><div class="home-results" id="home-results" hidden></div></div>' +
       midHTML +
-      '<p class="meta home-links"><a href="#/practice">Practice questions</a> &middot; ' + (S.usmle ? '<a href="#/usmle">USMLE prep</a> &middot; ' : "") + '<a href="#/apps">Useful apps</a>' +
+      '<p class="meta home-links">' + (S.usmle ? '<a href="#/usmle">USMLE prep</a> &middot; ' : "") + '<a href="#/apps">Useful apps</a>' +
       (S.updated ? ' &middot; <a href="#/updates">What\'s new' + (newBadge() ? ' <span class="badge">new</span>' : "") + "</a>" : "") + "</p></section>" +
       '<h2 id="subjects">' + esc(T("home.subjects")) + ' <span class="prog-tag">' + esc(progName()) + '</span></h2>' +
       (semList.length ? semList.map(function (k) { return '<h3 class="sem-title">' + esc(T("home.semester", { n: k.replace(/^S/, "") })) + '</h3><ul class="subject-list">' + sems[k].map(row).join("") + "</ul>"; }).join("")
@@ -1086,7 +1081,7 @@
       var pic = (q.target && qfig)
         ? '<div class="diagram-box qfig">' + figureSVG(qfig, { mode: "quiz", target: q.target, uid: "q" + i }) + "</div>"
         : "";
-      p.innerHTML = '<p class="qhead">Question ' + (i + 1) + " of " + qs.length + (multi ? ", " + esc(q.hint || "choose all correct answers") : "") + (q.src ? '<span class="qsrc">' + esc(q.src) + "</span>" : "") + (q._from ? '<span class="qfrom">' + esc(q._from) + "</span>" : "") + '</p><div class="bar-track"><div class="bar-fill" style="width:' + (i / qs.length * 100) + '%"></div></div><p class="qtext">' + esc(q.q) + "</p>" + pic +
+      p.innerHTML = '<p class="qhead">Question ' + (i + 1) + " of " + qs.length + (multi ? ", choose all correct answers" : "") + (q._from ? '<span class="qfrom">' + esc(q._from) + "</span>" : "") + '</p><div class="bar-track"><div class="bar-fill" style="width:' + (i / qs.length * 100) + '%"></div></div><p class="qtext">' + esc(q.q) + "</p>" + pic +
         q.options.map(function (o, n) { return '<button class="opt" data-n="' + n + '" aria-pressed="false"><span class="letter">' + LET[n].toUpperCase() + "</span><span>" + esc(o) + "</span></button>"; }).join("") + (multi ? '<button class="btn primary" id="chk" type="button">Check my answer</button>' : "") + '<div id="fb"></div>';
       var opts = p.querySelectorAll(".opt");
       function finish(chosen) {
@@ -1094,9 +1089,8 @@
         var ok = chosen.length === ans.length && chosen.every(function (n) { return ans.indexOf(n) > -1; });
         if (ok) score++; else wrong.push({ q: q, n: i + 1, chosen: chosen });
         opts.forEach(function (x) {
-          var n = +x.dataset.n; x.disabled = true; x.classList.remove("picked");
+          var n = +x.dataset.n; x.disabled = true;
           if (ans.indexOf(n) > -1) x.classList.add("correct"); else if (chosen.indexOf(n) > -1) x.classList.add("wrong");
-          if (q.notes && q.notes[n]) x.insertAdjacentHTML("beforeend", '<span class="onote">' + (ans.indexOf(n) > -1 ? "Correct. " : "Wrong. ") + esc(q.notes[n]) + "</span>");
         });
         var c = p.querySelector("#chk"); if (c) c.remove();
         document.getElementById("fb").innerHTML = feedback(q, ok);
@@ -1187,47 +1181,6 @@
   }
 
   /* ---------- past papers ---------- */
-  /* ---------- Practice: questions by lecture and past papers as quizzes, per subject ---------- */
-  function practiceCount(sb) {
-    var lec = 0;
-    (sb.groups || []).forEach(function (g) { g.items.forEach(function (it) { var L = S.lectures[it.id]; if (L) lec += (L.mcqs || []).length; }); });
-    var papers = (S.papers || []).filter(function (x) { return x.subject === sb.id && x.questions && x.questions.length; }).length;
-    return { lec: lec, papers: papers };
-  }
-  function practiceHome() {
-    var html = '<div class="wrap"><p class="crumbs"><a href="#/">Home</a> / Practice questions</p><h1>Practice questions</h1><p class="meta">Pick a subject, then practise by lecture or do a past paper as a quiz.</p>';
-    progSemesters().forEach(function (k) {
-      var subs = progSubjects().filter(function (sb) { return sb.semester === k && (practiceCount(sb).lec || practiceCount(sb).papers); });
-      if (!subs.length) return;
-      html += '<h3 class="sem-title">' + esc(T("home.semester", { n: k.replace(/^S/, "") })) + '</h3><ul class="subject-list">' + subs.map(function (sb) {
-        var c = practiceCount(sb), mid = subjectMid(sb);
-        return '<li><a href="#/practice/' + sb.id + '"><span><span class="name">' + esc(sb.name) + "</span>" + (mid ? '<span class="desc"><span class="pill mid">Midterm</span></span>' : "") + '</span><span class="tag live">' + c.lec + " questions" + (c.papers ? " &middot; " + c.papers + " paper" + (c.papers > 1 ? "s" : "") : "") + "</span></a></li>";
-      }).join("") + "</ul>";
-    });
-    setView(html + "</div>", "Practice questions");
-  }
-  function practiceView(id, sec, arg) {
-    var s = subjectById(id);
-    if (!s || !s.groups) return practiceHome();
-    var c = practiceCount(s), papers = (S.papers || []).filter(function (x) { return x.subject === s.id; });
-    var secs = [["lectures", "By lecture"]]; if (papers.length) secs.push(["papers", "Past papers"]);
-    if (!secs.some(function (x) { return x[0] === sec; })) sec = "lectures";
-    var html = '<div class="wrap"><p class="crumbs"><a href="#/">Home</a> / <a href="#/practice">Practice questions</a> / ' + esc(s.name) + "</p><h1>" + esc(s.name) + '</h1><p class="meta">' + c.lec + " lecture questions" + (c.papers ? " and " + c.papers + " past paper" + (c.papers > 1 ? "s" : "") + " as quizzes" : "") + '. <a href="#/subject/' + s.id + '">Open the ' + esc(s.name) + " page</a></p>" +
-      '<nav class="tabs sticky" aria-label="Practice sections">' + secs.map(function (t) {
-        return '<a class="tab" href="#/practice/' + s.id + "/" + t[0] + '" aria-selected="' + (t[0] === sec) + '"' + (t[0] === sec ? ' aria-current="page"' : "") + ">" + t[1] + "</a>";
-      }).join("") + '</nav><div id="panel"></div></div>';
-    setView(html, "Practice: " + s.name);
-    wireTabs(app);
-    var p = document.getElementById("panel");
-    if (sec === "papers") {
-      var quiz = papers.filter(function (x) { return x.questions && x.questions.length; }), pdf = papers.filter(function (x) { return !(x.questions && x.questions.length); });
-      p.innerHTML = (quiz.length ? '<h2 class="group-title">Past papers as quizzes</h2><ul class="lec-list">' + quiz.map(function (x) {
-          return '<li class="paper-row"><a href="#/paper/' + esc(x.id) + '"><span>' + esc(x.title) + (x.year ? " (" + esc(x.year) + ")" : "") + '</span></a><span class="paper-btns"><a class="btn small primary" href="#/paper/' + esc(x.id) + '">Start quiz (' + x.questions.length + ")</a></span></li>";
-        }).join("") + "</ul>" : "") +
-        (pdf.length ? '<h2 class="group-title">PDF only for now</h2><ul class="lec-list">' + pdf.map(paperRow).join("") + "</ul>" : "");
-    } else subQuestionsPanel(p, s, arg);
-  }
-
   function paperRow(x) {
     var quick = (x.links || []).filter(function (l) { return l.short; });
     if (quick.length) {
@@ -1268,9 +1221,7 @@
     var sb = subjectById(x.subject);
     var html = '<div class="wrap"><p class="crumbs"><a href="#/">Home</a> / <a href="' + (sb && sb.groups ? "#/subject/" + x.subject + "/papers" : "#/papers") + '">Past papers</a></p><h1>' + esc(x.title) + '</h1><p class="meta">' + esc(sb ? sb.name : ((S.otherPaperGroups || {})[x.subject] || "")) + (x.year ? ", " + esc(x.year) : "") + (x.session ? ", " + esc(x.session) : "") + "</p>";
     var links = x.links || (x.pdf ? [{ label: "Open the paper (PDF)", url: x.pdf }] : []);
-    var hasQ = x.questions && x.questions.length;
-    if (links.length && hasQ) html += '<p class="pdf-links">' + links.map(function (l) { return '<a href="' + esc(l.url) + '" target="_blank" rel="noopener">' + esc(l.short || l.label) + "</a>"; }).join(" &middot; ") + "</p>";
-    else if (links.length) html += '<div class="row" style="margin:0 0 1.4rem">' + links.map(function (l, n) { return '<a class="btn' + (n === 0 ? " primary" : "") + '" href="' + esc(l.url) + '" target="_blank" rel="noopener">' + esc(l.label) + "</a>"; }).join("") + "</div>";
+    if (links.length) html += '<div class="row" style="margin:0 0 1.4rem">' + links.map(function (l, n) { return '<a class="btn' + (n === 0 ? " primary" : "") + '" href="' + esc(l.url) + '" target="_blank" rel="noopener">' + esc(l.label) + "</a>"; }).join("") + "</div>";
     if (x.note) html += '<p class="src">' + esc(x.note) + "</p>";
     html += '<div id="paperq"></div></div>';
     setView(html, x.title);
@@ -1372,7 +1323,6 @@
     if (parts[0] === "usmle") return usmleView();
     if (parts[0] === "year" && progValid(parts[1])) { setProgram(parts[1], true); location.replace("#/"); return; }
     if (parts[0] === "midterm") return midtermView();
-    if (parts[0] === "practice") return parts[1] ? practiceView(parts[1], parts[2], parts[3]) : practiceHome();
     if (parts[0] === "papers") return papersView(parts[1]);
     if (parts[0] === "paper") return paperView(parts[1]);
     if (parts[0] === "subject") return subjectView(parts[1], parts[2], parts[3]);

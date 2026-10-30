@@ -5,10 +5,7 @@ SINA.updates = [
   { date: "30 October 2026", items: [
     "The upcoming midterm is now Clinical Biochemistry (Prof. Kamal): pre-analytical phase, thyroid hormones, adrenal medulla, insulin and steroid hormones.",
     "New lecture page: Thyroid hormones.",
-    "New question format for the midterm lectures: options A to D with 1 or 2 correct answers, an explanation under every option after you check, and the slide that proves the answer.",
-    "New Steroid hormones questions (37), plus redone questions for the other four midterm lectures, built from the 2026 mock, the 2023-2024 final, the midterm recall and Tutorials 1 to 3.",
-    "New Practice section in the menu: pick a subject, then quiz yourself by lecture or on past papers.",
-    "Clinical Biochemistry past papers are now full quizzes: the 2026 mock (25), the 2023-2024 final (48) and the midterm recall (20), every question answered and explained from the slides. The PDF is still linked on each paper."
+    "New questions for the midterm lectures, built from the 2026 mock, the 2023-2024 final, the midterm recall and Tutorials 1 to 3, in Prof. Kamal's format (choose all correct answers), each with the slide that proves the answer."
   ]},
   { date: "26 October 2026", items: [
     "Fixed the lecture checkboxes in the Questions section so they line up.",
