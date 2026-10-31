@@ -568,7 +568,7 @@
     var mids = progMidterms(), midHTML = "";
     mids.forEach(function (m) {
       var n = 0; m.groups.forEach(function (g) { n += g.items.length; });
-      midHTML += '<div class="mid-card"><p class="mid-eyebrow">Upcoming</p><h2>' + esc(m.title) + '</h2><p class="meta">' + (n === 1 ? "1 lecture" : n + " lectures") + ' on this exam.</p><div class="row">' +
+      midHTML += '<div class="mid-card"><p class="mid-eyebrow">Upcoming</p><h2>' + esc(m.title) + '</h2>' + midCountdown(m) + '<p class="meta">' + (n === 1 ? "1 lecture" : n + " lectures") + ' on this exam.</p><div class="row">' +
         (n === 1 ? '<a class="btn primary" href="#/lecture/' + m.groups[0].items[0] + '">Revise the lecture</a>' : '<a class="btn primary" href="#/midterm">Revise the lectures</a>') + '<a class="btn" href="#/practice/' + m.subject + '/lectures/midterm">Practice questions</a>' +
         ((S.papers || []).some(function (x) { return x.subject === m.subject; }) ? '<a class="btn" href="#/practice/' + m.subject + '/papers">Past papers as quizzes</a>' : "") + "</div></div>";
     });
@@ -1378,6 +1378,66 @@
     if (parts[0] === "subject") return subjectView(parts[1], parts[2], parts[3]);
     if (parts[0] === "lecture") return lectureView(parts[1], parts[2]);
     notFound();
+  }
+
+  /* ---------- midterms from the Google Sheet ----------
+     The "Midterms" tab of the Sina midterm Sheet decides which exams and lectures are on the midterm.
+     Columns: Year | Subject | Exam name | Date | Lecture 1..10 (names as on the "Lectures" tab).
+     If the Sheet can't be read, the last copy saved on this device is used, then the list built into the site. */
+  var MID_SHEET = "https://docs.google.com/spreadsheets/d/1SOCdnq7AngYmjaqnzrTnwaxqqGTWuttRyAo-uopzIOA/gviz/tq?tqx=out:csv&sheet=Midterms";
+  function csvRows(t) {
+    var rows = [], row = [], f = "", q = false;
+    for (var i = 0; i < t.length; i++) {
+      var c = t[i];
+      if (q) { if (c === '"') { if (t[i + 1] === '"') { f += '"'; i++; } else q = false; } else f += c; }
+      else if (c === '"') q = true;
+      else if (c === ",") { row.push(f); f = ""; }
+      else if (c === "\n" || c === "\r") { if (c === "\r" && t[i + 1] === "\n") i++; row.push(f); rows.push(row); row = []; f = ""; }
+      else f += c;
+    }
+    if (f || row.length) { row.push(f); rows.push(row); }
+    return rows;
+  }
+  function norm(x) { return String(x || "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim(); }
+  function midsFromCsv(text) {
+    var rows = csvRows(text), out = [];
+    var progOf = { "2nd year anglo": "y2-anglo", "1st year anglo": "y1-anglo" };
+    rows.slice(1).forEach(function (r) {
+      var prog = progOf[norm(r[0])], sb = S.subjects.filter(function (x) { return x.program === prog && norm(x.name) === norm(r[1]); })[0];
+      if (!prog || !sb || !sb.groups) return;
+      var want = r.slice(4).map(norm).filter(Boolean), groups = [];
+      sb.groups.forEach(function (g) {
+        var items = g.items.filter(function (it) { return want.indexOf(norm(it.title)) > -1; }).map(function (it) { return it.id; });
+        if (items.length) groups.push({ name: g.name, items: items });
+      });
+      if (!groups.length) return;
+      var d = /^\d{4}-\d{2}-\d{2}$/.test((r[3] || "").trim()) ? r[3].trim() : "";
+      out.push({ id: sb.id + "-midterm", program: prog, subject: sb.id, title: (r[2] || "").trim() || sb.name + " midterm", date: d, groups: groups });
+    });
+    return out;
+  }
+  (function () {
+    var cached = store.get("sina:midsheet", null);
+    if (cached) S.midterms = cached;
+    if (!window.fetch || !/^https?:/.test(location.protocol)) return;
+    var ctl = window.AbortController ? new AbortController() : null;
+    if (ctl) setTimeout(function () { ctl.abort(); }, 8000);
+    fetch(MID_SHEET, { cache: "no-store", signal: ctl ? ctl.signal : undefined }).then(function (r) { return r.ok ? r.text() : ""; }).then(function (t) {
+      if (!t || /^\s*</.test(t)) return;  /* not shared publicly: Google returns a sign-in page */
+      var m = midsFromCsv(t);
+      if (JSON.stringify(m) === JSON.stringify(cached)) return;
+      store.set("sina:midsheet", m); S.midterms = m;
+      if (typeof renderDrawer === "function") renderDrawer();
+      route();
+    }).catch(function () {});
+  })();
+  function midCountdown(m) {
+    if (!m.date) return "";
+    var p = m.date.split("-"), d = new Date(+p[0], +p[1] - 1, +p[2]), t = new Date(); t.setHours(0, 0, 0, 0);
+    var n = Math.round((d - t) / 864e5);
+    if (n < 0) return "";
+    var when = d.toLocaleDateString("en-GB", { weekday: "long", day: "numeric", month: "long" });
+    return '<p class="mid-count"><strong>' + (n === 0 ? "Today" : n === 1 ? "Tomorrow" : "In " + n + " days") + "</strong> &middot; " + esc(when) + "</p>";
   }
   window.addEventListener("hashchange", route);
   route();

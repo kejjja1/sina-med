@@ -796,3 +796,5 @@ h2[id^="sec-"] { scroll-margin-top: 7.5rem; }
 .pick-row input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .pick-row .qn { font-size: 0.78rem; font-weight: 700; padding: 0.1rem 0.55rem; border-radius: 999px; background: var(--accent-soft, var(--line)); color: var(--ink); min-width: 0; }
 .pick-head .qn { background: none; padding: 0; text-transform: none; letter-spacing: 0; }
+.mid-count { margin: 0.1rem 0 0.4rem; font-size: 0.95rem; }
+.mid-count strong { color: var(--accent); }
