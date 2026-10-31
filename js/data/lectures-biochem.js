@@ -101,53 +101,32 @@ SINA.lectures["biochem-preanalytical"] = {
  },
  "mcqs": [
   {
-   "q": "Pre-analytical phase:",
+   "q": "The pre-analytical phase:",
    "options": [
-    "Is complex",
-    "Includes all the steps preceding the analysis stage",
+    "Includes all the steps that precede the analysis",
     "Carries no risk for the patient",
-    "Is responsible for 68% of errors in results"
+    "Is responsible for about 68% of errors in results",
+    "Takes place entirely inside the laboratory"
    ],
    "answers": [
     0,
-    1,
-    3
+    2
+   ],
+   "notes": [
+    "",
+    "Errors bring extra cost and above all risks for the patient.",
+    "Plebani and Kalra's figures quoted in the lecture.",
+    "Much of it happens outside the laboratory, where it cannot be controlled."
    ],
    "multi": true,
-   "why": "From the Midterm recall (Prof. Kamal). Complex (several stakeholders), all the steps before analysis, 68% of errors, with risks for the patient.",
-   "src": "Midterm recall (Prof. Kamal)",
+   "hint": "1 or 2 correct answers",
+   "why": "The real recall also had 'Is complex' as a correct option.",
+   "src": "Midterm recall (Prof. Kamal) (adapted)",
    "slides": [
     {
      "src": "files/slides/biochem-preanalytical/16.jpg",
      "lec": "Pre-analytical phase",
      "n": 16
-    }
-   ]
-  },
-  {
-   "q": "The pre-analytical phase:",
-   "options": [
-    "Is influenced only by the quality of the sampling equipment",
-    "Requires compliance with certain precautions by the patient",
-    "Is easy to manage",
-    "Does not concern the medical analysis prescription sheet"
-   ],
-   "answers": [
-    1
-   ],
-   "multi": true,
-   "why": "From the Tutorial 1. It involves prescription, patient, equipment, procedure and sample, and is complex.",
-   "src": "Tutorial 1",
-   "slides": [
-    {
-     "src": "files/slides/biochem-preanalytical/17.jpg",
-     "lec": "Pre-analytical phase",
-     "n": 17
-    },
-    {
-     "src": "files/slides/biochem-preanalytical/18.jpg",
-     "lec": "Pre-analytical phase",
-     "n": 18
     },
     {
      "src": "files/slides/biochem-preanalytical/19.jpg",
@@ -157,20 +136,26 @@ SINA.lectures["biochem-preanalytical"] = {
    ]
   },
   {
-   "q": "The stakeholders of the pre-analytical phase include:",
+   "q": "The pre-analytical phase:",
    "options": [
-    "The prescribing doctor",
-    "The patient",
-    "The person taking the sample",
-    "The analyser in the laboratory"
+    "Is influenced only by the quality of the sampling equipment",
+    "Requires compliance with certain precautions by the patient",
+    "Is easy to manage",
+    "Does not concern the analysis prescription sheet"
    ],
    "answers": [
-    0,
-    1,
-    2
+    1
+   ],
+   "notes": [
+    "Prescription, patient, equipment, procedure and sample all play a part.",
+    "Rest, fasting, avoiding exercise and stress.",
+    "It is complex, with several stakeholders.",
+    "The prescription is its first step."
    ],
    "multi": true,
-   "why": "Prescription, patient precautions, equipment and procedure, sample transport. The analyser belongs to the analytical phase.",
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
+   "src": "Tutorial 1",
    "slides": [
     {
      "src": "files/slides/biochem-preanalytical/17.jpg",
@@ -192,17 +177,24 @@ SINA.lectures["biochem-preanalytical"] = {
   {
    "q": "The Guide for the proper execution of analyses (GBEA):",
    "options": [
+    "Concerns only the post-analytical phase",
     "Is optional advice for laboratories",
-    "Is a law, so its application is mandatory",
     "Includes requirements to avoid errors during analyses",
-    "Concerns only the post-analytical phase"
+    "Is a law, so applying it is mandatory"
    ],
    "answers": [
-    1,
-    2
+    2,
+    3
+   ],
+   "notes": [
+    "It covers the proper execution of analyses.",
+    "It is a law; applying it is mandatory.",
+    "",
+    ""
    ],
    "multi": true,
-   "why": "",
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
    "slides": [
     {
      "src": "files/slides/biochem-preanalytical/15.jpg",
@@ -212,7 +204,7 @@ SINA.lectures["biochem-preanalytical"] = {
    ]
   },
   {
-   "q": "Alkaline phosphatase (ALP) concentration is physiologically higher in the blood:",
+   "q": "Alkaline phosphatase (ALP) is physiologically higher in the blood:",
    "options": [
     "During growth",
     "In adults more than in children",
@@ -223,8 +215,15 @@ SINA.lectures["biochem-preanalytical"] = {
     0,
     3
    ],
+   "notes": [
+    "Bone cells are active in children.",
+    "Higher in children.",
+    "Not a variation described in the lecture.",
+    "Faster hepatic metabolism for the fetus."
+   ],
    "multi": true,
-   "why": "From the Mock exam 2026. Higher in children (active bone cells) and in pregnancy (faster hepatic metabolism).",
+   "hint": "1 or 2 correct answers",
+   "why": "Write age and pregnancy on the prescription so ALP is read correctly.",
    "src": "Mock exam 2026",
    "slides": [
     {
@@ -246,8 +245,15 @@ SINA.lectures["biochem-preanalytical"] = {
     0,
     1
    ],
+   "notes": [
+    "Iron and ferritin fall to meet fetal needs.",
+    "Haemodilution from the increased blood volume.",
+    "ALP rises in pregnancy.",
+    "Not described as falling in the lecture."
+   ],
    "multi": true,
-   "why": "From the Final exam 2023-2024. Proteins fall by haemodilution, iron and ferritin to meet fetal needs; ALP rises.",
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
    "src": "Final exam 2023-2024",
    "slides": [
     {
@@ -263,20 +269,26 @@ SINA.lectures["biochem-preanalytical"] = {
    ]
   },
   {
-   "q": "Clinical information that should be written on the analysis prescription includes:",
+   "q": "Information the clinician should write on the prescription:",
    "options": [
+    "The patient's height, for sex hormones",
+    "The patient's blood group, for glucose",
     "The time of sampling, for cortisol",
-    "The patient's gender, for sex hormones",
-    "Pregnancy, for proteins, iron and ALP",
-    "The patient's blood group, for glucose"
+    "Pregnancy, for proteins, iron and ALP"
    ],
    "answers": [
-    0,
-    1,
-    2
+    2,
+    3
+   ],
+   "notes": [
+    "Sex hormones vary with gender.",
+    "Not a clinical factor for glucose.",
+    "Cortisol doubles between its lowest and highest value of the day.",
+    "All vary physiologically in pregnancy."
    ],
    "multi": true,
-   "why": "Cortisol has a day-night rhythm; sex hormones differ by gender; pregnancy changes proteins, iron, ferritin and ALP.",
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
    "slides": [
     {
      "src": "files/slides/biochem-preanalytical/22.jpg",
@@ -296,43 +308,60 @@ SINA.lectures["biochem-preanalytical"] = {
    ]
   },
   {
-   "q": "A patient is receiving an intravenous infusion. For the blood sample:",
+   "q": "A patient has an intravenous infusion running. For the blood sample:",
    "options": [
     "Take it from the infused vein",
+    "Mention the infusion and its type on the prescription",
     "Take it from the opposite arm",
-    "Mention on the prescription that the patient is infused",
-    "Specify the type of infusion (glucose, sodium chloride…)"
+    "Wait 2 hours after stopping the infusion"
    ],
    "answers": [
     1,
-    2,
-    3
+    2
+   ],
+   "notes": [
+    "The infusion would contaminate the sample.",
+    "e.g. glucose or sodium chloride.",
+    "",
+    "If unavoidable, wait 2 minutes and sample below the site."
    ],
    "multi": true,
-   "why": "The infused vein risks contaminating the sample with the infusion.",
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
    "slides": [
     {
      "src": "files/slides/biochem-preanalytical/28.jpg",
      "lec": "Pre-analytical phase",
      "n": 28
+    },
+    {
+     "src": "files/slides/biochem-preanalytical/48.jpg",
+     "lec": "Pre-analytical phase",
+     "n": 48
     }
    ]
   },
   {
    "q": "Patient precautions before a blood test:",
    "options": [
-    "15 minutes of rest in the same position before sampling",
-    "12 hours of rest after physical activity",
-    "Fasting for at least 8 hours, sampling between 7 and 9 a.m.",
-    "Running to the laboratory has no effect on results"
+    "Fast at least 8 hours, sample between 7 and 9 a.m.",
+    "Rest 2 hours after physical activity",
+    "Rest 15 minutes in the same position before sampling",
+    "A short run to the laboratory has no effect"
    ],
    "answers": [
     0,
-    1,
     2
    ],
+   "notes": [
+    "Otherwise serum can be opalescent and lipids rise by 21%.",
+    "12 hours of rest are recommended.",
+    "Changing posture changes proteins and calcium.",
+    "Even a jog can multiply creatine kinase by 4."
+   ],
    "multi": true,
-   "why": "Even a jog can multiply creatine kinase by 4.",
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
    "slides": [
     {
      "src": "files/slides/biochem-preanalytical/31.jpg",
@@ -353,24 +382,35 @@ SINA.lectures["biochem-preanalytical"] = {
      "src": "files/slides/biochem-preanalytical/34.jpg",
      "lec": "Pre-analytical phase",
      "n": 34
+    },
+    {
+     "src": "files/slides/biochem-preanalytical/35.jpg",
+     "lec": "Pre-analytical phase",
+     "n": 35
     }
    ]
   },
   {
-   "q": "Hormones that can rise during a stressful sampling include:",
+   "q": "Hormones that can rise during a stressful sampling:",
    "options": [
+    "Insulin",
     "Prolactin",
-    "Adrenaline",
-    "Cortisol",
-    "Thyroglobulin"
+    "Thyroglobulin",
+    "Cortisol"
    ],
    "answers": [
-    0,
     1,
-    2
+    3
+   ],
+   "notes": [
+    "Not listed among stress hormones.",
+    "Also adrenaline.",
+    "Not listed among stress hormones.",
+    ""
    ],
    "multi": true,
-   "why": "",
+   "hint": "1 or 2 correct answers",
+   "why": "Prolactin, adrenaline and cortisol rise with stress.",
    "slides": [
     {
      "src": "files/slides/biochem-preanalytical/36.jpg",
@@ -391,8 +431,15 @@ SINA.lectures["biochem-preanalytical"] = {
     0,
     2
    ],
+   "notes": [
+    "Expiry date and instructions on the leaflet.",
+    "Single-use equipment.",
+    "Or another conformity marking such as FDA.",
+    "The standard is EN/MN 14820, not ISO."
+   ],
    "multi": true,
-   "why": "From the Mock exam 2026. Single-use equipment; the standard is EN/MN 14820, not ISO.",
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
    "src": "Mock exam 2026",
    "slides": [
     {
@@ -411,7 +458,7 @@ SINA.lectures["biochem-preanalytical"] = {
    "q": "The sampling equipment:",
    "options": [
     "Must have a CE marking",
-    "Does not have a requirement standard for its use",
+    "Has no requirement standard for its use",
     "Is represented by multi-use containers",
     "Its use requires compliance with the conditions and limits of use"
    ],
@@ -419,8 +466,15 @@ SINA.lectures["biochem-preanalytical"] = {
     0,
     3
    ],
+   "notes": [
+    "",
+    "EN/MN 14820 applies.",
+    "Single-use.",
+    ""
+   ],
    "multi": true,
-   "why": "From the Tutorial 1. It must follow EN/MN 14820 for single-use equipment.",
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
    "src": "Tutorial 1",
    "slides": [
     {
@@ -438,18 +492,24 @@ SINA.lectures["biochem-preanalytical"] = {
   {
    "q": "Correct use of the tourniquet:",
    "options": [
-    "Place it 7 to 10 cm above the puncture site",
+    "Always use it, even with visible veins",
     "Tighten it as much as possible",
     "Release it after 1 minute at the latest",
-    "It is unnecessary if the veins are visible or palpable"
+    "Place it 7 to 10 cm above the puncture site"
    ],
    "answers": [
-    0,
     2,
     3
    ],
+   "notes": [
+    "Not needed if veins are visible or palpable.",
+    "Not too tight: a bad tourniquet raises results by up to 10%.",
+    "",
+    ""
+   ],
    "multi": true,
-   "why": "Incorrect use can raise results by up to 10%.",
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
    "slides": [
     {
      "src": "files/slides/biochem-preanalytical/41.jpg",
@@ -464,20 +524,26 @@ SINA.lectures["biochem-preanalytical"] = {
    ]
   },
   {
-   "q": "Regarding blood collection tubes:",
+   "q": "Blood collection tubes:",
    "options": [
-    "The order of tubes avoids transfer of additives between tubes",
     "Blood may be transferred from one tube to another",
-    "The citrate tube needs 1 volume of citrate for 4 volumes of blood",
-    "Mix gently 5 to 10 times, within 2 minutes"
+    "The order of tubes prevents additives passing between tubes",
+    "Tubes should be shaken hard for 2 minutes",
+    "The citrate tube needs 1 volume of citrate for 4 volumes of blood"
    ],
    "answers": [
-    0,
-    2,
+    1,
     3
    ],
+   "notes": [
+    "Never transfer blood between tubes.",
+    "",
+    "Mix gently 5 to 10 times, within 2 minutes.",
+    "Fill volume must be respected."
+   ],
    "multi": true,
-   "why": "Never transfer blood between tubes.",
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
    "slides": [
     {
      "src": "files/slides/biochem-preanalytical/43.jpg",
@@ -494,16 +560,23 @@ SINA.lectures["biochem-preanalytical"] = {
   {
    "q": "In the recommended order of tubes:",
    "options": [
-    "The citrate (sky blue) tube comes before the EDTA (mauve) tube",
-    "The EDTA tube is always drawn first",
     "The antiglycolytic (grey) tube comes after the EDTA tube",
-    "The dry tube comes after the heparin tube"
+    "The heparin tube comes before the dry tube",
+    "The EDTA tube is drawn first",
+    "The citrate (sky blue) tube comes before the EDTA (mauve) tube"
    ],
    "answers": [
     0,
-    2
+    3
+   ],
+   "notes": [
+    "",
+    "Dry tube first.",
+    "The dry tube comes first.",
+    ""
    ],
    "multi": true,
+   "hint": "1 or 2 correct answers",
    "why": "Order: dry, citrate, serum gel/clot activator, heparin, EDTA, antiglycolytic, thrombin.",
    "slides": [
     {
@@ -516,18 +589,24 @@ SINA.lectures["biochem-preanalytical"] = {
   {
    "q": "Tubes with separator gel:",
    "options": [
-    "Separate serum or plasma from the blood cells",
-    "Prevent glucose from being consumed by the cells",
-    "Make haemolysis during transport harmless for some assays",
-    "Reduce the volume of serum available"
+    "Reduce the volume of serum available",
+    "Stop glucose being consumed and potassium leaking from cells",
+    "Are useless for transport",
+    "Separate serum or plasma from blood cells"
    ],
    "answers": [
-    0,
     1,
-    2
+    3
+   ],
+   "notes": [
+    "They increase it.",
+    "No exchange between cells and serum.",
+    "They protect the sample if red cells lyse in transport.",
+    ""
    ],
    "multi": true,
-   "why": "They also increase the serum volume available.",
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
    "slides": [
     {
      "src": "files/slides/biochem-preanalytical/45.jpg",
@@ -542,20 +621,32 @@ SINA.lectures["biochem-preanalytical"] = {
    ]
   },
   {
-   "q": "After sampling, the person who took the blood must:",
+   "q": "After sampling:",
    "options": [
-    "Label the tubes immediately",
     "Label the tubes before the puncture",
-    "Check that the sample matches the prescription",
-    "Accept a sample even if the identity does not match"
+    "Label the tubes immediately",
+    "Check the sample matches the prescription",
+    "Accept a sample whose identity does not match"
    ],
    "answers": [
-    0,
+    1,
     2
    ],
+   "notes": [
+    "Do not identify tubes before sampling.",
+    "",
+    "Same name, same identifier.",
+    "It is rejected."
+   ],
    "multi": true,
-   "why": "An identification error leads to rejection.",
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
    "slides": [
+    {
+     "src": "files/slides/biochem-preanalytical/47.jpg",
+     "lec": "Pre-analytical phase",
+     "n": 47
+    },
     {
      "src": "files/slides/biochem-preanalytical/50.jpg",
      "lec": "Pre-analytical phase",
@@ -567,7 +658,7 @@ SINA.lectures["biochem-preanalytical"] = {
    "q": "Management of pre-analytical non-conformities:",
    "options": [
     "Aims to avoid erroneous analysis results",
-    "Is the responsibility of the biologist",
+    "Is the responsibility of the biologist alone",
     "Does not represent a legal obligation",
     "Is a requirement of ISO 15189"
    ],
@@ -575,8 +666,15 @@ SINA.lectures["biochem-preanalytical"] = {
     0,
     3
    ],
+   "notes": [
+    "",
+    "It involves the clinical team too.",
+    "The Moroccan GBEA is a law.",
+    ""
+   ],
    "multi": true,
-   "why": "From the Mock exam 2026. It is required by the Moroccan GBEA (a law) and ISO 15189.",
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
    "src": "Mock exam 2026",
    "slides": [
     {
@@ -596,15 +694,22 @@ SINA.lectures["biochem-preanalytical"] = {
    "options": [
     "Tubes should be exposed to daylight",
     "Tubes are sensitive to heat",
-    "Tubes must be transported in an upright position",
-    "Samples can wait 24 hours before analysis without conservation"
+    "Tubes must be transported upright",
+    "Samples can wait 24 hours before analysis"
    ],
    "answers": [
     1,
     2
    ],
+   "notes": [
+    "Bilirubin degrades in light.",
+    "Temperature changes glucose, potassium and transaminases.",
+    "So the clot does not spread along the wall or stopper.",
+    "No more than 2 hours."
+   ],
    "multi": true,
-   "why": "From the Midterm recall (Prof. Kamal). The delay between sampling and analysis should not exceed 2 hours.",
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
    "src": "Midterm recall (Prof. Kamal)",
    "slides": [
     {
@@ -616,24 +721,35 @@ SINA.lectures["biochem-preanalytical"] = {
      "src": "files/slides/biochem-preanalytical/55.jpg",
      "lec": "Pre-analytical phase",
      "n": 55
+    },
+    {
+     "src": "files/slides/biochem-preanalytical/56.jpg",
+     "lec": "Pre-analytical phase",
+     "n": 56
     }
    ]
   },
   {
-   "q": "If analysis is delayed beyond 2 hours, in the serum or plasma:",
+   "q": "If analysis is delayed, in the serum or plasma:",
    "options": [
+    "Potassium decreases",
     "Glucose decreases",
-    "Potassium increases",
-    "Transaminases decrease",
-    "Storage at 4 to 8 °C is recommended"
+    "Storage at 4 to 8 °C is recommended",
+    "Transaminases decrease"
    ],
    "answers": [
-    0,
     1,
-    3
+    2
+   ],
+   "notes": [
+    "It increases, leaking from cells.",
+    "Consumed by blood cells.",
+    "",
+    "They increase."
    ],
    "multi": true,
-   "why": "Transaminases increase, like potassium.",
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
    "slides": [
     {
      "src": "files/slides/biochem-preanalytical/54.jpg",
@@ -648,7 +764,7 @@ SINA.lectures["biochem-preanalytical"] = {
    ]
   },
   {
-   "q": "It is recommended to protect, from light rays, the blood collection tube intended for the analysis of:",
+   "q": "It is recommended to protect from light the tube intended for the analysis of:",
    "options": [
     "Glucose",
     "Bilirubin",
@@ -658,8 +774,15 @@ SINA.lectures["biochem-preanalytical"] = {
    "answers": [
     1
    ],
+   "notes": [
+    "",
+    "It degrades in daylight; the same property is used in phototherapy.",
+    "",
+    ""
+   ],
    "multi": true,
-   "why": "From the Final exam 2023-2024. Bilirubin degrades in daylight, which is also why phototherapy treats newborn jaundice.",
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
    "src": "Final exam 2023-2024",
    "slides": [
     {
@@ -670,19 +793,26 @@ SINA.lectures["biochem-preanalytical"] = {
    ]
   },
   {
-   "q": "Among the causes of haemolysis of a biological sample:",
+   "q": "Among the causes of haemolysis of a sample:",
    "options": [
     "Very short tourniquet application time",
-    "Taking a venous blood sample using a syringe",
-    "Delivery of the blood sample to the laboratory one hour after its collection",
-    "Blood sampling from a small vein"
+    "Taking a venous sample with a syringe",
+    "Delivery to the laboratory one hour after collection",
+    "Sampling from a small vein"
    ],
    "answers": [
     1,
     3
    ],
+   "notes": [
+    "A long or tight tourniquet causes it.",
+    "Turbulence through the needle; vacuum systems are recommended.",
+    "Within the 2-hour limit.",
+    "Small, distal or difficult veins."
+   ],
    "multi": true,
-   "why": "From the Final exam 2023-2024. A long or tight tourniquet, a syringe and small or difficult veins cause haemolysis; 1 hour is within the 2-hour limit.",
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
    "src": "Final exam 2023-2024",
    "slides": [
     {
@@ -693,21 +823,27 @@ SINA.lectures["biochem-preanalytical"] = {
    ]
   },
   {
-   "q": "Possible consequences of haemolysis of the blood sample are:",
+   "q": "Possible consequences of haemolysis of the sample:",
    "options": [
     "Errors in potassium results",
-    "Request for unnecessary additional tests",
-    "Need to repeat the analysis on the same blood sample",
-    "Delay in patient care"
+    "Need to repeat the analysis on the same sample",
+    "Delay in patient care",
+    "No effect on the laboratory's work"
    ],
    "answers": [
     0,
-    1,
-    3
+    2
+   ],
+   "notes": [
+    "Potassium and intracellular enzymes.",
+    "A new sample is needed.",
+    "",
+    "It slows the laboratory down."
    ],
    "multi": true,
-   "why": "From the Final exam 2023-2024. A new sample is needed, not a repeat on the same one.",
-   "src": "Final exam 2023-2024",
+   "hint": "1 or 2 correct answers",
+   "why": "On the real paper, 'Request for unnecessary additional tests' was also correct.",
+   "src": "Final exam 2023-2024 (adapted)",
    "slides": [
     {
      "src": "files/slides/biochem-preanalytical/59.jpg",
@@ -937,7 +1073,7 @@ SINA.lectures["biochem-adrenal-medulla"] = {
    "q": "Catecholamines:",
    "options": [
     "Are hormones secreted by the adrenal medulla",
-    "Noradrenaline is the most abundant hormone in the blood",
+    "Noradrenaline is the most abundant in the blood",
     "Their precursor is cholesterol",
     "Have an important role in the immediate response to stress"
    ],
@@ -945,8 +1081,15 @@ SINA.lectures["biochem-adrenal-medulla"] = {
     0,
     3
    ],
+   "notes": [
+    "",
+    "Adrenaline is 80%.",
+    "Phenylalanine.",
+    ""
+   ],
    "multi": true,
-   "why": "From the Mock exam 2026. Adrenaline is 80% of secretion; the precursor is phenylalanine.",
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
    "src": "Mock exam 2026",
    "slides": [
     {
@@ -957,21 +1100,27 @@ SINA.lectures["biochem-adrenal-medulla"] = {
    ]
   },
   {
-   "q": "Catecholamines are:",
+   "q": "Catecholamines include:",
    "options": [
     "Renin",
     "Noradrenaline",
-    "Adrenaline",
+    "Cortisol",
     "Dopamine"
    ],
    "answers": [
     1,
-    2,
     3
    ],
+   "notes": [
+    "A kidney enzyme.",
+    "",
+    "A steroid.",
+    "The first catecholamine of the chain."
+   ],
    "multi": true,
-   "why": "From the Midterm recall (Prof. Kamal). The lecture lists all three, dopamine included. (The student recall gave only B and C.)",
-   "src": "Midterm recall (Prof. Kamal)",
+   "hint": "1 or 2 correct answers",
+   "why": "The lecture lists adrenaline, noradrenaline and dopamine.",
+   "src": "Midterm recall (Prof. Kamal) (adapted)",
    "slides": [
     {
      "src": "files/slides/biochem-adrenal-medulla/03.jpg",
@@ -983,19 +1132,30 @@ SINA.lectures["biochem-adrenal-medulla"] = {
   {
    "q": "The adrenal medulla:",
    "options": [
+    "Is a steroidogenic tissue",
     "Is considered a sympathetic ganglion with endocrine evolution",
-    "Derives from the neural crest",
-    "Has chromaffin cells grouped around capillaries",
-    "Derives from the mesoderm like the cortex"
+    "Secretes mainly noradrenaline",
+    "Derives from the neural crest"
    ],
    "answers": [
-    0,
     1,
-    2
+    3
+   ],
+   "notes": [
+    "That is the cortex.",
+    "",
+    "Adrenaline is 80%.",
+    "Like sympathetic ganglia."
    ],
    "multi": true,
-   "why": "",
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
    "slides": [
+    {
+     "src": "files/slides/biochem-adrenal-medulla/03.jpg",
+     "lec": "Adrenal medulla hormones",
+     "n": 3
+    },
     {
      "src": "files/slides/biochem-adrenal-medulla/04.jpg",
      "lec": "Adrenal medulla hormones",
@@ -1007,18 +1167,24 @@ SINA.lectures["biochem-adrenal-medulla"] = {
    "q": "Noradrenaline:",
    "options": [
     "Can be converted into adrenaline",
-    "Has phenylalanine as a precursor",
+    "Has cholesterol as a precursor",
     "Originates from dopamine",
     "Is secreted only by the adrenal medulla"
    ],
    "answers": [
     0,
-    1,
     2
    ],
+   "notes": [
+    "By methylation.",
+    "Phenylalanine.",
+    "By dopamine beta-hydroxylase.",
+    "Also a neurotransmitter of noradrenergic neurons."
+   ],
    "multi": true,
-   "why": "From the Mock exam 2026. It is also a neurotransmitter of noradrenergic neurons.",
-   "src": "Mock exam 2026",
+   "hint": "1 or 2 correct answers",
+   "why": "On the real paper, 'Has phenylalanine as a precursor' was also correct.",
+   "src": "Mock exam 2026 (adapted)",
    "slides": [
     {
      "src": "files/slides/biochem-adrenal-medulla/04.jpg",
@@ -1033,20 +1199,26 @@ SINA.lectures["biochem-adrenal-medulla"] = {
    ]
   },
   {
-   "q": "Biosynthesis of catecholamines:",
+   "q": "Catecholamine biosynthesis:",
    "options": [
-    "Phenylalanine → tyrosine by phenylalanine hydroxylase",
     "Decarboxylation of DOPA gives dopamine",
-    "Dopamine beta-hydroxylase gives noradrenaline",
-    "Adrenaline is the first catecholamine formed"
+    "Adrenaline is the first catecholamine formed",
+    "Dopamine is methylated into adrenaline",
+    "Phenylalanine hydroxylase gives tyrosine"
    ],
    "answers": [
     0,
-    1,
-    2
+    3
+   ],
+   "notes": [
+    "",
+    "It is the last step.",
+    "Noradrenaline is methylated into adrenaline.",
+    ""
    ],
    "multi": true,
-   "why": "Adrenaline is the last step (methylation of noradrenaline).",
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
    "slides": [
     {
      "src": "files/slides/biochem-adrenal-medulla/05.jpg",
@@ -1056,7 +1228,7 @@ SINA.lectures["biochem-adrenal-medulla"] = {
    ]
   },
   {
-   "q": "Negative feedback to limit the synthesis of catecholamines occurs at the stage of:",
+   "q": "Negative feedback limiting catecholamine synthesis occurs at:",
    "options": [
     "Hydroxylation of dopamine to noradrenaline",
     "Hydroxylation of phenylalanine to tyrosine",
@@ -1066,8 +1238,15 @@ SINA.lectures["biochem-adrenal-medulla"] = {
    "answers": [
     3
    ],
+   "notes": [
+    "",
+    "",
+    "",
+    "Tyrosine hydroxylase is the controlled step."
+   ],
    "multi": true,
-   "why": "From the Final exam 2023-2024. Tyrosine hydroxylase is the controlled step.",
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
    "src": "Final exam 2023-2024",
    "slides": [
     {
@@ -1087,17 +1266,23 @@ SINA.lectures["biochem-adrenal-medulla"] = {
    "options": [
     "Hyperglycaemia",
     "Hypercapnia",
-    "Pain",
-    "Low blood pressure"
+    "Hypertension",
+    "Pain"
    ],
    "answers": [
     1,
-    2,
     3
    ],
+   "notes": [
+    "Hypoglycaemia stimulates it.",
+    "Via carotid chemoreceptors.",
+    "Low blood pressure stimulates it.",
+    ""
+   ],
    "multi": true,
-   "why": "From the Midterm recall (Prof. Kamal). Hypoglycaemia, not hyperglycaemia, stimulates secretion.",
-   "src": "Midterm recall (Prof. Kamal)",
+   "hint": "1 or 2 correct answers",
+   "why": "The real recall also had 'low blood pressure' as a correct option.",
+   "src": "Midterm recall (Prof. Kamal) (adapted)",
    "slides": [
     {
      "src": "files/slides/biochem-adrenal-medulla/06.jpg",
@@ -1109,17 +1294,24 @@ SINA.lectures["biochem-adrenal-medulla"] = {
   {
    "q": "Hormones that stimulate catecholamine synthesis:",
    "options": [
-    "ACTH, on DOPA and noradrenaline synthesis",
-    "Cortisol, on adrenaline and noradrenaline synthesis",
     "Insulin",
-    "Thyroxine"
+    "Thyroxine",
+    "Cortisol",
+    "ACTH"
    ],
    "answers": [
-    0,
-    1
+    2,
+    3
+   ],
+   "notes": [
+    "",
+    "",
+    "On adrenaline and noradrenaline synthesis.",
+    "On DOPA and noradrenaline synthesis."
    ],
    "multi": true,
-   "why": "",
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
    "slides": [
     {
      "src": "files/slides/biochem-adrenal-medulla/07.jpg",
@@ -1132,18 +1324,24 @@ SINA.lectures["biochem-adrenal-medulla"] = {
    "q": "Beta-2 adrenergic receptor actions are:",
    "options": [
     "Mydriasis",
+    "Inhibition of renin release",
     "Bronchodilation",
-    "Relaxation of the uterus",
-    "Inhibition of renin release by the kidney"
+    "Contraction of the uterus"
    ],
    "answers": [
     0,
-    1,
     2
    ],
+   "notes": [
+    "The lecture attributes it to beta-2 (textbooks: alpha-1).",
+    "The lecture says beta-2 stimulates renin.",
+    "Used in asthma.",
+    "Beta-2 relaxes it."
+   ],
    "multi": true,
-   "why": "From the Midterm recall (Prof. Kamal). The lecture attributes mydriasis to beta-2 and says beta-2 stimulates renin secretion.",
-   "src": "Midterm recall (Prof. Kamal)",
+   "hint": "1 or 2 correct answers",
+   "why": "The real recall also had 'relaxation of the uterus' as correct.",
+   "src": "Midterm recall (Prof. Kamal) (adapted)",
    "slides": [
     {
      "src": "files/slides/biochem-adrenal-medulla/08.jpg",
@@ -1158,21 +1356,27 @@ SINA.lectures["biochem-adrenal-medulla"] = {
    ]
   },
   {
-   "q": "In organs, stimulation of beta-2 catecholamine receptors results in:",
+   "q": "Stimulation of beta-2 receptors results in:",
    "options": [
     "Bronchodilation",
-    "Relaxation of the uterine smooth muscle",
     "Relaxation of the urethral sphincter",
-    "Relaxation of the bladder wall"
+    "Relaxation of the bladder wall",
+    "Contraction of the uterus"
    ],
    "answers": [
     0,
-    1,
-    3
+    2
+   ],
+   "notes": [
+    "",
+    "The sphincters contract.",
+    "Used in urinary incontinence.",
+    "Beta-2 relaxes it; alpha contracts it."
    ],
    "multi": true,
-   "why": "From the Final exam 2023-2024. The bladder and urethral sphincters contract.",
-   "src": "Final exam 2023-2024",
+   "hint": "1 or 2 correct answers",
+   "why": "On the real paper, 'Relaxation of the uterine smooth muscle' was also correct.",
+   "src": "Final exam 2023-2024 (adapted)",
    "slides": [
     {
      "src": "files/slides/biochem-adrenal-medulla/11.jpg",
@@ -1184,18 +1388,24 @@ SINA.lectures["biochem-adrenal-medulla"] = {
   {
    "q": "Catecholamine receptors:",
    "options": [
-    "Beta-1 increases heart rate and force",
-    "Alpha-1 causes vasoconstriction",
     "Alpha-2 inhibits noradrenaline release",
-    "Alpha receptors have the higher affinity for adrenaline"
+    "Alpha-1 causes vasoconstriction",
+    "Alpha receptors have the higher affinity for adrenaline",
+    "Beta-1 slows the heart"
    ],
    "answers": [
     0,
-    1,
-    2
+    1
+   ],
+   "notes": [
+    "",
+    "",
+    "Beta receptors have it; alpha are more numerous.",
+    "It increases rate and force."
    ],
    "multi": true,
-   "why": "Alpha receptors are more numerous; beta receptors have the higher affinity.",
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
    "slides": [
     {
      "src": "files/slides/biochem-adrenal-medulla/08.jpg",
@@ -1210,20 +1420,26 @@ SINA.lectures["biochem-adrenal-medulla"] = {
    ]
   },
   {
-   "q": "Effects of catecholamines on the heart and vessels:",
+   "q": "Effects on the heart and vessels:",
    "options": [
     "Positive chronotropic and inotropic effects",
+    "Vasodilation in the skin and kidneys",
     "Vasodilation in active muscle and coronaries",
-    "Vasoconstriction in splanchnic, renal and skin vessels",
-    "Decreased myocardial oxygen consumption"
+    "Lower myocardial oxygen consumption"
    ],
    "answers": [
     0,
-    1,
     2
    ],
+   "notes": [
+    "",
+    "Vasoconstriction in inactive territories.",
+    "",
+    "It increases."
+   ],
    "multi": true,
-   "why": "Oxygen consumption increases.",
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
    "slides": [
     {
      "src": "files/slides/biochem-adrenal-medulla/10.jpg",
@@ -1233,21 +1449,27 @@ SINA.lectures["biochem-adrenal-medulla"] = {
    ]
   },
   {
-   "q": "Among the metabolic actions of catecholamines:",
+   "q": "Metabolic actions of catecholamines:",
    "options": [
     "Muscle glycogenolysis",
     "Lipogenesis",
-    "A blood potassium disorder",
-    "Heat production"
+    "Heat production",
+    "Hypokalaemia"
    ],
    "answers": [
     0,
-    2,
-    3
+    2
+   ],
+   "notes": [
+    "",
+    "Lipolysis.",
+    "Thermogenesis.",
+    "They cause hyperkalaemia."
    ],
    "multi": true,
-   "why": "From the Final exam 2023-2024. Lipolysis, not lipogenesis; they cause hyperkalaemia.",
-   "src": "Final exam 2023-2024",
+   "hint": "1 or 2 correct answers",
+   "why": "On the real paper, 'A blood potassium disorder' was also correct.",
+   "src": "Final exam 2023-2024 (adapted)",
    "slides": [
     {
      "src": "files/slides/biochem-adrenal-medulla/13.jpg",
@@ -1259,18 +1481,24 @@ SINA.lectures["biochem-adrenal-medulla"] = {
   {
    "q": "Catecholamine inactivation:",
    "options": [
-    "COMT acts in 70% of cases",
     "MAO mainly degrades noradrenaline in nerve endings",
-    "COMT turns adrenaline into metanephrine",
-    "Uptake into nerve endings destroys them chemically"
+    "COMT acts in about 70% of cases",
+    "Uptake into nerve endings destroys them",
+    "COMT turns adrenaline into VMA directly"
    ],
    "answers": [
     0,
-    1,
-    2
+    1
+   ],
+   "notes": [
+    "",
+    "",
+    "It stores them in vesicles.",
+    "Into metanephrine."
    ],
    "multi": true,
-   "why": "Uptake stores them in vesicles, protecting them.",
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
    "slides": [
     {
      "src": "files/slides/biochem-adrenal-medulla/14.jpg",
@@ -1282,16 +1510,23 @@ SINA.lectures["biochem-adrenal-medulla"] = {
   {
    "q": "The most abundant urinary catecholamine metabolite is:",
    "options": [
-    "Vanillylmandelic acid (VMA)",
+    "VMA",
     "Metanephrines",
-    "Adrenaline and noradrenaline",
+    "Free adrenaline and noradrenaline",
     "MHPG"
    ],
    "answers": [
     0
    ],
+   "notes": [
+    "80% of 24-hour urine metabolites.",
+    "10 to 15%.",
+    "5%.",
+    "Very little."
+   ],
    "multi": true,
-   "why": "From the Midterm recall (Prof. Kamal). VMA is 80% of the 24-hour urine metabolites.",
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
    "src": "Midterm recall (Prof. Kamal)",
    "slides": [
     {
@@ -1302,7 +1537,7 @@ SINA.lectures["biochem-adrenal-medulla"] = {
    ]
   },
   {
-   "q": "The two tumours responsible for hyperproduction of catecholamines are:",
+   "q": "The two tumours responsible for catecholamine overproduction are:",
    "options": [
     "Nephroblastoma",
     "Congenital adrenal hyperplasia",
@@ -1313,8 +1548,15 @@ SINA.lectures["biochem-adrenal-medulla"] = {
     2,
     3
    ],
+   "notes": [
+    "",
+    "A steroid disorder.",
+    "",
+    ""
+   ],
    "multi": true,
-   "why": "From the Final exam 2023-2024.",
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
    "src": "Final exam 2023-2024",
    "slides": [
     {
@@ -1327,18 +1569,24 @@ SINA.lectures["biochem-adrenal-medulla"] = {
   {
    "q": "Phaeochromocytoma versus neuroblastoma:",
    "options": [
+    "Phaeochromocytoma is mainly thoracic",
     "Phaeochromocytoma is benign in 90% of cases",
-    "Neuroblastoma occurs in early childhood",
     "Neuroblastoma lacks PNMT and accumulates dopamine",
-    "Phaeochromocytoma is mainly thoracic"
+    "Neuroblastoma occurs in adults aged 20 to 50"
    ],
    "answers": [
-    0,
     1,
     2
    ],
+   "notes": [
+    "90% in the adrenal medulla.",
+    "",
+    "",
+    "Early childhood."
+   ],
    "multi": true,
-   "why": "Phaeochromocytoma is in the adrenal medulla in 90% of cases.",
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
    "slides": [
     {
      "src": "files/slides/biochem-adrenal-medulla/17.jpg",
@@ -1350,18 +1598,24 @@ SINA.lectures["biochem-adrenal-medulla"] = {
   {
    "q": "First-line biological tests:",
    "options": [
+    "Phaeochromocytoma: plasma TSH",
     "Phaeochromocytoma: plasma metanephrine and normetanephrine",
     "Neuroblastoma: dopamine and VMA in 24-hour urine",
-    "Neuroblastoma: neuron-specific enolase as a tumour marker",
-    "Phaeochromocytoma: plasma TSH"
+    "Neuroblastoma: plasma cortisol"
    ],
    "answers": [
-    0,
     1,
     2
    ],
+   "notes": [
+    "",
+    "",
+    "",
+    "The tumour marker is NSE."
+   ],
    "multi": true,
-   "why": "",
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
    "slides": [
     {
      "src": "files/slides/biochem-adrenal-medulla/19.jpg",
@@ -1570,19 +1824,25 @@ SINA.lectures["biochem-insulin"] = {
   {
    "q": "Insulin:",
    "options": [
-    "Is produced by the alpha cells of the islets of Langerhans",
+    "Is produced by alpha cells of the islets",
     "Is the only hypoglycaemic hormone",
-    "Has longer-term effects on growth",
+    "Has no effect on growth",
     "Has a major role in regulating energy substrates"
    ],
    "answers": [
     1,
-    2,
     3
    ],
+   "notes": [
+    "Beta cells.",
+    "",
+    "It has longer-term effects on growth.",
+    "Glucose, fatty acids, ketone bodies."
+   ],
    "multi": true,
-   "why": "From the Midterm recall (Prof. Kamal). It is made by beta cells.",
-   "src": "Midterm recall (Prof. Kamal)",
+   "hint": "1 or 2 correct answers",
+   "why": "The real recall's C was 'long-term effect on growth', which is correct.",
+   "src": "Midterm recall (Prof. Kamal) (adapted)",
    "slides": [
     {
      "src": "files/slides/biochem-insulin/03.jpg",
@@ -1597,16 +1857,22 @@ SINA.lectures["biochem-insulin"] = {
     "Peptide B",
     "Three disulphide bridges",
     "Peptide C",
-    "Peptide A"
+    "Four disulphide bridges"
    ],
    "answers": [
     0,
-    1,
-    3
+    1
+   ],
+   "notes": [
+    "30 amino acids.",
+    "Two inter-chain, one intra-chain on A.",
+    "C-peptide is cut off before secretion.",
+    "Three."
    ],
    "multi": true,
-   "why": "From the Mock exam 2026. Two inter-chain and one intra-chain bridges; C-peptide is cut off.",
-   "src": "Mock exam 2026",
+   "hint": "1 or 2 correct answers",
+   "why": "On the real paper, 'Peptide A' was also correct.",
+   "src": "Mock exam 2026 (adapted)",
    "slides": [
     {
      "src": "files/slides/biochem-insulin/05.jpg",
@@ -1623,18 +1889,24 @@ SINA.lectures["biochem-insulin"] = {
   {
    "q": "Insulin structure:",
    "options": [
+    "Proinsulin has two chains",
     "The A chain has 21 amino acids",
-    "The B chain has 30 amino acids",
-    "The gene is on chromosome 11",
-    "Proinsulin has only two chains"
+    "The B chain has 21 amino acids",
+    "The gene is on chromosome 11"
    ],
    "answers": [
-    0,
     1,
-    2
+    3
+   ],
+   "notes": [
+    "Three linked chains, A-B-C.",
+    "",
+    "30.",
+    "Short arm."
    ],
    "multi": true,
-   "why": "Proinsulin has three linked chains, A-B-C.",
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
    "slides": [
     {
      "src": "files/slides/biochem-insulin/05.jpg",
@@ -1654,15 +1926,22 @@ SINA.lectures["biochem-insulin"] = {
     "Is secreted by alpha cells",
     "Is fully recycled and never secreted",
     "Is secreted at the same time as insulin",
-    "Was previously bound to insulin in proinsulin"
+    "Was bound to insulin in proinsulin"
    ],
    "answers": [
     2,
     3
    ],
+   "notes": [
+    "Beta cells.",
+    "",
+    "",
+    ""
+   ],
    "multi": true,
-   "why": "From the Midterm recall (Prof. Kamal). (Options A and B reworded from the recall to be unambiguous.)",
-   "src": "Midterm recall (Prof. Kamal)",
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
+   "src": "Midterm recall (Prof. Kamal) (adapted)",
    "slides": [
     {
      "src": "files/slides/biochem-insulin/06.jpg",
@@ -1677,21 +1956,32 @@ SINA.lectures["biochem-insulin"] = {
    ]
   },
   {
-   "q": "Regulation of insulin secretion:",
+   "q": "Insulin secretion:",
    "options": [
+    "Inhibited potassium release depolarises the membrane",
     "Glucose metabolism in the beta cell raises ATP",
-    "Potassium release is inhibited, depolarising the membrane",
-    "Voltage-gated calcium channels open",
-    "Calcium entry blocks exocytosis"
+    "Calcium entry blocks exocytosis",
+    "Glucagon prevents proinsulin cleavage"
    ],
    "answers": [
     0,
-    1,
-    2
+    1
+   ],
+   "notes": [
+    "Then voltage-gated calcium channels open.",
+    "",
+    "It triggers exocytosis.",
+    "Hormones like glucagon stimulate it."
    ],
    "multi": true,
-   "why": "Calcium entry triggers exocytosis.",
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
    "slides": [
+    {
+     "src": "files/slides/biochem-insulin/07.jpg",
+     "lec": "Insulin",
+     "n": 7
+    },
     {
      "src": "files/slides/biochem-insulin/08.jpg",
      "lec": "Insulin",
@@ -1705,21 +1995,27 @@ SINA.lectures["biochem-insulin"] = {
    ]
   },
   {
-   "q": "The binding of insulin to its receptor on the beta cell of the pancreas:",
+   "q": "Insulin binding to its receptor on the beta cell:",
    "options": [
     "Stimulates glucose entry",
-    "Leads to restoration of insulin reserves",
+    "Restores insulin reserves",
     "Is an autocrine action",
-    "Activates insulin gene transcription"
+    "Inhibits insulin gene transcription"
    ],
    "answers": [
     1,
-    2,
-    3
+    2
+   ],
+   "notes": [
+    "Not described for this step.",
+    "",
+    "",
+    "It activates it."
    ],
    "multi": true,
-   "why": "From the Final exam 2023-2024.",
-   "src": "Final exam 2023-2024",
+   "hint": "1 or 2 correct answers",
+   "why": "On the real paper, 'activates insulin gene transcription' was also correct.",
+   "src": "Final exam 2023-2024 (adapted)",
    "slides": [
     {
      "src": "files/slides/biochem-insulin/09.jpg",
@@ -1739,8 +2035,15 @@ SINA.lectures["biochem-insulin"] = {
    "answers": [
     2
    ],
+   "notes": [
+    "Inhibits it.",
+    "Activates it.",
+    "",
+    "Stimulates it."
+   ],
    "multi": true,
-   "why": "From the Mock exam 2026.",
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
    "src": "Mock exam 2026",
    "slides": [
     {
@@ -1772,8 +2075,15 @@ SINA.lectures["biochem-insulin"] = {
     0,
     2
    ],
+   "notes": [
+    "",
+    "Stimulates it.",
+    "",
+    "Activates it."
+   ],
    "multi": true,
-   "why": "From the Final exam 2023-2024. It stimulates protein anabolism and glycolysis.",
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
    "src": "Final exam 2023-2024",
    "slides": [
     {
@@ -1796,18 +2106,24 @@ SINA.lectures["biochem-insulin"] = {
   {
    "q": "Insulin activates:",
    "options": [
-    "Glycogenesis in liver and muscle",
-    "Glycolysis in liver and muscle",
+    "Exit of free glucose from the liver",
     "The pentose phosphate pathway in the liver",
-    "Exit of free glucose from the liver"
+    "Gluconeogenesis",
+    "Glycogenesis in liver and muscle"
    ],
    "answers": [
-    0,
     1,
-    2
+    3
+   ],
+   "notes": [
+    "Inhibits it.",
+    "",
+    "Inhibits it.",
+    ""
    ],
    "multi": true,
-   "why": "It inhibits glucose exit from the liver.",
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
    "slides": [
     {
      "src": "files/slides/biochem-insulin/10.jpg",
@@ -1828,8 +2144,15 @@ SINA.lectures["biochem-insulin"] = {
     1,
     3
    ],
+   "notes": [
+    "Inhibited.",
+    "",
+    "Inhibited.",
+    ""
+   ],
    "multi": true,
-   "why": "From the Midterm recall (Prof. Kamal). (Option A was blank in the recall and was filled in.)",
+   "hint": "1 or 2 correct answers",
+   "why": "Option A was blank in the recall and was filled in.",
    "src": "Midterm recall (Prof. Kamal)",
    "slides": [
     {
@@ -1845,20 +2168,26 @@ SINA.lectures["biochem-insulin"] = {
    ]
   },
   {
-   "q": "On protein and sodium metabolism, insulin:",
+   "q": "Insulin on proteins and sodium:",
    "options": [
     "Stimulates muscle uptake of amino acids",
     "Stimulates protein catabolism",
-    "Inhibits conversion of amino acids into glucose",
-    "Stimulates glucose-sodium co-transport"
+    "Stimulates glucose-sodium co-transport",
+    "Stimulates conversion of amino acids into glucose"
    ],
    "answers": [
     0,
-    2,
-    3
+    2
+   ],
+   "notes": [
+    "",
+    "Inhibits it.",
+    "",
+    "Inhibits it."
    ],
    "multi": true,
-   "why": "",
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
    "slides": [
     {
      "src": "files/slides/biochem-insulin/12.jpg",
@@ -1871,17 +2200,23 @@ SINA.lectures["biochem-insulin"] = {
    "q": "Genes whose expression insulin activates:",
    "options": [
     "Fatty acid synthetase",
-    "Glucokinase",
-    "Pyruvate kinase",
-    "Gluconeogenesis enzymes"
+    "Gluconeogenesis enzymes",
+    "Glucose-6-phosphatase",
+    "Glucokinase"
    ],
    "answers": [
     0,
-    1,
-    2
+    3
+   ],
+   "notes": [
+    "Lipogenesis.",
+    "Repressed.",
+    "A gluconeogenesis enzyme: repressed.",
+    "Glycolysis."
    ],
    "multi": true,
-   "why": "Gluconeogenesis is repressed.",
+   "hint": "1 or 2 correct answers",
+   "why": "Pyruvate kinase is also activated.",
    "slides": [
     {
      "src": "files/slides/biochem-insulin/13.jpg",
@@ -1893,18 +2228,24 @@ SINA.lectures["biochem-insulin"] = {
   {
    "q": "Biology of diabetes:",
    "options": [
+    "Microalbuminuria is never useful",
+    "Fasting glucose is checked once a year in treatment",
     "HbA1c reflects the last 2 to 3 months",
-    "Fructosamines replace HbA1c in haemoglobinopathy",
-    "Oral glucose tolerance helps detect pre-diabetes",
-    "Microalbuminuria is never useful"
+    "Fructosamines replace HbA1c in haemoglobinopathy"
    ],
    "answers": [
-    0,
-    1,
-    2
+    2,
+    3
+   ],
+   "notes": [
+    "It monitors kidney complications.",
+    "Monthly.",
+    "",
+    ""
    ],
    "multi": true,
-   "why": "Microalbuminuria, creatinine and urea monitor complications.",
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
    "slides": [
     {
      "src": "files/slides/biochem-insulin/14.jpg",
@@ -2551,274 +2892,1254 @@ SINA.lectures["biochem-steroids"] = {
  },
  "mcqs": [
   {
-   "q": "From which molecule are all steroid hormones derived?",
+   "q": "The following types of hormones are steroids:",
    "options": [
-    "Cholesterol",
+    "Glucocorticoids",
+    "Catecholamines",
+    "Androgens",
+    "Thyroid hormones"
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "notes": [
+    "Cortisol is the main glucocorticoid, a C21 steroid.",
+    "Adrenaline, noradrenaline and dopamine come from phenylalanine, not cholesterol.",
+    "Testosterone, DHEA and androstenedione are C19 steroids.",
+    "T3 and T4 come from tyrosine and iodine."
+   ],
+   "multi": true,
+   "hint": "1 or 2 correct answers",
+   "why": "Four steroid types: glucocorticoids, mineralocorticoids, androgens and female hormones. (On the real paper, mineralocorticoids were also an option.)",
+   "src": "Final exam 2023-2024 (adapted)",
+   "slides": [
+    {
+     "src": "files/slides/biochem-steroids/03.jpg",
+     "lec": "Steroid hormones",
+     "n": 3
+    },
+    {
+     "src": "files/slides/biochem-steroids/04.jpg",
+     "lec": "Steroid hormones",
+     "n": 4
+    }
+   ]
+  },
+  {
+   "q": "The initial precursor of steroid hormones is:",
+   "options": [
+    "Dehydroepiandrosterone (DHEA)",
     "Tyrosine",
-    "Tryptophan",
-    "Arachidonic acid"
-   ],
-   "answer": 0,
-   "why": "All steroid hormones derive from cholesterol; their first common precursor is pregnenolone."
-  },
-  {
-   "q": "What is the first common precursor of steroid hormones?",
-   "options": [
-    "Progesterone",
     "Pregnenolone",
-    "DHEA",
-    "Cortisol"
+    "Progesterone"
    ],
-   "answer": 1,
-   "why": "Cholesterol is converted into pregnenolone in the mitochondria."
+   "answers": [
+    2
+   ],
+   "notes": [
+    "DHEA is an adrenal androgen made further down the pathway.",
+    "Tyrosine is the precursor of thyroid hormones and catecholamines.",
+    "Cholesterol is cut into pregnenolone in the mitochondria by 20-22 desmolase.",
+    "Progesterone is made from pregnenolone."
+   ],
+   "multi": true,
+   "hint": "1 or 2 correct answers",
+   "why": "All steroid hormones come from cholesterol; their first common precursor is pregnenolone.",
+   "src": "Final exam 2023-2024",
+   "slides": [
+    {
+     "src": "files/slides/biochem-steroids/03.jpg",
+     "lec": "Steroid hormones",
+     "n": 3
+    },
+    {
+     "src": "files/slides/biochem-steroids/19.jpg",
+     "lec": "Steroid hormones",
+     "n": 19
+    }
+   ]
   },
   {
-   "q": "Which adrenal zone makes mineralocorticoids?",
+   "q": "The main hormone of each steroid class:",
    "options": [
-    "The fascicular zone",
-    "The reticular zone",
+    "Glucocorticoids: cortisol",
+    "Mineralocorticoids: corticosterone",
+    "Female hormones: estradiol and progesterone",
+    "Androgens: DHEA"
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "notes": [
+    "Cortisol is the main glucocorticoid.",
+    "The main mineralocorticoid is aldosterone; corticosterone is much weaker.",
+    "Both are listed as the main female hormones.",
+    "The main androgen is testosterone; DHEA is a weak precursor."
+   ],
+   "multi": true,
+   "hint": "1 or 2 correct answers",
+   "why": "Cortisol, aldosterone, testosterone, estradiol and progesterone.",
+   "slides": [
+    {
+     "src": "files/slides/biochem-steroids/04.jpg",
+     "lec": "Steroid hormones",
+     "n": 4
+    }
+   ]
+  },
+  {
+   "q": "Adrenal androgens are mainly secreted by:",
+   "options": [
+    "The adrenal medulla",
     "The glomerular zone",
-    "The medulla"
+    "The fascicular zone",
+    "The reticular zone"
    ],
-   "answer": 2,
-   "why": "Glomerular: mineralocorticoids. Fascicular: mainly glucocorticoids. Reticular: mainly androgens from DHEA."
+   "answers": [
+    3
+   ],
+   "notes": [
+    "The medulla secretes catecholamines.",
+    "The glomerular zone secretes mineralocorticoids.",
+    "It makes mainly glucocorticoids and only part of the androgens.",
+    "Mainly androgens, from DHEA."
+   ],
+   "multi": true,
+   "hint": "1 or 2 correct answers",
+   "why": "Glomerular: salt (aldosterone). Fascicular: sugar (cortisol). Reticular: sex (androgens).",
+   "src": "Midterm recall (Prof. Kamal) (adapted)",
+   "slides": [
+    {
+     "src": "files/slides/biochem-steroids/06.jpg",
+     "lec": "Steroid hormones",
+     "n": 6
+    },
+    {
+     "src": "files/slides/biochem-steroids/07.jpg",
+     "lec": "Steroid hormones",
+     "n": 7
+    }
+   ]
   },
   {
-   "q": "Which testicular cells secrete testosterone?",
+   "q": "Zones of the adrenal cortex and their products:",
    "options": [
-    "Sertoli cells",
-    "Spermatogonia",
-    "Granulosa cells",
-    "Leydig cells"
+    "Fascicular zone: mainly glucocorticoids",
+    "Adrenal medulla: cortisol",
+    "Glomerular zone: mineralocorticoids",
+    "Reticular zone: mineralocorticoids"
    ],
-   "answer": 3,
-   "why": "Leydig cells in the interstitium make testosterone (95 percent of circulating testosterone); Sertoli cells help sperm mature."
+   "answers": [
+    0,
+    2
+   ],
+   "notes": [
+    "Cortisol, plus part of the androgens.",
+    "The medulla is not cortex; it makes catecholamines.",
+    "Aldosterone is made only in the glomerular zone.",
+    "The reticular zone makes mainly androgens."
+   ],
+   "multi": true,
+   "hint": "1 or 2 correct answers",
+   "why": "Three zones, three hormone types: salt, sugar, sex.",
+   "slides": [
+    {
+     "src": "files/slides/biochem-steroids/06.jpg",
+     "lec": "Steroid hormones",
+     "n": 6
+    }
+   ]
   },
   {
-   "q": "How many carbons do oestrogens have?",
+   "q": "Certain cells mainly secrete certain steroid hormones, such as:",
    "options": [
-    "19",
-    "18",
-    "21",
-    "27"
+    "Adrenal medulla cells secrete progesterone",
+    "Theca cells secrete oestrogens",
+    "Leydig cells secrete oestrogens",
+    "Granulosa cells secrete progesterone"
    ],
-   "answer": 1,
-   "why": "C18: oestrogens. C19: androgens. C21: progesterone, glucocorticoids, mineralocorticoids."
+   "answers": [
+    3
+   ],
+   "notes": [
+    "The medulla secretes catecholamines; it is not steroidogenic.",
+    "Internal theca cells make androgens, which granulosa cells convert to estradiol.",
+    "Leydig cells secrete testosterone.",
+    "In the luteal phase, luteal cells of the theca and granulosa secrete progesterone."
+   ],
+   "multi": true,
+   "hint": "1 or 2 correct answers",
+   "why": "Follicular phase: theca makes androgens, granulosa converts them to estradiol. Luteal phase: theca and granulosa make progesterone.",
+   "src": "Mock exam 2026",
+   "slides": [
+    {
+     "src": "files/slides/biochem-steroids/10.jpg",
+     "lec": "Steroid hormones",
+     "n": 10
+    },
+    {
+     "src": "files/slides/biochem-steroids/13.jpg",
+     "lec": "Steroid hormones",
+     "n": 13
+    }
+   ]
   },
   {
-   "q": "Which oestrogen predominates after menopause?",
+   "q": "In women in genital activity (with menstrual cycles):",
    "options": [
-    "Oestradiol (E2)",
-    "Oestriol (E3)",
-    "Testosterone",
-    "Oestrone (E1)"
+    "Oestrogens are mainly of the oestrone type",
+    "Increased LH secretion is responsible for oestrogen secretion",
+    "Oestrogens predominate in the second part of the cycle",
+    "Oestrogens are synthesised mainly by the ovary"
    ],
-   "answer": 3,
-   "why": "E1 after menopause (99 percent), E2 in active women, E3 only in pregnancy."
+   "answers": [
+    3
+   ],
+   "notes": [
+    "Estradiol (E2) predominates between puberty and menopause; oestrone after menopause.",
+    "FSH drives oestrogen; LH drives progesterone.",
+    "Oestrogen alone is secreted in the first half; progesterone starts with ovulation.",
+    "The ovary (follicular cells and corpus luteum) is the main source."
+   ],
+   "multi": true,
+   "hint": "1 or 2 correct answers",
+   "why": "Before menopause, estradiol from the ovary dominates, driven by FSH, mainly in the first half of the cycle.",
+   "src": "Mock exam 2026",
+   "slides": [
+    {
+     "src": "files/slides/biochem-steroids/09.jpg",
+     "lec": "Steroid hormones",
+     "n": 9
+    },
+    {
+     "src": "files/slides/biochem-steroids/15.jpg",
+     "lec": "Steroid hormones",
+     "n": 15
+    },
+    {
+     "src": "files/slides/biochem-steroids/36.jpg",
+     "lec": "Steroid hormones",
+     "n": 36
+    },
+    {
+     "src": "files/slides/biochem-steroids/52.jpg",
+     "lec": "Steroid hormones",
+     "n": 52
+    }
+   ]
   },
   {
-   "q": "Which oestrogen is secreted only in pregnancy?",
+   "q": "In the testis:",
    "options": [
-    "Oestriol (E3)",
+    "95% of circulating testosterone comes from the testis",
+    "Sertoli cells secrete most of the testosterone",
+    "Sertoli cells lie in the interstitial tissue",
+    "Leydig cells, in the interstitium, secrete testosterone"
+   ],
+   "answers": [
+    0,
+    3
+   ],
+   "notes": [
+    "Only a small part comes from the adrenals.",
+    "Sertoli cells help sperm mature; Leydig cells make testosterone.",
+    "They sit inside the seminiferous tubules.",
+    "They make it from progesterone via androstenedione."
+   ],
+   "multi": true,
+   "hint": "1 or 2 correct answers",
+   "why": "Leydig: testosterone. Sertoli: sperm maturation.",
+   "slides": [
+    {
+     "src": "files/slides/biochem-steroids/12.jpg",
+     "lec": "Steroid hormones",
+     "n": 12
+    },
+    {
+     "src": "files/slides/biochem-steroids/13.jpg",
+     "lec": "Steroid hormones",
+     "n": 13
+    }
+   ]
+  },
+  {
+   "q": "Classification of steroids by number of carbons:",
+   "options": [
+    "Progesterone has 18 carbons",
+    "Oestrogens have 18 carbons",
+    "Cortisol has 19 carbons",
+    "Androgens have 19 carbons"
+   ],
+   "answers": [
+    1,
+    3
+   ],
+   "notes": [
+    "Progesterone is C21.",
+    "C18: oestrone, estradiol, oestriol.",
+    "Cortisol is C21, like aldosterone and progesterone.",
+    "C19: DHEA, androstenedione, testosterone."
+   ],
+   "multi": true,
+   "hint": "1 or 2 correct answers",
+   "why": "C18 oestrogens, C19 androgens, C21 progesterone and corticoids.",
+   "slides": [
+    {
+     "src": "files/slides/biochem-steroids/15.jpg",
+     "lec": "Steroid hormones",
+     "n": 15
+    },
+    {
+     "src": "files/slides/biochem-steroids/16.jpg",
+     "lec": "Steroid hormones",
+     "n": 16
+    },
+    {
+     "src": "files/slides/biochem-steroids/17.jpg",
+     "lec": "Steroid hormones",
+     "n": 17
+    }
+   ]
+  },
+  {
+   "q": "The most abundant oestrogen in a genitally active woman is:",
+   "options": [
+    "Estradiol (E2)",
     "Oestrone (E1)",
-    "Oestradiol (E2)",
-    "DHEA"
-   ],
-   "answer": 0,
-   "why": "Oestriol comes from the feto-placental unit."
-  },
-  {
-   "q": "Which androgen binds receptors most strongly?",
-   "options": [
-    "DHEA from adrenal",
-    "Androstenedione",
-    "Dihydrotestosterone",
-    "DHEA sulphate"
-   ],
-   "answer": 2,
-   "why": "DHT, a metabolite of testosterone, is a more potent androgen."
-  },
-  {
-   "q": "What is the key enzyme of the common steroid pathway?",
-   "options": [
-    "Aromatase",
-    "21-hydroxylase",
-    "11-beta-hydroxylase",
-    "20-22 desmolase"
-   ],
-   "answer": 3,
-   "why": "The desmolase cleaves cholesterol to pregnenolone; it is stimulated by ACTH and by LH and FSH."
-  },
-  {
-   "q": "Which enzyme converts androgens to oestrogens?",
-   "options": [
-    "Aromatase",
-    "21-hydroxylase",
-    "Desmolase",
-    "11-beta-dehydrogenase"
-   ],
-   "answer": 0,
-   "why": "Aromatase turns testosterone into oestradiol and androstenedione into oestrone."
-  },
-  {
-   "q": "What is the daily cortisol production?",
-   "options": [
-    "About 2 mg",
-    "About 200 mg",
-    "About 20 mg",
-    "About 2 g"
-   ],
-   "answer": 2,
-   "why": "About 20 mg/day, inactivated in the liver to cortisone by 11-beta-dehydrogenase."
-  },
-  {
-   "q": "What accumulates in 21-hydroxylase deficiency?",
-   "options": [
-    "Serum aldosterone",
-    "17-OH progesterone",
-    "Free cortisol",
+    "Progesterone",
     "Oestriol (E3)"
    ],
-   "answer": 1,
-   "why": "The block raises 17-OH progesterone and diverts precursors to DHEA and androgens."
-  },
-  {
-   "q": "Why does ACTH rise in 21-hydroxylase deficiency?",
-   "options": [
-    "Excess aldosterone",
-    "Excess oestrogen",
-    "Low androgens",
-    "No cortisol feedback"
+   "answers": [
+    0
    ],
-   "answer": 3,
-   "why": "Without cortisol there is no negative feedback, so ACTH rises and the adrenal cortex hypertrophies."
-  },
-  {
-   "q": "What does CAH cause at birth in girls?",
-   "options": [
-    "Short stature",
-    "Bilateral cataracts",
-    "Ambiguous genitalia",
-    "Deafness"
+   "notes": [
+    "E2 is 50 to 70% of oestrogens between puberty and menopause.",
+    "E1 dominates after menopause (99%).",
+    "Progesterone is not an oestrogen.",
+    "E3 is secreted only in pregnancy by the feto-placental unit."
    ],
-   "answer": 2,
-   "why": "Excess androgens virilise the external genitalia; salt-wasting dehydration and early puberty may follow."
+   "multi": true,
+   "hint": "1 or 2 correct answers",
+   "why": "E1 at menopause, E2 in genital activity, E3 in pregnancy.",
+   "src": "Midterm recall (Prof. Kamal)",
+   "slides": [
+    {
+     "src": "files/slides/biochem-steroids/15.jpg",
+     "lec": "Steroid hormones",
+     "n": 15
+    },
+    {
+     "src": "files/slides/biochem-steroids/36.jpg",
+     "lec": "Steroid hormones",
+     "n": 36
+    }
+   ]
   },
   {
-   "q": "When must steroid treatment start to prevent CAH virilisation?",
+   "q": "Oestrone (E1) and oestriol (E3):",
    "options": [
-    "Before week 6",
-    "After birth",
-    "In the third trimester",
-    "At puberty"
-   ],
-   "answer": 0,
-   "why": "Corticosteroids given before the 6th week of amenorrhoea prevent very high fetal androgens."
-  },
-  {
-   "q": "Where does aldosterone act?",
-   "options": [
-    "The proximal tubule",
-    "The distal tubule",
-    "The glomerulus",
-    "The loop of Henle"
-   ],
-   "answer": 1,
-   "why": "It retains sodium and eliminates potassium in the distal tubule, raising volume and pressure."
-  },
-  {
-   "q": "In gestational hypertension from a receptor mutation, which hormone activates the aldosterone receptor?",
-   "options": [
-    "Oestriol",
-    "Cortisol",
-    "Progesterone",
-    "Testosterone"
-   ],
-   "answer": 2,
-   "why": "A mutated mineralocorticoid receptor recognises progesterone, normally an anti-mineralocorticoid, as a potent agonist."
-  },
-  {
-   "q": "Why are obese postmenopausal women at higher breast cancer risk?",
-   "options": [
-    "Fat lowers oestrogen",
-    "Fat blocks cortisol",
-    "Fat destroys progesterone",
-    "Fat makes oestrogen"
-   ],
-   "answer": 3,
-   "why": "Adipose tissue takes over oestrogen production after menopause; obesity is a risk factor for hormone-dependent cancers."
-  },
-  {
-   "q": "What drives the corpus luteum in the first trimester?",
-   "options": [
-    "FSH",
-    "HCG",
-    "ACTH",
-    "Prolactin"
-   ],
-   "answer": 1,
-   "why": "Placental HCG stimulates the corpus luteum; from the 2nd trimester the feto-placental unit takes over."
-  },
-  {
-   "q": "How does cortisol help the fetal lung?",
-   "options": [
-    "Surfactant synthesis",
-    "Alveolar cell division",
-    "Airway muscle",
-    "Blood vessel growth"
-   ],
-   "answer": 0,
-   "why": "Cortisol indirectly promotes surfactant; its lack in preterm infants causes hyaline membrane disease."
-  },
-  {
-   "q": "What triggers prolactin and lactation after birth?",
-   "options": [
-    "A rise in oestrogen",
-    "A rise in progesterone",
-    "The fall in oestrogen",
-    "A rise in cortisol"
-   ],
-   "answer": 2,
-   "why": "The abrupt drop in oestrogen after childbirth stimulates prolactin."
-  },
-  {
-   "q": "Which pituitary hormone drives oestrogen secretion?",
-   "options": [
-    "FSH",
-    "LH",
-    "ACTH",
-    "TSH"
-   ],
-   "answer": 0,
-   "why": "FSH → oestrogens; LH → progesterone; ACTH → cortisol, aldosterone and adrenal androgens."
-  },
-  {
-   "q": "Which are C21 steroids? (choose all)",
-   "options": [
-    "Cortisol",
-    "Progesterone",
-    "Testosterone",
-    "Oestradiol"
+    "Oestriol is secreted only during pregnancy",
+    "Oestrone is the main oestrogen after menopause",
+    "Oestrone is made from testosterone",
+    "Oestriol is the main oestrogen in genitally active women"
    ],
    "answers": [
     0,
     1
    ],
-   "why": "C21: progesterone, glucocorticoids, mineralocorticoids. Testosterone is C19; oestradiol C18."
+   "notes": [
+    "By the feto-placental unit.",
+    "99% of oestrogens after menopause, made by fat cells.",
+    "Oestrone comes from androstenedione; estradiol from testosterone.",
+    "That is estradiol."
+   ],
+   "multi": true,
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
+   "slides": [
+    {
+     "src": "files/slides/biochem-steroids/15.jpg",
+     "lec": "Steroid hormones",
+     "n": 15
+    },
+    {
+     "src": "files/slides/biochem-steroids/36.jpg",
+     "lec": "Steroid hormones",
+     "n": 36
+    },
+    {
+     "src": "files/slides/biochem-steroids/37.jpg",
+     "lec": "Steroid hormones",
+     "n": 37
+    }
+   ]
   },
   {
-   "q": "Which are actions of cortisol? (choose all)",
+   "q": "Dihydrotestosterone (DHT):",
    "options": [
-    "Anti-inflammatory",
-    "Sodium retention",
-    "Bone formation",
-    "Hypoglycaemia"
+    "Differentiates the external genitalia in the male embryo",
+    "Is mainly produced by the placenta",
+    "Is a metabolite of testosterone",
+    "Is weaker than testosterone"
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "notes": [
+    "Its receptor is missing in male pseudohermaphroditism.",
+    "It is a testosterone metabolite, not a placental hormone.",
+    "Testosterone is converted into DHT.",
+    "DHT binds androgen receptors more strongly: it is more potent."
+   ],
+   "multi": true,
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
+   "slides": [
+    {
+     "src": "files/slides/biochem-steroids/16.jpg",
+     "lec": "Steroid hormones",
+     "n": 16
+    },
+    {
+     "src": "files/slides/biochem-steroids/66.jpg",
+     "lec": "Steroid hormones",
+     "n": 66
+    }
+   ]
+  },
+  {
+   "q": "Cholesterol 20-22 desmolase:",
+   "options": [
+    "Is stimulated by ACTH in the adrenal and LH/FSH in the gonads",
+    "Is the key enzyme of the common phase",
+    "Works in the microsomes",
+    "Converts pregnenolone into progesterone"
    ],
    "answers": [
     0,
     1
    ],
-   "why": "Stress hormone: substrate catabolism, sodium retention, nerve excitability, bone breakdown, anti-inflammatory, fetal development."
+   "notes": [
+    "This is how the pituitary controls all steroid synthesis.",
+    "It turns cholesterol into pregnenolone.",
+    "This step happens in the mitochondria.",
+    "That is 3β-hydroxysteroid dehydrogenase + isomerase."
+   ],
+   "multi": true,
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
+   "slides": [
+    {
+     "src": "files/slides/biochem-steroids/19.jpg",
+     "lec": "Steroid hormones",
+     "n": 19
+    },
+    {
+     "src": "files/slides/biochem-steroids/20.jpg",
+     "lec": "Steroid hormones",
+     "n": 20
+    }
+   ]
+  },
+  {
+   "q": "Glucocorticoid biosynthesis:",
+   "options": [
+    "Uses 21-hydroxylase then 11β-hydroxylase",
+    "Produces about 200 mg of cortisol a day",
+    "Takes place only in the microsomes of the fascicular zone",
+    "Ends with cortisol turned into cortisone by the kidney"
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "notes": [
+    "Two hydroxylations after 17α-OH progesterone.",
+    "About 20 mg a day.",
+    "",
+    "The liver turns cortisol into cortisone with 11β-dehydrogenase."
+   ],
+   "multi": true,
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
+   "slides": [
+    {
+     "src": "files/slides/biochem-steroids/22.jpg",
+     "lec": "Steroid hormones",
+     "n": 22
+    },
+    {
+     "src": "files/slides/biochem-steroids/24.jpg",
+     "lec": "Steroid hormones",
+     "n": 24
+    }
+   ]
+  },
+  {
+   "q": "21-hydroxylase deficiency:",
+   "options": [
+    "Causes dehydration attacks that respond well to rehydration",
+    "Is an inherited disease",
+    "Causes ambiguous external genitalia in a newborn girl",
+    "Causes hypercorticism and hyperaldosteronism"
+   ],
+   "answers": [
+    1,
+    2
+   ],
+   "notes": [
+    "The attacks are refractory to rehydration.",
+    "Congenital adrenal hyperplasia (CAHS).",
+    "Excess adrenal androgens virilise her.",
+    "Cortisol and aldosterone are low or absent."
+   ],
+   "multi": true,
+   "hint": "1 or 2 correct answers",
+   "why": "The recall gave B (as 'adrenal tumour') and C; the lecture also calls it 'virilising adrenal tumour' but defines it as an inherited enzyme deficiency.",
+   "src": "Midterm recall (Prof. Kamal) (adapted)",
+   "slides": [
+    {
+     "src": "files/slides/biochem-steroids/28.jpg",
+     "lec": "Steroid hormones",
+     "n": 28
+    }
+   ]
+  },
+  {
+   "q": "In 21-hydroxylase deficiency, blood tests show:",
+   "options": [
+    "Increased 17-OH progesterone",
+    "Increased aldosterone",
+    "Increased ACTH",
+    "Increased cortisol"
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "notes": [
+    "The precursor upstream of the block accumulates; it is the diagnostic assay.",
+    "Aldosterone also needs 21-hydroxylase, so it is low.",
+    "No cortisol, no negative feedback: the pituitary oversecretes ACTH.",
+    "Cortisol cannot be made, so it is low or absent."
+   ],
+   "multi": true,
+   "hint": "1 or 2 correct answers",
+   "why": "Blocked 21-hydroxylase: precursors pile up and go to androgens; cortisol and aldosterone fall; ACTH rises.",
+   "slides": [
+    {
+     "src": "files/slides/biochem-steroids/26.jpg",
+     "lec": "Steroid hormones",
+     "n": 26
+    },
+    {
+     "src": "files/slides/biochem-steroids/27.jpg",
+     "lec": "Steroid hormones",
+     "n": 27
+    },
+    {
+     "src": "files/slides/biochem-steroids/63.jpg",
+     "lec": "Steroid hormones",
+     "n": 63
+    }
+   ]
+  },
+  {
+   "q": "11β-hydroxylase deficiency:",
+   "options": [
+    "Causes low blood pressure, like 21-hydroxylase deficiency",
+    "Lowers androstenedione",
+    "Causes high blood pressure",
+    "Lowers cortisol and aldosterone"
+   ],
+   "answers": [
+    2,
+    3
+   ],
+   "notes": [
+    "DOC accumulation raises blood pressure.",
+    "Androstenedione rises.",
+    "11-DOC, which has mineralocorticoid activity, accumulates.",
+    "Both need 11β-hydroxylase."
+   ],
+   "multi": true,
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
+   "slides": [
+    {
+     "src": "files/slides/biochem-steroids/63.jpg",
+     "lec": "Steroid hormones",
+     "n": 63
+    }
+   ]
+  },
+  {
+   "q": "Mineralocorticoid biosynthesis:",
+   "options": [
+    "Goes through progesterone, which the adrenal cortex does not secrete",
+    "Deoxycorticosterone (DOC) is the strongest mineralocorticoid",
+    "Corticosterone is stronger than aldosterone",
+    "Happens only in the glomerular zone"
+   ],
+   "answers": [
+    0,
+    3
+   ],
+   "notes": [
+    "21-hydroxylase turns it into DOC.",
+    "DOC has a small activity; aldosterone is the main one.",
+    "Its activity is infinitely weaker.",
+    ""
+   ],
+   "multi": true,
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
+   "slides": [
+    {
+     "src": "files/slides/biochem-steroids/29.jpg",
+     "lec": "Steroid hormones",
+     "n": 29
+    },
+    {
+     "src": "files/slides/biochem-steroids/30.jpg",
+     "lec": "Steroid hormones",
+     "n": 30
+    }
+   ]
+  },
+  {
+   "q": "Pregnancy (gestational) hypertension from a mineralocorticoid receptor mutation:",
+   "options": [
+    "It is caused by excess aldosterone",
+    "It is a common acquired disease",
+    "The mutated aldosterone receptor recognises progesterone",
+    "Normally, progesterone is an anti-mineralocorticoid"
+   ],
+   "answers": [
+    2,
+    3
+   ],
+   "notes": [
+    "It is caused by progesterone acting on the mutated receptor.",
+    "It is a rare genetic disease.",
+    "Progesterone becomes a potent agonist.",
+    "A natural antagonist of the mineralocorticoid receptor."
+   ],
+   "multi": true,
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
+   "slides": [
+    {
+     "src": "files/slides/biochem-steroids/31.jpg",
+     "lec": "Steroid hormones",
+     "n": 31
+    }
+   ]
+  },
+  {
+   "q": "Adrenal androgens:",
+   "options": [
+    "Most testosterone comes from adrenal DHEA",
+    "Androstenedione exerts feedback on the pituitary",
+    "DHEA circulates mainly as DHEA sulphate",
+    "Adrenal androstenedione is regulated by ACTH"
+   ],
+   "answers": [
+    2,
+    3
+   ],
+   "notes": [
+    "Only 1% of testosterone comes from DHEA.",
+    "It does not exert feedback.",
+    "",
+    "CRF → ACTH → 11β-OH androstenedione."
+   ],
+   "multi": true,
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
+   "slides": [
+    {
+     "src": "files/slides/biochem-steroids/32.jpg",
+     "lec": "Steroid hormones",
+     "n": 32
+    },
+    {
+     "src": "files/slides/biochem-steroids/57.jpg",
+     "lec": "Steroid hormones",
+     "n": 57
+    }
+   ]
+  },
+  {
+   "q": "Estradiol (E2):",
+   "options": [
+    "Is produced from testosterone",
+    "Is the predominant oestrogen during menopause",
+    "Protects the bone against osteoporosis",
+    "Is the oestrogen secreted by the placenta"
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "notes": [
+    "Aromatase turns testosterone into E2 (androstenedione gives E1).",
+    "After menopause, oestrone (E1) is 99% of oestrogens, made by fat cells.",
+    "Ovarian oestrogens stimulate osteoblasts and protect bone.",
+    "The feto-placental unit secretes oestriol (E3), not E2."
+   ],
+   "multi": true,
+   "hint": "1 or 2 correct answers",
+   "why": "Estradiol comes from testosterone, dominates in the genitally active woman and protects bone.",
+   "src": "Final exam 2023-2024",
+   "slides": [
+    {
+     "src": "files/slides/biochem-steroids/36.jpg",
+     "lec": "Steroid hormones",
+     "n": 36
+    },
+    {
+     "src": "files/slides/biochem-steroids/37.jpg",
+     "lec": "Steroid hormones",
+     "n": 37
+    }
+   ]
+  },
+  {
+   "q": "Oestrogen production after menopause:",
+   "options": [
+    "Estradiol is the predominant oestrogen",
+    "Fat cells take over from the ovaries",
+    "The ovary remains the main source",
+    "Overweight women make more oestrogen"
+   ],
+   "answers": [
+    1,
+    3
+   ],
+   "notes": [
+    "Oestrone (E1) is 99%.",
+    "Adipose tissue makes oestrogen.",
+    "The ovary stops producing oestrogen.",
+    "Obesity after menopause is a risk factor for hormone-dependent breast cancer."
+   ],
+   "multi": true,
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
+   "slides": [
+    {
+     "src": "files/slides/biochem-steroids/37.jpg",
+     "lec": "Steroid hormones",
+     "n": 37
+    }
+   ]
+  },
+  {
+   "q": "During pregnancy, the increase in steroid synthesis concerns:",
+   "options": [
+    "Oestrogen and progesterone, to maintain the pregnancy",
+    "Cortisol, for the metabolism of mother and fetus",
+    "Aldosterone, to protect against hypertension",
+    "Testosterone, to masculinise the fetus"
+   ],
+   "answers": [
+    0,
+    1
+   ],
+   "notes": [
+    "",
+    "",
+    "Aldosterone is not on the lecture's list.",
+    "Testosterone rises as a precursor of oestrogens."
+   ],
+   "multi": true,
+   "hint": "1 or 2 correct answers",
+   "why": "On the real paper the options were aldosterone, oestrogen, testosterone and progesterone; the lecture lists oestrogen, progesterone, cortisol and testosterone as rising.",
+   "src": "Final exam 2023-2024 (adapted)",
+   "slides": [
+    {
+     "src": "files/slides/biochem-steroids/38.jpg",
+     "lec": "Steroid hormones",
+     "n": 38
+    }
+   ]
+  },
+  {
+   "q": "Regarding steroid hormones:",
+   "options": [
+    "Oestrogen synthesis derives from androgens",
+    "The placenta is the main oestrogen-producing organ in the first trimester",
+    "They are synthesised by three layers of the adrenal medulla",
+    "They derive from the metabolism of triglycerides"
+   ],
+   "answers": [
+    0
+   ],
+   "notes": [
+    "Oestrogens can only be made in the presence of androgens.",
+    "In the 1st trimester it is the ovary (corpus luteum stimulated by hCG).",
+    "The three layers belong to the adrenal cortex.",
+    "They derive from cholesterol."
+   ],
+   "multi": true,
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
+   "src": "Mock exam 2026",
+   "slides": [
+    {
+     "src": "files/slides/biochem-steroids/03.jpg",
+     "lec": "Steroid hormones",
+     "n": 3
+    },
+    {
+     "src": "files/slides/biochem-steroids/36.jpg",
+     "lec": "Steroid hormones",
+     "n": 36
+    },
+    {
+     "src": "files/slides/biochem-steroids/39.jpg",
+     "lec": "Steroid hormones",
+     "n": 39
+    }
+   ]
+  },
+  {
+   "q": "Oestrogen and progesterone in pregnancy:",
+   "options": [
+    "The fetal adrenal is not involved",
+    "In the 1st trimester, the ovary is the main source, stimulated by hCG",
+    "From the 2nd trimester, the feto-placental unit takes over",
+    "Progesterone falls as the placenta grows"
+   ],
+   "answers": [
+    1,
+    2
+   ],
+   "notes": [
+    "Its DHEA is the starting point of oestriol.",
+    "hCG keeps the corpus luteum active.",
+    "Fetal adrenal DHEA → liver → placenta → oestriol.",
+    "It rises with placental development."
+   ],
+   "multi": true,
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
+   "slides": [
+    {
+     "src": "files/slides/biochem-steroids/39.jpg",
+     "lec": "Steroid hormones",
+     "n": 39
+    },
+    {
+     "src": "files/slides/biochem-steroids/40.jpg",
+     "lec": "Steroid hormones",
+     "n": 40
+    }
+   ]
+  },
+  {
+   "q": "The increase in cortisol during pregnancy aims to meet the developmental needs of the following fetal organs:",
+   "options": [
+    "Lung",
+    "Heart",
+    "Kidney",
+    "Liver"
+   ],
+   "answers": [
+    0,
+    3
+   ],
+   "notes": [
+    "Cortisol helps surfactant synthesis late in pregnancy.",
+    "Not listed in the lecture.",
+    "Not listed in the lecture.",
+    "It develops the liver's glycogen function."
+   ],
+   "multi": true,
+   "hint": "1 or 2 correct answers",
+   "why": "Lack of surfactant in preterm babies causes hyaline membrane disease.",
+   "src": "Final exam 2023-2024",
+   "slides": [
+    {
+     "src": "files/slides/biochem-steroids/43.jpg",
+     "lec": "Steroid hormones",
+     "n": 43
+    }
+   ]
+  },
+  {
+   "q": "Cortisol:",
+   "options": [
+    "Causes sodium loss",
+    "Is highest in the morning",
+    "Is anti-inflammatory",
+    "Builds up bone"
+   ],
+   "answers": [
+    1,
+    2
+   ],
+   "notes": [
+    "It causes hydrosodic retention.",
+    "To give maximum energy.",
+    "",
+    "It degrades bone."
+   ],
+   "multi": true,
+   "hint": "1 or 2 correct answers",
+   "why": "Cortisol is the stress hormone: catabolism, bone breakdown, salt and water retention, excitability, anti-inflammatory.",
+   "slides": [
+    {
+     "src": "files/slides/biochem-steroids/42.jpg",
+     "lec": "Steroid hormones",
+     "n": 42
+    }
+   ]
+  },
+  {
+   "q": "A 40-year-old patient has obesity of the face and trunk, hypertension, diabetes and wasting of the limbs. These signs suggest:",
+   "options": [
+    "Hypercortisolism",
+    "Hyperaldosteronism",
+    "Hypocortisolism",
+    "Hyperthyroidism"
+   ],
+   "answers": [
+    0
+   ],
+   "notes": [
+    "Cushing's: fat redistribution, hyperglycaemia, protein breakdown.",
+    "Would explain hypertension but not the fat, diabetes and wasting.",
+    "Addison's gives hypotension and weight loss.",
+    "Weight loss, not truncal obesity."
+   ],
+   "multi": true,
+   "hint": "1 or 2 correct answers",
+   "why": "Tutorial 3, case 1.",
+   "src": "Tutorial 3",
+   "slides": [
+    {
+     "src": "files/slides/biochem-steroids/61.jpg",
+     "lec": "Steroid hormones",
+     "n": 61
+    }
+   ]
+  },
+  {
+   "q": "In that patient, the direct cause of the muscle wasting is:",
+   "options": [
+    "The hyperglycaemic effect of cortisol",
+    "The proteolytic effect of cortisol",
+    "Capillary fragility from vitamin K deficiency",
+    "A negative nitrogen balance from hyperthyroidism"
+   ],
+   "answers": [
+    1
+   ],
+   "notes": [
+    "That explains the diabetes.",
+    "More nitrogen catabolism, muscle wasting, fatigability.",
+    "Unrelated.",
+    "The patient does not have hyperthyroidism."
+   ],
+   "multi": true,
+   "hint": "1 or 2 correct answers",
+   "why": "Tutorial 3, case 1.",
+   "src": "Tutorial 3",
+   "slides": [
+    {
+     "src": "files/slides/biochem-steroids/42.jpg",
+     "lec": "Steroid hormones",
+     "n": 42
+    },
+    {
+     "src": "files/slides/biochem-steroids/61.jpg",
+     "lec": "Steroid hormones",
+     "n": 61
+    }
+   ]
+  },
+  {
+   "q": "Aldosterone:",
+   "options": [
+    "Retains potassium",
+    "Acts mainly on the distal tubule",
+    "Is regulated mainly by ACTH",
+    "Retains sodium and eliminates potassium"
+   ],
+   "answers": [
+    1,
+    3
+   ],
+   "notes": [
+    "It eliminates potassium.",
+    "",
+    "Mainly by the renin-angiotensin-aldosterone system, following blood volume.",
+    "This raises blood volume and pressure."
+   ],
+   "multi": true,
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
+   "slides": [
+    {
+     "src": "files/slides/biochem-steroids/44.jpg",
+     "lec": "Steroid hormones",
+     "n": 44
+    },
+    {
+     "src": "files/slides/biochem-steroids/54.jpg",
+     "lec": "Steroid hormones",
+     "n": 54
+    }
+   ]
+  },
+  {
+   "q": "Oestrogen actions:",
+   "options": [
+    "Differentiation of secondary sexual characteristics in the fetus",
+    "Osteoblastic activity",
+    "Stimulation of prolactin secretion during pregnancy",
+    "Water retention by the kidney"
+   ],
+   "answers": [
+    1,
+    3
+   ],
+   "notes": [
+    "In the fetus they differentiate primary characteristics; secondary ones appear at puberty.",
+    "Estradiol builds bone.",
+    "It is the abrupt fall in oestrogen after birth that stimulates prolactin.",
+    "Slight premenstrual oedema."
+   ],
+   "multi": true,
+   "hint": "1 or 2 correct answers",
+   "why": "The recall answered B, C and D; by the lecture's wording only B and D are right.",
+   "src": "Midterm recall (Prof. Kamal) (adapted)",
+   "slides": [
+    {
+     "src": "files/slides/biochem-steroids/46.jpg",
+     "lec": "Steroid hormones",
+     "n": 46
+    }
+   ]
+  },
+  {
+   "q": "Progesterone:",
+   "options": [
+    "Is secreted alone in the first half of the cycle",
+    "Decreases uterine excitability during pregnancy",
+    "Is anti-oestrogenic in the mammary gland",
+    "Stimulates lactogenesis during pregnancy"
+   ],
+   "answers": [
+    1,
+    2
+   ],
+   "notes": [
+    "Oestrogen alone is secreted in the first half.",
+    "Opposite to oestrogen.",
+    "Used for breast cysts from hyperoestrogenism.",
+    "It opposes lactogenesis."
+   ],
+   "multi": true,
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
+   "slides": [
+    {
+     "src": "files/slides/biochem-steroids/09.jpg",
+     "lec": "Steroid hormones",
+     "n": 9
+    },
+    {
+     "src": "files/slides/biochem-steroids/47.jpg",
+     "lec": "Steroid hormones",
+     "n": 47
+    }
+   ]
+  },
+  {
+   "q": "Regulation of steroidogenesis:",
+   "options": [
+    "Cortisol exerts positive feedback on ACTH",
+    "ACTH acting on the adrenal cortex gives aldosterone secretion",
+    "LH acting on the gonads gives progesterone secretion",
+    "FSH acting on the gonads gives oestrogen secretion"
+   ],
+   "answers": [
+    2,
+    3
+   ],
+   "notes": [
+    "Negative feedback on ACTH and CRF.",
+    "ACTH gives cortisol and adrenal androgens.",
+    "",
+    ""
+   ],
+   "multi": true,
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
+   "slides": [
+    {
+     "src": "files/slides/biochem-steroids/52.jpg",
+     "lec": "Steroid hormones",
+     "n": 52
+    },
+    {
+     "src": "files/slides/biochem-steroids/53.jpg",
+     "lec": "Steroid hormones",
+     "n": 53
+    }
+   ]
+  },
+  {
+   "q": "Ovulation and the cycle:",
+   "options": [
+    "Above a threshold, oestrogen exerts positive feedback, raising LH",
+    "Testosterone exerts positive feedback on the pituitary",
+    "Progesterone exerts negative feedback on GnRH and LH",
+    "FSH drives progesterone secretion"
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "notes": [
+    "The LH surge coincides with ovulation.",
+    "Negative feedback.",
+    "",
+    "LH drives progesterone; FSH drives oestrogen."
+   ],
+   "multi": true,
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
+   "slides": [
+    {
+     "src": "files/slides/biochem-steroids/55.jpg",
+     "lec": "Steroid hormones",
+     "n": 55
+    },
+    {
+     "src": "files/slides/biochem-steroids/57.jpg",
+     "lec": "Steroid hormones",
+     "n": 57
+    }
+   ]
+  },
+  {
+   "q": "A young man has hyperpigmentation, intense fatigue and low blood pressure. Expected results:",
+   "options": [
+    "High ACTH",
+    "Low potassium",
+    "Low cortisol and aldosterone",
+    "High sodium"
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "notes": [
+    "The pituitary tries to compensate for the missing cortisol.",
+    "Low aldosterone gives hyperkalaemia.",
+    "Primary adrenal failure: Addison's disease.",
+    "Sodium is low."
+   ],
+   "multi": true,
+   "hint": "1 or 2 correct answers",
+   "why": "Hyperpigmentation: ACTH and MSH share the same precursor. Tutorial 3, case 2.",
+   "src": "Tutorial 3 (adapted)",
+   "slides": [
+    {
+     "src": "files/slides/biochem-steroids/58.jpg",
+     "lec": "Steroid hormones",
+     "n": 58
+    },
+    {
+     "src": "files/slides/biochem-steroids/59.jpg",
+     "lec": "Steroid hormones",
+     "n": 59
+    }
+   ]
+  },
+  {
+   "q": "Adrenal cortex pathology:",
+   "options": [
+    "Addison's disease raises cortisol",
+    "Sheehan syndrome is a primary hypocorticism",
+    "Conn syndrome is an adenoma of the glomerular zone",
+    "Cushing's disease is of hypothalamic-pituitary origin"
+   ],
+   "answers": [
+    2,
+    3
+   ],
+   "notes": [
+    "Cortisol and aldosterone fall.",
+    "It is central (pituitary).",
+    "Primary hyperaldosteronism: high Na⁺, low K⁺.",
+    "e.g. ACTH-secreting pituitary adenoma."
+   ],
+   "multi": true,
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
+   "slides": [
+    {
+     "src": "files/slides/biochem-steroids/58.jpg",
+     "lec": "Steroid hormones",
+     "n": 58
+    },
+    {
+     "src": "files/slides/biochem-steroids/60.jpg",
+     "lec": "Steroid hormones",
+     "n": 60
+    },
+    {
+     "src": "files/slides/biochem-steroids/61.jpg",
+     "lec": "Steroid hormones",
+     "n": 61
+    },
+    {
+     "src": "files/slides/biochem-steroids/62.jpg",
+     "lec": "Steroid hormones",
+     "n": 62
+    }
+   ]
+  },
+  {
+   "q": "Testicular pathology:",
+   "options": [
+    "Panhypopituitarism gives low FSH, LH and testosterone",
+    "Klinefelter syndrome (XXY) gives high FSH and LH with low testosterone",
+    "Turner syndrome is a testicular disorder",
+    "Male pseudohermaphroditism is due to excess DHT"
+   ],
+   "answers": [
+    0,
+    1
+   ],
+   "notes": [
+    "Secondary hypogonadism.",
+    "Primary hypogonadism.",
+    "Turner (XO) is ovarian dysgenesis.",
+    "It is due to absent DHT receptors."
+   ],
+   "multi": true,
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
+   "slides": [
+    {
+     "src": "files/slides/biochem-steroids/65.jpg",
+     "lec": "Steroid hormones",
+     "n": 65
+    },
+    {
+     "src": "files/slides/biochem-steroids/66.jpg",
+     "lec": "Steroid hormones",
+     "n": 66
+    }
+   ]
   }
  ],
  "cards": [
@@ -9351,18 +10672,24 @@ SINA.lectures["biochem-thyroid"] = {
   {
    "q": "The thyroid follicle:",
    "options": [
-    "Has a wall of a single layer of cubic epithelial cells",
-    "Contains colloid in its central cavity",
     "Has its apical pole facing the blood vessels",
-    "Is made of very active protein-synthesising cells"
+    "Contains colloid in its central cavity",
+    "Is made of inactive cells",
+    "Has a wall of a single layer of cubic cells"
    ],
    "answers": [
-    0,
     1,
     3
    ],
+   "notes": [
+    "The apical pole faces the colloid.",
+    "",
+    "Very active protein-synthesising cells.",
+    ""
+   ],
    "multi": true,
-   "why": "The apical pole faces the colloid; the basal pole faces the vessels.",
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
    "slides": [
     {
      "src": "files/slides/biochem-thyroid/04.jpg",
@@ -9379,17 +10706,24 @@ SINA.lectures["biochem-thyroid"] = {
   {
    "q": "Concerning iodides circulating in the blood:",
    "options": [
-    "They are internalised into follicular cells by passive transport",
-    "They are not provided exogenously through food",
+    "They enter follicular cells by passive transport",
+    "They are not provided by food",
     "They are oxidised in the thyrocyte by thyroid peroxidase",
-    "They are transformed in the thyrocyte into active organic iodine"
+    "They are transformed into active organic iodine"
    ],
    "answers": [
     2,
     3
    ],
+   "notes": [
+    "Active transport (30 times the blood level).",
+    "Iodine comes from food.",
+    "",
+    "I⁻ becomes I2."
+   ],
    "multi": true,
-   "why": "From the Final exam 2023-2024. Iodine comes from food and enters by active transport.",
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
    "src": "Final exam 2023-2024",
    "slides": [
     {
@@ -9400,10 +10734,10 @@ SINA.lectures["biochem-thyroid"] = {
    ]
   },
   {
-   "q": "The steps in the biosynthesis of thyroid hormones by the thyroid include:",
+   "q": "Steps in the biosynthesis of thyroid hormones include:",
    "options": [
     "Iodination of thyroglobulin by thyroid peroxidase",
-    "The formation and storage of thyroglobulin",
+    "Formation and storage of thyroglobulin",
     "Oxidation of iodides by deiodase",
     "Capture of iodides by passive transport"
    ],
@@ -9411,8 +10745,15 @@ SINA.lectures["biochem-thyroid"] = {
     0,
     1
    ],
+   "notes": [
+    "",
+    "",
+    "TPO oxidises iodides; deiodinase recycles iodine.",
+    "Active transport."
+   ],
    "multi": true,
-   "why": "From the Mock exam 2026. Iodides are oxidised by TPO and captured by active transport.",
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
    "src": "Mock exam 2026",
    "slides": [
     {
@@ -9435,16 +10776,23 @@ SINA.lectures["biochem-thyroid"] = {
   {
    "q": "Thyroglobulin:",
    "options": [
-    "Is discharged into the colloid of the thyroid follicle",
-    "Is a protein synthesised by the liver",
+    "Is discharged into the colloid of the follicle",
+    "Is synthesised by the liver",
     "Is iodinated by deiodinase",
-    "Fixes thyroid hormones using lysosomal enzymes"
+    "Binds thyroid hormones through lysosomal enzymes"
    ],
    "answers": [
     0
    ],
+   "notes": [
+    "",
+    "By the thyrocyte.",
+    "By TPO.",
+    "Lysosomal enzymes separate the hormones from it."
+   ],
    "multi": true,
-   "why": "From the Final exam 2023-2024. Made by the thyrocyte, iodinated by TPO; lysosomal enzymes separate the hormones from it.",
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
    "src": "Final exam 2023-2024",
    "slides": [
     {
@@ -9467,17 +10815,24 @@ SINA.lectures["biochem-thyroid"] = {
   {
    "q": "Coupling of iodotyrosines gives:",
    "options": [
-    "T4 from two DIT",
-    "T3 from DIT + MIT",
+    "An active reverse T3",
     "T3 from two MIT",
-    "Reverse T3, which is active"
+    "T4 from two DIT",
+    "T3 from DIT + MIT"
    ],
    "answers": [
-    0,
-    1
+    2,
+    3
+   ],
+   "notes": [
+    "Reverse T3 is inactive.",
+    "T3 = DIT + MIT.",
+    "",
+    ""
    ],
    "multi": true,
-   "why": "Reverse T3 is secreted but inactive.",
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
    "slides": [
     {
      "src": "files/slides/biochem-thyroid/10.jpg",
@@ -9489,8 +10844,8 @@ SINA.lectures["biochem-thyroid"] = {
   {
    "q": "Thyroid hormones secreted into the blood are:",
    "options": [
-    "T3, triiodothyronine",
-    "T4, tetraiodothyronine (thyroxine)",
+    "T3",
+    "T4",
     "DIT",
     "MIT"
    ],
@@ -9498,14 +10853,26 @@ SINA.lectures["biochem-thyroid"] = {
     0,
     1
    ],
+   "notes": [
+    "",
+    "90% of secretion.",
+    "Its iodine is recycled.",
+    "Its iodine is recycled."
+   ],
    "multi": true,
-   "why": "From the Midterm recall (Prof. Kamal). Iodine from MIT and DIT is recycled by deiodinase. Reverse T3 is also secreted but inactive.",
+   "hint": "1 or 2 correct answers",
+   "why": "Reverse T3 is also secreted but inactive.",
    "src": "Midterm recall (Prof. Kamal)",
    "slides": [
     {
      "src": "files/slides/biochem-thyroid/11.jpg",
      "lec": "Thyroid hormones",
      "n": 11
+    },
+    {
+     "src": "files/slides/biochem-thyroid/12.jpg",
+     "lec": "Thyroid hormones",
+     "n": 12
     }
    ]
   },
@@ -9513,15 +10880,22 @@ SINA.lectures["biochem-thyroid"] = {
    "q": "Regarding thyroid hormones:",
    "options": [
     "Measuring their free forms allows the diagnosis of dysthyroidism",
-    "Their free forms are inactive in target tissues",
-    "They are stored by the thyroid in parafollicular cells",
-    "They mainly circulate in the blood in free form"
+    "Their free forms are inactive",
+    "They are stored in parafollicular cells",
+    "They mainly circulate free"
    ],
    "answers": [
     0
    ],
+   "notes": [
+    "FT4 and FT3.",
+    "The free form is the active one.",
+    "In the colloid, bound to thyroglobulin.",
+    "Only a tiny fraction is free."
+   ],
    "multi": true,
-   "why": "From the Final exam 2023-2024. Only a very small fraction is free, and it is the active one.",
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
    "src": "Final exam 2023-2024",
    "slides": [
     {
@@ -9532,20 +10906,26 @@ SINA.lectures["biochem-thyroid"] = {
    ]
   },
   {
-   "q": "Thyroid hormone transport proteins:",
+   "q": "Thyroid hormone transport:",
    "options": [
-    "TBG binds T4 with very high affinity",
-    "TBG is made by the liver",
     "TBPA binds mainly T3",
-    "Bound hormones are the active form"
+    "TBG, made by the liver, binds T4 with very high affinity",
+    "Bound hormones are the active form",
+    "Albumin is a specific carrier of T3"
    ],
    "answers": [
     0,
-    1,
-    2
+    1
+   ],
+   "notes": [
+    "",
+    "",
+    "Bound hormones are inactive.",
+    "Albumin is non-specific."
    ],
    "multi": true,
-   "why": "",
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
    "slides": [
     {
      "src": "files/slides/biochem-thyroid/14.jpg",
@@ -9555,7 +10935,7 @@ SINA.lectures["biochem-thyroid"] = {
    ]
   },
   {
-   "q": "The enzyme responsible for the transformation of T4 into T3 in peripheral tissues is:",
+   "q": "The enzyme turning T4 into T3 in peripheral tissues is:",
    "options": [
     "Deiodinase",
     "Iodine synthetase",
@@ -9565,8 +10945,15 @@ SINA.lectures["biochem-thyroid"] = {
    "answers": [
     0
    ],
+   "notes": [
+    "",
+    "",
+    "",
+    "TPO acts inside the thyroid."
+   ],
    "multi": true,
-   "why": "From the Mock exam 2026.",
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
    "src": "Mock exam 2026",
    "slides": [
     {
@@ -9580,18 +10967,24 @@ SINA.lectures["biochem-thyroid"] = {
    "q": "T3 compared with T4:",
    "options": [
     "Most T3 is produced in peripheral tissues",
-    "T3 is more active than T4",
-    "T3 has intracellular receptors in peripheral tissues",
-    "T3 is the main hormone secreted by the thyroid"
+    "T3 is the main hormone secreted by the thyroid",
+    "T3 is about 10 times more active",
+    "T3 binds peripheral receptors less easily"
    ],
    "answers": [
     0,
-    1,
     2
    ],
+   "notes": [
+    "From T4, by deiodinase.",
+    "T4 is 90% of secretion.",
+    "",
+    "It has a very high affinity for them."
+   ],
    "multi": true,
-   "why": "From the Midterm recall (Prof. Kamal). T4 is 90% of secretion; T3 is 10 times more active.",
-   "src": "Midterm recall (Prof. Kamal)",
+   "hint": "1 or 2 correct answers",
+   "why": "The real recall also had 'T3 has intracellular receptors' as correct.",
+   "src": "Midterm recall (Prof. Kamal) (adapted)",
    "slides": [
     {
      "src": "files/slides/biochem-thyroid/12.jpg",
@@ -9606,19 +10999,26 @@ SINA.lectures["biochem-thyroid"] = {
    ]
   },
   {
-   "q": "The thyroid hormone triiodothyronine (T3):",
+   "q": "The thyroid hormone T3:",
    "options": [
     "Is converted to thyroxine in peripheral cells",
     "Can bind to receptors in the nucleus",
-    "Is the thyroid hormone mainly secreted by the thyroid",
+    "Is the main hormone secreted by the thyroid",
     "Can bind to cytoplasmic receptors"
    ],
    "answers": [
     1,
     3
    ],
+   "notes": [
+    "T4 is converted to T3.",
+    "For gene transcription.",
+    "That is T4.",
+    "To trigger biological effects."
+   ],
    "multi": true,
-   "why": "From the Final exam 2023-2024. T4 is converted to T3, not the reverse.",
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
    "src": "Final exam 2023-2024",
    "slides": [
     {
@@ -9639,8 +11039,15 @@ SINA.lectures["biochem-thyroid"] = {
    "answers": [
     1
    ],
+   "notes": [
+    "Acts on the adrenal cortex.",
+    "",
+    "TRH is hypothalamic.",
+    "A thyroid protein, not a pituitary hormone."
+   ],
    "multi": true,
-   "why": "From the Midterm recall (Prof. Kamal). TRH is hypothalamic.",
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
    "src": "Midterm recall (Prof. Kamal)",
    "slides": [
     {
@@ -9658,19 +11065,30 @@ SINA.lectures["biochem-thyroid"] = {
   {
    "q": "TSH:",
    "options": [
-    "Is a glycoprotein of the anterior pituitary",
     "Has an alpha chain common to LH, FSH and hCG",
-    "Is assayed on its specific beta chain",
-    "Acts only on the secretion step"
+    "Rises when T4 is high",
+    "Acts only on the secretion step",
+    "Is a glycoprotein of the anterior pituitary"
    ],
    "answers": [
     0,
-    1,
-    2
+    3
+   ],
+   "notes": [
+    "Assays target the specific beta chain.",
+    "High T4 gives negative feedback.",
+    "It activates every step.",
+    ""
    ],
    "multi": true,
-   "why": "It activates every step of synthesis.",
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
    "slides": [
+    {
+     "src": "files/slides/biochem-thyroid/17.jpg",
+     "lec": "Thyroid hormones",
+     "n": 17
+    },
     {
      "src": "files/slides/biochem-thyroid/18.jpg",
      "lec": "Thyroid hormones",
@@ -9681,18 +11099,24 @@ SINA.lectures["biochem-thyroid"] = {
   {
    "q": "Thyroid hormone catabolism:",
    "options": [
-    "Conjugation in the liver, with elimination in bile",
-    "Gives TRIAC and TETRAC",
     "Deiodination accounts for 80% of T4 degradation",
-    "Takes place only in the thyroid"
+    "Conjugation in the liver, with elimination in the bile",
+    "Takes place only in the thyroid",
+    "TRIAC and TETRAC are made in the thyroid"
    ],
    "answers": [
     0,
-    1,
-    2
+    1
+   ],
+   "notes": [
+    "",
+    "",
+    "Liver and kidneys.",
+    "In the liver and kidneys."
    ],
    "multi": true,
-   "why": "Liver and kidneys.",
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
    "slides": [
     {
      "src": "files/slides/biochem-thyroid/19.jpg",
@@ -9707,21 +11131,27 @@ SINA.lectures["biochem-thyroid"] = {
    ]
   },
   {
-   "q": "Thyroid hormone actions are:",
+   "q": "Thyroid hormone actions:",
    "options": [
-    "A decrease in adrenergic receptors",
+    "Decrease in adrenergic receptors",
     "Development of neural structures",
-    "Maturation and ossification of cartilage",
+    "Antagonism of growth hormone",
     "Proper reproductive function"
    ],
    "answers": [
     1,
-    2,
     3
    ],
+   "notes": [
+    "They increase them.",
+    "",
+    "They act in synergy with GH.",
+    "Thyroid check-up in every fertility work-up."
+   ],
    "multi": true,
-   "why": "From the Midterm recall (Prof. Kamal). They increase adrenergic receptors. (Option C reworded from the recall to match the lecture.)",
-   "src": "Midterm recall (Prof. Kamal)",
+   "hint": "1 or 2 correct answers",
+   "why": "The real recall also had 'cartilage growth' as an option; the lecture says GH drives cartilage growth and thyroid hormones its maturation and ossification.",
+   "src": "Midterm recall (Prof. Kamal) (adapted)",
    "slides": [
     {
      "src": "files/slides/biochem-thyroid/22.jpg",
@@ -9746,8 +11176,15 @@ SINA.lectures["biochem-thyroid"] = {
    "answers": [
     0
    ],
+   "notes": [
+    "",
+    "Lipolysis increases.",
+    "They activate transcription.",
+    "Synergy with GH."
+   ],
    "multi": true,
-   "why": "From the Tutorial 2. They increase lipolysis and act in synergy with GH.",
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
    "src": "Tutorial 2",
    "slides": [
     {
@@ -9763,20 +11200,26 @@ SINA.lectures["biochem-thyroid"] = {
    ]
   },
   {
-   "q": "Signs in favour of hyperthyroidism:",
+   "q": "Signs of hyperthyroidism:",
    "options": [
-    "Weight loss with appetite maintained",
     "Hand tremor",
     "Constipation",
+    "Cold intolerance",
     "Tachycardia"
    ],
    "answers": [
     0,
-    1,
     3
    ],
+   "notes": [
+    "Strongly in favour of hyperthyroidism.",
+    "Sign of hypothyroidism.",
+    "Sign of hypothyroidism.",
+    ""
+   ],
    "multi": true,
-   "why": "Constipation is a sign of hypothyroidism.",
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
    "slides": [
     {
      "src": "files/slides/biochem-thyroid/26.jpg",
@@ -9793,28 +11236,29 @@ SINA.lectures["biochem-thyroid"] = {
   {
    "q": "A goitre can be found in:",
    "options": [
-    "Iodine deficiency",
     "A TSH-secreting pituitary adenoma",
-    "Hashimoto's thyroiditis",
+    "Only hyperthyroidism",
+    "Iodine deficiency",
     "Total thyroidectomy"
    ],
    "answers": [
     0,
-    1,
     2
    ],
+   "notes": [
+    "Central hyperthyroidism.",
+    "Also in hypothyroidism.",
+    "Constant TSH makes colloid without hormones.",
+    "There is no gland left."
+   ],
    "multi": true,
-   "why": "Constant TSH stimulation enlarges the gland.",
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
    "slides": [
     {
      "src": "files/slides/biochem-thyroid/29.jpg",
      "lec": "Thyroid hormones",
      "n": 29
-    },
-    {
-     "src": "files/slides/biochem-thyroid/34.jpg",
-     "lec": "Thyroid hormones",
-     "n": 34
     }
    ]
   },
@@ -9822,17 +11266,23 @@ SINA.lectures["biochem-thyroid"] = {
    "q": "Graves' disease:",
    "options": [
     "Is the most common cause of hyperthyroidism",
-    "Is autoimmune",
-    "Is due to anti-TSH receptor antibodies",
-    "Is due to anti-thyroglobulin antibodies"
+    "Is a hypothyroidism",
+    "Is due to anti-thyroglobulin antibodies",
+    "Is due to anti-TSH receptor antibodies"
    ],
    "answers": [
     0,
-    1,
-    2
+    3
+   ],
+   "notes": [
+    "",
+    "",
+    "Those point to Hashimoto's.",
+    "They stimulate the receptor continuously."
    ],
    "multi": true,
-   "why": "Anti-thyroglobulin antibodies point to Hashimoto's.",
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
    "slides": [
     {
      "src": "files/slides/biochem-thyroid/30.jpg",
@@ -9844,17 +11294,24 @@ SINA.lectures["biochem-thyroid"] = {
   {
    "q": "Hyperthyroidism of pregnancy:",
    "options": [
+    "Is caused by iodinated contrast",
     "Is due to a TSH receptor that also binds hCG",
     "Disappears when hCG falls at the end of pregnancy",
-    "Is caused by iodinated contrast",
-    "Is a form of central hyperthyroidism"
+    "Is central in origin"
    ],
    "answers": [
-    0,
-    1
+    1,
+    2
+   ],
+   "notes": [
+    "That is iatrogenic hyperthyroidism.",
+    "A receptor gene mutation.",
+    "",
+    ""
    ],
    "multi": true,
-   "why": "",
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
    "slides": [
     {
      "src": "files/slides/biochem-thyroid/31.jpg",
@@ -9864,21 +11321,27 @@ SINA.lectures["biochem-thyroid"] = {
    ]
   },
   {
-   "q": "In a patient treated with amiodarone, monitoring of TSHus is necessary:",
+   "q": "In a patient treated with amiodarone, TSHus monitoring is necessary:",
    "options": [
     "Before starting treatment",
-    "Every six months during treatment",
     "Every six months for the first two years only",
-    "Up to 1 year after stopping amiodarone"
+    "Every six months during treatment",
+    "Never after the treatment is stopped"
    ],
    "answers": [
     0,
-    1,
-    3
+    2
+   ],
+   "notes": [
+    "Amiodarone is contraindicated if the patient is dysthyroid.",
+    "Dysthyroidism can occur at any time.",
+    "",
+    "Tutorial 2: up to 1 year after stopping."
    ],
    "multi": true,
-   "why": "From the Tutorial 2. Amiodarone contains iodine and can cause hyper- or hypothyroidism.",
-   "src": "Tutorial 2",
+   "hint": "1 or 2 correct answers",
+   "why": "Amiodarone contains iodine. (Tutorial 2's key was A, B and D.)",
+   "src": "Tutorial 2 (adapted)",
    "slides": [
     {
      "src": "files/slides/biochem-thyroid/32.jpg",
@@ -9898,8 +11361,15 @@ SINA.lectures["biochem-thyroid"] = {
    "answers": [
     2
    ],
+   "notes": [
+    "",
+    "Graves' disease.",
+    "Also anti-microsomal and anti-peroxidase.",
+    "They confirm hypothyroidism, not its cause."
+   ],
    "multi": true,
-   "why": "From the Tutorial 2.",
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
    "src": "Tutorial 2",
    "slides": [
     {
@@ -9915,20 +11385,26 @@ SINA.lectures["biochem-thyroid"] = {
    ]
   },
   {
-   "q": "In the biological exploration of the thyroid:",
+   "q": "Biological exploration of the thyroid:",
    "options": [
-    "FT4 makes the positive diagnosis of hyper- or hypothyroidism",
+    "TSH is useless in hypothyroidism",
     "TSHus locates the problem as central or peripheral",
-    "Total T4 is the most useful test",
-    "Antibodies help find the cause"
+    "FT4 makes the positive diagnosis",
+    "Total T4 is the most useful test"
    ],
    "answers": [
-    0,
     1,
-    3
+    2
+   ],
+   "notes": [
+    "",
+    "",
+    "",
+    "The free fraction matters."
    ],
    "multi": true,
-   "why": "",
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
    "slides": [
     {
      "src": "files/slides/biochem-thyroid/36.jpg",
@@ -9938,20 +11414,26 @@ SINA.lectures["biochem-thyroid"] = {
    ]
   },
   {
-   "q": "In thyroid replacement therapy:",
+   "q": "Thyroid replacement therapy:",
    "options": [
-    "T4 is preferred",
-    "The half-life of T4 is about one week",
     "The half-life of T3 is about one day",
-    "T4 must be taken three times a day"
+    "T4 is taken three times a day",
+    "T3 has the longer half-life",
+    "T4 is preferred"
    ],
    "answers": [
     0,
-    1,
-    2
+    3
+   ],
+   "notes": [
+    "",
+    "Once daily, thanks to its 1-week half-life.",
+    "T4: one week.",
+    "Converted to T3 in tissues."
    ],
    "multi": true,
-   "why": "T4 once daily improves compliance.",
+   "hint": "1 or 2 correct answers",
+   "why": "See the notes under each option.",
    "slides": [
     {
      "src": "files/slides/biochem-thyroid/37.jpg",
