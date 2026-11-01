@@ -1,0 +1,13 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sina has moved</title>
+<script>
+(function(){
+  var NEW = "https://sina-med.github.io/", q = new URLSearchParams(location.search), to = q.get("to") || location.hash || "#/";
+  var o = {}, n = 0;
+  try { for (var i = 0; i < localStorage.length; i++) { var k = localStorage.key(i);
+    if (k.indexOf("sina:") === 0 && k.indexOf("sina:fr:") !== 0 && k !== "sina:migrated") { o[k] = localStorage.getItem(k); n++; } } } catch (e) {}
+  var d = n ? btoa(unescape(encodeURIComponent(JSON.stringify(o)))).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "") : "";
+  location.replace(NEW + "#import=" + d + "&to=" + encodeURIComponent(to));
+})();
+</script></head>
+<body style="font-family:system-ui;padding:24px">Sina has moved to <a href="https://sina-med.github.io/">sina-med.github.io</a>…</body></html>
