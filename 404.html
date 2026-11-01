@@ -6,6 +6,7 @@
   var o = {}, n = 0;
   try { for (var i = 0; i < localStorage.length; i++) { var k = localStorage.key(i);
     if (k.indexOf("sina:") === 0 && k.indexOf("sina:fr:") !== 0 && k !== "sina:migrated") { o[k] = localStorage.getItem(k); n++; } } } catch (e) {}
+  if (q.get("check") !== null) { document.addEventListener("DOMContentLoaded", function () { document.body.innerHTML = "<p>Saved items found under the old link: <b>" + n + "</b> (" + Math.round(JSON.stringify(o).length / 1024) + " KB)</p><p>Keys: " + Object.keys(o).join(", ") + "</p>"; }); return; }
   var d = n ? btoa(unescape(encodeURIComponent(JSON.stringify(o)))).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "") : "";
   location.replace(NEW + "#import=" + d + "&to=" + encodeURIComponent(to));
 })();
